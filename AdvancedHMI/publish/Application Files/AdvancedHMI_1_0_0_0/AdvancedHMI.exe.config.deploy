@@ -1,0 +1,146 @@
+<?xml version="1.0"?>
+<configuration>
+    <configSections>
+        <sectionGroup name="userSettings" type="System.Configuration.UserSettingsGroup, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" >
+            <section name="MfgControl.AdvancedHMI.My.MySettings" type="System.Configuration.ClientSettingsSection, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" allowExeDefinition="MachineToLocalUser" requirePermission="false" />
+        </sectionGroup>
+    </configSections>
+    <connectionStrings>
+        <add name="MfgControl.AdvancedHMI.My.MySettings.Constant_LogConnectionString"
+            connectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=&quot;|DataDirectory|\Constant Log.accdb&quot;"
+            providerName="System.Data.OleDb" />
+    </connectionStrings>
+    <system.diagnostics>
+        <sources>
+            <!-- This section defines the logging configuration for My.Application.Log -->
+            <source name="DefaultSource" switchName="DefaultSwitch">
+                <listeners>
+                    <add name="FileLog"/>
+                    <!-- Uncomment the below section to write to the Application Event Log -->
+                    <!--<add name="EventLog"/>-->
+                </listeners>
+            </source>
+        </sources>
+        <switches>
+            <add name="DefaultSwitch" value="Information"/>
+        </switches>
+        <sharedListeners>
+            <add name="FileLog" type="Microsoft.VisualBasic.Logging.FileLogTraceListener, Microsoft.VisualBasic, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" initializeData="FileLogWriter"/>
+            <!-- Uncomment the below section and replace APPLICATION_NAME with the name of your application to write to the Application Event Log -->
+            <!--<add name="EventLog" type="System.Diagnostics.EventLogTraceListener" initializeData="APPLICATION_NAME"/> -->
+        </sharedListeners>
+    </system.diagnostics>
+<startup><supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.0"/></startup>
+    <userSettings>
+        <MfgControl.AdvancedHMI.My.MySettings>
+            <setting name="MPSLSV" serializeAs="String">
+                <value>336</value>
+            </setting>
+            <setting name="MPSHSV" serializeAs="String">
+                <value>971</value>
+            </setting>
+            <setting name="LPSLSV" serializeAs="String">
+                <value>336</value>
+            </setting>
+            <setting name="LPSHSV" serializeAs="String">
+                <value>971</value>
+            </setting>
+            <setting name="MSPLSV" serializeAs="String">
+                <value>336</value>
+            </setting>
+            <setting name="MSPHSV" serializeAs="String">
+                <value>971</value>
+            </setting>
+            <setting name="C1PLSV" serializeAs="String">
+                <value>336</value>
+            </setting>
+            <setting name="C1PHSV" serializeAs="String">
+                <value>971</value>
+            </setting>
+            <setting name="C2PLSV" serializeAs="String">
+                <value>336</value>
+            </setting>
+            <setting name="C2PHSV" serializeAs="String">
+                <value>971</value>
+            </setting>
+            <setting name="FAPLSV" serializeAs="String">
+                <value>336</value>
+            </setting>
+            <setting name="FAPHSV" serializeAs="String">
+                <value>971</value>
+            </setting>
+            <setting name="MPSOUTL" serializeAs="String">
+                <value>0</value>
+            </setting>
+            <setting name="MPSOUTH" serializeAs="String">
+                <value>200</value>
+            </setting>
+            <setting name="LPSOUTL" serializeAs="String">
+                <value>0</value>
+            </setting>
+            <setting name="LPSOUTH" serializeAs="String">
+                <value>30</value>
+            </setting>
+            <setting name="MSPOUTL" serializeAs="String">
+                <value>0</value>
+            </setting>
+            <setting name="MSPOUTH" serializeAs="String">
+                <value>200</value>
+            </setting>
+            <setting name="C1POUTL" serializeAs="String">
+                <value>0</value>
+            </setting>
+            <setting name="C1POUTH" serializeAs="String">
+                <value>200</value>
+            </setting>
+            <setting name="C2POUTL" serializeAs="String">
+                <value>0</value>
+            </setting>
+            <setting name="C2POUTH" serializeAs="String">
+                <value>200</value>
+            </setting>
+            <setting name="FAPOUTL" serializeAs="String">
+                <value>0</value>
+            </setting>
+            <setting name="FAPOUTH" serializeAs="String">
+                <value>200</value>
+            </setting>
+            <setting name="LPSALH" serializeAs="String">
+                <value>32</value>
+            </setting>
+            <setting name="LPSALL" serializeAs="String">
+                <value>28</value>
+            </setting>
+            <setting name="MPSALH" serializeAs="String">
+                <value>42</value>
+            </setting>
+            <setting name="MPSALL" serializeAs="String">
+                <value>38</value>
+            </setting>
+            <setting name="MSPALH" serializeAs="String">
+                <value>110</value>
+            </setting>
+            <setting name="MSPALL" serializeAs="String">
+                <value>80</value>
+            </setting>
+            <setting name="FAPALH" serializeAs="String">
+                <value>120</value>
+            </setting>
+            <setting name="FAPALL" serializeAs="String">
+                <value>100</value>
+            </setting>
+            <setting name="C1PALH" serializeAs="String">
+                <value>110</value>
+            </setting>
+            <setting name="C1PALL" serializeAs="String">
+                <value>90</value>
+            </setting>
+            <setting name="C2PALH" serializeAs="String">
+                <value>110</value>
+            </setting>
+            <setting name="C2PALL" serializeAs="String">
+                <value>90</value>
+            </setting>
+        </MfgControl.AdvancedHMI.My.MySettings>
+    </userSettings>
+</configuration>

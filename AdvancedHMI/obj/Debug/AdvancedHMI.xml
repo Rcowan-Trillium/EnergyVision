@@ -1,0 +1,614 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+AdvancedHMI
+</name>
+</assembly>
+<members>
+<member name="T:MfgControl.AdvancedHMI.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:MfgControl.AdvancedHMI.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:MfgControl.AdvancedHMI.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="P:MfgControl.AdvancedHMI.My.Resources.Resources._200w">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MfgControl.AdvancedHMI.My.Resources.Resources._308653_200">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MfgControl.AdvancedHMI.My.Resources.Resources._7784602">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MfgControl.AdvancedHMI.My.Resources.Resources.AdvancedHMILogoBR">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MfgControl.AdvancedHMI.My.Resources.Resources.AlarmAudibleError">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MfgControl.AdvancedHMI.My.Resources.Resources.AlarmAudibleOff">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MfgControl.AdvancedHMI.My.Resources.Resources.AlarmAudibleOn">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MfgControl.AdvancedHMI.My.Resources.Resources.AlarmFalconError">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MfgControl.AdvancedHMI.My.Resources.Resources.AlarmFalconOff">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MfgControl.AdvancedHMI.My.Resources.Resources.AlarmFalconOn">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MfgControl.AdvancedHMI.My.Resources.Resources.analogcard1">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MfgControl.AdvancedHMI.My.Resources.Resources.analogcard2">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MfgControl.AdvancedHMI.My.Resources.Resources.AnalogSettings">
+<summary>
+  Looks up a localized string similar to [A0]
+title=City Water Pre-Filter Pressure
+ValueADD=F30:0
+HighlightADD=N14:30/0
+ValueUNIT=PSI
+TodaysMinADD=
+TodaysMaxADD=
+SetpointMode=
+SP=
+TOL=
+MIN=
+MAX=
+[A1]
+title=
+ValueADD=
+HighlightADD=
+ValueUNIT=
+TodaysMinADD=
+TodaysMaxADD=
+SetpointMode=
+SP=
+TOL=
+MIN=
+MAX=
+[A2]
+title=
+ValueADD=
+HighlightADD=
+ValueUNIT=
+TodaysMinADD=
+TodaysMaxADD=
+SetpointMode=
+SP=
+TOL=
+MIN=
+MAX=
+[A3]
+title=
+ValueADD=
+HighlightADD=
+ValueUNIT=
+TodaysMinADD=
+TodaysMaxADD=
+SetpointMode=
+SP=
+TOL= [rest of string was truncated]&quot;;.
+</summary>
+</member>
+<member name="P:MfgControl.AdvancedHMI.My.Resources.Resources.ATLAS_Comp3">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MfgControl.AdvancedHMI.My.Resources.Resources.BADBG">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MfgControl.AdvancedHMI.My.Resources.Resources.BADBG_BAR">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MfgControl.AdvancedHMI.My.Resources.Resources.BadPumpBody">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MfgControl.AdvancedHMI.My.Resources.Resources.bell_alarm">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MfgControl.AdvancedHMI.My.Resources.Resources.ButtonG">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MfgControl.AdvancedHMI.My.Resources.Resources.ButtonOFF">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MfgControl.AdvancedHMI.My.Resources.Resources.ButtonR">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MfgControl.AdvancedHMI.My.Resources.Resources.ButtonY">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MfgControl.AdvancedHMI.My.Resources.Resources.condensate_pit">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MfgControl.AdvancedHMI.My.Resources.Resources.CP_COMPRESSOR">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MfgControl.AdvancedHMI.My.Resources.Resources.CP_COMPRESSOR2">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MfgControl.AdvancedHMI.My.Resources.Resources.cpucard">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MfgControl.AdvancedHMI.My.Resources.Resources.cpucard1">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MfgControl.AdvancedHMI.My.Resources.Resources.DeairatorTank">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MfgControl.AdvancedHMI.My.Resources.Resources.DewPointSensor">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MfgControl.AdvancedHMI.My.Resources.Resources.DisplayPanel3">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MfgControl.AdvancedHMI.My.Resources.Resources.DownFlow">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MfgControl.AdvancedHMI.My.Resources.Resources.Dryer1">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MfgControl.AdvancedHMI.My.Resources.Resources.Dryer2">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MfgControl.AdvancedHMI.My.Resources.Resources.ezgif_4_68b6536f13">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MfgControl.AdvancedHMI.My.Resources.Resources.Fire">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MfgControl.AdvancedHMI.My.Resources.Resources.Flame">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MfgControl.AdvancedHMI.My.Resources.Resources.GaugeBar_Black">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MfgControl.AdvancedHMI.My.Resources.Resources.GaugeBar_YGR">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MfgControl.AdvancedHMI.My.Resources.Resources.GaugeBar2_Black">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MfgControl.AdvancedHMI.My.Resources.Resources.GaugeBar2_GR">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MfgControl.AdvancedHMI.My.Resources.Resources.GaugeBar2_GYR">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MfgControl.AdvancedHMI.My.Resources.Resources.GaugeBar2_YGR">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MfgControl.AdvancedHMI.My.Resources.Resources.GOODBG">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MfgControl.AdvancedHMI.My.Resources.Resources.GOODBG_BAR">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MfgControl.AdvancedHMI.My.Resources.Resources.GoodPumpBody">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MfgControl.AdvancedHMI.My.Resources.Resources.inputcard">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MfgControl.AdvancedHMI.My.Resources.Resources.LargeBoiler">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MfgControl.AdvancedHMI.My.Resources.Resources.LeftFlow">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MfgControl.AdvancedHMI.My.Resources.Resources.LG_CoilBad">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MfgControl.AdvancedHMI.My.Resources.Resources.LG_CoilEmpty">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MfgControl.AdvancedHMI.My.Resources.Resources.LG_CoilGood">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MfgControl.AdvancedHMI.My.Resources.Resources.LG_FireHigh">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MfgControl.AdvancedHMI.My.Resources.Resources.LG_FireLow">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MfgControl.AdvancedHMI.My.Resources.Resources.LG_FireNone">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MfgControl.AdvancedHMI.My.Resources.Resources.LG_WaterGood">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MfgControl.AdvancedHMI.My.Resources.Resources.LG_WaterHigh">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MfgControl.AdvancedHMI.My.Resources.Resources.LG_WaterLow">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MfgControl.AdvancedHMI.My.Resources.Resources.LG_WaterNone">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MfgControl.AdvancedHMI.My.Resources.Resources.LogFileBad">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MfgControl.AdvancedHMI.My.Resources.Resources.LogFileGood">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MfgControl.AdvancedHMI.My.Resources.Resources.MainDispLongGRADt">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MfgControl.AdvancedHMI.My.Resources.Resources.outputcard">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MfgControl.AdvancedHMI.My.Resources.Resources.PlateExchanger">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MfgControl.AdvancedHMI.My.Resources.Resources.PSUcard">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MfgControl.AdvancedHMI.My.Resources.Resources.RightFlow">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MfgControl.AdvancedHMI.My.Resources.Resources.riocard">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MfgControl.AdvancedHMI.My.Resources.Resources.settings">
+<summary>
+  Looks up a localized string similar to [SYSTEM]
+PLCIP=10.20.50.150
+TopMost=True
+EN_DataLog=True
+Inactivity_Timeout=1
+UserLogin_Timeout=5
+[ALARM]
+LB_EN=True
+LB_Freq=500
+LB_Pulse=3
+LB_Pause=3000
+SB_EN=True
+SB_Freq=80
+SB_Pulse=3
+SB_Pause=10000
+AL_Sil_Timeout=12800
+AL_ByP_Timeout=12800
+[DATALOG]
+DataLOG_Loc=C:\FacilityMonitorLogs\DataLogs
+AlarmLOG_Loc=C:\FacilityMonitorLogs\AlarmLogs
+ChangeLOG_Loc=C:\FacilityMonitorLogs\ChangeLogs
+AdminLOG_Loc=C:\FacilityMonitorLogs\AdminLogs
+EquipLOG_Loc=C:\FacilityMonitorLogs\EquStatLogs
+Min [rest of string was truncated]&quot;;.
+</summary>
+</member>
+<member name="P:MfgControl.AdvancedHMI.My.Resources.Resources.SM_CoilBad">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MfgControl.AdvancedHMI.My.Resources.Resources.SM_CoilEmpty">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MfgControl.AdvancedHMI.My.Resources.Resources.SM_CoilGood">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MfgControl.AdvancedHMI.My.Resources.Resources.SM_FireHigh">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MfgControl.AdvancedHMI.My.Resources.Resources.SM_FireLow">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MfgControl.AdvancedHMI.My.Resources.Resources.SM_FireNone">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MfgControl.AdvancedHMI.My.Resources.Resources.SM_WateHighr">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MfgControl.AdvancedHMI.My.Resources.Resources.SM_WaterGood">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MfgControl.AdvancedHMI.My.Resources.Resources.SM_WaterLow">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MfgControl.AdvancedHMI.My.Resources.Resources.SM_WaterNone">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MfgControl.AdvancedHMI.My.Resources.Resources.SmallBoiler">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MfgControl.AdvancedHMI.My.Resources.Resources.Softener1">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MfgControl.AdvancedHMI.My.Resources.Resources.StatusAirBad">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MfgControl.AdvancedHMI.My.Resources.Resources.StatusAirGood">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MfgControl.AdvancedHMI.My.Resources.Resources.StatusElecBad">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MfgControl.AdvancedHMI.My.Resources.Resources.StatusElecGood">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MfgControl.AdvancedHMI.My.Resources.Resources.StatusPLCBad">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MfgControl.AdvancedHMI.My.Resources.Resources.StatusPLCGood">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MfgControl.AdvancedHMI.My.Resources.Resources.StatusSteamBad">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MfgControl.AdvancedHMI.My.Resources.Resources.StatusSteamGood">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MfgControl.AdvancedHMI.My.Resources.Resources.StatusWaterBad">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MfgControl.AdvancedHMI.My.Resources.Resources.StatusWaterGood">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MfgControl.AdvancedHMI.My.Resources.Resources.strangeindicator_00">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MfgControl.AdvancedHMI.My.Resources.Resources.strangeindicator_01">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MfgControl.AdvancedHMI.My.Resources.Resources.strangeindicator_02">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MfgControl.AdvancedHMI.My.Resources.Resources.strangeindicator_03">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MfgControl.AdvancedHMI.My.Resources.Resources.strangeindicator_04">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MfgControl.AdvancedHMI.My.Resources.Resources.strangeindicator_05">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MfgControl.AdvancedHMI.My.Resources.Resources.strangeindicator_06">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MfgControl.AdvancedHMI.My.Resources.Resources.strangeindicator_07">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MfgControl.AdvancedHMI.My.Resources.Resources.strangeindicator_08">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MfgControl.AdvancedHMI.My.Resources.Resources.SystemAirTanks">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MfgControl.AdvancedHMI.My.Resources.Resources.TrilliumLogo">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MfgControl.AdvancedHMI.My.Resources.Resources.TubeShellExchanger">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MfgControl.AdvancedHMI.My.Resources.Resources.UPFlow">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MfgControl.AdvancedHMI.My.Resources.Resources.UpFlow2">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:MfgControl.AdvancedHMI.My.Resources.Resources.Water_Filter_Single">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+</members>
+</doc>
