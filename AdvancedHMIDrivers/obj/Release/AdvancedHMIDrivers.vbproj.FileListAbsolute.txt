@@ -1,0 +1,85 @@
+C:\Users\cowanr\Desktop\VB Projects\Facility Monitor\AdvancedHMIDrivers\bin\Release\AdvancedHMIDrivers.dll
+C:\Users\cowanr\Desktop\VB Projects\Facility Monitor\AdvancedHMIDrivers\bin\Release\AdvancedHMIDrivers.pdb
+C:\Users\cowanr\Desktop\VB Projects\Facility Monitor\AdvancedHMIDrivers\bin\Release\AdvancedHMIDrivers.xml
+C:\Users\cowanr\Desktop\VB Projects\Facility Monitor\AdvancedHMIDrivers\bin\Release\MfgControl.AdvancedHMI.Drivers.dll
+C:\Users\cowanr\Desktop\VB Projects\Facility Monitor\AdvancedHMIDrivers\bin\Release\OpcNetApi.Com.dll
+C:\Users\cowanr\Desktop\VB Projects\Facility Monitor\AdvancedHMIDrivers\bin\Release\OpcNetApi.dll
+C:\Users\cowanr\Desktop\VB Projects\Facility Monitor\AdvancedHMIDrivers\bin\Release\OpcComRcw.dll
+C:\Users\cowanr\Desktop\VB Projects\Facility Monitor\AdvancedHMIDrivers\bin\Release\OpcNetApi.xml
+C:\Users\cowanr\Desktop\VB Projects\Facility Monitor\AdvancedHMIDrivers\bin\Release\OpcNetApi.Com.xml
+C:\Users\cowanr\Desktop\VB Projects\Facility Monitor\AdvancedHMIDrivers\obj\Release\AdvancedHMIDrivers.vbprojAssemblyReference.cache
+C:\Users\cowanr\Desktop\VB Projects\Facility Monitor\AdvancedHMIDrivers\obj\Release\AdvancedHMIDrivers.Resources.resources
+C:\Users\cowanr\Desktop\VB Projects\Facility Monitor\AdvancedHMIDrivers\obj\Release\AdvancedHMIDrivers.vbproj.GenerateResource.cache
+C:\Users\cowanr\Desktop\VB Projects\Facility Monitor\AdvancedHMIDrivers\obj\Release\AdvancedHMIDrivers.vbproj.CoreCompileInputs.cache
+C:\Users\cowanr\Desktop\VB Projects\Facility Monitor\AdvancedHMIDrivers\obj\Release\AdvancedHMIDrivers.vbproj.CopyComplete
+C:\Users\cowanr\Desktop\VB Projects\Facility Monitor\AdvancedHMIDrivers\obj\Release\AdvancedHMIDrivers.dll
+C:\Users\cowanr\Desktop\VB Projects\Facility Monitor\AdvancedHMIDrivers\obj\Release\AdvancedHMIDrivers.xml
+C:\Users\cowanr\Desktop\VB Projects\Facility Monitor\AdvancedHMIDrivers\obj\Release\AdvancedHMIDrivers.pdb
+C:\Users\PLC\Desktop\PLC TEST FOLDER\Facility Monitor\AdvancedHMIDrivers\bin\Release\AdvancedHMIDrivers.dll
+C:\Users\PLC\Desktop\PLC TEST FOLDER\Facility Monitor\AdvancedHMIDrivers\bin\Release\AdvancedHMIDrivers.pdb
+C:\Users\PLC\Desktop\PLC TEST FOLDER\Facility Monitor\AdvancedHMIDrivers\bin\Release\AdvancedHMIDrivers.xml
+C:\Users\PLC\Desktop\PLC TEST FOLDER\Facility Monitor\AdvancedHMIDrivers\bin\Release\MfgControl.AdvancedHMI.Drivers.dll
+C:\Users\PLC\Desktop\PLC TEST FOLDER\Facility Monitor\AdvancedHMIDrivers\bin\Release\OpcNetApi.Com.dll
+C:\Users\PLC\Desktop\PLC TEST FOLDER\Facility Monitor\AdvancedHMIDrivers\bin\Release\OpcNetApi.dll
+C:\Users\PLC\Desktop\PLC TEST FOLDER\Facility Monitor\AdvancedHMIDrivers\bin\Release\OpcComRcw.dll
+C:\Users\PLC\Desktop\PLC TEST FOLDER\Facility Monitor\AdvancedHMIDrivers\bin\Release\OpcNetApi.xml
+C:\Users\PLC\Desktop\PLC TEST FOLDER\Facility Monitor\AdvancedHMIDrivers\bin\Release\OpcNetApi.Com.xml
+C:\Users\PLC\Desktop\PLC TEST FOLDER\Facility Monitor\AdvancedHMIDrivers\obj\Release\AdvancedHMIDrivers.vbprojAssemblyReference.cache
+C:\Users\PLC\Desktop\PLC TEST FOLDER\Facility Monitor\AdvancedHMIDrivers\obj\Release\AdvancedHMIDrivers.Resources.resources
+C:\Users\PLC\Desktop\PLC TEST FOLDER\Facility Monitor\AdvancedHMIDrivers\obj\Release\AdvancedHMIDrivers.vbproj.GenerateResource.cache
+C:\Users\PLC\Desktop\PLC TEST FOLDER\Facility Monitor\AdvancedHMIDrivers\obj\Release\AdvancedHMIDrivers.vbproj.CoreCompileInputs.cache
+C:\Users\PLC\Desktop\PLC TEST FOLDER\Facility Monitor\AdvancedHMIDrivers\obj\Release\AdvancedHMIDrivers.vbproj.CopyComplete
+C:\Users\PLC\Desktop\PLC TEST FOLDER\Facility Monitor\AdvancedHMIDrivers\obj\Release\AdvancedHMIDrivers.dll
+C:\Users\PLC\Desktop\PLC TEST FOLDER\Facility Monitor\AdvancedHMIDrivers\obj\Release\AdvancedHMIDrivers.xml
+C:\Users\PLC\Desktop\PLC TEST FOLDER\Facility Monitor\AdvancedHMIDrivers\obj\Release\AdvancedHMIDrivers.pdb
+C:\Users\cowanr\Desktop\Facility Monitor\AdvancedHMIDrivers\bin\Release\AdvancedHMIDrivers.dll
+C:\Users\cowanr\Desktop\Facility Monitor\AdvancedHMIDrivers\bin\Release\AdvancedHMIDrivers.pdb
+C:\Users\cowanr\Desktop\Facility Monitor\AdvancedHMIDrivers\bin\Release\AdvancedHMIDrivers.xml
+C:\Users\cowanr\Desktop\Facility Monitor\AdvancedHMIDrivers\bin\Release\MfgControl.AdvancedHMI.Drivers.dll
+C:\Users\cowanr\Desktop\Facility Monitor\AdvancedHMIDrivers\bin\Release\OpcNetApi.Com.dll
+C:\Users\cowanr\Desktop\Facility Monitor\AdvancedHMIDrivers\bin\Release\OpcNetApi.dll
+C:\Users\cowanr\Desktop\Facility Monitor\AdvancedHMIDrivers\bin\Release\OpcComRcw.dll
+C:\Users\cowanr\Desktop\Facility Monitor\AdvancedHMIDrivers\bin\Release\OpcNetApi.xml
+C:\Users\cowanr\Desktop\Facility Monitor\AdvancedHMIDrivers\bin\Release\OpcNetApi.Com.xml
+C:\Users\cowanr\Desktop\Facility Monitor\AdvancedHMIDrivers\obj\Release\AdvancedHMIDrivers.Resources.resources
+C:\Users\cowanr\Desktop\Facility Monitor\AdvancedHMIDrivers\obj\Release\AdvancedHMIDrivers.vbproj.GenerateResource.cache
+C:\Users\cowanr\Desktop\Facility Monitor\AdvancedHMIDrivers\obj\Release\AdvancedHMIDrivers.vbproj.CoreCompileInputs.cache
+C:\Users\cowanr\Desktop\Facility Monitor\AdvancedHMIDrivers\obj\Release\AdvancedHMIDrivers.vbproj.CopyComplete
+C:\Users\cowanr\Desktop\Facility Monitor\AdvancedHMIDrivers\obj\Release\AdvancedHMIDrivers.dll
+C:\Users\cowanr\Desktop\Facility Monitor\AdvancedHMIDrivers\obj\Release\AdvancedHMIDrivers.xml
+C:\Users\cowanr\Desktop\Facility Monitor\AdvancedHMIDrivers\obj\Release\AdvancedHMIDrivers.pdb
+C:\Users\cowanr\Desktop\Facility Monitor\AdvancedHMIDrivers\obj\Release\AdvancedHMIDrivers.vbproj.AssemblyReference.cache
+C:\Users\cowanr\OneDrive - Trillium Health Products\Desktop\Facility Monitor\AdvancedHMIDrivers\bin\Release\AdvancedHMIDrivers.dll
+C:\Users\cowanr\OneDrive - Trillium Health Products\Desktop\Facility Monitor\AdvancedHMIDrivers\bin\Release\AdvancedHMIDrivers.pdb
+C:\Users\cowanr\OneDrive - Trillium Health Products\Desktop\Facility Monitor\AdvancedHMIDrivers\bin\Release\AdvancedHMIDrivers.xml
+C:\Users\cowanr\OneDrive - Trillium Health Products\Desktop\Facility Monitor\AdvancedHMIDrivers\bin\Release\MfgControl.AdvancedHMI.Drivers.dll
+C:\Users\cowanr\OneDrive - Trillium Health Products\Desktop\Facility Monitor\AdvancedHMIDrivers\bin\Release\OpcNetApi.Com.dll
+C:\Users\cowanr\OneDrive - Trillium Health Products\Desktop\Facility Monitor\AdvancedHMIDrivers\bin\Release\OpcNetApi.dll
+C:\Users\cowanr\OneDrive - Trillium Health Products\Desktop\Facility Monitor\AdvancedHMIDrivers\bin\Release\OpcComRcw.dll
+C:\Users\cowanr\OneDrive - Trillium Health Products\Desktop\Facility Monitor\AdvancedHMIDrivers\bin\Release\OpcNetApi.xml
+C:\Users\cowanr\OneDrive - Trillium Health Products\Desktop\Facility Monitor\AdvancedHMIDrivers\bin\Release\OpcNetApi.Com.xml
+C:\Users\cowanr\OneDrive - Trillium Health Products\Desktop\Facility Monitor\AdvancedHMIDrivers\obj\Release\AdvancedHMIDrivers.vbproj.AssemblyReference.cache
+C:\Users\cowanr\OneDrive - Trillium Health Products\Desktop\Facility Monitor\AdvancedHMIDrivers\obj\Release\AdvancedHMIDrivers.Resources.resources
+C:\Users\cowanr\OneDrive - Trillium Health Products\Desktop\Facility Monitor\AdvancedHMIDrivers\obj\Release\AdvancedHMIDrivers.vbproj.GenerateResource.cache
+C:\Users\cowanr\OneDrive - Trillium Health Products\Desktop\Facility Monitor\AdvancedHMIDrivers\obj\Release\AdvancedHMIDrivers.vbproj.CoreCompileInputs.cache
+C:\Users\cowanr\OneDrive - Trillium Health Products\Desktop\Facility Monitor\AdvancedHMIDrivers\obj\Release\AdvancedHMIDrivers.vbproj.CopyComplete
+C:\Users\cowanr\OneDrive - Trillium Health Products\Desktop\Facility Monitor\AdvancedHMIDrivers\obj\Release\AdvancedHMIDrivers.dll
+C:\Users\cowanr\OneDrive - Trillium Health Products\Desktop\Facility Monitor\AdvancedHMIDrivers\obj\Release\AdvancedHMIDrivers.xml
+C:\Users\cowanr\OneDrive - Trillium Health Products\Desktop\Facility Monitor\AdvancedHMIDrivers\obj\Release\AdvancedHMIDrivers.pdb
+C:\Users\cowanr\source\repos\Facility Monitor\AdvancedHMIDrivers\bin\Release\AdvancedHMIDrivers.dll
+C:\Users\cowanr\source\repos\Facility Monitor\AdvancedHMIDrivers\bin\Release\AdvancedHMIDrivers.pdb
+C:\Users\cowanr\source\repos\Facility Monitor\AdvancedHMIDrivers\bin\Release\AdvancedHMIDrivers.xml
+C:\Users\cowanr\source\repos\Facility Monitor\AdvancedHMIDrivers\bin\Release\MfgControl.AdvancedHMI.Drivers.dll
+C:\Users\cowanr\source\repos\Facility Monitor\AdvancedHMIDrivers\bin\Release\OpcNetApi.Com.dll
+C:\Users\cowanr\source\repos\Facility Monitor\AdvancedHMIDrivers\bin\Release\OpcNetApi.dll
+C:\Users\cowanr\source\repos\Facility Monitor\AdvancedHMIDrivers\bin\Release\OpcComRcw.dll
+C:\Users\cowanr\source\repos\Facility Monitor\AdvancedHMIDrivers\bin\Release\OpcNetApi.xml
+C:\Users\cowanr\source\repos\Facility Monitor\AdvancedHMIDrivers\bin\Release\OpcNetApi.Com.xml
+C:\Users\cowanr\source\repos\Facility Monitor\AdvancedHMIDrivers\obj\Release\AdvancedHMIDrivers.vbproj.AssemblyReference.cache
+C:\Users\cowanr\source\repos\Facility Monitor\AdvancedHMIDrivers\obj\Release\AdvancedHMIDrivers.Resources.resources
+C:\Users\cowanr\source\repos\Facility Monitor\AdvancedHMIDrivers\obj\Release\AdvancedHMIDrivers.vbproj.GenerateResource.cache
+C:\Users\cowanr\source\repos\Facility Monitor\AdvancedHMIDrivers\obj\Release\AdvancedHMIDrivers.vbproj.CoreCompileInputs.cache
+C:\Users\cowanr\source\repos\Facility Monitor\AdvancedHMIDrivers\obj\Release\Advanced.614B6B86.Up2Date
+C:\Users\cowanr\source\repos\Facility Monitor\AdvancedHMIDrivers\obj\Release\AdvancedHMIDrivers.dll
+C:\Users\cowanr\source\repos\Facility Monitor\AdvancedHMIDrivers\obj\Release\AdvancedHMIDrivers.xml
+C:\Users\cowanr\source\repos\Facility Monitor\AdvancedHMIDrivers\obj\Release\AdvancedHMIDrivers.pdb

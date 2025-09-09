@@ -1,0 +1,69 @@
+C:\Users\cowanr\Desktop\VB Projects\Facility Monitor\AdvancedHMICS\bin\Release\AdvancedHMICS.exe.config
+C:\Users\cowanr\Desktop\VB Projects\Facility Monitor\AdvancedHMICS\bin\Release\AdvancedHMICS.exe
+C:\Users\cowanr\Desktop\VB Projects\Facility Monitor\AdvancedHMICS\bin\Release\AdvancedHMICS.pdb
+C:\Users\cowanr\Desktop\VB Projects\Facility Monitor\AdvancedHMICS\bin\Release\AdvancedHMIControls.dll
+C:\Users\cowanr\Desktop\VB Projects\Facility Monitor\AdvancedHMICS\bin\Release\AdvancedHMIDrivers.dll
+C:\Users\cowanr\Desktop\VB Projects\Facility Monitor\AdvancedHMICS\bin\Release\MfgControl.AdvancedHMI.Drivers.dll
+C:\Users\cowanr\Desktop\VB Projects\Facility Monitor\AdvancedHMICS\bin\Release\MfgControl.AdvancedHMI.Controls.dll
+C:\Users\cowanr\Desktop\VB Projects\Facility Monitor\AdvancedHMICS\bin\Release\OpcNetApi.dll
+C:\Users\cowanr\Desktop\VB Projects\Facility Monitor\AdvancedHMICS\bin\Release\OpcNetApi.Com.dll
+C:\Users\cowanr\Desktop\VB Projects\Facility Monitor\AdvancedHMICS\bin\Release\OpcComRcw.dll
+C:\Users\cowanr\Desktop\VB Projects\Facility Monitor\AdvancedHMICS\bin\Release\AdvancedHMIControls.pdb
+C:\Users\cowanr\Desktop\VB Projects\Facility Monitor\AdvancedHMICS\bin\Release\AdvancedHMIControls.xml
+C:\Users\cowanr\Desktop\VB Projects\Facility Monitor\AdvancedHMICS\bin\Release\AdvancedHMIDrivers.pdb
+C:\Users\cowanr\Desktop\VB Projects\Facility Monitor\AdvancedHMICS\bin\Release\AdvancedHMIDrivers.xml
+C:\Users\cowanr\Desktop\VB Projects\Facility Monitor\AdvancedHMICS\bin\Release\OpcNetApi.xml
+C:\Users\cowanr\Desktop\VB Projects\Facility Monitor\AdvancedHMICS\bin\Release\OpcNetApi.Com.xml
+C:\Users\cowanr\Desktop\VB Projects\Facility Monitor\AdvancedHMICS\obj\Release\AdvancedHMIcs.csprojAssemblyReference.cache
+C:\Users\cowanr\Desktop\VB Projects\Facility Monitor\AdvancedHMICS\obj\Release\AdvancedHMICS.Properties.Resources.resources
+C:\Users\cowanr\Desktop\VB Projects\Facility Monitor\AdvancedHMICS\obj\Release\AdvancedHMIcs.csproj.GenerateResource.cache
+C:\Users\cowanr\Desktop\VB Projects\Facility Monitor\AdvancedHMICS\obj\Release\AdvancedHMIcs.csproj.CoreCompileInputs.cache
+C:\Users\cowanr\Desktop\VB Projects\Facility Monitor\AdvancedHMICS\obj\Release\AdvancedHMIcs.csproj.CopyComplete
+C:\Users\cowanr\Desktop\VB Projects\Facility Monitor\AdvancedHMICS\obj\Release\AdvancedHMICS.exe
+C:\Users\cowanr\Desktop\VB Projects\Facility Monitor\AdvancedHMICS\obj\Release\AdvancedHMICS.pdb
+C:\Users\cowanr\Desktop\Facility Monitor\AdvancedHMICS\bin\Release\AdvancedHMICS.exe.config
+C:\Users\cowanr\Desktop\Facility Monitor\AdvancedHMICS\bin\Release\AdvancedHMICS.exe
+C:\Users\cowanr\Desktop\Facility Monitor\AdvancedHMICS\bin\Release\AdvancedHMICS.pdb
+C:\Users\cowanr\Desktop\Facility Monitor\AdvancedHMICS\bin\Release\AdvancedHMIControls.dll
+C:\Users\cowanr\Desktop\Facility Monitor\AdvancedHMICS\bin\Release\AdvancedHMIDrivers.dll
+C:\Users\cowanr\Desktop\Facility Monitor\AdvancedHMICS\bin\Release\MfgControl.AdvancedHMI.Drivers.dll
+C:\Users\cowanr\Desktop\Facility Monitor\AdvancedHMICS\bin\Release\MfgControl.AdvancedHMI.Controls.dll
+C:\Users\cowanr\Desktop\Facility Monitor\AdvancedHMICS\bin\Release\OpcNetApi.dll
+C:\Users\cowanr\Desktop\Facility Monitor\AdvancedHMICS\bin\Release\OpcNetApi.Com.dll
+C:\Users\cowanr\Desktop\Facility Monitor\AdvancedHMICS\bin\Release\OpcComRcw.dll
+C:\Users\cowanr\Desktop\Facility Monitor\AdvancedHMICS\bin\Release\AdvancedHMIControls.pdb
+C:\Users\cowanr\Desktop\Facility Monitor\AdvancedHMICS\bin\Release\AdvancedHMIControls.xml
+C:\Users\cowanr\Desktop\Facility Monitor\AdvancedHMICS\bin\Release\AdvancedHMIDrivers.pdb
+C:\Users\cowanr\Desktop\Facility Monitor\AdvancedHMICS\bin\Release\AdvancedHMIDrivers.xml
+C:\Users\cowanr\Desktop\Facility Monitor\AdvancedHMICS\bin\Release\OpcNetApi.xml
+C:\Users\cowanr\Desktop\Facility Monitor\AdvancedHMICS\bin\Release\OpcNetApi.Com.xml
+C:\Users\cowanr\Desktop\Facility Monitor\AdvancedHMICS\obj\Release\AdvancedHMIcs.csprojAssemblyReference.cache
+C:\Users\cowanr\Desktop\Facility Monitor\AdvancedHMICS\obj\Release\AdvancedHMICS.Properties.Resources.resources
+C:\Users\cowanr\Desktop\Facility Monitor\AdvancedHMICS\obj\Release\AdvancedHMIcs.csproj.GenerateResource.cache
+C:\Users\cowanr\Desktop\Facility Monitor\AdvancedHMICS\obj\Release\AdvancedHMIcs.csproj.CoreCompileInputs.cache
+C:\Users\cowanr\Desktop\Facility Monitor\AdvancedHMICS\obj\Release\AdvancedHMIcs.csproj.CopyComplete
+C:\Users\cowanr\Desktop\Facility Monitor\AdvancedHMICS\obj\Release\AdvancedHMICS.exe
+C:\Users\cowanr\Desktop\Facility Monitor\AdvancedHMICS\obj\Release\AdvancedHMICS.pdb
+C:\Users\cowanr\OneDrive - Trillium Health Products\Desktop\Facility Monitor\AdvancedHMICS\bin\Release\AdvancedHMICS.exe.config
+C:\Users\cowanr\OneDrive - Trillium Health Products\Desktop\Facility Monitor\AdvancedHMICS\bin\Release\AdvancedHMICS.exe
+C:\Users\cowanr\OneDrive - Trillium Health Products\Desktop\Facility Monitor\AdvancedHMICS\bin\Release\AdvancedHMICS.pdb
+C:\Users\cowanr\OneDrive - Trillium Health Products\Desktop\Facility Monitor\AdvancedHMICS\bin\Release\AdvancedHMIControls.dll
+C:\Users\cowanr\OneDrive - Trillium Health Products\Desktop\Facility Monitor\AdvancedHMICS\bin\Release\AdvancedHMIDrivers.dll
+C:\Users\cowanr\OneDrive - Trillium Health Products\Desktop\Facility Monitor\AdvancedHMICS\bin\Release\MfgControl.AdvancedHMI.Drivers.dll
+C:\Users\cowanr\OneDrive - Trillium Health Products\Desktop\Facility Monitor\AdvancedHMICS\bin\Release\MfgControl.AdvancedHMI.Controls.dll
+C:\Users\cowanr\OneDrive - Trillium Health Products\Desktop\Facility Monitor\AdvancedHMICS\bin\Release\OpcNetApi.dll
+C:\Users\cowanr\OneDrive - Trillium Health Products\Desktop\Facility Monitor\AdvancedHMICS\bin\Release\OpcNetApi.Com.dll
+C:\Users\cowanr\OneDrive - Trillium Health Products\Desktop\Facility Monitor\AdvancedHMICS\bin\Release\OpcComRcw.dll
+C:\Users\cowanr\OneDrive - Trillium Health Products\Desktop\Facility Monitor\AdvancedHMICS\bin\Release\AdvancedHMIControls.pdb
+C:\Users\cowanr\OneDrive - Trillium Health Products\Desktop\Facility Monitor\AdvancedHMICS\bin\Release\AdvancedHMIControls.xml
+C:\Users\cowanr\OneDrive - Trillium Health Products\Desktop\Facility Monitor\AdvancedHMICS\bin\Release\AdvancedHMIDrivers.pdb
+C:\Users\cowanr\OneDrive - Trillium Health Products\Desktop\Facility Monitor\AdvancedHMICS\bin\Release\AdvancedHMIDrivers.xml
+C:\Users\cowanr\OneDrive - Trillium Health Products\Desktop\Facility Monitor\AdvancedHMICS\bin\Release\OpcNetApi.xml
+C:\Users\cowanr\OneDrive - Trillium Health Products\Desktop\Facility Monitor\AdvancedHMICS\bin\Release\OpcNetApi.Com.xml
+C:\Users\cowanr\OneDrive - Trillium Health Products\Desktop\Facility Monitor\AdvancedHMICS\obj\Release\AdvancedHMIcs.csproj.AssemblyReference.cache
+C:\Users\cowanr\OneDrive - Trillium Health Products\Desktop\Facility Monitor\AdvancedHMICS\obj\Release\AdvancedHMICS.Properties.Resources.resources
+C:\Users\cowanr\OneDrive - Trillium Health Products\Desktop\Facility Monitor\AdvancedHMICS\obj\Release\AdvancedHMIcs.csproj.GenerateResource.cache
+C:\Users\cowanr\OneDrive - Trillium Health Products\Desktop\Facility Monitor\AdvancedHMICS\obj\Release\AdvancedHMIcs.csproj.CoreCompileInputs.cache
+C:\Users\cowanr\OneDrive - Trillium Health Products\Desktop\Facility Monitor\AdvancedHMICS\obj\Release\AdvancedHMIcs.csproj.CopyComplete
+C:\Users\cowanr\OneDrive - Trillium Health Products\Desktop\Facility Monitor\AdvancedHMICS\obj\Release\AdvancedHMICS.exe
+C:\Users\cowanr\OneDrive - Trillium Health Products\Desktop\Facility Monitor\AdvancedHMICS\obj\Release\AdvancedHMICS.pdb

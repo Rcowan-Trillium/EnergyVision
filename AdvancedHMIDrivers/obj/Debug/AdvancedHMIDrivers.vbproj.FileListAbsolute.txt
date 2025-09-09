@@ -1,0 +1,34 @@
+C:\Users\cowanr\Desktop\Facility Monitor\AdvancedHMIDrivers\bin\Debug\AdvancedHMIDrivers.dll
+C:\Users\cowanr\Desktop\Facility Monitor\AdvancedHMIDrivers\bin\Debug\AdvancedHMIDrivers.pdb
+C:\Users\cowanr\Desktop\Facility Monitor\AdvancedHMIDrivers\bin\Debug\AdvancedHMIDrivers.xml
+C:\Users\cowanr\Desktop\Facility Monitor\AdvancedHMIDrivers\bin\Debug\MfgControl.AdvancedHMI.Drivers.dll
+C:\Users\cowanr\Desktop\Facility Monitor\AdvancedHMIDrivers\bin\Debug\OpcNetApi.Com.dll
+C:\Users\cowanr\Desktop\Facility Monitor\AdvancedHMIDrivers\bin\Debug\OpcNetApi.dll
+C:\Users\cowanr\Desktop\Facility Monitor\AdvancedHMIDrivers\bin\Debug\OpcComRcw.dll
+C:\Users\cowanr\Desktop\Facility Monitor\AdvancedHMIDrivers\bin\Debug\OpcNetApi.xml
+C:\Users\cowanr\Desktop\Facility Monitor\AdvancedHMIDrivers\bin\Debug\OpcNetApi.Com.xml
+C:\Users\cowanr\Desktop\Facility Monitor\AdvancedHMIDrivers\obj\Debug\AdvancedHMIDrivers.Resources.resources
+C:\Users\cowanr\Desktop\Facility Monitor\AdvancedHMIDrivers\obj\Debug\AdvancedHMIDrivers.vbproj.GenerateResource.cache
+C:\Users\cowanr\Desktop\Facility Monitor\AdvancedHMIDrivers\obj\Debug\AdvancedHMIDrivers.vbproj.CoreCompileInputs.cache
+C:\Users\cowanr\Desktop\Facility Monitor\AdvancedHMIDrivers\obj\Debug\AdvancedHMIDrivers.vbproj.CopyComplete
+C:\Users\cowanr\Desktop\Facility Monitor\AdvancedHMIDrivers\obj\Debug\AdvancedHMIDrivers.dll
+C:\Users\cowanr\Desktop\Facility Monitor\AdvancedHMIDrivers\obj\Debug\AdvancedHMIDrivers.xml
+C:\Users\cowanr\Desktop\Facility Monitor\AdvancedHMIDrivers\obj\Debug\AdvancedHMIDrivers.pdb
+C:\Users\cowanr\Desktop\Facility Monitor\AdvancedHMIDrivers\obj\Debug\AdvancedHMIDrivers.vbproj.AssemblyReference.cache
+C:\Users\cowanr\OneDrive - Trillium Health Products\Desktop\Facility Monitor\AdvancedHMIDrivers\bin\Debug\AdvancedHMIDrivers.dll
+C:\Users\cowanr\OneDrive - Trillium Health Products\Desktop\Facility Monitor\AdvancedHMIDrivers\bin\Debug\AdvancedHMIDrivers.pdb
+C:\Users\cowanr\OneDrive - Trillium Health Products\Desktop\Facility Monitor\AdvancedHMIDrivers\bin\Debug\AdvancedHMIDrivers.xml
+C:\Users\cowanr\OneDrive - Trillium Health Products\Desktop\Facility Monitor\AdvancedHMIDrivers\bin\Debug\MfgControl.AdvancedHMI.Drivers.dll
+C:\Users\cowanr\OneDrive - Trillium Health Products\Desktop\Facility Monitor\AdvancedHMIDrivers\bin\Debug\OpcNetApi.Com.dll
+C:\Users\cowanr\OneDrive - Trillium Health Products\Desktop\Facility Monitor\AdvancedHMIDrivers\bin\Debug\OpcNetApi.dll
+C:\Users\cowanr\OneDrive - Trillium Health Products\Desktop\Facility Monitor\AdvancedHMIDrivers\bin\Debug\OpcComRcw.dll
+C:\Users\cowanr\OneDrive - Trillium Health Products\Desktop\Facility Monitor\AdvancedHMIDrivers\bin\Debug\OpcNetApi.xml
+C:\Users\cowanr\OneDrive - Trillium Health Products\Desktop\Facility Monitor\AdvancedHMIDrivers\bin\Debug\OpcNetApi.Com.xml
+C:\Users\cowanr\OneDrive - Trillium Health Products\Desktop\Facility Monitor\AdvancedHMIDrivers\obj\Debug\AdvancedHMIDrivers.vbproj.AssemblyReference.cache
+C:\Users\cowanr\OneDrive - Trillium Health Products\Desktop\Facility Monitor\AdvancedHMIDrivers\obj\Debug\AdvancedHMIDrivers.Resources.resources
+C:\Users\cowanr\OneDrive - Trillium Health Products\Desktop\Facility Monitor\AdvancedHMIDrivers\obj\Debug\AdvancedHMIDrivers.vbproj.GenerateResource.cache
+C:\Users\cowanr\OneDrive - Trillium Health Products\Desktop\Facility Monitor\AdvancedHMIDrivers\obj\Debug\AdvancedHMIDrivers.vbproj.CoreCompileInputs.cache
+C:\Users\cowanr\OneDrive - Trillium Health Products\Desktop\Facility Monitor\AdvancedHMIDrivers\obj\Debug\AdvancedHMIDrivers.vbproj.CopyComplete
+C:\Users\cowanr\OneDrive - Trillium Health Products\Desktop\Facility Monitor\AdvancedHMIDrivers\obj\Debug\AdvancedHMIDrivers.dll
+C:\Users\cowanr\OneDrive - Trillium Health Products\Desktop\Facility Monitor\AdvancedHMIDrivers\obj\Debug\AdvancedHMIDrivers.xml
+C:\Users\cowanr\OneDrive - Trillium Health Products\Desktop\Facility Monitor\AdvancedHMIDrivers\obj\Debug\AdvancedHMIDrivers.pdb
