@@ -1,0 +1,110 @@
+C:\Users\cowanr\Desktop\VB Projects\Facility Monitor\AdvancedHMIControls\bin\Release\AdvancedHMIControls.dll
+C:\Users\cowanr\Desktop\VB Projects\Facility Monitor\AdvancedHMIControls\bin\Release\AdvancedHMIControls.pdb
+C:\Users\cowanr\Desktop\VB Projects\Facility Monitor\AdvancedHMIControls\bin\Release\AdvancedHMIControls.xml
+C:\Users\cowanr\Desktop\VB Projects\Facility Monitor\AdvancedHMIControls\bin\Release\AdvancedHMIDrivers.dll
+C:\Users\cowanr\Desktop\VB Projects\Facility Monitor\AdvancedHMIControls\bin\Release\MfgControl.AdvancedHMI.Controls.dll
+C:\Users\cowanr\Desktop\VB Projects\Facility Monitor\AdvancedHMIControls\bin\Release\MfgControl.AdvancedHMI.Drivers.dll
+C:\Users\cowanr\Desktop\VB Projects\Facility Monitor\AdvancedHMIControls\bin\Release\OpcNetApi.dll
+C:\Users\cowanr\Desktop\VB Projects\Facility Monitor\AdvancedHMIControls\bin\Release\OpcNetApi.Com.dll
+C:\Users\cowanr\Desktop\VB Projects\Facility Monitor\AdvancedHMIControls\bin\Release\OpcComRcw.dll
+C:\Users\cowanr\Desktop\VB Projects\Facility Monitor\AdvancedHMIControls\bin\Release\AdvancedHMIDrivers.pdb
+C:\Users\cowanr\Desktop\VB Projects\Facility Monitor\AdvancedHMIControls\bin\Release\AdvancedHMIDrivers.xml
+C:\Users\cowanr\Desktop\VB Projects\Facility Monitor\AdvancedHMIControls\bin\Release\OpcNetApi.xml
+C:\Users\cowanr\Desktop\VB Projects\Facility Monitor\AdvancedHMIControls\bin\Release\OpcNetApi.Com.xml
+C:\Users\cowanr\Desktop\VB Projects\Facility Monitor\AdvancedHMIControls\obj\Release\AdvancedHMIControls.vbprojAssemblyReference.cache
+C:\Users\cowanr\Desktop\VB Projects\Facility Monitor\AdvancedHMIControls\obj\Release\AdvancedHMIControls.ThreeButtons.resources
+C:\Users\cowanr\Desktop\VB Projects\Facility Monitor\AdvancedHMIControls\obj\Release\AdvancedHMIControls.Resources.resources
+C:\Users\cowanr\Desktop\VB Projects\Facility Monitor\AdvancedHMIControls\obj\Release\AdvancedHMIControls.vbproj.GenerateResource.cache
+C:\Users\cowanr\Desktop\VB Projects\Facility Monitor\AdvancedHMIControls\obj\Release\AdvancedHMIControls.vbproj.CoreCompileInputs.cache
+C:\Users\cowanr\Desktop\VB Projects\Facility Monitor\AdvancedHMIControls\obj\Release\AdvancedHMIControls.vbproj.CopyComplete
+C:\Users\cowanr\Desktop\VB Projects\Facility Monitor\AdvancedHMIControls\obj\Release\AdvancedHMIControls.dll
+C:\Users\cowanr\Desktop\VB Projects\Facility Monitor\AdvancedHMIControls\obj\Release\AdvancedHMIControls.xml
+C:\Users\cowanr\Desktop\VB Projects\Facility Monitor\AdvancedHMIControls\obj\Release\AdvancedHMIControls.pdb
+C:\Users\PLC\Desktop\PLC TEST FOLDER\Facility Monitor\AdvancedHMIControls\bin\Release\AdvancedHMIControls.dll
+C:\Users\PLC\Desktop\PLC TEST FOLDER\Facility Monitor\AdvancedHMIControls\bin\Release\AdvancedHMIControls.pdb
+C:\Users\PLC\Desktop\PLC TEST FOLDER\Facility Monitor\AdvancedHMIControls\bin\Release\AdvancedHMIControls.xml
+C:\Users\PLC\Desktop\PLC TEST FOLDER\Facility Monitor\AdvancedHMIControls\bin\Release\AdvancedHMIDrivers.dll
+C:\Users\PLC\Desktop\PLC TEST FOLDER\Facility Monitor\AdvancedHMIControls\bin\Release\MfgControl.AdvancedHMI.Controls.dll
+C:\Users\PLC\Desktop\PLC TEST FOLDER\Facility Monitor\AdvancedHMIControls\bin\Release\MfgControl.AdvancedHMI.Drivers.dll
+C:\Users\PLC\Desktop\PLC TEST FOLDER\Facility Monitor\AdvancedHMIControls\bin\Release\OpcNetApi.dll
+C:\Users\PLC\Desktop\PLC TEST FOLDER\Facility Monitor\AdvancedHMIControls\bin\Release\OpcNetApi.Com.dll
+C:\Users\PLC\Desktop\PLC TEST FOLDER\Facility Monitor\AdvancedHMIControls\bin\Release\OpcComRcw.dll
+C:\Users\PLC\Desktop\PLC TEST FOLDER\Facility Monitor\AdvancedHMIControls\bin\Release\AdvancedHMIDrivers.pdb
+C:\Users\PLC\Desktop\PLC TEST FOLDER\Facility Monitor\AdvancedHMIControls\bin\Release\AdvancedHMIDrivers.xml
+C:\Users\PLC\Desktop\PLC TEST FOLDER\Facility Monitor\AdvancedHMIControls\bin\Release\OpcNetApi.xml
+C:\Users\PLC\Desktop\PLC TEST FOLDER\Facility Monitor\AdvancedHMIControls\bin\Release\OpcNetApi.Com.xml
+C:\Users\PLC\Desktop\PLC TEST FOLDER\Facility Monitor\AdvancedHMIControls\obj\Release\AdvancedHMIControls.vbprojAssemblyReference.cache
+C:\Users\PLC\Desktop\PLC TEST FOLDER\Facility Monitor\AdvancedHMIControls\obj\Release\AdvancedHMIControls.ThreeButtons.resources
+C:\Users\PLC\Desktop\PLC TEST FOLDER\Facility Monitor\AdvancedHMIControls\obj\Release\AdvancedHMIControls.Resources.resources
+C:\Users\PLC\Desktop\PLC TEST FOLDER\Facility Monitor\AdvancedHMIControls\obj\Release\AdvancedHMIControls.vbproj.GenerateResource.cache
+C:\Users\PLC\Desktop\PLC TEST FOLDER\Facility Monitor\AdvancedHMIControls\obj\Release\AdvancedHMIControls.vbproj.CoreCompileInputs.cache
+C:\Users\PLC\Desktop\PLC TEST FOLDER\Facility Monitor\AdvancedHMIControls\obj\Release\AdvancedHMIControls.vbproj.CopyComplete
+C:\Users\PLC\Desktop\PLC TEST FOLDER\Facility Monitor\AdvancedHMIControls\obj\Release\AdvancedHMIControls.dll
+C:\Users\PLC\Desktop\PLC TEST FOLDER\Facility Monitor\AdvancedHMIControls\obj\Release\AdvancedHMIControls.xml
+C:\Users\PLC\Desktop\PLC TEST FOLDER\Facility Monitor\AdvancedHMIControls\obj\Release\AdvancedHMIControls.pdb
+C:\Users\cowanr\Desktop\Facility Monitor\AdvancedHMIControls\bin\Release\AdvancedHMIControls.dll
+C:\Users\cowanr\Desktop\Facility Monitor\AdvancedHMIControls\bin\Release\AdvancedHMIControls.pdb
+C:\Users\cowanr\Desktop\Facility Monitor\AdvancedHMIControls\bin\Release\AdvancedHMIControls.xml
+C:\Users\cowanr\Desktop\Facility Monitor\AdvancedHMIControls\bin\Release\AdvancedHMIDrivers.dll
+C:\Users\cowanr\Desktop\Facility Monitor\AdvancedHMIControls\bin\Release\MfgControl.AdvancedHMI.Controls.dll
+C:\Users\cowanr\Desktop\Facility Monitor\AdvancedHMIControls\bin\Release\MfgControl.AdvancedHMI.Drivers.dll
+C:\Users\cowanr\Desktop\Facility Monitor\AdvancedHMIControls\bin\Release\OpcNetApi.dll
+C:\Users\cowanr\Desktop\Facility Monitor\AdvancedHMIControls\bin\Release\OpcNetApi.Com.dll
+C:\Users\cowanr\Desktop\Facility Monitor\AdvancedHMIControls\bin\Release\OpcComRcw.dll
+C:\Users\cowanr\Desktop\Facility Monitor\AdvancedHMIControls\bin\Release\AdvancedHMIDrivers.pdb
+C:\Users\cowanr\Desktop\Facility Monitor\AdvancedHMIControls\bin\Release\AdvancedHMIDrivers.xml
+C:\Users\cowanr\Desktop\Facility Monitor\AdvancedHMIControls\bin\Release\OpcNetApi.xml
+C:\Users\cowanr\Desktop\Facility Monitor\AdvancedHMIControls\bin\Release\OpcNetApi.Com.xml
+C:\Users\cowanr\Desktop\Facility Monitor\AdvancedHMIControls\obj\Release\AdvancedHMIControls.ThreeButtons.resources
+C:\Users\cowanr\Desktop\Facility Monitor\AdvancedHMIControls\obj\Release\AdvancedHMIControls.Resources.resources
+C:\Users\cowanr\Desktop\Facility Monitor\AdvancedHMIControls\obj\Release\AdvancedHMIControls.vbproj.GenerateResource.cache
+C:\Users\cowanr\Desktop\Facility Monitor\AdvancedHMIControls\obj\Release\AdvancedHMIControls.vbproj.CoreCompileInputs.cache
+C:\Users\cowanr\Desktop\Facility Monitor\AdvancedHMIControls\obj\Release\AdvancedHMIControls.vbproj.CopyComplete
+C:\Users\cowanr\Desktop\Facility Monitor\AdvancedHMIControls\obj\Release\AdvancedHMIControls.dll
+C:\Users\cowanr\Desktop\Facility Monitor\AdvancedHMIControls\obj\Release\AdvancedHMIControls.xml
+C:\Users\cowanr\Desktop\Facility Monitor\AdvancedHMIControls\obj\Release\AdvancedHMIControls.pdb
+C:\Users\cowanr\Desktop\Facility Monitor\AdvancedHMIControls\obj\Release\AdvancedHMIControls.vbproj.AssemblyReference.cache
+C:\Users\cowanr\OneDrive - Trillium Health Products\Desktop\Facility Monitor\AdvancedHMIControls\bin\Release\AdvancedHMIControls.dll
+C:\Users\cowanr\OneDrive - Trillium Health Products\Desktop\Facility Monitor\AdvancedHMIControls\bin\Release\AdvancedHMIControls.pdb
+C:\Users\cowanr\OneDrive - Trillium Health Products\Desktop\Facility Monitor\AdvancedHMIControls\bin\Release\AdvancedHMIControls.xml
+C:\Users\cowanr\OneDrive - Trillium Health Products\Desktop\Facility Monitor\AdvancedHMIControls\bin\Release\AdvancedHMIDrivers.dll
+C:\Users\cowanr\OneDrive - Trillium Health Products\Desktop\Facility Monitor\AdvancedHMIControls\bin\Release\MfgControl.AdvancedHMI.Controls.dll
+C:\Users\cowanr\OneDrive - Trillium Health Products\Desktop\Facility Monitor\AdvancedHMIControls\bin\Release\MfgControl.AdvancedHMI.Drivers.dll
+C:\Users\cowanr\OneDrive - Trillium Health Products\Desktop\Facility Monitor\AdvancedHMIControls\bin\Release\OpcNetApi.dll
+C:\Users\cowanr\OneDrive - Trillium Health Products\Desktop\Facility Monitor\AdvancedHMIControls\bin\Release\OpcNetApi.Com.dll
+C:\Users\cowanr\OneDrive - Trillium Health Products\Desktop\Facility Monitor\AdvancedHMIControls\bin\Release\OpcComRcw.dll
+C:\Users\cowanr\OneDrive - Trillium Health Products\Desktop\Facility Monitor\AdvancedHMIControls\bin\Release\AdvancedHMIDrivers.pdb
+C:\Users\cowanr\OneDrive - Trillium Health Products\Desktop\Facility Monitor\AdvancedHMIControls\bin\Release\AdvancedHMIDrivers.xml
+C:\Users\cowanr\OneDrive - Trillium Health Products\Desktop\Facility Monitor\AdvancedHMIControls\bin\Release\OpcNetApi.xml
+C:\Users\cowanr\OneDrive - Trillium Health Products\Desktop\Facility Monitor\AdvancedHMIControls\bin\Release\OpcNetApi.Com.xml
+C:\Users\cowanr\OneDrive - Trillium Health Products\Desktop\Facility Monitor\AdvancedHMIControls\obj\Release\AdvancedHMIControls.vbproj.AssemblyReference.cache
+C:\Users\cowanr\OneDrive - Trillium Health Products\Desktop\Facility Monitor\AdvancedHMIControls\obj\Release\AdvancedHMIControls.ThreeButtons.resources
+C:\Users\cowanr\OneDrive - Trillium Health Products\Desktop\Facility Monitor\AdvancedHMIControls\obj\Release\AdvancedHMIControls.Resources.resources
+C:\Users\cowanr\OneDrive - Trillium Health Products\Desktop\Facility Monitor\AdvancedHMIControls\obj\Release\AdvancedHMIControls.vbproj.GenerateResource.cache
+C:\Users\cowanr\OneDrive - Trillium Health Products\Desktop\Facility Monitor\AdvancedHMIControls\obj\Release\AdvancedHMIControls.vbproj.CoreCompileInputs.cache
+C:\Users\cowanr\OneDrive - Trillium Health Products\Desktop\Facility Monitor\AdvancedHMIControls\obj\Release\AdvancedHMIControls.vbproj.CopyComplete
+C:\Users\cowanr\OneDrive - Trillium Health Products\Desktop\Facility Monitor\AdvancedHMIControls\obj\Release\AdvancedHMIControls.dll
+C:\Users\cowanr\OneDrive - Trillium Health Products\Desktop\Facility Monitor\AdvancedHMIControls\obj\Release\AdvancedHMIControls.xml
+C:\Users\cowanr\OneDrive - Trillium Health Products\Desktop\Facility Monitor\AdvancedHMIControls\obj\Release\AdvancedHMIControls.pdb
+C:\Users\cowanr\source\repos\Facility Monitor\AdvancedHMIControls\bin\Release\AdvancedHMIControls.dll
+C:\Users\cowanr\source\repos\Facility Monitor\AdvancedHMIControls\bin\Release\AdvancedHMIControls.pdb
+C:\Users\cowanr\source\repos\Facility Monitor\AdvancedHMIControls\bin\Release\AdvancedHMIControls.xml
+C:\Users\cowanr\source\repos\Facility Monitor\AdvancedHMIControls\bin\Release\AdvancedHMIDrivers.dll
+C:\Users\cowanr\source\repos\Facility Monitor\AdvancedHMIControls\bin\Release\MfgControl.AdvancedHMI.Controls.dll
+C:\Users\cowanr\source\repos\Facility Monitor\AdvancedHMIControls\bin\Release\MfgControl.AdvancedHMI.Drivers.dll
+C:\Users\cowanr\source\repos\Facility Monitor\AdvancedHMIControls\bin\Release\OpcNetApi.dll
+C:\Users\cowanr\source\repos\Facility Monitor\AdvancedHMIControls\bin\Release\OpcNetApi.Com.dll
+C:\Users\cowanr\source\repos\Facility Monitor\AdvancedHMIControls\bin\Release\OpcComRcw.dll
+C:\Users\cowanr\source\repos\Facility Monitor\AdvancedHMIControls\bin\Release\AdvancedHMIDrivers.pdb
+C:\Users\cowanr\source\repos\Facility Monitor\AdvancedHMIControls\bin\Release\AdvancedHMIDrivers.xml
+C:\Users\cowanr\source\repos\Facility Monitor\AdvancedHMIControls\bin\Release\OpcNetApi.xml
+C:\Users\cowanr\source\repos\Facility Monitor\AdvancedHMIControls\bin\Release\OpcNetApi.Com.xml
+C:\Users\cowanr\source\repos\Facility Monitor\AdvancedHMIControls\obj\Release\AdvancedHMIControls.vbproj.AssemblyReference.cache
+C:\Users\cowanr\source\repos\Facility Monitor\AdvancedHMIControls\obj\Release\AdvancedHMIControls.ThreeButtons.resources
+C:\Users\cowanr\source\repos\Facility Monitor\AdvancedHMIControls\obj\Release\AdvancedHMIControls.Resources.resources
+C:\Users\cowanr\source\repos\Facility Monitor\AdvancedHMIControls\obj\Release\AdvancedHMIControls.vbproj.GenerateResource.cache
+C:\Users\cowanr\source\repos\Facility Monitor\AdvancedHMIControls\obj\Release\AdvancedHMIControls.vbproj.CoreCompileInputs.cache
+C:\Users\cowanr\source\repos\Facility Monitor\AdvancedHMIControls\obj\Release\Advanced.24C84BB6.Up2Date
+C:\Users\cowanr\source\repos\Facility Monitor\AdvancedHMIControls\obj\Release\AdvancedHMIControls.dll
+C:\Users\cowanr\source\repos\Facility Monitor\AdvancedHMIControls\obj\Release\AdvancedHMIControls.xml
+C:\Users\cowanr\source\repos\Facility Monitor\AdvancedHMIControls\obj\Release\AdvancedHMIControls.pdb
