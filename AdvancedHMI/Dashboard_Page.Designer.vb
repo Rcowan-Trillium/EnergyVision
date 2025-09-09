@@ -12674,7 +12674,7 @@ Partial Class Dashboard_Page
         Me.Label58.Name = "Label58"
         Me.Label58.Size = New System.Drawing.Size(325, 26)
         Me.Label58.TabIndex = 170
-        Me.Label58.Text = "FAST PLC - Heartbeat"
+        Me.Label58.Text = "(0.1s) PLC - Heartbeat"
         Me.Label58.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'BarLevel2
