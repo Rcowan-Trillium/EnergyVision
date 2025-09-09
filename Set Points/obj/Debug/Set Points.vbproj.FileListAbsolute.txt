@@ -1,0 +1,26 @@
+C:\Users\cowanr\Desktop\Facility Monitor\Set Points\bin\Debug\Set Points.exe.config
+C:\Users\cowanr\Desktop\Facility Monitor\Set Points\bin\Debug\Set Points.exe
+C:\Users\cowanr\Desktop\Facility Monitor\Set Points\bin\Debug\Set Points.pdb
+C:\Users\cowanr\Desktop\Facility Monitor\Set Points\bin\Debug\Set Points.xml
+C:\Users\cowanr\Desktop\Facility Monitor\Set Points\bin\Debug\AdvancedHMIControls.dll
+C:\Users\cowanr\Desktop\Facility Monitor\Set Points\bin\Debug\AdvancedHMIDrivers.dll
+C:\Users\cowanr\Desktop\Facility Monitor\Set Points\bin\Debug\MfgControl.AdvancedHMI.Controls.dll
+C:\Users\cowanr\Desktop\Facility Monitor\Set Points\bin\Debug\MfgControl.AdvancedHMI.Drivers.dll
+C:\Users\cowanr\Desktop\Facility Monitor\Set Points\bin\Debug\OpcNetApi.dll
+C:\Users\cowanr\Desktop\Facility Monitor\Set Points\bin\Debug\OpcNetApi.Com.dll
+C:\Users\cowanr\Desktop\Facility Monitor\Set Points\bin\Debug\OpcComRcw.dll
+C:\Users\cowanr\Desktop\Facility Monitor\Set Points\bin\Debug\AdvancedHMIControls.pdb
+C:\Users\cowanr\Desktop\Facility Monitor\Set Points\bin\Debug\AdvancedHMIControls.xml
+C:\Users\cowanr\Desktop\Facility Monitor\Set Points\bin\Debug\AdvancedHMIDrivers.pdb
+C:\Users\cowanr\Desktop\Facility Monitor\Set Points\bin\Debug\AdvancedHMIDrivers.xml
+C:\Users\cowanr\Desktop\Facility Monitor\Set Points\bin\Debug\OpcNetApi.xml
+C:\Users\cowanr\Desktop\Facility Monitor\Set Points\bin\Debug\OpcNetApi.Com.xml
+C:\Users\cowanr\Desktop\Facility Monitor\Set Points\obj\Debug\Set_Points.Form1.resources
+C:\Users\cowanr\Desktop\Facility Monitor\Set Points\obj\Debug\Set_Points.Resources.resources
+C:\Users\cowanr\Desktop\Facility Monitor\Set Points\obj\Debug\Set Points.vbproj.GenerateResource.cache
+C:\Users\cowanr\Desktop\Facility Monitor\Set Points\obj\Debug\Set Points.vbproj.CoreCompileInputs.cache
+C:\Users\cowanr\Desktop\Facility Monitor\Set Points\obj\Debug\Set Points.vbproj.CopyComplete
+C:\Users\cowanr\Desktop\Facility Monitor\Set Points\obj\Debug\Set Points.exe
+C:\Users\cowanr\Desktop\Facility Monitor\Set Points\obj\Debug\Set Points.xml
+C:\Users\cowanr\Desktop\Facility Monitor\Set Points\obj\Debug\Set Points.pdb
+C:\Users\cowanr\Desktop\Facility Monitor\Set Points\obj\Debug\Set Points.vbproj.AssemblyReference.cache
