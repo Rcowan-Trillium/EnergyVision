@@ -2533,24 +2533,55 @@ VALUES (@DT,@CWSUP, @CWPRP, @CWPOP, @CWFD, @HWPRP, @HWPOP, @HWFD, @HWTP, @HWFL, 
         Else
             LoginTimeRemaining = GetNumeric(INI_GetKey_System("APP", "USER_TO"))
         End If
+    End Sub
 
+    Public Sub SP_LevelCheck(sender As Object, e As MouseEventArgs) Handles ALP_Min.Click, ALP_Max.Click,
+        ELSC_Min.Click, ELSC_Max.Click,
+        ELSB_Min.Click, ELSB_Max.Click,
+        ELSA_Min.Click, ELSA_Max.Click,
+        ELNC_Min.Click, ELNC_Max.Click,
+        ELNB_Min.Click, ELNB_Max.Click,
+        ELNA_Min.Click, ELNA_Max.Click,
+        STMP_Min.Click, STMP_Max.Click,
+        STLP_Min.Click, STLP_Max.Click,
+        STHP_Min.Click, STHP_Max.Click,
+        STFL_Min.Click, STFL_Max.Click,
+        STFWP_Min.Click, STFWP_Max.Click,
+        CWPRP_Min.Click, CWPRP_Max.Click,
+        CWPOP_Min.Click, CWPOP_Max.Click,
+        CWFD_Min.Click, CWFD_Max.Click,
+        CWSUP_Min.Click, CWSUP_Max.Click,
+        HWPRP_Min.Click, HWPRP_Max.Click,
+        HWPOP_Min.Click, HWPOP_Max.Click,
+        HWFD_Min.Click, HWFD_Max.Click,
+        HWTP_Min.Click, HWTP_Max.Click,
+        HWFL_Min.Click, HWFL_Max.Click,
+        STMPDEM_Min.Click, STMPDEM_Max.Click,
+        STLPDEM_Min.Click, STLPDEM_Max.Click
+
+        If CurrentUser = "System" Or CurrentUserLevel < 3 Then
+            ShowLoginScreen()
+        End If
+
+    End Sub
+
+    Sub ShowLoginScreen()
+        USER_Input_CB.Items.Clear()
+        Dim USERS As List(Of String) = INI_GetKey_AllUSER()
+        For Each i As String In USERS
+            USER_Input_CB.Items.Add(i)
+        Next
+        LastLogin_Label.Text = ""
+        Login_Screen.Show()
+        Login_Screen.BringToFront()
 
     End Sub
     Private Sub Goto_Login(sender As Object, e As EventArgs) Handles Goto_Login_Screen.Click
         If LoginTimer.Enabled = True AndAlso CurrentUser IsNot "System" Then
             USER_LOGOUT()
         Else
+            ShowLoginScreen()
 
-            USER_Input_CB.Items.Clear()
-            Dim USERS As List(Of String) = INI_GetKey_AllUSER()
-            For Each i As String In USERS
-                USER_Input_CB.Items.Add(i)
-            Next
-
-            LoginButton.ForeColor = Color.Green
-            LastLogin_Label.Text = ""
-            Login_Screen.Show()
-            Login_Screen.BringToFront()
         End If
     End Sub
     Private Sub UserInputListOpen(sender As Object, e As EventArgs) Handles USER_Input_CB.Click
@@ -3365,8 +3396,8 @@ VALUES (@DT,@CWSUP, @CWPRP, @CWPOP, @CWFD, @HWPRP, @HWPOP, @HWFD, @HWTP, @HWFL, 
                 If RunSQL Then SaveSystemData(GetNow(), "Electrical Alarm #" & GetNumeric(sender.name) & " Falcon Alarm set to: True", CurrentUser)
             End If
         Else
-            Login_Screen.Show()
-            Login_Screen.BringToFront()
+
+            ShowLoginScreen()
         End If
     End Sub
     Private Sub ElecAudAlarmMask_Changed(sender As System.Object, e As EventArgs) Handles ElecAudAlarm0.Click, ElecAudAlarm1.Click, ElecAudAlarm2.Click, ElecAudAlarm3.Click, ElecAudAlarm4.Click, ElecAudAlarm5.Click,
@@ -3391,8 +3422,7 @@ VALUES (@DT,@CWSUP, @CWPRP, @CWPOP, @CWFD, @HWPRP, @HWPOP, @HWFD, @HWTP, @HWFL, 
                 If RunSQL Then SaveSystemData(GetNow(), "Electrical Alarm #" & GetNumeric(sender.name) & " Audible Alarm set to: True", CurrentUser)
             End If
         Else
-            Login_Screen.Show()
-            Login_Screen.BringToFront()
+            ShowLoginScreen()
         End If
 
 
@@ -3420,8 +3450,7 @@ VALUES (@DT,@CWSUP, @CWPRP, @CWPOP, @CWFD, @HWPRP, @HWPOP, @HWFD, @HWTP, @HWFL, 
                 If RunSQL Then SaveSystemData(GetNow(), "Air Alarm #" & GetNumeric(sender.name) & " Falcon Alarm set to: True", CurrentUser)
             End If
         Else
-            Login_Screen.Show()
-            Login_Screen.BringToFront()
+            ShowLoginScreen()
         End If
     End Sub
     Private Sub AirAudAlarmMask_Changed(sender As System.Object, e As EventArgs) Handles AirAudAlarm0.Click, AirAudAlarm1.Click, AirAudAlarm2.Click, AirAudAlarm3.Click, AirAudAlarm4.Click, AirAudAlarm5.Click,
@@ -3446,8 +3475,7 @@ VALUES (@DT,@CWSUP, @CWPRP, @CWPOP, @CWFD, @HWPRP, @HWPOP, @HWFD, @HWTP, @HWFL, 
                 If RunSQL Then SaveSystemData(GetNow(), "Air Alarm #" & GetNumeric(sender.name) & " Audible Alarm set to: True", CurrentUser)
             End If
         Else
-            Login_Screen.Show()
-            Login_Screen.BringToFront()
+            ShowLoginScreen()
         End If
     End Sub
     Private Sub WaterFalcAlarmMask_Changed(sender As System.Object, e As EventArgs) Handles WaterFalcAlarm0.Click, WaterFalcAlarm1.Click, WaterFalcAlarm2.Click, WaterFalcAlarm3.Click, WaterFalcAlarm4.Click, WaterFalcAlarm5.Click,
@@ -3472,8 +3500,7 @@ VALUES (@DT,@CWSUP, @CWPRP, @CWPOP, @CWFD, @HWPRP, @HWPOP, @HWFD, @HWTP, @HWFL, 
                 If RunSQL Then SaveSystemData(GetNow(), "Water Alarm #" & GetNumeric(sender.name) & " Falcon Alarm set to: True", CurrentUser)
             End If
         Else
-            Login_Screen.Show()
-            Login_Screen.BringToFront()
+            ShowLoginScreen()
         End If
     End Sub
     Private Sub WaterAudAlarmMask_Changed(sender As System.Object, e As EventArgs) Handles WaterAudAlarm0.Click, WaterAudAlarm1.Click, WaterAudAlarm2.Click, WaterAudAlarm3.Click, WaterAudAlarm4.Click, WaterAudAlarm5.Click,
@@ -3498,8 +3525,7 @@ VALUES (@DT,@CWSUP, @CWPRP, @CWPOP, @CWFD, @HWPRP, @HWPOP, @HWFD, @HWTP, @HWFL, 
                 If RunSQL Then SaveSystemData(GetNow(), "Water Alarm #" & GetNumeric(sender.name) & " Audible Alarm set to: True", CurrentUser)
             End If
         Else
-            Login_Screen.Show()
-            Login_Screen.BringToFront()
+            ShowLoginScreen()
         End If
     End Sub
     Private Sub SteamFalcAlarmMask_Changed(sender As System.Object, e As EventArgs) Handles SteamFalcAlarm0.Click, SteamFalcAlarm1.Click, SteamFalcAlarm2.Click, SteamFalcAlarm3.Click, SteamFalcAlarm4.Click, SteamFalcAlarm5.Click,
@@ -3524,8 +3550,7 @@ VALUES (@DT,@CWSUP, @CWPRP, @CWPOP, @CWFD, @HWPRP, @HWPOP, @HWFD, @HWTP, @HWFL, 
                 If RunSQL Then SaveSystemData(GetNow(), "Steam Alarm #" & GetNumeric(sender.name) & " Falcon Alarm set to: True", CurrentUser)
             End If
         Else
-            Login_Screen.Show()
-            Login_Screen.BringToFront()
+            ShowLoginScreen()
         End If
     End Sub
     Private Sub SteamAudAlarmMask_Changed(sender As System.Object, e As EventArgs) Handles SteamAudAlarm0.Click, SteamAudAlarm1.Click, SteamAudAlarm2.Click, SteamAudAlarm3.Click, SteamAudAlarm4.Click, SteamAudAlarm5.Click,
@@ -3550,8 +3575,7 @@ VALUES (@DT,@CWSUP, @CWPRP, @CWPOP, @CWFD, @HWPRP, @HWPOP, @HWFD, @HWTP, @HWFL, 
                 If RunSQL Then SaveSystemData(GetNow(), "Steam Alarm #" & GetNumeric(sender.name) & " Audible Alarm set to: True", CurrentUser)
             End If
         Else
-            Login_Screen.Show()
-            Login_Screen.BringToFront()
+            ShowLoginScreen()
         End If
     End Sub
     '║                                                                                                              ║
@@ -3589,8 +3613,7 @@ VALUES (@DT,@CWSUP, @CWPRP, @CWPOP, @CWFD, @HWPRP, @HWPOP, @HWFD, @HWTP, @HWFL, 
                 UpdateIODescriptionLabels()
             End If
         Else
-            Login_Screen.Show()
-            Login_Screen.BringToFront()
+            ShowLoginScreen()
         End If
 
 
@@ -4224,8 +4247,7 @@ VALUES (@DT,@CWSUP, @CWPRP, @CWPOP, @CWFD, @HWPRP, @HWPOP, @HWFD, @HWTP, @HWFL, 
                 RefreshSettingsScreen()
             End If
         Else
-            Login_Screen.Show()
-            Login_Screen.BringToFront()
+            ShowLoginScreen()
         End If
     End Sub
 
@@ -4289,8 +4311,7 @@ VALUES (@DT,@CWSUP, @CWPRP, @CWPOP, @CWFD, @HWPRP, @HWPOP, @HWFD, @HWTP, @HWFL, 
                 ToolTip1.SetToolTip(sender, "NONE")
             End If
         Else
-            Login_Screen.Show()
-            Login_Screen.BringToFront()
+            ShowLoginScreen()
         End If
     End Sub
     Private Sub ChangeHighAddressClick(sender As System.Object, e As EventArgs) Handles CWPRP_High.Click,
@@ -4318,8 +4339,7 @@ VALUES (@DT,@CWSUP, @CWPRP, @CWPOP, @CWFD, @HWPRP, @HWPOP, @HWFD, @HWTP, @HWFL, 
                 ToolTip1.SetToolTip(sender, "NONE")
             End If
         Else
-            Login_Screen.Show()
-            Login_Screen.BringToFront()
+            ShowLoginScreen()
         End If
     End Sub
     Private Sub ChangeLowAddressClick(sender As System.Object, e As EventArgs) Handles CWPRP_Low.Click,
@@ -4347,8 +4367,7 @@ VALUES (@DT,@CWSUP, @CWPRP, @CWPOP, @CWFD, @HWPRP, @HWPOP, @HWFD, @HWTP, @HWFL, 
                 ToolTip1.SetToolTip(sender, "NONE")
             End If
         Else
-            Login_Screen.Show()
-            Login_Screen.BringToFront()
+            ShowLoginScreen()
         End If
     End Sub
     Private Sub ChangeTitlesClick(sender As System.Object, e As EventArgs) Handles CWPRP_Title.Click,
@@ -4374,8 +4393,7 @@ VALUES (@DT,@CWSUP, @CWPRP, @CWPOP, @CWFD, @HWPRP, @HWPOP, @HWFD, @HWTP, @HWFL, 
                 MsgBox("Entry must not be empty")
             End If
         Else
-            Login_Screen.Show()
-            Login_Screen.BringToFront()
+            ShowLoginScreen()
         End If
 
     End Sub
@@ -4402,8 +4420,7 @@ VALUES (@DT,@CWSUP, @CWPRP, @CWPOP, @CWFD, @HWPRP, @HWPOP, @HWFD, @HWTP, @HWFL, 
                 MsgBox("Entry must not be empty")
             End If
         Else
-            Login_Screen.Show()
-            Login_Screen.BringToFront()
+            ShowLoginScreen()
         End If
 
     End Sub

@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AdvancedHMI.exe" size="11736576">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AdvancedHMI.exe" size="11740160">
       <assemblyIdentity name="AdvancedHMI" version="3.9.9.24" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>s/gzg4lrx2v29U9vRchv3Kqj0IDd15sgF8LTaGgFnE0=</dsig:DigestValue>
+        <dsig:DigestValue>gQu7eScUrgpmW262qOcr2fpnej6jDsSLaphlKHbAqaE=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -61,7 +61,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>Zh7o5Dc20BNQ/CSQ/zhuDUwi/vlGKATHfcVj7AV7hEU=</dsig:DigestValue>
+        <dsig:DigestValue>rfFUphkltL4fpDNrrbtXjzHCKz2o06hUghBxmmnWmd0=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -73,7 +73,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>af/39iqVvp4zAx048f7k/0ybSoIs+DykPEp6gyuflP0=</dsig:DigestValue>
+        <dsig:DigestValue>/PDJKQe60iq6ZZItAppbxJQhawre/A/DjmhvLNLlJ3c=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
