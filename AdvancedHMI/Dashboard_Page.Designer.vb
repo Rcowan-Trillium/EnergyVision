@@ -974,10 +974,6 @@ Partial Class Dashboard_Page
         Me.Label246 = New System.Windows.Forms.Label()
         Me.FBD1 = New System.Windows.Forms.FolderBrowserDialog()
         Me.BoilerPumpRunTimer = New System.Windows.Forms.Timer(Me.components)
-        Me.StartUpScreen = New System.Windows.Forms.GroupBox()
-        Me.PictureBox41 = New System.Windows.Forms.PictureBox()
-        Me.StartupStatusLabel = New System.Windows.Forms.Label()
-        Me.PictureBox65 = New System.Windows.Forms.PictureBox()
         Me.ColorDialog1 = New System.Windows.Forms.ColorDialog()
         Me.Compressor_Page = New System.Windows.Forms.Panel()
         Me.Pipe177 = New AdvancedHMIControls.Pipe()
@@ -1912,6 +1908,8 @@ Partial Class Dashboard_Page
         Me.Chng14_SITimeoutLabel = New System.Windows.Forms.Label()
         Me.Chng15_BPTimeoutLabel = New System.Windows.Forms.Label()
         Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
+        Me.MyApplicationBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.MyApplicationBindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
         Me.InsideTempDisp1 = New AdvancedHMIControls.BasicLabel()
         Me.InsideHumidityDisp1 = New AdvancedHMIControls.BasicLabel()
         Me.OutsideTempDisp1 = New AdvancedHMIControls.BasicLabel()
@@ -1921,8 +1919,9 @@ Partial Class Dashboard_Page
         Me.SimpleWebServer1 = New AdvancedHMIControls.SimpleWebServer()
         Me.SoundPlayer1 = New AdvancedHMIControls.SoundPlayer()
         Me.BasicDataLogger21 = New AdvancedHMIControls.BasicDataLogger2()
-        Me.MyApplicationBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.MyApplicationBindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
+        Me.StartUpScreen = New System.Windows.Forms.Panel()
+        Me.StartupStatusLabel = New System.Windows.Forms.Label()
+        Me.PictureBox41 = New System.Windows.Forms.PictureBox()
         Me.Panel29.SuspendLayout
         CType(Me.NumericUpDown21, System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.NumericUpDown24, System.ComponentModel.ISupportInitialize).BeginInit
@@ -2219,9 +2218,6 @@ Partial Class Dashboard_Page
         Me.Slot6Panel.SuspendLayout
         Me.Slot7Panel.SuspendLayout
         Me.Login_Screen.SuspendLayout
-        Me.StartUpScreen.SuspendLayout
-        CType(Me.PictureBox41, System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PictureBox65, System.ComponentModel.ISupportInitialize).BeginInit
         Me.Compressor_Page.SuspendLayout
         CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.PictureBox17, System.ComponentModel.ISupportInitialize).BeginInit
@@ -2298,11 +2294,13 @@ Partial Class Dashboard_Page
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit
         Me.Panel34.SuspendLayout
         Me.AdminSettings_Page.SuspendLayout
+        CType(Me.MyApplicationBindingSource, System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.MyApplicationBindingSource1, System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.SimpleWebServer1, System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.SoundPlayer1, System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.BasicDataLogger21, System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.MyApplicationBindingSource, System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.MyApplicationBindingSource1, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.StartUpScreen.SuspendLayout
+        CType(Me.PictureBox41, System.ComponentModel.ISupportInitialize).BeginInit
         Me.SuspendLayout
         '
         'Goto_Dashboard_BTN
@@ -16479,53 +16477,6 @@ Partial Class Dashboard_Page
         Me.BoilerPumpRunTimer.Enabled = True
         Me.BoilerPumpRunTimer.Interval = 1000
         '
-        'StartUpScreen
-        '
-        Me.StartUpScreen.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.StartUpScreen.Controls.Add(Me.PictureBox41)
-        Me.StartUpScreen.Controls.Add(Me.StartupStatusLabel)
-        Me.StartUpScreen.Controls.Add(Me.PictureBox65)
-        Me.StartUpScreen.Location = New System.Drawing.Point(8, 2)
-        Me.StartUpScreen.Name = "StartUpScreen"
-        Me.StartUpScreen.Size = New System.Drawing.Size(1905, 1073)
-        Me.StartUpScreen.TabIndex = 245
-        Me.StartUpScreen.TabStop = False
-        '
-        'PictureBox41
-        '
-        Me.PictureBox41.Image = Global.MfgControl.AdvancedHMI.My.Resources.Resources.TEV_Ico
-        Me.PictureBox41.Location = New System.Drawing.Point(518, 328)
-        Me.PictureBox41.Name = "PictureBox41"
-        Me.PictureBox41.Size = New System.Drawing.Size(869, 694)
-        Me.PictureBox41.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox41.TabIndex = 376
-        Me.PictureBox41.TabStop = False
-        '
-        'StartupStatusLabel
-        '
-        Me.StartupStatusLabel.Font = New System.Drawing.Font("Arial", 48.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.StartupStatusLabel.ForeColor = System.Drawing.Color.White
-        Me.StartupStatusLabel.ImageAlign = System.Drawing.ContentAlignment.BottomLeft
-        Me.StartupStatusLabel.Location = New System.Drawing.Point(29, 128)
-        Me.StartupStatusLabel.Name = "StartupStatusLabel"
-        Me.StartupStatusLabel.Size = New System.Drawing.Size(1846, 195)
-        Me.StartupStatusLabel.TabIndex = 374
-        Me.StartupStatusLabel.Text = "Startup Starting..."
-        Me.StartupStatusLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'PictureBox65
-        '
-        Me.PictureBox65.Dock = System.Windows.Forms.DockStyle.Top
-        Me.PictureBox65.Image = CType(resources.GetObject("PictureBox65.Image"), System.Drawing.Image)
-        Me.PictureBox65.Location = New System.Drawing.Point(3, 16)
-        Me.PictureBox65.Name = "PictureBox65"
-        Me.PictureBox65.Size = New System.Drawing.Size(1899, 73)
-        Me.PictureBox65.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox65.TabIndex = 174
-        Me.PictureBox65.TabStop = False
-        '
         'Compressor_Page
         '
         Me.Compressor_Page.Controls.Add(Me.Pipe177)
@@ -28442,9 +28393,9 @@ Partial Class Dashboard_Page
         Me.Air_Pr_Main_G1.Band1EndValue = 999999.0R
         Me.Air_Pr_Main_G1.Band1StartValue = -999999.0R
         Me.Air_Pr_Main_G1.Band2Color = System.Drawing.Color.Green
-        Me.Air_Pr_Main_G1.Band2EndValue = 67.8R
+        Me.Air_Pr_Main_G1.Band2EndValue = 70.0R
         Me.Air_Pr_Main_G1.Band2StartValue = -19999.0R
-        Me.Air_Pr_Main_G1.BorderColor = System.Drawing.Color.White
+        Me.Air_Pr_Main_G1.BorderColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Air_Pr_Main_G1.BorderWidth = 0
         Me.Air_Pr_Main_G1.ComComponent = Me.PLC
         Me.Air_Pr_Main_G1.Font = New System.Drawing.Font("Agency FB", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -41030,6 +40981,14 @@ Partial Class Dashboard_Page
         Me.ToolTip1.UseAnimation = False
         Me.ToolTip1.UseFading = False
         '
+        'MyApplicationBindingSource
+        '
+        Me.MyApplicationBindingSource.DataSource = GetType(MfgControl.AdvancedHMI.My.MyApplication)
+        '
+        'MyApplicationBindingSource1
+        '
+        Me.MyApplicationBindingSource1.DataSource = GetType(MfgControl.AdvancedHMI.My.MyApplication)
+        '
         'InsideTempDisp1
         '
         Me.InsideTempDisp1.BackColor = System.Drawing.Color.Black
@@ -41266,13 +41225,37 @@ Partial Class Dashboard_Page
         Me.BasicDataLogger21.TimeStampFormat = "dd-MMM-yy HH:mm:ss"
         Me.BasicDataLogger21.Value = Nothing
         '
-        'MyApplicationBindingSource
+        'StartUpScreen
         '
-        Me.MyApplicationBindingSource.DataSource = GetType(MfgControl.AdvancedHMI.My.MyApplication)
+        Me.StartUpScreen.Controls.Add(Me.StartupStatusLabel)
+        Me.StartUpScreen.Controls.Add(Me.PictureBox41)
+        Me.StartUpScreen.Location = New System.Drawing.Point(0, 0)
+        Me.StartUpScreen.Name = "StartUpScreen"
+        Me.StartUpScreen.Size = New System.Drawing.Size(1920, 1080)
+        Me.StartUpScreen.TabIndex = 334
         '
-        'MyApplicationBindingSource1
+        'StartupStatusLabel
         '
-        Me.MyApplicationBindingSource1.DataSource = GetType(MfgControl.AdvancedHMI.My.MyApplication)
+        Me.StartupStatusLabel.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.StartupStatusLabel.Font = New System.Drawing.Font("Bahnschrift Light", 36.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.StartupStatusLabel.ForeColor = System.Drawing.Color.Silver
+        Me.StartupStatusLabel.ImageAlign = System.Drawing.ContentAlignment.BottomLeft
+        Me.StartupStatusLabel.Location = New System.Drawing.Point(0, 990)
+        Me.StartupStatusLabel.Name = "StartupStatusLabel"
+        Me.StartupStatusLabel.Size = New System.Drawing.Size(1920, 90)
+        Me.StartupStatusLabel.TabIndex = 377
+        Me.StartupStatusLabel.Text = "Startup Starting..."
+        Me.StartupStatusLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'PictureBox41
+        '
+        Me.PictureBox41.Image = Global.MfgControl.AdvancedHMI.My.Resources.Resources.TEV_Ico
+        Me.PictureBox41.Location = New System.Drawing.Point(267, 3)
+        Me.PictureBox41.Name = "PictureBox41"
+        Me.PictureBox41.Size = New System.Drawing.Size(1387, 1058)
+        Me.PictureBox41.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox41.TabIndex = 378
+        Me.PictureBox41.TabStop = False
         '
         'Dashboard_Page
         '
@@ -41300,10 +41283,6 @@ Partial Class Dashboard_Page
         Me.Controls.Add(Me.OutsideHumidityDisp1)
         Me.Controls.Add(Me.BasicIndicator37)
         Me.Controls.Add(Me.BasicIndicator90)
-        Me.Controls.Add(Me.Status_Page)
-        Me.Controls.Add(Me.Alarms_Page)
-        Me.Controls.Add(Me.Setpoints_Page)
-        Me.Controls.Add(Me.StartUpScreen)
         Me.Controls.Add(Me.Main_Page)
         Me.Controls.Add(Me.Electrical_Page)
         Me.Controls.Add(Me.Login_Screen)
@@ -41314,6 +41293,10 @@ Partial Class Dashboard_Page
         Me.Controls.Add(Me.Realtime_Page)
         Me.Controls.Add(Me.AdminSettings_Page)
         Me.Controls.Add(Me.Water_Page)
+        Me.Controls.Add(Me.Status_Page)
+        Me.Controls.Add(Me.Alarms_Page)
+        Me.Controls.Add(Me.Setpoints_Page)
+        Me.Controls.Add(Me.StartUpScreen)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.KeyPreview = True
         Me.MaximumSize = New System.Drawing.Size(1920, 1080)
@@ -41631,9 +41614,6 @@ Partial Class Dashboard_Page
         Me.Slot7Panel.PerformLayout
         Me.Login_Screen.ResumeLayout(False)
         Me.Login_Screen.PerformLayout
-        Me.StartUpScreen.ResumeLayout(False)
-        CType(Me.PictureBox41, System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.PictureBox65, System.ComponentModel.ISupportInitialize).EndInit
         Me.Compressor_Page.ResumeLayout(False)
         Me.Compressor_Page.PerformLayout
         CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).EndInit
@@ -41716,11 +41696,13 @@ Partial Class Dashboard_Page
         Me.Panel34.PerformLayout
         Me.AdminSettings_Page.ResumeLayout(False)
         Me.AdminSettings_Page.PerformLayout
+        CType(Me.MyApplicationBindingSource, System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.MyApplicationBindingSource1, System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.SimpleWebServer1, System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.SoundPlayer1, System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.BasicDataLogger21, System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.MyApplicationBindingSource, System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.MyApplicationBindingSource1, System.ComponentModel.ISupportInitialize).EndInit
+        Me.StartUpScreen.ResumeLayout(False)
+        CType(Me.PictureBox41, System.ComponentModel.ISupportInitialize).EndInit
         Me.ResumeLayout(False)
 
     End Sub
@@ -42595,9 +42577,6 @@ Partial Class Dashboard_Page
     Friend WithEvents Label278 As Label
     Friend WithEvents Label280 As Label
     Friend WithEvents Label282 As Label
-    Friend WithEvents StartUpScreen As GroupBox
-    Friend WithEvents PictureBox65 As PictureBox
-    Friend WithEvents StartupStatusLabel As Label
     Friend WithEvents PictureBox30 As PictureBox
     Friend WithEvents EditAlarmDescPanel As Panel
     Friend WithEvents NewBackColorPanel As Panel
@@ -43144,7 +43123,6 @@ Partial Class Dashboard_Page
     Friend WithEvents PL_O_8_4 As AdvancedHMIControls.BasicIndicator
     Friend WithEvents PL_O_8_0 As AdvancedHMIControls.BasicIndicator
     Friend WithEvents Card6 As AdvancedHMIControls.BasicLabel
-    Friend WithEvents PictureBox41 As PictureBox
     Friend WithEvents Water_Pr_Cold_V1 As AdvancedHMIControls.AnalogValueDisplay
     Friend WithEvents PLC_Fast As AdvancedHMIDrivers.EthernetIPforSLCMicroCom
     Friend WithEvents Water_Pr_Hot_V1 As AdvancedHMIControls.AnalogValueDisplay
@@ -43553,4 +43531,7 @@ Partial Class Dashboard_Page
     Friend WithEvents Label67 As Label
     Friend WithEvents Label72 As Label
     Friend WithEvents Label74 As Label
+    Friend WithEvents StartUpScreen As Panel
+    Friend WithEvents StartupStatusLabel As Label
+    Friend WithEvents PictureBox41 As PictureBox
 End Class

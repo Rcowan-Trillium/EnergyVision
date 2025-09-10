@@ -1011,11 +1011,11 @@ VALUES (@DT,@CWSUP, @CWPRP, @CWPOP, @CWFD, @HWPRP, @HWPOP, @HWFD, @HWTP, @HWFL, 
     Electrical_SB_G1.MouseWheel, Electrical_SB_G2.MouseWheel, Electrical_SC_G1.MouseWheel, Electrical_SC_G2.MouseWheel
         If CurrentUserLevel > 1 Then
             If e.Delta > 0 Then ' UP
-                If sender.Minimum < (sender.band2startvalue - 5) Then sender.Minimum += 1 Else sender.minimum = sender.band2startvalue - 5
-                If sender.Maximum > (sender.band2endvalue + 5) Then sender.maximum -= 1 Else sender.maximum = sender.band2endvalue + 5
+                If sender.Minimum < (sender.Band2StartValue - 5) Then sender.Minimum += 1 Else sender.minimum = sender.Band2StartValue - 5
+                If sender.Maximum > (sender.Band2EndValue + 5) Then sender.Maximum -= 1 Else sender.maximum = sender.Band2EndValue + 5
             ElseIf e.Delta < 0 Then ' DOWN
-                If sender.Minimum > 0 Then sender.Minimum -= 1 Else sender.minimum = 0
-                If sender.Maximum < (sender.band2endvalue - sender.band2startvalue) + (sender.band2startvalue * 2) Then sender.maximum += 1 Else sender.maximum = (sender.band2endvalue - sender.band2startvalue) + (sender.band2startvalue * 2)
+                If sender.Minimum > 0 Then sender.Minimum -= 1 Else sender.Minimum = 0
+                If sender.Maximum < (sender.Band2EndValue - sender.Band2StartValue) + (sender.Band2StartValue * 2) Then sender.Maximum += 1 Else sender.Maximum = (sender.Band2EndValue - sender.Band2StartValue) + (sender.Band2StartValue * 2)
             End If
         End If
         'ref_gauges()
@@ -1096,15 +1096,15 @@ VALUES (@DT,@CWSUP, @CWPRP, @CWPOP, @CWFD, @HWPRP, @HWPOP, @HWFD, @HWTP, @HWFL, 
             'AIR Displays ==============================================================================================================================
             '-----------------------------------------------------------------------------------------------------------------------------------------
             With Air_Pr_Main_G1
-                Air_Pr_Main_G1.Minimum = 0
-                Air_Pr_Main_G1.Band2StartValue = ALP_Max.Value
-                Air_Pr_Main_G1.Band2EndValue = ALP_Min.Value
-                Air_Pr_Main_G1.Maximum = (.Band2EndValue - .Band2StartValue) + (.Band2StartValue * 2)
+                .Minimum = 0
+                .Band2StartValue = ALP_Min.Value
+                .Band2EndValue = ALP_Max.Value
+                .Maximum = (.Band2EndValue - .Band2StartValue) + (.Band2StartValue * 2)
             End With
             With Air_Pr_Main_G2
                 .Minimum = 0
-                .Band2StartValue = ALP_Max.Value
-                .Band2EndValue = ALP_Min.Value
+                .Band2StartValue = ALP_Min.Value
+                .Band2EndValue = ALP_Max.Value
                 .Maximum = (.Band2EndValue - .Band2StartValue) + (.Band2StartValue * 2)
             End With
             '-----------------------------------------------------------------------------------------------------------------------------------------
@@ -2181,10 +2181,11 @@ VALUES (@DT,@CWSUP, @CWPRP, @CWPOP, @CWFD, @HWPRP, @HWPOP, @HWFD, @HWTP, @HWFL, 
     Private Sub PLC_HeartBeat_Timer(sender As Object, e As EventArgs) Handles HeartBeatTimer.Tick
 
         If FirstTickDone Then
+
             If LogChartTimer.Enabled = False Then
                 LogChartTimer.Enabled = True
-
             End If
+
             Dim NewHBTime As New DateTime
             NewHBTime = Now
             Dim TimeSinceLastHB As New TimeSpan
@@ -4431,12 +4432,6 @@ VALUES (@DT,@CWSUP, @CWPRP, @CWPOP, @CWFD, @HWPRP, @HWPOP, @HWFD, @HWTP, @HWFL, 
     '║                                                 Section End                                                  ║
     '╚══════════════════════════════════════════════════════════════════════════════════════════════════════════════╝
 #End Region
-
-
-
-
-
-
 #Region "System Functions"
     '╔══════════════════════════════════════════════════════════════════════════════════════════════════════════════╗
     '║                                                  [SYSTEM]                                                    ║
@@ -4967,39 +4962,19 @@ VALUES (@DT,@CWSUP, @CWPRP, @CWPOP, @CWFD, @HWPRP, @HWPOP, @HWFD, @HWTP, @HWFL, 
     End Sub
     'logic for PLC HeartBeat 
 
-    Private Sub PLC_Response_Time(sender As Object, e As EventArgs) Handles BasicLabel83.ValueChanged, BasicLabel6.ValueChanged
+    Private Sub PLC_Response_Time(sender As Object, e As EventArgs) Handles BasicLabel83.ValueChanged
         If FirstTick_EN Then
             If FirstTickDone Then
                 Dim NewHBTime As DateTime = Now
                 Dim TimeBetweenLastHB As TimeSpan = Now.Subtract(lastHBTime)
                 lastHBTime = Now
                 Label51.Text = TimeBetweenLastHB.Seconds & "." & TimeBetweenLastHB.Milliseconds.ToString("000") & " sec"
-            Else
-                If IsNumeric(sender.text) Then
-                    First5Count += 1
-                    If First5Count >= 25 Then
-                        FirstTickDone = True
-                        First5Count = 0
-                        Clear_Nav_Buttons()
-                        Main_Page.Show()
-                        Goto_Dashboard_BTN.ForeColor = Color.Black
-                        Goto_Dashboard_BTN.BackColor = Color.Green
-                        StartUpScreen.Hide()
-                        HeartBeatTimer.Start()
-                        If RunSQL Then SaveSystemData(GetNow(), "APPLICATION STARTUP", "System")
-                    End If
-                End If
             End If
         End If
     End Sub
     Private Sub First_Tick_Delay(sender As Object, e As EventArgs) Handles BasicLabel6.ValueChanged
         If FirstTick_EN Then
-            If FirstTickDone Then
-                Dim NewHBTime_5s As DateTime = Now
-                Dim TimeBetweenLastHB_5s As TimeSpan = Now.Subtract(lastHBTime_5s)
-                lastHBTime_5s = Now
-                Label74.Text = TimeBetweenLastHB_5s.Seconds & "." & TimeBetweenLastHB_5s.Milliseconds.ToString("000") & " sec"
-            Else
+            If FirstTickDone = False Then
                 If IsNumeric(sender.text) Then
                     First5Count += 1
                     If First5Count >= 5 Then
@@ -5147,6 +5122,11 @@ VALUES (@DT,@CWSUP, @CWPRP, @CWPOP, @CWFD, @HWPRP, @HWPOP, @HWFD, @HWTP, @HWFL, 
     Public Class Clouds
         Public Property all As Integer
     End Class
+
+    Private Sub SP_LevelCheck(sender As Object, e As EventArgs) Handles STMPDEM_Min.Click, STMPDEM_Max.Click, STMP_Min.Click, STMP_Max.Click, STLPDEM_Min.Click, STLPDEM_Max.Click, STLP_Min.Click, STLP_Max.Click, STHP_Min.Click, STHP_Max.Click, STFWP_Min.Click, STFWP_Max.Click, STFL_Min.Click, STFL_Max.Click, HWTP_Min.Click, HWTP_Max.Click, HWPRP_Min.Click, HWPRP_Max.Click, HWPOP_Min.Click, HWPOP_Max.Click, HWFL_Min.Click, HWFL_Max.Click, HWFD_Min.Click, HWFD_Max.Click, ELSC_Min.Click, ELSC_Max.Click, ELSB_Min.Click, ELSB_Max.Click, ELSA_Min.Click, ELSA_Max.Click, ELNC_Min.Click, ELNC_Max.Click, ELNB_Min.Click, ELNB_Max.Click, ELNA_Min.Click, ELNA_Max.Click, CWSUP_Min.Click, CWSUP_Max.Click, CWPRP_Min.Click, CWPRP_Max.Click, CWPOP_Min.Click, CWPOP_Max.Click, CWFD_Min.Click, CWFD_Max.Click, ALP_Min.Click, ALP_Max.Click
+
+    End Sub
+
     Public Class Sys
         Public Property type As Integer
         Public Property id As Integer
