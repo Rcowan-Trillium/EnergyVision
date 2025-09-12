@@ -18,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
@@ -28,7 +28,7 @@
               "RelativeDocumentMoniker": "AdvancedHMI\\Dashboard_Page.vb",
               "ToolTip": "C:\\Users\\cowanr\\source\\repos\\EnergyVision\\AdvancedHMI\\Dashboard_Page.vb",
               "RelativeToolTip": "AdvancedHMI\\Dashboard_Page.vb",
-              "ViewState": "AgIAAEAEAAAAAAAAAAD8v0oEAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAAPYHAAAAAAAAAAARwIcTAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2025-09-10T17:05:45.275Z",
               "EditorCaption": ""
@@ -43,10 +43,10 @@
       "FloatingWindowState": {
         "Id": "708e8ad2-1b2c-4a8b-af6f-25d29774eed4",
         "Display": 0,
-        "X": 589,
-        "Y": 140,
-        "Width": 1313,
-        "Height": 802,
+        "X": -8,
+        "Y": -8,
+        "Width": 1933,
+        "Height": 1053,
         "WindowState": 2
       },
       "DocumentGroups": [

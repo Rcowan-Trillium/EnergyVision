@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\cowanr\\source\\repos\\EnergyVision\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{13A180B0-1183-4CB7-AC14-BF98320A30E4}|AdvancedHMI\\AdvancedHMI.vbproj|c:\\users\\cowanr\\source\\repos\\energyvision\\advancedhmi\\dashboard_page.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{13A180B0-1183-4CB7-AC14-BF98320A30E4}|AdvancedHMI\\AdvancedHMI.vbproj|solutionrelative:advancedhmi\\dashboard_page.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{13A180B0-1183-4CB7-AC14-BF98320A30E4}|AdvancedHMI\\AdvancedHMI.vbproj|c:\\users\\cowanr\\source\\repos\\energyvision\\advancedhmi\\dashboard_page.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
       "RelativeMoniker": "D:0:0:{13A180B0-1183-4CB7-AC14-BF98320A30E4}|AdvancedHMI\\AdvancedHMI.vbproj|solutionrelative:advancedhmi\\dashboard_page.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13A180B0-1183-4CB7-AC14-BF98320A30E4}|AdvancedHMI\\AdvancedHMI.vbproj|c:\\users\\cowanr\\source\\repos\\energyvision\\advancedhmi\\dashboard_page.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{13A180B0-1183-4CB7-AC14-BF98320A30E4}|AdvancedHMI\\AdvancedHMI.vbproj|solutionrelative:advancedhmi\\dashboard_page.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,17 +18,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Dashboard_Page.vb",
               "DocumentMoniker": "C:\\Users\\cowanr\\source\\repos\\EnergyVision\\AdvancedHMI\\Dashboard_Page.vb",
               "RelativeDocumentMoniker": "AdvancedHMI\\Dashboard_Page.vb",
               "ToolTip": "C:\\Users\\cowanr\\source\\repos\\EnergyVision\\AdvancedHMI\\Dashboard_Page.vb",
               "RelativeToolTip": "AdvancedHMI\\Dashboard_Page.vb",
-              "ViewState": "AgIAAEAEAAAAAAAAAAD8v0oEAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAAHITAAAAAAAAAIAnwI0TAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2025-09-10T17:05:45.275Z",
               "EditorCaption": ""
@@ -43,10 +43,10 @@
       "FloatingWindowState": {
         "Id": "708e8ad2-1b2c-4a8b-af6f-25d29774eed4",
         "Display": 0,
-        "X": 589,
-        "Y": 140,
-        "Width": 1313,
-        "Height": 802,
+        "X": -8,
+        "Y": -8,
+        "Width": 1933,
+        "Height": 1053,
         "WindowState": 2
       },
       "DocumentGroups": [
@@ -56,7 +56,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Dashboard_Page.vb [Design]",
               "DocumentMoniker": "C:\\Users\\cowanr\\source\\repos\\EnergyVision\\AdvancedHMI\\Dashboard_Page.vb",
               "RelativeDocumentMoniker": "AdvancedHMI\\Dashboard_Page.vb",

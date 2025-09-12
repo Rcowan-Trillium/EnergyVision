@@ -24,17 +24,17 @@
 '«»@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@«»
 '»«»«»«»«»«»«»«»«»«»«»«»«»«»«»«»«»«»«»«»«»«»«»«»«»«»«»«»«»«»«»«»
 #End Region
-Imports System.Collections.Specialized.BitVector32
+'Imports System.Collections.Specialized.BitVector32
 Imports System.Data.SqlClient
 Imports System.Net
 Imports System.Text
 Imports System.Windows.Forms.DataVisualization.Charting
-Imports Google.Protobuf.WellKnownTypes
-Imports MadMilkman
+'Imports Google.Protobuf.WellKnownTypes
+'Imports MadMilkman
 Imports MadMilkman.Ini
 Imports Microsoft.Win32
 Imports MySql.Data.MySqlClient
-Imports Mysqlx.Expect.Open.Types.Condition.Types
+'Imports Mysqlx.Expect.Open.Types.Condition.Types
 Imports Newtonsoft.Json
 
 Public Class Dashboard_Page
@@ -974,15 +974,16 @@ VALUES (@DT,@CWSUP, @CWPRP, @CWPOP, @CWFD, @HWPRP, @HWPOP, @HWFD, @HWTP, @HWFL, 
             End Try
         End Using
     End Sub
-
+    Dim AlarmsInList As Integer = 250
     Private Sub RefreshAlarmTable()
-        Dim query As String = "SELECT * FROM alarm_history"  ' replace with your table
+        Dim query As String = "SELECT * FROM alarm_history ORDER BY id DESC LIMIT " & AlarmsInList & ";"
         Using connection As New MySqlConnection(SQL_ConString)
             Dim adapter As New MySqlDataAdapter(query, connection)
             Dim table As New DataTable()
             adapter.Fill(table)
             AlarmGrid.DataSource = table
         End Using
+        AlarmGrid.Columns(1).DefaultCellStyle.Format = "MM/dd/yyyy hh:mm:ss tt"
     End Sub
 
 
@@ -1618,6 +1619,8 @@ VALUES (@DT,@CWSUP, @CWPRP, @CWPOP, @CWFD, @HWPRP, @HWPOP, @HWFD, @HWTP, @HWFL, 
     End Function
 
     Private Sub GetAllAud_Falc_AlarmStatus()
+
+        ProgressBar1.Value = processCount
         For i = 0 To 31
             'get audible mask values
             Dim CurElecAudStatus As Boolean = PLC_Fast.Read("N14:6/" & i)
@@ -1638,57 +1641,64 @@ VALUES (@DT,@CWSUP, @CWPRP, @CWPOP, @CWFD, @HWPRP, @HWPOP, @HWFD, @HWTP, @HWFL, 
                 ElectricalAlarmPanel.Controls("ElecAudAlarm" & i).BackgroundImage = My.Resources.AlarmAudibleOff
             End If
             processCount += 1
-            StartupStatusLabel.Text = "Getting Alarm Details..." & processCount & "/256"
-
+            StartupStatusLabel.Text = "Getting Alarm Details..." & processCount & "/384"
+            ProgressBar1.Value = processCount
             If CurAirAudStatus Then
                 AirAlarmPanel.Controls("AirAudAlarm" & i).BackgroundImage = My.Resources.AlarmAudibleOn
             Else
                 AirAlarmPanel.Controls("AirAudAlarm" & i).BackgroundImage = My.Resources.AlarmAudibleOff
             End If
             processCount += 1
-            StartupStatusLabel.Text = "Getting Alarm Details..." & processCount & "/256"
+            StartupStatusLabel.Text = "Getting Alarm Details..." & processCount & "/384"
+            ProgressBar1.Value = processCount
             If CurSteamAudStatus Then
                 SteamAlarmPanel.Controls("steamAudAlarm" & i).BackgroundImage = My.Resources.AlarmAudibleOn
             Else
                 SteamAlarmPanel.Controls("SteamAudAlarm" & i).BackgroundImage = My.Resources.AlarmAudibleOff
             End If
             processCount += 1
-            StartupStatusLabel.Text = "Getting Alarm Details..." & processCount & "/256"
+            StartupStatusLabel.Text = "Getting Alarm Details..." & processCount & "/384"
+            ProgressBar1.Value = processCount
             If CurWaterAudStatus Then
                 WaterAlarmPanel.Controls("WaterAudAlarm" & i).BackgroundImage = My.Resources.AlarmAudibleOn
             Else
                 WaterAlarmPanel.Controls("WaterAudAlarm" & i).BackgroundImage = My.Resources.AlarmAudibleOff
             End If
             processCount += 1
-            StartupStatusLabel.Text = "Getting Alarm Details..." & processCount & "/256"
+            StartupStatusLabel.Text = "Getting Alarm Details..." & processCount & "/384"
+            ProgressBar1.Value = processCount
             If CurElecFalcStatus Then
                 ElectricalAlarmPanel.Controls("ElecFalcAlarm" & i).BackgroundImage = My.Resources.AlarmFalconOn
             Else
                 ElectricalAlarmPanel.Controls("ElecFalcAlarm" & i).BackgroundImage = My.Resources.AlarmFalconOff
             End If
             processCount += 1
-            StartupStatusLabel.Text = "Getting Alarm Details..." & processCount & "/256"
+            StartupStatusLabel.Text = "Getting Alarm Details..." & processCount & "/384"
+            ProgressBar1.Value = processCount
             If CurAirFalcStatus Then
                 AirAlarmPanel.Controls("AirFalcAlarm" & i).BackgroundImage = My.Resources.AlarmFalconOn
             Else
                 AirAlarmPanel.Controls("AirFalcAlarm" & i).BackgroundImage = My.Resources.AlarmFalconOff
             End If
             processCount += 1
-            StartupStatusLabel.Text = "Getting Alarm Details..." & processCount & "/256"
+            StartupStatusLabel.Text = "Getting Alarm Details..." & processCount & "/384"
+            ProgressBar1.Value = processCount
             If CurSteamFalcStatus Then
                 SteamAlarmPanel.Controls("steamFalcAlarm" & i).BackgroundImage = My.Resources.AlarmFalconOn
             Else
                 SteamAlarmPanel.Controls("SteamFalcAlarm" & i).BackgroundImage = My.Resources.AlarmFalconOff
             End If
             processCount += 1
-            StartupStatusLabel.Text = "Getting Alarm Details..." & processCount & "/256"
+            StartupStatusLabel.Text = "Getting Alarm Details..." & processCount & "/384"
+            ProgressBar1.Value = processCount
             If CurWaterFalcStatus Then
                 WaterAlarmPanel.Controls("WaterFalcAlarm" & i).BackgroundImage = My.Resources.AlarmFalconOn
             Else
                 WaterAlarmPanel.Controls("WaterFalcAlarm" & i).BackgroundImage = My.Resources.AlarmFalconOff
             End If
             processCount += 1
-            StartupStatusLabel.Text = "Getting Alarm Details..." & processCount & "/256"
+            StartupStatusLabel.Text = "Getting Alarm Details..." & processCount & "/384"
+            ProgressBar1.Value = processCount
 
         Next
     End Sub
@@ -1699,7 +1709,8 @@ VALUES (@DT,@CWSUP, @CWPRP, @CWPOP, @CWFD, @HWPRP, @HWPOP, @HWFD, @HWTP, @HWFL, 
                 Dim state As Boolean = PLC_Fast.Read("N15:0/" & idx)
                 If state Then ctrl.selectcolor3 = False Else ctrl.selectcolor3 = True
                 processCount += 1
-                StartupStatusLabel.Text = "Getting Alarm Bypass Details..." & processCount & "/384"
+                StartupStatusLabel.Text = "Getting Alarm Details..." & processCount & "/384"
+                ProgressBar1.Value = processCount
             End If
         Next
         For Each ctrl As System.Object In AirAlarmPanel.Controls
@@ -1708,7 +1719,8 @@ VALUES (@DT,@CWSUP, @CWPRP, @CWPOP, @CWFD, @HWPRP, @HWPOP, @HWFD, @HWTP, @HWFL, 
                 Dim state As Boolean = PLC_Fast.Read("N15:2/" & idx)
                 If state Then ctrl.selectcolor3 = False Else ctrl.selectcolor3 = True
                 processCount += 1
-                StartupStatusLabel.Text = "Getting Alarm Bypass Details..." & processCount & "/384"
+                StartupStatusLabel.Text = "Getting Alarm Details..." & processCount & "/384"
+                ProgressBar1.Value = processCount
             End If
         Next
         For Each ctrl As System.Object In SteamAlarmPanel.Controls
@@ -1717,7 +1729,8 @@ VALUES (@DT,@CWSUP, @CWPRP, @CWPOP, @CWFD, @HWPRP, @HWPOP, @HWFD, @HWTP, @HWFL, 
                 Dim state As Boolean = PLC_Fast.Read("N15:4/" & idx)
                 If state Then ctrl.selectcolor3 = False Else ctrl.selectcolor3 = True
                 processCount += 1
-                StartupStatusLabel.Text = "Getting Alarm Bypass Details..." & processCount & "/384"
+                StartupStatusLabel.Text = "Getting Alarm Details..." & processCount & "/384"
+                ProgressBar1.Value = processCount
             End If
         Next
         For Each ctrl As System.Object In WaterAlarmPanel.Controls
@@ -1726,10 +1739,13 @@ VALUES (@DT,@CWSUP, @CWPRP, @CWPOP, @CWFD, @HWPRP, @HWPOP, @HWFD, @HWTP, @HWFL, 
                 Dim state As Boolean = PLC_Fast.Read("N15:6/" & idx)
                 If state Then ctrl.selectcolor3 = False Else ctrl.selectcolor3 = True
                 processCount += 1
-                StartupStatusLabel.Text = "Getting Alarm Bypass Details..." & processCount & "/384"
+                StartupStatusLabel.Text = "Getting Alarm Details..." & processCount & "/384"
+                ProgressBar1.Value = processCount
             End If
         Next
         processCount = 0
+        ProgressBar1.Value = processCount
+        ProgressBar1.Maximum = 6
     End Sub
     Sub SetPLC_DateTime()
         PLC.Write("N7:50", Now.Hour.ToString)
@@ -1759,29 +1775,6 @@ VALUES (@DT,@CWSUP, @CWPRP, @CWPOP, @CWFD, @HWPRP, @HWPOP, @HWFD, @HWTP, @HWFL, 
             idx += 1
         Next
         Return bits
-    End Function
-
-
-
-    Private Function Toggle_RTChart() As Boolean
-        If RunLog Then
-            Dim result As DialogResult = MessageBox.Show("Disable RealTime Chart?", "Disabling the Realtime Log will disable the Realtime graph, Procees?", MessageBoxButtons.YesNo)
-            If result = DialogResult.Yes Then
-                RunLog = False
-                Goto_Logs_BTN.Enabled = False
-                Return False
-            Else Return True
-            End If
-
-        Else
-            Dim result As DialogResult = MessageBox.Show("Enable RealTime Chart?", "Enabling the Realtime Log will slow down the refresh rate of the values coming in from the PLC, Procees?", MessageBoxButtons.YesNo)
-            If result = DialogResult.Yes Then
-                RunLog = True
-                Goto_Logs_BTN.Enabled = True
-                Return True
-            Else Return False
-            End If
-        End If
     End Function
 
     Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
@@ -1886,13 +1879,11 @@ VALUES (@DT,@CWSUP, @CWPRP, @CWPOP, @CWFD, @HWPRP, @HWPOP, @HWFD, @HWTP, @HWFL, 
     Private Sub Log_Chart_Timer(sender As Object, e As EventArgs) Handles LogChartTimer.Tick
         If Firsttick = False Then
             Firsttick = True
-        Else
-
         End If
-        'REALTIME CHARTS - SERIES VISIBILITY LOGIC
+
         If RunLog Then
 
-
+            'SERIES VISIBILITY LOGIC
             For SerVis As Integer = 0 To CheckedListBox1.Items().Count - 1
                 If CheckedListBox1.GetItemChecked(SerVis) Then
                     Chart3.Series(CheckedListBox1.Items(SerVis)).BorderWidth = 1
@@ -1923,14 +1914,15 @@ VALUES (@DT,@CWSUP, @CWPRP, @CWPOP, @CWFD, @HWPRP, @HWPOP, @HWFD, @HWTP, @HWFL, 
             Next
 
             ' ADD NEW DATA POINTS TO THE CHARTS
+
             Chart3.Series(0).Points.AddXY(Now.ToString("HH:mm:ss"), ELNA_Actual.Value)
             Chart3.Series(1).Points.AddXY(Now.ToString("HH:mm:ss"), ELNB_Actual.Value)
             Chart3.Series(2).Points.AddXY(Now.ToString("HH:mm:ss"), ELNC_Actual.Value)
             Chart3.Series(3).Points.AddXY(Now.ToString("HH:mm:ss"), ELSA_Actual.Value)
             Chart3.Series(4).Points.AddXY(Now.ToString("HH:mm:ss"), ELSB_Actual.Value)
             Chart3.Series(5).Points.AddXY(Now.ToString("HH:mm:ss"), ELSC_Actual.Value)
-            Chart3.Series(6).Points.AddXY(Now.ToString("HH:mm:ss"), GetNumeric(Steam_Dem_Med_I1.Text))
-            Chart3.Series(7).Points.AddXY(Now.ToString("HH:mm:ss"), GetNumeric(Steam_Dem_Low_I1.Text))
+            Chart3.Series(6).Points.AddXY(Now.ToString("HH:mm:ss"), STMPDEM_Actual.Value)
+            Chart3.Series(7).Points.AddXY(Now.ToString("HH:mm:ss"), STLPDEM_Actual.Value)
             Chart3.Series(8).Points.AddXY(Now.ToString("HH:mm:ss"), HWFL_Actual.Value)
             Chart3.Series(9).Points.AddXY(Now.ToString("HH:mm:ss"), ALP_Actual.Value)
             Chart3.Series(10).Points.AddXY(Now.ToString("HH:mm:ss"), CWPOP_Actual.Value)
@@ -1939,11 +1931,15 @@ VALUES (@DT,@CWSUP, @CWPRP, @CWPOP, @CWFD, @HWPRP, @HWPOP, @HWFD, @HWTP, @HWFL, 
             Chart3.Series(13).Points.AddXY(Now.ToString("HH:mm:ss"), STMP_Actual.Value)
             Chart3.Series(14).Points.AddXY(Now.ToString("HH:mm:ss"), STHP_Actual.Value)
             Chart3.Series(15).Points.AddXY(Now.ToString("HH:mm:ss"), HWTP_Actual.Value)
-            Chart3.Series(16).Points.AddXY(Now.ToString("HH:mm:ss"), (Steam_Flow_G1.Value / 1000).ToString("0"))
+            Chart3.Series(16).Points.AddXY(Now.ToString("HH:mm:ss"), (STFL_Actual.Value / 1000).ToString("0"))
             Chart3.Series(17).Points.AddXY(Now.ToString("HH:mm:ss"), CWSUP_Actual.Value)
 
             'DETERMINE IF AUTOSCALLING IS NESSASARYandalso ALL SCALES ACCORDINLY.
-            Dim ElecMinVal, ElecMaxVal As Double
+            Dim ElecMinVal, ElecMaxVal,
+                AirMinVal, AirMaxVal,
+                SteamMinVal, SteamMaxVal,
+                WaterMinVal, WaterMaxVal As Double
+
             For Each i As Integer In {0, 1, 2, 3, 4, 5}
                 If i = 0 Then
                     ElecMinVal = Chart3.Series(i).Points.FindMinByValue().YValues(0)
@@ -1972,7 +1968,7 @@ VALUES (@DT,@CWSUP, @CWPRP, @CWPOP, @CWFD, @HWPRP, @HWPOP, @HWFD, @HWTP, @HWFL, 
                 End If
             End If
 
-            Dim AirMinVal, AirMaxVal As Double
+
 
             AirMinVal = Chart3.Series(9).Points.FindMinByValue().YValues(0)
             AirMaxVal = Chart3.Series(9).Points.FindMaxByValue().YValues(0)
@@ -1993,7 +1989,7 @@ VALUES (@DT,@CWSUP, @CWPRP, @CWPOP, @CWFD, @HWPRP, @HWPOP, @HWFD, @HWTP, @HWFL, 
 
             End If
 
-            Dim SteamMinVal, SteamMaxVal As Double
+
             For Each i As Integer In {6, 7, 12, 13, 14, 16}
                 If i = 6 Then
                     SteamMinVal = Chart3.Series(i).Points.FindMinByValue().YValues(0)
@@ -2023,7 +2019,7 @@ VALUES (@DT,@CWSUP, @CWPRP, @CWPOP, @CWFD, @HWPRP, @HWPOP, @HWFD, @HWTP, @HWFL, 
 
             End If
 
-            Dim WaterMinVal, WaterMaxVal As Double
+
             For Each i As Integer In {8, 10, 11, 15, 17}
                 If i = 8 Then
                     WaterMinVal = Chart3.Series(i).Points.FindMinByValue().YValues(0)
@@ -2066,13 +2062,14 @@ VALUES (@DT,@CWSUP, @CWPRP, @CWPOP, @CWFD, @HWPRP, @HWPOP, @HWFD, @HWTP, @HWFL, 
             With Chart3
                 For Q = 0 To Chart3.ChartAreas().Count - 1
                     .ChartAreas(Q).AxisY.LabelStyle.Interval = Math.Ceiling(.ChartAreas(Q).AxisY.ScaleView.Size / 11)
-                    .ChartAreas(Q).AxisY.MajorGrid.Interval = Math.Ceiling(.ChartAreas(Q).AxisY.ScaleView.Size / 20)
                     .ChartAreas(Q).AxisX.LabelStyle.Interval = Math.Ceiling(.ChartAreas(Q).AxisX.ScaleView.Size / 20)
-                    .ChartAreas(Q).AxisX.MajorGrid.Interval = Math.Ceiling(.ChartAreas(Q).AxisX.ScaleView.Size / 20)
                 Next
             End With
         End If
+
         If Firsttick Then
+
+            'SEND SQL DATA TO SERVER IF RunSQL IS TRUE
             If RunSQL Then
                 Dim Date_Time As String = Now.Year & Now.Month.ToString("00") & Now.Day.ToString("00") & Now.Hour.ToString("00") & Now.Minute.ToString("00") & Now.Second.ToString("00")
                 SaveSensorData(Date_Time, CWSUP_Actual.Value, CWPRP_Actual.Value, CWPOP_Actual.Value,
@@ -2209,7 +2206,7 @@ VALUES (@DT,@CWSUP, @CWPRP, @CWPOP, @CWFD, @HWPRP, @HWPOP, @HWFD, @HWTP, @HWFL, 
                 BarLevel2.BarContentColor = Color.Yellow
                 HeartBeatError = False
             ElseIf BarLevel2.Value < 2000 Then
-                BarLevel2.BarContentColor = Color.Green
+                BarLevel2.BarContentColor = Color.DodgerBlue
                 HeartBeatError = False
             End If
 
@@ -2218,7 +2215,7 @@ VALUES (@DT,@CWSUP, @CWPRP, @CWPOP, @CWFD, @HWPRP, @HWPOP, @HWFD, @HWTP, @HWFL, 
                 Label53.ForeColor = Color.Red
                 PLCConIndicator.Image = My.Resources.StatusPLCBad
                 If PLCConInAlarm = False Then
-
+                    Dim CurrentDT As DateTime = Now
                     If RunSQL Then SaveAlarmData(GetNow(), "ACTIVE", "PLC CONNECTION LOST", "System")
                     PLCConInAlarm = True
                 End If
@@ -2227,7 +2224,7 @@ VALUES (@DT,@CWSUP, @CWPRP, @CWPOP, @CWFD, @HWPRP, @HWPOP, @HWFD, @HWTP, @HWFL, 
                 Label53.ForeColor = Color.Green
                 PLCConIndicator.Image = My.Resources.StatusPLCGood
                 If PLCConInAlarm = True Then
-
+                    Dim CurrentDT As DateTime = Now
                     If RunSQL Then SaveAlarmData(GetNow(), "CLEAR", "PLC CONNECTION RESTORED", "System")
                     PLCConInAlarm = False
                 End If
@@ -2522,11 +2519,13 @@ VALUES (@DT,@CWSUP, @CWPRP, @CWPOP, @CWFD, @HWPRP, @HWPOP, @HWFD, @HWTP, @HWFL, 
         Dim decodedBytes As Byte() = Convert.FromBase64String(encoded)
         Return Encoding.UTF8.GetString(decodedBytes)
     End Function
-    Public Sub ClickHandler(sender As Object, e As MouseEventArgs) Handles Boiler_Page.MouseMove, Alarms_Page.MouseMove, Login_Screen.MouseMove, Me.MouseMove, Goto_Faults_BTN.Click,
-        Goto_Settings_BTN.Click, Goto_Alarms_BTN.Click, Goto_Logs_BTN.Click, Goto_Environment_BTN.Click,
-        Goto_Electrical_BTN.Click, Goto_Water_BTN.Click, Goto_Compressors_BTN.Click, Goto_Steam_BTN.Click,
-        Goto_Dashboard_BTN.Click, Goto_Boilers_BTN.Click, Main_Page.Click, Boiler_Page.Click,
-       Compressor_Page.Click, Alarms_Page.Click, Login_Screen.Click, Me.MouseMove
+    Public Sub ClickHandler(sender As Object, e As MouseEventArgs) Handles Me.MouseMove,
+        Boiler_Page.MouseMove, Alarms_Page.MouseMove, Login_Screen.MouseMove, AlarmHistoryPanel.MouseMove, Steam_Page.MouseMove,
+        Main_Page.MouseMove, Compressor_Page.MouseMove, Electrical_Page.MouseMove, Realtime_Page.MouseMove, Status_Page.MouseMove,
+        Setpoints_Page.MouseMove, Enviro_Page.MouseMove, Goto_Faults_BTN.Click, Goto_Settings_BTN.Click, Goto_Alarms_BTN.Click,
+        Goto_Logs_BTN.Click, Goto_Environment_BTN.Click, Goto_Electrical_BTN.Click, Goto_Water_BTN.Click, Goto_Compressors_BTN.Click,
+        Goto_Steam_BTN.Click, Goto_Dashboard_BTN.Click, Goto_Boilers_BTN.Click, Main_Page.Click, Boiler_Page.Click, Compressor_Page.Click,
+        Alarms_Page.Click, Login_Screen.Click
 
         If CurrentUser = "System" Then
             LoginTimeRemaining = GetNumeric(INI_GetKey_System("APP", "SCREEN_TO"))
@@ -3026,7 +3025,10 @@ VALUES (@DT,@CWSUP, @CWPRP, @CWPOP, @CWFD, @HWPRP, @HWPOP, @HWFD, @HWTP, @HWFL, 
             Dim AlarmStatus As String
             If sender.selectcolor2 = True Then AlarmStatus = "ACTIVE" Else AlarmStatus = "CLEAR"
 
-            If RunSQL Then SaveAlarmData(GetNow(), AlarmStatus, AlarmDesc, "Electrical")
+            If RunSQL Then
+                Dim CurrentDT As DateTime = Now
+                SaveAlarmData(GetNow(), AlarmStatus, AlarmDesc, "Electrical")
+            End If
         End If
 
         Elec_CNT = 0
@@ -3051,7 +3053,10 @@ VALUES (@DT,@CWSUP, @CWPRP, @CWPOP, @CWFD, @HWPRP, @HWPOP, @HWFD, @HWTP, @HWFL, 
             Dim AlarmStatus As String
             If sender.selectcolor2 = True Then AlarmStatus = "ACTIVE" Else AlarmStatus = "CLEAR"
 
-            If RunSQL Then SaveAlarmData(GetNow(), AlarmStatus, AlarmDesc, "Air")
+            If RunSQL Then
+                Dim CurrentDT As DateTime = Now
+                SaveAlarmData(GetNow(), AlarmStatus, AlarmDesc, "Air")
+            End If
         End If
 
         Air_CNT = 0
@@ -3076,7 +3081,10 @@ VALUES (@DT,@CWSUP, @CWPRP, @CWPOP, @CWFD, @HWPRP, @HWPOP, @HWFD, @HWTP, @HWFL, 
             Dim AlarmStatus As String
             If sender.selectcolor2 = True Then AlarmStatus = "ACTIVE" Else AlarmStatus = "CLEAR"
 
-            If RunSQL Then SaveAlarmData(GetNow(), AlarmStatus, AlarmDesc, "Steam")
+            If RunSQL Then
+                Dim CurrentDT As DateTime = Now
+                SaveAlarmData(GetNow(), AlarmStatus, AlarmDesc, "Steam")
+            End If
         End If
 
         'Re-count Current Steam Alarms
@@ -3101,7 +3109,10 @@ VALUES (@DT,@CWSUP, @CWPRP, @CWPOP, @CWFD, @HWPRP, @HWPOP, @HWFD, @HWTP, @HWFL, 
             Dim AlarmDesc As String = WaterAlarmPanel.Controls("WaterAlarmDesc" & GetNumeric(sender.name)).Text
             Dim AlarmStatus As String
             If sender.selectcolor2 = True Then AlarmStatus = "ACTIVE" Else AlarmStatus = "CLEAR"
-            If RunSQL Then SaveAlarmData(GetNow(), AlarmStatus, AlarmDesc, "Water")
+            If RunSQL Then
+                Dim CurrentDT As DateTime = Now
+                SaveAlarmData(GetNow(), AlarmStatus, AlarmDesc, "Water")
+            End If
         End If
         Water_CNT = 0
         For i = 0 To 31
@@ -4977,6 +4988,7 @@ VALUES (@DT,@CWSUP, @CWPRP, @CWPOP, @CWFD, @HWPRP, @HWPOP, @HWFD, @HWTP, @HWFL, 
             If FirstTickDone = False Then
                 If IsNumeric(sender.text) Then
                     First5Count += 1
+                    ProgressBar1.Increment(1)
                     If First5Count >= 5 Then
                         FirstTickDone = True
                         First5Count = 0
@@ -4989,6 +5001,11 @@ VALUES (@DT,@CWSUP, @CWPRP, @CWPOP, @CWFD, @HWPRP, @HWPOP, @HWFD, @HWTP, @HWFL, 
                         If RunSQL Then SaveSystemData(GetNow(), "APPLICATION STARTUP", "System")
                     End If
                 End If
+            Else
+                Dim NewHBTime_5s As DateTime = Now
+                Dim TimeBetweenLastHB_5s As TimeSpan = Now.Subtract(lastHBTime_5s)
+                lastHBTime_5s = Now
+                Label74.Text = TimeBetweenLastHB_5s.Seconds & "." & TimeBetweenLastHB_5s.Milliseconds.ToString("000") & " sec"
             End If
         End If
     End Sub

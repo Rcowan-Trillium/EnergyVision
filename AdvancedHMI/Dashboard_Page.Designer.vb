@@ -54,7 +54,6 @@ Partial Class Dashboard_Page
         Dim Title2 As System.Windows.Forms.DataVisualization.Charting.Title = New System.Windows.Forms.DataVisualization.Charting.Title()
         Dim Title3 As System.Windows.Forms.DataVisualization.Charting.Title = New System.Windows.Forms.DataVisualization.Charting.Title()
         Dim Title4 As System.Windows.Forms.DataVisualization.Charting.Title = New System.Windows.Forms.DataVisualization.Charting.Title()
-        Dim Title5 As System.Windows.Forms.DataVisualization.Charting.Title = New System.Windows.Forms.DataVisualization.Charting.Title()
         Dim ChartArea5 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
         Dim ChartArea6 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
         Dim Legend5 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
@@ -63,8 +62,8 @@ Partial Class Dashboard_Page
         Dim Series20 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
         Dim Series21 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
         Dim Series22 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim Title5 As System.Windows.Forms.DataVisualization.Charting.Title = New System.Windows.Forms.DataVisualization.Charting.Title()
         Dim Title6 As System.Windows.Forms.DataVisualization.Charting.Title = New System.Windows.Forms.DataVisualization.Charting.Title()
-        Dim Title7 As System.Windows.Forms.DataVisualization.Charting.Title = New System.Windows.Forms.DataVisualization.Charting.Title()
         Dim ChartArea7 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
         Dim CustomLabel1 As System.Windows.Forms.DataVisualization.Charting.CustomLabel = New System.Windows.Forms.DataVisualization.Charting.CustomLabel()
         Dim CustomLabel2 As System.Windows.Forms.DataVisualization.Charting.CustomLabel = New System.Windows.Forms.DataVisualization.Charting.CustomLabel()
@@ -95,6 +94,8 @@ Partial Class Dashboard_Page
         Dim DataPoint16 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(360.0R, 277.0R)
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Goto_Dashboard_BTN = New System.Windows.Forms.Button()
         Me.Goto_Boilers_BTN = New System.Windows.Forms.Button()
         Me.Goto_Compressors_BTN = New System.Windows.Forms.Button()
@@ -1686,7 +1687,6 @@ Partial Class Dashboard_Page
         Me.BasicIndicator123 = New AdvancedHMIControls.BasicIndicator()
         Me.AlarmHistoryPanel = New System.Windows.Forms.Panel()
         Me.AlarmGrid = New System.Windows.Forms.DataGridView()
-        Me.AlarmList = New System.Windows.Forms.ListBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Status_Page = New System.Windows.Forms.Panel()
         Me.PictureBox76 = New System.Windows.Forms.PictureBox()
@@ -1700,6 +1700,7 @@ Partial Class Dashboard_Page
         Me.PictureBox71 = New System.Windows.Forms.PictureBox()
         Me.PictureBox70 = New System.Windows.Forms.PictureBox()
         Me.Water_Page = New System.Windows.Forms.Panel()
+        Me.Label75 = New System.Windows.Forms.Label()
         Me.Water_Pr_Cold_V2 = New AdvancedHMIControls.AnalogValueDisplay()
         Me.Pipe104 = New AdvancedHMIControls.Pipe()
         Me.Pipe108 = New AdvancedHMIControls.Pipe()
@@ -1922,6 +1923,7 @@ Partial Class Dashboard_Page
         Me.StartUpScreen = New System.Windows.Forms.Panel()
         Me.StartupStatusLabel = New System.Windows.Forms.Label()
         Me.PictureBox41 = New System.Windows.Forms.PictureBox()
+        Me.ProgressBar1 = New System.Windows.Forms.ProgressBar()
         Me.Panel29.SuspendLayout
         CType(Me.NumericUpDown21, System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.NumericUpDown24, System.ComponentModel.ISupportInitialize).BeginInit
@@ -2306,13 +2308,15 @@ Partial Class Dashboard_Page
         'Goto_Dashboard_BTN
         '
         Me.Goto_Dashboard_BTN.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.Goto_Dashboard_BTN.FlatAppearance.BorderColor = System.Drawing.Color.Silver
+        Me.Goto_Dashboard_BTN.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer))
+        Me.Goto_Dashboard_BTN.FlatAppearance.BorderSize = 2
+        Me.Goto_Dashboard_BTN.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Goto_Dashboard_BTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Goto_Dashboard_BTN.Font = New System.Drawing.Font("Agency FB", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Goto_Dashboard_BTN.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Goto_Dashboard_BTN.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Goto_Dashboard_BTN.Location = New System.Drawing.Point(11, 65)
         Me.Goto_Dashboard_BTN.Name = "Goto_Dashboard_BTN"
-        Me.Goto_Dashboard_BTN.Size = New System.Drawing.Size(146, 52)
+        Me.Goto_Dashboard_BTN.Size = New System.Drawing.Size(147, 52)
         Me.Goto_Dashboard_BTN.TabIndex = 0
         Me.Goto_Dashboard_BTN.Text = "DASHBOARD"
         Me.Goto_Dashboard_BTN.UseVisualStyleBackColor = True
@@ -2320,41 +2324,47 @@ Partial Class Dashboard_Page
         'Goto_Boilers_BTN
         '
         Me.Goto_Boilers_BTN.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.Goto_Boilers_BTN.FlatAppearance.BorderColor = System.Drawing.Color.Silver
+        Me.Goto_Boilers_BTN.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer))
+        Me.Goto_Boilers_BTN.FlatAppearance.BorderSize = 2
+        Me.Goto_Boilers_BTN.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Goto_Boilers_BTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Goto_Boilers_BTN.Font = New System.Drawing.Font("Agency FB", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Goto_Boilers_BTN.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Goto_Boilers_BTN.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Goto_Boilers_BTN.Location = New System.Drawing.Point(157, 65)
         Me.Goto_Boilers_BTN.Name = "Goto_Boilers_BTN"
-        Me.Goto_Boilers_BTN.Size = New System.Drawing.Size(146, 52)
+        Me.Goto_Boilers_BTN.Size = New System.Drawing.Size(147, 52)
         Me.Goto_Boilers_BTN.TabIndex = 0
-        Me.Goto_Boilers_BTN.Text = "BOILER SYSTEM"
+        Me.Goto_Boilers_BTN.Text = "BOILER"
         Me.Goto_Boilers_BTN.UseVisualStyleBackColor = True
         '
         'Goto_Compressors_BTN
         '
         Me.Goto_Compressors_BTN.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.Goto_Compressors_BTN.FlatAppearance.BorderColor = System.Drawing.Color.Silver
+        Me.Goto_Compressors_BTN.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer))
+        Me.Goto_Compressors_BTN.FlatAppearance.BorderSize = 2
+        Me.Goto_Compressors_BTN.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Goto_Compressors_BTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Goto_Compressors_BTN.Font = New System.Drawing.Font("Agency FB", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Goto_Compressors_BTN.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Goto_Compressors_BTN.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Goto_Compressors_BTN.Location = New System.Drawing.Point(449, 65)
         Me.Goto_Compressors_BTN.Name = "Goto_Compressors_BTN"
-        Me.Goto_Compressors_BTN.Size = New System.Drawing.Size(146, 52)
+        Me.Goto_Compressors_BTN.Size = New System.Drawing.Size(147, 52)
         Me.Goto_Compressors_BTN.TabIndex = 0
-        Me.Goto_Compressors_BTN.Text = "COMPRESSED AIR"
+        Me.Goto_Compressors_BTN.Text = "AIR"
         Me.Goto_Compressors_BTN.UseVisualStyleBackColor = True
         '
         'Goto_Electrical_BTN
         '
         Me.Goto_Electrical_BTN.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.Goto_Electrical_BTN.FlatAppearance.BorderColor = System.Drawing.Color.Silver
+        Me.Goto_Electrical_BTN.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer))
+        Me.Goto_Electrical_BTN.FlatAppearance.BorderSize = 2
+        Me.Goto_Electrical_BTN.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Goto_Electrical_BTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Goto_Electrical_BTN.Font = New System.Drawing.Font("Agency FB", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Goto_Electrical_BTN.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Goto_Electrical_BTN.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Goto_Electrical_BTN.Location = New System.Drawing.Point(741, 65)
         Me.Goto_Electrical_BTN.Name = "Goto_Electrical_BTN"
-        Me.Goto_Electrical_BTN.Size = New System.Drawing.Size(146, 52)
+        Me.Goto_Electrical_BTN.Size = New System.Drawing.Size(147, 52)
         Me.Goto_Electrical_BTN.TabIndex = 0
         Me.Goto_Electrical_BTN.Text = "POWER"
         Me.Goto_Electrical_BTN.UseVisualStyleBackColor = True
@@ -2362,29 +2372,33 @@ Partial Class Dashboard_Page
         'Goto_Environment_BTN
         '
         Me.Goto_Environment_BTN.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.Goto_Environment_BTN.FlatAppearance.BorderColor = System.Drawing.Color.Silver
+        Me.Goto_Environment_BTN.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer))
+        Me.Goto_Environment_BTN.FlatAppearance.BorderSize = 2
+        Me.Goto_Environment_BTN.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Goto_Environment_BTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Goto_Environment_BTN.Font = New System.Drawing.Font("Agency FB", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Goto_Environment_BTN.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Goto_Environment_BTN.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Goto_Environment_BTN.Location = New System.Drawing.Point(887, 65)
         Me.Goto_Environment_BTN.Name = "Goto_Environment_BTN"
-        Me.Goto_Environment_BTN.Size = New System.Drawing.Size(146, 52)
+        Me.Goto_Environment_BTN.Size = New System.Drawing.Size(147, 52)
         Me.Goto_Environment_BTN.TabIndex = 0
-        Me.Goto_Environment_BTN.Text = "ENVIRONMENT"
+        Me.Goto_Environment_BTN.Text = "WEATHER"
         Me.Goto_Environment_BTN.UseVisualStyleBackColor = True
         '
         'Goto_Logs_BTN
         '
         Me.Goto_Logs_BTN.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.Goto_Logs_BTN.FlatAppearance.BorderColor = System.Drawing.Color.Silver
+        Me.Goto_Logs_BTN.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer))
+        Me.Goto_Logs_BTN.FlatAppearance.BorderSize = 2
+        Me.Goto_Logs_BTN.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Goto_Logs_BTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Goto_Logs_BTN.Font = New System.Drawing.Font("Agency FB", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Goto_Logs_BTN.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Goto_Logs_BTN.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Goto_Logs_BTN.Location = New System.Drawing.Point(1033, 65)
         Me.Goto_Logs_BTN.Name = "Goto_Logs_BTN"
-        Me.Goto_Logs_BTN.Size = New System.Drawing.Size(146, 52)
+        Me.Goto_Logs_BTN.Size = New System.Drawing.Size(147, 52)
         Me.Goto_Logs_BTN.TabIndex = 0
-        Me.Goto_Logs_BTN.Text = "REAL-TIME DATA"
+        Me.Goto_Logs_BTN.Text = "TREND"
         Me.Goto_Logs_BTN.UseVisualStyleBackColor = True
         '
         'Label144
@@ -2565,13 +2579,15 @@ Partial Class Dashboard_Page
         'Goto_Alarms_BTN
         '
         Me.Goto_Alarms_BTN.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.Goto_Alarms_BTN.FlatAppearance.BorderColor = System.Drawing.Color.Silver
+        Me.Goto_Alarms_BTN.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer))
+        Me.Goto_Alarms_BTN.FlatAppearance.BorderSize = 2
+        Me.Goto_Alarms_BTN.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Goto_Alarms_BTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Goto_Alarms_BTN.Font = New System.Drawing.Font("Agency FB", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Goto_Alarms_BTN.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Goto_Alarms_BTN.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Goto_Alarms_BTN.Location = New System.Drawing.Point(1179, 65)
         Me.Goto_Alarms_BTN.Name = "Goto_Alarms_BTN"
-        Me.Goto_Alarms_BTN.Size = New System.Drawing.Size(146, 52)
+        Me.Goto_Alarms_BTN.Size = New System.Drawing.Size(147, 52)
         Me.Goto_Alarms_BTN.TabIndex = 0
         Me.Goto_Alarms_BTN.Text = "ALARMS"
         Me.Goto_Alarms_BTN.UseVisualStyleBackColor = True
@@ -2579,13 +2595,15 @@ Partial Class Dashboard_Page
         'Goto_Water_BTN
         '
         Me.Goto_Water_BTN.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.Goto_Water_BTN.FlatAppearance.BorderColor = System.Drawing.Color.Silver
+        Me.Goto_Water_BTN.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer))
+        Me.Goto_Water_BTN.FlatAppearance.BorderSize = 2
+        Me.Goto_Water_BTN.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Goto_Water_BTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Goto_Water_BTN.Font = New System.Drawing.Font("Agency FB", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Goto_Water_BTN.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Goto_Water_BTN.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Goto_Water_BTN.Location = New System.Drawing.Point(595, 65)
         Me.Goto_Water_BTN.Name = "Goto_Water_BTN"
-        Me.Goto_Water_BTN.Size = New System.Drawing.Size(146, 52)
+        Me.Goto_Water_BTN.Size = New System.Drawing.Size(147, 52)
         Me.Goto_Water_BTN.TabIndex = 0
         Me.Goto_Water_BTN.Text = "WATER"
         Me.Goto_Water_BTN.UseVisualStyleBackColor = True
@@ -2593,13 +2611,15 @@ Partial Class Dashboard_Page
         'Goto_Settings_BTN
         '
         Me.Goto_Settings_BTN.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.Goto_Settings_BTN.FlatAppearance.BorderColor = System.Drawing.Color.Silver
+        Me.Goto_Settings_BTN.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer))
+        Me.Goto_Settings_BTN.FlatAppearance.BorderSize = 2
+        Me.Goto_Settings_BTN.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Goto_Settings_BTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Goto_Settings_BTN.Font = New System.Drawing.Font("Agency FB", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Goto_Settings_BTN.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Goto_Settings_BTN.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Goto_Settings_BTN.Location = New System.Drawing.Point(1325, 65)
         Me.Goto_Settings_BTN.Name = "Goto_Settings_BTN"
-        Me.Goto_Settings_BTN.Size = New System.Drawing.Size(146, 52)
+        Me.Goto_Settings_BTN.Size = New System.Drawing.Size(147, 52)
         Me.Goto_Settings_BTN.TabIndex = 0
         Me.Goto_Settings_BTN.Text = "SETPOINTS"
         Me.Goto_Settings_BTN.UseVisualStyleBackColor = True
@@ -3144,13 +3164,14 @@ Partial Class Dashboard_Page
         ChartArea1.AxisX.LabelStyle.ForeColor = System.Drawing.Color.White
         ChartArea1.AxisX.LabelStyle.Interval = 50.0R
         ChartArea1.AxisX.LineColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        ChartArea1.AxisX.MajorGrid.Interval = 10.0R
-        ChartArea1.AxisX.MajorGrid.LineColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer))
+        ChartArea1.AxisX.MajorGrid.Interval = 60.0R
+        ChartArea1.AxisX.MajorGrid.LineColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(48, Byte), Integer), CType(CType(48, Byte), Integer))
         ChartArea1.AxisX.Maximum = 1800.0R
         ChartArea1.AxisX.MaximumAutoSize = 100.0!
         ChartArea1.AxisX.Minimum = 1.0R
-        ChartArea1.AxisX.MinorGrid.Interval = 2.0R
-        ChartArea1.AxisX.MinorGrid.LineColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(22, Byte), Integer), CType(CType(22, Byte), Integer))
+        ChartArea1.AxisX.MinorGrid.Enabled = True
+        ChartArea1.AxisX.MinorGrid.Interval = 10.0R
+        ChartArea1.AxisX.MinorGrid.LineColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer))
         ChartArea1.AxisX.ScaleBreakStyle.LineColor = System.Drawing.Color.Silver
         ChartArea1.AxisX.ScaleBreakStyle.MaxNumberOfBreaks = 5
         ChartArea1.AxisX.ScaleView.Position = 0R
@@ -3161,18 +3182,19 @@ Partial Class Dashboard_Page
         ChartArea1.AxisX.ScrollBar.LineColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         ChartArea1.AxisX.ScrollBar.Size = 10.0R
         ChartArea1.AxisX.TextOrientation = System.Windows.Forms.DataVisualization.Charting.TextOrientation.Horizontal
-        ChartArea1.AxisX.TitleForeColor = System.Drawing.Color.White
+        ChartArea1.AxisX.TitleForeColor = System.Drawing.Color.Gainsboro
         ChartArea1.AxisX2.TitleForeColor = System.Drawing.Color.White
         ChartArea1.AxisY.IsLabelAutoFit = False
         ChartArea1.AxisY.LabelStyle.ForeColor = System.Drawing.Color.White
         ChartArea1.AxisY.LabelStyle.Interval = 20.0R
         ChartArea1.AxisY.LineColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        ChartArea1.AxisY.MajorGrid.Interval = 10.0R
-        ChartArea1.AxisY.MajorGrid.LineColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer))
+        ChartArea1.AxisY.MajorGrid.Interval = 20.0R
+        ChartArea1.AxisY.MajorGrid.LineColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(48, Byte), Integer), CType(CType(48, Byte), Integer))
         ChartArea1.AxisY.Maximum = 1000.0R
         ChartArea1.AxisY.Minimum = 0R
-        ChartArea1.AxisY.MinorGrid.Interval = 2.0R
-        ChartArea1.AxisY.MinorGrid.LineColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(22, Byte), Integer), CType(CType(22, Byte), Integer))
+        ChartArea1.AxisY.MinorGrid.Enabled = True
+        ChartArea1.AxisY.MinorGrid.Interval = 5.0R
+        ChartArea1.AxisY.MinorGrid.LineColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer))
         ChartArea1.AxisY.ScaleView.MinSize = 50.0R
         ChartArea1.AxisY.ScaleView.Position = 0R
         ChartArea1.AxisY.ScaleView.Size = 200.0R
@@ -3191,10 +3213,13 @@ Partial Class Dashboard_Page
         ChartArea2.AxisX.LabelStyle.ForeColor = System.Drawing.Color.White
         ChartArea2.AxisX.LabelStyle.Interval = 50.0R
         ChartArea2.AxisX.LineColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer))
-        ChartArea2.AxisX.MajorGrid.Interval = 10.0R
-        ChartArea2.AxisX.MajorGrid.LineColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer))
+        ChartArea2.AxisX.MajorGrid.Interval = 60.0R
+        ChartArea2.AxisX.MajorGrid.LineColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(48, Byte), Integer), CType(CType(48, Byte), Integer))
         ChartArea2.AxisX.Maximum = 1800.0R
         ChartArea2.AxisX.Minimum = 1.0R
+        ChartArea2.AxisX.MinorGrid.Enabled = True
+        ChartArea2.AxisX.MinorGrid.Interval = 10.0R
+        ChartArea2.AxisX.MinorGrid.LineColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer))
         ChartArea2.AxisX.ScaleView.Position = 0R
         ChartArea2.AxisX.ScaleView.Size = 550.0R
         ChartArea2.AxisX.ScrollBar.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(22, Byte), Integer), CType(CType(22, Byte), Integer))
@@ -3204,10 +3229,14 @@ Partial Class Dashboard_Page
         ChartArea2.AxisY.LabelStyle.ForeColor = System.Drawing.Color.White
         ChartArea2.AxisY.LabelStyle.Interval = 20.0R
         ChartArea2.AxisY.LineColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer))
-        ChartArea2.AxisY.MajorGrid.Interval = 10.0R
-        ChartArea2.AxisY.MajorGrid.LineColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer))
+        ChartArea2.AxisY.MajorGrid.Interval = 20.0R
+        ChartArea2.AxisY.MajorGrid.LineColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(48, Byte), Integer), CType(CType(48, Byte), Integer))
         ChartArea2.AxisY.Maximum = 1000.0R
         ChartArea2.AxisY.Minimum = 1.0R
+        ChartArea2.AxisY.MinorGrid.Enabled = True
+        ChartArea2.AxisY.MinorGrid.Interval = 5.0R
+        ChartArea2.AxisY.MinorGrid.LineColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer))
+        ChartArea2.AxisY.MinorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dot
         ChartArea2.AxisY.ScaleView.MinSize = 50.0R
         ChartArea2.AxisY.ScaleView.Position = 0R
         ChartArea2.AxisY.ScaleView.Size = 200.0R
@@ -3222,10 +3251,13 @@ Partial Class Dashboard_Page
         ChartArea3.AxisX.LabelStyle.ForeColor = System.Drawing.Color.White
         ChartArea3.AxisX.LabelStyle.Interval = 50.0R
         ChartArea3.AxisX.LineColor = System.Drawing.Color.DimGray
-        ChartArea3.AxisX.MajorGrid.Interval = 10.0R
-        ChartArea3.AxisX.MajorGrid.LineColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer))
+        ChartArea3.AxisX.MajorGrid.Interval = 60.0R
+        ChartArea3.AxisX.MajorGrid.LineColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(48, Byte), Integer), CType(CType(48, Byte), Integer))
         ChartArea3.AxisX.Maximum = 1802.0R
         ChartArea3.AxisX.Minimum = 1.0R
+        ChartArea3.AxisX.MinorGrid.Enabled = True
+        ChartArea3.AxisX.MinorGrid.Interval = 10.0R
+        ChartArea3.AxisX.MinorGrid.LineColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer))
         ChartArea3.AxisX.ScaleView.Position = 0R
         ChartArea3.AxisX.ScaleView.Size = 550.0R
         ChartArea3.AxisX.ScrollBar.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(22, Byte), Integer), CType(CType(22, Byte), Integer))
@@ -3235,10 +3267,13 @@ Partial Class Dashboard_Page
         ChartArea3.AxisY.LabelStyle.ForeColor = System.Drawing.Color.White
         ChartArea3.AxisY.LabelStyle.Interval = 20.0R
         ChartArea3.AxisY.LineColor = System.Drawing.Color.DimGray
-        ChartArea3.AxisY.MajorGrid.Interval = 10.0R
-        ChartArea3.AxisY.MajorGrid.LineColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer))
+        ChartArea3.AxisY.MajorGrid.Interval = 20.0R
+        ChartArea3.AxisY.MajorGrid.LineColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(48, Byte), Integer), CType(CType(48, Byte), Integer))
         ChartArea3.AxisY.Maximum = 1000.0R
         ChartArea3.AxisY.Minimum = 1.0R
+        ChartArea3.AxisY.MinorGrid.Enabled = True
+        ChartArea3.AxisY.MinorGrid.Interval = 5.0R
+        ChartArea3.AxisY.MinorGrid.LineColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer))
         ChartArea3.AxisY.ScaleView.MinSize = 50.0R
         ChartArea3.AxisY.ScaleView.Position = 0R
         ChartArea3.AxisY.ScaleView.Size = 200.0R
@@ -3253,10 +3288,13 @@ Partial Class Dashboard_Page
         ChartArea4.AxisX.LabelStyle.ForeColor = System.Drawing.Color.White
         ChartArea4.AxisX.LabelStyle.Interval = 50.0R
         ChartArea4.AxisX.LineColor = System.Drawing.Color.DimGray
-        ChartArea4.AxisX.MajorGrid.Interval = 10.0R
-        ChartArea4.AxisX.MajorGrid.LineColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer))
+        ChartArea4.AxisX.MajorGrid.Interval = 60.0R
+        ChartArea4.AxisX.MajorGrid.LineColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(48, Byte), Integer), CType(CType(48, Byte), Integer))
         ChartArea4.AxisX.Maximum = 1802.0R
         ChartArea4.AxisX.Minimum = 1.0R
+        ChartArea4.AxisX.MinorGrid.Enabled = True
+        ChartArea4.AxisX.MinorGrid.Interval = 10.0R
+        ChartArea4.AxisX.MinorGrid.LineColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer))
         ChartArea4.AxisX.ScaleView.Position = 0R
         ChartArea4.AxisX.ScaleView.Size = 550.0R
         ChartArea4.AxisX.ScrollBar.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(22, Byte), Integer), CType(CType(22, Byte), Integer))
@@ -3266,10 +3304,13 @@ Partial Class Dashboard_Page
         ChartArea4.AxisY.LabelStyle.ForeColor = System.Drawing.Color.White
         ChartArea4.AxisY.LabelStyle.Interval = 20.0R
         ChartArea4.AxisY.LineColor = System.Drawing.Color.DimGray
-        ChartArea4.AxisY.MajorGrid.Interval = 10.0R
-        ChartArea4.AxisY.MajorGrid.LineColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer))
+        ChartArea4.AxisY.MajorGrid.Interval = 20.0R
+        ChartArea4.AxisY.MajorGrid.LineColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(48, Byte), Integer), CType(CType(48, Byte), Integer))
         ChartArea4.AxisY.Maximum = 1000.0R
         ChartArea4.AxisY.Minimum = 1.0R
+        ChartArea4.AxisY.MinorGrid.Enabled = True
+        ChartArea4.AxisY.MinorGrid.Interval = 5.0R
+        ChartArea4.AxisY.MinorGrid.LineColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer))
         ChartArea4.AxisY.ScaleView.MinSize = 50.0R
         ChartArea4.AxisY.ScaleView.Position = 0R
         ChartArea4.AxisY.ScaleView.Size = 200.0R
@@ -3322,7 +3363,7 @@ Partial Class Dashboard_Page
         Me.Chart3.Legends.Add(Legend2)
         Me.Chart3.Legends.Add(Legend3)
         Me.Chart3.Legends.Add(Legend4)
-        Me.Chart3.Location = New System.Drawing.Point(3, 8)
+        Me.Chart3.Location = New System.Drawing.Point(0, 0)
         Me.Chart3.Name = "Chart3"
         Series1.ChartArea = "Electrical Data"
         Series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline
@@ -3450,7 +3491,7 @@ Partial Class Dashboard_Page
         Me.Chart3.Series.Add(Series16)
         Me.Chart3.Series.Add(Series17)
         Me.Chart3.Series.Add(Series18)
-        Me.Chart3.Size = New System.Drawing.Size(1637, 926)
+        Me.Chart3.Size = New System.Drawing.Size(1637, 945)
         Me.Chart3.TabIndex = 94
         Me.Chart3.Text = "Steam Chart"
         Title1.DockedToChartArea = "Electrical Data"
@@ -3477,15 +3518,10 @@ Partial Class Dashboard_Page
         Title4.ForeColor = System.Drawing.Color.White
         Title4.Name = "Title4"
         Title4.Text = "Water Data"
-        Title5.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Title5.ForeColor = System.Drawing.Color.White
-        Title5.Name = "Title7"
-        Title5.Text = "Real-Time Data (Past 60 Minutes)"
         Me.Chart3.Titles.Add(Title1)
         Me.Chart3.Titles.Add(Title2)
         Me.Chart3.Titles.Add(Title3)
         Me.Chart3.Titles.Add(Title4)
-        Me.Chart3.Titles.Add(Title5)
         '
         'ElectricalAlarmPanel
         '
@@ -11956,7 +11992,6 @@ Partial Class Dashboard_Page
         '
         'Label326
         '
-        Me.Label326.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label326.Dock = System.Windows.Forms.DockStyle.Top
         Me.Label326.Font = New System.Drawing.Font("Microsoft Sans Serif", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label326.ForeColor = System.Drawing.Color.White
@@ -11969,7 +12004,6 @@ Partial Class Dashboard_Page
         '
         'Label199
         '
-        Me.Label199.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label199.Font = New System.Drawing.Font("Agency FB", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label199.ForeColor = System.Drawing.Color.White
         Me.Label199.ImageAlign = System.Drawing.ContentAlignment.BottomLeft
@@ -12021,7 +12055,6 @@ Partial Class Dashboard_Page
         '
         'Label218
         '
-        Me.Label218.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label218.Font = New System.Drawing.Font("Agency FB", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label218.ForeColor = System.Drawing.Color.White
         Me.Label218.ImageAlign = System.Drawing.ContentAlignment.BottomLeft
@@ -12034,7 +12067,6 @@ Partial Class Dashboard_Page
         '
         'Label149
         '
-        Me.Label149.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label149.Font = New System.Drawing.Font("Agency FB", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label149.ForeColor = System.Drawing.Color.White
         Me.Label149.ImageAlign = System.Drawing.ContentAlignment.BottomLeft
@@ -23126,9 +23158,10 @@ Partial Class Dashboard_Page
         'CloudLBL
         '
         Me.CloudLBL.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.CloudLBL.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.CloudLBL.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CloudLBL.ForeColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.CloudLBL.Location = New System.Drawing.Point(1637, 170)
+        Me.CloudLBL.Location = New System.Drawing.Point(1637, 273)
         Me.CloudLBL.Name = "CloudLBL"
         Me.CloudLBL.Size = New System.Drawing.Size(238, 40)
         Me.CloudLBL.TabIndex = 2
@@ -23149,11 +23182,12 @@ Partial Class Dashboard_Page
         'WindGustLBL
         '
         Me.WindGustLBL.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.WindGustLBL.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.WindGustLBL.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.WindGustLBL.ForeColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.WindGustLBL.Location = New System.Drawing.Point(1398, 497)
+        Me.WindGustLBL.Location = New System.Drawing.Point(1717, 396)
         Me.WindGustLBL.Name = "WindGustLBL"
-        Me.WindGustLBL.Size = New System.Drawing.Size(477, 40)
+        Me.WindGustLBL.Size = New System.Drawing.Size(158, 40)
         Me.WindGustLBL.TabIndex = 2
         Me.WindGustLBL.Text = "wind gust"
         Me.WindGustLBL.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -23161,11 +23195,12 @@ Partial Class Dashboard_Page
         'WindDegLBL
         '
         Me.WindDegLBL.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.WindDegLBL.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.WindDegLBL.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.WindDegLBL.ForeColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.WindDegLBL.Location = New System.Drawing.Point(1398, 458)
+        Me.WindDegLBL.Location = New System.Drawing.Point(1557, 396)
         Me.WindDegLBL.Name = "WindDegLBL"
-        Me.WindDegLBL.Size = New System.Drawing.Size(477, 40)
+        Me.WindDegLBL.Size = New System.Drawing.Size(159, 40)
         Me.WindDegLBL.TabIndex = 2
         Me.WindDegLBL.Text = "wind head"
         Me.WindDegLBL.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -23173,11 +23208,12 @@ Partial Class Dashboard_Page
         'WindSpeedLBL
         '
         Me.WindSpeedLBL.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.WindSpeedLBL.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.WindSpeedLBL.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.WindSpeedLBL.ForeColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.WindSpeedLBL.Location = New System.Drawing.Point(1398, 419)
+        Me.WindSpeedLBL.Location = New System.Drawing.Point(1398, 396)
         Me.WindSpeedLBL.Name = "WindSpeedLBL"
-        Me.WindSpeedLBL.Size = New System.Drawing.Size(477, 40)
+        Me.WindSpeedLBL.Size = New System.Drawing.Size(158, 40)
         Me.WindSpeedLBL.TabIndex = 2
         Me.WindSpeedLBL.Text = "wind speed"
         Me.WindSpeedLBL.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -23185,9 +23221,10 @@ Partial Class Dashboard_Page
         'PressLBL
         '
         Me.PressLBL.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.PressLBL.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.PressLBL.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.PressLBL.ForeColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.PressLBL.Location = New System.Drawing.Point(1637, 248)
+        Me.PressLBL.Location = New System.Drawing.Point(1637, 355)
         Me.PressLBL.Name = "PressLBL"
         Me.PressLBL.Size = New System.Drawing.Size(238, 40)
         Me.PressLBL.TabIndex = 1
@@ -23197,9 +23234,10 @@ Partial Class Dashboard_Page
         'HumLBL
         '
         Me.HumLBL.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.HumLBL.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.HumLBL.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.HumLBL.ForeColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.HumLBL.Location = New System.Drawing.Point(1637, 209)
+        Me.HumLBL.Location = New System.Drawing.Point(1637, 314)
         Me.HumLBL.Name = "HumLBL"
         Me.HumLBL.Size = New System.Drawing.Size(238, 40)
         Me.HumLBL.TabIndex = 1
@@ -23209,9 +23247,10 @@ Partial Class Dashboard_Page
         'TempMaxLBL
         '
         Me.TempMaxLBL.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TempMaxLBL.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.TempMaxLBL.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TempMaxLBL.ForeColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.TempMaxLBL.Location = New System.Drawing.Point(1398, 248)
+        Me.TempMaxLBL.Location = New System.Drawing.Point(1398, 355)
         Me.TempMaxLBL.Name = "TempMaxLBL"
         Me.TempMaxLBL.Size = New System.Drawing.Size(238, 40)
         Me.TempMaxLBL.TabIndex = 1
@@ -23221,9 +23260,10 @@ Partial Class Dashboard_Page
         'TempMinLBL
         '
         Me.TempMinLBL.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TempMinLBL.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.TempMinLBL.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TempMinLBL.ForeColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.TempMinLBL.Location = New System.Drawing.Point(1398, 209)
+        Me.TempMinLBL.Location = New System.Drawing.Point(1398, 314)
         Me.TempMinLBL.Name = "TempMinLBL"
         Me.TempMinLBL.Size = New System.Drawing.Size(238, 40)
         Me.TempMinLBL.TabIndex = 1
@@ -23233,9 +23273,10 @@ Partial Class Dashboard_Page
         'TempFeelsLBL
         '
         Me.TempFeelsLBL.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TempFeelsLBL.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.TempFeelsLBL.Font = New System.Drawing.Font("Franklin Gothic Demi Cond", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TempFeelsLBL.ForeColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.TempFeelsLBL.Location = New System.Drawing.Point(1398, 170)
+        Me.TempFeelsLBL.Location = New System.Drawing.Point(1398, 273)
         Me.TempFeelsLBL.Name = "TempFeelsLBL"
         Me.TempFeelsLBL.Size = New System.Drawing.Size(238, 40)
         Me.TempFeelsLBL.TabIndex = 1
@@ -23245,9 +23286,10 @@ Partial Class Dashboard_Page
         'DescLBL
         '
         Me.DescLBL.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.DescLBL.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.DescLBL.Font = New System.Drawing.Font("Franklin Gothic Demi Cond", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DescLBL.ForeColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.DescLBL.Location = New System.Drawing.Point(1398, 376)
+        Me.DescLBL.Location = New System.Drawing.Point(1398, 230)
         Me.DescLBL.Name = "DescLBL"
         Me.DescLBL.Size = New System.Drawing.Size(477, 42)
         Me.DescLBL.TabIndex = 1
@@ -23257,11 +23299,12 @@ Partial Class Dashboard_Page
         'MainLBL
         '
         Me.MainLBL.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.MainLBL.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.MainLBL.Font = New System.Drawing.Font("Tahoma", 36.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.MainLBL.ForeColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.MainLBL.Location = New System.Drawing.Point(1398, 291)
+        Me.MainLBL.Location = New System.Drawing.Point(1398, 170)
         Me.MainLBL.Name = "MainLBL"
-        Me.MainLBL.Size = New System.Drawing.Size(477, 84)
+        Me.MainLBL.Size = New System.Drawing.Size(477, 59)
         Me.MainLBL.TabIndex = 1
         Me.MainLBL.Text = "main"
         Me.MainLBL.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -23269,6 +23312,7 @@ Partial Class Dashboard_Page
         'TempLBL
         '
         Me.TempLBL.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.TempLBL.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.TempLBL.Font = New System.Drawing.Font("Franklin Gothic Demi Cond", 72.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TempLBL.ForeColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
         Me.TempLBL.Location = New System.Drawing.Point(1398, 42)
@@ -23286,7 +23330,7 @@ Partial Class Dashboard_Page
         Me.Enviro_Chart.BorderSkin.BackColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer))
         Me.Enviro_Chart.BorderSkin.BorderColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(16, Byte), Integer), CType(CType(16, Byte), Integer))
         Me.Enviro_Chart.BorderSkin.PageColor = System.Drawing.Color.Black
-        Me.Enviro_Chart.BorderSkin.SkinStyle = System.Windows.Forms.DataVisualization.Charting.BorderSkinStyle.FrameThin1
+        Me.Enviro_Chart.BorderSkin.SkinStyle = System.Windows.Forms.DataVisualization.Charting.BorderSkinStyle.Emboss
         ChartArea5.AxisX.IsLabelAutoFit = False
         ChartArea5.AxisX.IsStartedFromZero = False
         ChartArea5.AxisX.LabelStyle.Angle = 45
@@ -23364,34 +23408,32 @@ Partial Class Dashboard_Page
         Me.Enviro_Chart.ChartAreas.Add(ChartArea6)
         Legend5.BackColor = System.Drawing.Color.Transparent
         Legend5.DockedToChartArea = "Inside"
-        Legend5.Docking = System.Windows.Forms.DataVisualization.Charting.Docking.Bottom
+        Legend5.Docking = System.Windows.Forms.DataVisualization.Charting.Docking.Left
         Legend5.Font = New System.Drawing.Font("Agency FB", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Legend5.ForeColor = System.Drawing.Color.Gainsboro
-        Legend5.IsDockedInsideChartArea = False
         Legend5.IsTextAutoFit = False
         Legend5.LegendItemOrder = System.Windows.Forms.DataVisualization.Charting.LegendItemOrder.SameAsSeriesOrder
-        Legend5.LegendStyle = System.Windows.Forms.DataVisualization.Charting.LegendStyle.Row
+        Legend5.LegendStyle = System.Windows.Forms.DataVisualization.Charting.LegendStyle.Column
         Legend5.MaximumAutoSize = 100.0!
         Legend5.Name = "Legend1"
         Legend6.BackColor = System.Drawing.Color.Transparent
         Legend6.DockedToChartArea = "Outside"
-        Legend6.Docking = System.Windows.Forms.DataVisualization.Charting.Docking.Bottom
+        Legend6.Docking = System.Windows.Forms.DataVisualization.Charting.Docking.Left
         Legend6.Font = New System.Drawing.Font("Agency FB", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Legend6.ForeColor = System.Drawing.Color.Gainsboro
-        Legend6.IsDockedInsideChartArea = False
         Legend6.IsTextAutoFit = False
         Legend6.LegendItemOrder = System.Windows.Forms.DataVisualization.Charting.LegendItemOrder.SameAsSeriesOrder
-        Legend6.LegendStyle = System.Windows.Forms.DataVisualization.Charting.LegendStyle.Row
+        Legend6.LegendStyle = System.Windows.Forms.DataVisualization.Charting.LegendStyle.Column
         Legend6.MaximumAutoSize = 100.0!
         Legend6.Name = "Legend2"
         Me.Enviro_Chart.Legends.Add(Legend5)
         Me.Enviro_Chart.Legends.Add(Legend6)
-        Me.Enviro_Chart.Location = New System.Drawing.Point(6, 37)
+        Me.Enviro_Chart.Location = New System.Drawing.Point(6, 7)
         Me.Enviro_Chart.Name = "Enviro_Chart"
         Series19.BorderWidth = 2
         Series19.ChartArea = "Inside"
         Series19.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline
-        Series19.Color = System.Drawing.Color.Blue
+        Series19.Color = System.Drawing.Color.DodgerBlue
         Series19.LabelBackColor = System.Drawing.Color.Black
         Series19.LabelForeColor = System.Drawing.Color.Gainsboro
         Series19.Legend = "Legend1"
@@ -23404,7 +23446,7 @@ Partial Class Dashboard_Page
         Series20.BorderWidth = 2
         Series20.ChartArea = "Inside"
         Series20.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline
-        Series20.Color = System.Drawing.Color.Cyan
+        Series20.Color = System.Drawing.Color.MidnightBlue
         Series20.LabelBackColor = System.Drawing.Color.Black
         Series20.LabelForeColor = System.Drawing.Color.Gainsboro
         Series20.Legend = "Legend1"
@@ -23417,7 +23459,7 @@ Partial Class Dashboard_Page
         Series21.BorderWidth = 2
         Series21.ChartArea = "Outside"
         Series21.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline
-        Series21.Color = System.Drawing.Color.Fuchsia
+        Series21.Color = System.Drawing.Color.Goldenrod
         Series21.LabelBackColor = System.Drawing.Color.Black
         Series21.LabelForeColor = System.Drawing.Color.Gainsboro
         Series21.Legend = "Legend2"
@@ -23430,7 +23472,7 @@ Partial Class Dashboard_Page
         Series22.BorderWidth = 2
         Series22.ChartArea = "Outside"
         Series22.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline
-        Series22.Color = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
+        Series22.Color = System.Drawing.Color.SaddleBrown
         Series22.LabelBackColor = System.Drawing.Color.Black
         Series22.LabelForeColor = System.Drawing.Color.Gainsboro
         Series22.Legend = "Legend2"
@@ -23444,31 +23486,31 @@ Partial Class Dashboard_Page
         Me.Enviro_Chart.Series.Add(Series20)
         Me.Enviro_Chart.Series.Add(Series21)
         Me.Enviro_Chart.Series.Add(Series22)
-        Me.Enviro_Chart.Size = New System.Drawing.Size(1375, 890)
+        Me.Enviro_Chart.Size = New System.Drawing.Size(1375, 935)
         Me.Enviro_Chart.TabIndex = 0
         Me.Enviro_Chart.Text = "Chart1"
+        Title5.BackColor = System.Drawing.Color.Transparent
+        Title5.DockedToChartArea = "Inside"
+        Title5.Docking = System.Windows.Forms.DataVisualization.Charting.Docking.Left
+        Title5.DockingOffset = 2
+        Title5.Font = New System.Drawing.Font("Arial Rounded MT Bold", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Title5.ForeColor = System.Drawing.Color.DodgerBlue
+        Title5.IsDockedInsideChartArea = False
+        Title5.Name = "Inside Environment"
+        Title5.Text = "Inside Environment"
+        Title5.TextOrientation = System.Windows.Forms.DataVisualization.Charting.TextOrientation.Rotated270
         Title6.BackColor = System.Drawing.Color.Transparent
-        Title6.DockedToChartArea = "Inside"
+        Title6.DockedToChartArea = "Outside"
         Title6.Docking = System.Windows.Forms.DataVisualization.Charting.Docking.Left
         Title6.DockingOffset = 2
-        Title6.Font = New System.Drawing.Font("Arial Rounded MT Bold", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Title6.ForeColor = System.Drawing.Color.Blue
+        Title6.Font = New System.Drawing.Font("Arial Rounded MT Bold", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Title6.ForeColor = System.Drawing.Color.Goldenrod
         Title6.IsDockedInsideChartArea = False
-        Title6.Name = "Title1"
-        Title6.Text = "Inside Environment"
+        Title6.Name = "Outside Environment"
+        Title6.Text = "Outside Environment"
         Title6.TextOrientation = System.Windows.Forms.DataVisualization.Charting.TextOrientation.Rotated270
-        Title7.BackColor = System.Drawing.Color.Transparent
-        Title7.DockedToChartArea = "Outside"
-        Title7.Docking = System.Windows.Forms.DataVisualization.Charting.Docking.Left
-        Title7.DockingOffset = 2
-        Title7.Font = New System.Drawing.Font("Arial Rounded MT Bold", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Title7.ForeColor = System.Drawing.Color.Fuchsia
-        Title7.IsDockedInsideChartArea = False
-        Title7.Name = "Outside Environment"
-        Title7.Text = "Outside Environment"
-        Title7.TextOrientation = System.Windows.Forms.DataVisualization.Charting.TextOrientation.Rotated270
+        Me.Enviro_Chart.Titles.Add(Title5)
         Me.Enviro_Chart.Titles.Add(Title6)
-        Me.Enviro_Chart.Titles.Add(Title7)
         '
         'Electrical_Page
         '
@@ -29297,6 +29339,7 @@ Partial Class Dashboard_Page
         Me.Setpoints_Page.Controls.Add(Me.Label73)
         Me.Setpoints_Page.Controls.Add(Me.Label28)
         Me.Setpoints_Page.Controls.Add(Me.Label27)
+        Me.Setpoints_Page.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Setpoints_Page.Location = New System.Drawing.Point(14, 123)
         Me.Setpoints_Page.Name = "Setpoints_Page"
         Me.Setpoints_Page.Size = New System.Drawing.Size(1895, 945)
@@ -29325,7 +29368,7 @@ Partial Class Dashboard_Page
         Me.EVOHM_Max.KeypadShowCurrentValue = False
         Me.EVOHM_Max.KeypadText = Nothing
         Me.EVOHM_Max.KeypadWidth = 300
-        Me.EVOHM_Max.Location = New System.Drawing.Point(1757, 255)
+        Me.EVOHM_Max.Location = New System.Drawing.Point(1804, 195)
         Me.EVOHM_Max.Name = "EVOHM_Max"
         Me.EVOHM_Max.NumericFormat = "0"
         Me.EVOHM_Max.PLCAddressKeypad = ""
@@ -29366,7 +29409,7 @@ Partial Class Dashboard_Page
         Me.EVOHM_Min.KeypadShowCurrentValue = False
         Me.EVOHM_Min.KeypadText = Nothing
         Me.EVOHM_Min.KeypadWidth = 300
-        Me.EVOHM_Min.Location = New System.Drawing.Point(1609, 255)
+        Me.EVOHM_Min.Location = New System.Drawing.Point(1656, 195)
         Me.EVOHM_Min.Name = "EVOHM_Min"
         Me.EVOHM_Min.NumericFormat = "0"
         Me.EVOHM_Min.PLCAddressKeypad = ""
@@ -29407,7 +29450,7 @@ Partial Class Dashboard_Page
         Me.EVOTP_Max.KeypadShowCurrentValue = False
         Me.EVOTP_Max.KeypadText = Nothing
         Me.EVOTP_Max.KeypadWidth = 300
-        Me.EVOTP_Max.Location = New System.Drawing.Point(1757, 220)
+        Me.EVOTP_Max.Location = New System.Drawing.Point(1804, 160)
         Me.EVOTP_Max.Name = "EVOTP_Max"
         Me.EVOTP_Max.NumericFormat = "0"
         Me.EVOTP_Max.PLCAddressKeypad = ""
@@ -29448,7 +29491,7 @@ Partial Class Dashboard_Page
         Me.EVOTP_Min.KeypadShowCurrentValue = False
         Me.EVOTP_Min.KeypadText = Nothing
         Me.EVOTP_Min.KeypadWidth = 300
-        Me.EVOTP_Min.Location = New System.Drawing.Point(1609, 220)
+        Me.EVOTP_Min.Location = New System.Drawing.Point(1656, 160)
         Me.EVOTP_Min.Name = "EVOTP_Min"
         Me.EVOTP_Min.NumericFormat = "0"
         Me.EVOTP_Min.PLCAddressKeypad = ""
@@ -29489,7 +29532,7 @@ Partial Class Dashboard_Page
         Me.EVIHM_Max.KeypadShowCurrentValue = False
         Me.EVIHM_Max.KeypadText = Nothing
         Me.EVIHM_Max.KeypadWidth = 300
-        Me.EVIHM_Max.Location = New System.Drawing.Point(1757, 185)
+        Me.EVIHM_Max.Location = New System.Drawing.Point(1804, 125)
         Me.EVIHM_Max.Name = "EVIHM_Max"
         Me.EVIHM_Max.NumericFormat = "0"
         Me.EVIHM_Max.PLCAddressKeypad = ""
@@ -29530,7 +29573,7 @@ Partial Class Dashboard_Page
         Me.EVIHM_Min.KeypadShowCurrentValue = False
         Me.EVIHM_Min.KeypadText = Nothing
         Me.EVIHM_Min.KeypadWidth = 300
-        Me.EVIHM_Min.Location = New System.Drawing.Point(1609, 185)
+        Me.EVIHM_Min.Location = New System.Drawing.Point(1656, 125)
         Me.EVIHM_Min.Name = "EVIHM_Min"
         Me.EVIHM_Min.NumericFormat = "0"
         Me.EVIHM_Min.PLCAddressKeypad = ""
@@ -29571,7 +29614,7 @@ Partial Class Dashboard_Page
         Me.EVITP_Max.KeypadShowCurrentValue = False
         Me.EVITP_Max.KeypadText = Nothing
         Me.EVITP_Max.KeypadWidth = 300
-        Me.EVITP_Max.Location = New System.Drawing.Point(1757, 150)
+        Me.EVITP_Max.Location = New System.Drawing.Point(1804, 90)
         Me.EVITP_Max.Name = "EVITP_Max"
         Me.EVITP_Max.NumericFormat = "0"
         Me.EVITP_Max.PLCAddressKeypad = ""
@@ -29612,7 +29655,7 @@ Partial Class Dashboard_Page
         Me.EVITP_Min.KeypadShowCurrentValue = False
         Me.EVITP_Min.KeypadText = Nothing
         Me.EVITP_Min.KeypadWidth = 300
-        Me.EVITP_Min.Location = New System.Drawing.Point(1609, 150)
+        Me.EVITP_Min.Location = New System.Drawing.Point(1656, 90)
         Me.EVITP_Min.Name = "EVITP_Min"
         Me.EVITP_Min.NumericFormat = "0"
         Me.EVITP_Min.PLCAddressKeypad = ""
@@ -29635,7 +29678,7 @@ Partial Class Dashboard_Page
         Me.Label63.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label63.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label63.ForeColor = System.Drawing.Color.Lime
-        Me.Label63.Location = New System.Drawing.Point(1535, 255)
+        Me.Label63.Location = New System.Drawing.Point(1582, 195)
         Me.Label63.Name = "Label63"
         Me.Label63.Size = New System.Drawing.Size(75, 35)
         Me.Label63.TabIndex = 546
@@ -29647,7 +29690,7 @@ Partial Class Dashboard_Page
         Me.Label62.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label62.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label62.ForeColor = System.Drawing.Color.Lime
-        Me.Label62.Location = New System.Drawing.Point(1535, 220)
+        Me.Label62.Location = New System.Drawing.Point(1582, 160)
         Me.Label62.Name = "Label62"
         Me.Label62.Size = New System.Drawing.Size(75, 35)
         Me.Label62.TabIndex = 547
@@ -29659,7 +29702,7 @@ Partial Class Dashboard_Page
         Me.Label56.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label56.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label56.ForeColor = System.Drawing.Color.Lime
-        Me.Label56.Location = New System.Drawing.Point(1683, 255)
+        Me.Label56.Location = New System.Drawing.Point(1730, 195)
         Me.Label56.Name = "Label56"
         Me.Label56.Size = New System.Drawing.Size(75, 35)
         Me.Label56.TabIndex = 549
@@ -29671,7 +29714,7 @@ Partial Class Dashboard_Page
         Me.Label54.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label54.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label54.ForeColor = System.Drawing.Color.Lime
-        Me.Label54.Location = New System.Drawing.Point(1535, 185)
+        Me.Label54.Location = New System.Drawing.Point(1582, 125)
         Me.Label54.Name = "Label54"
         Me.Label54.Size = New System.Drawing.Size(75, 35)
         Me.Label54.TabIndex = 548
@@ -29683,7 +29726,7 @@ Partial Class Dashboard_Page
         Me.Label50.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label50.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label50.ForeColor = System.Drawing.Color.Lime
-        Me.Label50.Location = New System.Drawing.Point(1535, 150)
+        Me.Label50.Location = New System.Drawing.Point(1582, 90)
         Me.Label50.Name = "Label50"
         Me.Label50.Size = New System.Drawing.Size(75, 35)
         Me.Label50.TabIndex = 554
@@ -29695,7 +29738,7 @@ Partial Class Dashboard_Page
         Me.Label39.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label39.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label39.ForeColor = System.Drawing.Color.Lime
-        Me.Label39.Location = New System.Drawing.Point(1683, 220)
+        Me.Label39.Location = New System.Drawing.Point(1730, 160)
         Me.Label39.Name = "Label39"
         Me.Label39.Size = New System.Drawing.Size(75, 35)
         Me.Label39.TabIndex = 550
@@ -29707,7 +29750,7 @@ Partial Class Dashboard_Page
         Me.Label35.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label35.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label35.ForeColor = System.Drawing.Color.Lime
-        Me.Label35.Location = New System.Drawing.Point(1683, 185)
+        Me.Label35.Location = New System.Drawing.Point(1730, 125)
         Me.Label35.Name = "Label35"
         Me.Label35.Size = New System.Drawing.Size(75, 35)
         Me.Label35.TabIndex = 551
@@ -29719,7 +29762,7 @@ Partial Class Dashboard_Page
         Me.Label34.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label34.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label34.ForeColor = System.Drawing.Color.Lime
-        Me.Label34.Location = New System.Drawing.Point(1683, 150)
+        Me.Label34.Location = New System.Drawing.Point(1730, 90)
         Me.Label34.Name = "Label34"
         Me.Label34.Size = New System.Drawing.Size(75, 35)
         Me.Label34.TabIndex = 555
@@ -29750,7 +29793,7 @@ Partial Class Dashboard_Page
         Me.EVOHM_High.KeypadShowCurrentValue = False
         Me.EVOHM_High.KeypadText = Nothing
         Me.EVOHM_High.KeypadWidth = 300
-        Me.EVOHM_High.Location = New System.Drawing.Point(1200, 255)
+        Me.EVOHM_High.Location = New System.Drawing.Point(1247, 195)
         Me.EVOHM_High.Name = "EVOHM_High"
         Me.EVOHM_High.NumericFormat = "0.0"
         Me.EVOHM_High.PLCAddressKeypad = ""
@@ -29792,7 +29835,7 @@ Partial Class Dashboard_Page
         Me.EVOHM_Low.KeypadShowCurrentValue = False
         Me.EVOHM_Low.KeypadText = Nothing
         Me.EVOHM_Low.KeypadWidth = 300
-        Me.EVOHM_Low.Location = New System.Drawing.Point(1200, 272)
+        Me.EVOHM_Low.Location = New System.Drawing.Point(1247, 212)
         Me.EVOHM_Low.Name = "EVOHM_Low"
         Me.EVOHM_Low.NumericFormat = "0.0"
         Me.EVOHM_Low.PLCAddressKeypad = ""
@@ -29834,7 +29877,7 @@ Partial Class Dashboard_Page
         Me.EVOTP_High.KeypadShowCurrentValue = False
         Me.EVOTP_High.KeypadText = Nothing
         Me.EVOTP_High.KeypadWidth = 300
-        Me.EVOTP_High.Location = New System.Drawing.Point(1200, 220)
+        Me.EVOTP_High.Location = New System.Drawing.Point(1247, 160)
         Me.EVOTP_High.Name = "EVOTP_High"
         Me.EVOTP_High.NumericFormat = "0.0"
         Me.EVOTP_High.PLCAddressKeypad = ""
@@ -29876,7 +29919,7 @@ Partial Class Dashboard_Page
         Me.EVOTP_Low.KeypadShowCurrentValue = False
         Me.EVOTP_Low.KeypadText = Nothing
         Me.EVOTP_Low.KeypadWidth = 300
-        Me.EVOTP_Low.Location = New System.Drawing.Point(1200, 237)
+        Me.EVOTP_Low.Location = New System.Drawing.Point(1247, 177)
         Me.EVOTP_Low.Name = "EVOTP_Low"
         Me.EVOTP_Low.NumericFormat = "0.0"
         Me.EVOTP_Low.PLCAddressKeypad = ""
@@ -29918,7 +29961,7 @@ Partial Class Dashboard_Page
         Me.EVITP_High.KeypadShowCurrentValue = False
         Me.EVITP_High.KeypadText = Nothing
         Me.EVITP_High.KeypadWidth = 300
-        Me.EVITP_High.Location = New System.Drawing.Point(1200, 150)
+        Me.EVITP_High.Location = New System.Drawing.Point(1247, 90)
         Me.EVITP_High.Name = "EVITP_High"
         Me.EVITP_High.NumericFormat = "0.0"
         Me.EVITP_High.PLCAddressKeypad = ""
@@ -29960,7 +30003,7 @@ Partial Class Dashboard_Page
         Me.EVIHM_High.KeypadShowCurrentValue = False
         Me.EVIHM_High.KeypadText = Nothing
         Me.EVIHM_High.KeypadWidth = 300
-        Me.EVIHM_High.Location = New System.Drawing.Point(1200, 185)
+        Me.EVIHM_High.Location = New System.Drawing.Point(1247, 125)
         Me.EVIHM_High.Name = "EVIHM_High"
         Me.EVIHM_High.NumericFormat = "0.0"
         Me.EVIHM_High.PLCAddressKeypad = ""
@@ -30002,7 +30045,7 @@ Partial Class Dashboard_Page
         Me.EVIHM_Low.KeypadShowCurrentValue = False
         Me.EVIHM_Low.KeypadText = Nothing
         Me.EVIHM_Low.KeypadWidth = 300
-        Me.EVIHM_Low.Location = New System.Drawing.Point(1200, 202)
+        Me.EVIHM_Low.Location = New System.Drawing.Point(1247, 142)
         Me.EVIHM_Low.Name = "EVIHM_Low"
         Me.EVIHM_Low.NumericFormat = "0.0"
         Me.EVIHM_Low.PLCAddressKeypad = ""
@@ -30044,7 +30087,7 @@ Partial Class Dashboard_Page
         Me.EVITP_Low.KeypadShowCurrentValue = False
         Me.EVITP_Low.KeypadText = Nothing
         Me.EVITP_Low.KeypadWidth = 300
-        Me.EVITP_Low.Location = New System.Drawing.Point(1200, 167)
+        Me.EVITP_Low.Location = New System.Drawing.Point(1247, 107)
         Me.EVITP_Low.Name = "EVITP_Low"
         Me.EVITP_Low.NumericFormat = "0.0"
         Me.EVITP_Low.PLCAddressKeypad = ""
@@ -30065,8 +30108,8 @@ Partial Class Dashboard_Page
         'STMPDEM_Title
         '
         Me.STMPDEM_Title.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.STMPDEM_Title.Font = New System.Drawing.Font("Agency FB", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.STMPDEM_Title.ForeColor = System.Drawing.Color.Lime
+        Me.STMPDEM_Title.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.STMPDEM_Title.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.STMPDEM_Title.Location = New System.Drawing.Point(5, 613)
         Me.STMPDEM_Title.Name = "STMPDEM_Title"
         Me.STMPDEM_Title.Size = New System.Drawing.Size(231, 35)
@@ -30077,8 +30120,8 @@ Partial Class Dashboard_Page
         'STLPDEM_Title
         '
         Me.STLPDEM_Title.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.STLPDEM_Title.Font = New System.Drawing.Font("Agency FB", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.STLPDEM_Title.ForeColor = System.Drawing.Color.Lime
+        Me.STLPDEM_Title.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.STLPDEM_Title.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.STLPDEM_Title.Location = New System.Drawing.Point(5, 578)
         Me.STLPDEM_Title.Name = "STLPDEM_Title"
         Me.STLPDEM_Title.Size = New System.Drawing.Size(231, 35)
@@ -30091,7 +30134,7 @@ Partial Class Dashboard_Page
         Me.EVIHM_Unit.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.EVIHM_Unit.Font = New System.Drawing.Font("Agency FB", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.EVIHM_Unit.ForeColor = System.Drawing.Color.Lime
-        Me.EVIHM_Unit.Location = New System.Drawing.Point(1420, 185)
+        Me.EVIHM_Unit.Location = New System.Drawing.Point(1467, 125)
         Me.EVIHM_Unit.Name = "EVIHM_Unit"
         Me.EVIHM_Unit.Size = New System.Drawing.Size(111, 35)
         Me.EVIHM_Unit.TabIndex = 522
@@ -30121,7 +30164,7 @@ Partial Class Dashboard_Page
         Me.EVIHM_Actual.KeypadShowCurrentValue = False
         Me.EVIHM_Actual.KeypadText = Nothing
         Me.EVIHM_Actual.KeypadWidth = 300
-        Me.EVIHM_Actual.Location = New System.Drawing.Point(1310, 185)
+        Me.EVIHM_Actual.Location = New System.Drawing.Point(1357, 125)
         Me.EVIHM_Actual.Name = "EVIHM_Actual"
         Me.EVIHM_Actual.NumericFormat = "0.0"
         Me.EVIHM_Actual.PLCAddressKeypad = ""
@@ -30163,7 +30206,7 @@ Partial Class Dashboard_Page
         Me.EVOHM_Actual.KeypadShowCurrentValue = False
         Me.EVOHM_Actual.KeypadText = Nothing
         Me.EVOHM_Actual.KeypadWidth = 300
-        Me.EVOHM_Actual.Location = New System.Drawing.Point(1310, 255)
+        Me.EVOHM_Actual.Location = New System.Drawing.Point(1357, 195)
         Me.EVOHM_Actual.Name = "EVOHM_Actual"
         Me.EVOHM_Actual.NumericFormat = "0.0"
         Me.EVOHM_Actual.PLCAddressKeypad = ""
@@ -30205,7 +30248,7 @@ Partial Class Dashboard_Page
         Me.EVITP_Actual.KeypadShowCurrentValue = False
         Me.EVITP_Actual.KeypadText = Nothing
         Me.EVITP_Actual.KeypadWidth = 300
-        Me.EVITP_Actual.Location = New System.Drawing.Point(1310, 150)
+        Me.EVITP_Actual.Location = New System.Drawing.Point(1357, 90)
         Me.EVITP_Actual.Name = "EVITP_Actual"
         Me.EVITP_Actual.NumericFormat = "0.0"
         Me.EVITP_Actual.PLCAddressKeypad = ""
@@ -30229,7 +30272,7 @@ Partial Class Dashboard_Page
         Me.EVOTP_Unit.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.EVOTP_Unit.Font = New System.Drawing.Font("Agency FB", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.EVOTP_Unit.ForeColor = System.Drawing.Color.Lime
-        Me.EVOTP_Unit.Location = New System.Drawing.Point(1420, 220)
+        Me.EVOTP_Unit.Location = New System.Drawing.Point(1467, 160)
         Me.EVOTP_Unit.Name = "EVOTP_Unit"
         Me.EVOTP_Unit.Size = New System.Drawing.Size(111, 35)
         Me.EVOTP_Unit.TabIndex = 521
@@ -30241,7 +30284,7 @@ Partial Class Dashboard_Page
         Me.EVITP_Unit.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.EVITP_Unit.Font = New System.Drawing.Font("Agency FB", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.EVITP_Unit.ForeColor = System.Drawing.Color.Lime
-        Me.EVITP_Unit.Location = New System.Drawing.Point(1420, 150)
+        Me.EVITP_Unit.Location = New System.Drawing.Point(1467, 90)
         Me.EVITP_Unit.Name = "EVITP_Unit"
         Me.EVITP_Unit.Size = New System.Drawing.Size(111, 35)
         Me.EVITP_Unit.TabIndex = 523
@@ -30253,7 +30296,7 @@ Partial Class Dashboard_Page
         Me.EVOHM_Unit.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.EVOHM_Unit.Font = New System.Drawing.Font("Agency FB", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.EVOHM_Unit.ForeColor = System.Drawing.Color.Lime
-        Me.EVOHM_Unit.Location = New System.Drawing.Point(1420, 255)
+        Me.EVOHM_Unit.Location = New System.Drawing.Point(1467, 195)
         Me.EVOHM_Unit.Name = "EVOHM_Unit"
         Me.EVOHM_Unit.Size = New System.Drawing.Size(111, 35)
         Me.EVOHM_Unit.TabIndex = 520
@@ -30283,7 +30326,7 @@ Partial Class Dashboard_Page
         Me.EVOTP_Actual.KeypadShowCurrentValue = False
         Me.EVOTP_Actual.KeypadText = Nothing
         Me.EVOTP_Actual.KeypadWidth = 300
-        Me.EVOTP_Actual.Location = New System.Drawing.Point(1310, 220)
+        Me.EVOTP_Actual.Location = New System.Drawing.Point(1357, 160)
         Me.EVOTP_Actual.Name = "EVOTP_Actual"
         Me.EVOTP_Actual.NumericFormat = "0.0"
         Me.EVOTP_Actual.PLCAddressKeypad = ""
@@ -30305,9 +30348,9 @@ Partial Class Dashboard_Page
         'EVIHM_Title
         '
         Me.EVIHM_Title.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.EVIHM_Title.Font = New System.Drawing.Font("Agency FB", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.EVIHM_Title.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.EVIHM_Title.ForeColor = System.Drawing.Color.Lime
-        Me.EVIHM_Title.Location = New System.Drawing.Point(970, 185)
+        Me.EVIHM_Title.Location = New System.Drawing.Point(1017, 125)
         Me.EVIHM_Title.Name = "EVIHM_Title"
         Me.EVIHM_Title.Size = New System.Drawing.Size(231, 35)
         Me.EVIHM_Title.TabIndex = 507
@@ -30317,9 +30360,9 @@ Partial Class Dashboard_Page
         'EVOHM_Title
         '
         Me.EVOHM_Title.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.EVOHM_Title.Font = New System.Drawing.Font("Agency FB", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.EVOHM_Title.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.EVOHM_Title.ForeColor = System.Drawing.Color.Lime
-        Me.EVOHM_Title.Location = New System.Drawing.Point(970, 255)
+        Me.EVOHM_Title.Location = New System.Drawing.Point(1017, 195)
         Me.EVOHM_Title.Name = "EVOHM_Title"
         Me.EVOHM_Title.Size = New System.Drawing.Size(231, 35)
         Me.EVOHM_Title.TabIndex = 506
@@ -30329,9 +30372,9 @@ Partial Class Dashboard_Page
         'EVOTP_Title
         '
         Me.EVOTP_Title.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.EVOTP_Title.Font = New System.Drawing.Font("Agency FB", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.EVOTP_Title.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.EVOTP_Title.ForeColor = System.Drawing.Color.Lime
-        Me.EVOTP_Title.Location = New System.Drawing.Point(970, 220)
+        Me.EVOTP_Title.Location = New System.Drawing.Point(1017, 160)
         Me.EVOTP_Title.Name = "EVOTP_Title"
         Me.EVOTP_Title.Size = New System.Drawing.Size(231, 35)
         Me.EVOTP_Title.TabIndex = 504
@@ -30341,9 +30384,9 @@ Partial Class Dashboard_Page
         'EVITP_Title
         '
         Me.EVITP_Title.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.EVITP_Title.Font = New System.Drawing.Font("Agency FB", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.EVITP_Title.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.EVITP_Title.ForeColor = System.Drawing.Color.Lime
-        Me.EVITP_Title.Location = New System.Drawing.Point(970, 150)
+        Me.EVITP_Title.Location = New System.Drawing.Point(1017, 90)
         Me.EVITP_Title.Name = "EVITP_Title"
         Me.EVITP_Title.Size = New System.Drawing.Size(231, 35)
         Me.EVITP_Title.TabIndex = 505
@@ -30521,8 +30564,8 @@ Partial Class Dashboard_Page
         'STMPDEM_Unit
         '
         Me.STMPDEM_Unit.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.STMPDEM_Unit.Font = New System.Drawing.Font("Agency FB", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.STMPDEM_Unit.ForeColor = System.Drawing.Color.Lime
+        Me.STMPDEM_Unit.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.STMPDEM_Unit.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.STMPDEM_Unit.Location = New System.Drawing.Point(455, 613)
         Me.STMPDEM_Unit.Name = "STMPDEM_Unit"
         Me.STMPDEM_Unit.Size = New System.Drawing.Size(111, 35)
@@ -30533,8 +30576,8 @@ Partial Class Dashboard_Page
         'STLPDEM_Unit
         '
         Me.STLPDEM_Unit.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.STLPDEM_Unit.Font = New System.Drawing.Font("Agency FB", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.STLPDEM_Unit.ForeColor = System.Drawing.Color.Lime
+        Me.STLPDEM_Unit.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.STLPDEM_Unit.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.STLPDEM_Unit.Location = New System.Drawing.Point(455, 578)
         Me.STLPDEM_Unit.Name = "STLPDEM_Unit"
         Me.STLPDEM_Unit.Size = New System.Drawing.Size(111, 35)
@@ -30631,7 +30674,7 @@ Partial Class Dashboard_Page
         Me.CWFD_Max.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.CWFD_Max.ComComponent = Me.PLC
         Me.CWFD_Max.DisplayAsTime = False
-        Me.CWFD_Max.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CWFD_Max.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CWFD_Max.ForeColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
         Me.CWFD_Max.Highlight = False
         Me.CWFD_Max.HighlightColor = System.Drawing.Color.Red
@@ -30647,12 +30690,12 @@ Partial Class Dashboard_Page
         Me.CWFD_Max.KeypadShowCurrentValue = False
         Me.CWFD_Max.KeypadText = Nothing
         Me.CWFD_Max.KeypadWidth = 300
-        Me.CWFD_Max.Location = New System.Drawing.Point(791, 123)
+        Me.CWFD_Max.Location = New System.Drawing.Point(869, 123)
         Me.CWFD_Max.Name = "CWFD_Max"
         Me.CWFD_Max.NumericFormat = "0"
         Me.CWFD_Max.PLCAddressKeypad = ""
         Me.CWFD_Max.PollRate = 2500
-        Me.CWFD_Max.Size = New System.Drawing.Size(75, 35)
+        Me.CWFD_Max.Size = New System.Drawing.Size(100, 35)
         Me.CWFD_Max.SuppressErrorDisplay = True
         Me.CWFD_Max.TabIndex = 501
         Me.CWFD_Max.Text = "0"
@@ -30672,7 +30715,7 @@ Partial Class Dashboard_Page
         Me.CWFD_Min.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.CWFD_Min.ComComponent = Me.PLC
         Me.CWFD_Min.DisplayAsTime = False
-        Me.CWFD_Min.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CWFD_Min.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CWFD_Min.ForeColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
         Me.CWFD_Min.Highlight = False
         Me.CWFD_Min.HighlightColor = System.Drawing.Color.Red
@@ -30688,12 +30731,12 @@ Partial Class Dashboard_Page
         Me.CWFD_Min.KeypadShowCurrentValue = False
         Me.CWFD_Min.KeypadText = Nothing
         Me.CWFD_Min.KeypadWidth = 300
-        Me.CWFD_Min.Location = New System.Drawing.Point(643, 123)
+        Me.CWFD_Min.Location = New System.Drawing.Point(669, 123)
         Me.CWFD_Min.Name = "CWFD_Min"
         Me.CWFD_Min.NumericFormat = "0"
         Me.CWFD_Min.PLCAddressKeypad = ""
         Me.CWFD_Min.PollRate = 2500
-        Me.CWFD_Min.Size = New System.Drawing.Size(75, 35)
+        Me.CWFD_Min.Size = New System.Drawing.Size(100, 35)
         Me.CWFD_Min.SuppressErrorDisplay = True
         Me.CWFD_Min.TabIndex = 500
         Me.CWFD_Min.Text = "0"
@@ -30709,11 +30752,11 @@ Partial Class Dashboard_Page
         'Label55
         '
         Me.Label55.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label55.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label55.ForeColor = System.Drawing.Color.Lime
+        Me.Label55.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label55.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Label55.Location = New System.Drawing.Point(569, 123)
         Me.Label55.Name = "Label55"
-        Me.Label55.Size = New System.Drawing.Size(75, 35)
+        Me.Label55.Size = New System.Drawing.Size(100, 35)
         Me.Label55.TabIndex = 502
         Me.Label55.Text = "Low Limit:"
         Me.Label55.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -30721,11 +30764,11 @@ Partial Class Dashboard_Page
         'Label40
         '
         Me.Label40.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label40.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label40.ForeColor = System.Drawing.Color.Lime
-        Me.Label40.Location = New System.Drawing.Point(717, 123)
+        Me.Label40.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label40.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Label40.Location = New System.Drawing.Point(769, 123)
         Me.Label40.Name = "Label40"
-        Me.Label40.Size = New System.Drawing.Size(75, 35)
+        Me.Label40.Size = New System.Drawing.Size(100, 35)
         Me.Label40.TabIndex = 503
         Me.Label40.Text = "High Limit:"
         Me.Label40.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -30779,7 +30822,7 @@ Partial Class Dashboard_Page
         Me.ELSC_Max.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.ELSC_Max.ComComponent = Me.PLC
         Me.ELSC_Max.DisplayAsTime = False
-        Me.ELSC_Max.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ELSC_Max.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ELSC_Max.ForeColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
         Me.ELSC_Max.Highlight = False
         Me.ELSC_Max.HighlightColor = System.Drawing.Color.Red
@@ -30795,12 +30838,12 @@ Partial Class Dashboard_Page
         Me.ELSC_Max.KeypadShowCurrentValue = False
         Me.ELSC_Max.KeypadText = Nothing
         Me.ELSC_Max.KeypadWidth = 300
-        Me.ELSC_Max.Location = New System.Drawing.Point(791, 823)
+        Me.ELSC_Max.Location = New System.Drawing.Point(869, 823)
         Me.ELSC_Max.Name = "ELSC_Max"
         Me.ELSC_Max.NumericFormat = "0"
         Me.ELSC_Max.PLCAddressKeypad = ""
         Me.ELSC_Max.PollRate = 2500
-        Me.ELSC_Max.Size = New System.Drawing.Size(75, 35)
+        Me.ELSC_Max.Size = New System.Drawing.Size(100, 35)
         Me.ELSC_Max.SuppressErrorDisplay = True
         Me.ELSC_Max.TabIndex = 460
         Me.ELSC_Max.Text = "0"
@@ -30862,7 +30905,7 @@ Partial Class Dashboard_Page
         Me.ELSC_Min.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.ELSC_Min.ComComponent = Me.PLC
         Me.ELSC_Min.DisplayAsTime = False
-        Me.ELSC_Min.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ELSC_Min.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ELSC_Min.ForeColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
         Me.ELSC_Min.Highlight = False
         Me.ELSC_Min.HighlightColor = System.Drawing.Color.Red
@@ -30878,12 +30921,12 @@ Partial Class Dashboard_Page
         Me.ELSC_Min.KeypadShowCurrentValue = False
         Me.ELSC_Min.KeypadText = Nothing
         Me.ELSC_Min.KeypadWidth = 300
-        Me.ELSC_Min.Location = New System.Drawing.Point(643, 823)
+        Me.ELSC_Min.Location = New System.Drawing.Point(669, 823)
         Me.ELSC_Min.Name = "ELSC_Min"
         Me.ELSC_Min.NumericFormat = "0"
         Me.ELSC_Min.PLCAddressKeypad = ""
         Me.ELSC_Min.PollRate = 2500
-        Me.ELSC_Min.Size = New System.Drawing.Size(75, 35)
+        Me.ELSC_Min.Size = New System.Drawing.Size(100, 35)
         Me.ELSC_Min.SuppressErrorDisplay = True
         Me.ELSC_Min.TabIndex = 454
         Me.ELSC_Min.Text = "0"
@@ -30940,8 +30983,8 @@ Partial Class Dashboard_Page
         'ELSC_Unit
         '
         Me.ELSC_Unit.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.ELSC_Unit.Font = New System.Drawing.Font("Agency FB", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ELSC_Unit.ForeColor = System.Drawing.Color.Lime
+        Me.ELSC_Unit.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ELSC_Unit.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.ELSC_Unit.Location = New System.Drawing.Point(455, 823)
         Me.ELSC_Unit.Name = "ELSC_Unit"
         Me.ELSC_Unit.Size = New System.Drawing.Size(111, 35)
@@ -30956,7 +30999,7 @@ Partial Class Dashboard_Page
         Me.ELSB_Max.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.ELSB_Max.ComComponent = Me.PLC
         Me.ELSB_Max.DisplayAsTime = False
-        Me.ELSB_Max.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ELSB_Max.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ELSB_Max.ForeColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
         Me.ELSB_Max.Highlight = False
         Me.ELSB_Max.HighlightColor = System.Drawing.Color.Red
@@ -30972,12 +31015,12 @@ Partial Class Dashboard_Page
         Me.ELSB_Max.KeypadShowCurrentValue = False
         Me.ELSB_Max.KeypadText = Nothing
         Me.ELSB_Max.KeypadWidth = 300
-        Me.ELSB_Max.Location = New System.Drawing.Point(791, 788)
+        Me.ELSB_Max.Location = New System.Drawing.Point(869, 788)
         Me.ELSB_Max.Name = "ELSB_Max"
         Me.ELSB_Max.NumericFormat = "0"
         Me.ELSB_Max.PLCAddressKeypad = ""
         Me.ELSB_Max.PollRate = 2500
-        Me.ELSB_Max.Size = New System.Drawing.Size(75, 35)
+        Me.ELSB_Max.Size = New System.Drawing.Size(100, 35)
         Me.ELSB_Max.SuppressErrorDisplay = True
         Me.ELSB_Max.TabIndex = 459
         Me.ELSB_Max.Text = "0"
@@ -31039,7 +31082,7 @@ Partial Class Dashboard_Page
         Me.ELSB_Min.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.ELSB_Min.ComComponent = Me.PLC
         Me.ELSB_Min.DisplayAsTime = False
-        Me.ELSB_Min.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ELSB_Min.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ELSB_Min.ForeColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
         Me.ELSB_Min.Highlight = False
         Me.ELSB_Min.HighlightColor = System.Drawing.Color.Red
@@ -31055,12 +31098,12 @@ Partial Class Dashboard_Page
         Me.ELSB_Min.KeypadShowCurrentValue = False
         Me.ELSB_Min.KeypadText = Nothing
         Me.ELSB_Min.KeypadWidth = 300
-        Me.ELSB_Min.Location = New System.Drawing.Point(643, 788)
+        Me.ELSB_Min.Location = New System.Drawing.Point(669, 788)
         Me.ELSB_Min.Name = "ELSB_Min"
         Me.ELSB_Min.NumericFormat = "0"
         Me.ELSB_Min.PLCAddressKeypad = ""
         Me.ELSB_Min.PollRate = 2500
-        Me.ELSB_Min.Size = New System.Drawing.Size(75, 35)
+        Me.ELSB_Min.Size = New System.Drawing.Size(100, 35)
         Me.ELSB_Min.SuppressErrorDisplay = True
         Me.ELSB_Min.TabIndex = 455
         Me.ELSB_Min.Text = "0"
@@ -31159,8 +31202,8 @@ Partial Class Dashboard_Page
         'ELSB_Unit
         '
         Me.ELSB_Unit.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.ELSB_Unit.Font = New System.Drawing.Font("Agency FB", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ELSB_Unit.ForeColor = System.Drawing.Color.Lime
+        Me.ELSB_Unit.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ELSB_Unit.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.ELSB_Unit.Location = New System.Drawing.Point(455, 788)
         Me.ELSB_Unit.Name = "ELSB_Unit"
         Me.ELSB_Unit.Size = New System.Drawing.Size(111, 35)
@@ -31175,7 +31218,7 @@ Partial Class Dashboard_Page
         Me.ELSA_Max.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.ELSA_Max.ComComponent = Me.PLC
         Me.ELSA_Max.DisplayAsTime = False
-        Me.ELSA_Max.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ELSA_Max.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ELSA_Max.ForeColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
         Me.ELSA_Max.Highlight = False
         Me.ELSA_Max.HighlightColor = System.Drawing.Color.Red
@@ -31191,12 +31234,12 @@ Partial Class Dashboard_Page
         Me.ELSA_Max.KeypadShowCurrentValue = False
         Me.ELSA_Max.KeypadText = Nothing
         Me.ELSA_Max.KeypadWidth = 300
-        Me.ELSA_Max.Location = New System.Drawing.Point(791, 753)
+        Me.ELSA_Max.Location = New System.Drawing.Point(869, 753)
         Me.ELSA_Max.Name = "ELSA_Max"
         Me.ELSA_Max.NumericFormat = "0"
         Me.ELSA_Max.PLCAddressKeypad = ""
         Me.ELSA_Max.PollRate = 2500
-        Me.ELSA_Max.Size = New System.Drawing.Size(75, 35)
+        Me.ELSA_Max.Size = New System.Drawing.Size(100, 35)
         Me.ELSA_Max.SuppressErrorDisplay = True
         Me.ELSA_Max.TabIndex = 458
         Me.ELSA_Max.Text = "0"
@@ -31300,7 +31343,7 @@ Partial Class Dashboard_Page
         Me.ELSA_Min.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.ELSA_Min.ComComponent = Me.PLC
         Me.ELSA_Min.DisplayAsTime = False
-        Me.ELSA_Min.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ELSA_Min.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ELSA_Min.ForeColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
         Me.ELSA_Min.Highlight = False
         Me.ELSA_Min.HighlightColor = System.Drawing.Color.Red
@@ -31316,12 +31359,12 @@ Partial Class Dashboard_Page
         Me.ELSA_Min.KeypadShowCurrentValue = False
         Me.ELSA_Min.KeypadText = Nothing
         Me.ELSA_Min.KeypadWidth = 300
-        Me.ELSA_Min.Location = New System.Drawing.Point(643, 753)
+        Me.ELSA_Min.Location = New System.Drawing.Point(669, 753)
         Me.ELSA_Min.Name = "ELSA_Min"
         Me.ELSA_Min.NumericFormat = "0"
         Me.ELSA_Min.PLCAddressKeypad = ""
         Me.ELSA_Min.PollRate = 2500
-        Me.ELSA_Min.Size = New System.Drawing.Size(75, 35)
+        Me.ELSA_Min.Size = New System.Drawing.Size(100, 35)
         Me.ELSA_Min.SuppressErrorDisplay = True
         Me.ELSA_Min.TabIndex = 456
         Me.ELSA_Min.Text = "0"
@@ -31420,8 +31463,8 @@ Partial Class Dashboard_Page
         'ELSA_Unit
         '
         Me.ELSA_Unit.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.ELSA_Unit.Font = New System.Drawing.Font("Agency FB", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ELSA_Unit.ForeColor = System.Drawing.Color.Lime
+        Me.ELSA_Unit.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ELSA_Unit.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.ELSA_Unit.Location = New System.Drawing.Point(455, 753)
         Me.ELSA_Unit.Name = "ELSA_Unit"
         Me.ELSA_Unit.Size = New System.Drawing.Size(111, 35)
@@ -31436,7 +31479,7 @@ Partial Class Dashboard_Page
         Me.ELNC_Max.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.ELNC_Max.ComComponent = Me.PLC
         Me.ELNC_Max.DisplayAsTime = False
-        Me.ELNC_Max.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ELNC_Max.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ELNC_Max.ForeColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
         Me.ELNC_Max.Highlight = False
         Me.ELNC_Max.HighlightColor = System.Drawing.Color.Red
@@ -31452,12 +31495,12 @@ Partial Class Dashboard_Page
         Me.ELNC_Max.KeypadShowCurrentValue = False
         Me.ELNC_Max.KeypadText = Nothing
         Me.ELNC_Max.KeypadWidth = 300
-        Me.ELNC_Max.Location = New System.Drawing.Point(791, 718)
+        Me.ELNC_Max.Location = New System.Drawing.Point(869, 718)
         Me.ELNC_Max.Name = "ELNC_Max"
         Me.ELNC_Max.NumericFormat = "0"
         Me.ELNC_Max.PLCAddressKeypad = ""
         Me.ELNC_Max.PollRate = 2500
-        Me.ELNC_Max.Size = New System.Drawing.Size(75, 35)
+        Me.ELNC_Max.Size = New System.Drawing.Size(100, 35)
         Me.ELNC_Max.SuppressErrorDisplay = True
         Me.ELNC_Max.TabIndex = 478
         Me.ELNC_Max.Text = "0"
@@ -31519,7 +31562,7 @@ Partial Class Dashboard_Page
         Me.ELNC_Min.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.ELNC_Min.ComComponent = Me.PLC
         Me.ELNC_Min.DisplayAsTime = False
-        Me.ELNC_Min.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ELNC_Min.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ELNC_Min.ForeColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
         Me.ELNC_Min.Highlight = False
         Me.ELNC_Min.HighlightColor = System.Drawing.Color.Red
@@ -31535,12 +31578,12 @@ Partial Class Dashboard_Page
         Me.ELNC_Min.KeypadShowCurrentValue = False
         Me.ELNC_Min.KeypadText = Nothing
         Me.ELNC_Min.KeypadWidth = 300
-        Me.ELNC_Min.Location = New System.Drawing.Point(643, 718)
+        Me.ELNC_Min.Location = New System.Drawing.Point(669, 718)
         Me.ELNC_Min.Name = "ELNC_Min"
         Me.ELNC_Min.NumericFormat = "0"
         Me.ELNC_Min.PLCAddressKeypad = ""
         Me.ELNC_Min.PollRate = 2500
-        Me.ELNC_Min.Size = New System.Drawing.Size(75, 35)
+        Me.ELNC_Min.Size = New System.Drawing.Size(100, 35)
         Me.ELNC_Min.SuppressErrorDisplay = True
         Me.ELNC_Min.TabIndex = 477
         Me.ELNC_Min.Text = "0"
@@ -31556,8 +31599,8 @@ Partial Class Dashboard_Page
         'ELNC_Unit
         '
         Me.ELNC_Unit.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.ELNC_Unit.Font = New System.Drawing.Font("Agency FB", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ELNC_Unit.ForeColor = System.Drawing.Color.Lime
+        Me.ELNC_Unit.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ELNC_Unit.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.ELNC_Unit.Location = New System.Drawing.Point(455, 718)
         Me.ELNC_Unit.Name = "ELNC_Unit"
         Me.ELNC_Unit.Size = New System.Drawing.Size(111, 35)
@@ -31572,7 +31615,7 @@ Partial Class Dashboard_Page
         Me.ELNB_Max.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.ELNB_Max.ComComponent = Me.PLC
         Me.ELNB_Max.DisplayAsTime = False
-        Me.ELNB_Max.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ELNB_Max.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ELNB_Max.ForeColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
         Me.ELNB_Max.Highlight = False
         Me.ELNB_Max.HighlightColor = System.Drawing.Color.Red
@@ -31588,12 +31631,12 @@ Partial Class Dashboard_Page
         Me.ELNB_Max.KeypadShowCurrentValue = False
         Me.ELNB_Max.KeypadText = Nothing
         Me.ELNB_Max.KeypadWidth = 300
-        Me.ELNB_Max.Location = New System.Drawing.Point(791, 683)
+        Me.ELNB_Max.Location = New System.Drawing.Point(869, 683)
         Me.ELNB_Max.Name = "ELNB_Max"
         Me.ELNB_Max.NumericFormat = "0"
         Me.ELNB_Max.PLCAddressKeypad = ""
         Me.ELNB_Max.PollRate = 2500
-        Me.ELNB_Max.Size = New System.Drawing.Size(75, 35)
+        Me.ELNB_Max.Size = New System.Drawing.Size(100, 35)
         Me.ELNB_Max.SuppressErrorDisplay = True
         Me.ELNB_Max.TabIndex = 461
         Me.ELNB_Max.Text = "0"
@@ -31696,7 +31739,7 @@ Partial Class Dashboard_Page
         Me.ELNB_Min.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.ELNB_Min.ComComponent = Me.PLC
         Me.ELNB_Min.DisplayAsTime = False
-        Me.ELNB_Min.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ELNB_Min.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ELNB_Min.ForeColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
         Me.ELNB_Min.Highlight = False
         Me.ELNB_Min.HighlightColor = System.Drawing.Color.Red
@@ -31712,12 +31755,12 @@ Partial Class Dashboard_Page
         Me.ELNB_Min.KeypadShowCurrentValue = False
         Me.ELNB_Min.KeypadText = Nothing
         Me.ELNB_Min.KeypadWidth = 300
-        Me.ELNB_Min.Location = New System.Drawing.Point(643, 683)
+        Me.ELNB_Min.Location = New System.Drawing.Point(669, 683)
         Me.ELNB_Min.Name = "ELNB_Min"
         Me.ELNB_Min.NumericFormat = "0"
         Me.ELNB_Min.PLCAddressKeypad = ""
         Me.ELNB_Min.PollRate = 2500
-        Me.ELNB_Min.Size = New System.Drawing.Size(75, 35)
+        Me.ELNB_Min.Size = New System.Drawing.Size(100, 35)
         Me.ELNB_Min.SuppressErrorDisplay = True
         Me.ELNB_Min.TabIndex = 452
         Me.ELNB_Min.Text = "0"
@@ -31774,8 +31817,8 @@ Partial Class Dashboard_Page
         'ELNB_Unit
         '
         Me.ELNB_Unit.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.ELNB_Unit.Font = New System.Drawing.Font("Agency FB", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ELNB_Unit.ForeColor = System.Drawing.Color.Lime
+        Me.ELNB_Unit.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ELNB_Unit.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.ELNB_Unit.Location = New System.Drawing.Point(455, 683)
         Me.ELNB_Unit.Name = "ELNB_Unit"
         Me.ELNB_Unit.Size = New System.Drawing.Size(111, 35)
@@ -31832,7 +31875,7 @@ Partial Class Dashboard_Page
         Me.ELNA_Max.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.ELNA_Max.ComComponent = Me.PLC
         Me.ELNA_Max.DisplayAsTime = False
-        Me.ELNA_Max.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ELNA_Max.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ELNA_Max.ForeColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
         Me.ELNA_Max.Highlight = False
         Me.ELNA_Max.HighlightColor = System.Drawing.Color.Red
@@ -31848,12 +31891,12 @@ Partial Class Dashboard_Page
         Me.ELNA_Max.KeypadShowCurrentValue = False
         Me.ELNA_Max.KeypadText = Nothing
         Me.ELNA_Max.KeypadWidth = 300
-        Me.ELNA_Max.Location = New System.Drawing.Point(791, 648)
+        Me.ELNA_Max.Location = New System.Drawing.Point(869, 648)
         Me.ELNA_Max.Name = "ELNA_Max"
         Me.ELNA_Max.NumericFormat = "0"
         Me.ELNA_Max.PLCAddressKeypad = ""
         Me.ELNA_Max.PollRate = 2500
-        Me.ELNA_Max.Size = New System.Drawing.Size(75, 35)
+        Me.ELNA_Max.Size = New System.Drawing.Size(100, 35)
         Me.ELNA_Max.SuppressErrorDisplay = True
         Me.ELNA_Max.TabIndex = 457
         Me.ELNA_Max.Text = "0"
@@ -31915,7 +31958,7 @@ Partial Class Dashboard_Page
         Me.ELNA_Min.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.ELNA_Min.ComComponent = Me.PLC
         Me.ELNA_Min.DisplayAsTime = False
-        Me.ELNA_Min.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ELNA_Min.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ELNA_Min.ForeColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
         Me.ELNA_Min.Highlight = False
         Me.ELNA_Min.HighlightColor = System.Drawing.Color.Red
@@ -31931,12 +31974,12 @@ Partial Class Dashboard_Page
         Me.ELNA_Min.KeypadShowCurrentValue = False
         Me.ELNA_Min.KeypadText = Nothing
         Me.ELNA_Min.KeypadWidth = 300
-        Me.ELNA_Min.Location = New System.Drawing.Point(643, 648)
+        Me.ELNA_Min.Location = New System.Drawing.Point(669, 648)
         Me.ELNA_Min.Name = "ELNA_Min"
         Me.ELNA_Min.NumericFormat = "0"
         Me.ELNA_Min.PLCAddressKeypad = ""
         Me.ELNA_Min.PollRate = 2500
-        Me.ELNA_Min.Size = New System.Drawing.Size(75, 35)
+        Me.ELNA_Min.Size = New System.Drawing.Size(100, 35)
         Me.ELNA_Min.SuppressErrorDisplay = True
         Me.ELNA_Min.TabIndex = 453
         Me.ELNA_Min.Text = "0"
@@ -31993,8 +32036,8 @@ Partial Class Dashboard_Page
         'ELSA_Title
         '
         Me.ELSA_Title.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.ELSA_Title.Font = New System.Drawing.Font("Agency FB", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ELSA_Title.ForeColor = System.Drawing.Color.Lime
+        Me.ELSA_Title.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ELSA_Title.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.ELSA_Title.Location = New System.Drawing.Point(5, 753)
         Me.ELSA_Title.Name = "ELSA_Title"
         Me.ELSA_Title.Size = New System.Drawing.Size(231, 35)
@@ -32005,8 +32048,8 @@ Partial Class Dashboard_Page
         'ELNA_Unit
         '
         Me.ELNA_Unit.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.ELNA_Unit.Font = New System.Drawing.Font("Agency FB", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ELNA_Unit.ForeColor = System.Drawing.Color.Lime
+        Me.ELNA_Unit.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ELNA_Unit.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.ELNA_Unit.Location = New System.Drawing.Point(455, 648)
         Me.ELNA_Unit.Name = "ELNA_Unit"
         Me.ELNA_Unit.Size = New System.Drawing.Size(111, 35)
@@ -32059,8 +32102,8 @@ Partial Class Dashboard_Page
         'ELNA_Title
         '
         Me.ELNA_Title.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.ELNA_Title.Font = New System.Drawing.Font("Agency FB", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ELNA_Title.ForeColor = System.Drawing.Color.Lime
+        Me.ELNA_Title.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ELNA_Title.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.ELNA_Title.Location = New System.Drawing.Point(5, 648)
         Me.ELNA_Title.Name = "ELNA_Title"
         Me.ELNA_Title.Size = New System.Drawing.Size(231, 35)
@@ -32071,8 +32114,8 @@ Partial Class Dashboard_Page
         'ELSC_Title
         '
         Me.ELSC_Title.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.ELSC_Title.Font = New System.Drawing.Font("Agency FB", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ELSC_Title.ForeColor = System.Drawing.Color.Lime
+        Me.ELSC_Title.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ELSC_Title.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.ELSC_Title.Location = New System.Drawing.Point(5, 823)
         Me.ELSC_Title.Name = "ELSC_Title"
         Me.ELSC_Title.Size = New System.Drawing.Size(231, 35)
@@ -32083,8 +32126,8 @@ Partial Class Dashboard_Page
         'ELSB_Title
         '
         Me.ELSB_Title.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.ELSB_Title.Font = New System.Drawing.Font("Agency FB", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ELSB_Title.ForeColor = System.Drawing.Color.Lime
+        Me.ELSB_Title.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ELSB_Title.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.ELSB_Title.Location = New System.Drawing.Point(5, 788)
         Me.ELSB_Title.Name = "ELSB_Title"
         Me.ELSB_Title.Size = New System.Drawing.Size(231, 35)
@@ -32095,8 +32138,8 @@ Partial Class Dashboard_Page
         'ELNC_Title
         '
         Me.ELNC_Title.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.ELNC_Title.Font = New System.Drawing.Font("Agency FB", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ELNC_Title.ForeColor = System.Drawing.Color.Lime
+        Me.ELNC_Title.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ELNC_Title.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.ELNC_Title.Location = New System.Drawing.Point(5, 718)
         Me.ELNC_Title.Name = "ELNC_Title"
         Me.ELNC_Title.Size = New System.Drawing.Size(231, 35)
@@ -32107,8 +32150,8 @@ Partial Class Dashboard_Page
         'ELNB_Title
         '
         Me.ELNB_Title.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.ELNB_Title.Font = New System.Drawing.Font("Agency FB", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ELNB_Title.ForeColor = System.Drawing.Color.Lime
+        Me.ELNB_Title.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ELNB_Title.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.ELNB_Title.Location = New System.Drawing.Point(5, 683)
         Me.ELNB_Title.Name = "ELNB_Title"
         Me.ELNB_Title.Size = New System.Drawing.Size(231, 35)
@@ -32119,11 +32162,11 @@ Partial Class Dashboard_Page
         'Label164
         '
         Me.Label164.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label164.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label164.ForeColor = System.Drawing.Color.Lime
+        Me.Label164.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label164.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Label164.Location = New System.Drawing.Point(569, 823)
         Me.Label164.Name = "Label164"
-        Me.Label164.Size = New System.Drawing.Size(75, 35)
+        Me.Label164.Size = New System.Drawing.Size(100, 35)
         Me.Label164.TabIndex = 462
         Me.Label164.Text = "Low Limit:"
         Me.Label164.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -32131,11 +32174,11 @@ Partial Class Dashboard_Page
         'Label162
         '
         Me.Label162.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label162.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label162.ForeColor = System.Drawing.Color.Lime
+        Me.Label162.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label162.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Label162.Location = New System.Drawing.Point(569, 788)
         Me.Label162.Name = "Label162"
-        Me.Label162.Size = New System.Drawing.Size(75, 35)
+        Me.Label162.Size = New System.Drawing.Size(100, 35)
         Me.Label162.TabIndex = 463
         Me.Label162.Text = "Low Limit:"
         Me.Label162.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -32143,11 +32186,11 @@ Partial Class Dashboard_Page
         'Label159
         '
         Me.Label159.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label159.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label159.ForeColor = System.Drawing.Color.Lime
-        Me.Label159.Location = New System.Drawing.Point(717, 823)
+        Me.Label159.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label159.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Label159.Location = New System.Drawing.Point(769, 823)
         Me.Label159.Name = "Label159"
-        Me.Label159.Size = New System.Drawing.Size(75, 35)
+        Me.Label159.Size = New System.Drawing.Size(100, 35)
         Me.Label159.TabIndex = 467
         Me.Label159.Text = "High Limit:"
         Me.Label159.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -32155,11 +32198,11 @@ Partial Class Dashboard_Page
         'Label158
         '
         Me.Label158.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label158.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label158.ForeColor = System.Drawing.Color.Lime
+        Me.Label158.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label158.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Label158.Location = New System.Drawing.Point(569, 753)
         Me.Label158.Name = "Label158"
-        Me.Label158.Size = New System.Drawing.Size(75, 35)
+        Me.Label158.Size = New System.Drawing.Size(100, 35)
         Me.Label158.TabIndex = 464
         Me.Label158.Text = "Low Limit:"
         Me.Label158.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -32167,11 +32210,11 @@ Partial Class Dashboard_Page
         'Label157
         '
         Me.Label157.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label157.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label157.ForeColor = System.Drawing.Color.Lime
+        Me.Label157.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label157.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Label157.Location = New System.Drawing.Point(569, 718)
         Me.Label157.Name = "Label157"
-        Me.Label157.Size = New System.Drawing.Size(75, 35)
+        Me.Label157.Size = New System.Drawing.Size(100, 35)
         Me.Label157.TabIndex = 479
         Me.Label157.Text = "Low Limit:"
         Me.Label157.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -32179,11 +32222,11 @@ Partial Class Dashboard_Page
         'Label155
         '
         Me.Label155.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label155.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label155.ForeColor = System.Drawing.Color.Lime
-        Me.Label155.Location = New System.Drawing.Point(717, 788)
+        Me.Label155.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label155.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Label155.Location = New System.Drawing.Point(769, 788)
         Me.Label155.Name = "Label155"
-        Me.Label155.Size = New System.Drawing.Size(75, 35)
+        Me.Label155.Size = New System.Drawing.Size(100, 35)
         Me.Label155.TabIndex = 468
         Me.Label155.Text = "High Limit:"
         Me.Label155.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -32191,11 +32234,11 @@ Partial Class Dashboard_Page
         'Label152
         '
         Me.Label152.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label152.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label152.ForeColor = System.Drawing.Color.Lime
+        Me.Label152.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label152.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Label152.Location = New System.Drawing.Point(569, 683)
         Me.Label152.Name = "Label152"
-        Me.Label152.Size = New System.Drawing.Size(75, 35)
+        Me.Label152.Size = New System.Drawing.Size(100, 35)
         Me.Label152.TabIndex = 465
         Me.Label152.Text = "Low Limit:"
         Me.Label152.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -32203,11 +32246,11 @@ Partial Class Dashboard_Page
         'Label151
         '
         Me.Label151.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label151.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label151.ForeColor = System.Drawing.Color.Lime
-        Me.Label151.Location = New System.Drawing.Point(717, 753)
+        Me.Label151.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label151.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Label151.Location = New System.Drawing.Point(769, 753)
         Me.Label151.Name = "Label151"
-        Me.Label151.Size = New System.Drawing.Size(75, 35)
+        Me.Label151.Size = New System.Drawing.Size(100, 35)
         Me.Label151.TabIndex = 469
         Me.Label151.Text = "High Limit:"
         Me.Label151.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -32215,11 +32258,11 @@ Partial Class Dashboard_Page
         'Label150
         '
         Me.Label150.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label150.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label150.ForeColor = System.Drawing.Color.Lime
+        Me.Label150.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label150.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Label150.Location = New System.Drawing.Point(569, 648)
         Me.Label150.Name = "Label150"
-        Me.Label150.Size = New System.Drawing.Size(75, 35)
+        Me.Label150.Size = New System.Drawing.Size(100, 35)
         Me.Label150.TabIndex = 466
         Me.Label150.Text = "Low Limit:"
         Me.Label150.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -32227,11 +32270,11 @@ Partial Class Dashboard_Page
         'Label148
         '
         Me.Label148.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label148.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label148.ForeColor = System.Drawing.Color.Lime
-        Me.Label148.Location = New System.Drawing.Point(717, 718)
+        Me.Label148.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label148.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Label148.Location = New System.Drawing.Point(769, 718)
         Me.Label148.Name = "Label148"
-        Me.Label148.Size = New System.Drawing.Size(75, 35)
+        Me.Label148.Size = New System.Drawing.Size(100, 35)
         Me.Label148.TabIndex = 480
         Me.Label148.Text = "High Limit:"
         Me.Label148.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -32239,11 +32282,11 @@ Partial Class Dashboard_Page
         'Label147
         '
         Me.Label147.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label147.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label147.ForeColor = System.Drawing.Color.Lime
-        Me.Label147.Location = New System.Drawing.Point(717, 683)
+        Me.Label147.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label147.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Label147.Location = New System.Drawing.Point(769, 683)
         Me.Label147.Name = "Label147"
-        Me.Label147.Size = New System.Drawing.Size(75, 35)
+        Me.Label147.Size = New System.Drawing.Size(100, 35)
         Me.Label147.TabIndex = 470
         Me.Label147.Text = "High Limit:"
         Me.Label147.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -32251,11 +32294,11 @@ Partial Class Dashboard_Page
         'Label146
         '
         Me.Label146.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label146.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label146.ForeColor = System.Drawing.Color.Lime
-        Me.Label146.Location = New System.Drawing.Point(717, 648)
+        Me.Label146.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label146.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Label146.Location = New System.Drawing.Point(769, 648)
         Me.Label146.Name = "Label146"
-        Me.Label146.Size = New System.Drawing.Size(75, 35)
+        Me.Label146.Size = New System.Drawing.Size(100, 35)
         Me.Label146.TabIndex = 471
         Me.Label146.Text = "High Limit:"
         Me.Label146.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -32263,8 +32306,8 @@ Partial Class Dashboard_Page
         'STHP_Title
         '
         Me.STHP_Title.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.STHP_Title.Font = New System.Drawing.Font("Agency FB", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.STHP_Title.ForeColor = System.Drawing.Color.Lime
+        Me.STHP_Title.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.STHP_Title.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.STHP_Title.Location = New System.Drawing.Point(5, 508)
         Me.STHP_Title.Name = "STHP_Title"
         Me.STHP_Title.Size = New System.Drawing.Size(231, 35)
@@ -32363,7 +32406,7 @@ Partial Class Dashboard_Page
         Me.STHP_Max.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.STHP_Max.ComComponent = Me.PLC
         Me.STHP_Max.DisplayAsTime = False
-        Me.STHP_Max.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.STHP_Max.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.STHP_Max.ForeColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
         Me.STHP_Max.Highlight = False
         Me.STHP_Max.HighlightColor = System.Drawing.Color.Red
@@ -32379,12 +32422,12 @@ Partial Class Dashboard_Page
         Me.STHP_Max.KeypadShowCurrentValue = False
         Me.STHP_Max.KeypadText = Nothing
         Me.STHP_Max.KeypadWidth = 300
-        Me.STHP_Max.Location = New System.Drawing.Point(791, 508)
+        Me.STHP_Max.Location = New System.Drawing.Point(869, 508)
         Me.STHP_Max.Name = "STHP_Max"
         Me.STHP_Max.NumericFormat = "0"
         Me.STHP_Max.PLCAddressKeypad = ""
         Me.STHP_Max.PollRate = 2500
-        Me.STHP_Max.Size = New System.Drawing.Size(75, 35)
+        Me.STHP_Max.Size = New System.Drawing.Size(100, 35)
         Me.STHP_Max.SuppressErrorDisplay = True
         Me.STHP_Max.TabIndex = 439
         Me.STHP_Max.Text = "0"
@@ -32404,7 +32447,7 @@ Partial Class Dashboard_Page
         Me.STHP_Min.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.STHP_Min.ComComponent = Me.PLC
         Me.STHP_Min.DisplayAsTime = False
-        Me.STHP_Min.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.STHP_Min.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.STHP_Min.ForeColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
         Me.STHP_Min.Highlight = False
         Me.STHP_Min.HighlightColor = System.Drawing.Color.Red
@@ -32420,12 +32463,12 @@ Partial Class Dashboard_Page
         Me.STHP_Min.KeypadShowCurrentValue = False
         Me.STHP_Min.KeypadText = Nothing
         Me.STHP_Min.KeypadWidth = 300
-        Me.STHP_Min.Location = New System.Drawing.Point(643, 508)
+        Me.STHP_Min.Location = New System.Drawing.Point(669, 508)
         Me.STHP_Min.Name = "STHP_Min"
         Me.STHP_Min.NumericFormat = "0"
         Me.STHP_Min.PLCAddressKeypad = ""
         Me.STHP_Min.PollRate = 2500
-        Me.STHP_Min.Size = New System.Drawing.Size(75, 35)
+        Me.STHP_Min.Size = New System.Drawing.Size(100, 35)
         Me.STHP_Min.SuppressErrorDisplay = True
         Me.STHP_Min.TabIndex = 438
         Me.STHP_Min.Text = "0"
@@ -32482,8 +32525,8 @@ Partial Class Dashboard_Page
         'STHP_Unit
         '
         Me.STHP_Unit.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.STHP_Unit.Font = New System.Drawing.Font("Agency FB", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.STHP_Unit.ForeColor = System.Drawing.Color.Lime
+        Me.STHP_Unit.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.STHP_Unit.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.STHP_Unit.Location = New System.Drawing.Point(455, 508)
         Me.STHP_Unit.Name = "STHP_Unit"
         Me.STHP_Unit.Size = New System.Drawing.Size(111, 35)
@@ -32494,11 +32537,11 @@ Partial Class Dashboard_Page
         'Label143
         '
         Me.Label143.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label143.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label143.ForeColor = System.Drawing.Color.Lime
+        Me.Label143.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label143.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Label143.Location = New System.Drawing.Point(569, 508)
         Me.Label143.Name = "Label143"
-        Me.Label143.Size = New System.Drawing.Size(75, 35)
+        Me.Label143.Size = New System.Drawing.Size(100, 35)
         Me.Label143.TabIndex = 440
         Me.Label143.Text = "Low Limit:"
         Me.Label143.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -32506,11 +32549,11 @@ Partial Class Dashboard_Page
         'Label129
         '
         Me.Label129.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label129.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label129.ForeColor = System.Drawing.Color.Lime
-        Me.Label129.Location = New System.Drawing.Point(717, 508)
+        Me.Label129.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label129.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Label129.Location = New System.Drawing.Point(769, 508)
         Me.Label129.Name = "Label129"
-        Me.Label129.Size = New System.Drawing.Size(75, 35)
+        Me.Label129.Size = New System.Drawing.Size(100, 35)
         Me.Label129.TabIndex = 441
         Me.Label129.Text = "High Limit:"
         Me.Label129.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -32600,8 +32643,8 @@ Partial Class Dashboard_Page
         'STFL_Unit
         '
         Me.STFL_Unit.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.STFL_Unit.Font = New System.Drawing.Font("Agency FB", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.STFL_Unit.ForeColor = System.Drawing.Color.Lime
+        Me.STFL_Unit.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.STFL_Unit.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.STFL_Unit.Location = New System.Drawing.Point(455, 543)
         Me.STFL_Unit.Name = "STFL_Unit"
         Me.STFL_Unit.Size = New System.Drawing.Size(111, 35)
@@ -32612,8 +32655,8 @@ Partial Class Dashboard_Page
         'STFL_Title
         '
         Me.STFL_Title.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.STFL_Title.Font = New System.Drawing.Font("Agency FB", 15.75!, System.Drawing.FontStyle.Bold)
-        Me.STFL_Title.ForeColor = System.Drawing.Color.Lime
+        Me.STFL_Title.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.STFL_Title.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.STFL_Title.Location = New System.Drawing.Point(5, 543)
         Me.STFL_Title.Name = "STFL_Title"
         Me.STFL_Title.Size = New System.Drawing.Size(231, 35)
@@ -32669,7 +32712,7 @@ Partial Class Dashboard_Page
         Me.STFL_Max.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.STFL_Max.ComComponent = Me.PLC
         Me.STFL_Max.DisplayAsTime = False
-        Me.STFL_Max.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.STFL_Max.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.STFL_Max.ForeColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
         Me.STFL_Max.Highlight = False
         Me.STFL_Max.HighlightColor = System.Drawing.Color.Red
@@ -32685,12 +32728,12 @@ Partial Class Dashboard_Page
         Me.STFL_Max.KeypadShowCurrentValue = False
         Me.STFL_Max.KeypadText = Nothing
         Me.STFL_Max.KeypadWidth = 300
-        Me.STFL_Max.Location = New System.Drawing.Point(791, 543)
+        Me.STFL_Max.Location = New System.Drawing.Point(869, 543)
         Me.STFL_Max.Name = "STFL_Max"
         Me.STFL_Max.NumericFormat = "0"
         Me.STFL_Max.PLCAddressKeypad = ""
         Me.STFL_Max.PollRate = 2500
-        Me.STFL_Max.Size = New System.Drawing.Size(75, 35)
+        Me.STFL_Max.Size = New System.Drawing.Size(100, 35)
         Me.STFL_Max.SuppressErrorDisplay = True
         Me.STFL_Max.TabIndex = 430
         Me.STFL_Max.Text = "0"
@@ -32710,7 +32753,7 @@ Partial Class Dashboard_Page
         Me.STFL_Min.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.STFL_Min.ComComponent = Me.PLC
         Me.STFL_Min.DisplayAsTime = False
-        Me.STFL_Min.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.STFL_Min.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.STFL_Min.ForeColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
         Me.STFL_Min.Highlight = False
         Me.STFL_Min.HighlightColor = System.Drawing.Color.Red
@@ -32726,12 +32769,12 @@ Partial Class Dashboard_Page
         Me.STFL_Min.KeypadShowCurrentValue = False
         Me.STFL_Min.KeypadText = Nothing
         Me.STFL_Min.KeypadWidth = 300
-        Me.STFL_Min.Location = New System.Drawing.Point(643, 543)
+        Me.STFL_Min.Location = New System.Drawing.Point(669, 543)
         Me.STFL_Min.Name = "STFL_Min"
         Me.STFL_Min.NumericFormat = "0"
         Me.STFL_Min.PLCAddressKeypad = ""
         Me.STFL_Min.PollRate = 2500
-        Me.STFL_Min.Size = New System.Drawing.Size(75, 35)
+        Me.STFL_Min.Size = New System.Drawing.Size(100, 35)
         Me.STFL_Min.SuppressErrorDisplay = True
         Me.STFL_Min.TabIndex = 429
         Me.STFL_Min.Text = "0"
@@ -32747,11 +32790,11 @@ Partial Class Dashboard_Page
         'Label183
         '
         Me.Label183.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label183.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label183.ForeColor = System.Drawing.Color.Lime
+        Me.Label183.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label183.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Label183.Location = New System.Drawing.Point(569, 543)
         Me.Label183.Name = "Label183"
-        Me.Label183.Size = New System.Drawing.Size(75, 35)
+        Me.Label183.Size = New System.Drawing.Size(100, 35)
         Me.Label183.TabIndex = 431
         Me.Label183.Text = "Low Limit:"
         Me.Label183.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -32759,11 +32802,11 @@ Partial Class Dashboard_Page
         'Label180
         '
         Me.Label180.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label180.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label180.ForeColor = System.Drawing.Color.Lime
-        Me.Label180.Location = New System.Drawing.Point(717, 543)
+        Me.Label180.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label180.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Label180.Location = New System.Drawing.Point(769, 543)
         Me.Label180.Name = "Label180"
-        Me.Label180.Size = New System.Drawing.Size(75, 35)
+        Me.Label180.Size = New System.Drawing.Size(100, 35)
         Me.Label180.TabIndex = 432
         Me.Label180.Text = "High Limit:"
         Me.Label180.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -32817,7 +32860,7 @@ Partial Class Dashboard_Page
         Me.STMP_Max.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.STMP_Max.ComComponent = Me.PLC
         Me.STMP_Max.DisplayAsTime = False
-        Me.STMP_Max.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.STMP_Max.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.STMP_Max.ForeColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
         Me.STMP_Max.Highlight = False
         Me.STMP_Max.HighlightColor = System.Drawing.Color.Red
@@ -32833,12 +32876,12 @@ Partial Class Dashboard_Page
         Me.STMP_Max.KeypadShowCurrentValue = False
         Me.STMP_Max.KeypadText = Nothing
         Me.STMP_Max.KeypadWidth = 300
-        Me.STMP_Max.Location = New System.Drawing.Point(791, 473)
+        Me.STMP_Max.Location = New System.Drawing.Point(869, 473)
         Me.STMP_Max.Name = "STMP_Max"
         Me.STMP_Max.NumericFormat = "0"
         Me.STMP_Max.PLCAddressKeypad = ""
         Me.STMP_Max.PollRate = 2500
-        Me.STMP_Max.Size = New System.Drawing.Size(75, 35)
+        Me.STMP_Max.Size = New System.Drawing.Size(100, 35)
         Me.STMP_Max.SuppressErrorDisplay = True
         Me.STMP_Max.TabIndex = 412
         Me.STMP_Max.Text = "0"
@@ -32900,7 +32943,7 @@ Partial Class Dashboard_Page
         Me.STMP_Min.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.STMP_Min.ComComponent = Me.PLC
         Me.STMP_Min.DisplayAsTime = False
-        Me.STMP_Min.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.STMP_Min.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.STMP_Min.ForeColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
         Me.STMP_Min.Highlight = False
         Me.STMP_Min.HighlightColor = System.Drawing.Color.Red
@@ -32916,12 +32959,12 @@ Partial Class Dashboard_Page
         Me.STMP_Min.KeypadShowCurrentValue = False
         Me.STMP_Min.KeypadText = Nothing
         Me.STMP_Min.KeypadWidth = 300
-        Me.STMP_Min.Location = New System.Drawing.Point(643, 473)
+        Me.STMP_Min.Location = New System.Drawing.Point(669, 473)
         Me.STMP_Min.Name = "STMP_Min"
         Me.STMP_Min.NumericFormat = "0"
         Me.STMP_Min.PLCAddressKeypad = ""
         Me.STMP_Min.PollRate = 2500
-        Me.STMP_Min.Size = New System.Drawing.Size(75, 35)
+        Me.STMP_Min.Size = New System.Drawing.Size(100, 35)
         Me.STMP_Min.SuppressErrorDisplay = True
         Me.STMP_Min.TabIndex = 411
         Me.STMP_Min.Text = "0"
@@ -32978,8 +33021,8 @@ Partial Class Dashboard_Page
         'STMP_Unit
         '
         Me.STMP_Unit.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.STMP_Unit.Font = New System.Drawing.Font("Agency FB", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.STMP_Unit.ForeColor = System.Drawing.Color.Lime
+        Me.STMP_Unit.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.STMP_Unit.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.STMP_Unit.Location = New System.Drawing.Point(455, 473)
         Me.STMP_Unit.Name = "STMP_Unit"
         Me.STMP_Unit.Size = New System.Drawing.Size(111, 35)
@@ -32990,8 +33033,8 @@ Partial Class Dashboard_Page
         'STMP_Title
         '
         Me.STMP_Title.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.STMP_Title.Font = New System.Drawing.Font("Agency FB", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.STMP_Title.ForeColor = System.Drawing.Color.Lime
+        Me.STMP_Title.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.STMP_Title.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.STMP_Title.Location = New System.Drawing.Point(5, 473)
         Me.STMP_Title.Name = "STMP_Title"
         Me.STMP_Title.Size = New System.Drawing.Size(231, 35)
@@ -33002,11 +33045,11 @@ Partial Class Dashboard_Page
         'Label145
         '
         Me.Label145.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label145.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label145.ForeColor = System.Drawing.Color.Lime
+        Me.Label145.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label145.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Label145.Location = New System.Drawing.Point(569, 473)
         Me.Label145.Name = "Label145"
-        Me.Label145.Size = New System.Drawing.Size(75, 35)
+        Me.Label145.Size = New System.Drawing.Size(100, 35)
         Me.Label145.TabIndex = 413
         Me.Label145.Text = "Low Limit:"
         Me.Label145.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -33014,11 +33057,11 @@ Partial Class Dashboard_Page
         'Label141
         '
         Me.Label141.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label141.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label141.ForeColor = System.Drawing.Color.Lime
-        Me.Label141.Location = New System.Drawing.Point(717, 473)
+        Me.Label141.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label141.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Label141.Location = New System.Drawing.Point(769, 473)
         Me.Label141.Name = "Label141"
-        Me.Label141.Size = New System.Drawing.Size(75, 35)
+        Me.Label141.Size = New System.Drawing.Size(100, 35)
         Me.Label141.TabIndex = 414
         Me.Label141.Text = "High Limit:"
         Me.Label141.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -33072,7 +33115,7 @@ Partial Class Dashboard_Page
         Me.STLP_Max.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.STLP_Max.ComComponent = Me.PLC
         Me.STLP_Max.DisplayAsTime = False
-        Me.STLP_Max.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.STLP_Max.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.STLP_Max.ForeColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
         Me.STLP_Max.Highlight = False
         Me.STLP_Max.HighlightColor = System.Drawing.Color.Red
@@ -33088,12 +33131,12 @@ Partial Class Dashboard_Page
         Me.STLP_Max.KeypadShowCurrentValue = False
         Me.STLP_Max.KeypadText = Nothing
         Me.STLP_Max.KeypadWidth = 300
-        Me.STLP_Max.Location = New System.Drawing.Point(791, 438)
+        Me.STLP_Max.Location = New System.Drawing.Point(869, 438)
         Me.STLP_Max.Name = "STLP_Max"
         Me.STLP_Max.NumericFormat = "0"
         Me.STLP_Max.PLCAddressKeypad = ""
         Me.STLP_Max.PollRate = 2500
-        Me.STLP_Max.Size = New System.Drawing.Size(75, 35)
+        Me.STLP_Max.Size = New System.Drawing.Size(100, 35)
         Me.STLP_Max.SuppressErrorDisplay = True
         Me.STLP_Max.TabIndex = 403
         Me.STLP_Max.Text = "0"
@@ -33155,7 +33198,7 @@ Partial Class Dashboard_Page
         Me.STLP_Min.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.STLP_Min.ComComponent = Me.PLC
         Me.STLP_Min.DisplayAsTime = False
-        Me.STLP_Min.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.STLP_Min.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.STLP_Min.ForeColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
         Me.STLP_Min.Highlight = False
         Me.STLP_Min.HighlightColor = System.Drawing.Color.Red
@@ -33171,12 +33214,12 @@ Partial Class Dashboard_Page
         Me.STLP_Min.KeypadShowCurrentValue = False
         Me.STLP_Min.KeypadText = Nothing
         Me.STLP_Min.KeypadWidth = 300
-        Me.STLP_Min.Location = New System.Drawing.Point(643, 438)
+        Me.STLP_Min.Location = New System.Drawing.Point(669, 438)
         Me.STLP_Min.Name = "STLP_Min"
         Me.STLP_Min.NumericFormat = "0"
         Me.STLP_Min.PLCAddressKeypad = ""
         Me.STLP_Min.PollRate = 2500
-        Me.STLP_Min.Size = New System.Drawing.Size(75, 35)
+        Me.STLP_Min.Size = New System.Drawing.Size(100, 35)
         Me.STLP_Min.SuppressErrorDisplay = True
         Me.STLP_Min.TabIndex = 402
         Me.STLP_Min.Text = "0"
@@ -33233,8 +33276,8 @@ Partial Class Dashboard_Page
         'STLP_Unit
         '
         Me.STLP_Unit.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.STLP_Unit.Font = New System.Drawing.Font("Agency FB", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.STLP_Unit.ForeColor = System.Drawing.Color.Lime
+        Me.STLP_Unit.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.STLP_Unit.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.STLP_Unit.Location = New System.Drawing.Point(455, 438)
         Me.STLP_Unit.Name = "STLP_Unit"
         Me.STLP_Unit.Size = New System.Drawing.Size(111, 35)
@@ -33245,8 +33288,8 @@ Partial Class Dashboard_Page
         'STLP_Title
         '
         Me.STLP_Title.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.STLP_Title.Font = New System.Drawing.Font("Agency FB", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.STLP_Title.ForeColor = System.Drawing.Color.Lime
+        Me.STLP_Title.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.STLP_Title.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.STLP_Title.Location = New System.Drawing.Point(5, 438)
         Me.STLP_Title.Name = "STLP_Title"
         Me.STLP_Title.Size = New System.Drawing.Size(231, 35)
@@ -33257,11 +33300,11 @@ Partial Class Dashboard_Page
         'Label130
         '
         Me.Label130.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label130.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label130.ForeColor = System.Drawing.Color.Lime
+        Me.Label130.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label130.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Label130.Location = New System.Drawing.Point(569, 438)
         Me.Label130.Name = "Label130"
-        Me.Label130.Size = New System.Drawing.Size(75, 35)
+        Me.Label130.Size = New System.Drawing.Size(100, 35)
         Me.Label130.TabIndex = 404
         Me.Label130.Text = "Low Limit:"
         Me.Label130.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -33269,11 +33312,11 @@ Partial Class Dashboard_Page
         'Label106
         '
         Me.Label106.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label106.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label106.ForeColor = System.Drawing.Color.Lime
-        Me.Label106.Location = New System.Drawing.Point(717, 438)
+        Me.Label106.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label106.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Label106.Location = New System.Drawing.Point(769, 438)
         Me.Label106.Name = "Label106"
-        Me.Label106.Size = New System.Drawing.Size(75, 35)
+        Me.Label106.Size = New System.Drawing.Size(100, 35)
         Me.Label106.TabIndex = 405
         Me.Label106.Text = "High Limit:"
         Me.Label106.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -33327,7 +33370,7 @@ Partial Class Dashboard_Page
         Me.STFWP_Max.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.STFWP_Max.ComComponent = Me.PLC
         Me.STFWP_Max.DisplayAsTime = False
-        Me.STFWP_Max.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.STFWP_Max.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.STFWP_Max.ForeColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
         Me.STFWP_Max.Highlight = False
         Me.STFWP_Max.HighlightColor = System.Drawing.Color.Red
@@ -33343,12 +33386,12 @@ Partial Class Dashboard_Page
         Me.STFWP_Max.KeypadShowCurrentValue = False
         Me.STFWP_Max.KeypadText = Nothing
         Me.STFWP_Max.KeypadWidth = 300
-        Me.STFWP_Max.Location = New System.Drawing.Point(791, 403)
+        Me.STFWP_Max.Location = New System.Drawing.Point(869, 403)
         Me.STFWP_Max.Name = "STFWP_Max"
         Me.STFWP_Max.NumericFormat = "0"
         Me.STFWP_Max.PLCAddressKeypad = ""
         Me.STFWP_Max.PollRate = 2500
-        Me.STFWP_Max.Size = New System.Drawing.Size(75, 35)
+        Me.STFWP_Max.Size = New System.Drawing.Size(100, 35)
         Me.STFWP_Max.SuppressErrorDisplay = True
         Me.STFWP_Max.TabIndex = 394
         Me.STFWP_Max.Text = "0"
@@ -33410,7 +33453,7 @@ Partial Class Dashboard_Page
         Me.STFWP_Min.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.STFWP_Min.ComComponent = Me.PLC
         Me.STFWP_Min.DisplayAsTime = False
-        Me.STFWP_Min.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.STFWP_Min.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.STFWP_Min.ForeColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
         Me.STFWP_Min.Highlight = False
         Me.STFWP_Min.HighlightColor = System.Drawing.Color.Red
@@ -33426,12 +33469,12 @@ Partial Class Dashboard_Page
         Me.STFWP_Min.KeypadShowCurrentValue = False
         Me.STFWP_Min.KeypadText = Nothing
         Me.STFWP_Min.KeypadWidth = 300
-        Me.STFWP_Min.Location = New System.Drawing.Point(643, 403)
+        Me.STFWP_Min.Location = New System.Drawing.Point(669, 403)
         Me.STFWP_Min.Name = "STFWP_Min"
         Me.STFWP_Min.NumericFormat = "0"
         Me.STFWP_Min.PLCAddressKeypad = ""
         Me.STFWP_Min.PollRate = 2500
-        Me.STFWP_Min.Size = New System.Drawing.Size(75, 35)
+        Me.STFWP_Min.Size = New System.Drawing.Size(100, 35)
         Me.STFWP_Min.SuppressErrorDisplay = True
         Me.STFWP_Min.TabIndex = 393
         Me.STFWP_Min.Text = "0"
@@ -33488,8 +33531,8 @@ Partial Class Dashboard_Page
         'STFWP_Unit
         '
         Me.STFWP_Unit.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.STFWP_Unit.Font = New System.Drawing.Font("Agency FB", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.STFWP_Unit.ForeColor = System.Drawing.Color.Lime
+        Me.STFWP_Unit.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.STFWP_Unit.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.STFWP_Unit.Location = New System.Drawing.Point(455, 403)
         Me.STFWP_Unit.Name = "STFWP_Unit"
         Me.STFWP_Unit.Size = New System.Drawing.Size(111, 35)
@@ -33500,8 +33543,8 @@ Partial Class Dashboard_Page
         'STFWP_Title
         '
         Me.STFWP_Title.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.STFWP_Title.Font = New System.Drawing.Font("Agency FB", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.STFWP_Title.ForeColor = System.Drawing.Color.Lime
+        Me.STFWP_Title.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.STFWP_Title.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.STFWP_Title.Location = New System.Drawing.Point(5, 403)
         Me.STFWP_Title.Name = "STFWP_Title"
         Me.STFWP_Title.Size = New System.Drawing.Size(231, 35)
@@ -33512,11 +33555,11 @@ Partial Class Dashboard_Page
         'Label249
         '
         Me.Label249.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label249.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label249.ForeColor = System.Drawing.Color.Lime
+        Me.Label249.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label249.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Label249.Location = New System.Drawing.Point(569, 403)
         Me.Label249.Name = "Label249"
-        Me.Label249.Size = New System.Drawing.Size(75, 35)
+        Me.Label249.Size = New System.Drawing.Size(100, 35)
         Me.Label249.TabIndex = 395
         Me.Label249.Text = "Low Limit:"
         Me.Label249.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -33524,11 +33567,11 @@ Partial Class Dashboard_Page
         'Label250
         '
         Me.Label250.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label250.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label250.ForeColor = System.Drawing.Color.Lime
-        Me.Label250.Location = New System.Drawing.Point(717, 403)
+        Me.Label250.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label250.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Label250.Location = New System.Drawing.Point(769, 403)
         Me.Label250.Name = "Label250"
-        Me.Label250.Size = New System.Drawing.Size(75, 35)
+        Me.Label250.Size = New System.Drawing.Size(100, 35)
         Me.Label250.TabIndex = 396
         Me.Label250.Text = "High Limit:"
         Me.Label250.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -33536,8 +33579,8 @@ Partial Class Dashboard_Page
         'ALP_Title
         '
         Me.ALP_Title.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.ALP_Title.Font = New System.Drawing.Font("Agency FB", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ALP_Title.ForeColor = System.Drawing.Color.Lime
+        Me.ALP_Title.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ALP_Title.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.ALP_Title.Location = New System.Drawing.Point(5, 368)
         Me.ALP_Title.Name = "ALP_Title"
         Me.ALP_Title.Size = New System.Drawing.Size(231, 35)
@@ -33636,7 +33679,7 @@ Partial Class Dashboard_Page
         Me.ALP_Max.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.ALP_Max.ComComponent = Me.PLC
         Me.ALP_Max.DisplayAsTime = False
-        Me.ALP_Max.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ALP_Max.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ALP_Max.ForeColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
         Me.ALP_Max.Highlight = False
         Me.ALP_Max.HighlightColor = System.Drawing.Color.Red
@@ -33652,12 +33695,12 @@ Partial Class Dashboard_Page
         Me.ALP_Max.KeypadShowCurrentValue = False
         Me.ALP_Max.KeypadText = Nothing
         Me.ALP_Max.KeypadWidth = 300
-        Me.ALP_Max.Location = New System.Drawing.Point(791, 368)
+        Me.ALP_Max.Location = New System.Drawing.Point(869, 368)
         Me.ALP_Max.Name = "ALP_Max"
         Me.ALP_Max.NumericFormat = "0"
         Me.ALP_Max.PLCAddressKeypad = ""
         Me.ALP_Max.PollRate = 2500
-        Me.ALP_Max.Size = New System.Drawing.Size(75, 35)
+        Me.ALP_Max.Size = New System.Drawing.Size(100, 35)
         Me.ALP_Max.SuppressErrorDisplay = True
         Me.ALP_Max.TabIndex = 385
         Me.ALP_Max.Text = "0"
@@ -33677,7 +33720,7 @@ Partial Class Dashboard_Page
         Me.ALP_Min.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.ALP_Min.ComComponent = Me.PLC
         Me.ALP_Min.DisplayAsTime = False
-        Me.ALP_Min.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ALP_Min.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ALP_Min.ForeColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
         Me.ALP_Min.Highlight = False
         Me.ALP_Min.HighlightColor = System.Drawing.Color.Red
@@ -33693,12 +33736,12 @@ Partial Class Dashboard_Page
         Me.ALP_Min.KeypadShowCurrentValue = False
         Me.ALP_Min.KeypadText = Nothing
         Me.ALP_Min.KeypadWidth = 300
-        Me.ALP_Min.Location = New System.Drawing.Point(643, 368)
+        Me.ALP_Min.Location = New System.Drawing.Point(669, 368)
         Me.ALP_Min.Name = "ALP_Min"
         Me.ALP_Min.NumericFormat = "0"
         Me.ALP_Min.PLCAddressKeypad = ""
         Me.ALP_Min.PollRate = 2500
-        Me.ALP_Min.Size = New System.Drawing.Size(75, 35)
+        Me.ALP_Min.Size = New System.Drawing.Size(100, 35)
         Me.ALP_Min.SuppressErrorDisplay = True
         Me.ALP_Min.TabIndex = 384
         Me.ALP_Min.Text = "0"
@@ -33714,8 +33757,8 @@ Partial Class Dashboard_Page
         'ALP_Unit
         '
         Me.ALP_Unit.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.ALP_Unit.Font = New System.Drawing.Font("Agency FB", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ALP_Unit.ForeColor = System.Drawing.Color.Lime
+        Me.ALP_Unit.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ALP_Unit.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.ALP_Unit.Location = New System.Drawing.Point(455, 368)
         Me.ALP_Unit.Name = "ALP_Unit"
         Me.ALP_Unit.Size = New System.Drawing.Size(111, 35)
@@ -33767,11 +33810,11 @@ Partial Class Dashboard_Page
         'Label123
         '
         Me.Label123.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label123.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label123.ForeColor = System.Drawing.Color.Lime
+        Me.Label123.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label123.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Label123.Location = New System.Drawing.Point(569, 368)
         Me.Label123.Name = "Label123"
-        Me.Label123.Size = New System.Drawing.Size(75, 35)
+        Me.Label123.Size = New System.Drawing.Size(100, 35)
         Me.Label123.TabIndex = 386
         Me.Label123.Text = "Low Limit:"
         Me.Label123.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -33779,11 +33822,11 @@ Partial Class Dashboard_Page
         'Label87
         '
         Me.Label87.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label87.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label87.ForeColor = System.Drawing.Color.Lime
-        Me.Label87.Location = New System.Drawing.Point(717, 368)
+        Me.Label87.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label87.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Label87.Location = New System.Drawing.Point(769, 368)
         Me.Label87.Name = "Label87"
-        Me.Label87.Size = New System.Drawing.Size(75, 35)
+        Me.Label87.Size = New System.Drawing.Size(100, 35)
         Me.Label87.TabIndex = 387
         Me.Label87.Text = "High Limit:"
         Me.Label87.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -33795,7 +33838,7 @@ Partial Class Dashboard_Page
         Me.HWFL_Max.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.HWFL_Max.ComComponent = Me.PLC
         Me.HWFL_Max.DisplayAsTime = False
-        Me.HWFL_Max.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.HWFL_Max.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.HWFL_Max.ForeColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
         Me.HWFL_Max.Highlight = False
         Me.HWFL_Max.HighlightColor = System.Drawing.Color.Red
@@ -33811,12 +33854,12 @@ Partial Class Dashboard_Page
         Me.HWFL_Max.KeypadShowCurrentValue = False
         Me.HWFL_Max.KeypadText = Nothing
         Me.HWFL_Max.KeypadWidth = 300
-        Me.HWFL_Max.Location = New System.Drawing.Point(791, 333)
+        Me.HWFL_Max.Location = New System.Drawing.Point(869, 333)
         Me.HWFL_Max.Name = "HWFL_Max"
         Me.HWFL_Max.NumericFormat = "0"
         Me.HWFL_Max.PLCAddressKeypad = ""
         Me.HWFL_Max.PollRate = 2500
-        Me.HWFL_Max.Size = New System.Drawing.Size(75, 35)
+        Me.HWFL_Max.Size = New System.Drawing.Size(100, 35)
         Me.HWFL_Max.SuppressErrorDisplay = True
         Me.HWFL_Max.TabIndex = 376
         Me.HWFL_Max.Text = "0"
@@ -33878,7 +33921,7 @@ Partial Class Dashboard_Page
         Me.HWFL_Min.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.HWFL_Min.ComComponent = Me.PLC
         Me.HWFL_Min.DisplayAsTime = False
-        Me.HWFL_Min.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.HWFL_Min.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.HWFL_Min.ForeColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
         Me.HWFL_Min.Highlight = False
         Me.HWFL_Min.HighlightColor = System.Drawing.Color.Red
@@ -33894,12 +33937,12 @@ Partial Class Dashboard_Page
         Me.HWFL_Min.KeypadShowCurrentValue = False
         Me.HWFL_Min.KeypadText = Nothing
         Me.HWFL_Min.KeypadWidth = 300
-        Me.HWFL_Min.Location = New System.Drawing.Point(643, 333)
+        Me.HWFL_Min.Location = New System.Drawing.Point(669, 333)
         Me.HWFL_Min.Name = "HWFL_Min"
         Me.HWFL_Min.NumericFormat = "0"
         Me.HWFL_Min.PLCAddressKeypad = ""
         Me.HWFL_Min.PollRate = 2500
-        Me.HWFL_Min.Size = New System.Drawing.Size(75, 35)
+        Me.HWFL_Min.Size = New System.Drawing.Size(100, 35)
         Me.HWFL_Min.SuppressErrorDisplay = True
         Me.HWFL_Min.TabIndex = 375
         Me.HWFL_Min.Text = "0"
@@ -33998,8 +34041,8 @@ Partial Class Dashboard_Page
         'HWFL_Unit
         '
         Me.HWFL_Unit.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.HWFL_Unit.Font = New System.Drawing.Font("Agency FB", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.HWFL_Unit.ForeColor = System.Drawing.Color.Lime
+        Me.HWFL_Unit.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.HWFL_Unit.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.HWFL_Unit.Location = New System.Drawing.Point(455, 333)
         Me.HWFL_Unit.Name = "HWFL_Unit"
         Me.HWFL_Unit.Size = New System.Drawing.Size(111, 35)
@@ -34010,8 +34053,8 @@ Partial Class Dashboard_Page
         'HWFL_Title
         '
         Me.HWFL_Title.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.HWFL_Title.Font = New System.Drawing.Font("Agency FB", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.HWFL_Title.ForeColor = System.Drawing.Color.Lime
+        Me.HWFL_Title.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.HWFL_Title.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.HWFL_Title.Location = New System.Drawing.Point(5, 333)
         Me.HWFL_Title.Name = "HWFL_Title"
         Me.HWFL_Title.Size = New System.Drawing.Size(231, 35)
@@ -34022,11 +34065,11 @@ Partial Class Dashboard_Page
         'Label101
         '
         Me.Label101.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label101.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label101.ForeColor = System.Drawing.Color.Lime
+        Me.Label101.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label101.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Label101.Location = New System.Drawing.Point(569, 333)
         Me.Label101.Name = "Label101"
-        Me.Label101.Size = New System.Drawing.Size(75, 35)
+        Me.Label101.Size = New System.Drawing.Size(100, 35)
         Me.Label101.TabIndex = 377
         Me.Label101.Text = "Low Limit:"
         Me.Label101.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -34034,11 +34077,11 @@ Partial Class Dashboard_Page
         'Label92
         '
         Me.Label92.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label92.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label92.ForeColor = System.Drawing.Color.Lime
-        Me.Label92.Location = New System.Drawing.Point(717, 333)
+        Me.Label92.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label92.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Label92.Location = New System.Drawing.Point(769, 333)
         Me.Label92.Name = "Label92"
-        Me.Label92.Size = New System.Drawing.Size(75, 35)
+        Me.Label92.Size = New System.Drawing.Size(100, 35)
         Me.Label92.TabIndex = 378
         Me.Label92.Text = "High Limit:"
         Me.Label92.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -34092,7 +34135,7 @@ Partial Class Dashboard_Page
         Me.HWTP_Max.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.HWTP_Max.ComComponent = Me.PLC
         Me.HWTP_Max.DisplayAsTime = False
-        Me.HWTP_Max.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.HWTP_Max.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.HWTP_Max.ForeColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
         Me.HWTP_Max.Highlight = False
         Me.HWTP_Max.HighlightColor = System.Drawing.Color.Red
@@ -34108,12 +34151,12 @@ Partial Class Dashboard_Page
         Me.HWTP_Max.KeypadShowCurrentValue = False
         Me.HWTP_Max.KeypadText = Nothing
         Me.HWTP_Max.KeypadWidth = 300
-        Me.HWTP_Max.Location = New System.Drawing.Point(791, 298)
+        Me.HWTP_Max.Location = New System.Drawing.Point(869, 298)
         Me.HWTP_Max.Name = "HWTP_Max"
         Me.HWTP_Max.NumericFormat = "0"
         Me.HWTP_Max.PLCAddressKeypad = ""
         Me.HWTP_Max.PollRate = 2500
-        Me.HWTP_Max.Size = New System.Drawing.Size(75, 35)
+        Me.HWTP_Max.Size = New System.Drawing.Size(100, 35)
         Me.HWTP_Max.SuppressErrorDisplay = True
         Me.HWTP_Max.TabIndex = 367
         Me.HWTP_Max.Text = "0"
@@ -34216,7 +34259,7 @@ Partial Class Dashboard_Page
         Me.HWTP_Min.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.HWTP_Min.ComComponent = Me.PLC
         Me.HWTP_Min.DisplayAsTime = False
-        Me.HWTP_Min.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.HWTP_Min.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.HWTP_Min.ForeColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
         Me.HWTP_Min.Highlight = False
         Me.HWTP_Min.HighlightColor = System.Drawing.Color.Red
@@ -34232,12 +34275,12 @@ Partial Class Dashboard_Page
         Me.HWTP_Min.KeypadShowCurrentValue = False
         Me.HWTP_Min.KeypadText = Nothing
         Me.HWTP_Min.KeypadWidth = 300
-        Me.HWTP_Min.Location = New System.Drawing.Point(643, 298)
+        Me.HWTP_Min.Location = New System.Drawing.Point(669, 298)
         Me.HWTP_Min.Name = "HWTP_Min"
         Me.HWTP_Min.NumericFormat = "0"
         Me.HWTP_Min.PLCAddressKeypad = ""
         Me.HWTP_Min.PollRate = 2500
-        Me.HWTP_Min.Size = New System.Drawing.Size(75, 35)
+        Me.HWTP_Min.Size = New System.Drawing.Size(100, 35)
         Me.HWTP_Min.SuppressErrorDisplay = True
         Me.HWTP_Min.TabIndex = 366
         Me.HWTP_Min.Text = "0"
@@ -34253,8 +34296,8 @@ Partial Class Dashboard_Page
         'HWTP_Unit
         '
         Me.HWTP_Unit.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.HWTP_Unit.Font = New System.Drawing.Font("Agency FB", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.HWTP_Unit.ForeColor = System.Drawing.Color.Lime
+        Me.HWTP_Unit.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.HWTP_Unit.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.HWTP_Unit.Location = New System.Drawing.Point(455, 298)
         Me.HWTP_Unit.Name = "HWTP_Unit"
         Me.HWTP_Unit.Size = New System.Drawing.Size(111, 35)
@@ -34265,8 +34308,8 @@ Partial Class Dashboard_Page
         'HWTP_Title
         '
         Me.HWTP_Title.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.HWTP_Title.Font = New System.Drawing.Font("Agency FB", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.HWTP_Title.ForeColor = System.Drawing.Color.Lime
+        Me.HWTP_Title.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.HWTP_Title.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.HWTP_Title.Location = New System.Drawing.Point(5, 298)
         Me.HWTP_Title.Name = "HWTP_Title"
         Me.HWTP_Title.Size = New System.Drawing.Size(231, 35)
@@ -34277,11 +34320,11 @@ Partial Class Dashboard_Page
         'Label94
         '
         Me.Label94.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label94.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label94.ForeColor = System.Drawing.Color.Lime
+        Me.Label94.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label94.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Label94.Location = New System.Drawing.Point(569, 298)
         Me.Label94.Name = "Label94"
-        Me.Label94.Size = New System.Drawing.Size(75, 35)
+        Me.Label94.Size = New System.Drawing.Size(100, 35)
         Me.Label94.TabIndex = 368
         Me.Label94.Text = "Low Limit:"
         Me.Label94.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -34289,11 +34332,11 @@ Partial Class Dashboard_Page
         'Label84
         '
         Me.Label84.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label84.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label84.ForeColor = System.Drawing.Color.Lime
-        Me.Label84.Location = New System.Drawing.Point(717, 298)
+        Me.Label84.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label84.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Label84.Location = New System.Drawing.Point(769, 298)
         Me.Label84.Name = "Label84"
-        Me.Label84.Size = New System.Drawing.Size(75, 35)
+        Me.Label84.Size = New System.Drawing.Size(100, 35)
         Me.Label84.TabIndex = 369
         Me.Label84.Text = "High Limit:"
         Me.Label84.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -34347,7 +34390,7 @@ Partial Class Dashboard_Page
         Me.HWFD_Max.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.HWFD_Max.ComComponent = Me.PLC
         Me.HWFD_Max.DisplayAsTime = False
-        Me.HWFD_Max.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.HWFD_Max.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.HWFD_Max.ForeColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
         Me.HWFD_Max.Highlight = False
         Me.HWFD_Max.HighlightColor = System.Drawing.Color.Red
@@ -34363,12 +34406,12 @@ Partial Class Dashboard_Page
         Me.HWFD_Max.KeypadShowCurrentValue = False
         Me.HWFD_Max.KeypadText = Nothing
         Me.HWFD_Max.KeypadWidth = 300
-        Me.HWFD_Max.Location = New System.Drawing.Point(791, 263)
+        Me.HWFD_Max.Location = New System.Drawing.Point(869, 263)
         Me.HWFD_Max.Name = "HWFD_Max"
         Me.HWFD_Max.NumericFormat = "0"
         Me.HWFD_Max.PLCAddressKeypad = ""
         Me.HWFD_Max.PollRate = 2500
-        Me.HWFD_Max.Size = New System.Drawing.Size(75, 35)
+        Me.HWFD_Max.Size = New System.Drawing.Size(100, 35)
         Me.HWFD_Max.SuppressErrorDisplay = True
         Me.HWFD_Max.TabIndex = 358
         Me.HWFD_Max.Text = "0"
@@ -34430,7 +34473,7 @@ Partial Class Dashboard_Page
         Me.HWFD_Min.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.HWFD_Min.ComComponent = Me.PLC
         Me.HWFD_Min.DisplayAsTime = False
-        Me.HWFD_Min.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.HWFD_Min.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.HWFD_Min.ForeColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
         Me.HWFD_Min.Highlight = False
         Me.HWFD_Min.HighlightColor = System.Drawing.Color.Red
@@ -34446,12 +34489,12 @@ Partial Class Dashboard_Page
         Me.HWFD_Min.KeypadShowCurrentValue = False
         Me.HWFD_Min.KeypadText = Nothing
         Me.HWFD_Min.KeypadWidth = 300
-        Me.HWFD_Min.Location = New System.Drawing.Point(643, 263)
+        Me.HWFD_Min.Location = New System.Drawing.Point(669, 263)
         Me.HWFD_Min.Name = "HWFD_Min"
         Me.HWFD_Min.NumericFormat = "0"
         Me.HWFD_Min.PLCAddressKeypad = ""
         Me.HWFD_Min.PollRate = 2500
-        Me.HWFD_Min.Size = New System.Drawing.Size(75, 35)
+        Me.HWFD_Min.Size = New System.Drawing.Size(100, 35)
         Me.HWFD_Min.SuppressErrorDisplay = True
         Me.HWFD_Min.TabIndex = 357
         Me.HWFD_Min.Text = "0"
@@ -34467,8 +34510,8 @@ Partial Class Dashboard_Page
         'HWFD_Title
         '
         Me.HWFD_Title.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.HWFD_Title.Font = New System.Drawing.Font("Agency FB", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.HWFD_Title.ForeColor = System.Drawing.Color.Lime
+        Me.HWFD_Title.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.HWFD_Title.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.HWFD_Title.Location = New System.Drawing.Point(5, 263)
         Me.HWFD_Title.Name = "HWFD_Title"
         Me.HWFD_Title.Size = New System.Drawing.Size(231, 35)
@@ -34520,8 +34563,8 @@ Partial Class Dashboard_Page
         'HWFD_Unit
         '
         Me.HWFD_Unit.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.HWFD_Unit.Font = New System.Drawing.Font("Agency FB", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.HWFD_Unit.ForeColor = System.Drawing.Color.Lime
+        Me.HWFD_Unit.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.HWFD_Unit.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.HWFD_Unit.Location = New System.Drawing.Point(455, 263)
         Me.HWFD_Unit.Name = "HWFD_Unit"
         Me.HWFD_Unit.Size = New System.Drawing.Size(111, 35)
@@ -34532,11 +34575,11 @@ Partial Class Dashboard_Page
         'Label81
         '
         Me.Label81.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label81.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label81.ForeColor = System.Drawing.Color.Lime
+        Me.Label81.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label81.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Label81.Location = New System.Drawing.Point(569, 263)
         Me.Label81.Name = "Label81"
-        Me.Label81.Size = New System.Drawing.Size(75, 35)
+        Me.Label81.Size = New System.Drawing.Size(100, 35)
         Me.Label81.TabIndex = 359
         Me.Label81.Text = "Low Limit:"
         Me.Label81.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -34544,11 +34587,11 @@ Partial Class Dashboard_Page
         'Label61
         '
         Me.Label61.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label61.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label61.ForeColor = System.Drawing.Color.Lime
-        Me.Label61.Location = New System.Drawing.Point(717, 263)
+        Me.Label61.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label61.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Label61.Location = New System.Drawing.Point(769, 263)
         Me.Label61.Name = "Label61"
-        Me.Label61.Size = New System.Drawing.Size(75, 35)
+        Me.Label61.Size = New System.Drawing.Size(100, 35)
         Me.Label61.TabIndex = 360
         Me.Label61.Text = "High Limit:"
         Me.Label61.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -34602,7 +34645,7 @@ Partial Class Dashboard_Page
         Me.HWPOP_Max.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.HWPOP_Max.ComComponent = Me.PLC
         Me.HWPOP_Max.DisplayAsTime = False
-        Me.HWPOP_Max.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.HWPOP_Max.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.HWPOP_Max.ForeColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
         Me.HWPOP_Max.Highlight = False
         Me.HWPOP_Max.HighlightColor = System.Drawing.Color.Red
@@ -34618,12 +34661,12 @@ Partial Class Dashboard_Page
         Me.HWPOP_Max.KeypadShowCurrentValue = False
         Me.HWPOP_Max.KeypadText = Nothing
         Me.HWPOP_Max.KeypadWidth = 300
-        Me.HWPOP_Max.Location = New System.Drawing.Point(791, 228)
+        Me.HWPOP_Max.Location = New System.Drawing.Point(869, 228)
         Me.HWPOP_Max.Name = "HWPOP_Max"
         Me.HWPOP_Max.NumericFormat = "0"
         Me.HWPOP_Max.PLCAddressKeypad = ""
         Me.HWPOP_Max.PollRate = 2500
-        Me.HWPOP_Max.Size = New System.Drawing.Size(75, 35)
+        Me.HWPOP_Max.Size = New System.Drawing.Size(100, 35)
         Me.HWPOP_Max.SuppressErrorDisplay = True
         Me.HWPOP_Max.TabIndex = 349
         Me.HWPOP_Max.Text = "0"
@@ -34643,7 +34686,7 @@ Partial Class Dashboard_Page
         Me.HWPOP_Min.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.HWPOP_Min.ComComponent = Me.PLC
         Me.HWPOP_Min.DisplayAsTime = False
-        Me.HWPOP_Min.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.HWPOP_Min.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.HWPOP_Min.ForeColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
         Me.HWPOP_Min.Highlight = False
         Me.HWPOP_Min.HighlightColor = System.Drawing.Color.Red
@@ -34659,12 +34702,12 @@ Partial Class Dashboard_Page
         Me.HWPOP_Min.KeypadShowCurrentValue = False
         Me.HWPOP_Min.KeypadText = Nothing
         Me.HWPOP_Min.KeypadWidth = 300
-        Me.HWPOP_Min.Location = New System.Drawing.Point(643, 228)
+        Me.HWPOP_Min.Location = New System.Drawing.Point(669, 228)
         Me.HWPOP_Min.Name = "HWPOP_Min"
         Me.HWPOP_Min.NumericFormat = "0"
         Me.HWPOP_Min.PLCAddressKeypad = ""
         Me.HWPOP_Min.PollRate = 2500
-        Me.HWPOP_Min.Size = New System.Drawing.Size(75, 35)
+        Me.HWPOP_Min.Size = New System.Drawing.Size(100, 35)
         Me.HWPOP_Min.SuppressErrorDisplay = True
         Me.HWPOP_Min.TabIndex = 348
         Me.HWPOP_Min.Text = "0"
@@ -34722,8 +34765,8 @@ Partial Class Dashboard_Page
         'HWPOP_Title
         '
         Me.HWPOP_Title.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.HWPOP_Title.Font = New System.Drawing.Font("Agency FB", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.HWPOP_Title.ForeColor = System.Drawing.Color.Lime
+        Me.HWPOP_Title.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.HWPOP_Title.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.HWPOP_Title.Location = New System.Drawing.Point(5, 228)
         Me.HWPOP_Title.Name = "HWPOP_Title"
         Me.HWPOP_Title.Size = New System.Drawing.Size(231, 35)
@@ -34775,8 +34818,8 @@ Partial Class Dashboard_Page
         'HWPOP_Unit
         '
         Me.HWPOP_Unit.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.HWPOP_Unit.Font = New System.Drawing.Font("Agency FB", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.HWPOP_Unit.ForeColor = System.Drawing.Color.Lime
+        Me.HWPOP_Unit.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.HWPOP_Unit.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.HWPOP_Unit.Location = New System.Drawing.Point(455, 228)
         Me.HWPOP_Unit.Name = "HWPOP_Unit"
         Me.HWPOP_Unit.Size = New System.Drawing.Size(111, 35)
@@ -34787,11 +34830,11 @@ Partial Class Dashboard_Page
         'Label70
         '
         Me.Label70.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label70.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label70.ForeColor = System.Drawing.Color.Lime
+        Me.Label70.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label70.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Label70.Location = New System.Drawing.Point(569, 228)
         Me.Label70.Name = "Label70"
-        Me.Label70.Size = New System.Drawing.Size(75, 35)
+        Me.Label70.Size = New System.Drawing.Size(100, 35)
         Me.Label70.TabIndex = 350
         Me.Label70.Text = "Low Limit:"
         Me.Label70.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -34799,11 +34842,11 @@ Partial Class Dashboard_Page
         'Label49
         '
         Me.Label49.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label49.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label49.ForeColor = System.Drawing.Color.Lime
-        Me.Label49.Location = New System.Drawing.Point(717, 228)
+        Me.Label49.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label49.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Label49.Location = New System.Drawing.Point(769, 228)
         Me.Label49.Name = "Label49"
-        Me.Label49.Size = New System.Drawing.Size(75, 35)
+        Me.Label49.Size = New System.Drawing.Size(100, 35)
         Me.Label49.TabIndex = 351
         Me.Label49.Text = "High Limit:"
         Me.Label49.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -34811,8 +34854,8 @@ Partial Class Dashboard_Page
         'HWPRP_Title
         '
         Me.HWPRP_Title.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.HWPRP_Title.Font = New System.Drawing.Font("Agency FB", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.HWPRP_Title.ForeColor = System.Drawing.Color.Lime
+        Me.HWPRP_Title.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.HWPRP_Title.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.HWPRP_Title.Location = New System.Drawing.Point(5, 193)
         Me.HWPRP_Title.Name = "HWPRP_Title"
         Me.HWPRP_Title.Size = New System.Drawing.Size(231, 35)
@@ -34864,8 +34907,8 @@ Partial Class Dashboard_Page
         'HWPRP_Unit
         '
         Me.HWPRP_Unit.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.HWPRP_Unit.Font = New System.Drawing.Font("Agency FB", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.HWPRP_Unit.ForeColor = System.Drawing.Color.Lime
+        Me.HWPRP_Unit.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.HWPRP_Unit.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.HWPRP_Unit.Location = New System.Drawing.Point(455, 193)
         Me.HWPRP_Unit.Name = "HWPRP_Unit"
         Me.HWPRP_Unit.Size = New System.Drawing.Size(111, 35)
@@ -34964,7 +35007,7 @@ Partial Class Dashboard_Page
         Me.HWPRP_Max.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.HWPRP_Max.ComComponent = Me.PLC
         Me.HWPRP_Max.DisplayAsTime = False
-        Me.HWPRP_Max.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.HWPRP_Max.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.HWPRP_Max.ForeColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
         Me.HWPRP_Max.Highlight = False
         Me.HWPRP_Max.HighlightColor = System.Drawing.Color.Red
@@ -34980,12 +35023,12 @@ Partial Class Dashboard_Page
         Me.HWPRP_Max.KeypadShowCurrentValue = False
         Me.HWPRP_Max.KeypadText = Nothing
         Me.HWPRP_Max.KeypadWidth = 300
-        Me.HWPRP_Max.Location = New System.Drawing.Point(791, 193)
+        Me.HWPRP_Max.Location = New System.Drawing.Point(869, 193)
         Me.HWPRP_Max.Name = "HWPRP_Max"
         Me.HWPRP_Max.NumericFormat = "0"
         Me.HWPRP_Max.PLCAddressKeypad = ""
         Me.HWPRP_Max.PollRate = 2500
-        Me.HWPRP_Max.Size = New System.Drawing.Size(75, 35)
+        Me.HWPRP_Max.Size = New System.Drawing.Size(100, 35)
         Me.HWPRP_Max.SuppressErrorDisplay = True
         Me.HWPRP_Max.TabIndex = 340
         Me.HWPRP_Max.Text = "0"
@@ -35005,7 +35048,7 @@ Partial Class Dashboard_Page
         Me.HWPRP_Min.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.HWPRP_Min.ComComponent = Me.PLC
         Me.HWPRP_Min.DisplayAsTime = False
-        Me.HWPRP_Min.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.HWPRP_Min.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.HWPRP_Min.ForeColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
         Me.HWPRP_Min.Highlight = False
         Me.HWPRP_Min.HighlightColor = System.Drawing.Color.Red
@@ -35021,12 +35064,12 @@ Partial Class Dashboard_Page
         Me.HWPRP_Min.KeypadShowCurrentValue = False
         Me.HWPRP_Min.KeypadText = Nothing
         Me.HWPRP_Min.KeypadWidth = 300
-        Me.HWPRP_Min.Location = New System.Drawing.Point(643, 193)
+        Me.HWPRP_Min.Location = New System.Drawing.Point(669, 193)
         Me.HWPRP_Min.Name = "HWPRP_Min"
         Me.HWPRP_Min.NumericFormat = "0"
         Me.HWPRP_Min.PLCAddressKeypad = ""
         Me.HWPRP_Min.PollRate = 2500
-        Me.HWPRP_Min.Size = New System.Drawing.Size(75, 35)
+        Me.HWPRP_Min.Size = New System.Drawing.Size(100, 35)
         Me.HWPRP_Min.SuppressErrorDisplay = True
         Me.HWPRP_Min.TabIndex = 339
         Me.HWPRP_Min.Text = "0"
@@ -35042,11 +35085,11 @@ Partial Class Dashboard_Page
         'Label45
         '
         Me.Label45.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label45.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label45.ForeColor = System.Drawing.Color.Lime
+        Me.Label45.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label45.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Label45.Location = New System.Drawing.Point(569, 193)
         Me.Label45.Name = "Label45"
-        Me.Label45.Size = New System.Drawing.Size(75, 35)
+        Me.Label45.Size = New System.Drawing.Size(100, 35)
         Me.Label45.TabIndex = 341
         Me.Label45.Text = "Low Limit:"
         Me.Label45.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -35054,11 +35097,11 @@ Partial Class Dashboard_Page
         'Label17
         '
         Me.Label17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label17.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label17.ForeColor = System.Drawing.Color.Lime
-        Me.Label17.Location = New System.Drawing.Point(717, 193)
+        Me.Label17.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label17.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Label17.Location = New System.Drawing.Point(769, 193)
         Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(75, 35)
+        Me.Label17.Size = New System.Drawing.Size(100, 35)
         Me.Label17.TabIndex = 342
         Me.Label17.Text = "High Limit:"
         Me.Label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -35193,7 +35236,7 @@ Partial Class Dashboard_Page
         Me.CWSUP_Max.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.CWSUP_Max.ComComponent = Me.PLC
         Me.CWSUP_Max.DisplayAsTime = False
-        Me.CWSUP_Max.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CWSUP_Max.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CWSUP_Max.ForeColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
         Me.CWSUP_Max.Highlight = False
         Me.CWSUP_Max.HighlightColor = System.Drawing.Color.Red
@@ -35209,12 +35252,12 @@ Partial Class Dashboard_Page
         Me.CWSUP_Max.KeypadShowCurrentValue = False
         Me.CWSUP_Max.KeypadText = Nothing
         Me.CWSUP_Max.KeypadWidth = 300
-        Me.CWSUP_Max.Location = New System.Drawing.Point(791, 158)
+        Me.CWSUP_Max.Location = New System.Drawing.Point(869, 158)
         Me.CWSUP_Max.Name = "CWSUP_Max"
         Me.CWSUP_Max.NumericFormat = "0"
         Me.CWSUP_Max.PLCAddressKeypad = ""
         Me.CWSUP_Max.PollRate = 2500
-        Me.CWSUP_Max.Size = New System.Drawing.Size(75, 35)
+        Me.CWSUP_Max.Size = New System.Drawing.Size(100, 35)
         Me.CWSUP_Max.SuppressErrorDisplay = True
         Me.CWSUP_Max.TabIndex = 331
         Me.CWSUP_Max.Text = "0"
@@ -35234,7 +35277,7 @@ Partial Class Dashboard_Page
         Me.CWSUP_Min.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.CWSUP_Min.ComComponent = Me.PLC
         Me.CWSUP_Min.DisplayAsTime = False
-        Me.CWSUP_Min.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CWSUP_Min.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CWSUP_Min.ForeColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
         Me.CWSUP_Min.Highlight = False
         Me.CWSUP_Min.HighlightColor = System.Drawing.Color.Red
@@ -35250,12 +35293,12 @@ Partial Class Dashboard_Page
         Me.CWSUP_Min.KeypadShowCurrentValue = False
         Me.CWSUP_Min.KeypadText = Nothing
         Me.CWSUP_Min.KeypadWidth = 300
-        Me.CWSUP_Min.Location = New System.Drawing.Point(643, 158)
+        Me.CWSUP_Min.Location = New System.Drawing.Point(669, 158)
         Me.CWSUP_Min.Name = "CWSUP_Min"
         Me.CWSUP_Min.NumericFormat = "0"
         Me.CWSUP_Min.PLCAddressKeypad = ""
         Me.CWSUP_Min.PollRate = 2500
-        Me.CWSUP_Min.Size = New System.Drawing.Size(75, 35)
+        Me.CWSUP_Min.Size = New System.Drawing.Size(100, 35)
         Me.CWSUP_Min.SuppressErrorDisplay = True
         Me.CWSUP_Min.TabIndex = 330
         Me.CWSUP_Min.Text = "0"
@@ -35271,11 +35314,11 @@ Partial Class Dashboard_Page
         'Label176
         '
         Me.Label176.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label176.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label176.ForeColor = System.Drawing.Color.Lime
+        Me.Label176.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label176.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Label176.Location = New System.Drawing.Point(569, 158)
         Me.Label176.Name = "Label176"
-        Me.Label176.Size = New System.Drawing.Size(75, 35)
+        Me.Label176.Size = New System.Drawing.Size(100, 35)
         Me.Label176.TabIndex = 332
         Me.Label176.Text = "Low Limit:"
         Me.Label176.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -35283,11 +35326,11 @@ Partial Class Dashboard_Page
         'Label138
         '
         Me.Label138.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label138.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label138.ForeColor = System.Drawing.Color.Lime
-        Me.Label138.Location = New System.Drawing.Point(717, 158)
+        Me.Label138.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label138.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Label138.Location = New System.Drawing.Point(769, 158)
         Me.Label138.Name = "Label138"
-        Me.Label138.Size = New System.Drawing.Size(75, 35)
+        Me.Label138.Size = New System.Drawing.Size(100, 35)
         Me.Label138.TabIndex = 333
         Me.Label138.Text = "High Limit:"
         Me.Label138.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -35295,8 +35338,8 @@ Partial Class Dashboard_Page
         'CWSUP_Unit
         '
         Me.CWSUP_Unit.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.CWSUP_Unit.Font = New System.Drawing.Font("Agency FB", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CWSUP_Unit.ForeColor = System.Drawing.Color.Lime
+        Me.CWSUP_Unit.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CWSUP_Unit.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.CWSUP_Unit.Location = New System.Drawing.Point(455, 158)
         Me.CWSUP_Unit.Name = "CWSUP_Unit"
         Me.CWSUP_Unit.Size = New System.Drawing.Size(111, 35)
@@ -35307,8 +35350,8 @@ Partial Class Dashboard_Page
         'CWSUP_Title
         '
         Me.CWSUP_Title.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.CWSUP_Title.Font = New System.Drawing.Font("Agency FB", 15.75!, System.Drawing.FontStyle.Bold)
-        Me.CWSUP_Title.ForeColor = System.Drawing.Color.Lime
+        Me.CWSUP_Title.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CWSUP_Title.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.CWSUP_Title.Location = New System.Drawing.Point(5, 158)
         Me.CWSUP_Title.Name = "CWSUP_Title"
         Me.CWSUP_Title.Size = New System.Drawing.Size(231, 35)
@@ -35403,8 +35446,8 @@ Partial Class Dashboard_Page
         'CWFD_Title
         '
         Me.CWFD_Title.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.CWFD_Title.Font = New System.Drawing.Font("Agency FB", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CWFD_Title.ForeColor = System.Drawing.Color.Lime
+        Me.CWFD_Title.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CWFD_Title.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.CWFD_Title.Location = New System.Drawing.Point(5, 123)
         Me.CWFD_Title.Name = "CWFD_Title"
         Me.CWFD_Title.Size = New System.Drawing.Size(231, 35)
@@ -35415,8 +35458,8 @@ Partial Class Dashboard_Page
         'CWFD_Unit
         '
         Me.CWFD_Unit.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.CWFD_Unit.Font = New System.Drawing.Font("Agency FB", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CWFD_Unit.ForeColor = System.Drawing.Color.Lime
+        Me.CWFD_Unit.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CWFD_Unit.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.CWFD_Unit.Location = New System.Drawing.Point(455, 123)
         Me.CWFD_Unit.Name = "CWFD_Unit"
         Me.CWFD_Unit.Size = New System.Drawing.Size(111, 35)
@@ -35593,8 +35636,8 @@ Partial Class Dashboard_Page
         'CWPOP_Unit
         '
         Me.CWPOP_Unit.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.CWPOP_Unit.Font = New System.Drawing.Font("Agency FB", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CWPOP_Unit.ForeColor = System.Drawing.Color.Lime
+        Me.CWPOP_Unit.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CWPOP_Unit.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.CWPOP_Unit.Location = New System.Drawing.Point(455, 88)
         Me.CWPOP_Unit.Name = "CWPOP_Unit"
         Me.CWPOP_Unit.Size = New System.Drawing.Size(111, 35)
@@ -35605,8 +35648,8 @@ Partial Class Dashboard_Page
         'CWPOP_Title
         '
         Me.CWPOP_Title.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.CWPOP_Title.Font = New System.Drawing.Font("Agency FB", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CWPOP_Title.ForeColor = System.Drawing.Color.Lime
+        Me.CWPOP_Title.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CWPOP_Title.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.CWPOP_Title.Location = New System.Drawing.Point(5, 88)
         Me.CWPOP_Title.Name = "CWPOP_Title"
         Me.CWPOP_Title.Size = New System.Drawing.Size(231, 35)
@@ -35621,7 +35664,7 @@ Partial Class Dashboard_Page
         Me.STMPDEM_Min.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.STMPDEM_Min.ComComponent = Me.PLC
         Me.STMPDEM_Min.DisplayAsTime = False
-        Me.STMPDEM_Min.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.STMPDEM_Min.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.STMPDEM_Min.ForeColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
         Me.STMPDEM_Min.Highlight = False
         Me.STMPDEM_Min.HighlightColor = System.Drawing.Color.Red
@@ -35637,12 +35680,12 @@ Partial Class Dashboard_Page
         Me.STMPDEM_Min.KeypadShowCurrentValue = False
         Me.STMPDEM_Min.KeypadText = Nothing
         Me.STMPDEM_Min.KeypadWidth = 300
-        Me.STMPDEM_Min.Location = New System.Drawing.Point(643, 613)
+        Me.STMPDEM_Min.Location = New System.Drawing.Point(669, 613)
         Me.STMPDEM_Min.Name = "STMPDEM_Min"
         Me.STMPDEM_Min.NumericFormat = "0"
         Me.STMPDEM_Min.PLCAddressKeypad = ""
         Me.STMPDEM_Min.PollRate = 2500
-        Me.STMPDEM_Min.Size = New System.Drawing.Size(75, 35)
+        Me.STMPDEM_Min.Size = New System.Drawing.Size(100, 35)
         Me.STMPDEM_Min.SuppressErrorDisplay = True
         Me.STMPDEM_Min.TabIndex = 304
         Me.STMPDEM_Min.Text = "0"
@@ -35662,7 +35705,7 @@ Partial Class Dashboard_Page
         Me.CWPOP_Min.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.CWPOP_Min.ComComponent = Me.PLC
         Me.CWPOP_Min.DisplayAsTime = False
-        Me.CWPOP_Min.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CWPOP_Min.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CWPOP_Min.ForeColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
         Me.CWPOP_Min.Highlight = False
         Me.CWPOP_Min.HighlightColor = System.Drawing.Color.Red
@@ -35678,12 +35721,12 @@ Partial Class Dashboard_Page
         Me.CWPOP_Min.KeypadShowCurrentValue = False
         Me.CWPOP_Min.KeypadText = Nothing
         Me.CWPOP_Min.KeypadWidth = 300
-        Me.CWPOP_Min.Location = New System.Drawing.Point(643, 88)
+        Me.CWPOP_Min.Location = New System.Drawing.Point(669, 88)
         Me.CWPOP_Min.Name = "CWPOP_Min"
         Me.CWPOP_Min.NumericFormat = "0"
         Me.CWPOP_Min.PLCAddressKeypad = ""
         Me.CWPOP_Min.PollRate = 2500
-        Me.CWPOP_Min.Size = New System.Drawing.Size(75, 35)
+        Me.CWPOP_Min.Size = New System.Drawing.Size(100, 35)
         Me.CWPOP_Min.SuppressErrorDisplay = True
         Me.CWPOP_Min.TabIndex = 304
         Me.CWPOP_Min.Text = "0"
@@ -35703,7 +35746,7 @@ Partial Class Dashboard_Page
         Me.STMPDEM_Max.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.STMPDEM_Max.ComComponent = Me.PLC
         Me.STMPDEM_Max.DisplayAsTime = False
-        Me.STMPDEM_Max.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.STMPDEM_Max.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.STMPDEM_Max.ForeColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
         Me.STMPDEM_Max.Highlight = False
         Me.STMPDEM_Max.HighlightColor = System.Drawing.Color.Red
@@ -35719,12 +35762,12 @@ Partial Class Dashboard_Page
         Me.STMPDEM_Max.KeypadShowCurrentValue = False
         Me.STMPDEM_Max.KeypadText = Nothing
         Me.STMPDEM_Max.KeypadWidth = 300
-        Me.STMPDEM_Max.Location = New System.Drawing.Point(791, 613)
+        Me.STMPDEM_Max.Location = New System.Drawing.Point(869, 613)
         Me.STMPDEM_Max.Name = "STMPDEM_Max"
         Me.STMPDEM_Max.NumericFormat = "0"
         Me.STMPDEM_Max.PLCAddressKeypad = ""
         Me.STMPDEM_Max.PollRate = 2500
-        Me.STMPDEM_Max.Size = New System.Drawing.Size(75, 35)
+        Me.STMPDEM_Max.Size = New System.Drawing.Size(100, 35)
         Me.STMPDEM_Max.SuppressErrorDisplay = True
         Me.STMPDEM_Max.TabIndex = 305
         Me.STMPDEM_Max.Text = "0"
@@ -35744,7 +35787,7 @@ Partial Class Dashboard_Page
         Me.CWPOP_Max.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.CWPOP_Max.ComComponent = Me.PLC
         Me.CWPOP_Max.DisplayAsTime = False
-        Me.CWPOP_Max.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CWPOP_Max.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CWPOP_Max.ForeColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
         Me.CWPOP_Max.Highlight = False
         Me.CWPOP_Max.HighlightColor = System.Drawing.Color.Red
@@ -35760,12 +35803,12 @@ Partial Class Dashboard_Page
         Me.CWPOP_Max.KeypadShowCurrentValue = False
         Me.CWPOP_Max.KeypadText = Nothing
         Me.CWPOP_Max.KeypadWidth = 300
-        Me.CWPOP_Max.Location = New System.Drawing.Point(791, 88)
+        Me.CWPOP_Max.Location = New System.Drawing.Point(869, 88)
         Me.CWPOP_Max.Name = "CWPOP_Max"
         Me.CWPOP_Max.NumericFormat = "0"
         Me.CWPOP_Max.PLCAddressKeypad = ""
         Me.CWPOP_Max.PollRate = 2500
-        Me.CWPOP_Max.Size = New System.Drawing.Size(75, 35)
+        Me.CWPOP_Max.Size = New System.Drawing.Size(100, 35)
         Me.CWPOP_Max.SuppressErrorDisplay = True
         Me.CWPOP_Max.TabIndex = 305
         Me.CWPOP_Max.Text = "0"
@@ -35781,11 +35824,11 @@ Partial Class Dashboard_Page
         'Label33
         '
         Me.Label33.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label33.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label33.ForeColor = System.Drawing.Color.Lime
+        Me.Label33.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label33.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Label33.Location = New System.Drawing.Point(569, 613)
         Me.Label33.Name = "Label33"
-        Me.Label33.Size = New System.Drawing.Size(75, 35)
+        Me.Label33.Size = New System.Drawing.Size(100, 35)
         Me.Label33.TabIndex = 306
         Me.Label33.Text = "Low Limit:"
         Me.Label33.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -35793,11 +35836,11 @@ Partial Class Dashboard_Page
         'Label41
         '
         Me.Label41.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label41.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label41.ForeColor = System.Drawing.Color.Lime
+        Me.Label41.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label41.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Label41.Location = New System.Drawing.Point(569, 88)
         Me.Label41.Name = "Label41"
-        Me.Label41.Size = New System.Drawing.Size(75, 35)
+        Me.Label41.Size = New System.Drawing.Size(100, 35)
         Me.Label41.TabIndex = 306
         Me.Label41.Text = "Low Limit:"
         Me.Label41.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -35805,11 +35848,11 @@ Partial Class Dashboard_Page
         'Label24
         '
         Me.Label24.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label24.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label24.ForeColor = System.Drawing.Color.Lime
-        Me.Label24.Location = New System.Drawing.Point(717, 613)
+        Me.Label24.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label24.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Label24.Location = New System.Drawing.Point(769, 613)
         Me.Label24.Name = "Label24"
-        Me.Label24.Size = New System.Drawing.Size(75, 35)
+        Me.Label24.Size = New System.Drawing.Size(100, 35)
         Me.Label24.TabIndex = 307
         Me.Label24.Text = "High Limit:"
         Me.Label24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -35817,11 +35860,11 @@ Partial Class Dashboard_Page
         'Label6
         '
         Me.Label6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label6.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.ForeColor = System.Drawing.Color.Lime
-        Me.Label6.Location = New System.Drawing.Point(717, 88)
+        Me.Label6.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Label6.Location = New System.Drawing.Point(769, 88)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(75, 35)
+        Me.Label6.Size = New System.Drawing.Size(100, 35)
         Me.Label6.TabIndex = 307
         Me.Label6.Text = "High Limit:"
         Me.Label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -35875,7 +35918,7 @@ Partial Class Dashboard_Page
         Me.STLPDEM_Max.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.STLPDEM_Max.ComComponent = Me.PLC
         Me.STLPDEM_Max.DisplayAsTime = False
-        Me.STLPDEM_Max.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.STLPDEM_Max.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.STLPDEM_Max.ForeColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
         Me.STLPDEM_Max.Highlight = False
         Me.STLPDEM_Max.HighlightColor = System.Drawing.Color.Red
@@ -35891,12 +35934,12 @@ Partial Class Dashboard_Page
         Me.STLPDEM_Max.KeypadShowCurrentValue = False
         Me.STLPDEM_Max.KeypadText = Nothing
         Me.STLPDEM_Max.KeypadWidth = 300
-        Me.STLPDEM_Max.Location = New System.Drawing.Point(791, 578)
+        Me.STLPDEM_Max.Location = New System.Drawing.Point(869, 578)
         Me.STLPDEM_Max.Name = "STLPDEM_Max"
         Me.STLPDEM_Max.NumericFormat = "0"
         Me.STLPDEM_Max.PLCAddressKeypad = ""
         Me.STLPDEM_Max.PollRate = 2500
-        Me.STLPDEM_Max.Size = New System.Drawing.Size(75, 35)
+        Me.STLPDEM_Max.Size = New System.Drawing.Size(100, 35)
         Me.STLPDEM_Max.SuppressErrorDisplay = True
         Me.STLPDEM_Max.TabIndex = 296
         Me.STLPDEM_Max.Text = "0"
@@ -35916,7 +35959,7 @@ Partial Class Dashboard_Page
         Me.CWPRP_Max.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.CWPRP_Max.ComComponent = Me.PLC
         Me.CWPRP_Max.DisplayAsTime = False
-        Me.CWPRP_Max.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CWPRP_Max.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CWPRP_Max.ForeColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
         Me.CWPRP_Max.Highlight = False
         Me.CWPRP_Max.HighlightColor = System.Drawing.Color.Red
@@ -35932,12 +35975,12 @@ Partial Class Dashboard_Page
         Me.CWPRP_Max.KeypadShowCurrentValue = False
         Me.CWPRP_Max.KeypadText = Nothing
         Me.CWPRP_Max.KeypadWidth = 300
-        Me.CWPRP_Max.Location = New System.Drawing.Point(791, 53)
+        Me.CWPRP_Max.Location = New System.Drawing.Point(869, 53)
         Me.CWPRP_Max.Name = "CWPRP_Max"
         Me.CWPRP_Max.NumericFormat = "0"
         Me.CWPRP_Max.PLCAddressKeypad = ""
         Me.CWPRP_Max.PollRate = 2500
-        Me.CWPRP_Max.Size = New System.Drawing.Size(75, 35)
+        Me.CWPRP_Max.Size = New System.Drawing.Size(100, 35)
         Me.CWPRP_Max.SuppressErrorDisplay = True
         Me.CWPRP_Max.TabIndex = 296
         Me.CWPRP_Max.Text = "0"
@@ -35999,7 +36042,7 @@ Partial Class Dashboard_Page
         Me.STLPDEM_Min.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.STLPDEM_Min.ComComponent = Me.PLC
         Me.STLPDEM_Min.DisplayAsTime = False
-        Me.STLPDEM_Min.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.STLPDEM_Min.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.STLPDEM_Min.ForeColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
         Me.STLPDEM_Min.Highlight = False
         Me.STLPDEM_Min.HighlightColor = System.Drawing.Color.Red
@@ -36015,12 +36058,12 @@ Partial Class Dashboard_Page
         Me.STLPDEM_Min.KeypadShowCurrentValue = False
         Me.STLPDEM_Min.KeypadText = Nothing
         Me.STLPDEM_Min.KeypadWidth = 300
-        Me.STLPDEM_Min.Location = New System.Drawing.Point(643, 578)
+        Me.STLPDEM_Min.Location = New System.Drawing.Point(669, 578)
         Me.STLPDEM_Min.Name = "STLPDEM_Min"
         Me.STLPDEM_Min.NumericFormat = "0"
         Me.STLPDEM_Min.PLCAddressKeypad = ""
         Me.STLPDEM_Min.PollRate = 2500
-        Me.STLPDEM_Min.Size = New System.Drawing.Size(75, 35)
+        Me.STLPDEM_Min.Size = New System.Drawing.Size(100, 35)
         Me.STLPDEM_Min.SuppressErrorDisplay = True
         Me.STLPDEM_Min.TabIndex = 295
         Me.STLPDEM_Min.Text = "0"
@@ -36040,7 +36083,7 @@ Partial Class Dashboard_Page
         Me.CWPRP_Min.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.CWPRP_Min.ComComponent = Me.PLC
         Me.CWPRP_Min.DisplayAsTime = False
-        Me.CWPRP_Min.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CWPRP_Min.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CWPRP_Min.ForeColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
         Me.CWPRP_Min.Highlight = False
         Me.CWPRP_Min.HighlightColor = System.Drawing.Color.Red
@@ -36056,12 +36099,12 @@ Partial Class Dashboard_Page
         Me.CWPRP_Min.KeypadShowCurrentValue = False
         Me.CWPRP_Min.KeypadText = Nothing
         Me.CWPRP_Min.KeypadWidth = 300
-        Me.CWPRP_Min.Location = New System.Drawing.Point(643, 53)
+        Me.CWPRP_Min.Location = New System.Drawing.Point(669, 53)
         Me.CWPRP_Min.Name = "CWPRP_Min"
         Me.CWPRP_Min.NumericFormat = "0"
         Me.CWPRP_Min.PLCAddressKeypad = ""
         Me.CWPRP_Min.PollRate = 2500
-        Me.CWPRP_Min.Size = New System.Drawing.Size(75, 35)
+        Me.CWPRP_Min.Size = New System.Drawing.Size(100, 35)
         Me.CWPRP_Min.SuppressErrorDisplay = True
         Me.CWPRP_Min.TabIndex = 295
         Me.CWPRP_Min.Text = "0"
@@ -36077,8 +36120,8 @@ Partial Class Dashboard_Page
         'CWPRP_Unit
         '
         Me.CWPRP_Unit.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.CWPRP_Unit.Font = New System.Drawing.Font("Agency FB", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CWPRP_Unit.ForeColor = System.Drawing.Color.Lime
+        Me.CWPRP_Unit.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CWPRP_Unit.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.CWPRP_Unit.Location = New System.Drawing.Point(455, 53)
         Me.CWPRP_Unit.Name = "CWPRP_Unit"
         Me.CWPRP_Unit.Size = New System.Drawing.Size(111, 35)
@@ -36130,8 +36173,8 @@ Partial Class Dashboard_Page
         'CWPRP_Title
         '
         Me.CWPRP_Title.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.CWPRP_Title.Font = New System.Drawing.Font("Agency FB", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CWPRP_Title.ForeColor = System.Drawing.Color.Lime
+        Me.CWPRP_Title.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CWPRP_Title.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.CWPRP_Title.Location = New System.Drawing.Point(5, 53)
         Me.CWPRP_Title.Name = "CWPRP_Title"
         Me.CWPRP_Title.Size = New System.Drawing.Size(231, 35)
@@ -36142,11 +36185,11 @@ Partial Class Dashboard_Page
         'Label18
         '
         Me.Label18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label18.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label18.ForeColor = System.Drawing.Color.Lime
+        Me.Label18.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label18.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Label18.Location = New System.Drawing.Point(569, 578)
         Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(75, 35)
+        Me.Label18.Size = New System.Drawing.Size(100, 35)
         Me.Label18.TabIndex = 297
         Me.Label18.Text = "Low Limit:"
         Me.Label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -36154,11 +36197,11 @@ Partial Class Dashboard_Page
         'Label16
         '
         Me.Label16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label16.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label16.ForeColor = System.Drawing.Color.Lime
-        Me.Label16.Location = New System.Drawing.Point(717, 578)
+        Me.Label16.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label16.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Label16.Location = New System.Drawing.Point(769, 578)
         Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(75, 35)
+        Me.Label16.Size = New System.Drawing.Size(100, 35)
         Me.Label16.TabIndex = 298
         Me.Label16.Text = "High Limit:"
         Me.Label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -36166,11 +36209,11 @@ Partial Class Dashboard_Page
         'Label20
         '
         Me.Label20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label20.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label20.ForeColor = System.Drawing.Color.Lime
+        Me.Label20.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label20.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Label20.Location = New System.Drawing.Point(569, 53)
         Me.Label20.Name = "Label20"
-        Me.Label20.Size = New System.Drawing.Size(75, 35)
+        Me.Label20.Size = New System.Drawing.Size(100, 35)
         Me.Label20.TabIndex = 297
         Me.Label20.Text = "Low Limit:"
         Me.Label20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -36178,11 +36221,11 @@ Partial Class Dashboard_Page
         'Label5
         '
         Me.Label5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label5.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.ForeColor = System.Drawing.Color.Lime
-        Me.Label5.Location = New System.Drawing.Point(717, 53)
+        Me.Label5.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Label5.Location = New System.Drawing.Point(769, 53)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(75, 35)
+        Me.Label5.Size = New System.Drawing.Size(100, 35)
         Me.Label5.TabIndex = 298
         Me.Label5.Text = "High Limit:"
         Me.Label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -36190,7 +36233,7 @@ Partial Class Dashboard_Page
         'Label78
         '
         Me.Label78.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label78.Font = New System.Drawing.Font("Agency FB", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label78.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label78.ForeColor = System.Drawing.Color.Lime
         Me.Label78.Location = New System.Drawing.Point(569, 7)
         Me.Label78.Name = "Label78"
@@ -36202,7 +36245,7 @@ Partial Class Dashboard_Page
         'Label73
         '
         Me.Label73.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label73.Font = New System.Drawing.Font("Agency FB", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label73.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label73.ForeColor = System.Drawing.Color.Lime
         Me.Label73.Location = New System.Drawing.Point(345, 7)
         Me.Label73.Name = "Label73"
@@ -36214,7 +36257,7 @@ Partial Class Dashboard_Page
         'Label28
         '
         Me.Label28.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label28.Font = New System.Drawing.Font("Agency FB", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label28.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label28.ForeColor = System.Drawing.Color.Lime
         Me.Label28.Location = New System.Drawing.Point(235, 7)
         Me.Label28.Name = "Label28"
@@ -36226,7 +36269,7 @@ Partial Class Dashboard_Page
         'Label27
         '
         Me.Label27.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label27.Font = New System.Drawing.Font("Agency FB", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label27.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label27.ForeColor = System.Drawing.Color.Lime
         Me.Label27.Location = New System.Drawing.Point(5, 7)
         Me.Label27.Name = "Label27"
@@ -36252,12 +36295,12 @@ Partial Class Dashboard_Page
         Me.Alarms_Page.Controls.Add(Me.Label282)
         Me.Alarms_Page.Controls.Add(Me.BasicIndicator123)
         Me.Alarms_Page.Controls.Add(Me.Label241)
+        Me.Alarms_Page.Controls.Add(Me.AlarmHistoryPanel)
+        Me.Alarms_Page.Controls.Add(Me.EditAlarmDescPanel)
         Me.Alarms_Page.Controls.Add(Me.SteamAlarmPanel)
         Me.Alarms_Page.Controls.Add(Me.ElectricalAlarmPanel)
         Me.Alarms_Page.Controls.Add(Me.AirAlarmPanel)
         Me.Alarms_Page.Controls.Add(Me.WaterAlarmPanel)
-        Me.Alarms_Page.Controls.Add(Me.AlarmHistoryPanel)
-        Me.Alarms_Page.Controls.Add(Me.EditAlarmDescPanel)
         Me.Alarms_Page.Location = New System.Drawing.Point(14, 123)
         Me.Alarms_Page.Name = "Alarms_Page"
         Me.Alarms_Page.Size = New System.Drawing.Size(1895, 945)
@@ -36267,9 +36310,9 @@ Partial Class Dashboard_Page
         '
         Me.AlarmHistoryButton.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.AlarmHistoryButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.AlarmHistoryButton.Font = New System.Drawing.Font("Agency FB", 27.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.AlarmHistoryButton.ForeColor = System.Drawing.Color.Lime
-        Me.AlarmHistoryButton.Location = New System.Drawing.Point(1473, 16)
+        Me.AlarmHistoryButton.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.AlarmHistoryButton.ForeColor = System.Drawing.Color.Green
+        Me.AlarmHistoryButton.Location = New System.Drawing.Point(61, 14)
         Me.AlarmHistoryButton.Name = "AlarmHistoryButton"
         Me.AlarmHistoryButton.Size = New System.Drawing.Size(348, 73)
         Me.AlarmHistoryButton.TabIndex = 258
@@ -36339,12 +36382,12 @@ Partial Class Dashboard_Page
         '
         'AlarmHistoryPanel
         '
+        Me.AlarmHistoryPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.AlarmHistoryPanel.Controls.Add(Me.AlarmGrid)
-        Me.AlarmHistoryPanel.Controls.Add(Me.AlarmList)
         Me.AlarmHistoryPanel.Controls.Add(Me.Label4)
-        Me.AlarmHistoryPanel.Location = New System.Drawing.Point(7, 118)
+        Me.AlarmHistoryPanel.Location = New System.Drawing.Point(7, 95)
         Me.AlarmHistoryPanel.Name = "AlarmHistoryPanel"
-        Me.AlarmHistoryPanel.Size = New System.Drawing.Size(1876, 755)
+        Me.AlarmHistoryPanel.Size = New System.Drawing.Size(1876, 778)
         Me.AlarmHistoryPanel.TabIndex = 259
         '
         'AlarmGrid
@@ -36354,53 +36397,53 @@ Partial Class Dashboard_Page
         Me.AlarmGrid.AllowUserToResizeRows = False
         Me.AlarmGrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells
         Me.AlarmGrid.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(24, Byte), Integer), CType(CType(24, Byte), Integer))
-        Me.AlarmGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.AlarmGrid.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
         DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        DataGridViewCellStyle1.Font = New System.Drawing.Font("Franklin Gothic Demi Cond", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle1.ForeColor = System.Drawing.Color.Gainsboro
-        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer))
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer))
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight
         DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.AlarmGrid.DefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.AlarmGrid.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
+        Me.AlarmGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Franklin Gothic Demi Cond", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.Gainsboro
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.AlarmGrid.DefaultCellStyle = DataGridViewCellStyle2
         Me.AlarmGrid.GridColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.AlarmGrid.Location = New System.Drawing.Point(55, 82)
+        Me.AlarmGrid.Location = New System.Drawing.Point(435, 82)
         Me.AlarmGrid.Name = "AlarmGrid"
         Me.AlarmGrid.ReadOnly = True
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle2.BackColor = System.Drawing.Color.DarkGreen
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Franklin Gothic Demi Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.Gainsboro
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Lime
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.Desktop
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.AlarmGrid.RowHeadersDefaultCellStyle = DataGridViewCellStyle2
+        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle3.BackColor = System.Drawing.Color.DarkGreen
+        DataGridViewCellStyle3.Font = New System.Drawing.Font("Franklin Gothic Demi Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.Gainsboro
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Lime
+        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.Desktop
+        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.AlarmGrid.RowHeadersDefaultCellStyle = DataGridViewCellStyle3
+        Me.AlarmGrid.RowHeadersVisible = False
         Me.AlarmGrid.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders
-        Me.AlarmGrid.Size = New System.Drawing.Size(1457, 650)
+        DataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer))
+        DataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer))
+        Me.AlarmGrid.RowsDefaultCellStyle = DataGridViewCellStyle4
+        Me.AlarmGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect
+        Me.AlarmGrid.Size = New System.Drawing.Size(1006, 650)
         Me.AlarmGrid.TabIndex = 263
-        '
-        'AlarmList
-        '
-        Me.AlarmList.BackColor = System.Drawing.Color.FromArgb(CType(CType(8, Byte), Integer), CType(CType(8, Byte), Integer), CType(CType(8, Byte), Integer))
-        Me.AlarmList.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.AlarmList.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.AlarmList.ForeColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.AlarmList.FormattingEnabled = True
-        Me.AlarmList.ItemHeight = 19
-        Me.AlarmList.Location = New System.Drawing.Point(55, 82)
-        Me.AlarmList.Name = "AlarmList"
-        Me.AlarmList.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended
-        Me.AlarmList.Size = New System.Drawing.Size(803, 648)
-        Me.AlarmList.TabIndex = 246
         '
         'Label4
         '
         Me.Label4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(54, 24)
+        Me.Label4.Location = New System.Drawing.Point(434, 24)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(1458, 55)
+        Me.Label4.Size = New System.Drawing.Size(1007, 55)
         Me.Label4.TabIndex = 197
         Me.Label4.Text = "Alarm History"
         Me.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -36544,6 +36587,7 @@ Partial Class Dashboard_Page
         '
         'Water_Page
         '
+        Me.Water_Page.Controls.Add(Me.Label75)
         Me.Water_Page.Controls.Add(Me.Water_Pr_Cold_V2)
         Me.Water_Page.Controls.Add(Me.Pipe104)
         Me.Water_Page.Controls.Add(Me.Pipe108)
@@ -36674,6 +36718,17 @@ Partial Class Dashboard_Page
         Me.Water_Page.Name = "Water_Page"
         Me.Water_Page.Size = New System.Drawing.Size(1895, 945)
         Me.Water_Page.TabIndex = 255
+        '
+        'Label75
+        '
+        Me.Label75.AutoSize = True
+        Me.Label75.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label75.ForeColor = System.Drawing.Color.Gainsboro
+        Me.Label75.Location = New System.Drawing.Point(812, 746)
+        Me.Label75.Name = "Label75"
+        Me.Label75.Size = New System.Drawing.Size(171, 26)
+        Me.Label75.TabIndex = 404
+        Me.Label75.Text = "TO CONDENSATE PIT"
         '
         'Water_Pr_Cold_V2
         '
@@ -39719,9 +39774,11 @@ Partial Class Dashboard_Page
         'Goto_Login_Screen
         '
         Me.Goto_Login_Screen.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.Goto_Login_Screen.FlatAppearance.BorderColor = System.Drawing.Color.Silver
+        Me.Goto_Login_Screen.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer))
+        Me.Goto_Login_Screen.FlatAppearance.BorderSize = 2
+        Me.Goto_Login_Screen.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Goto_Login_Screen.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Goto_Login_Screen.Font = New System.Drawing.Font("Agency FB", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Goto_Login_Screen.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Goto_Login_Screen.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Goto_Login_Screen.Location = New System.Drawing.Point(1617, 65)
         Me.Goto_Login_Screen.Name = "Goto_Login_Screen"
@@ -39733,29 +39790,33 @@ Partial Class Dashboard_Page
         'Goto_Faults_BTN
         '
         Me.Goto_Faults_BTN.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.Goto_Faults_BTN.FlatAppearance.BorderColor = System.Drawing.Color.Silver
+        Me.Goto_Faults_BTN.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer))
+        Me.Goto_Faults_BTN.FlatAppearance.BorderSize = 2
+        Me.Goto_Faults_BTN.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Goto_Faults_BTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Goto_Faults_BTN.Font = New System.Drawing.Font("Agency FB", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Goto_Faults_BTN.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Goto_Faults_BTN.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Goto_Faults_BTN.Location = New System.Drawing.Point(1471, 65)
         Me.Goto_Faults_BTN.Name = "Goto_Faults_BTN"
-        Me.Goto_Faults_BTN.Size = New System.Drawing.Size(146, 52)
+        Me.Goto_Faults_BTN.Size = New System.Drawing.Size(147, 52)
         Me.Goto_Faults_BTN.TabIndex = 0
-        Me.Goto_Faults_BTN.Text = "SYSTEM STATUS"
+        Me.Goto_Faults_BTN.Text = "SYSTEM"
         Me.Goto_Faults_BTN.UseVisualStyleBackColor = True
         '
         'Goto_Steam_BTN
         '
         Me.Goto_Steam_BTN.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.Goto_Steam_BTN.FlatAppearance.BorderColor = System.Drawing.Color.Silver
+        Me.Goto_Steam_BTN.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer))
+        Me.Goto_Steam_BTN.FlatAppearance.BorderSize = 2
+        Me.Goto_Steam_BTN.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Goto_Steam_BTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Goto_Steam_BTN.Font = New System.Drawing.Font("Agency FB", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Goto_Steam_BTN.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Goto_Steam_BTN.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Goto_Steam_BTN.Location = New System.Drawing.Point(303, 65)
         Me.Goto_Steam_BTN.Name = "Goto_Steam_BTN"
-        Me.Goto_Steam_BTN.Size = New System.Drawing.Size(146, 52)
+        Me.Goto_Steam_BTN.Size = New System.Drawing.Size(147, 52)
         Me.Goto_Steam_BTN.TabIndex = 155
-        Me.Goto_Steam_BTN.Text = "STEAM SYSTEM"
+        Me.Goto_Steam_BTN.Text = "STEAM"
         Me.Goto_Steam_BTN.UseVisualStyleBackColor = True
         '
         'PictureBox1
@@ -40996,8 +41057,8 @@ Partial Class Dashboard_Page
         Me.InsideTempDisp1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.InsideTempDisp1.ComComponent = Me.PLC
         Me.InsideTempDisp1.DisplayAsTime = False
-        Me.InsideTempDisp1.Font = New System.Drawing.Font("Agency FB", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.InsideTempDisp1.ForeColor = System.Drawing.Color.White
+        Me.InsideTempDisp1.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.InsideTempDisp1.ForeColor = System.Drawing.Color.Gainsboro
         Me.InsideTempDisp1.Highlight = False
         Me.InsideTempDisp1.HighlightColor = System.Drawing.Color.Red
         Me.InsideTempDisp1.HighlightForeColor = System.Drawing.Color.White
@@ -41036,8 +41097,8 @@ Partial Class Dashboard_Page
         Me.InsideHumidityDisp1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.InsideHumidityDisp1.ComComponent = Me.PLC
         Me.InsideHumidityDisp1.DisplayAsTime = False
-        Me.InsideHumidityDisp1.Font = New System.Drawing.Font("Agency FB", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.InsideHumidityDisp1.ForeColor = System.Drawing.Color.White
+        Me.InsideHumidityDisp1.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.InsideHumidityDisp1.ForeColor = System.Drawing.Color.Gainsboro
         Me.InsideHumidityDisp1.Highlight = False
         Me.InsideHumidityDisp1.HighlightColor = System.Drawing.Color.Red
         Me.InsideHumidityDisp1.HighlightForeColor = System.Drawing.Color.White
@@ -41077,8 +41138,8 @@ Partial Class Dashboard_Page
         Me.OutsideTempDisp1.ComComponent = Me.PLC
         Me.OutsideTempDisp1.DisplayAsTime = False
         Me.OutsideTempDisp1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.OutsideTempDisp1.Font = New System.Drawing.Font("Agency FB", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.OutsideTempDisp1.ForeColor = System.Drawing.Color.White
+        Me.OutsideTempDisp1.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.OutsideTempDisp1.ForeColor = System.Drawing.Color.Gainsboro
         Me.OutsideTempDisp1.Highlight = False
         Me.OutsideTempDisp1.HighlightColor = System.Drawing.Color.Red
         Me.OutsideTempDisp1.HighlightForeColor = System.Drawing.Color.White
@@ -41118,8 +41179,8 @@ Partial Class Dashboard_Page
         Me.OutsideHumidityDisp1.ComComponent = Me.PLC
         Me.OutsideHumidityDisp1.DisplayAsTime = False
         Me.OutsideHumidityDisp1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.OutsideHumidityDisp1.Font = New System.Drawing.Font("Agency FB", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.OutsideHumidityDisp1.ForeColor = System.Drawing.Color.White
+        Me.OutsideHumidityDisp1.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.OutsideHumidityDisp1.ForeColor = System.Drawing.Color.Gainsboro
         Me.OutsideHumidityDisp1.Highlight = False
         Me.OutsideHumidityDisp1.HighlightColor = System.Drawing.Color.Red
         Me.OutsideHumidityDisp1.HighlightForeColor = System.Drawing.Color.White
@@ -41157,7 +41218,7 @@ Partial Class Dashboard_Page
         Me.BasicIndicator37.Color2 = System.Drawing.Color.Green
         Me.BasicIndicator37.Color3 = System.Drawing.Color.Red
         Me.BasicIndicator37.ComComponent = Me.PLC
-        Me.BasicIndicator37.Font = New System.Drawing.Font("Agency FB", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BasicIndicator37.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BasicIndicator37.ForeColor = System.Drawing.Color.Silver
         Me.BasicIndicator37.Location = New System.Drawing.Point(8, 5)
         Me.BasicIndicator37.Name = "BasicIndicator37"
@@ -41177,7 +41238,7 @@ Partial Class Dashboard_Page
         Me.BasicIndicator90.Color2 = System.Drawing.Color.Green
         Me.BasicIndicator90.Color3 = System.Drawing.Color.Red
         Me.BasicIndicator90.ComComponent = Me.PLC
-        Me.BasicIndicator90.Font = New System.Drawing.Font("Agency FB", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BasicIndicator90.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BasicIndicator90.ForeColor = System.Drawing.Color.Silver
         Me.BasicIndicator90.Location = New System.Drawing.Point(1222, 5)
         Me.BasicIndicator90.Name = "BasicIndicator90"
@@ -41227,6 +41288,7 @@ Partial Class Dashboard_Page
         '
         'StartUpScreen
         '
+        Me.StartUpScreen.Controls.Add(Me.ProgressBar1)
         Me.StartUpScreen.Controls.Add(Me.StartupStatusLabel)
         Me.StartUpScreen.Controls.Add(Me.PictureBox41)
         Me.StartUpScreen.Location = New System.Drawing.Point(0, 0)
@@ -41257,6 +41319,17 @@ Partial Class Dashboard_Page
         Me.PictureBox41.TabIndex = 378
         Me.PictureBox41.TabStop = False
         '
+        'ProgressBar1
+        '
+        Me.ProgressBar1.ForeColor = System.Drawing.Color.MintCream
+        Me.ProgressBar1.Location = New System.Drawing.Point(417, 946)
+        Me.ProgressBar1.Maximum = 384
+        Me.ProgressBar1.Name = "ProgressBar1"
+        Me.ProgressBar1.Size = New System.Drawing.Size(1086, 51)
+        Me.ProgressBar1.Step = 1
+        Me.ProgressBar1.Style = System.Windows.Forms.ProgressBarStyle.Continuous
+        Me.ProgressBar1.TabIndex = 379
+        '
         'Dashboard_Page
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -41283,20 +41356,20 @@ Partial Class Dashboard_Page
         Me.Controls.Add(Me.OutsideHumidityDisp1)
         Me.Controls.Add(Me.BasicIndicator37)
         Me.Controls.Add(Me.BasicIndicator90)
+        Me.Controls.Add(Me.Status_Page)
+        Me.Controls.Add(Me.Alarms_Page)
+        Me.Controls.Add(Me.Setpoints_Page)
+        Me.Controls.Add(Me.StartUpScreen)
         Me.Controls.Add(Me.Main_Page)
         Me.Controls.Add(Me.Electrical_Page)
-        Me.Controls.Add(Me.Login_Screen)
         Me.Controls.Add(Me.Enviro_Page)
         Me.Controls.Add(Me.Steam_Page)
         Me.Controls.Add(Me.Boiler_Page)
         Me.Controls.Add(Me.Compressor_Page)
         Me.Controls.Add(Me.Realtime_Page)
+        Me.Controls.Add(Me.Login_Screen)
         Me.Controls.Add(Me.AdminSettings_Page)
         Me.Controls.Add(Me.Water_Page)
-        Me.Controls.Add(Me.Status_Page)
-        Me.Controls.Add(Me.Alarms_Page)
-        Me.Controls.Add(Me.Setpoints_Page)
-        Me.Controls.Add(Me.StartUpScreen)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.KeyPreview = True
         Me.MaximumSize = New System.Drawing.Size(1920, 1080)
@@ -42674,7 +42747,6 @@ Partial Class Dashboard_Page
     Friend WithEvents MedSetamPID_OutMIN As AdvancedHMIControls.BasicLabel
     Friend WithEvents MedSetamPID_OutMAX As AdvancedHMIControls.BasicLabel
     Friend WithEvents MedSteamPID_LoopUpdate As AdvancedHMIControls.BasicLabel
-    Friend WithEvents AlarmList As ListBox
     Friend WithEvents BasicIndicator4 As AdvancedHMIControls.BasicIndicator
     Friend WithEvents BasicIndicator5 As AdvancedHMIControls.BasicIndicator
     Friend WithEvents BasicIndicator6 As AdvancedHMIControls.BasicIndicator
@@ -43534,4 +43606,6 @@ Partial Class Dashboard_Page
     Friend WithEvents StartUpScreen As Panel
     Friend WithEvents StartupStatusLabel As Label
     Friend WithEvents PictureBox41 As PictureBox
+    Friend WithEvents Label75 As Label
+    Friend WithEvents ProgressBar1 As ProgressBar
 End Class
