@@ -24,78 +24,78 @@ Partial Class Dashboard_Page
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Dashboard_Page))
-        Dim ChartArea1 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim ChartArea2 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim ChartArea3 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim ChartArea4 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim Legend1 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
-        Dim Legend2 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
-        Dim Legend3 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
-        Dim Legend4 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
-        Dim Series1 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
-        Dim Series2 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
-        Dim Series3 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
-        Dim Series4 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
-        Dim Series5 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
-        Dim Series6 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
-        Dim Series7 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
-        Dim Series8 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
-        Dim Series9 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
-        Dim Series10 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
-        Dim Series11 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
-        Dim Series12 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
-        Dim Series13 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
-        Dim Series14 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
-        Dim Series15 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
-        Dim Series16 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
-        Dim Series17 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
-        Dim Series18 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
-        Dim Title1 As System.Windows.Forms.DataVisualization.Charting.Title = New System.Windows.Forms.DataVisualization.Charting.Title()
-        Dim Title2 As System.Windows.Forms.DataVisualization.Charting.Title = New System.Windows.Forms.DataVisualization.Charting.Title()
-        Dim Title3 As System.Windows.Forms.DataVisualization.Charting.Title = New System.Windows.Forms.DataVisualization.Charting.Title()
-        Dim Title4 As System.Windows.Forms.DataVisualization.Charting.Title = New System.Windows.Forms.DataVisualization.Charting.Title()
-        Dim ChartArea5 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim ChartArea6 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim Legend5 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
-        Dim Legend6 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
-        Dim Series19 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
-        Dim Series20 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
-        Dim Series21 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
-        Dim Series22 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
-        Dim Title5 As System.Windows.Forms.DataVisualization.Charting.Title = New System.Windows.Forms.DataVisualization.Charting.Title()
-        Dim Title6 As System.Windows.Forms.DataVisualization.Charting.Title = New System.Windows.Forms.DataVisualization.Charting.Title()
-        Dim ChartArea7 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim CustomLabel1 As System.Windows.Forms.DataVisualization.Charting.CustomLabel = New System.Windows.Forms.DataVisualization.Charting.CustomLabel()
-        Dim CustomLabel2 As System.Windows.Forms.DataVisualization.Charting.CustomLabel = New System.Windows.Forms.DataVisualization.Charting.CustomLabel()
-        Dim CustomLabel3 As System.Windows.Forms.DataVisualization.Charting.CustomLabel = New System.Windows.Forms.DataVisualization.Charting.CustomLabel()
-        Dim Series23 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
-        Dim DataPoint1 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(0R, 277.0R)
-        Dim DataPoint2 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(120.0R, 277.0R)
-        Dim DataPoint3 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(240.0R, 277.0R)
-        Dim DataPoint4 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(360.0R, 277.0R)
-        Dim Series24 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
-        Dim DataPoint5 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(0R, 277.0R)
-        Dim DataPoint6 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(120.0R, 277.0R)
-        Dim DataPoint7 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(240.0R, 277.0R)
-        Dim DataPoint8 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(360.0R, 277.0R)
-        Dim ChartArea8 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim CustomLabel4 As System.Windows.Forms.DataVisualization.Charting.CustomLabel = New System.Windows.Forms.DataVisualization.Charting.CustomLabel()
-        Dim CustomLabel5 As System.Windows.Forms.DataVisualization.Charting.CustomLabel = New System.Windows.Forms.DataVisualization.Charting.CustomLabel()
-        Dim CustomLabel6 As System.Windows.Forms.DataVisualization.Charting.CustomLabel = New System.Windows.Forms.DataVisualization.Charting.CustomLabel()
-        Dim Series25 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
-        Dim DataPoint9 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(0R, 277.0R)
-        Dim DataPoint10 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(120.0R, 277.0R)
-        Dim DataPoint11 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(240.0R, 277.0R)
-        Dim DataPoint12 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(360.0R, 277.0R)
-        Dim Series26 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
-        Dim DataPoint13 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(0R, 277.0R)
-        Dim DataPoint14 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(120.0R, 277.0R)
-        Dim DataPoint15 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(240.0R, 277.0R)
-        Dim DataPoint16 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(360.0R, 277.0R)
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim ChartArea9 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim ChartArea10 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim ChartArea11 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim ChartArea12 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend7 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Legend8 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Legend9 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Legend10 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Series27 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim Series28 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim Series29 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim Series30 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim Series31 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim Series32 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim Series33 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim Series34 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim Series35 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim Series36 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim Series37 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim Series38 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim Series39 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim Series40 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim Series41 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim Series42 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim Series43 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim Series44 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim Title7 As System.Windows.Forms.DataVisualization.Charting.Title = New System.Windows.Forms.DataVisualization.Charting.Title()
+        Dim Title8 As System.Windows.Forms.DataVisualization.Charting.Title = New System.Windows.Forms.DataVisualization.Charting.Title()
+        Dim Title9 As System.Windows.Forms.DataVisualization.Charting.Title = New System.Windows.Forms.DataVisualization.Charting.Title()
+        Dim Title10 As System.Windows.Forms.DataVisualization.Charting.Title = New System.Windows.Forms.DataVisualization.Charting.Title()
+        Dim ChartArea13 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim ChartArea14 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend11 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Legend12 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Series45 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim Series46 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim Series47 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim Series48 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim Title11 As System.Windows.Forms.DataVisualization.Charting.Title = New System.Windows.Forms.DataVisualization.Charting.Title()
+        Dim Title12 As System.Windows.Forms.DataVisualization.Charting.Title = New System.Windows.Forms.DataVisualization.Charting.Title()
+        Dim ChartArea15 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim CustomLabel7 As System.Windows.Forms.DataVisualization.Charting.CustomLabel = New System.Windows.Forms.DataVisualization.Charting.CustomLabel()
+        Dim CustomLabel8 As System.Windows.Forms.DataVisualization.Charting.CustomLabel = New System.Windows.Forms.DataVisualization.Charting.CustomLabel()
+        Dim CustomLabel9 As System.Windows.Forms.DataVisualization.Charting.CustomLabel = New System.Windows.Forms.DataVisualization.Charting.CustomLabel()
+        Dim Series49 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim DataPoint17 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(0R, 277.0R)
+        Dim DataPoint18 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(120.0R, 277.0R)
+        Dim DataPoint19 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(240.0R, 277.0R)
+        Dim DataPoint20 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(360.0R, 277.0R)
+        Dim Series50 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim DataPoint21 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(0R, 277.0R)
+        Dim DataPoint22 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(120.0R, 277.0R)
+        Dim DataPoint23 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(240.0R, 277.0R)
+        Dim DataPoint24 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(360.0R, 277.0R)
+        Dim ChartArea16 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim CustomLabel10 As System.Windows.Forms.DataVisualization.Charting.CustomLabel = New System.Windows.Forms.DataVisualization.Charting.CustomLabel()
+        Dim CustomLabel11 As System.Windows.Forms.DataVisualization.Charting.CustomLabel = New System.Windows.Forms.DataVisualization.Charting.CustomLabel()
+        Dim CustomLabel12 As System.Windows.Forms.DataVisualization.Charting.CustomLabel = New System.Windows.Forms.DataVisualization.Charting.CustomLabel()
+        Dim Series51 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim DataPoint25 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(0R, 277.0R)
+        Dim DataPoint26 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(120.0R, 277.0R)
+        Dim DataPoint27 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(240.0R, 277.0R)
+        Dim DataPoint28 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(360.0R, 277.0R)
+        Dim Series52 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim DataPoint29 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(0R, 277.0R)
+        Dim DataPoint30 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(120.0R, 277.0R)
+        Dim DataPoint31 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(240.0R, 277.0R)
+        Dim DataPoint32 As System.Windows.Forms.DataVisualization.Charting.DataPoint = New System.Windows.Forms.DataVisualization.Charting.DataPoint(360.0R, 277.0R)
+        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Goto_Dashboard_BTN = New System.Windows.Forms.Button()
         Me.Goto_Boilers_BTN = New System.Windows.Forms.Button()
         Me.Goto_Compressors_BTN = New System.Windows.Forms.Button()
@@ -981,7 +981,6 @@ Partial Class Dashboard_Page
         Me.Pipe178 = New AdvancedHMIControls.Pipe()
         Me.Pipe26 = New AdvancedHMIControls.Pipe()
         Me.Pipe127 = New AdvancedHMIControls.Pipe()
-        Me.BasicIndicator40 = New AdvancedHMIControls.BasicIndicator()
         Me.Air_Pr_Main_MIN2 = New AdvancedHMIControls.BasicLabel()
         Me.Air_Pr_Main_MAX2 = New AdvancedHMIControls.BasicLabel()
         Me.Air_Pr_Main_UN2 = New AdvancedHMIControls.BasicIndicator()
@@ -1044,11 +1043,11 @@ Partial Class Dashboard_Page
         Me.Pipe91 = New AdvancedHMIControls.Pipe()
         Me.Pipe89 = New AdvancedHMIControls.Pipe()
         Me.Boiler_Page = New System.Windows.Forms.Panel()
+        Me.Pipe9 = New AdvancedHMIControls.Pipe()
         Me.Pipe8 = New AdvancedHMIControls.Pipe()
         Me.Pipe10 = New AdvancedHMIControls.Pipe()
         Me.Pipe3 = New AdvancedHMIControls.Pipe()
         Me.Pipe39 = New AdvancedHMIControls.Pipe()
-        Me.Pipe9 = New AdvancedHMIControls.Pipe()
         Me.Pipe159 = New AdvancedHMIControls.Pipe()
         Me.Pipe139 = New AdvancedHMIControls.Pipe()
         Me.Pipe183 = New AdvancedHMIControls.Pipe()
@@ -1056,7 +1055,6 @@ Partial Class Dashboard_Page
         Me.Pipe156 = New AdvancedHMIControls.Pipe()
         Me.FeedWaterPump2 = New AdvancedHMIControls.WaterPump()
         Me.Steam_Pr_FeedWat_UN2 = New AdvancedHMIControls.BasicIndicator()
-        Me.BasicIndicator26 = New AdvancedHMIControls.BasicIndicator()
         Me.Steam_Pr_FeedWat_MIN2 = New AdvancedHMIControls.BasicLabel()
         Me.Steam_Pr_FeedWat_MAX2 = New AdvancedHMIControls.BasicLabel()
         Me.Steam_Pr_FeedWat_V2 = New AdvancedHMIControls.AnalogValueDisplay()
@@ -1146,8 +1144,6 @@ Partial Class Dashboard_Page
         Me.PictureBox10 = New System.Windows.Forms.PictureBox()
         Me.PictureBox5 = New System.Windows.Forms.PictureBox()
         Me.Steam_Page = New System.Windows.Forms.Panel()
-        Me.BasicIndicator87 = New AdvancedHMIControls.BasicIndicator()
-        Me.BasicIndicator88 = New AdvancedHMIControls.BasicIndicator()
         Me.Steam_Pr_Low_MIN2 = New AdvancedHMIControls.BasicLabel()
         Me.Steam_Pr_Med_MIN2 = New AdvancedHMIControls.BasicLabel()
         Me.Steam_Pr_Low_UN2 = New AdvancedHMIControls.BasicIndicator()
@@ -1156,9 +1152,7 @@ Partial Class Dashboard_Page
         Me.Steam_Pr_Med_max2 = New AdvancedHMIControls.BasicLabel()
         Me.Steam_Pr_Main_UN2 = New AdvancedHMIControls.BasicIndicator()
         Me.Steam_Pr_Med_UN2 = New AdvancedHMIControls.BasicIndicator()
-        Me.BasicIndicator82 = New AdvancedHMIControls.BasicIndicator()
         Me.LowSteamDemandDisp2 = New AdvancedHMIControls.PneumaticBallValve()
-        Me.BasicIndicator89 = New AdvancedHMIControls.BasicIndicator()
         Me.Steam_Pr_Main_MIN2 = New AdvancedHMIControls.BasicLabel()
         Me.Steam_Flow_MIN2 = New AdvancedHMIControls.BasicLabel()
         Me.Steam_Pr_Main_MAX2 = New AdvancedHMIControls.BasicLabel()
@@ -1260,12 +1254,6 @@ Partial Class Dashboard_Page
         Me.Electrical_NB_UN2 = New AdvancedHMIControls.BasicIndicator()
         Me.Electrical_SA_UN2 = New AdvancedHMIControls.BasicIndicator()
         Me.Electrical_NA_UN2 = New AdvancedHMIControls.BasicIndicator()
-        Me.BasicIndicator94 = New AdvancedHMIControls.BasicIndicator()
-        Me.BasicIndicator10 = New AdvancedHMIControls.BasicIndicator()
-        Me.BasicIndicator93 = New AdvancedHMIControls.BasicIndicator()
-        Me.BasicIndicator8 = New AdvancedHMIControls.BasicIndicator()
-        Me.BasicIndicator22 = New AdvancedHMIControls.BasicIndicator()
-        Me.BasicIndicator96 = New AdvancedHMIControls.BasicIndicator()
         Me.Electrical_SC_MIN2 = New AdvancedHMIControls.BasicLabel()
         Me.Electrical_NC_MIN2 = New AdvancedHMIControls.BasicLabel()
         Me.Electrical_SB_MIN2 = New AdvancedHMIControls.BasicLabel()
@@ -1304,20 +1292,12 @@ Partial Class Dashboard_Page
         Me.Electrical_SA_G1 = New AdvancedHMIControls.GaugeCompact()
         Me.PLCAlarmIcon1 = New System.Windows.Forms.PictureBox()
         Me.LogAlarmIcon1 = New System.Windows.Forms.PictureBox()
-        Me.Water_Fl_Hot_Title = New AdvancedHMIControls.BasicIndicator()
         Me.Water_Fl_Hot_V1 = New AdvancedHMIControls.AnalogValueDisplay()
         Me.Water_Fl_Hot_MIN1 = New AdvancedHMIControls.BasicLabel()
         Me.Water_Fl_Hot_MAX1 = New AdvancedHMIControls.BasicLabel()
         Me.Water_Fl_Hot_UN1 = New System.Windows.Forms.Label()
         Me.Water_Fl_Hot_I1 = New AdvancedHMIControls.BasicIndicator()
         Me.Water_Fl_Hot_G1 = New AdvancedHMIControls.MeterCompact()
-        Me.BasicIndicator115 = New AdvancedHMIControls.BasicIndicator()
-        Me.BasicIndicator120 = New AdvancedHMIControls.BasicIndicator()
-        Me.BasicIndicator107 = New AdvancedHMIControls.BasicIndicator()
-        Me.BasicIndicator104 = New AdvancedHMIControls.BasicIndicator()
-        Me.BasicIndicator121 = New AdvancedHMIControls.BasicIndicator()
-        Me.BasicIndicator125 = New AdvancedHMIControls.BasicIndicator()
-        Me.BasicIndicator124 = New AdvancedHMIControls.BasicIndicator()
         Me.Steam_Pr_Med_V1 = New AdvancedHMIControls.AnalogValueDisplay()
         Me.Electrical_SC_V1 = New AdvancedHMIControls.AnalogValueDisplay()
         Me.Electrical_SB_V1 = New AdvancedHMIControls.AnalogValueDisplay()
@@ -1359,8 +1339,6 @@ Partial Class Dashboard_Page
         Me.Water_Tp_Hot_G1 = New AdvancedHMIControls.MeterCompact()
         Me.Water_FH_Hot_I1 = New AdvancedHMIControls.BasicIndicator()
         Me.Water_FH_Cold_I1 = New AdvancedHMIControls.BasicIndicator()
-        Me.BasicIndicator110 = New AdvancedHMIControls.BasicIndicator()
-        Me.BasicIndicator109 = New AdvancedHMIControls.BasicIndicator()
         Me.Water_Pr_Hot_MIN1 = New AdvancedHMIControls.BasicLabel()
         Me.Water_Pr_Cold_MIN1 = New AdvancedHMIControls.BasicLabel()
         Me.Water_Pr_Hot_MAX1 = New AdvancedHMIControls.BasicLabel()
@@ -1391,10 +1369,6 @@ Partial Class Dashboard_Page
         Me.Steam_Dem_Low_G1 = New AdvancedHMIControls.MeterCompact()
         Me.Steam_Flow_I1 = New AdvancedHMIControls.BasicIndicator()
         Me.WaterAlarmIcon1 = New System.Windows.Forms.PictureBox()
-        Me.BasicIndicator114 = New AdvancedHMIControls.BasicIndicator()
-        Me.BasicIndicator113 = New AdvancedHMIControls.BasicIndicator()
-        Me.BasicIndicator112 = New AdvancedHMIControls.BasicIndicator()
-        Me.BasicIndicator111 = New AdvancedHMIControls.BasicIndicator()
         Me.SteamAlarmIcon1 = New System.Windows.Forms.PictureBox()
         Me.ElecAlarmDisp1 = New AdvancedHMIControls.MessageDisplayByBit()
         Me.AirAlarmDisp1 = New AdvancedHMIControls.MessageDisplayByBit()
@@ -1441,14 +1415,6 @@ Partial Class Dashboard_Page
         Me.EVIHM_Min = New AdvancedHMIControls.BasicLabel()
         Me.EVITP_Max = New AdvancedHMIControls.BasicLabel()
         Me.EVITP_Min = New AdvancedHMIControls.BasicLabel()
-        Me.Label63 = New System.Windows.Forms.Label()
-        Me.Label62 = New System.Windows.Forms.Label()
-        Me.Label56 = New System.Windows.Forms.Label()
-        Me.Label54 = New System.Windows.Forms.Label()
-        Me.Label50 = New System.Windows.Forms.Label()
-        Me.Label39 = New System.Windows.Forms.Label()
-        Me.Label35 = New System.Windows.Forms.Label()
-        Me.Label34 = New System.Windows.Forms.Label()
         Me.EVOHM_High = New AdvancedHMIControls.BasicLabel()
         Me.EVOHM_Low = New AdvancedHMIControls.BasicLabel()
         Me.EVOTP_High = New AdvancedHMIControls.BasicLabel()
@@ -1706,9 +1672,7 @@ Partial Class Dashboard_Page
         Me.Pipe108 = New AdvancedHMIControls.Pipe()
         Me.Water_Pr_Hot_UN2 = New AdvancedHMIControls.BasicIndicator()
         Me.Water_Pr_Cold_UN2 = New AdvancedHMIControls.BasicIndicator()
-        Me.BasicIndicator9 = New AdvancedHMIControls.BasicIndicator()
         Me.Water_Pr_Hot_MIN2 = New AdvancedHMIControls.BasicLabel()
-        Me.BasicIndicator3 = New AdvancedHMIControls.BasicIndicator()
         Me.Water_Pr_Hot_MAX2 = New AdvancedHMIControls.BasicLabel()
         Me.Water_Pr_Cold_MIN2 = New AdvancedHMIControls.BasicLabel()
         Me.Water_Pr_Cold_MAX2 = New AdvancedHMIControls.BasicLabel()
@@ -1722,15 +1686,10 @@ Partial Class Dashboard_Page
         Me.Water_Pr_ColdPre_MAX2 = New AdvancedHMIControls.BasicLabel()
         Me.Water_Pr_HotPre_MAX2 = New AdvancedHMIControls.BasicLabel()
         Me.Water_Sup_City_UN2 = New System.Windows.Forms.Label()
-        Me.BasicIndicator21 = New AdvancedHMIControls.BasicIndicator()
-        Me.BasicIndicator95 = New AdvancedHMIControls.BasicIndicator()
-        Me.BasicIndicator1 = New AdvancedHMIControls.BasicIndicator()
         Me.Water_Fl_Hot_MIN2 = New AdvancedHMIControls.BasicLabel()
         Me.Water_Fl_Hot_MAX2 = New AdvancedHMIControls.BasicLabel()
-        Me.BasicIndicator20 = New AdvancedHMIControls.BasicIndicator()
         Me.Water_Tp_Hot_MIN2 = New AdvancedHMIControls.BasicLabel()
         Me.Water_Tp_Hot_MAX2 = New AdvancedHMIControls.BasicLabel()
-        Me.BasicIndicator7 = New AdvancedHMIControls.BasicIndicator()
         Me.Pipe65 = New AdvancedHMIControls.Pipe()
         Me.Pipe142 = New AdvancedHMIControls.Pipe()
         Me.Pipe144 = New AdvancedHMIControls.Pipe()
@@ -1921,9 +1880,42 @@ Partial Class Dashboard_Page
         Me.SoundPlayer1 = New AdvancedHMIControls.SoundPlayer()
         Me.BasicDataLogger21 = New AdvancedHMIControls.BasicDataLogger2()
         Me.StartUpScreen = New System.Windows.Forms.Panel()
+        Me.ProgressBar1 = New System.Windows.Forms.ProgressBar()
         Me.StartupStatusLabel = New System.Windows.Forms.Label()
         Me.PictureBox41 = New System.Windows.Forms.PictureBox()
-        Me.ProgressBar1 = New System.Windows.Forms.ProgressBar()
+        Me.Water_Pr_Hot_T1 = New AdvancedHMIControls.BasicIndicator()
+        Me.Water_Pr_Cold_T1 = New AdvancedHMIControls.BasicIndicator()
+        Me.Air_Pr_Main_T1 = New AdvancedHMIControls.BasicIndicator()
+        Me.Water_Fl_Hot_T1 = New AdvancedHMIControls.BasicIndicator()
+        Me.Water_Tp_Hot_T1 = New AdvancedHMIControls.BasicIndicator()
+        Me.Water_Sup_City_VT1 = New AdvancedHMIControls.BasicIndicator()
+        Me.Water_FH_Hot_T1 = New AdvancedHMIControls.BasicIndicator()
+        Me.Water_FH_Cold_T1 = New AdvancedHMIControls.BasicIndicator()
+        Me.Steam_Flow_T1 = New AdvancedHMIControls.BasicIndicator()
+        Me.Steam_Pr_Main_T1 = New AdvancedHMIControls.BasicIndicator()
+        Me.Steam_Pr_Low_T1 = New AdvancedHMIControls.BasicIndicator()
+        Me.Steam_Pr_Med_T1 = New AdvancedHMIControls.BasicIndicator()
+        Me.Electrical_SC_T2 = New AdvancedHMIControls.BasicIndicator()
+        Me.Electrical_NC_T2 = New AdvancedHMIControls.BasicIndicator()
+        Me.Electrical_SB_T2 = New AdvancedHMIControls.BasicIndicator()
+        Me.Electrical_NB_T2 = New AdvancedHMIControls.BasicIndicator()
+        Me.Electrical_SA_T2 = New AdvancedHMIControls.BasicIndicator()
+        Me.Electrical_NA_T2 = New AdvancedHMIControls.BasicIndicator()
+        Me.Steam_Pr_Low_T2 = New AdvancedHMIControls.BasicIndicator()
+        Me.Steam_Pr_Med_T2 = New AdvancedHMIControls.BasicIndicator()
+        Me.Steam_Flow_T2 = New AdvancedHMIControls.BasicIndicator()
+        Me.Steam_Pr_Main_T2 = New AdvancedHMIControls.BasicIndicator()
+        Me.Steam_Pr_FeedWat_T2 = New AdvancedHMIControls.BasicIndicator()
+        Me.Air_Pr_Main_T2 = New AdvancedHMIControls.BasicIndicator()
+        Me.Water_Pr_Hot_T2 = New AdvancedHMIControls.BasicIndicator()
+        Me.Water_Pr_Cold_T2 = New AdvancedHMIControls.BasicIndicator()
+        Me.Water_Sup_City_T2 = New AdvancedHMIControls.BasicIndicator()
+        Me.Water_Pr_ColdPre_T2 = New AdvancedHMIControls.BasicIndicator()
+        Me.Water_Pr_HotPre_T2 = New AdvancedHMIControls.BasicIndicator()
+        Me.Water_Fl_Hot_T2 = New AdvancedHMIControls.BasicIndicator()
+        Me.Water_Tp_Hot_T2 = New AdvancedHMIControls.BasicIndicator()
+        Me.Steam_Dem_Med_T1 = New AdvancedHMIControls.BasicIndicator()
+        Me.Steam_Dem_Low_T1 = New AdvancedHMIControls.BasicIndicator()
         Me.Panel29.SuspendLayout
         CType(Me.NumericUpDown21, System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.NumericUpDown24, System.ComponentModel.ISupportInitialize).BeginInit
@@ -2310,7 +2302,7 @@ Partial Class Dashboard_Page
         Me.Goto_Dashboard_BTN.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.Goto_Dashboard_BTN.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer))
         Me.Goto_Dashboard_BTN.FlatAppearance.BorderSize = 2
-        Me.Goto_Dashboard_BTN.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Goto_Dashboard_BTN.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer))
         Me.Goto_Dashboard_BTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Goto_Dashboard_BTN.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Goto_Dashboard_BTN.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
@@ -2326,7 +2318,7 @@ Partial Class Dashboard_Page
         Me.Goto_Boilers_BTN.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.Goto_Boilers_BTN.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer))
         Me.Goto_Boilers_BTN.FlatAppearance.BorderSize = 2
-        Me.Goto_Boilers_BTN.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Goto_Boilers_BTN.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer))
         Me.Goto_Boilers_BTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Goto_Boilers_BTN.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Goto_Boilers_BTN.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
@@ -2342,7 +2334,7 @@ Partial Class Dashboard_Page
         Me.Goto_Compressors_BTN.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.Goto_Compressors_BTN.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer))
         Me.Goto_Compressors_BTN.FlatAppearance.BorderSize = 2
-        Me.Goto_Compressors_BTN.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Goto_Compressors_BTN.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer))
         Me.Goto_Compressors_BTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Goto_Compressors_BTN.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Goto_Compressors_BTN.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
@@ -2358,7 +2350,7 @@ Partial Class Dashboard_Page
         Me.Goto_Electrical_BTN.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.Goto_Electrical_BTN.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer))
         Me.Goto_Electrical_BTN.FlatAppearance.BorderSize = 2
-        Me.Goto_Electrical_BTN.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Goto_Electrical_BTN.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer))
         Me.Goto_Electrical_BTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Goto_Electrical_BTN.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Goto_Electrical_BTN.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
@@ -2374,7 +2366,7 @@ Partial Class Dashboard_Page
         Me.Goto_Environment_BTN.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.Goto_Environment_BTN.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer))
         Me.Goto_Environment_BTN.FlatAppearance.BorderSize = 2
-        Me.Goto_Environment_BTN.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Goto_Environment_BTN.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer))
         Me.Goto_Environment_BTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Goto_Environment_BTN.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Goto_Environment_BTN.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
@@ -2390,7 +2382,7 @@ Partial Class Dashboard_Page
         Me.Goto_Logs_BTN.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.Goto_Logs_BTN.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer))
         Me.Goto_Logs_BTN.FlatAppearance.BorderSize = 2
-        Me.Goto_Logs_BTN.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Goto_Logs_BTN.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer))
         Me.Goto_Logs_BTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Goto_Logs_BTN.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Goto_Logs_BTN.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
@@ -2581,7 +2573,7 @@ Partial Class Dashboard_Page
         Me.Goto_Alarms_BTN.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.Goto_Alarms_BTN.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer))
         Me.Goto_Alarms_BTN.FlatAppearance.BorderSize = 2
-        Me.Goto_Alarms_BTN.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Goto_Alarms_BTN.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer))
         Me.Goto_Alarms_BTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Goto_Alarms_BTN.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Goto_Alarms_BTN.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
@@ -2597,7 +2589,7 @@ Partial Class Dashboard_Page
         Me.Goto_Water_BTN.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.Goto_Water_BTN.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer))
         Me.Goto_Water_BTN.FlatAppearance.BorderSize = 2
-        Me.Goto_Water_BTN.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Goto_Water_BTN.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer))
         Me.Goto_Water_BTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Goto_Water_BTN.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Goto_Water_BTN.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
@@ -2613,7 +2605,7 @@ Partial Class Dashboard_Page
         Me.Goto_Settings_BTN.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.Goto_Settings_BTN.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer))
         Me.Goto_Settings_BTN.FlatAppearance.BorderSize = 2
-        Me.Goto_Settings_BTN.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Goto_Settings_BTN.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer))
         Me.Goto_Settings_BTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Goto_Settings_BTN.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Goto_Settings_BTN.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
@@ -3151,377 +3143,377 @@ Partial Class Dashboard_Page
         Me.Chart3.BorderSkin.BackColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer))
         Me.Chart3.BorderSkin.PageColor = System.Drawing.Color.Transparent
         Me.Chart3.BorderSkin.SkinStyle = System.Windows.Forms.DataVisualization.Charting.BorderSkinStyle.Emboss
-        ChartArea1.AlignmentOrientation = CType((System.Windows.Forms.DataVisualization.Charting.AreaAlignmentOrientations.Vertical Or System.Windows.Forms.DataVisualization.Charting.AreaAlignmentOrientations.Horizontal), System.Windows.Forms.DataVisualization.Charting.AreaAlignmentOrientations)
-        ChartArea1.AxisX.IsLabelAutoFit = False
-        ChartArea1.AxisX.IsStartedFromZero = False
-        ChartArea1.AxisX.LabelAutoFitMaxFontSize = 8
-        ChartArea1.AxisX.LabelAutoFitStyle = CType((((((System.Windows.Forms.DataVisualization.Charting.LabelAutoFitStyles.IncreaseFont Or System.Windows.Forms.DataVisualization.Charting.LabelAutoFitStyles.DecreaseFont) _
+        ChartArea9.AlignmentOrientation = CType((System.Windows.Forms.DataVisualization.Charting.AreaAlignmentOrientations.Vertical Or System.Windows.Forms.DataVisualization.Charting.AreaAlignmentOrientations.Horizontal), System.Windows.Forms.DataVisualization.Charting.AreaAlignmentOrientations)
+        ChartArea9.AxisX.IsLabelAutoFit = False
+        ChartArea9.AxisX.IsStartedFromZero = False
+        ChartArea9.AxisX.LabelAutoFitMaxFontSize = 8
+        ChartArea9.AxisX.LabelAutoFitStyle = CType((((((System.Windows.Forms.DataVisualization.Charting.LabelAutoFitStyles.IncreaseFont Or System.Windows.Forms.DataVisualization.Charting.LabelAutoFitStyles.DecreaseFont) _
             Or System.Windows.Forms.DataVisualization.Charting.LabelAutoFitStyles.StaggeredLabels) _
             Or System.Windows.Forms.DataVisualization.Charting.LabelAutoFitStyles.LabelsAngleStep30) _
             Or System.Windows.Forms.DataVisualization.Charting.LabelAutoFitStyles.LabelsAngleStep90) _
             Or System.Windows.Forms.DataVisualization.Charting.LabelAutoFitStyles.WordWrap), System.Windows.Forms.DataVisualization.Charting.LabelAutoFitStyles)
-        ChartArea1.AxisX.LabelStyle.Angle = 45
-        ChartArea1.AxisX.LabelStyle.ForeColor = System.Drawing.Color.White
-        ChartArea1.AxisX.LabelStyle.Interval = 50.0R
-        ChartArea1.AxisX.LineColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        ChartArea1.AxisX.MajorGrid.Interval = 60.0R
-        ChartArea1.AxisX.MajorGrid.LineColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(48, Byte), Integer), CType(CType(48, Byte), Integer))
-        ChartArea1.AxisX.Maximum = 1800.0R
-        ChartArea1.AxisX.MaximumAutoSize = 100.0!
-        ChartArea1.AxisX.Minimum = 1.0R
-        ChartArea1.AxisX.MinorGrid.Enabled = True
-        ChartArea1.AxisX.MinorGrid.Interval = 10.0R
-        ChartArea1.AxisX.MinorGrid.LineColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer))
-        ChartArea1.AxisX.ScaleBreakStyle.LineColor = System.Drawing.Color.Silver
-        ChartArea1.AxisX.ScaleBreakStyle.MaxNumberOfBreaks = 5
-        ChartArea1.AxisX.ScaleView.Position = 0R
-        ChartArea1.AxisX.ScaleView.Size = 550.0R
-        ChartArea1.AxisX.ScrollBar.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(22, Byte), Integer), CType(CType(22, Byte), Integer))
-        ChartArea1.AxisX.ScrollBar.ButtonColor = System.Drawing.Color.Black
-        ChartArea1.AxisX.ScrollBar.ButtonStyle = System.Windows.Forms.DataVisualization.Charting.ScrollBarButtonStyles.SmallScroll
-        ChartArea1.AxisX.ScrollBar.LineColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        ChartArea1.AxisX.ScrollBar.Size = 10.0R
-        ChartArea1.AxisX.TextOrientation = System.Windows.Forms.DataVisualization.Charting.TextOrientation.Horizontal
-        ChartArea1.AxisX.TitleForeColor = System.Drawing.Color.Gainsboro
-        ChartArea1.AxisX2.TitleForeColor = System.Drawing.Color.White
-        ChartArea1.AxisY.IsLabelAutoFit = False
-        ChartArea1.AxisY.LabelStyle.ForeColor = System.Drawing.Color.White
-        ChartArea1.AxisY.LabelStyle.Interval = 20.0R
-        ChartArea1.AxisY.LineColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        ChartArea1.AxisY.MajorGrid.Interval = 20.0R
-        ChartArea1.AxisY.MajorGrid.LineColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(48, Byte), Integer), CType(CType(48, Byte), Integer))
-        ChartArea1.AxisY.Maximum = 1000.0R
-        ChartArea1.AxisY.Minimum = 0R
-        ChartArea1.AxisY.MinorGrid.Enabled = True
-        ChartArea1.AxisY.MinorGrid.Interval = 5.0R
-        ChartArea1.AxisY.MinorGrid.LineColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer))
-        ChartArea1.AxisY.ScaleView.MinSize = 50.0R
-        ChartArea1.AxisY.ScaleView.Position = 0R
-        ChartArea1.AxisY.ScaleView.Size = 200.0R
-        ChartArea1.AxisY.ScrollBar.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(22, Byte), Integer), CType(CType(22, Byte), Integer))
-        ChartArea1.AxisY.ScrollBar.ButtonColor = System.Drawing.Color.Black
-        ChartArea1.AxisY.ScrollBar.ButtonStyle = System.Windows.Forms.DataVisualization.Charting.ScrollBarButtonStyles.SmallScroll
-        ChartArea1.AxisY.ScrollBar.LineColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        ChartArea1.AxisY.ScrollBar.Size = 10.0R
-        ChartArea1.AxisY.TextOrientation = System.Windows.Forms.DataVisualization.Charting.TextOrientation.Rotated270
-        ChartArea1.AxisY.TitleForeColor = System.Drawing.Color.White
-        ChartArea1.BackColor = System.Drawing.Color.Black
-        ChartArea1.IsSameFontSizeForAllAxes = True
-        ChartArea1.Name = "Electrical Data"
-        ChartArea2.AxisX.IsLabelAutoFit = False
-        ChartArea2.AxisX.LabelStyle.Angle = 45
-        ChartArea2.AxisX.LabelStyle.ForeColor = System.Drawing.Color.White
-        ChartArea2.AxisX.LabelStyle.Interval = 50.0R
-        ChartArea2.AxisX.LineColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer))
-        ChartArea2.AxisX.MajorGrid.Interval = 60.0R
-        ChartArea2.AxisX.MajorGrid.LineColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(48, Byte), Integer), CType(CType(48, Byte), Integer))
-        ChartArea2.AxisX.Maximum = 1800.0R
-        ChartArea2.AxisX.Minimum = 1.0R
-        ChartArea2.AxisX.MinorGrid.Enabled = True
-        ChartArea2.AxisX.MinorGrid.Interval = 10.0R
-        ChartArea2.AxisX.MinorGrid.LineColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer))
-        ChartArea2.AxisX.ScaleView.Position = 0R
-        ChartArea2.AxisX.ScaleView.Size = 550.0R
-        ChartArea2.AxisX.ScrollBar.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(22, Byte), Integer), CType(CType(22, Byte), Integer))
-        ChartArea2.AxisX.ScrollBar.ButtonColor = System.Drawing.Color.Black
-        ChartArea2.AxisX.ScrollBar.LineColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        ChartArea2.AxisX.ScrollBar.Size = 10.0R
-        ChartArea2.AxisY.LabelStyle.ForeColor = System.Drawing.Color.White
-        ChartArea2.AxisY.LabelStyle.Interval = 20.0R
-        ChartArea2.AxisY.LineColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer))
-        ChartArea2.AxisY.MajorGrid.Interval = 20.0R
-        ChartArea2.AxisY.MajorGrid.LineColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(48, Byte), Integer), CType(CType(48, Byte), Integer))
-        ChartArea2.AxisY.Maximum = 1000.0R
-        ChartArea2.AxisY.Minimum = 1.0R
-        ChartArea2.AxisY.MinorGrid.Enabled = True
-        ChartArea2.AxisY.MinorGrid.Interval = 5.0R
-        ChartArea2.AxisY.MinorGrid.LineColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer))
-        ChartArea2.AxisY.MinorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dot
-        ChartArea2.AxisY.ScaleView.MinSize = 50.0R
-        ChartArea2.AxisY.ScaleView.Position = 0R
-        ChartArea2.AxisY.ScaleView.Size = 200.0R
-        ChartArea2.AxisY.ScrollBar.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(22, Byte), Integer), CType(CType(22, Byte), Integer))
-        ChartArea2.AxisY.ScrollBar.ButtonColor = System.Drawing.Color.Black
-        ChartArea2.AxisY.ScrollBar.LineColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        ChartArea2.AxisY.ScrollBar.Size = 10.0R
-        ChartArea2.BackColor = System.Drawing.Color.Black
-        ChartArea2.Name = "Air Data"
-        ChartArea3.AxisX.IsLabelAutoFit = False
-        ChartArea3.AxisX.LabelStyle.Angle = 45
-        ChartArea3.AxisX.LabelStyle.ForeColor = System.Drawing.Color.White
-        ChartArea3.AxisX.LabelStyle.Interval = 50.0R
-        ChartArea3.AxisX.LineColor = System.Drawing.Color.DimGray
-        ChartArea3.AxisX.MajorGrid.Interval = 60.0R
-        ChartArea3.AxisX.MajorGrid.LineColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(48, Byte), Integer), CType(CType(48, Byte), Integer))
-        ChartArea3.AxisX.Maximum = 1802.0R
-        ChartArea3.AxisX.Minimum = 1.0R
-        ChartArea3.AxisX.MinorGrid.Enabled = True
-        ChartArea3.AxisX.MinorGrid.Interval = 10.0R
-        ChartArea3.AxisX.MinorGrid.LineColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer))
-        ChartArea3.AxisX.ScaleView.Position = 0R
-        ChartArea3.AxisX.ScaleView.Size = 550.0R
-        ChartArea3.AxisX.ScrollBar.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(22, Byte), Integer), CType(CType(22, Byte), Integer))
-        ChartArea3.AxisX.ScrollBar.ButtonColor = System.Drawing.Color.Black
-        ChartArea3.AxisX.ScrollBar.LineColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        ChartArea3.AxisX.ScrollBar.Size = 10.0R
-        ChartArea3.AxisY.LabelStyle.ForeColor = System.Drawing.Color.White
-        ChartArea3.AxisY.LabelStyle.Interval = 20.0R
-        ChartArea3.AxisY.LineColor = System.Drawing.Color.DimGray
-        ChartArea3.AxisY.MajorGrid.Interval = 20.0R
-        ChartArea3.AxisY.MajorGrid.LineColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(48, Byte), Integer), CType(CType(48, Byte), Integer))
-        ChartArea3.AxisY.Maximum = 1000.0R
-        ChartArea3.AxisY.Minimum = 1.0R
-        ChartArea3.AxisY.MinorGrid.Enabled = True
-        ChartArea3.AxisY.MinorGrid.Interval = 5.0R
-        ChartArea3.AxisY.MinorGrid.LineColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer))
-        ChartArea3.AxisY.ScaleView.MinSize = 50.0R
-        ChartArea3.AxisY.ScaleView.Position = 0R
-        ChartArea3.AxisY.ScaleView.Size = 200.0R
-        ChartArea3.AxisY.ScrollBar.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(22, Byte), Integer), CType(CType(22, Byte), Integer))
-        ChartArea3.AxisY.ScrollBar.ButtonColor = System.Drawing.Color.Black
-        ChartArea3.AxisY.ScrollBar.LineColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        ChartArea3.AxisY.ScrollBar.Size = 10.0R
-        ChartArea3.BackColor = System.Drawing.Color.Black
-        ChartArea3.Name = "Steam Data"
-        ChartArea4.AxisX.IsLabelAutoFit = False
-        ChartArea4.AxisX.LabelStyle.Angle = 45
-        ChartArea4.AxisX.LabelStyle.ForeColor = System.Drawing.Color.White
-        ChartArea4.AxisX.LabelStyle.Interval = 50.0R
-        ChartArea4.AxisX.LineColor = System.Drawing.Color.DimGray
-        ChartArea4.AxisX.MajorGrid.Interval = 60.0R
-        ChartArea4.AxisX.MajorGrid.LineColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(48, Byte), Integer), CType(CType(48, Byte), Integer))
-        ChartArea4.AxisX.Maximum = 1802.0R
-        ChartArea4.AxisX.Minimum = 1.0R
-        ChartArea4.AxisX.MinorGrid.Enabled = True
-        ChartArea4.AxisX.MinorGrid.Interval = 10.0R
-        ChartArea4.AxisX.MinorGrid.LineColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer))
-        ChartArea4.AxisX.ScaleView.Position = 0R
-        ChartArea4.AxisX.ScaleView.Size = 550.0R
-        ChartArea4.AxisX.ScrollBar.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(22, Byte), Integer), CType(CType(22, Byte), Integer))
-        ChartArea4.AxisX.ScrollBar.ButtonColor = System.Drawing.Color.Black
-        ChartArea4.AxisX.ScrollBar.LineColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        ChartArea4.AxisX.ScrollBar.Size = 10.0R
-        ChartArea4.AxisY.LabelStyle.ForeColor = System.Drawing.Color.White
-        ChartArea4.AxisY.LabelStyle.Interval = 20.0R
-        ChartArea4.AxisY.LineColor = System.Drawing.Color.DimGray
-        ChartArea4.AxisY.MajorGrid.Interval = 20.0R
-        ChartArea4.AxisY.MajorGrid.LineColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(48, Byte), Integer), CType(CType(48, Byte), Integer))
-        ChartArea4.AxisY.Maximum = 1000.0R
-        ChartArea4.AxisY.Minimum = 1.0R
-        ChartArea4.AxisY.MinorGrid.Enabled = True
-        ChartArea4.AxisY.MinorGrid.Interval = 5.0R
-        ChartArea4.AxisY.MinorGrid.LineColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer))
-        ChartArea4.AxisY.ScaleView.MinSize = 50.0R
-        ChartArea4.AxisY.ScaleView.Position = 0R
-        ChartArea4.AxisY.ScaleView.Size = 200.0R
-        ChartArea4.AxisY.ScrollBar.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(22, Byte), Integer), CType(CType(22, Byte), Integer))
-        ChartArea4.AxisY.ScrollBar.ButtonColor = System.Drawing.Color.Black
-        ChartArea4.AxisY.ScrollBar.LineColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        ChartArea4.AxisY.ScrollBar.Size = 10.0R
-        ChartArea4.BackColor = System.Drawing.Color.Black
-        ChartArea4.Name = "Water Data"
-        Me.Chart3.ChartAreas.Add(ChartArea1)
-        Me.Chart3.ChartAreas.Add(ChartArea2)
-        Me.Chart3.ChartAreas.Add(ChartArea3)
-        Me.Chart3.ChartAreas.Add(ChartArea4)
-        Legend1.Alignment = System.Drawing.StringAlignment.Center
-        Legend1.BackColor = System.Drawing.Color.Transparent
-        Legend1.DockedToChartArea = "Electrical Data"
-        Legend1.Docking = System.Windows.Forms.DataVisualization.Charting.Docking.Bottom
-        Legend1.ForeColor = System.Drawing.Color.White
-        Legend1.IsDockedInsideChartArea = False
-        Legend1.LegendStyle = System.Windows.Forms.DataVisualization.Charting.LegendStyle.Row
-        Legend1.Name = "Legend1"
-        Legend2.Alignment = System.Drawing.StringAlignment.Center
-        Legend2.BackColor = System.Drawing.Color.Transparent
-        Legend2.DockedToChartArea = "Air Data"
-        Legend2.Docking = System.Windows.Forms.DataVisualization.Charting.Docking.Bottom
-        Legend2.ForeColor = System.Drawing.Color.White
-        Legend2.IsDockedInsideChartArea = False
-        Legend2.LegendStyle = System.Windows.Forms.DataVisualization.Charting.LegendStyle.Row
-        Legend2.Name = "Legend2"
-        Legend2.TableStyle = System.Windows.Forms.DataVisualization.Charting.LegendTableStyle.Wide
-        Legend3.Alignment = System.Drawing.StringAlignment.Center
-        Legend3.BackColor = System.Drawing.Color.Transparent
-        Legend3.DockedToChartArea = "Steam Data"
-        Legend3.Docking = System.Windows.Forms.DataVisualization.Charting.Docking.Bottom
-        Legend3.ForeColor = System.Drawing.Color.White
-        Legend3.IsDockedInsideChartArea = False
-        Legend3.LegendStyle = System.Windows.Forms.DataVisualization.Charting.LegendStyle.Row
-        Legend3.Name = "Legend3"
-        Legend4.Alignment = System.Drawing.StringAlignment.Center
-        Legend4.BackColor = System.Drawing.Color.Transparent
-        Legend4.DockedToChartArea = "Water Data"
-        Legend4.Docking = System.Windows.Forms.DataVisualization.Charting.Docking.Bottom
-        Legend4.ForeColor = System.Drawing.Color.White
-        Legend4.InterlacedRowsColor = System.Drawing.Color.White
-        Legend4.IsDockedInsideChartArea = False
-        Legend4.LegendStyle = System.Windows.Forms.DataVisualization.Charting.LegendStyle.Row
-        Legend4.Name = "Legend4"
-        Legend4.TableStyle = System.Windows.Forms.DataVisualization.Charting.LegendTableStyle.Wide
-        Me.Chart3.Legends.Add(Legend1)
-        Me.Chart3.Legends.Add(Legend2)
-        Me.Chart3.Legends.Add(Legend3)
-        Me.Chart3.Legends.Add(Legend4)
+        ChartArea9.AxisX.LabelStyle.Angle = 45
+        ChartArea9.AxisX.LabelStyle.ForeColor = System.Drawing.Color.White
+        ChartArea9.AxisX.LabelStyle.Interval = 50.0R
+        ChartArea9.AxisX.LineColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        ChartArea9.AxisX.MajorGrid.Interval = 60.0R
+        ChartArea9.AxisX.MajorGrid.LineColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(48, Byte), Integer), CType(CType(48, Byte), Integer))
+        ChartArea9.AxisX.Maximum = 1800.0R
+        ChartArea9.AxisX.MaximumAutoSize = 100.0!
+        ChartArea9.AxisX.Minimum = 1.0R
+        ChartArea9.AxisX.MinorGrid.Enabled = True
+        ChartArea9.AxisX.MinorGrid.Interval = 10.0R
+        ChartArea9.AxisX.MinorGrid.LineColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer))
+        ChartArea9.AxisX.ScaleBreakStyle.LineColor = System.Drawing.Color.Silver
+        ChartArea9.AxisX.ScaleBreakStyle.MaxNumberOfBreaks = 5
+        ChartArea9.AxisX.ScaleView.Position = 0R
+        ChartArea9.AxisX.ScaleView.Size = 550.0R
+        ChartArea9.AxisX.ScrollBar.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(22, Byte), Integer), CType(CType(22, Byte), Integer))
+        ChartArea9.AxisX.ScrollBar.ButtonColor = System.Drawing.Color.Black
+        ChartArea9.AxisX.ScrollBar.ButtonStyle = System.Windows.Forms.DataVisualization.Charting.ScrollBarButtonStyles.SmallScroll
+        ChartArea9.AxisX.ScrollBar.LineColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        ChartArea9.AxisX.ScrollBar.Size = 10.0R
+        ChartArea9.AxisX.TextOrientation = System.Windows.Forms.DataVisualization.Charting.TextOrientation.Horizontal
+        ChartArea9.AxisX.TitleForeColor = System.Drawing.Color.Gainsboro
+        ChartArea9.AxisX2.TitleForeColor = System.Drawing.Color.White
+        ChartArea9.AxisY.IsLabelAutoFit = False
+        ChartArea9.AxisY.LabelStyle.ForeColor = System.Drawing.Color.White
+        ChartArea9.AxisY.LabelStyle.Interval = 20.0R
+        ChartArea9.AxisY.LineColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        ChartArea9.AxisY.MajorGrid.Interval = 20.0R
+        ChartArea9.AxisY.MajorGrid.LineColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(48, Byte), Integer), CType(CType(48, Byte), Integer))
+        ChartArea9.AxisY.Maximum = 1000.0R
+        ChartArea9.AxisY.Minimum = 0R
+        ChartArea9.AxisY.MinorGrid.Enabled = True
+        ChartArea9.AxisY.MinorGrid.Interval = 5.0R
+        ChartArea9.AxisY.MinorGrid.LineColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer))
+        ChartArea9.AxisY.ScaleView.MinSize = 50.0R
+        ChartArea9.AxisY.ScaleView.Position = 0R
+        ChartArea9.AxisY.ScaleView.Size = 200.0R
+        ChartArea9.AxisY.ScrollBar.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(22, Byte), Integer), CType(CType(22, Byte), Integer))
+        ChartArea9.AxisY.ScrollBar.ButtonColor = System.Drawing.Color.Black
+        ChartArea9.AxisY.ScrollBar.ButtonStyle = System.Windows.Forms.DataVisualization.Charting.ScrollBarButtonStyles.SmallScroll
+        ChartArea9.AxisY.ScrollBar.LineColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        ChartArea9.AxisY.ScrollBar.Size = 10.0R
+        ChartArea9.AxisY.TextOrientation = System.Windows.Forms.DataVisualization.Charting.TextOrientation.Rotated270
+        ChartArea9.AxisY.TitleForeColor = System.Drawing.Color.White
+        ChartArea9.BackColor = System.Drawing.Color.Black
+        ChartArea9.IsSameFontSizeForAllAxes = True
+        ChartArea9.Name = "Electrical Data"
+        ChartArea10.AxisX.IsLabelAutoFit = False
+        ChartArea10.AxisX.LabelStyle.Angle = 45
+        ChartArea10.AxisX.LabelStyle.ForeColor = System.Drawing.Color.White
+        ChartArea10.AxisX.LabelStyle.Interval = 50.0R
+        ChartArea10.AxisX.LineColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer))
+        ChartArea10.AxisX.MajorGrid.Interval = 60.0R
+        ChartArea10.AxisX.MajorGrid.LineColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(48, Byte), Integer), CType(CType(48, Byte), Integer))
+        ChartArea10.AxisX.Maximum = 1800.0R
+        ChartArea10.AxisX.Minimum = 1.0R
+        ChartArea10.AxisX.MinorGrid.Enabled = True
+        ChartArea10.AxisX.MinorGrid.Interval = 10.0R
+        ChartArea10.AxisX.MinorGrid.LineColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer))
+        ChartArea10.AxisX.ScaleView.Position = 0R
+        ChartArea10.AxisX.ScaleView.Size = 550.0R
+        ChartArea10.AxisX.ScrollBar.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(22, Byte), Integer), CType(CType(22, Byte), Integer))
+        ChartArea10.AxisX.ScrollBar.ButtonColor = System.Drawing.Color.Black
+        ChartArea10.AxisX.ScrollBar.LineColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        ChartArea10.AxisX.ScrollBar.Size = 10.0R
+        ChartArea10.AxisY.LabelStyle.ForeColor = System.Drawing.Color.White
+        ChartArea10.AxisY.LabelStyle.Interval = 20.0R
+        ChartArea10.AxisY.LineColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer))
+        ChartArea10.AxisY.MajorGrid.Interval = 20.0R
+        ChartArea10.AxisY.MajorGrid.LineColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(48, Byte), Integer), CType(CType(48, Byte), Integer))
+        ChartArea10.AxisY.Maximum = 1000.0R
+        ChartArea10.AxisY.Minimum = 1.0R
+        ChartArea10.AxisY.MinorGrid.Enabled = True
+        ChartArea10.AxisY.MinorGrid.Interval = 5.0R
+        ChartArea10.AxisY.MinorGrid.LineColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer))
+        ChartArea10.AxisY.MinorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dot
+        ChartArea10.AxisY.ScaleView.MinSize = 50.0R
+        ChartArea10.AxisY.ScaleView.Position = 0R
+        ChartArea10.AxisY.ScaleView.Size = 200.0R
+        ChartArea10.AxisY.ScrollBar.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(22, Byte), Integer), CType(CType(22, Byte), Integer))
+        ChartArea10.AxisY.ScrollBar.ButtonColor = System.Drawing.Color.Black
+        ChartArea10.AxisY.ScrollBar.LineColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        ChartArea10.AxisY.ScrollBar.Size = 10.0R
+        ChartArea10.BackColor = System.Drawing.Color.Black
+        ChartArea10.Name = "Air Data"
+        ChartArea11.AxisX.IsLabelAutoFit = False
+        ChartArea11.AxisX.LabelStyle.Angle = 45
+        ChartArea11.AxisX.LabelStyle.ForeColor = System.Drawing.Color.White
+        ChartArea11.AxisX.LabelStyle.Interval = 50.0R
+        ChartArea11.AxisX.LineColor = System.Drawing.Color.DimGray
+        ChartArea11.AxisX.MajorGrid.Interval = 60.0R
+        ChartArea11.AxisX.MajorGrid.LineColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(48, Byte), Integer), CType(CType(48, Byte), Integer))
+        ChartArea11.AxisX.Maximum = 1802.0R
+        ChartArea11.AxisX.Minimum = 1.0R
+        ChartArea11.AxisX.MinorGrid.Enabled = True
+        ChartArea11.AxisX.MinorGrid.Interval = 10.0R
+        ChartArea11.AxisX.MinorGrid.LineColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer))
+        ChartArea11.AxisX.ScaleView.Position = 0R
+        ChartArea11.AxisX.ScaleView.Size = 550.0R
+        ChartArea11.AxisX.ScrollBar.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(22, Byte), Integer), CType(CType(22, Byte), Integer))
+        ChartArea11.AxisX.ScrollBar.ButtonColor = System.Drawing.Color.Black
+        ChartArea11.AxisX.ScrollBar.LineColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        ChartArea11.AxisX.ScrollBar.Size = 10.0R
+        ChartArea11.AxisY.LabelStyle.ForeColor = System.Drawing.Color.White
+        ChartArea11.AxisY.LabelStyle.Interval = 20.0R
+        ChartArea11.AxisY.LineColor = System.Drawing.Color.DimGray
+        ChartArea11.AxisY.MajorGrid.Interval = 20.0R
+        ChartArea11.AxisY.MajorGrid.LineColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(48, Byte), Integer), CType(CType(48, Byte), Integer))
+        ChartArea11.AxisY.Maximum = 1000.0R
+        ChartArea11.AxisY.Minimum = 1.0R
+        ChartArea11.AxisY.MinorGrid.Enabled = True
+        ChartArea11.AxisY.MinorGrid.Interval = 5.0R
+        ChartArea11.AxisY.MinorGrid.LineColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer))
+        ChartArea11.AxisY.ScaleView.MinSize = 50.0R
+        ChartArea11.AxisY.ScaleView.Position = 0R
+        ChartArea11.AxisY.ScaleView.Size = 200.0R
+        ChartArea11.AxisY.ScrollBar.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(22, Byte), Integer), CType(CType(22, Byte), Integer))
+        ChartArea11.AxisY.ScrollBar.ButtonColor = System.Drawing.Color.Black
+        ChartArea11.AxisY.ScrollBar.LineColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        ChartArea11.AxisY.ScrollBar.Size = 10.0R
+        ChartArea11.BackColor = System.Drawing.Color.Black
+        ChartArea11.Name = "Steam Data"
+        ChartArea12.AxisX.IsLabelAutoFit = False
+        ChartArea12.AxisX.LabelStyle.Angle = 45
+        ChartArea12.AxisX.LabelStyle.ForeColor = System.Drawing.Color.White
+        ChartArea12.AxisX.LabelStyle.Interval = 50.0R
+        ChartArea12.AxisX.LineColor = System.Drawing.Color.DimGray
+        ChartArea12.AxisX.MajorGrid.Interval = 60.0R
+        ChartArea12.AxisX.MajorGrid.LineColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(48, Byte), Integer), CType(CType(48, Byte), Integer))
+        ChartArea12.AxisX.Maximum = 1802.0R
+        ChartArea12.AxisX.Minimum = 1.0R
+        ChartArea12.AxisX.MinorGrid.Enabled = True
+        ChartArea12.AxisX.MinorGrid.Interval = 10.0R
+        ChartArea12.AxisX.MinorGrid.LineColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer))
+        ChartArea12.AxisX.ScaleView.Position = 0R
+        ChartArea12.AxisX.ScaleView.Size = 550.0R
+        ChartArea12.AxisX.ScrollBar.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(22, Byte), Integer), CType(CType(22, Byte), Integer))
+        ChartArea12.AxisX.ScrollBar.ButtonColor = System.Drawing.Color.Black
+        ChartArea12.AxisX.ScrollBar.LineColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        ChartArea12.AxisX.ScrollBar.Size = 10.0R
+        ChartArea12.AxisY.LabelStyle.ForeColor = System.Drawing.Color.White
+        ChartArea12.AxisY.LabelStyle.Interval = 20.0R
+        ChartArea12.AxisY.LineColor = System.Drawing.Color.DimGray
+        ChartArea12.AxisY.MajorGrid.Interval = 20.0R
+        ChartArea12.AxisY.MajorGrid.LineColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(48, Byte), Integer), CType(CType(48, Byte), Integer))
+        ChartArea12.AxisY.Maximum = 1000.0R
+        ChartArea12.AxisY.Minimum = 1.0R
+        ChartArea12.AxisY.MinorGrid.Enabled = True
+        ChartArea12.AxisY.MinorGrid.Interval = 5.0R
+        ChartArea12.AxisY.MinorGrid.LineColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer))
+        ChartArea12.AxisY.ScaleView.MinSize = 50.0R
+        ChartArea12.AxisY.ScaleView.Position = 0R
+        ChartArea12.AxisY.ScaleView.Size = 200.0R
+        ChartArea12.AxisY.ScrollBar.BackColor = System.Drawing.Color.FromArgb(CType(CType(22, Byte), Integer), CType(CType(22, Byte), Integer), CType(CType(22, Byte), Integer))
+        ChartArea12.AxisY.ScrollBar.ButtonColor = System.Drawing.Color.Black
+        ChartArea12.AxisY.ScrollBar.LineColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        ChartArea12.AxisY.ScrollBar.Size = 10.0R
+        ChartArea12.BackColor = System.Drawing.Color.Black
+        ChartArea12.Name = "Water Data"
+        Me.Chart3.ChartAreas.Add(ChartArea9)
+        Me.Chart3.ChartAreas.Add(ChartArea10)
+        Me.Chart3.ChartAreas.Add(ChartArea11)
+        Me.Chart3.ChartAreas.Add(ChartArea12)
+        Legend7.Alignment = System.Drawing.StringAlignment.Center
+        Legend7.BackColor = System.Drawing.Color.Transparent
+        Legend7.DockedToChartArea = "Electrical Data"
+        Legend7.Docking = System.Windows.Forms.DataVisualization.Charting.Docking.Bottom
+        Legend7.ForeColor = System.Drawing.Color.White
+        Legend7.IsDockedInsideChartArea = False
+        Legend7.LegendStyle = System.Windows.Forms.DataVisualization.Charting.LegendStyle.Row
+        Legend7.Name = "Legend1"
+        Legend8.Alignment = System.Drawing.StringAlignment.Center
+        Legend8.BackColor = System.Drawing.Color.Transparent
+        Legend8.DockedToChartArea = "Air Data"
+        Legend8.Docking = System.Windows.Forms.DataVisualization.Charting.Docking.Bottom
+        Legend8.ForeColor = System.Drawing.Color.White
+        Legend8.IsDockedInsideChartArea = False
+        Legend8.LegendStyle = System.Windows.Forms.DataVisualization.Charting.LegendStyle.Row
+        Legend8.Name = "Legend2"
+        Legend8.TableStyle = System.Windows.Forms.DataVisualization.Charting.LegendTableStyle.Wide
+        Legend9.Alignment = System.Drawing.StringAlignment.Center
+        Legend9.BackColor = System.Drawing.Color.Transparent
+        Legend9.DockedToChartArea = "Steam Data"
+        Legend9.Docking = System.Windows.Forms.DataVisualization.Charting.Docking.Bottom
+        Legend9.ForeColor = System.Drawing.Color.White
+        Legend9.IsDockedInsideChartArea = False
+        Legend9.LegendStyle = System.Windows.Forms.DataVisualization.Charting.LegendStyle.Row
+        Legend9.Name = "Legend3"
+        Legend10.Alignment = System.Drawing.StringAlignment.Center
+        Legend10.BackColor = System.Drawing.Color.Transparent
+        Legend10.DockedToChartArea = "Water Data"
+        Legend10.Docking = System.Windows.Forms.DataVisualization.Charting.Docking.Bottom
+        Legend10.ForeColor = System.Drawing.Color.White
+        Legend10.InterlacedRowsColor = System.Drawing.Color.White
+        Legend10.IsDockedInsideChartArea = False
+        Legend10.LegendStyle = System.Windows.Forms.DataVisualization.Charting.LegendStyle.Row
+        Legend10.Name = "Legend4"
+        Legend10.TableStyle = System.Windows.Forms.DataVisualization.Charting.LegendTableStyle.Wide
+        Me.Chart3.Legends.Add(Legend7)
+        Me.Chart3.Legends.Add(Legend8)
+        Me.Chart3.Legends.Add(Legend9)
+        Me.Chart3.Legends.Add(Legend10)
         Me.Chart3.Location = New System.Drawing.Point(0, 0)
         Me.Chart3.Name = "Chart3"
-        Series1.ChartArea = "Electrical Data"
-        Series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline
-        Series1.Color = System.Drawing.Color.Red
-        Series1.Legend = "Legend1"
-        Series1.Name = "North Phase A"
-        Series1.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Time
-        Series2.ChartArea = "Electrical Data"
-        Series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline
-        Series2.Color = System.Drawing.Color.Blue
-        Series2.Legend = "Legend1"
-        Series2.Name = "North Phase B"
-        Series2.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Time
-        Series3.ChartArea = "Electrical Data"
-        Series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline
-        Series3.Color = System.Drawing.Color.Lime
-        Series3.Legend = "Legend1"
-        Series3.Name = "North Phase C"
-        Series3.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Time
-        Series4.ChartArea = "Electrical Data"
-        Series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline
-        Series4.Color = System.Drawing.Color.Yellow
-        Series4.Legend = "Legend1"
-        Series4.Name = "South Phase A"
-        Series4.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Time
-        Series5.ChartArea = "Electrical Data"
-        Series5.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline
-        Series5.Color = System.Drawing.Color.Aqua
-        Series5.Legend = "Legend1"
-        Series5.Name = "South Phase B"
-        Series5.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Time
-        Series6.ChartArea = "Electrical Data"
-        Series6.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline
-        Series6.Color = System.Drawing.Color.Fuchsia
-        Series6.Legend = "Legend1"
-        Series6.Name = "South Phase C"
-        Series6.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Time
-        Series7.ChartArea = "Steam Data"
-        Series7.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline
-        Series7.Color = System.Drawing.Color.Lime
-        Series7.Legend = "Legend3"
-        Series7.Name = "30PSI Demand"
-        Series7.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Time
-        Series8.ChartArea = "Steam Data"
-        Series8.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline
-        Series8.Color = System.Drawing.Color.Blue
-        Series8.Legend = "Legend3"
-        Series8.Name = "40PSI Demand"
-        Series8.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Time
-        Series9.ChartArea = "Water Data"
-        Series9.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline
-        Series9.Color = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        Series9.Legend = "Legend4"
-        Series9.Name = "Hot Water Flow Rate"
-        Series9.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Time
-        Series10.ChartArea = "Air Data"
-        Series10.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline
-        Series10.Color = System.Drawing.Color.Red
-        Series10.Legend = "Legend2"
-        Series10.Name = "System Air Pressure"
-        Series10.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Time
-        Series11.ChartArea = "Water Data"
-        Series11.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline
-        Series11.Color = System.Drawing.Color.Blue
-        Series11.Legend = "Legend4"
-        Series11.Name = "City Water Pressure"
-        Series11.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Time
-        Series12.ChartArea = "Water Data"
-        Series12.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline
-        Series12.Color = System.Drawing.Color.Red
-        Series12.Legend = "Legend4"
-        Series12.Name = "Hot Water Pressure"
-        Series12.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Time
-        Series13.ChartArea = "Steam Data"
-        Series13.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline
-        Series13.Color = System.Drawing.Color.Yellow
-        Series13.Legend = "Legend3"
-        Series13.Name = "30PSI Pressure"
-        Series13.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Time
-        Series14.ChartArea = "Steam Data"
-        Series14.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline
-        Series14.Color = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        Series14.Legend = "Legend3"
-        Series14.Name = "40PSI Presure"
-        Series14.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Time
-        Series15.ChartArea = "Steam Data"
-        Series15.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline
-        Series15.Color = System.Drawing.Color.Red
-        Series15.Legend = "Legend3"
-        Series15.Name = "System Pres"
-        Series15.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Time
-        Series16.ChartArea = "Water Data"
-        Series16.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline
-        Series16.Color = System.Drawing.Color.Yellow
-        Series16.Legend = "Legend4"
-        Series16.Name = "Hot Water Temperature"
-        Series16.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Time
-        Series17.ChartArea = "Steam Data"
-        Series17.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline
-        Series17.Color = System.Drawing.Color.Fuchsia
-        Series17.Legend = "Legend3"
-        Series17.Name = "Steam Flow x100"
-        Series17.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Time
-        Series18.ChartArea = "Water Data"
-        Series18.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline
-        Series18.Color = System.Drawing.Color.Lime
-        Series18.Legend = "Legend4"
-        Series18.Name = "City Water Line Pressure"
-        Series18.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Time
-        Me.Chart3.Series.Add(Series1)
-        Me.Chart3.Series.Add(Series2)
-        Me.Chart3.Series.Add(Series3)
-        Me.Chart3.Series.Add(Series4)
-        Me.Chart3.Series.Add(Series5)
-        Me.Chart3.Series.Add(Series6)
-        Me.Chart3.Series.Add(Series7)
-        Me.Chart3.Series.Add(Series8)
-        Me.Chart3.Series.Add(Series9)
-        Me.Chart3.Series.Add(Series10)
-        Me.Chart3.Series.Add(Series11)
-        Me.Chart3.Series.Add(Series12)
-        Me.Chart3.Series.Add(Series13)
-        Me.Chart3.Series.Add(Series14)
-        Me.Chart3.Series.Add(Series15)
-        Me.Chart3.Series.Add(Series16)
-        Me.Chart3.Series.Add(Series17)
-        Me.Chart3.Series.Add(Series18)
+        Series27.ChartArea = "Electrical Data"
+        Series27.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline
+        Series27.Color = System.Drawing.Color.Red
+        Series27.Legend = "Legend1"
+        Series27.Name = "North Phase A"
+        Series27.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Time
+        Series28.ChartArea = "Electrical Data"
+        Series28.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline
+        Series28.Color = System.Drawing.Color.Blue
+        Series28.Legend = "Legend1"
+        Series28.Name = "North Phase B"
+        Series28.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Time
+        Series29.ChartArea = "Electrical Data"
+        Series29.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline
+        Series29.Color = System.Drawing.Color.Lime
+        Series29.Legend = "Legend1"
+        Series29.Name = "North Phase C"
+        Series29.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Time
+        Series30.ChartArea = "Electrical Data"
+        Series30.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline
+        Series30.Color = System.Drawing.Color.Yellow
+        Series30.Legend = "Legend1"
+        Series30.Name = "South Phase A"
+        Series30.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Time
+        Series31.ChartArea = "Electrical Data"
+        Series31.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline
+        Series31.Color = System.Drawing.Color.Aqua
+        Series31.Legend = "Legend1"
+        Series31.Name = "South Phase B"
+        Series31.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Time
+        Series32.ChartArea = "Electrical Data"
+        Series32.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline
+        Series32.Color = System.Drawing.Color.Fuchsia
+        Series32.Legend = "Legend1"
+        Series32.Name = "South Phase C"
+        Series32.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Time
+        Series33.ChartArea = "Steam Data"
+        Series33.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline
+        Series33.Color = System.Drawing.Color.Lime
+        Series33.Legend = "Legend3"
+        Series33.Name = "30PSI Demand"
+        Series33.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Time
+        Series34.ChartArea = "Steam Data"
+        Series34.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline
+        Series34.Color = System.Drawing.Color.Blue
+        Series34.Legend = "Legend3"
+        Series34.Name = "40PSI Demand"
+        Series34.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Time
+        Series35.ChartArea = "Water Data"
+        Series35.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline
+        Series35.Color = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Series35.Legend = "Legend4"
+        Series35.Name = "Hot Water Flow Rate"
+        Series35.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Time
+        Series36.ChartArea = "Air Data"
+        Series36.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline
+        Series36.Color = System.Drawing.Color.Red
+        Series36.Legend = "Legend2"
+        Series36.Name = "System Air Pressure"
+        Series36.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Time
+        Series37.ChartArea = "Water Data"
+        Series37.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline
+        Series37.Color = System.Drawing.Color.Blue
+        Series37.Legend = "Legend4"
+        Series37.Name = "City Water Pressure"
+        Series37.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Time
+        Series38.ChartArea = "Water Data"
+        Series38.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline
+        Series38.Color = System.Drawing.Color.Red
+        Series38.Legend = "Legend4"
+        Series38.Name = "Hot Water Pressure"
+        Series38.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Time
+        Series39.ChartArea = "Steam Data"
+        Series39.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline
+        Series39.Color = System.Drawing.Color.Yellow
+        Series39.Legend = "Legend3"
+        Series39.Name = "30PSI Pressure"
+        Series39.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Time
+        Series40.ChartArea = "Steam Data"
+        Series40.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline
+        Series40.Color = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Series40.Legend = "Legend3"
+        Series40.Name = "40PSI Presure"
+        Series40.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Time
+        Series41.ChartArea = "Steam Data"
+        Series41.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline
+        Series41.Color = System.Drawing.Color.Red
+        Series41.Legend = "Legend3"
+        Series41.Name = "System Pres"
+        Series41.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Time
+        Series42.ChartArea = "Water Data"
+        Series42.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline
+        Series42.Color = System.Drawing.Color.Yellow
+        Series42.Legend = "Legend4"
+        Series42.Name = "Hot Water Temperature"
+        Series42.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Time
+        Series43.ChartArea = "Steam Data"
+        Series43.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline
+        Series43.Color = System.Drawing.Color.Fuchsia
+        Series43.Legend = "Legend3"
+        Series43.Name = "Steam Flow x100"
+        Series43.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Time
+        Series44.ChartArea = "Water Data"
+        Series44.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline
+        Series44.Color = System.Drawing.Color.Lime
+        Series44.Legend = "Legend4"
+        Series44.Name = "City Water Line Pressure"
+        Series44.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Time
+        Me.Chart3.Series.Add(Series27)
+        Me.Chart3.Series.Add(Series28)
+        Me.Chart3.Series.Add(Series29)
+        Me.Chart3.Series.Add(Series30)
+        Me.Chart3.Series.Add(Series31)
+        Me.Chart3.Series.Add(Series32)
+        Me.Chart3.Series.Add(Series33)
+        Me.Chart3.Series.Add(Series34)
+        Me.Chart3.Series.Add(Series35)
+        Me.Chart3.Series.Add(Series36)
+        Me.Chart3.Series.Add(Series37)
+        Me.Chart3.Series.Add(Series38)
+        Me.Chart3.Series.Add(Series39)
+        Me.Chart3.Series.Add(Series40)
+        Me.Chart3.Series.Add(Series41)
+        Me.Chart3.Series.Add(Series42)
+        Me.Chart3.Series.Add(Series43)
+        Me.Chart3.Series.Add(Series44)
         Me.Chart3.Size = New System.Drawing.Size(1637, 945)
         Me.Chart3.TabIndex = 94
         Me.Chart3.Text = "Steam Chart"
-        Title1.DockedToChartArea = "Electrical Data"
-        Title1.DockingOffset = -4
-        Title1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Title1.ForeColor = System.Drawing.Color.White
-        Title1.Name = "Title1"
-        Title1.Text = "Electrical Data"
-        Title2.DockedToChartArea = "Air Data"
-        Title2.DockingOffset = -4
-        Title2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Title2.ForeColor = System.Drawing.Color.White
-        Title2.Name = "Title2"
-        Title2.Text = "Air Data"
-        Title3.DockedToChartArea = "Steam Data"
-        Title3.DockingOffset = -4
-        Title3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Title3.ForeColor = System.Drawing.Color.White
-        Title3.Name = "Title3"
-        Title3.Text = "Steam Data"
-        Title4.DockedToChartArea = "Water Data"
-        Title4.DockingOffset = -4
-        Title4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Title4.ForeColor = System.Drawing.Color.White
-        Title4.Name = "Title4"
-        Title4.Text = "Water Data"
-        Me.Chart3.Titles.Add(Title1)
-        Me.Chart3.Titles.Add(Title2)
-        Me.Chart3.Titles.Add(Title3)
-        Me.Chart3.Titles.Add(Title4)
+        Title7.DockedToChartArea = "Electrical Data"
+        Title7.DockingOffset = -4
+        Title7.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Title7.ForeColor = System.Drawing.Color.White
+        Title7.Name = "Title1"
+        Title7.Text = "Electrical Data"
+        Title8.DockedToChartArea = "Air Data"
+        Title8.DockingOffset = -4
+        Title8.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Title8.ForeColor = System.Drawing.Color.White
+        Title8.Name = "Title2"
+        Title8.Text = "Air Data"
+        Title9.DockedToChartArea = "Steam Data"
+        Title9.DockingOffset = -4
+        Title9.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Title9.ForeColor = System.Drawing.Color.White
+        Title9.Name = "Title3"
+        Title9.Text = "Steam Data"
+        Title10.DockedToChartArea = "Water Data"
+        Title10.DockingOffset = -4
+        Title10.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Title10.ForeColor = System.Drawing.Color.White
+        Title10.Name = "Title4"
+        Title10.Text = "Water Data"
+        Me.Chart3.Titles.Add(Title7)
+        Me.Chart3.Titles.Add(Title8)
+        Me.Chart3.Titles.Add(Title9)
+        Me.Chart3.Titles.Add(Title10)
         '
         'ElectricalAlarmPanel
         '
@@ -16470,7 +16462,7 @@ Partial Class Dashboard_Page
         Me.Label244.BackColor = System.Drawing.Color.Transparent
         Me.Label244.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label244.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label244.ForeColor = System.Drawing.Color.Lime
+        Me.Label244.ForeColor = System.Drawing.Color.FromArgb(CType(CType(1, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(4, Byte), Integer))
         Me.Label244.Location = New System.Drawing.Point(880, 519)
         Me.Label244.Name = "Label244"
         Me.Label244.Size = New System.Drawing.Size(134, 80)
@@ -16483,7 +16475,7 @@ Partial Class Dashboard_Page
         Me.Label245.BackColor = System.Drawing.Color.Transparent
         Me.Label245.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label245.Font = New System.Drawing.Font("Agency FB", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label245.ForeColor = System.Drawing.Color.Lime
+        Me.Label245.ForeColor = System.Drawing.Color.FromArgb(CType(CType(1, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(4, Byte), Integer))
         Me.Label245.Location = New System.Drawing.Point(311, 46)
         Me.Label245.Name = "Label245"
         Me.Label245.Size = New System.Drawing.Size(88, 37)
@@ -16496,7 +16488,7 @@ Partial Class Dashboard_Page
         Me.Label246.BackColor = System.Drawing.Color.Transparent
         Me.Label246.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label246.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label246.ForeColor = System.Drawing.Color.Lime
+        Me.Label246.ForeColor = System.Drawing.Color.FromArgb(CType(CType(1, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(4, Byte), Integer))
         Me.Label246.Location = New System.Drawing.Point(880, 349)
         Me.Label246.Name = "Label246"
         Me.Label246.Size = New System.Drawing.Size(134, 166)
@@ -16511,11 +16503,11 @@ Partial Class Dashboard_Page
         '
         'Compressor_Page
         '
+        Me.Compressor_Page.Controls.Add(Me.Air_Pr_Main_T2)
         Me.Compressor_Page.Controls.Add(Me.Pipe177)
         Me.Compressor_Page.Controls.Add(Me.Pipe178)
         Me.Compressor_Page.Controls.Add(Me.Pipe26)
         Me.Compressor_Page.Controls.Add(Me.Pipe127)
-        Me.Compressor_Page.Controls.Add(Me.BasicIndicator40)
         Me.Compressor_Page.Controls.Add(Me.Air_Pr_Main_MIN2)
         Me.Compressor_Page.Controls.Add(Me.Air_Pr_Main_MAX2)
         Me.Compressor_Page.Controls.Add(Me.Air_Pr_Main_UN2)
@@ -16670,26 +16662,6 @@ Partial Class Dashboard_Page
         Me.Pipe127.TabIndex = 154
         Me.Pipe127.TextPrefix = Nothing
         Me.Pipe127.TextSuffix = Nothing
-        '
-        'BasicIndicator40
-        '
-        Me.BasicIndicator40.Color1 = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer))
-        Me.BasicIndicator40.Color2 = System.Drawing.Color.Green
-        Me.BasicIndicator40.Color3 = System.Drawing.Color.Red
-        Me.BasicIndicator40.ComComponent = Me.PLC
-        Me.BasicIndicator40.Font = New System.Drawing.Font("Agency FB", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BasicIndicator40.ForeColor = System.Drawing.Color.Silver
-        Me.BasicIndicator40.Location = New System.Drawing.Point(1027, 710)
-        Me.BasicIndicator40.Name = "BasicIndicator40"
-        Me.BasicIndicator40.OutlineColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer))
-        Me.BasicIndicator40.OutlineWidth = 5
-        Me.BasicIndicator40.OutputType = MfgControl.AdvancedHMI.Controls.OutputType.MomentarySet
-        Me.BasicIndicator40.SelectColor2 = False
-        Me.BasicIndicator40.SelectColor3 = False
-        Me.BasicIndicator40.Shape = MfgControl.AdvancedHMI.Controls.Indicator.ShapeTypes.Rectangle
-        Me.BasicIndicator40.Size = New System.Drawing.Size(267, 57)
-        Me.BasicIndicator40.TabIndex = 301
-        Me.BasicIndicator40.Text = "SYSTEM AIR PRESSURE"
         '
         'Air_Pr_Main_MIN2
         '
@@ -17218,7 +17190,7 @@ Partial Class Dashboard_Page
         '
         'PictureBox6
         '
-        Me.PictureBox6.Image = Global.MfgControl.AdvancedHMI.My.Resources.Resources.ATLAS_Comp3
+        Me.PictureBox6.Image = Global.MfgControl.AdvancedHMI.My.Resources.Resources.AIR_Comp2
         Me.PictureBox6.Location = New System.Drawing.Point(578, 537)
         Me.PictureBox6.Name = "PictureBox6"
         Me.PictureBox6.Size = New System.Drawing.Size(350, 200)
@@ -17228,7 +17200,7 @@ Partial Class Dashboard_Page
         '
         'PictureBox7
         '
-        Me.PictureBox7.Image = Global.MfgControl.AdvancedHMI.My.Resources.Resources.CP_COMPRESSOR2
+        Me.PictureBox7.Image = Global.MfgControl.AdvancedHMI.My.Resources.Resources.AIR_Comp1
         Me.PictureBox7.Location = New System.Drawing.Point(578, 294)
         Me.PictureBox7.Name = "PictureBox7"
         Me.PictureBox7.Size = New System.Drawing.Size(350, 200)
@@ -17904,7 +17876,7 @@ Partial Class Dashboard_Page
         'Air_Pr_Main_G2
         '
         Me.Air_Pr_Main_G2.BackColor = System.Drawing.Color.Transparent
-        Me.Air_Pr_Main_G2.BackgroundImage = Global.MfgControl.AdvancedHMI.My.Resources.Resources.GOODBG
+        Me.Air_Pr_Main_G2.BackgroundImage = CType(resources.GetObject("Air_Pr_Main_G2.BackgroundImage"), System.Drawing.Image)
         Me.Air_Pr_Main_G2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Air_Pr_Main_G2.Band1Color = System.Drawing.Color.DarkRed
         Me.Air_Pr_Main_G2.Band1EndValue = 9999999.0R
@@ -18009,11 +17981,12 @@ Partial Class Dashboard_Page
         'Boiler_Page
         '
         Me.Boiler_Page.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Boiler_Page.Controls.Add(Me.Steam_Pr_FeedWat_T2)
+        Me.Boiler_Page.Controls.Add(Me.Pipe9)
         Me.Boiler_Page.Controls.Add(Me.Pipe8)
         Me.Boiler_Page.Controls.Add(Me.Pipe10)
         Me.Boiler_Page.Controls.Add(Me.Pipe3)
         Me.Boiler_Page.Controls.Add(Me.Pipe39)
-        Me.Boiler_Page.Controls.Add(Me.Pipe9)
         Me.Boiler_Page.Controls.Add(Me.Pipe159)
         Me.Boiler_Page.Controls.Add(Me.Pipe139)
         Me.Boiler_Page.Controls.Add(Me.Pipe183)
@@ -18021,7 +17994,6 @@ Partial Class Dashboard_Page
         Me.Boiler_Page.Controls.Add(Me.Pipe156)
         Me.Boiler_Page.Controls.Add(Me.FeedWaterPump2)
         Me.Boiler_Page.Controls.Add(Me.Steam_Pr_FeedWat_UN2)
-        Me.Boiler_Page.Controls.Add(Me.BasicIndicator26)
         Me.Boiler_Page.Controls.Add(Me.Steam_Pr_FeedWat_MIN2)
         Me.Boiler_Page.Controls.Add(Me.Steam_Pr_FeedWat_MAX2)
         Me.Boiler_Page.Controls.Add(Me.Steam_Pr_FeedWat_V2)
@@ -18124,6 +18096,30 @@ Partial Class Dashboard_Page
         Me.Boiler_Page.Size = New System.Drawing.Size(1895, 945)
         Me.Boiler_Page.TabIndex = 247
         '
+        'Pipe9
+        '
+        Me.Pipe9.BackColor = System.Drawing.Color.Transparent
+        Me.Pipe9.ComComponent = Me.PLC
+        Me.Pipe9.Fitting = MfgControl.AdvancedHMI.Controls.Pipe.FittingType.Straight
+        Me.Pipe9.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold)
+        Me.Pipe9.ForeColor = System.Drawing.Color.Blue
+        Me.Pipe9.HighlightColor = System.Drawing.Color.Red
+        Me.Pipe9.HighlightKeyCharacter = "!"
+        Me.Pipe9.KeypadText = Nothing
+        Me.Pipe9.Location = New System.Drawing.Point(421, 224)
+        Me.Pipe9.Name = "Pipe9"
+        Me.Pipe9.NumericFormat = Nothing
+        Me.Pipe9.PLCAddressKeypad = ""
+        Me.Pipe9.PLCAddressRotate = ""
+        Me.Pipe9.PLCAddressText = ""
+        Me.Pipe9.PLCAddressVisible = ""
+        Me.Pipe9.Rotation = System.Drawing.RotateFlipType.RotateNoneFlipY
+        Me.Pipe9.ScaleFactor = New Decimal(New Integer() {1, 0, 0, 0})
+        Me.Pipe9.Size = New System.Drawing.Size(372, 40)
+        Me.Pipe9.TabIndex = 248
+        Me.Pipe9.TextPrefix = Nothing
+        Me.Pipe9.TextSuffix = Nothing
+        '
         'Pipe8
         '
         Me.Pipe8.BackColor = System.Drawing.Color.Black
@@ -18216,30 +18212,6 @@ Partial Class Dashboard_Page
         Me.Pipe39.TabIndex = 250
         Me.Pipe39.TextPrefix = Nothing
         Me.Pipe39.TextSuffix = Nothing
-        '
-        'Pipe9
-        '
-        Me.Pipe9.BackColor = System.Drawing.Color.Transparent
-        Me.Pipe9.ComComponent = Me.PLC
-        Me.Pipe9.Fitting = MfgControl.AdvancedHMI.Controls.Pipe.FittingType.Straight
-        Me.Pipe9.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold)
-        Me.Pipe9.ForeColor = System.Drawing.Color.Blue
-        Me.Pipe9.HighlightColor = System.Drawing.Color.Red
-        Me.Pipe9.HighlightKeyCharacter = "!"
-        Me.Pipe9.KeypadText = Nothing
-        Me.Pipe9.Location = New System.Drawing.Point(421, 224)
-        Me.Pipe9.Name = "Pipe9"
-        Me.Pipe9.NumericFormat = Nothing
-        Me.Pipe9.PLCAddressKeypad = ""
-        Me.Pipe9.PLCAddressRotate = ""
-        Me.Pipe9.PLCAddressText = ""
-        Me.Pipe9.PLCAddressVisible = ""
-        Me.Pipe9.Rotation = System.Drawing.RotateFlipType.RotateNoneFlipY
-        Me.Pipe9.ScaleFactor = New Decimal(New Integer() {1, 0, 0, 0})
-        Me.Pipe9.Size = New System.Drawing.Size(323, 40)
-        Me.Pipe9.TabIndex = 248
-        Me.Pipe9.TextPrefix = Nothing
-        Me.Pipe9.TextSuffix = Nothing
         '
         'Pipe159
         '
@@ -18393,26 +18365,6 @@ Partial Class Dashboard_Page
         Me.Steam_Pr_FeedWat_UN2.TabIndex = 407
         Me.Steam_Pr_FeedWat_UN2.Text = "UNIT"
         '
-        'BasicIndicator26
-        '
-        Me.BasicIndicator26.Color1 = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer))
-        Me.BasicIndicator26.Color2 = System.Drawing.Color.Green
-        Me.BasicIndicator26.Color3 = System.Drawing.Color.Red
-        Me.BasicIndicator26.ComComponent = Me.PLC
-        Me.BasicIndicator26.Font = New System.Drawing.Font("Agency FB", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BasicIndicator26.ForeColor = System.Drawing.Color.Silver
-        Me.BasicIndicator26.Location = New System.Drawing.Point(1066, 617)
-        Me.BasicIndicator26.Name = "BasicIndicator26"
-        Me.BasicIndicator26.OutlineColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer))
-        Me.BasicIndicator26.OutlineWidth = 5
-        Me.BasicIndicator26.OutputType = MfgControl.AdvancedHMI.Controls.OutputType.MomentarySet
-        Me.BasicIndicator26.SelectColor2 = False
-        Me.BasicIndicator26.SelectColor3 = False
-        Me.BasicIndicator26.Shape = MfgControl.AdvancedHMI.Controls.Indicator.ShapeTypes.Rectangle
-        Me.BasicIndicator26.Size = New System.Drawing.Size(267, 57)
-        Me.BasicIndicator26.TabIndex = 406
-        Me.BasicIndicator26.Text = "FEED WATER PRESSURE"
-        '
         'Steam_Pr_FeedWat_MIN2
         '
         Me.Steam_Pr_FeedWat_MIN2.BackColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer))
@@ -18551,7 +18503,7 @@ Partial Class Dashboard_Page
         '
         Me.Steam_Pr_FeedWat_G2.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Steam_Pr_FeedWat_G2.BackColor = System.Drawing.Color.Transparent
-        Me.Steam_Pr_FeedWat_G2.BackgroundImage = Global.MfgControl.AdvancedHMI.My.Resources.Resources.GOODBG
+        Me.Steam_Pr_FeedWat_G2.BackgroundImage = CType(resources.GetObject("Steam_Pr_FeedWat_G2.BackgroundImage"), System.Drawing.Image)
         Me.Steam_Pr_FeedWat_G2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Steam_Pr_FeedWat_G2.Band1Color = System.Drawing.Color.Maroon
         Me.Steam_Pr_FeedWat_G2.Band1EndValue = 999999.0R
@@ -18639,7 +18591,7 @@ Partial Class Dashboard_Page
         'PictureBox39
         '
         Me.PictureBox39.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox39.Image = Global.MfgControl.AdvancedHMI.My.Resources.Resources.Fire
+        Me.PictureBox39.Image = Global.MfgControl.AdvancedHMI.My.Resources.Resources.BOILER_HighFire_GIF
         Me.PictureBox39.Location = New System.Drawing.Point(679, 629)
         Me.PictureBox39.Name = "PictureBox39"
         Me.PictureBox39.Size = New System.Drawing.Size(172, 94)
@@ -20232,7 +20184,7 @@ Partial Class Dashboard_Page
         'PictureBox38
         '
         Me.PictureBox38.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox38.Image = Global.MfgControl.AdvancedHMI.My.Resources.Resources.Fire
+        Me.PictureBox38.Image = Global.MfgControl.AdvancedHMI.My.Resources.Resources.BOILER_HighFire_GIF
         Me.PictureBox38.Location = New System.Drawing.Point(151, 595)
         Me.PictureBox38.Name = "PictureBox38"
         Me.PictureBox38.Size = New System.Drawing.Size(262, 130)
@@ -20243,7 +20195,7 @@ Partial Class Dashboard_Page
         'PictureBox4
         '
         Me.PictureBox4.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox4.Image = Global.MfgControl.AdvancedHMI.My.Resources.Resources.LG_FireNone
+        Me.PictureBox4.Image = Global.MfgControl.AdvancedHMI.My.Resources.Resources.BOILER2_NF
         Me.PictureBox4.Location = New System.Drawing.Point(93, 344)
         Me.PictureBox4.Name = "PictureBox4"
         Me.PictureBox4.Size = New System.Drawing.Size(404, 456)
@@ -20254,7 +20206,7 @@ Partial Class Dashboard_Page
         'PictureBox11
         '
         Me.PictureBox11.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox11.Image = Global.MfgControl.AdvancedHMI.My.Resources.Resources.ezgif_4_68b6536f13
+        Me.PictureBox11.Image = Global.MfgControl.AdvancedHMI.My.Resources.Resources.BG_Steam2
         Me.PictureBox11.Location = New System.Drawing.Point(117, -77)
         Me.PictureBox11.Name = "PictureBox11"
         Me.PictureBox11.Size = New System.Drawing.Size(152, 512)
@@ -20601,7 +20553,7 @@ Partial Class Dashboard_Page
         'PictureBox10
         '
         Me.PictureBox10.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox10.Image = Global.MfgControl.AdvancedHMI.My.Resources.Resources.SM_FireHigh
+        Me.PictureBox10.Image = Global.MfgControl.AdvancedHMI.My.Resources.Resources.BOILER1_HF
         Me.PictureBox10.Location = New System.Drawing.Point(625, 392)
         Me.PictureBox10.Name = "PictureBox10"
         Me.PictureBox10.Size = New System.Drawing.Size(289, 401)
@@ -20612,7 +20564,7 @@ Partial Class Dashboard_Page
         'PictureBox5
         '
         Me.PictureBox5.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox5.Image = Global.MfgControl.AdvancedHMI.My.Resources.Resources.ezgif_4_68b6536f13
+        Me.PictureBox5.Image = Global.MfgControl.AdvancedHMI.My.Resources.Resources.BG_Steam2
         Me.PictureBox5.Location = New System.Drawing.Point(626, -43)
         Me.PictureBox5.Name = "PictureBox5"
         Me.PictureBox5.Size = New System.Drawing.Size(152, 512)
@@ -20622,8 +20574,10 @@ Partial Class Dashboard_Page
         '
         'Steam_Page
         '
-        Me.Steam_Page.Controls.Add(Me.BasicIndicator87)
-        Me.Steam_Page.Controls.Add(Me.BasicIndicator88)
+        Me.Steam_Page.Controls.Add(Me.Steam_Pr_Low_T2)
+        Me.Steam_Page.Controls.Add(Me.Steam_Pr_Med_T2)
+        Me.Steam_Page.Controls.Add(Me.Steam_Flow_T2)
+        Me.Steam_Page.Controls.Add(Me.Steam_Pr_Main_T2)
         Me.Steam_Page.Controls.Add(Me.Steam_Pr_Low_MIN2)
         Me.Steam_Page.Controls.Add(Me.Steam_Pr_Med_MIN2)
         Me.Steam_Page.Controls.Add(Me.Steam_Pr_Low_UN2)
@@ -20632,9 +20586,7 @@ Partial Class Dashboard_Page
         Me.Steam_Page.Controls.Add(Me.Steam_Pr_Med_max2)
         Me.Steam_Page.Controls.Add(Me.Steam_Pr_Main_UN2)
         Me.Steam_Page.Controls.Add(Me.Steam_Pr_Med_UN2)
-        Me.Steam_Page.Controls.Add(Me.BasicIndicator82)
         Me.Steam_Page.Controls.Add(Me.LowSteamDemandDisp2)
-        Me.Steam_Page.Controls.Add(Me.BasicIndicator89)
         Me.Steam_Page.Controls.Add(Me.Steam_Pr_Main_MIN2)
         Me.Steam_Page.Controls.Add(Me.Steam_Flow_MIN2)
         Me.Steam_Page.Controls.Add(Me.Steam_Pr_Main_MAX2)
@@ -20683,46 +20635,6 @@ Partial Class Dashboard_Page
         Me.Steam_Page.Name = "Steam_Page"
         Me.Steam_Page.Size = New System.Drawing.Size(1895, 945)
         Me.Steam_Page.TabIndex = 248
-        '
-        'BasicIndicator87
-        '
-        Me.BasicIndicator87.Color1 = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer))
-        Me.BasicIndicator87.Color2 = System.Drawing.Color.Green
-        Me.BasicIndicator87.Color3 = System.Drawing.Color.Red
-        Me.BasicIndicator87.ComComponent = Me.PLC
-        Me.BasicIndicator87.Font = New System.Drawing.Font("Agency FB", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BasicIndicator87.ForeColor = System.Drawing.Color.Silver
-        Me.BasicIndicator87.Location = New System.Drawing.Point(236, 384)
-        Me.BasicIndicator87.Name = "BasicIndicator87"
-        Me.BasicIndicator87.OutlineColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer))
-        Me.BasicIndicator87.OutlineWidth = 5
-        Me.BasicIndicator87.OutputType = MfgControl.AdvancedHMI.Controls.OutputType.MomentarySet
-        Me.BasicIndicator87.SelectColor2 = False
-        Me.BasicIndicator87.SelectColor3 = False
-        Me.BasicIndicator87.Shape = MfgControl.AdvancedHMI.Controls.Indicator.ShapeTypes.Rectangle
-        Me.BasicIndicator87.Size = New System.Drawing.Size(267, 57)
-        Me.BasicIndicator87.TabIndex = 286
-        Me.BasicIndicator87.Text = "(30PSI) STEAM PRESSURE"
-        '
-        'BasicIndicator88
-        '
-        Me.BasicIndicator88.Color1 = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer))
-        Me.BasicIndicator88.Color2 = System.Drawing.Color.Green
-        Me.BasicIndicator88.Color3 = System.Drawing.Color.Red
-        Me.BasicIndicator88.ComComponent = Me.PLC
-        Me.BasicIndicator88.Font = New System.Drawing.Font("Agency FB", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BasicIndicator88.ForeColor = System.Drawing.Color.Silver
-        Me.BasicIndicator88.Location = New System.Drawing.Point(1393, 384)
-        Me.BasicIndicator88.Name = "BasicIndicator88"
-        Me.BasicIndicator88.OutlineColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer))
-        Me.BasicIndicator88.OutlineWidth = 5
-        Me.BasicIndicator88.OutputType = MfgControl.AdvancedHMI.Controls.OutputType.MomentarySet
-        Me.BasicIndicator88.SelectColor2 = False
-        Me.BasicIndicator88.SelectColor3 = False
-        Me.BasicIndicator88.Shape = MfgControl.AdvancedHMI.Controls.Indicator.ShapeTypes.Rectangle
-        Me.BasicIndicator88.Size = New System.Drawing.Size(267, 57)
-        Me.BasicIndicator88.TabIndex = 287
-        Me.BasicIndicator88.Text = "(40PSI) STEAM PRESSURE"
         '
         'Steam_Pr_Low_MIN2
         '
@@ -20964,26 +20876,6 @@ Partial Class Dashboard_Page
         Me.Steam_Pr_Med_UN2.TabIndex = 289
         Me.Steam_Pr_Med_UN2.Text = "PSI"
         '
-        'BasicIndicator82
-        '
-        Me.BasicIndicator82.Color1 = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer))
-        Me.BasicIndicator82.Color2 = System.Drawing.Color.Green
-        Me.BasicIndicator82.Color3 = System.Drawing.Color.Red
-        Me.BasicIndicator82.ComComponent = Me.PLC
-        Me.BasicIndicator82.Font = New System.Drawing.Font("Agency FB", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BasicIndicator82.ForeColor = System.Drawing.Color.Silver
-        Me.BasicIndicator82.Location = New System.Drawing.Point(610, 271)
-        Me.BasicIndicator82.Name = "BasicIndicator82"
-        Me.BasicIndicator82.OutlineColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer))
-        Me.BasicIndicator82.OutlineWidth = 5
-        Me.BasicIndicator82.OutputType = MfgControl.AdvancedHMI.Controls.OutputType.MomentarySet
-        Me.BasicIndicator82.SelectColor2 = False
-        Me.BasicIndicator82.SelectColor3 = False
-        Me.BasicIndicator82.Shape = MfgControl.AdvancedHMI.Controls.Indicator.ShapeTypes.Rectangle
-        Me.BasicIndicator82.Size = New System.Drawing.Size(267, 57)
-        Me.BasicIndicator82.TabIndex = 279
-        Me.BasicIndicator82.Text = "STEAM HEADER FLOW RATE"
-        '
         'LowSteamDemandDisp2
         '
         Me.LowSteamDemandDisp2.ComComponent = Me.PLC
@@ -21000,26 +20892,6 @@ Partial Class Dashboard_Page
         Me.LowSteamDemandDisp2.Size = New System.Drawing.Size(144, 144)
         Me.LowSteamDemandDisp2.TabIndex = 234
         Me.LowSteamDemandDisp2.Value = False
-        '
-        'BasicIndicator89
-        '
-        Me.BasicIndicator89.Color1 = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer))
-        Me.BasicIndicator89.Color2 = System.Drawing.Color.Green
-        Me.BasicIndicator89.Color3 = System.Drawing.Color.Red
-        Me.BasicIndicator89.ComComponent = Me.PLC
-        Me.BasicIndicator89.Font = New System.Drawing.Font("Agency FB", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BasicIndicator89.ForeColor = System.Drawing.Color.Silver
-        Me.BasicIndicator89.Location = New System.Drawing.Point(1019, 271)
-        Me.BasicIndicator89.Name = "BasicIndicator89"
-        Me.BasicIndicator89.OutlineColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer))
-        Me.BasicIndicator89.OutlineWidth = 5
-        Me.BasicIndicator89.OutputType = MfgControl.AdvancedHMI.Controls.OutputType.MomentarySet
-        Me.BasicIndicator89.SelectColor2 = False
-        Me.BasicIndicator89.SelectColor3 = False
-        Me.BasicIndicator89.Shape = MfgControl.AdvancedHMI.Controls.Indicator.ShapeTypes.Rectangle
-        Me.BasicIndicator89.Size = New System.Drawing.Size(267, 57)
-        Me.BasicIndicator89.TabIndex = 279
-        Me.BasicIndicator89.Text = "STEAM HEADER PRESSURE"
         '
         'Steam_Pr_Main_MIN2
         '
@@ -21209,7 +21081,7 @@ Partial Class Dashboard_Page
         Me.Label2.BackColor = System.Drawing.Color.Transparent
         Me.Label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label2.Font = New System.Drawing.Font("Agency FB", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.ForeColor = System.Drawing.Color.Lime
+        Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(1, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(4, Byte), Integer))
         Me.Label2.Location = New System.Drawing.Point(311, 6)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(355, 37)
@@ -21222,7 +21094,7 @@ Partial Class Dashboard_Page
         Me.Label32.BackColor = System.Drawing.Color.Transparent
         Me.Label32.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label32.Font = New System.Drawing.Font("Agency FB", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label32.ForeColor = System.Drawing.Color.Lime
+        Me.Label32.ForeColor = System.Drawing.Color.FromArgb(CType(CType(1, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(4, Byte), Integer))
         Me.Label32.Location = New System.Drawing.Point(491, 82)
         Me.Label32.Name = "Label32"
         Me.Label32.Size = New System.Drawing.Size(88, 37)
@@ -21235,7 +21107,7 @@ Partial Class Dashboard_Page
         Me.Label7.BackColor = System.Drawing.Color.Transparent
         Me.Label7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label7.Font = New System.Drawing.Font("Agency FB", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.ForeColor = System.Drawing.Color.Lime
+        Me.Label7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(1, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(4, Byte), Integer))
         Me.Label7.Location = New System.Drawing.Point(311, 82)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(88, 37)
@@ -21248,7 +21120,7 @@ Partial Class Dashboard_Page
         Me.Label31.BackColor = System.Drawing.Color.Transparent
         Me.Label31.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label31.Font = New System.Drawing.Font("Agency FB", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label31.ForeColor = System.Drawing.Color.Lime
+        Me.Label31.ForeColor = System.Drawing.Color.FromArgb(CType(CType(1, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(4, Byte), Integer))
         Me.Label31.Location = New System.Drawing.Point(491, 118)
         Me.Label31.Name = "Label31"
         Me.Label31.Size = New System.Drawing.Size(88, 37)
@@ -21261,7 +21133,7 @@ Partial Class Dashboard_Page
         Me.Label15.BackColor = System.Drawing.Color.Transparent
         Me.Label15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label15.Font = New System.Drawing.Font("Agency FB", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label15.ForeColor = System.Drawing.Color.Lime
+        Me.Label15.ForeColor = System.Drawing.Color.FromArgb(CType(CType(1, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(4, Byte), Integer))
         Me.Label15.Location = New System.Drawing.Point(311, 118)
         Me.Label15.Name = "Label15"
         Me.Label15.Size = New System.Drawing.Size(88, 37)
@@ -21643,7 +21515,7 @@ Partial Class Dashboard_Page
         Me.Label29.BackColor = System.Drawing.Color.Transparent
         Me.Label29.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label29.Font = New System.Drawing.Font("Agency FB", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label29.ForeColor = System.Drawing.Color.Lime
+        Me.Label29.ForeColor = System.Drawing.Color.FromArgb(CType(CType(1, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(4, Byte), Integer))
         Me.Label29.Location = New System.Drawing.Point(491, 46)
         Me.Label29.Name = "Label29"
         Me.Label29.Size = New System.Drawing.Size(88, 37)
@@ -21656,7 +21528,7 @@ Partial Class Dashboard_Page
         Me.Label48.BackColor = System.Drawing.Color.Transparent
         Me.Label48.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label48.Font = New System.Drawing.Font("Agency FB", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label48.ForeColor = System.Drawing.Color.Lime
+        Me.Label48.ForeColor = System.Drawing.Color.FromArgb(CType(CType(1, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(4, Byte), Integer))
         Me.Label48.Location = New System.Drawing.Point(201, 82)
         Me.Label48.Name = "Label48"
         Me.Label48.Size = New System.Drawing.Size(105, 37)
@@ -21669,7 +21541,7 @@ Partial Class Dashboard_Page
         Me.Label47.BackColor = System.Drawing.Color.Transparent
         Me.Label47.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label47.Font = New System.Drawing.Font("Agency FB", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label47.ForeColor = System.Drawing.Color.Lime
+        Me.Label47.ForeColor = System.Drawing.Color.FromArgb(CType(CType(1, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(4, Byte), Integer))
         Me.Label47.Location = New System.Drawing.Point(201, 6)
         Me.Label47.Name = "Label47"
         Me.Label47.Size = New System.Drawing.Size(105, 37)
@@ -21682,7 +21554,7 @@ Partial Class Dashboard_Page
         Me.Label46.BackColor = System.Drawing.Color.Transparent
         Me.Label46.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label46.Font = New System.Drawing.Font("Agency FB", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label46.ForeColor = System.Drawing.Color.Lime
+        Me.Label46.ForeColor = System.Drawing.Color.FromArgb(CType(CType(1, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(4, Byte), Integer))
         Me.Label46.Location = New System.Drawing.Point(5, 6)
         Me.Label46.Name = "Label46"
         Me.Label46.Size = New System.Drawing.Size(190, 37)
@@ -21695,7 +21567,7 @@ Partial Class Dashboard_Page
         Me.Label100.BackColor = System.Drawing.Color.Transparent
         Me.Label100.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label100.Font = New System.Drawing.Font("Agency FB", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label100.ForeColor = System.Drawing.Color.Lime
+        Me.Label100.ForeColor = System.Drawing.Color.FromArgb(CType(CType(1, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(4, Byte), Integer))
         Me.Label100.Location = New System.Drawing.Point(103, 516)
         Me.Label100.Name = "Label100"
         Me.Label100.Size = New System.Drawing.Size(676, 56)
@@ -21735,7 +21607,7 @@ Partial Class Dashboard_Page
         Me.Label9.BackColor = System.Drawing.Color.Transparent
         Me.Label9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label9.Font = New System.Drawing.Font("Agency FB", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.ForeColor = System.Drawing.Color.Lime
+        Me.Label9.ForeColor = System.Drawing.Color.FromArgb(CType(CType(1, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(4, Byte), Integer))
         Me.Label9.Location = New System.Drawing.Point(4, 5)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(355, 37)
@@ -21953,7 +21825,7 @@ Partial Class Dashboard_Page
         Me.Label80.BackColor = System.Drawing.Color.Transparent
         Me.Label80.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label80.Font = New System.Drawing.Font("Agency FB", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label80.ForeColor = System.Drawing.Color.Lime
+        Me.Label80.ForeColor = System.Drawing.Color.FromArgb(CType(CType(1, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(4, Byte), Integer))
         Me.Label80.Location = New System.Drawing.Point(364, 81)
         Me.Label80.Name = "Label80"
         Me.Label80.Size = New System.Drawing.Size(105, 37)
@@ -21966,7 +21838,7 @@ Partial Class Dashboard_Page
         Me.Label82.BackColor = System.Drawing.Color.Transparent
         Me.Label82.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label82.Font = New System.Drawing.Font("Agency FB", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label82.ForeColor = System.Drawing.Color.Lime
+        Me.Label82.ForeColor = System.Drawing.Color.FromArgb(CType(CType(1, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(4, Byte), Integer))
         Me.Label82.Location = New System.Drawing.Point(364, 5)
         Me.Label82.Name = "Label82"
         Me.Label82.Size = New System.Drawing.Size(105, 37)
@@ -22020,7 +21892,7 @@ Partial Class Dashboard_Page
         Me.Label90.BackColor = System.Drawing.Color.Transparent
         Me.Label90.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label90.Font = New System.Drawing.Font("Agency FB", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label90.ForeColor = System.Drawing.Color.Lime
+        Me.Label90.ForeColor = System.Drawing.Color.FromArgb(CType(CType(1, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(4, Byte), Integer))
         Me.Label90.Location = New System.Drawing.Point(474, 5)
         Me.Label90.Name = "Label90"
         Me.Label90.Size = New System.Drawing.Size(190, 37)
@@ -22033,7 +21905,7 @@ Partial Class Dashboard_Page
         Me.Label79.BackColor = System.Drawing.Color.Transparent
         Me.Label79.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label79.Font = New System.Drawing.Font("Agency FB", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label79.ForeColor = System.Drawing.Color.Lime
+        Me.Label79.ForeColor = System.Drawing.Color.FromArgb(CType(CType(1, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(4, Byte), Integer))
         Me.Label79.Location = New System.Drawing.Point(184, 45)
         Me.Label79.Name = "Label79"
         Me.Label79.Size = New System.Drawing.Size(88, 37)
@@ -22046,7 +21918,7 @@ Partial Class Dashboard_Page
         Me.Label59.BackColor = System.Drawing.Color.Transparent
         Me.Label59.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label59.Font = New System.Drawing.Font("Agency FB", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label59.ForeColor = System.Drawing.Color.Lime
+        Me.Label59.ForeColor = System.Drawing.Color.FromArgb(CType(CType(1, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(4, Byte), Integer))
         Me.Label59.Location = New System.Drawing.Point(184, 81)
         Me.Label59.Name = "Label59"
         Me.Label59.Size = New System.Drawing.Size(88, 37)
@@ -22059,7 +21931,7 @@ Partial Class Dashboard_Page
         Me.Label91.BackColor = System.Drawing.Color.Transparent
         Me.Label91.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label91.Font = New System.Drawing.Font("Agency FB", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label91.ForeColor = System.Drawing.Color.Lime
+        Me.Label91.ForeColor = System.Drawing.Color.FromArgb(CType(CType(1, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(4, Byte), Integer))
         Me.Label91.Location = New System.Drawing.Point(4, 45)
         Me.Label91.Name = "Label91"
         Me.Label91.Size = New System.Drawing.Size(88, 37)
@@ -22113,7 +21985,7 @@ Partial Class Dashboard_Page
         Me.Label65.BackColor = System.Drawing.Color.Transparent
         Me.Label65.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label65.Font = New System.Drawing.Font("Agency FB", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label65.ForeColor = System.Drawing.Color.Lime
+        Me.Label65.ForeColor = System.Drawing.Color.FromArgb(CType(CType(1, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(4, Byte), Integer))
         Me.Label65.Location = New System.Drawing.Point(4, 81)
         Me.Label65.Name = "Label65"
         Me.Label65.Size = New System.Drawing.Size(88, 37)
@@ -22208,7 +22080,7 @@ Partial Class Dashboard_Page
         Me.Label69.BackColor = System.Drawing.Color.Transparent
         Me.Label69.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label69.Font = New System.Drawing.Font("Agency FB", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label69.ForeColor = System.Drawing.Color.Lime
+        Me.Label69.ForeColor = System.Drawing.Color.FromArgb(CType(CType(1, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(4, Byte), Integer))
         Me.Label69.Location = New System.Drawing.Point(184, 117)
         Me.Label69.Name = "Label69"
         Me.Label69.Size = New System.Drawing.Size(88, 37)
@@ -22221,7 +22093,7 @@ Partial Class Dashboard_Page
         Me.Label71.BackColor = System.Drawing.Color.Transparent
         Me.Label71.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label71.Font = New System.Drawing.Font("Agency FB", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label71.ForeColor = System.Drawing.Color.Lime
+        Me.Label71.ForeColor = System.Drawing.Color.FromArgb(CType(CType(1, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(4, Byte), Integer))
         Me.Label71.Location = New System.Drawing.Point(4, 117)
         Me.Label71.Name = "Label71"
         Me.Label71.Size = New System.Drawing.Size(88, 37)
@@ -22234,7 +22106,7 @@ Partial Class Dashboard_Page
         Me.Label102.BackColor = System.Drawing.Color.Transparent
         Me.Label102.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label102.Font = New System.Drawing.Font("Agency FB", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label102.ForeColor = System.Drawing.Color.Lime
+        Me.Label102.ForeColor = System.Drawing.Color.FromArgb(CType(CType(1, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(4, Byte), Integer))
         Me.Label102.Location = New System.Drawing.Point(1118, 516)
         Me.Label102.Name = "Label102"
         Me.Label102.Size = New System.Drawing.Size(669, 56)
@@ -22919,7 +22791,7 @@ Partial Class Dashboard_Page
         'Steam_Pr_Low_G2
         '
         Me.Steam_Pr_Low_G2.BackColor = System.Drawing.Color.Transparent
-        Me.Steam_Pr_Low_G2.BackgroundImage = Global.MfgControl.AdvancedHMI.My.Resources.Resources.GOODBG
+        Me.Steam_Pr_Low_G2.BackgroundImage = CType(resources.GetObject("Steam_Pr_Low_G2.BackgroundImage"), System.Drawing.Image)
         Me.Steam_Pr_Low_G2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Steam_Pr_Low_G2.Band1Color = System.Drawing.Color.DarkRed
         Me.Steam_Pr_Low_G2.Band1EndValue = 999999.0R
@@ -22979,14 +22851,14 @@ Partial Class Dashboard_Page
         '
         Me.Steam_Flow_G2.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Steam_Flow_G2.BackColor = System.Drawing.Color.Transparent
-        Me.Steam_Flow_G2.BackgroundImage = Global.MfgControl.AdvancedHMI.My.Resources.Resources.GOODBG
+        Me.Steam_Flow_G2.BackgroundImage = CType(resources.GetObject("Steam_Flow_G2.BackgroundImage"), System.Drawing.Image)
         Me.Steam_Flow_G2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Steam_Flow_G2.Band1Color = System.Drawing.Color.FromArgb(CType(CType(1, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(4, Byte), Integer))
+        Me.Steam_Flow_G2.Band1Color = System.Drawing.Color.Maroon
         Me.Steam_Flow_G2.Band1EndValue = 999999.0R
         Me.Steam_Flow_G2.Band1StartValue = -999999.0R
-        Me.Steam_Flow_G2.Band2Color = System.Drawing.Color.DarkRed
-        Me.Steam_Flow_G2.Band2EndValue = 15.0R
-        Me.Steam_Flow_G2.Band2StartValue = 12.0R
+        Me.Steam_Flow_G2.Band2Color = System.Drawing.Color.FromArgb(CType(CType(1, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(4, Byte), Integer))
+        Me.Steam_Flow_G2.Band2EndValue = 10.0R
+        Me.Steam_Flow_G2.Band2StartValue = 0R
         Me.Steam_Flow_G2.BorderColor = System.Drawing.Color.White
         Me.Steam_Flow_G2.BorderWidth = 0
         Me.Steam_Flow_G2.ComComponent = Me.PLC_Fast
@@ -23039,7 +22911,7 @@ Partial Class Dashboard_Page
         '
         Me.Steam_Pr_Main_G2.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Steam_Pr_Main_G2.BackColor = System.Drawing.Color.Transparent
-        Me.Steam_Pr_Main_G2.BackgroundImage = Global.MfgControl.AdvancedHMI.My.Resources.Resources.GOODBG
+        Me.Steam_Pr_Main_G2.BackgroundImage = CType(resources.GetObject("Steam_Pr_Main_G2.BackgroundImage"), System.Drawing.Image)
         Me.Steam_Pr_Main_G2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Steam_Pr_Main_G2.Band1Color = System.Drawing.Color.DarkRed
         Me.Steam_Pr_Main_G2.Band1EndValue = 999999.0R
@@ -23098,7 +22970,7 @@ Partial Class Dashboard_Page
         'Steam_Pr_Med_G2
         '
         Me.Steam_Pr_Med_G2.BackColor = System.Drawing.Color.Transparent
-        Me.Steam_Pr_Med_G2.BackgroundImage = Global.MfgControl.AdvancedHMI.My.Resources.Resources.GOODBG
+        Me.Steam_Pr_Med_G2.BackgroundImage = CType(resources.GetObject("Steam_Pr_Med_G2.BackgroundImage"), System.Drawing.Image)
         Me.Steam_Pr_Med_G2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Steam_Pr_Med_G2.Band1Color = System.Drawing.Color.DarkRed
         Me.Steam_Pr_Med_G2.Band1EndValue = 999999.0R
@@ -23331,201 +23203,201 @@ Partial Class Dashboard_Page
         Me.Enviro_Chart.BorderSkin.BorderColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(16, Byte), Integer), CType(CType(16, Byte), Integer))
         Me.Enviro_Chart.BorderSkin.PageColor = System.Drawing.Color.Black
         Me.Enviro_Chart.BorderSkin.SkinStyle = System.Windows.Forms.DataVisualization.Charting.BorderSkinStyle.Emboss
-        ChartArea5.AxisX.IsLabelAutoFit = False
-        ChartArea5.AxisX.IsStartedFromZero = False
-        ChartArea5.AxisX.LabelStyle.Angle = 45
-        ChartArea5.AxisX.LabelStyle.ForeColor = System.Drawing.Color.Gainsboro
-        ChartArea5.AxisX.LabelStyle.Interval = 5.0R
-        ChartArea5.AxisX.LabelStyle.IntervalType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.[Auto]
-        ChartArea5.AxisX.LineColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer))
-        ChartArea5.AxisX.MajorGrid.Interval = 5.0R
-        ChartArea5.AxisX.MajorGrid.IntervalOffset = 1.0R
-        ChartArea5.AxisX.MajorGrid.LineColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer))
-        ChartArea5.AxisX.MajorTickMark.Interval = 5.0R
-        ChartArea5.AxisX.MajorTickMark.IntervalOffset = 1.0R
-        ChartArea5.AxisX.MajorTickMark.LineColor = System.Drawing.Color.White
-        ChartArea5.AxisX.MajorTickMark.Size = 0.25!
-        ChartArea5.AxisX.MinorGrid.Enabled = True
-        ChartArea5.AxisX.MinorGrid.Interval = 1.0R
-        ChartArea5.AxisX.MinorGrid.IntervalType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Seconds
-        ChartArea5.AxisX.MinorGrid.LineColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(16, Byte), Integer), CType(CType(16, Byte), Integer))
-        ChartArea5.AxisX.ScaleView.Position = 0R
-        ChartArea5.AxisX.ScaleView.Size = 360.0R
-        ChartArea5.AxisY.IsLabelAutoFit = False
-        ChartArea5.AxisY.LabelStyle.ForeColor = System.Drawing.Color.Gainsboro
-        ChartArea5.AxisY.LabelStyle.Interval = 10.0R
-        ChartArea5.AxisY.LineColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer))
-        ChartArea5.AxisY.MajorGrid.Interval = 5.0R
-        ChartArea5.AxisY.MajorGrid.LineColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer))
-        ChartArea5.AxisY.MajorTickMark.Interval = 5.0R
-        ChartArea5.AxisY.MajorTickMark.LineColor = System.Drawing.Color.White
-        ChartArea5.AxisY.MajorTickMark.Size = 0.25!
-        ChartArea5.AxisY.Maximum = 100.0R
-        ChartArea5.AxisY.Minimum = 0R
-        ChartArea5.AxisY.MinorGrid.LineColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(16, Byte), Integer), CType(CType(16, Byte), Integer))
-        ChartArea5.BackColor = System.Drawing.Color.Black
-        ChartArea5.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.Center
-        ChartArea5.BackSecondaryColor = System.Drawing.Color.FromArgb(CType(CType(12, Byte), Integer), CType(CType(12, Byte), Integer), CType(CType(12, Byte), Integer))
-        ChartArea5.Name = "Inside"
-        ChartArea6.AxisX.IsLabelAutoFit = False
-        ChartArea6.AxisX.LabelStyle.Angle = 45
-        ChartArea6.AxisX.LabelStyle.ForeColor = System.Drawing.Color.Gainsboro
-        ChartArea6.AxisX.LabelStyle.Interval = 5.0R
-        ChartArea6.AxisX.LineColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer))
-        ChartArea6.AxisX.MajorGrid.Interval = 5.0R
-        ChartArea6.AxisX.MajorGrid.IntervalOffset = 1.0R
-        ChartArea6.AxisX.MajorGrid.LineColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer))
-        ChartArea6.AxisX.MajorTickMark.Interval = 5.0R
-        ChartArea6.AxisX.MajorTickMark.IntervalOffset = 1.0R
-        ChartArea6.AxisX.MajorTickMark.LineColor = System.Drawing.Color.White
-        ChartArea6.AxisX.MajorTickMark.Size = 0.25!
-        ChartArea6.AxisX.MinorGrid.Enabled = True
-        ChartArea6.AxisX.MinorGrid.Interval = 1.0R
-        ChartArea6.AxisX.MinorGrid.IntervalType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Seconds
-        ChartArea6.AxisX.MinorGrid.LineColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(16, Byte), Integer), CType(CType(16, Byte), Integer))
-        ChartArea6.AxisX.ScaleView.Position = 0R
-        ChartArea6.AxisX.ScaleView.Size = 360.0R
-        ChartArea6.AxisX.TitleAlignment = System.Drawing.StringAlignment.Near
-        ChartArea6.AxisX.TitleForeColor = System.Drawing.Color.Gainsboro
-        ChartArea6.AxisX2.LabelStyle.ForeColor = System.Drawing.Color.Gainsboro
-        ChartArea6.AxisY.LabelStyle.ForeColor = System.Drawing.Color.Gainsboro
-        ChartArea6.AxisY.LabelStyle.Interval = 10.0R
-        ChartArea6.AxisY.LineColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer))
-        ChartArea6.AxisY.MajorGrid.Interval = 5.0R
-        ChartArea6.AxisY.MajorGrid.LineColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer))
-        ChartArea6.AxisY.MajorTickMark.Interval = 5.0R
-        ChartArea6.AxisY.MajorTickMark.LineColor = System.Drawing.Color.White
-        ChartArea6.AxisY.MajorTickMark.Size = 0.25!
-        ChartArea6.AxisY.Maximum = 100.0R
-        ChartArea6.AxisY.Minimum = -50.0R
-        ChartArea6.AxisY.MinorGrid.LineColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(16, Byte), Integer), CType(CType(16, Byte), Integer))
-        ChartArea6.AxisY2.LabelStyle.ForeColor = System.Drawing.Color.Gainsboro
-        ChartArea6.BackColor = System.Drawing.Color.Black
-        ChartArea6.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.Center
-        ChartArea6.BackSecondaryColor = System.Drawing.Color.FromArgb(CType(CType(12, Byte), Integer), CType(CType(12, Byte), Integer), CType(CType(12, Byte), Integer))
-        ChartArea6.Name = "Outside"
-        Me.Enviro_Chart.ChartAreas.Add(ChartArea5)
-        Me.Enviro_Chart.ChartAreas.Add(ChartArea6)
-        Legend5.BackColor = System.Drawing.Color.Transparent
-        Legend5.DockedToChartArea = "Inside"
-        Legend5.Docking = System.Windows.Forms.DataVisualization.Charting.Docking.Left
-        Legend5.Font = New System.Drawing.Font("Agency FB", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Legend5.ForeColor = System.Drawing.Color.Gainsboro
-        Legend5.IsTextAutoFit = False
-        Legend5.LegendItemOrder = System.Windows.Forms.DataVisualization.Charting.LegendItemOrder.SameAsSeriesOrder
-        Legend5.LegendStyle = System.Windows.Forms.DataVisualization.Charting.LegendStyle.Column
-        Legend5.MaximumAutoSize = 100.0!
-        Legend5.Name = "Legend1"
-        Legend6.BackColor = System.Drawing.Color.Transparent
-        Legend6.DockedToChartArea = "Outside"
-        Legend6.Docking = System.Windows.Forms.DataVisualization.Charting.Docking.Left
-        Legend6.Font = New System.Drawing.Font("Agency FB", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Legend6.ForeColor = System.Drawing.Color.Gainsboro
-        Legend6.IsTextAutoFit = False
-        Legend6.LegendItemOrder = System.Windows.Forms.DataVisualization.Charting.LegendItemOrder.SameAsSeriesOrder
-        Legend6.LegendStyle = System.Windows.Forms.DataVisualization.Charting.LegendStyle.Column
-        Legend6.MaximumAutoSize = 100.0!
-        Legend6.Name = "Legend2"
-        Me.Enviro_Chart.Legends.Add(Legend5)
-        Me.Enviro_Chart.Legends.Add(Legend6)
+        ChartArea13.AxisX.IsLabelAutoFit = False
+        ChartArea13.AxisX.IsStartedFromZero = False
+        ChartArea13.AxisX.LabelStyle.Angle = 45
+        ChartArea13.AxisX.LabelStyle.ForeColor = System.Drawing.Color.Gainsboro
+        ChartArea13.AxisX.LabelStyle.Interval = 5.0R
+        ChartArea13.AxisX.LabelStyle.IntervalType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.[Auto]
+        ChartArea13.AxisX.LineColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer))
+        ChartArea13.AxisX.MajorGrid.Interval = 5.0R
+        ChartArea13.AxisX.MajorGrid.IntervalOffset = 1.0R
+        ChartArea13.AxisX.MajorGrid.LineColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer))
+        ChartArea13.AxisX.MajorTickMark.Interval = 5.0R
+        ChartArea13.AxisX.MajorTickMark.IntervalOffset = 1.0R
+        ChartArea13.AxisX.MajorTickMark.LineColor = System.Drawing.Color.White
+        ChartArea13.AxisX.MajorTickMark.Size = 0.25!
+        ChartArea13.AxisX.MinorGrid.Enabled = True
+        ChartArea13.AxisX.MinorGrid.Interval = 1.0R
+        ChartArea13.AxisX.MinorGrid.IntervalType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Seconds
+        ChartArea13.AxisX.MinorGrid.LineColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(16, Byte), Integer), CType(CType(16, Byte), Integer))
+        ChartArea13.AxisX.ScaleView.Position = 0R
+        ChartArea13.AxisX.ScaleView.Size = 360.0R
+        ChartArea13.AxisY.IsLabelAutoFit = False
+        ChartArea13.AxisY.LabelStyle.ForeColor = System.Drawing.Color.Gainsboro
+        ChartArea13.AxisY.LabelStyle.Interval = 10.0R
+        ChartArea13.AxisY.LineColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer))
+        ChartArea13.AxisY.MajorGrid.Interval = 5.0R
+        ChartArea13.AxisY.MajorGrid.LineColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer))
+        ChartArea13.AxisY.MajorTickMark.Interval = 5.0R
+        ChartArea13.AxisY.MajorTickMark.LineColor = System.Drawing.Color.White
+        ChartArea13.AxisY.MajorTickMark.Size = 0.25!
+        ChartArea13.AxisY.Maximum = 100.0R
+        ChartArea13.AxisY.Minimum = 0R
+        ChartArea13.AxisY.MinorGrid.LineColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(16, Byte), Integer), CType(CType(16, Byte), Integer))
+        ChartArea13.BackColor = System.Drawing.Color.Black
+        ChartArea13.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.Center
+        ChartArea13.BackSecondaryColor = System.Drawing.Color.FromArgb(CType(CType(12, Byte), Integer), CType(CType(12, Byte), Integer), CType(CType(12, Byte), Integer))
+        ChartArea13.Name = "Inside"
+        ChartArea14.AxisX.IsLabelAutoFit = False
+        ChartArea14.AxisX.LabelStyle.Angle = 45
+        ChartArea14.AxisX.LabelStyle.ForeColor = System.Drawing.Color.Gainsboro
+        ChartArea14.AxisX.LabelStyle.Interval = 5.0R
+        ChartArea14.AxisX.LineColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer))
+        ChartArea14.AxisX.MajorGrid.Interval = 5.0R
+        ChartArea14.AxisX.MajorGrid.IntervalOffset = 1.0R
+        ChartArea14.AxisX.MajorGrid.LineColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer))
+        ChartArea14.AxisX.MajorTickMark.Interval = 5.0R
+        ChartArea14.AxisX.MajorTickMark.IntervalOffset = 1.0R
+        ChartArea14.AxisX.MajorTickMark.LineColor = System.Drawing.Color.White
+        ChartArea14.AxisX.MajorTickMark.Size = 0.25!
+        ChartArea14.AxisX.MinorGrid.Enabled = True
+        ChartArea14.AxisX.MinorGrid.Interval = 1.0R
+        ChartArea14.AxisX.MinorGrid.IntervalType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Seconds
+        ChartArea14.AxisX.MinorGrid.LineColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(16, Byte), Integer), CType(CType(16, Byte), Integer))
+        ChartArea14.AxisX.ScaleView.Position = 0R
+        ChartArea14.AxisX.ScaleView.Size = 360.0R
+        ChartArea14.AxisX.TitleAlignment = System.Drawing.StringAlignment.Near
+        ChartArea14.AxisX.TitleForeColor = System.Drawing.Color.Gainsboro
+        ChartArea14.AxisX2.LabelStyle.ForeColor = System.Drawing.Color.Gainsboro
+        ChartArea14.AxisY.LabelStyle.ForeColor = System.Drawing.Color.Gainsboro
+        ChartArea14.AxisY.LabelStyle.Interval = 10.0R
+        ChartArea14.AxisY.LineColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer))
+        ChartArea14.AxisY.MajorGrid.Interval = 5.0R
+        ChartArea14.AxisY.MajorGrid.LineColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer))
+        ChartArea14.AxisY.MajorTickMark.Interval = 5.0R
+        ChartArea14.AxisY.MajorTickMark.LineColor = System.Drawing.Color.White
+        ChartArea14.AxisY.MajorTickMark.Size = 0.25!
+        ChartArea14.AxisY.Maximum = 100.0R
+        ChartArea14.AxisY.Minimum = -50.0R
+        ChartArea14.AxisY.MinorGrid.LineColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(16, Byte), Integer), CType(CType(16, Byte), Integer))
+        ChartArea14.AxisY2.LabelStyle.ForeColor = System.Drawing.Color.Gainsboro
+        ChartArea14.BackColor = System.Drawing.Color.Black
+        ChartArea14.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.Center
+        ChartArea14.BackSecondaryColor = System.Drawing.Color.FromArgb(CType(CType(12, Byte), Integer), CType(CType(12, Byte), Integer), CType(CType(12, Byte), Integer))
+        ChartArea14.Name = "Outside"
+        Me.Enviro_Chart.ChartAreas.Add(ChartArea13)
+        Me.Enviro_Chart.ChartAreas.Add(ChartArea14)
+        Legend11.BackColor = System.Drawing.Color.Transparent
+        Legend11.DockedToChartArea = "Inside"
+        Legend11.Docking = System.Windows.Forms.DataVisualization.Charting.Docking.Left
+        Legend11.Font = New System.Drawing.Font("Agency FB", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Legend11.ForeColor = System.Drawing.Color.Gainsboro
+        Legend11.IsTextAutoFit = False
+        Legend11.LegendItemOrder = System.Windows.Forms.DataVisualization.Charting.LegendItemOrder.SameAsSeriesOrder
+        Legend11.LegendStyle = System.Windows.Forms.DataVisualization.Charting.LegendStyle.Column
+        Legend11.MaximumAutoSize = 100.0!
+        Legend11.Name = "Legend1"
+        Legend12.BackColor = System.Drawing.Color.Transparent
+        Legend12.DockedToChartArea = "Outside"
+        Legend12.Docking = System.Windows.Forms.DataVisualization.Charting.Docking.Left
+        Legend12.Font = New System.Drawing.Font("Agency FB", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Legend12.ForeColor = System.Drawing.Color.Gainsboro
+        Legend12.IsTextAutoFit = False
+        Legend12.LegendItemOrder = System.Windows.Forms.DataVisualization.Charting.LegendItemOrder.SameAsSeriesOrder
+        Legend12.LegendStyle = System.Windows.Forms.DataVisualization.Charting.LegendStyle.Column
+        Legend12.MaximumAutoSize = 100.0!
+        Legend12.Name = "Legend2"
+        Me.Enviro_Chart.Legends.Add(Legend11)
+        Me.Enviro_Chart.Legends.Add(Legend12)
         Me.Enviro_Chart.Location = New System.Drawing.Point(6, 7)
         Me.Enviro_Chart.Name = "Enviro_Chart"
-        Series19.BorderWidth = 2
-        Series19.ChartArea = "Inside"
-        Series19.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline
-        Series19.Color = System.Drawing.Color.DodgerBlue
-        Series19.LabelBackColor = System.Drawing.Color.Black
-        Series19.LabelForeColor = System.Drawing.Color.Gainsboro
-        Series19.Legend = "Legend1"
-        Series19.LegendText = "Inside Temperature"
-        Series19.MarkerStep = 15
-        Series19.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Circle
-        Series19.Name = "Series1"
-        Series19.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Time
-        Series19.YValuesPerPoint = 6
-        Series20.BorderWidth = 2
-        Series20.ChartArea = "Inside"
-        Series20.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline
-        Series20.Color = System.Drawing.Color.MidnightBlue
-        Series20.LabelBackColor = System.Drawing.Color.Black
-        Series20.LabelForeColor = System.Drawing.Color.Gainsboro
-        Series20.Legend = "Legend1"
-        Series20.LegendText = "Inside Humidity"
-        Series20.MarkerStep = 15
-        Series20.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Circle
-        Series20.Name = "Series2"
-        Series20.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Time
-        Series20.YValuesPerPoint = 6
-        Series21.BorderWidth = 2
-        Series21.ChartArea = "Outside"
-        Series21.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline
-        Series21.Color = System.Drawing.Color.Goldenrod
-        Series21.LabelBackColor = System.Drawing.Color.Black
-        Series21.LabelForeColor = System.Drawing.Color.Gainsboro
-        Series21.Legend = "Legend2"
-        Series21.LegendText = "Outside Temperature"
-        Series21.MarkerStep = 15
-        Series21.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Circle
-        Series21.Name = "Series3"
-        Series21.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Time
-        Series21.YValuesPerPoint = 6
-        Series22.BorderWidth = 2
-        Series22.ChartArea = "Outside"
-        Series22.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline
-        Series22.Color = System.Drawing.Color.SaddleBrown
-        Series22.LabelBackColor = System.Drawing.Color.Black
-        Series22.LabelForeColor = System.Drawing.Color.Gainsboro
-        Series22.Legend = "Legend2"
-        Series22.LegendText = "Outside Humidity"
-        Series22.MarkerStep = 15
-        Series22.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Circle
-        Series22.Name = "Series4"
-        Series22.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Time
-        Series22.YValuesPerPoint = 6
-        Me.Enviro_Chart.Series.Add(Series19)
-        Me.Enviro_Chart.Series.Add(Series20)
-        Me.Enviro_Chart.Series.Add(Series21)
-        Me.Enviro_Chart.Series.Add(Series22)
+        Series45.BorderWidth = 2
+        Series45.ChartArea = "Inside"
+        Series45.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline
+        Series45.Color = System.Drawing.Color.DodgerBlue
+        Series45.LabelBackColor = System.Drawing.Color.Black
+        Series45.LabelForeColor = System.Drawing.Color.Gainsboro
+        Series45.Legend = "Legend1"
+        Series45.LegendText = "Inside Temperature"
+        Series45.MarkerStep = 15
+        Series45.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Circle
+        Series45.Name = "Series1"
+        Series45.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Time
+        Series45.YValuesPerPoint = 6
+        Series46.BorderWidth = 2
+        Series46.ChartArea = "Inside"
+        Series46.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline
+        Series46.Color = System.Drawing.Color.MidnightBlue
+        Series46.LabelBackColor = System.Drawing.Color.Black
+        Series46.LabelForeColor = System.Drawing.Color.Gainsboro
+        Series46.Legend = "Legend1"
+        Series46.LegendText = "Inside Humidity"
+        Series46.MarkerStep = 15
+        Series46.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Circle
+        Series46.Name = "Series2"
+        Series46.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Time
+        Series46.YValuesPerPoint = 6
+        Series47.BorderWidth = 2
+        Series47.ChartArea = "Outside"
+        Series47.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline
+        Series47.Color = System.Drawing.Color.Goldenrod
+        Series47.LabelBackColor = System.Drawing.Color.Black
+        Series47.LabelForeColor = System.Drawing.Color.Gainsboro
+        Series47.Legend = "Legend2"
+        Series47.LegendText = "Outside Temperature"
+        Series47.MarkerStep = 15
+        Series47.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Circle
+        Series47.Name = "Series3"
+        Series47.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Time
+        Series47.YValuesPerPoint = 6
+        Series48.BorderWidth = 2
+        Series48.ChartArea = "Outside"
+        Series48.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline
+        Series48.Color = System.Drawing.Color.SaddleBrown
+        Series48.LabelBackColor = System.Drawing.Color.Black
+        Series48.LabelForeColor = System.Drawing.Color.Gainsboro
+        Series48.Legend = "Legend2"
+        Series48.LegendText = "Outside Humidity"
+        Series48.MarkerStep = 15
+        Series48.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Circle
+        Series48.Name = "Series4"
+        Series48.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Time
+        Series48.YValuesPerPoint = 6
+        Me.Enviro_Chart.Series.Add(Series45)
+        Me.Enviro_Chart.Series.Add(Series46)
+        Me.Enviro_Chart.Series.Add(Series47)
+        Me.Enviro_Chart.Series.Add(Series48)
         Me.Enviro_Chart.Size = New System.Drawing.Size(1375, 935)
         Me.Enviro_Chart.TabIndex = 0
         Me.Enviro_Chart.Text = "Chart1"
-        Title5.BackColor = System.Drawing.Color.Transparent
-        Title5.DockedToChartArea = "Inside"
-        Title5.Docking = System.Windows.Forms.DataVisualization.Charting.Docking.Left
-        Title5.DockingOffset = 2
-        Title5.Font = New System.Drawing.Font("Arial Rounded MT Bold", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Title5.ForeColor = System.Drawing.Color.DodgerBlue
-        Title5.IsDockedInsideChartArea = False
-        Title5.Name = "Inside Environment"
-        Title5.Text = "Inside Environment"
-        Title5.TextOrientation = System.Windows.Forms.DataVisualization.Charting.TextOrientation.Rotated270
-        Title6.BackColor = System.Drawing.Color.Transparent
-        Title6.DockedToChartArea = "Outside"
-        Title6.Docking = System.Windows.Forms.DataVisualization.Charting.Docking.Left
-        Title6.DockingOffset = 2
-        Title6.Font = New System.Drawing.Font("Arial Rounded MT Bold", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Title6.ForeColor = System.Drawing.Color.Goldenrod
-        Title6.IsDockedInsideChartArea = False
-        Title6.Name = "Outside Environment"
-        Title6.Text = "Outside Environment"
-        Title6.TextOrientation = System.Windows.Forms.DataVisualization.Charting.TextOrientation.Rotated270
-        Me.Enviro_Chart.Titles.Add(Title5)
-        Me.Enviro_Chart.Titles.Add(Title6)
+        Title11.BackColor = System.Drawing.Color.Transparent
+        Title11.DockedToChartArea = "Inside"
+        Title11.Docking = System.Windows.Forms.DataVisualization.Charting.Docking.Left
+        Title11.DockingOffset = 2
+        Title11.Font = New System.Drawing.Font("Arial Rounded MT Bold", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Title11.ForeColor = System.Drawing.Color.DodgerBlue
+        Title11.IsDockedInsideChartArea = False
+        Title11.Name = "Inside Environment"
+        Title11.Text = "Inside Environment"
+        Title11.TextOrientation = System.Windows.Forms.DataVisualization.Charting.TextOrientation.Rotated270
+        Title12.BackColor = System.Drawing.Color.Transparent
+        Title12.DockedToChartArea = "Outside"
+        Title12.Docking = System.Windows.Forms.DataVisualization.Charting.Docking.Left
+        Title12.DockingOffset = 2
+        Title12.Font = New System.Drawing.Font("Arial Rounded MT Bold", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Title12.ForeColor = System.Drawing.Color.Goldenrod
+        Title12.IsDockedInsideChartArea = False
+        Title12.Name = "Outside Environment"
+        Title12.Text = "Outside Environment"
+        Title12.TextOrientation = System.Windows.Forms.DataVisualization.Charting.TextOrientation.Rotated270
+        Me.Enviro_Chart.Titles.Add(Title11)
+        Me.Enviro_Chart.Titles.Add(Title12)
         '
         'Electrical_Page
         '
+        Me.Electrical_Page.Controls.Add(Me.Electrical_SC_T2)
+        Me.Electrical_Page.Controls.Add(Me.Electrical_NC_T2)
+        Me.Electrical_Page.Controls.Add(Me.Electrical_SB_T2)
+        Me.Electrical_Page.Controls.Add(Me.Electrical_NB_T2)
+        Me.Electrical_Page.Controls.Add(Me.Electrical_SA_T2)
+        Me.Electrical_Page.Controls.Add(Me.Electrical_NA_T2)
         Me.Electrical_Page.Controls.Add(Me.Electrical_SC_UN2)
         Me.Electrical_Page.Controls.Add(Me.Electrical_NC_UN2)
         Me.Electrical_Page.Controls.Add(Me.Electrical_SB_UN2)
         Me.Electrical_Page.Controls.Add(Me.Electrical_NB_UN2)
         Me.Electrical_Page.Controls.Add(Me.Electrical_SA_UN2)
         Me.Electrical_Page.Controls.Add(Me.Electrical_NA_UN2)
-        Me.Electrical_Page.Controls.Add(Me.BasicIndicator94)
-        Me.Electrical_Page.Controls.Add(Me.BasicIndicator10)
-        Me.Electrical_Page.Controls.Add(Me.BasicIndicator93)
-        Me.Electrical_Page.Controls.Add(Me.BasicIndicator8)
-        Me.Electrical_Page.Controls.Add(Me.BasicIndicator22)
-        Me.Electrical_Page.Controls.Add(Me.BasicIndicator96)
         Me.Electrical_Page.Controls.Add(Me.Electrical_SC_MIN2)
         Me.Electrical_Page.Controls.Add(Me.Electrical_NC_MIN2)
         Me.Electrical_Page.Controls.Add(Me.Electrical_SB_MIN2)
@@ -23688,126 +23560,6 @@ Partial Class Dashboard_Page
         Me.Electrical_NA_UN2.Size = New System.Drawing.Size(118, 38)
         Me.Electrical_NA_UN2.TabIndex = 387
         Me.Electrical_NA_UN2.Text = "UNIT"
-        '
-        'BasicIndicator94
-        '
-        Me.BasicIndicator94.Color1 = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer))
-        Me.BasicIndicator94.Color2 = System.Drawing.Color.Green
-        Me.BasicIndicator94.Color3 = System.Drawing.Color.Red
-        Me.BasicIndicator94.ComComponent = Me.PLC
-        Me.BasicIndicator94.Font = New System.Drawing.Font("Agency FB", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BasicIndicator94.ForeColor = System.Drawing.Color.Silver
-        Me.BasicIndicator94.Location = New System.Drawing.Point(681, 861)
-        Me.BasicIndicator94.Name = "BasicIndicator94"
-        Me.BasicIndicator94.OutlineColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer))
-        Me.BasicIndicator94.OutlineWidth = 5
-        Me.BasicIndicator94.OutputType = MfgControl.AdvancedHMI.Controls.OutputType.MomentarySet
-        Me.BasicIndicator94.SelectColor2 = False
-        Me.BasicIndicator94.SelectColor3 = False
-        Me.BasicIndicator94.Shape = MfgControl.AdvancedHMI.Controls.Indicator.ShapeTypes.Rectangle
-        Me.BasicIndicator94.Size = New System.Drawing.Size(267, 57)
-        Me.BasicIndicator94.TabIndex = 383
-        Me.BasicIndicator94.Text = "South Phase C to GROUND"
-        '
-        'BasicIndicator10
-        '
-        Me.BasicIndicator10.Color1 = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer))
-        Me.BasicIndicator10.Color2 = System.Drawing.Color.Green
-        Me.BasicIndicator10.Color3 = System.Drawing.Color.Red
-        Me.BasicIndicator10.ComComponent = Me.PLC
-        Me.BasicIndicator10.Font = New System.Drawing.Font("Agency FB", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BasicIndicator10.ForeColor = System.Drawing.Color.Silver
-        Me.BasicIndicator10.Location = New System.Drawing.Point(1601, 253)
-        Me.BasicIndicator10.Name = "BasicIndicator10"
-        Me.BasicIndicator10.OutlineColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer))
-        Me.BasicIndicator10.OutlineWidth = 5
-        Me.BasicIndicator10.OutputType = MfgControl.AdvancedHMI.Controls.OutputType.MomentarySet
-        Me.BasicIndicator10.SelectColor2 = False
-        Me.BasicIndicator10.SelectColor3 = False
-        Me.BasicIndicator10.Shape = MfgControl.AdvancedHMI.Controls.Indicator.ShapeTypes.Rectangle
-        Me.BasicIndicator10.Size = New System.Drawing.Size(267, 57)
-        Me.BasicIndicator10.TabIndex = 383
-        Me.BasicIndicator10.Text = "North Phase C to GROUND"
-        '
-        'BasicIndicator93
-        '
-        Me.BasicIndicator93.Color1 = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer))
-        Me.BasicIndicator93.Color2 = System.Drawing.Color.Green
-        Me.BasicIndicator93.Color3 = System.Drawing.Color.Red
-        Me.BasicIndicator93.ComComponent = Me.PLC
-        Me.BasicIndicator93.Font = New System.Drawing.Font("Agency FB", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BasicIndicator93.ForeColor = System.Drawing.Color.Silver
-        Me.BasicIndicator93.Location = New System.Drawing.Point(360, 862)
-        Me.BasicIndicator93.Name = "BasicIndicator93"
-        Me.BasicIndicator93.OutlineColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer))
-        Me.BasicIndicator93.OutlineWidth = 5
-        Me.BasicIndicator93.OutputType = MfgControl.AdvancedHMI.Controls.OutputType.MomentarySet
-        Me.BasicIndicator93.SelectColor2 = False
-        Me.BasicIndicator93.SelectColor3 = False
-        Me.BasicIndicator93.Shape = MfgControl.AdvancedHMI.Controls.Indicator.ShapeTypes.Rectangle
-        Me.BasicIndicator93.Size = New System.Drawing.Size(267, 57)
-        Me.BasicIndicator93.TabIndex = 383
-        Me.BasicIndicator93.Text = "South Phase B to GROUND"
-        '
-        'BasicIndicator8
-        '
-        Me.BasicIndicator8.Color1 = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer))
-        Me.BasicIndicator8.Color2 = System.Drawing.Color.Green
-        Me.BasicIndicator8.Color3 = System.Drawing.Color.Red
-        Me.BasicIndicator8.ComComponent = Me.PLC
-        Me.BasicIndicator8.Font = New System.Drawing.Font("Agency FB", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BasicIndicator8.ForeColor = System.Drawing.Color.Silver
-        Me.BasicIndicator8.Location = New System.Drawing.Point(1280, 254)
-        Me.BasicIndicator8.Name = "BasicIndicator8"
-        Me.BasicIndicator8.OutlineColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer))
-        Me.BasicIndicator8.OutlineWidth = 5
-        Me.BasicIndicator8.OutputType = MfgControl.AdvancedHMI.Controls.OutputType.MomentarySet
-        Me.BasicIndicator8.SelectColor2 = False
-        Me.BasicIndicator8.SelectColor3 = False
-        Me.BasicIndicator8.Shape = MfgControl.AdvancedHMI.Controls.Indicator.ShapeTypes.Rectangle
-        Me.BasicIndicator8.Size = New System.Drawing.Size(267, 57)
-        Me.BasicIndicator8.TabIndex = 383
-        Me.BasicIndicator8.Text = "North Phase B to GROUND"
-        '
-        'BasicIndicator22
-        '
-        Me.BasicIndicator22.Color1 = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer))
-        Me.BasicIndicator22.Color2 = System.Drawing.Color.Green
-        Me.BasicIndicator22.Color3 = System.Drawing.Color.Red
-        Me.BasicIndicator22.ComComponent = Me.PLC
-        Me.BasicIndicator22.Font = New System.Drawing.Font("Agency FB", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BasicIndicator22.ForeColor = System.Drawing.Color.Silver
-        Me.BasicIndicator22.Location = New System.Drawing.Point(39, 863)
-        Me.BasicIndicator22.Name = "BasicIndicator22"
-        Me.BasicIndicator22.OutlineColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer))
-        Me.BasicIndicator22.OutlineWidth = 5
-        Me.BasicIndicator22.OutputType = MfgControl.AdvancedHMI.Controls.OutputType.MomentarySet
-        Me.BasicIndicator22.SelectColor2 = False
-        Me.BasicIndicator22.SelectColor3 = False
-        Me.BasicIndicator22.Shape = MfgControl.AdvancedHMI.Controls.Indicator.ShapeTypes.Rectangle
-        Me.BasicIndicator22.Size = New System.Drawing.Size(267, 57)
-        Me.BasicIndicator22.TabIndex = 383
-        Me.BasicIndicator22.Text = "South Phase A to GROUND"
-        '
-        'BasicIndicator96
-        '
-        Me.BasicIndicator96.Color1 = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer))
-        Me.BasicIndicator96.Color2 = System.Drawing.Color.Green
-        Me.BasicIndicator96.Color3 = System.Drawing.Color.Red
-        Me.BasicIndicator96.ComComponent = Me.PLC
-        Me.BasicIndicator96.Font = New System.Drawing.Font("Agency FB", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BasicIndicator96.ForeColor = System.Drawing.Color.Silver
-        Me.BasicIndicator96.Location = New System.Drawing.Point(959, 255)
-        Me.BasicIndicator96.Name = "BasicIndicator96"
-        Me.BasicIndicator96.OutlineColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer))
-        Me.BasicIndicator96.OutlineWidth = 5
-        Me.BasicIndicator96.OutputType = MfgControl.AdvancedHMI.Controls.OutputType.MomentarySet
-        Me.BasicIndicator96.SelectColor2 = False
-        Me.BasicIndicator96.SelectColor3 = False
-        Me.BasicIndicator96.Shape = MfgControl.AdvancedHMI.Controls.Indicator.ShapeTypes.Rectangle
-        Me.BasicIndicator96.Size = New System.Drawing.Size(267, 57)
-        Me.BasicIndicator96.TabIndex = 383
-        Me.BasicIndicator96.Text = "North Phase A to GROUND"
         '
         'Electrical_SC_MIN2
         '
@@ -24280,75 +24032,75 @@ Partial Class Dashboard_Page
         'NorthSubDeltaChart
         '
         Me.NorthSubDeltaChart.BackColor = System.Drawing.Color.Transparent
-        CustomLabel1.ForeColor = System.Drawing.Color.Green
-        CustomLabel1.FromPosition = -1.0R
-        CustomLabel1.Text = "A"
-        CustomLabel1.ToPosition = 1.0R
-        CustomLabel2.ForeColor = System.Drawing.Color.Green
-        CustomLabel2.Text = "B"
-        CustomLabel2.ToPosition = 2.0R
-        CustomLabel3.ForeColor = System.Drawing.Color.Green
-        CustomLabel3.FromPosition = 1.0R
-        CustomLabel3.Text = "C"
-        CustomLabel3.ToPosition = 3.0R
-        ChartArea7.AxisX.CustomLabels.Add(CustomLabel1)
-        ChartArea7.AxisX.CustomLabels.Add(CustomLabel2)
-        ChartArea7.AxisX.CustomLabels.Add(CustomLabel3)
-        ChartArea7.AxisX.InterlacedColor = System.Drawing.Color.Gray
-        ChartArea7.AxisX.Interval = 120.0R
-        ChartArea7.AxisX.IsInterlaced = True
-        ChartArea7.AxisX.IsLabelAutoFit = False
-        ChartArea7.AxisX.LabelStyle.Font = New System.Drawing.Font("Franklin Gothic Heavy", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        ChartArea7.AxisX.LabelStyle.ForeColor = System.Drawing.Color.FromArgb(CType(CType(213, Byte), Integer), CType(CType(213, Byte), Integer), CType(CType(213, Byte), Integer))
-        ChartArea7.AxisX.LineColor = System.Drawing.Color.Gray
-        ChartArea7.AxisX.MajorGrid.Interval = 120.0R
-        ChartArea7.AxisX.MajorGrid.LineColor = System.Drawing.Color.Gray
-        ChartArea7.AxisX.MajorTickMark.LineColor = System.Drawing.Color.Gray
-        ChartArea7.AxisX.Maximum = 360.0R
-        ChartArea7.AxisX.Minimum = 0R
-        ChartArea7.AxisX.MinorGrid.LineColor = System.Drawing.Color.Gray
-        ChartArea7.AxisY.IntervalAutoMode = System.Windows.Forms.DataVisualization.Charting.IntervalAutoMode.VariableCount
-        ChartArea7.AxisY.IsLabelAutoFit = False
-        ChartArea7.AxisY.LabelAutoFitMaxFontSize = 12
-        ChartArea7.AxisY.LabelStyle.Font = New System.Drawing.Font("Bahnschrift", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        ChartArea7.AxisY.LabelStyle.ForeColor = System.Drawing.Color.FromArgb(CType(CType(213, Byte), Integer), CType(CType(213, Byte), Integer), CType(CType(213, Byte), Integer))
-        ChartArea7.AxisY.LabelStyle.IntervalOffsetType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.[Auto]
-        ChartArea7.AxisY.LineColor = System.Drawing.Color.Gray
-        ChartArea7.AxisY.MajorGrid.LineColor = System.Drawing.Color.Gray
-        ChartArea7.AxisY.MajorTickMark.LineColor = System.Drawing.Color.Gray
-        ChartArea7.AxisY.MajorTickMark.Size = 0!
-        ChartArea7.AxisY.Minimum = 0R
-        ChartArea7.AxisY.ScaleBreakStyle.CollapsibleSpaceThreshold = 50
-        ChartArea7.BackColor = System.Drawing.Color.Black
-        ChartArea7.BackImage = "C:\Users\cowanr\OneDrive - Trillium Health Products\Desktop\Facility Monitor\Adva" &
+        CustomLabel7.ForeColor = System.Drawing.Color.Green
+        CustomLabel7.FromPosition = -1.0R
+        CustomLabel7.Text = "A"
+        CustomLabel7.ToPosition = 1.0R
+        CustomLabel8.ForeColor = System.Drawing.Color.Green
+        CustomLabel8.Text = "B"
+        CustomLabel8.ToPosition = 2.0R
+        CustomLabel9.ForeColor = System.Drawing.Color.Green
+        CustomLabel9.FromPosition = 1.0R
+        CustomLabel9.Text = "C"
+        CustomLabel9.ToPosition = 3.0R
+        ChartArea15.AxisX.CustomLabels.Add(CustomLabel7)
+        ChartArea15.AxisX.CustomLabels.Add(CustomLabel8)
+        ChartArea15.AxisX.CustomLabels.Add(CustomLabel9)
+        ChartArea15.AxisX.InterlacedColor = System.Drawing.Color.Gray
+        ChartArea15.AxisX.Interval = 120.0R
+        ChartArea15.AxisX.IsInterlaced = True
+        ChartArea15.AxisX.IsLabelAutoFit = False
+        ChartArea15.AxisX.LabelStyle.Font = New System.Drawing.Font("Franklin Gothic Heavy", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        ChartArea15.AxisX.LabelStyle.ForeColor = System.Drawing.Color.FromArgb(CType(CType(213, Byte), Integer), CType(CType(213, Byte), Integer), CType(CType(213, Byte), Integer))
+        ChartArea15.AxisX.LineColor = System.Drawing.Color.Gray
+        ChartArea15.AxisX.MajorGrid.Interval = 120.0R
+        ChartArea15.AxisX.MajorGrid.LineColor = System.Drawing.Color.Gray
+        ChartArea15.AxisX.MajorTickMark.LineColor = System.Drawing.Color.Gray
+        ChartArea15.AxisX.Maximum = 360.0R
+        ChartArea15.AxisX.Minimum = 0R
+        ChartArea15.AxisX.MinorGrid.LineColor = System.Drawing.Color.Gray
+        ChartArea15.AxisY.IntervalAutoMode = System.Windows.Forms.DataVisualization.Charting.IntervalAutoMode.VariableCount
+        ChartArea15.AxisY.IsLabelAutoFit = False
+        ChartArea15.AxisY.LabelAutoFitMaxFontSize = 12
+        ChartArea15.AxisY.LabelStyle.Font = New System.Drawing.Font("Bahnschrift", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        ChartArea15.AxisY.LabelStyle.ForeColor = System.Drawing.Color.FromArgb(CType(CType(213, Byte), Integer), CType(CType(213, Byte), Integer), CType(CType(213, Byte), Integer))
+        ChartArea15.AxisY.LabelStyle.IntervalOffsetType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.[Auto]
+        ChartArea15.AxisY.LineColor = System.Drawing.Color.Gray
+        ChartArea15.AxisY.MajorGrid.LineColor = System.Drawing.Color.Gray
+        ChartArea15.AxisY.MajorTickMark.LineColor = System.Drawing.Color.Gray
+        ChartArea15.AxisY.MajorTickMark.Size = 0!
+        ChartArea15.AxisY.Minimum = 0R
+        ChartArea15.AxisY.ScaleBreakStyle.CollapsibleSpaceThreshold = 50
+        ChartArea15.BackColor = System.Drawing.Color.Black
+        ChartArea15.BackImage = "C:\Users\cowanr\OneDrive - Trillium Health Products\Desktop\Facility Monitor\Adva" &
     "ncedHMI\Resources\GOODBG.png"
-        ChartArea7.BackImageAlignment = System.Windows.Forms.DataVisualization.Charting.ChartImageAlignmentStyle.Center
-        ChartArea7.BackImageWrapMode = System.Windows.Forms.DataVisualization.Charting.ChartImageWrapMode.Scaled
-        ChartArea7.BackSecondaryColor = System.Drawing.Color.Transparent
-        ChartArea7.BorderColor = System.Drawing.Color.Gray
-        ChartArea7.Name = "ChartArea1"
-        Me.NorthSubDeltaChart.ChartAreas.Add(ChartArea7)
+        ChartArea15.BackImageAlignment = System.Windows.Forms.DataVisualization.Charting.ChartImageAlignmentStyle.Center
+        ChartArea15.BackImageWrapMode = System.Windows.Forms.DataVisualization.Charting.ChartImageWrapMode.Scaled
+        ChartArea15.BackSecondaryColor = System.Drawing.Color.Transparent
+        ChartArea15.BorderColor = System.Drawing.Color.Gray
+        ChartArea15.Name = "ChartArea1"
+        Me.NorthSubDeltaChart.ChartAreas.Add(ChartArea15)
         Me.NorthSubDeltaChart.Location = New System.Drawing.Point(1108, 316)
         Me.NorthSubDeltaChart.Name = "NorthSubDeltaChart"
-        Series23.BorderColor = System.Drawing.Color.Lime
-        Series23.BorderWidth = 4
-        Series23.ChartArea = "ChartArea1"
-        Series23.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Polar
-        Series23.Name = "Actual"
-        Series23.Points.Add(DataPoint1)
-        Series23.Points.Add(DataPoint2)
-        Series23.Points.Add(DataPoint3)
-        Series23.Points.Add(DataPoint4)
-        Series24.BorderColor = System.Drawing.Color.Gray
-        Series24.ChartArea = "ChartArea1"
-        Series24.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Polar
-        Series24.Name = "SP"
-        Series24.Points.Add(DataPoint5)
-        Series24.Points.Add(DataPoint6)
-        Series24.Points.Add(DataPoint7)
-        Series24.Points.Add(DataPoint8)
-        Me.NorthSubDeltaChart.Series.Add(Series23)
-        Me.NorthSubDeltaChart.Series.Add(Series24)
+        Series49.BorderColor = System.Drawing.Color.Lime
+        Series49.BorderWidth = 4
+        Series49.ChartArea = "ChartArea1"
+        Series49.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Polar
+        Series49.Name = "Actual"
+        Series49.Points.Add(DataPoint17)
+        Series49.Points.Add(DataPoint18)
+        Series49.Points.Add(DataPoint19)
+        Series49.Points.Add(DataPoint20)
+        Series50.BorderColor = System.Drawing.Color.Gray
+        Series50.ChartArea = "ChartArea1"
+        Series50.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Polar
+        Series50.Name = "SP"
+        Series50.Points.Add(DataPoint21)
+        Series50.Points.Add(DataPoint22)
+        Series50.Points.Add(DataPoint23)
+        Series50.Points.Add(DataPoint24)
+        Me.NorthSubDeltaChart.Series.Add(Series49)
+        Me.NorthSubDeltaChart.Series.Add(Series50)
         Me.NorthSubDeltaChart.Size = New System.Drawing.Size(611, 608)
         Me.NorthSubDeltaChart.TabIndex = 389
         Me.NorthSubDeltaChart.Text = "Chart1"
@@ -24356,75 +24108,75 @@ Partial Class Dashboard_Page
         'SouthSubDeltaChart
         '
         Me.SouthSubDeltaChart.BackColor = System.Drawing.Color.Transparent
-        CustomLabel4.ForeColor = System.Drawing.Color.Green
-        CustomLabel4.FromPosition = -1.0R
-        CustomLabel4.Text = "A"
-        CustomLabel4.ToPosition = 1.0R
-        CustomLabel5.ForeColor = System.Drawing.Color.Green
-        CustomLabel5.Text = "B"
-        CustomLabel5.ToPosition = 2.0R
-        CustomLabel6.ForeColor = System.Drawing.Color.Green
-        CustomLabel6.FromPosition = 1.0R
-        CustomLabel6.Text = "C"
-        CustomLabel6.ToPosition = 3.0R
-        ChartArea8.AxisX.CustomLabels.Add(CustomLabel4)
-        ChartArea8.AxisX.CustomLabels.Add(CustomLabel5)
-        ChartArea8.AxisX.CustomLabels.Add(CustomLabel6)
-        ChartArea8.AxisX.InterlacedColor = System.Drawing.Color.Gray
-        ChartArea8.AxisX.Interval = 120.0R
-        ChartArea8.AxisX.IsInterlaced = True
-        ChartArea8.AxisX.IsLabelAutoFit = False
-        ChartArea8.AxisX.LabelStyle.Font = New System.Drawing.Font("Franklin Gothic Heavy", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        ChartArea8.AxisX.LabelStyle.ForeColor = System.Drawing.Color.FromArgb(CType(CType(213, Byte), Integer), CType(CType(213, Byte), Integer), CType(CType(213, Byte), Integer))
-        ChartArea8.AxisX.LineColor = System.Drawing.Color.Gray
-        ChartArea8.AxisX.MajorGrid.Interval = 120.0R
-        ChartArea8.AxisX.MajorGrid.LineColor = System.Drawing.Color.Gray
-        ChartArea8.AxisX.MajorTickMark.LineColor = System.Drawing.Color.Gray
-        ChartArea8.AxisX.Maximum = 360.0R
-        ChartArea8.AxisX.Minimum = 0R
-        ChartArea8.AxisX.MinorGrid.LineColor = System.Drawing.Color.Gray
-        ChartArea8.AxisY.IntervalAutoMode = System.Windows.Forms.DataVisualization.Charting.IntervalAutoMode.VariableCount
-        ChartArea8.AxisY.IsLabelAutoFit = False
-        ChartArea8.AxisY.LabelAutoFitMaxFontSize = 12
-        ChartArea8.AxisY.LabelStyle.Font = New System.Drawing.Font("Bahnschrift", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        ChartArea8.AxisY.LabelStyle.ForeColor = System.Drawing.Color.FromArgb(CType(CType(213, Byte), Integer), CType(CType(213, Byte), Integer), CType(CType(213, Byte), Integer))
-        ChartArea8.AxisY.LabelStyle.IntervalOffsetType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.[Auto]
-        ChartArea8.AxisY.LineColor = System.Drawing.Color.Gray
-        ChartArea8.AxisY.MajorGrid.LineColor = System.Drawing.Color.Gray
-        ChartArea8.AxisY.MajorTickMark.LineColor = System.Drawing.Color.Gray
-        ChartArea8.AxisY.MajorTickMark.Size = 0!
-        ChartArea8.AxisY.Minimum = 0R
-        ChartArea8.AxisY.ScaleBreakStyle.CollapsibleSpaceThreshold = 50
-        ChartArea8.BackColor = System.Drawing.Color.Black
-        ChartArea8.BackImage = "C:\Users\cowanr\OneDrive - Trillium Health Products\Desktop\Facility Monitor\Adva" &
+        CustomLabel10.ForeColor = System.Drawing.Color.Green
+        CustomLabel10.FromPosition = -1.0R
+        CustomLabel10.Text = "A"
+        CustomLabel10.ToPosition = 1.0R
+        CustomLabel11.ForeColor = System.Drawing.Color.Green
+        CustomLabel11.Text = "B"
+        CustomLabel11.ToPosition = 2.0R
+        CustomLabel12.ForeColor = System.Drawing.Color.Green
+        CustomLabel12.FromPosition = 1.0R
+        CustomLabel12.Text = "C"
+        CustomLabel12.ToPosition = 3.0R
+        ChartArea16.AxisX.CustomLabels.Add(CustomLabel10)
+        ChartArea16.AxisX.CustomLabels.Add(CustomLabel11)
+        ChartArea16.AxisX.CustomLabels.Add(CustomLabel12)
+        ChartArea16.AxisX.InterlacedColor = System.Drawing.Color.Gray
+        ChartArea16.AxisX.Interval = 120.0R
+        ChartArea16.AxisX.IsInterlaced = True
+        ChartArea16.AxisX.IsLabelAutoFit = False
+        ChartArea16.AxisX.LabelStyle.Font = New System.Drawing.Font("Franklin Gothic Heavy", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        ChartArea16.AxisX.LabelStyle.ForeColor = System.Drawing.Color.FromArgb(CType(CType(213, Byte), Integer), CType(CType(213, Byte), Integer), CType(CType(213, Byte), Integer))
+        ChartArea16.AxisX.LineColor = System.Drawing.Color.Gray
+        ChartArea16.AxisX.MajorGrid.Interval = 120.0R
+        ChartArea16.AxisX.MajorGrid.LineColor = System.Drawing.Color.Gray
+        ChartArea16.AxisX.MajorTickMark.LineColor = System.Drawing.Color.Gray
+        ChartArea16.AxisX.Maximum = 360.0R
+        ChartArea16.AxisX.Minimum = 0R
+        ChartArea16.AxisX.MinorGrid.LineColor = System.Drawing.Color.Gray
+        ChartArea16.AxisY.IntervalAutoMode = System.Windows.Forms.DataVisualization.Charting.IntervalAutoMode.VariableCount
+        ChartArea16.AxisY.IsLabelAutoFit = False
+        ChartArea16.AxisY.LabelAutoFitMaxFontSize = 12
+        ChartArea16.AxisY.LabelStyle.Font = New System.Drawing.Font("Bahnschrift", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        ChartArea16.AxisY.LabelStyle.ForeColor = System.Drawing.Color.FromArgb(CType(CType(213, Byte), Integer), CType(CType(213, Byte), Integer), CType(CType(213, Byte), Integer))
+        ChartArea16.AxisY.LabelStyle.IntervalOffsetType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.[Auto]
+        ChartArea16.AxisY.LineColor = System.Drawing.Color.Gray
+        ChartArea16.AxisY.MajorGrid.LineColor = System.Drawing.Color.Gray
+        ChartArea16.AxisY.MajorTickMark.LineColor = System.Drawing.Color.Gray
+        ChartArea16.AxisY.MajorTickMark.Size = 0!
+        ChartArea16.AxisY.Minimum = 0R
+        ChartArea16.AxisY.ScaleBreakStyle.CollapsibleSpaceThreshold = 50
+        ChartArea16.BackColor = System.Drawing.Color.Black
+        ChartArea16.BackImage = "C:\Users\cowanr\OneDrive - Trillium Health Products\Desktop\Facility Monitor\Adva" &
     "ncedHMI\Resources\GOODBG.png"
-        ChartArea8.BackImageAlignment = System.Windows.Forms.DataVisualization.Charting.ChartImageAlignmentStyle.Center
-        ChartArea8.BackImageWrapMode = System.Windows.Forms.DataVisualization.Charting.ChartImageWrapMode.Scaled
-        ChartArea8.BackSecondaryColor = System.Drawing.Color.Transparent
-        ChartArea8.BorderColor = System.Drawing.Color.Gray
-        ChartArea8.Name = "ChartArea1"
-        Me.SouthSubDeltaChart.ChartAreas.Add(ChartArea8)
+        ChartArea16.BackImageAlignment = System.Windows.Forms.DataVisualization.Charting.ChartImageAlignmentStyle.Center
+        ChartArea16.BackImageWrapMode = System.Windows.Forms.DataVisualization.Charting.ChartImageWrapMode.Scaled
+        ChartArea16.BackSecondaryColor = System.Drawing.Color.Transparent
+        ChartArea16.BorderColor = System.Drawing.Color.Gray
+        ChartArea16.Name = "ChartArea1"
+        Me.SouthSubDeltaChart.ChartAreas.Add(ChartArea16)
         Me.SouthSubDeltaChart.Location = New System.Drawing.Point(188, 3)
         Me.SouthSubDeltaChart.Name = "SouthSubDeltaChart"
-        Series25.BorderColor = System.Drawing.Color.Lime
-        Series25.BorderWidth = 4
-        Series25.ChartArea = "ChartArea1"
-        Series25.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Polar
-        Series25.Name = "Actual"
-        Series25.Points.Add(DataPoint9)
-        Series25.Points.Add(DataPoint10)
-        Series25.Points.Add(DataPoint11)
-        Series25.Points.Add(DataPoint12)
-        Series26.BorderColor = System.Drawing.Color.Gray
-        Series26.ChartArea = "ChartArea1"
-        Series26.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Polar
-        Series26.Name = "SP"
-        Series26.Points.Add(DataPoint13)
-        Series26.Points.Add(DataPoint14)
-        Series26.Points.Add(DataPoint15)
-        Series26.Points.Add(DataPoint16)
-        Me.SouthSubDeltaChart.Series.Add(Series25)
-        Me.SouthSubDeltaChart.Series.Add(Series26)
+        Series51.BorderColor = System.Drawing.Color.Lime
+        Series51.BorderWidth = 4
+        Series51.ChartArea = "ChartArea1"
+        Series51.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Polar
+        Series51.Name = "Actual"
+        Series51.Points.Add(DataPoint25)
+        Series51.Points.Add(DataPoint26)
+        Series51.Points.Add(DataPoint27)
+        Series51.Points.Add(DataPoint28)
+        Series52.BorderColor = System.Drawing.Color.Gray
+        Series52.ChartArea = "ChartArea1"
+        Series52.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Polar
+        Series52.Name = "SP"
+        Series52.Points.Add(DataPoint29)
+        Series52.Points.Add(DataPoint30)
+        Series52.Points.Add(DataPoint31)
+        Series52.Points.Add(DataPoint32)
+        Me.SouthSubDeltaChart.Series.Add(Series51)
+        Me.SouthSubDeltaChart.Series.Add(Series52)
         Me.SouthSubDeltaChart.Size = New System.Drawing.Size(611, 608)
         Me.SouthSubDeltaChart.TabIndex = 389
         Me.SouthSubDeltaChart.Text = "Chart1"
@@ -24669,7 +24421,7 @@ Partial Class Dashboard_Page
         '
         Me.Electrical_SA_G2.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Electrical_SA_G2.BackColor = System.Drawing.Color.Transparent
-        Me.Electrical_SA_G2.BackgroundImage = Global.MfgControl.AdvancedHMI.My.Resources.Resources.GOODBG
+        Me.Electrical_SA_G2.BackgroundImage = CType(resources.GetObject("Electrical_SA_G2.BackgroundImage"), System.Drawing.Image)
         Me.Electrical_SA_G2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Electrical_SA_G2.Band1Color = System.Drawing.Color.Maroon
         Me.Electrical_SA_G2.Band1EndValue = 999999.0R
@@ -24729,7 +24481,7 @@ Partial Class Dashboard_Page
         '
         Me.Electrical_SB_G2.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Electrical_SB_G2.BackColor = System.Drawing.Color.Transparent
-        Me.Electrical_SB_G2.BackgroundImage = Global.MfgControl.AdvancedHMI.My.Resources.Resources.GOODBG
+        Me.Electrical_SB_G2.BackgroundImage = CType(resources.GetObject("Electrical_SB_G2.BackgroundImage"), System.Drawing.Image)
         Me.Electrical_SB_G2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Electrical_SB_G2.Band1Color = System.Drawing.Color.Maroon
         Me.Electrical_SB_G2.Band1EndValue = 999999.0R
@@ -24789,7 +24541,7 @@ Partial Class Dashboard_Page
         '
         Me.Electrical_SC_G2.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Electrical_SC_G2.BackColor = System.Drawing.Color.Transparent
-        Me.Electrical_SC_G2.BackgroundImage = Global.MfgControl.AdvancedHMI.My.Resources.Resources.GOODBG
+        Me.Electrical_SC_G2.BackgroundImage = CType(resources.GetObject("Electrical_SC_G2.BackgroundImage"), System.Drawing.Image)
         Me.Electrical_SC_G2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Electrical_SC_G2.Band1Color = System.Drawing.Color.Maroon
         Me.Electrical_SC_G2.Band1EndValue = 999999.0R
@@ -24849,7 +24601,7 @@ Partial Class Dashboard_Page
         '
         Me.Electrical_NA_G2.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Electrical_NA_G2.BackColor = System.Drawing.Color.Transparent
-        Me.Electrical_NA_G2.BackgroundImage = Global.MfgControl.AdvancedHMI.My.Resources.Resources.GOODBG
+        Me.Electrical_NA_G2.BackgroundImage = CType(resources.GetObject("Electrical_NA_G2.BackgroundImage"), System.Drawing.Image)
         Me.Electrical_NA_G2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Electrical_NA_G2.Band1Color = System.Drawing.Color.Maroon
         Me.Electrical_NA_G2.Band1EndValue = 999999.0R
@@ -24909,7 +24661,7 @@ Partial Class Dashboard_Page
         '
         Me.Electrical_NB_G2.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Electrical_NB_G2.BackColor = System.Drawing.Color.Transparent
-        Me.Electrical_NB_G2.BackgroundImage = Global.MfgControl.AdvancedHMI.My.Resources.Resources.GOODBG
+        Me.Electrical_NB_G2.BackgroundImage = CType(resources.GetObject("Electrical_NB_G2.BackgroundImage"), System.Drawing.Image)
         Me.Electrical_NB_G2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Electrical_NB_G2.Band1Color = System.Drawing.Color.Maroon
         Me.Electrical_NB_G2.Band1EndValue = 999999.0R
@@ -24969,7 +24721,7 @@ Partial Class Dashboard_Page
         '
         Me.Electrical_NC_G2.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Electrical_NC_G2.BackColor = System.Drawing.Color.Transparent
-        Me.Electrical_NC_G2.BackgroundImage = Global.MfgControl.AdvancedHMI.My.Resources.Resources.GOODBG
+        Me.Electrical_NC_G2.BackgroundImage = CType(resources.GetObject("Electrical_NC_G2.BackgroundImage"), System.Drawing.Image)
         Me.Electrical_NC_G2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Electrical_NC_G2.Band1Color = System.Drawing.Color.Maroon
         Me.Electrical_NC_G2.Band1EndValue = 999999.0R
@@ -25007,25 +24759,31 @@ Partial Class Dashboard_Page
         '
         'Main_Page
         '
+        Me.Main_Page.Controls.Add(Me.Steam_Dem_Med_T1)
+        Me.Main_Page.Controls.Add(Me.Steam_Dem_Low_T1)
+        Me.Main_Page.Controls.Add(Me.Steam_Pr_Main_T1)
+        Me.Main_Page.Controls.Add(Me.Steam_Pr_Low_T1)
+        Me.Main_Page.Controls.Add(Me.Steam_Pr_Med_T1)
+        Me.Main_Page.Controls.Add(Me.Water_Fl_Hot_T1)
+        Me.Main_Page.Controls.Add(Me.Water_Tp_Hot_T1)
+        Me.Main_Page.Controls.Add(Me.Water_Sup_City_VT1)
+        Me.Main_Page.Controls.Add(Me.Water_FH_Hot_T1)
+        Me.Main_Page.Controls.Add(Me.Water_FH_Cold_T1)
+        Me.Main_Page.Controls.Add(Me.Steam_Flow_T1)
+        Me.Main_Page.Controls.Add(Me.Water_Pr_Hot_T1)
+        Me.Main_Page.Controls.Add(Me.Water_Pr_Cold_T1)
+        Me.Main_Page.Controls.Add(Me.Air_Pr_Main_T1)
         Me.Main_Page.Controls.Add(Me.Electrical_SA_V1)
         Me.Main_Page.Controls.Add(Me.Electrical_SA_I1)
         Me.Main_Page.Controls.Add(Me.Electrical_SA_G1)
         Me.Main_Page.Controls.Add(Me.PLCAlarmIcon1)
         Me.Main_Page.Controls.Add(Me.LogAlarmIcon1)
-        Me.Main_Page.Controls.Add(Me.Water_Fl_Hot_Title)
         Me.Main_Page.Controls.Add(Me.Water_Fl_Hot_V1)
         Me.Main_Page.Controls.Add(Me.Water_Fl_Hot_MIN1)
         Me.Main_Page.Controls.Add(Me.Water_Fl_Hot_MAX1)
         Me.Main_Page.Controls.Add(Me.Water_Fl_Hot_UN1)
         Me.Main_Page.Controls.Add(Me.Water_Fl_Hot_I1)
         Me.Main_Page.Controls.Add(Me.Water_Fl_Hot_G1)
-        Me.Main_Page.Controls.Add(Me.BasicIndicator115)
-        Me.Main_Page.Controls.Add(Me.BasicIndicator120)
-        Me.Main_Page.Controls.Add(Me.BasicIndicator107)
-        Me.Main_Page.Controls.Add(Me.BasicIndicator104)
-        Me.Main_Page.Controls.Add(Me.BasicIndicator121)
-        Me.Main_Page.Controls.Add(Me.BasicIndicator125)
-        Me.Main_Page.Controls.Add(Me.BasicIndicator124)
         Me.Main_Page.Controls.Add(Me.Steam_Pr_Med_V1)
         Me.Main_Page.Controls.Add(Me.Electrical_SC_V1)
         Me.Main_Page.Controls.Add(Me.Electrical_SB_V1)
@@ -25067,8 +24825,6 @@ Partial Class Dashboard_Page
         Me.Main_Page.Controls.Add(Me.Water_Tp_Hot_G1)
         Me.Main_Page.Controls.Add(Me.Water_FH_Hot_I1)
         Me.Main_Page.Controls.Add(Me.Water_FH_Cold_I1)
-        Me.Main_Page.Controls.Add(Me.BasicIndicator110)
-        Me.Main_Page.Controls.Add(Me.BasicIndicator109)
         Me.Main_Page.Controls.Add(Me.Water_Pr_Hot_MIN1)
         Me.Main_Page.Controls.Add(Me.Water_Pr_Cold_MIN1)
         Me.Main_Page.Controls.Add(Me.Water_Pr_Hot_MAX1)
@@ -25101,10 +24857,6 @@ Partial Class Dashboard_Page
         Me.Main_Page.Controls.Add(Me.ClockDisplay)
         Me.Main_Page.Controls.Add(Me.DateDisplay)
         Me.Main_Page.Controls.Add(Me.WaterAlarmIcon1)
-        Me.Main_Page.Controls.Add(Me.BasicIndicator114)
-        Me.Main_Page.Controls.Add(Me.BasicIndicator113)
-        Me.Main_Page.Controls.Add(Me.BasicIndicator112)
-        Me.Main_Page.Controls.Add(Me.BasicIndicator111)
         Me.Main_Page.Controls.Add(Me.SteamAlarmIcon1)
         Me.Main_Page.Controls.Add(Me.ElecAlarmDisp1)
         Me.Main_Page.Controls.Add(Me.AirAlarmDisp1)
@@ -25207,7 +24959,7 @@ Partial Class Dashboard_Page
         'Electrical_SA_G1
         '
         Me.Electrical_SA_G1.BackColor = System.Drawing.Color.Transparent
-        Me.Electrical_SA_G1.BackgroundImage = Global.MfgControl.AdvancedHMI.My.Resources.Resources.GOODBG
+        Me.Electrical_SA_G1.BackgroundImage = CType(resources.GetObject("Electrical_SA_G1.BackgroundImage"), System.Drawing.Image)
         Me.Electrical_SA_G1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.Electrical_SA_G1.Band1Color = System.Drawing.Color.Maroon
         Me.Electrical_SA_G1.Band1EndValue = 999999.0R
@@ -25245,9 +24997,9 @@ Partial Class Dashboard_Page
         'PLCAlarmIcon1
         '
         Me.PLCAlarmIcon1.BackColor = System.Drawing.Color.Black
-        Me.PLCAlarmIcon1.BackgroundImage = Global.MfgControl.AdvancedHMI.My.Resources.Resources.GOODBG
+        Me.PLCAlarmIcon1.BackgroundImage = CType(resources.GetObject("PLCAlarmIcon1.BackgroundImage"), System.Drawing.Image)
         Me.PLCAlarmIcon1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PLCAlarmIcon1.Image = Global.MfgControl.AdvancedHMI.My.Resources.Resources.StatusPLCGood
+        Me.PLCAlarmIcon1.Image = Global.MfgControl.AdvancedHMI.My.Resources.Resources.ICON_PLCGood
         Me.PLCAlarmIcon1.Location = New System.Drawing.Point(952, 710)
         Me.PLCAlarmIcon1.Name = "PLCAlarmIcon1"
         Me.PLCAlarmIcon1.Size = New System.Drawing.Size(119, 123)
@@ -25258,35 +25010,15 @@ Partial Class Dashboard_Page
         'LogAlarmIcon1
         '
         Me.LogAlarmIcon1.BackColor = System.Drawing.Color.Black
-        Me.LogAlarmIcon1.BackgroundImage = Global.MfgControl.AdvancedHMI.My.Resources.Resources.GOODBG
+        Me.LogAlarmIcon1.BackgroundImage = CType(resources.GetObject("LogAlarmIcon1.BackgroundImage"), System.Drawing.Image)
         Me.LogAlarmIcon1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.LogAlarmIcon1.Image = Global.MfgControl.AdvancedHMI.My.Resources.Resources.LogFileGood
+        Me.LogAlarmIcon1.Image = Global.MfgControl.AdvancedHMI.My.Resources.Resources.ICON_LogGood
         Me.LogAlarmIcon1.Location = New System.Drawing.Point(824, 710)
         Me.LogAlarmIcon1.Name = "LogAlarmIcon1"
         Me.LogAlarmIcon1.Size = New System.Drawing.Size(119, 123)
         Me.LogAlarmIcon1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.LogAlarmIcon1.TabIndex = 423
         Me.LogAlarmIcon1.TabStop = False
-        '
-        'Water_Fl_Hot_Title
-        '
-        Me.Water_Fl_Hot_Title.Color1 = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer))
-        Me.Water_Fl_Hot_Title.Color2 = System.Drawing.Color.Green
-        Me.Water_Fl_Hot_Title.Color3 = System.Drawing.Color.Red
-        Me.Water_Fl_Hot_Title.ComComponent = Me.PLC
-        Me.Water_Fl_Hot_Title.Font = New System.Drawing.Font("Agency FB", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Water_Fl_Hot_Title.ForeColor = System.Drawing.Color.Silver
-        Me.Water_Fl_Hot_Title.Location = New System.Drawing.Point(392, 385)
-        Me.Water_Fl_Hot_Title.Name = "Water_Fl_Hot_Title"
-        Me.Water_Fl_Hot_Title.OutlineColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer))
-        Me.Water_Fl_Hot_Title.OutlineWidth = 5
-        Me.Water_Fl_Hot_Title.OutputType = MfgControl.AdvancedHMI.Controls.OutputType.MomentarySet
-        Me.Water_Fl_Hot_Title.SelectColor2 = False
-        Me.Water_Fl_Hot_Title.SelectColor3 = False
-        Me.Water_Fl_Hot_Title.Shape = MfgControl.AdvancedHMI.Controls.Indicator.ShapeTypes.Rectangle
-        Me.Water_Fl_Hot_Title.Size = New System.Drawing.Size(222, 41)
-        Me.Water_Fl_Hot_Title.TabIndex = 419
-        Me.Water_Fl_Hot_Title.Text = "Hot Water Flow Rate"
         '
         'Water_Fl_Hot_V1
         '
@@ -25469,146 +25201,6 @@ Partial Class Dashboard_Page
         Me.Water_Fl_Hot_G1.Size = New System.Drawing.Size(271, 155)
         Me.Water_Fl_Hot_G1.TabIndex = 420
         Me.Water_Fl_Hot_G1.Value = 0R
-        '
-        'BasicIndicator115
-        '
-        Me.BasicIndicator115.Color1 = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer))
-        Me.BasicIndicator115.Color2 = System.Drawing.Color.Green
-        Me.BasicIndicator115.Color3 = System.Drawing.Color.Red
-        Me.BasicIndicator115.ComComponent = Me.PLC
-        Me.BasicIndicator115.Font = New System.Drawing.Font("Agency FB", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BasicIndicator115.ForeColor = System.Drawing.Color.Silver
-        Me.BasicIndicator115.Location = New System.Drawing.Point(392, 605)
-        Me.BasicIndicator115.Name = "BasicIndicator115"
-        Me.BasicIndicator115.OutlineColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer))
-        Me.BasicIndicator115.OutlineWidth = 5
-        Me.BasicIndicator115.OutputType = MfgControl.AdvancedHMI.Controls.OutputType.MomentarySet
-        Me.BasicIndicator115.SelectColor2 = False
-        Me.BasicIndicator115.SelectColor3 = False
-        Me.BasicIndicator115.Shape = MfgControl.AdvancedHMI.Controls.Indicator.ShapeTypes.Rectangle
-        Me.BasicIndicator115.Size = New System.Drawing.Size(222, 41)
-        Me.BasicIndicator115.TabIndex = 346
-        Me.BasicIndicator115.Text = "Hot Water Temperature"
-        '
-        'BasicIndicator120
-        '
-        Me.BasicIndicator120.Color1 = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer))
-        Me.BasicIndicator120.Color2 = System.Drawing.Color.Green
-        Me.BasicIndicator120.Color3 = System.Drawing.Color.Red
-        Me.BasicIndicator120.ComComponent = Me.PLC
-        Me.BasicIndicator120.Font = New System.Drawing.Font("Agency FB", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BasicIndicator120.ForeColor = System.Drawing.Color.Silver
-        Me.BasicIndicator120.Location = New System.Drawing.Point(392, 170)
-        Me.BasicIndicator120.Name = "BasicIndicator120"
-        Me.BasicIndicator120.OutlineColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer))
-        Me.BasicIndicator120.OutlineWidth = 5
-        Me.BasicIndicator120.OutputType = MfgControl.AdvancedHMI.Controls.OutputType.MomentarySet
-        Me.BasicIndicator120.SelectColor2 = False
-        Me.BasicIndicator120.SelectColor3 = False
-        Me.BasicIndicator120.Shape = MfgControl.AdvancedHMI.Controls.Indicator.ShapeTypes.Rectangle
-        Me.BasicIndicator120.Size = New System.Drawing.Size(222, 41)
-        Me.BasicIndicator120.TabIndex = 352
-        Me.BasicIndicator120.Text = "City Water Supply Pressure"
-        '
-        'BasicIndicator107
-        '
-        Me.BasicIndicator107.Color1 = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer))
-        Me.BasicIndicator107.Color2 = System.Drawing.Color.Green
-        Me.BasicIndicator107.Color3 = System.Drawing.Color.Red
-        Me.BasicIndicator107.ComComponent = Me.PLC
-        Me.BasicIndicator107.Font = New System.Drawing.Font("Agency FB", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BasicIndicator107.ForeColor = System.Drawing.Color.Silver
-        Me.BasicIndicator107.Location = New System.Drawing.Point(987, 169)
-        Me.BasicIndicator107.Name = "BasicIndicator107"
-        Me.BasicIndicator107.OutlineColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer))
-        Me.BasicIndicator107.OutlineWidth = 5
-        Me.BasicIndicator107.OutputType = MfgControl.AdvancedHMI.Controls.OutputType.MomentarySet
-        Me.BasicIndicator107.SelectColor2 = False
-        Me.BasicIndicator107.SelectColor3 = False
-        Me.BasicIndicator107.Shape = MfgControl.AdvancedHMI.Controls.Indicator.ShapeTypes.Rectangle
-        Me.BasicIndicator107.Size = New System.Drawing.Size(222, 41)
-        Me.BasicIndicator107.TabIndex = 351
-        Me.BasicIndicator107.Text = "Hot Water Filter Health"
-        '
-        'BasicIndicator104
-        '
-        Me.BasicIndicator104.Color1 = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer))
-        Me.BasicIndicator104.Color2 = System.Drawing.Color.Green
-        Me.BasicIndicator104.Color3 = System.Drawing.Color.Red
-        Me.BasicIndicator104.ComComponent = Me.PLC
-        Me.BasicIndicator104.Font = New System.Drawing.Font("Agency FB", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BasicIndicator104.ForeColor = System.Drawing.Color.Silver
-        Me.BasicIndicator104.Location = New System.Drawing.Point(685, 169)
-        Me.BasicIndicator104.Name = "BasicIndicator104"
-        Me.BasicIndicator104.OutlineColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer))
-        Me.BasicIndicator104.OutlineWidth = 5
-        Me.BasicIndicator104.OutputType = MfgControl.AdvancedHMI.Controls.OutputType.MomentarySet
-        Me.BasicIndicator104.SelectColor2 = False
-        Me.BasicIndicator104.SelectColor3 = False
-        Me.BasicIndicator104.Shape = MfgControl.AdvancedHMI.Controls.Indicator.ShapeTypes.Rectangle
-        Me.BasicIndicator104.Size = New System.Drawing.Size(222, 41)
-        Me.BasicIndicator104.TabIndex = 353
-        Me.BasicIndicator104.Text = "City Water Filter Health"
-        '
-        'BasicIndicator121
-        '
-        Me.BasicIndicator121.Color1 = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer))
-        Me.BasicIndicator121.Color2 = System.Drawing.Color.Green
-        Me.BasicIndicator121.Color3 = System.Drawing.Color.Red
-        Me.BasicIndicator121.ComComponent = Me.PLC
-        Me.BasicIndicator121.Font = New System.Drawing.Font("Agency FB", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BasicIndicator121.ForeColor = System.Drawing.Color.Silver
-        Me.BasicIndicator121.Location = New System.Drawing.Point(1277, 605)
-        Me.BasicIndicator121.Name = "BasicIndicator121"
-        Me.BasicIndicator121.OutlineColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer))
-        Me.BasicIndicator121.OutlineWidth = 5
-        Me.BasicIndicator121.OutputType = MfgControl.AdvancedHMI.Controls.OutputType.MomentarySet
-        Me.BasicIndicator121.SelectColor2 = False
-        Me.BasicIndicator121.SelectColor3 = False
-        Me.BasicIndicator121.Shape = MfgControl.AdvancedHMI.Controls.Indicator.ShapeTypes.Rectangle
-        Me.BasicIndicator121.Size = New System.Drawing.Size(222, 41)
-        Me.BasicIndicator121.TabIndex = 298
-        Me.BasicIndicator121.Text = "(40 PSI) Valve %"
-        '
-        'BasicIndicator125
-        '
-        Me.BasicIndicator125.Color1 = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer))
-        Me.BasicIndicator125.Color2 = System.Drawing.Color.Green
-        Me.BasicIndicator125.Color3 = System.Drawing.Color.Red
-        Me.BasicIndicator125.ComComponent = Me.PLC
-        Me.BasicIndicator125.Font = New System.Drawing.Font("Agency FB", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BasicIndicator125.ForeColor = System.Drawing.Color.Silver
-        Me.BasicIndicator125.Location = New System.Drawing.Point(1277, 385)
-        Me.BasicIndicator125.Name = "BasicIndicator125"
-        Me.BasicIndicator125.OutlineColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer))
-        Me.BasicIndicator125.OutlineWidth = 5
-        Me.BasicIndicator125.OutputType = MfgControl.AdvancedHMI.Controls.OutputType.MomentarySet
-        Me.BasicIndicator125.SelectColor2 = False
-        Me.BasicIndicator125.SelectColor3 = False
-        Me.BasicIndicator125.Shape = MfgControl.AdvancedHMI.Controls.Indicator.ShapeTypes.Rectangle
-        Me.BasicIndicator125.Size = New System.Drawing.Size(222, 41)
-        Me.BasicIndicator125.TabIndex = 301
-        Me.BasicIndicator125.Text = "(30 PSI) Valve %"
-        '
-        'BasicIndicator124
-        '
-        Me.BasicIndicator124.Color1 = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer))
-        Me.BasicIndicator124.Color2 = System.Drawing.Color.Green
-        Me.BasicIndicator124.Color3 = System.Drawing.Color.Red
-        Me.BasicIndicator124.ComComponent = Me.PLC
-        Me.BasicIndicator124.Font = New System.Drawing.Font("Agency FB", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BasicIndicator124.ForeColor = System.Drawing.Color.Silver
-        Me.BasicIndicator124.Location = New System.Drawing.Point(1277, 170)
-        Me.BasicIndicator124.Name = "BasicIndicator124"
-        Me.BasicIndicator124.OutlineColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer))
-        Me.BasicIndicator124.OutlineWidth = 5
-        Me.BasicIndicator124.OutputType = MfgControl.AdvancedHMI.Controls.OutputType.MomentarySet
-        Me.BasicIndicator124.SelectColor2 = False
-        Me.BasicIndicator124.SelectColor3 = False
-        Me.BasicIndicator124.Shape = MfgControl.AdvancedHMI.Controls.Indicator.ShapeTypes.Rectangle
-        Me.BasicIndicator124.Size = New System.Drawing.Size(222, 41)
-        Me.BasicIndicator124.TabIndex = 299
-        Me.BasicIndicator124.Text = "Steam Flow Rate"
         '
         'Steam_Pr_Med_V1
         '
@@ -26247,7 +25839,7 @@ Partial Class Dashboard_Page
         'Electrical_SC_G1
         '
         Me.Electrical_SC_G1.BackColor = System.Drawing.Color.Transparent
-        Me.Electrical_SC_G1.BackgroundImage = Global.MfgControl.AdvancedHMI.My.Resources.Resources.GOODBG
+        Me.Electrical_SC_G1.BackgroundImage = CType(resources.GetObject("Electrical_SC_G1.BackgroundImage"), System.Drawing.Image)
         Me.Electrical_SC_G1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.Electrical_SC_G1.Band1Color = System.Drawing.Color.Maroon
         Me.Electrical_SC_G1.Band1EndValue = 999999.0R
@@ -26307,7 +25899,7 @@ Partial Class Dashboard_Page
         'Electrical_SB_G1
         '
         Me.Electrical_SB_G1.BackColor = System.Drawing.Color.Transparent
-        Me.Electrical_SB_G1.BackgroundImage = Global.MfgControl.AdvancedHMI.My.Resources.Resources.GOODBG
+        Me.Electrical_SB_G1.BackgroundImage = CType(resources.GetObject("Electrical_SB_G1.BackgroundImage"), System.Drawing.Image)
         Me.Electrical_SB_G1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.Electrical_SB_G1.Band1Color = System.Drawing.Color.Maroon
         Me.Electrical_SB_G1.Band1EndValue = 999999.0R
@@ -26387,7 +25979,7 @@ Partial Class Dashboard_Page
         'Electrical_NC_G1
         '
         Me.Electrical_NC_G1.BackColor = System.Drawing.Color.Transparent
-        Me.Electrical_NC_G1.BackgroundImage = Global.MfgControl.AdvancedHMI.My.Resources.Resources.GOODBG
+        Me.Electrical_NC_G1.BackgroundImage = CType(resources.GetObject("Electrical_NC_G1.BackgroundImage"), System.Drawing.Image)
         Me.Electrical_NC_G1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.Electrical_NC_G1.Band1Color = System.Drawing.Color.Maroon
         Me.Electrical_NC_G1.Band1EndValue = 999999.0R
@@ -26447,7 +26039,7 @@ Partial Class Dashboard_Page
         'Electrical_NB_G1
         '
         Me.Electrical_NB_G1.BackColor = System.Drawing.Color.Transparent
-        Me.Electrical_NB_G1.BackgroundImage = Global.MfgControl.AdvancedHMI.My.Resources.Resources.GOODBG
+        Me.Electrical_NB_G1.BackgroundImage = CType(resources.GetObject("Electrical_NB_G1.BackgroundImage"), System.Drawing.Image)
         Me.Electrical_NB_G1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.Electrical_NB_G1.Band1Color = System.Drawing.Color.Maroon
         Me.Electrical_NB_G1.Band1EndValue = 999999.0R
@@ -26507,7 +26099,7 @@ Partial Class Dashboard_Page
         'Electrical_NA_G1
         '
         Me.Electrical_NA_G1.BackColor = System.Drawing.Color.Transparent
-        Me.Electrical_NA_G1.BackgroundImage = Global.MfgControl.AdvancedHMI.My.Resources.Resources.GOODBG
+        Me.Electrical_NA_G1.BackgroundImage = CType(resources.GetObject("Electrical_NA_G1.BackgroundImage"), System.Drawing.Image)
         Me.Electrical_NA_G1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.Electrical_NA_G1.Band1Color = System.Drawing.Color.Maroon
         Me.Electrical_NA_G1.Band1EndValue = 999999.0R
@@ -26829,46 +26421,6 @@ Partial Class Dashboard_Page
         Me.Water_FH_Cold_I1.Size = New System.Drawing.Size(135, 135)
         Me.Water_FH_Cold_I1.TabIndex = 349
         '
-        'BasicIndicator110
-        '
-        Me.BasicIndicator110.Color1 = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer))
-        Me.BasicIndicator110.Color2 = System.Drawing.Color.Green
-        Me.BasicIndicator110.Color3 = System.Drawing.Color.Red
-        Me.BasicIndicator110.ComComponent = Me.PLC
-        Me.BasicIndicator110.Font = New System.Drawing.Font("Agency FB", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BasicIndicator110.ForeColor = System.Drawing.Color.Silver
-        Me.BasicIndicator110.Location = New System.Drawing.Point(57, 566)
-        Me.BasicIndicator110.Name = "BasicIndicator110"
-        Me.BasicIndicator110.OutlineColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer))
-        Me.BasicIndicator110.OutlineWidth = 5
-        Me.BasicIndicator110.OutputType = MfgControl.AdvancedHMI.Controls.OutputType.MomentarySet
-        Me.BasicIndicator110.SelectColor2 = False
-        Me.BasicIndicator110.SelectColor3 = False
-        Me.BasicIndicator110.Shape = MfgControl.AdvancedHMI.Controls.Indicator.ShapeTypes.Rectangle
-        Me.BasicIndicator110.Size = New System.Drawing.Size(267, 57)
-        Me.BasicIndicator110.TabIndex = 344
-        Me.BasicIndicator110.Text = "HOT WATER PRESSURE"
-        '
-        'BasicIndicator109
-        '
-        Me.BasicIndicator109.Color1 = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer))
-        Me.BasicIndicator109.Color2 = System.Drawing.Color.Green
-        Me.BasicIndicator109.Color3 = System.Drawing.Color.Red
-        Me.BasicIndicator109.ComComponent = Me.PLC
-        Me.BasicIndicator109.Font = New System.Drawing.Font("Agency FB", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BasicIndicator109.ForeColor = System.Drawing.Color.Silver
-        Me.BasicIndicator109.Location = New System.Drawing.Point(57, 249)
-        Me.BasicIndicator109.Name = "BasicIndicator109"
-        Me.BasicIndicator109.OutlineColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer))
-        Me.BasicIndicator109.OutlineWidth = 5
-        Me.BasicIndicator109.OutputType = MfgControl.AdvancedHMI.Controls.OutputType.MomentarySet
-        Me.BasicIndicator109.SelectColor2 = False
-        Me.BasicIndicator109.SelectColor3 = False
-        Me.BasicIndicator109.Shape = MfgControl.AdvancedHMI.Controls.Indicator.ShapeTypes.Rectangle
-        Me.BasicIndicator109.Size = New System.Drawing.Size(267, 57)
-        Me.BasicIndicator109.TabIndex = 343
-        Me.BasicIndicator109.Text = "CITY WATER PRESSURE"
-        '
         'Water_Pr_Hot_MIN1
         '
         Me.Water_Pr_Hot_MIN1.BackColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer))
@@ -27049,7 +26601,7 @@ Partial Class Dashboard_Page
         '
         Me.Water_Pr_Hot_G1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Water_Pr_Hot_G1.BackColor = System.Drawing.Color.Transparent
-        Me.Water_Pr_Hot_G1.BackgroundImage = Global.MfgControl.AdvancedHMI.My.Resources.Resources.GOODBG
+        Me.Water_Pr_Hot_G1.BackgroundImage = CType(resources.GetObject("Water_Pr_Hot_G1.BackgroundImage"), System.Drawing.Image)
         Me.Water_Pr_Hot_G1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Water_Pr_Hot_G1.Band1Color = System.Drawing.Color.Maroon
         Me.Water_Pr_Hot_G1.Band1EndValue = 999999.0R
@@ -27514,7 +27066,7 @@ Partial Class Dashboard_Page
         'Dash_ALM_Indicator
         '
         Me.Dash_ALM_Indicator.BackColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer))
-        Me.Dash_ALM_Indicator.BackgroundImage = Global.MfgControl.AdvancedHMI.My.Resources.Resources.GOODBG
+        Me.Dash_ALM_Indicator.BackgroundImage = CType(resources.GetObject("Dash_ALM_Indicator.BackgroundImage"), System.Drawing.Image)
         Me.Dash_ALM_Indicator.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Dash_ALM_Indicator.Color1 = System.Drawing.Color.Transparent
         Me.Dash_ALM_Indicator.Color2 = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
@@ -27691,7 +27243,7 @@ Partial Class Dashboard_Page
         'WaterAlarmIcon1
         '
         Me.WaterAlarmIcon1.BackColor = System.Drawing.Color.Transparent
-        Me.WaterAlarmIcon1.BackgroundImage = Global.MfgControl.AdvancedHMI.My.Resources.Resources.GOODBG
+        Me.WaterAlarmIcon1.BackgroundImage = CType(resources.GetObject("WaterAlarmIcon1.BackgroundImage"), System.Drawing.Image)
         Me.WaterAlarmIcon1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.WaterAlarmIcon1.Image = CType(resources.GetObject("WaterAlarmIcon1.Image"), System.Drawing.Image)
         Me.WaterAlarmIcon1.Location = New System.Drawing.Point(666, 469)
@@ -27701,90 +27253,10 @@ Partial Class Dashboard_Page
         Me.WaterAlarmIcon1.TabIndex = 208
         Me.WaterAlarmIcon1.TabStop = False
         '
-        'BasicIndicator114
-        '
-        Me.BasicIndicator114.Color1 = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer))
-        Me.BasicIndicator114.Color2 = System.Drawing.Color.Green
-        Me.BasicIndicator114.Color3 = System.Drawing.Color.Red
-        Me.BasicIndicator114.ComComponent = Me.PLC
-        Me.BasicIndicator114.Font = New System.Drawing.Font("Agency FB", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BasicIndicator114.ForeColor = System.Drawing.Color.Silver
-        Me.BasicIndicator114.Location = New System.Drawing.Point(1571, 251)
-        Me.BasicIndicator114.Name = "BasicIndicator114"
-        Me.BasicIndicator114.OutlineColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer))
-        Me.BasicIndicator114.OutlineWidth = 5
-        Me.BasicIndicator114.OutputType = MfgControl.AdvancedHMI.Controls.OutputType.MomentarySet
-        Me.BasicIndicator114.SelectColor2 = False
-        Me.BasicIndicator114.SelectColor3 = False
-        Me.BasicIndicator114.Shape = MfgControl.AdvancedHMI.Controls.Indicator.ShapeTypes.Rectangle
-        Me.BasicIndicator114.Size = New System.Drawing.Size(267, 57)
-        Me.BasicIndicator114.TabIndex = 262
-        Me.BasicIndicator114.Text = "SYSTEM STEAM PRESSURE"
-        '
-        'BasicIndicator113
-        '
-        Me.BasicIndicator113.Color1 = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer))
-        Me.BasicIndicator113.Color2 = System.Drawing.Color.Green
-        Me.BasicIndicator113.Color3 = System.Drawing.Color.Red
-        Me.BasicIndicator113.ComComponent = Me.PLC
-        Me.BasicIndicator113.Font = New System.Drawing.Font("Agency FB", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BasicIndicator113.ForeColor = System.Drawing.Color.Silver
-        Me.BasicIndicator113.Location = New System.Drawing.Point(1571, 568)
-        Me.BasicIndicator113.Name = "BasicIndicator113"
-        Me.BasicIndicator113.OutlineColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer))
-        Me.BasicIndicator113.OutlineWidth = 5
-        Me.BasicIndicator113.OutputType = MfgControl.AdvancedHMI.Controls.OutputType.MomentarySet
-        Me.BasicIndicator113.SelectColor2 = False
-        Me.BasicIndicator113.SelectColor3 = False
-        Me.BasicIndicator113.Shape = MfgControl.AdvancedHMI.Controls.Indicator.ShapeTypes.Rectangle
-        Me.BasicIndicator113.Size = New System.Drawing.Size(267, 57)
-        Me.BasicIndicator113.TabIndex = 262
-        Me.BasicIndicator113.Text = "(30PSI) STEAM PRESSURE"
-        '
-        'BasicIndicator112
-        '
-        Me.BasicIndicator112.Color1 = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer))
-        Me.BasicIndicator112.Color2 = System.Drawing.Color.Green
-        Me.BasicIndicator112.Color3 = System.Drawing.Color.Red
-        Me.BasicIndicator112.ComComponent = Me.PLC
-        Me.BasicIndicator112.Font = New System.Drawing.Font("Agency FB", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BasicIndicator112.ForeColor = System.Drawing.Color.Silver
-        Me.BasicIndicator112.Location = New System.Drawing.Point(1571, 886)
-        Me.BasicIndicator112.Name = "BasicIndicator112"
-        Me.BasicIndicator112.OutlineColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer))
-        Me.BasicIndicator112.OutlineWidth = 5
-        Me.BasicIndicator112.OutputType = MfgControl.AdvancedHMI.Controls.OutputType.MomentarySet
-        Me.BasicIndicator112.SelectColor2 = False
-        Me.BasicIndicator112.SelectColor3 = False
-        Me.BasicIndicator112.Shape = MfgControl.AdvancedHMI.Controls.Indicator.ShapeTypes.Rectangle
-        Me.BasicIndicator112.Size = New System.Drawing.Size(267, 57)
-        Me.BasicIndicator112.TabIndex = 262
-        Me.BasicIndicator112.Text = "(40PSI) STEAM PRESSURE"
-        '
-        'BasicIndicator111
-        '
-        Me.BasicIndicator111.Color1 = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer))
-        Me.BasicIndicator111.Color2 = System.Drawing.Color.Green
-        Me.BasicIndicator111.Color3 = System.Drawing.Color.Red
-        Me.BasicIndicator111.ComComponent = Me.PLC
-        Me.BasicIndicator111.Font = New System.Drawing.Font("Agency FB", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BasicIndicator111.ForeColor = System.Drawing.Color.Silver
-        Me.BasicIndicator111.Location = New System.Drawing.Point(57, 886)
-        Me.BasicIndicator111.Name = "BasicIndicator111"
-        Me.BasicIndicator111.OutlineColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer))
-        Me.BasicIndicator111.OutlineWidth = 5
-        Me.BasicIndicator111.OutputType = MfgControl.AdvancedHMI.Controls.OutputType.MomentarySet
-        Me.BasicIndicator111.SelectColor2 = False
-        Me.BasicIndicator111.SelectColor3 = False
-        Me.BasicIndicator111.Shape = MfgControl.AdvancedHMI.Controls.Indicator.ShapeTypes.Rectangle
-        Me.BasicIndicator111.Size = New System.Drawing.Size(267, 57)
-        Me.BasicIndicator111.TabIndex = 262
-        Me.BasicIndicator111.Text = "SYSTEM AIR PRESSURE"
-        '
         'SteamAlarmIcon1
         '
         Me.SteamAlarmIcon1.BackColor = System.Drawing.Color.Black
-        Me.SteamAlarmIcon1.BackgroundImage = Global.MfgControl.AdvancedHMI.My.Resources.Resources.GOODBG
+        Me.SteamAlarmIcon1.BackgroundImage = CType(resources.GetObject("SteamAlarmIcon1.BackgroundImage"), System.Drawing.Image)
         Me.SteamAlarmIcon1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.SteamAlarmIcon1.Image = CType(resources.GetObject("SteamAlarmIcon1.Image"), System.Drawing.Image)
         Me.SteamAlarmIcon1.Location = New System.Drawing.Point(1109, 469)
@@ -28429,7 +27901,7 @@ Partial Class Dashboard_Page
         'Air_Pr_Main_G1
         '
         Me.Air_Pr_Main_G1.BackColor = System.Drawing.Color.Transparent
-        Me.Air_Pr_Main_G1.BackgroundImage = Global.MfgControl.AdvancedHMI.My.Resources.Resources.GOODBG
+        Me.Air_Pr_Main_G1.BackgroundImage = CType(resources.GetObject("Air_Pr_Main_G1.BackgroundImage"), System.Drawing.Image)
         Me.Air_Pr_Main_G1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Air_Pr_Main_G1.Band1Color = System.Drawing.Color.Maroon
         Me.Air_Pr_Main_G1.Band1EndValue = 999999.0R
@@ -28468,7 +27940,7 @@ Partial Class Dashboard_Page
         'Steam_Pr_Med_G1
         '
         Me.Steam_Pr_Med_G1.BackColor = System.Drawing.Color.Transparent
-        Me.Steam_Pr_Med_G1.BackgroundImage = Global.MfgControl.AdvancedHMI.My.Resources.Resources.GOODBG
+        Me.Steam_Pr_Med_G1.BackgroundImage = CType(resources.GetObject("Steam_Pr_Med_G1.BackgroundImage"), System.Drawing.Image)
         Me.Steam_Pr_Med_G1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Steam_Pr_Med_G1.Band1Color = System.Drawing.Color.Maroon
         Me.Steam_Pr_Med_G1.Band1EndValue = 999999.0R
@@ -28507,7 +27979,7 @@ Partial Class Dashboard_Page
         'Steam_Pr_Low_G1
         '
         Me.Steam_Pr_Low_G1.BackColor = System.Drawing.Color.Transparent
-        Me.Steam_Pr_Low_G1.BackgroundImage = Global.MfgControl.AdvancedHMI.My.Resources.Resources.GOODBG
+        Me.Steam_Pr_Low_G1.BackgroundImage = CType(resources.GetObject("Steam_Pr_Low_G1.BackgroundImage"), System.Drawing.Image)
         Me.Steam_Pr_Low_G1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Steam_Pr_Low_G1.Band1Color = System.Drawing.Color.Maroon
         Me.Steam_Pr_Low_G1.Band1EndValue = 999999.0R
@@ -28546,7 +28018,7 @@ Partial Class Dashboard_Page
         'Steam_Pr_Main_G1
         '
         Me.Steam_Pr_Main_G1.BackColor = System.Drawing.Color.Transparent
-        Me.Steam_Pr_Main_G1.BackgroundImage = Global.MfgControl.AdvancedHMI.My.Resources.Resources.GOODBG
+        Me.Steam_Pr_Main_G1.BackgroundImage = CType(resources.GetObject("Steam_Pr_Main_G1.BackgroundImage"), System.Drawing.Image)
         Me.Steam_Pr_Main_G1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Steam_Pr_Main_G1.Band1Color = System.Drawing.Color.Maroon
         Me.Steam_Pr_Main_G1.Band1EndValue = 999999.0R
@@ -28585,7 +28057,7 @@ Partial Class Dashboard_Page
         'AirAlarmIcon1
         '
         Me.AirAlarmIcon1.BackColor = System.Drawing.Color.Black
-        Me.AirAlarmIcon1.BackgroundImage = Global.MfgControl.AdvancedHMI.My.Resources.Resources.GOODBG
+        Me.AirAlarmIcon1.BackgroundImage = CType(resources.GetObject("AirAlarmIcon1.BackgroundImage"), System.Drawing.Image)
         Me.AirAlarmIcon1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.AirAlarmIcon1.Image = CType(resources.GetObject("AirAlarmIcon1.Image"), System.Drawing.Image)
         Me.AirAlarmIcon1.Location = New System.Drawing.Point(706, 611)
@@ -28598,7 +28070,7 @@ Partial Class Dashboard_Page
         'ElecAlarmIcon1
         '
         Me.ElecAlarmIcon1.BackColor = System.Drawing.Color.Black
-        Me.ElecAlarmIcon1.BackgroundImage = Global.MfgControl.AdvancedHMI.My.Resources.Resources.GOODBG
+        Me.ElecAlarmIcon1.BackgroundImage = CType(resources.GetObject("ElecAlarmIcon1.BackgroundImage"), System.Drawing.Image)
         Me.ElecAlarmIcon1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ElecAlarmIcon1.Image = CType(resources.GetObject("ElecAlarmIcon1.Image"), System.Drawing.Image)
         Me.ElecAlarmIcon1.Location = New System.Drawing.Point(1069, 609)
@@ -28668,7 +28140,7 @@ Partial Class Dashboard_Page
         '
         Me.Water_Pr_Cold_G1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Water_Pr_Cold_G1.BackColor = System.Drawing.Color.Transparent
-        Me.Water_Pr_Cold_G1.BackgroundImage = Global.MfgControl.AdvancedHMI.My.Resources.Resources.GOODBG
+        Me.Water_Pr_Cold_G1.BackgroundImage = CType(resources.GetObject("Water_Pr_Cold_G1.BackgroundImage"), System.Drawing.Image)
         Me.Water_Pr_Cold_G1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Water_Pr_Cold_G1.Band1Color = System.Drawing.Color.Maroon
         Me.Water_Pr_Cold_G1.Band1EndValue = 999999.0R
@@ -29092,22 +28564,6 @@ Partial Class Dashboard_Page
         '
         'Setpoints_Page
         '
-        Me.Setpoints_Page.Controls.Add(Me.EVOHM_Max)
-        Me.Setpoints_Page.Controls.Add(Me.EVOHM_Min)
-        Me.Setpoints_Page.Controls.Add(Me.EVOTP_Max)
-        Me.Setpoints_Page.Controls.Add(Me.EVOTP_Min)
-        Me.Setpoints_Page.Controls.Add(Me.EVIHM_Max)
-        Me.Setpoints_Page.Controls.Add(Me.EVIHM_Min)
-        Me.Setpoints_Page.Controls.Add(Me.EVITP_Max)
-        Me.Setpoints_Page.Controls.Add(Me.EVITP_Min)
-        Me.Setpoints_Page.Controls.Add(Me.Label63)
-        Me.Setpoints_Page.Controls.Add(Me.Label62)
-        Me.Setpoints_Page.Controls.Add(Me.Label56)
-        Me.Setpoints_Page.Controls.Add(Me.Label54)
-        Me.Setpoints_Page.Controls.Add(Me.Label50)
-        Me.Setpoints_Page.Controls.Add(Me.Label39)
-        Me.Setpoints_Page.Controls.Add(Me.Label35)
-        Me.Setpoints_Page.Controls.Add(Me.Label34)
         Me.Setpoints_Page.Controls.Add(Me.EVOHM_High)
         Me.Setpoints_Page.Controls.Add(Me.EVOHM_Low)
         Me.Setpoints_Page.Controls.Add(Me.EVOTP_High)
@@ -29241,15 +28697,6 @@ Partial Class Dashboard_Page
         Me.Setpoints_Page.Controls.Add(Me.STFWP_Title)
         Me.Setpoints_Page.Controls.Add(Me.Label249)
         Me.Setpoints_Page.Controls.Add(Me.Label250)
-        Me.Setpoints_Page.Controls.Add(Me.ALP_Title)
-        Me.Setpoints_Page.Controls.Add(Me.ALP_High)
-        Me.Setpoints_Page.Controls.Add(Me.ALP_Low)
-        Me.Setpoints_Page.Controls.Add(Me.ALP_Max)
-        Me.Setpoints_Page.Controls.Add(Me.ALP_Min)
-        Me.Setpoints_Page.Controls.Add(Me.ALP_Unit)
-        Me.Setpoints_Page.Controls.Add(Me.ALP_Actual)
-        Me.Setpoints_Page.Controls.Add(Me.Label123)
-        Me.Setpoints_Page.Controls.Add(Me.Label87)
         Me.Setpoints_Page.Controls.Add(Me.HWFL_Max)
         Me.Setpoints_Page.Controls.Add(Me.HWFL_High)
         Me.Setpoints_Page.Controls.Add(Me.HWFL_Min)
@@ -29339,6 +28786,23 @@ Partial Class Dashboard_Page
         Me.Setpoints_Page.Controls.Add(Me.Label73)
         Me.Setpoints_Page.Controls.Add(Me.Label28)
         Me.Setpoints_Page.Controls.Add(Me.Label27)
+        Me.Setpoints_Page.Controls.Add(Me.EVOHM_Max)
+        Me.Setpoints_Page.Controls.Add(Me.EVOHM_Min)
+        Me.Setpoints_Page.Controls.Add(Me.EVOTP_Max)
+        Me.Setpoints_Page.Controls.Add(Me.EVOTP_Min)
+        Me.Setpoints_Page.Controls.Add(Me.EVIHM_Max)
+        Me.Setpoints_Page.Controls.Add(Me.EVIHM_Min)
+        Me.Setpoints_Page.Controls.Add(Me.EVITP_Max)
+        Me.Setpoints_Page.Controls.Add(Me.EVITP_Min)
+        Me.Setpoints_Page.Controls.Add(Me.ALP_Title)
+        Me.Setpoints_Page.Controls.Add(Me.ALP_High)
+        Me.Setpoints_Page.Controls.Add(Me.ALP_Low)
+        Me.Setpoints_Page.Controls.Add(Me.ALP_Max)
+        Me.Setpoints_Page.Controls.Add(Me.ALP_Min)
+        Me.Setpoints_Page.Controls.Add(Me.ALP_Unit)
+        Me.Setpoints_Page.Controls.Add(Me.ALP_Actual)
+        Me.Setpoints_Page.Controls.Add(Me.Label123)
+        Me.Setpoints_Page.Controls.Add(Me.Label87)
         Me.Setpoints_Page.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Setpoints_Page.Location = New System.Drawing.Point(14, 123)
         Me.Setpoints_Page.Name = "Setpoints_Page"
@@ -29368,7 +28832,7 @@ Partial Class Dashboard_Page
         Me.EVOHM_Max.KeypadShowCurrentValue = False
         Me.EVOHM_Max.KeypadText = Nothing
         Me.EVOHM_Max.KeypadWidth = 300
-        Me.EVOHM_Max.Location = New System.Drawing.Point(1804, 195)
+        Me.EVOHM_Max.Location = New System.Drawing.Point(1734, 143)
         Me.EVOHM_Max.Name = "EVOHM_Max"
         Me.EVOHM_Max.NumericFormat = "0"
         Me.EVOHM_Max.PLCAddressKeypad = ""
@@ -29409,7 +28873,7 @@ Partial Class Dashboard_Page
         Me.EVOHM_Min.KeypadShowCurrentValue = False
         Me.EVOHM_Min.KeypadText = Nothing
         Me.EVOHM_Min.KeypadWidth = 300
-        Me.EVOHM_Min.Location = New System.Drawing.Point(1656, 195)
+        Me.EVOHM_Min.Location = New System.Drawing.Point(1734, 143)
         Me.EVOHM_Min.Name = "EVOHM_Min"
         Me.EVOHM_Min.NumericFormat = "0"
         Me.EVOHM_Min.PLCAddressKeypad = ""
@@ -29450,7 +28914,7 @@ Partial Class Dashboard_Page
         Me.EVOTP_Max.KeypadShowCurrentValue = False
         Me.EVOTP_Max.KeypadText = Nothing
         Me.EVOTP_Max.KeypadWidth = 300
-        Me.EVOTP_Max.Location = New System.Drawing.Point(1804, 160)
+        Me.EVOTP_Max.Location = New System.Drawing.Point(1734, 143)
         Me.EVOTP_Max.Name = "EVOTP_Max"
         Me.EVOTP_Max.NumericFormat = "0"
         Me.EVOTP_Max.PLCAddressKeypad = ""
@@ -29491,7 +28955,7 @@ Partial Class Dashboard_Page
         Me.EVOTP_Min.KeypadShowCurrentValue = False
         Me.EVOTP_Min.KeypadText = Nothing
         Me.EVOTP_Min.KeypadWidth = 300
-        Me.EVOTP_Min.Location = New System.Drawing.Point(1656, 160)
+        Me.EVOTP_Min.Location = New System.Drawing.Point(1734, 143)
         Me.EVOTP_Min.Name = "EVOTP_Min"
         Me.EVOTP_Min.NumericFormat = "0"
         Me.EVOTP_Min.PLCAddressKeypad = ""
@@ -29532,7 +28996,7 @@ Partial Class Dashboard_Page
         Me.EVIHM_Max.KeypadShowCurrentValue = False
         Me.EVIHM_Max.KeypadText = Nothing
         Me.EVIHM_Max.KeypadWidth = 300
-        Me.EVIHM_Max.Location = New System.Drawing.Point(1804, 125)
+        Me.EVIHM_Max.Location = New System.Drawing.Point(1734, 143)
         Me.EVIHM_Max.Name = "EVIHM_Max"
         Me.EVIHM_Max.NumericFormat = "0"
         Me.EVIHM_Max.PLCAddressKeypad = ""
@@ -29573,7 +29037,7 @@ Partial Class Dashboard_Page
         Me.EVIHM_Min.KeypadShowCurrentValue = False
         Me.EVIHM_Min.KeypadText = Nothing
         Me.EVIHM_Min.KeypadWidth = 300
-        Me.EVIHM_Min.Location = New System.Drawing.Point(1656, 125)
+        Me.EVIHM_Min.Location = New System.Drawing.Point(1734, 143)
         Me.EVIHM_Min.Name = "EVIHM_Min"
         Me.EVIHM_Min.NumericFormat = "0"
         Me.EVIHM_Min.PLCAddressKeypad = ""
@@ -29614,7 +29078,7 @@ Partial Class Dashboard_Page
         Me.EVITP_Max.KeypadShowCurrentValue = False
         Me.EVITP_Max.KeypadText = Nothing
         Me.EVITP_Max.KeypadWidth = 300
-        Me.EVITP_Max.Location = New System.Drawing.Point(1804, 90)
+        Me.EVITP_Max.Location = New System.Drawing.Point(1734, 143)
         Me.EVITP_Max.Name = "EVITP_Max"
         Me.EVITP_Max.NumericFormat = "0"
         Me.EVITP_Max.PLCAddressKeypad = ""
@@ -29655,7 +29119,7 @@ Partial Class Dashboard_Page
         Me.EVITP_Min.KeypadShowCurrentValue = False
         Me.EVITP_Min.KeypadText = Nothing
         Me.EVITP_Min.KeypadWidth = 300
-        Me.EVITP_Min.Location = New System.Drawing.Point(1656, 90)
+        Me.EVITP_Min.Location = New System.Drawing.Point(1734, 143)
         Me.EVITP_Min.Name = "EVITP_Min"
         Me.EVITP_Min.NumericFormat = "0"
         Me.EVITP_Min.PLCAddressKeypad = ""
@@ -29672,102 +29136,6 @@ Partial Class Dashboard_Page
         Me.EVITP_Min.ValueScaleFactor = 1.0R
         Me.EVITP_Min.ValueSuffix = Nothing
         Me.EVITP_Min.ValueToSubtractFrom = 0!
-        '
-        'Label63
-        '
-        Me.Label63.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label63.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label63.ForeColor = System.Drawing.Color.Lime
-        Me.Label63.Location = New System.Drawing.Point(1582, 195)
-        Me.Label63.Name = "Label63"
-        Me.Label63.Size = New System.Drawing.Size(75, 35)
-        Me.Label63.TabIndex = 546
-        Me.Label63.Text = "Low Limit:"
-        Me.Label63.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'Label62
-        '
-        Me.Label62.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label62.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label62.ForeColor = System.Drawing.Color.Lime
-        Me.Label62.Location = New System.Drawing.Point(1582, 160)
-        Me.Label62.Name = "Label62"
-        Me.Label62.Size = New System.Drawing.Size(75, 35)
-        Me.Label62.TabIndex = 547
-        Me.Label62.Text = "Low Limit:"
-        Me.Label62.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'Label56
-        '
-        Me.Label56.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label56.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label56.ForeColor = System.Drawing.Color.Lime
-        Me.Label56.Location = New System.Drawing.Point(1730, 195)
-        Me.Label56.Name = "Label56"
-        Me.Label56.Size = New System.Drawing.Size(75, 35)
-        Me.Label56.TabIndex = 549
-        Me.Label56.Text = "High Limit:"
-        Me.Label56.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'Label54
-        '
-        Me.Label54.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label54.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label54.ForeColor = System.Drawing.Color.Lime
-        Me.Label54.Location = New System.Drawing.Point(1582, 125)
-        Me.Label54.Name = "Label54"
-        Me.Label54.Size = New System.Drawing.Size(75, 35)
-        Me.Label54.TabIndex = 548
-        Me.Label54.Text = "Low Limit:"
-        Me.Label54.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'Label50
-        '
-        Me.Label50.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label50.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label50.ForeColor = System.Drawing.Color.Lime
-        Me.Label50.Location = New System.Drawing.Point(1582, 90)
-        Me.Label50.Name = "Label50"
-        Me.Label50.Size = New System.Drawing.Size(75, 35)
-        Me.Label50.TabIndex = 554
-        Me.Label50.Text = "Low Limit:"
-        Me.Label50.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'Label39
-        '
-        Me.Label39.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label39.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label39.ForeColor = System.Drawing.Color.Lime
-        Me.Label39.Location = New System.Drawing.Point(1730, 160)
-        Me.Label39.Name = "Label39"
-        Me.Label39.Size = New System.Drawing.Size(75, 35)
-        Me.Label39.TabIndex = 550
-        Me.Label39.Text = "High Limit:"
-        Me.Label39.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'Label35
-        '
-        Me.Label35.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label35.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label35.ForeColor = System.Drawing.Color.Lime
-        Me.Label35.Location = New System.Drawing.Point(1730, 125)
-        Me.Label35.Name = "Label35"
-        Me.Label35.Size = New System.Drawing.Size(75, 35)
-        Me.Label35.TabIndex = 551
-        Me.Label35.Text = "High Limit:"
-        Me.Label35.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'Label34
-        '
-        Me.Label34.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label34.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label34.ForeColor = System.Drawing.Color.Lime
-        Me.Label34.Location = New System.Drawing.Point(1730, 90)
-        Me.Label34.Name = "Label34"
-        Me.Label34.Size = New System.Drawing.Size(75, 35)
-        Me.Label34.TabIndex = 555
-        Me.Label34.Text = "High Limit:"
-        Me.Label34.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'EVOHM_High
         '
@@ -29793,7 +29161,7 @@ Partial Class Dashboard_Page
         Me.EVOHM_High.KeypadShowCurrentValue = False
         Me.EVOHM_High.KeypadText = Nothing
         Me.EVOHM_High.KeypadWidth = 300
-        Me.EVOHM_High.Location = New System.Drawing.Point(1247, 195)
+        Me.EVOHM_High.Location = New System.Drawing.Point(1495, 162)
         Me.EVOHM_High.Name = "EVOHM_High"
         Me.EVOHM_High.NumericFormat = "0.0"
         Me.EVOHM_High.PLCAddressKeypad = ""
@@ -29835,7 +29203,7 @@ Partial Class Dashboard_Page
         Me.EVOHM_Low.KeypadShowCurrentValue = False
         Me.EVOHM_Low.KeypadText = Nothing
         Me.EVOHM_Low.KeypadWidth = 300
-        Me.EVOHM_Low.Location = New System.Drawing.Point(1247, 212)
+        Me.EVOHM_Low.Location = New System.Drawing.Point(1495, 179)
         Me.EVOHM_Low.Name = "EVOHM_Low"
         Me.EVOHM_Low.NumericFormat = "0.0"
         Me.EVOHM_Low.PLCAddressKeypad = ""
@@ -29877,7 +29245,7 @@ Partial Class Dashboard_Page
         Me.EVOTP_High.KeypadShowCurrentValue = False
         Me.EVOTP_High.KeypadText = Nothing
         Me.EVOTP_High.KeypadWidth = 300
-        Me.EVOTP_High.Location = New System.Drawing.Point(1247, 160)
+        Me.EVOTP_High.Location = New System.Drawing.Point(1495, 127)
         Me.EVOTP_High.Name = "EVOTP_High"
         Me.EVOTP_High.NumericFormat = "0.0"
         Me.EVOTP_High.PLCAddressKeypad = ""
@@ -29919,7 +29287,7 @@ Partial Class Dashboard_Page
         Me.EVOTP_Low.KeypadShowCurrentValue = False
         Me.EVOTP_Low.KeypadText = Nothing
         Me.EVOTP_Low.KeypadWidth = 300
-        Me.EVOTP_Low.Location = New System.Drawing.Point(1247, 177)
+        Me.EVOTP_Low.Location = New System.Drawing.Point(1495, 144)
         Me.EVOTP_Low.Name = "EVOTP_Low"
         Me.EVOTP_Low.NumericFormat = "0.0"
         Me.EVOTP_Low.PLCAddressKeypad = ""
@@ -29961,7 +29329,7 @@ Partial Class Dashboard_Page
         Me.EVITP_High.KeypadShowCurrentValue = False
         Me.EVITP_High.KeypadText = Nothing
         Me.EVITP_High.KeypadWidth = 300
-        Me.EVITP_High.Location = New System.Drawing.Point(1247, 90)
+        Me.EVITP_High.Location = New System.Drawing.Point(1495, 57)
         Me.EVITP_High.Name = "EVITP_High"
         Me.EVITP_High.NumericFormat = "0.0"
         Me.EVITP_High.PLCAddressKeypad = ""
@@ -30003,7 +29371,7 @@ Partial Class Dashboard_Page
         Me.EVIHM_High.KeypadShowCurrentValue = False
         Me.EVIHM_High.KeypadText = Nothing
         Me.EVIHM_High.KeypadWidth = 300
-        Me.EVIHM_High.Location = New System.Drawing.Point(1247, 125)
+        Me.EVIHM_High.Location = New System.Drawing.Point(1495, 92)
         Me.EVIHM_High.Name = "EVIHM_High"
         Me.EVIHM_High.NumericFormat = "0.0"
         Me.EVIHM_High.PLCAddressKeypad = ""
@@ -30045,7 +29413,7 @@ Partial Class Dashboard_Page
         Me.EVIHM_Low.KeypadShowCurrentValue = False
         Me.EVIHM_Low.KeypadText = Nothing
         Me.EVIHM_Low.KeypadWidth = 300
-        Me.EVIHM_Low.Location = New System.Drawing.Point(1247, 142)
+        Me.EVIHM_Low.Location = New System.Drawing.Point(1495, 109)
         Me.EVIHM_Low.Name = "EVIHM_Low"
         Me.EVIHM_Low.NumericFormat = "0.0"
         Me.EVIHM_Low.PLCAddressKeypad = ""
@@ -30087,7 +29455,7 @@ Partial Class Dashboard_Page
         Me.EVITP_Low.KeypadShowCurrentValue = False
         Me.EVITP_Low.KeypadText = Nothing
         Me.EVITP_Low.KeypadWidth = 300
-        Me.EVITP_Low.Location = New System.Drawing.Point(1247, 107)
+        Me.EVITP_Low.Location = New System.Drawing.Point(1495, 74)
         Me.EVITP_Low.Name = "EVITP_Low"
         Me.EVITP_Low.NumericFormat = "0.0"
         Me.EVITP_Low.PLCAddressKeypad = ""
@@ -30109,10 +29477,10 @@ Partial Class Dashboard_Page
         '
         Me.STMPDEM_Title.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.STMPDEM_Title.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.STMPDEM_Title.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.STMPDEM_Title.Location = New System.Drawing.Point(5, 613)
+        Me.STMPDEM_Title.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.STMPDEM_Title.Location = New System.Drawing.Point(9, 633)
         Me.STMPDEM_Title.Name = "STMPDEM_Title"
-        Me.STMPDEM_Title.Size = New System.Drawing.Size(231, 35)
+        Me.STMPDEM_Title.Size = New System.Drawing.Size(436, 35)
         Me.STMPDEM_Title.TabIndex = 530
         Me.STMPDEM_Title.Text = "Medium Pressure Steam Demand"
         Me.STMPDEM_Title.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -30121,10 +29489,10 @@ Partial Class Dashboard_Page
         '
         Me.STLPDEM_Title.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.STLPDEM_Title.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.STLPDEM_Title.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.STLPDEM_Title.Location = New System.Drawing.Point(5, 578)
+        Me.STLPDEM_Title.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.STLPDEM_Title.Location = New System.Drawing.Point(9, 597)
         Me.STLPDEM_Title.Name = "STLPDEM_Title"
-        Me.STLPDEM_Title.Size = New System.Drawing.Size(231, 35)
+        Me.STLPDEM_Title.Size = New System.Drawing.Size(436, 35)
         Me.STLPDEM_Title.TabIndex = 531
         Me.STLPDEM_Title.Text = "Low Pressure Steam Demand"
         Me.STLPDEM_Title.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -30134,7 +29502,7 @@ Partial Class Dashboard_Page
         Me.EVIHM_Unit.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.EVIHM_Unit.Font = New System.Drawing.Font("Agency FB", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.EVIHM_Unit.ForeColor = System.Drawing.Color.Lime
-        Me.EVIHM_Unit.Location = New System.Drawing.Point(1467, 125)
+        Me.EVIHM_Unit.Location = New System.Drawing.Point(1715, 92)
         Me.EVIHM_Unit.Name = "EVIHM_Unit"
         Me.EVIHM_Unit.Size = New System.Drawing.Size(111, 35)
         Me.EVIHM_Unit.TabIndex = 522
@@ -30164,7 +29532,7 @@ Partial Class Dashboard_Page
         Me.EVIHM_Actual.KeypadShowCurrentValue = False
         Me.EVIHM_Actual.KeypadText = Nothing
         Me.EVIHM_Actual.KeypadWidth = 300
-        Me.EVIHM_Actual.Location = New System.Drawing.Point(1357, 125)
+        Me.EVIHM_Actual.Location = New System.Drawing.Point(1605, 92)
         Me.EVIHM_Actual.Name = "EVIHM_Actual"
         Me.EVIHM_Actual.NumericFormat = "0.0"
         Me.EVIHM_Actual.PLCAddressKeypad = ""
@@ -30206,7 +29574,7 @@ Partial Class Dashboard_Page
         Me.EVOHM_Actual.KeypadShowCurrentValue = False
         Me.EVOHM_Actual.KeypadText = Nothing
         Me.EVOHM_Actual.KeypadWidth = 300
-        Me.EVOHM_Actual.Location = New System.Drawing.Point(1357, 195)
+        Me.EVOHM_Actual.Location = New System.Drawing.Point(1605, 162)
         Me.EVOHM_Actual.Name = "EVOHM_Actual"
         Me.EVOHM_Actual.NumericFormat = "0.0"
         Me.EVOHM_Actual.PLCAddressKeypad = ""
@@ -30248,7 +29616,7 @@ Partial Class Dashboard_Page
         Me.EVITP_Actual.KeypadShowCurrentValue = False
         Me.EVITP_Actual.KeypadText = Nothing
         Me.EVITP_Actual.KeypadWidth = 300
-        Me.EVITP_Actual.Location = New System.Drawing.Point(1357, 90)
+        Me.EVITP_Actual.Location = New System.Drawing.Point(1605, 57)
         Me.EVITP_Actual.Name = "EVITP_Actual"
         Me.EVITP_Actual.NumericFormat = "0.0"
         Me.EVITP_Actual.PLCAddressKeypad = ""
@@ -30272,7 +29640,7 @@ Partial Class Dashboard_Page
         Me.EVOTP_Unit.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.EVOTP_Unit.Font = New System.Drawing.Font("Agency FB", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.EVOTP_Unit.ForeColor = System.Drawing.Color.Lime
-        Me.EVOTP_Unit.Location = New System.Drawing.Point(1467, 160)
+        Me.EVOTP_Unit.Location = New System.Drawing.Point(1715, 127)
         Me.EVOTP_Unit.Name = "EVOTP_Unit"
         Me.EVOTP_Unit.Size = New System.Drawing.Size(111, 35)
         Me.EVOTP_Unit.TabIndex = 521
@@ -30284,7 +29652,7 @@ Partial Class Dashboard_Page
         Me.EVITP_Unit.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.EVITP_Unit.Font = New System.Drawing.Font("Agency FB", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.EVITP_Unit.ForeColor = System.Drawing.Color.Lime
-        Me.EVITP_Unit.Location = New System.Drawing.Point(1467, 90)
+        Me.EVITP_Unit.Location = New System.Drawing.Point(1715, 57)
         Me.EVITP_Unit.Name = "EVITP_Unit"
         Me.EVITP_Unit.Size = New System.Drawing.Size(111, 35)
         Me.EVITP_Unit.TabIndex = 523
@@ -30296,7 +29664,7 @@ Partial Class Dashboard_Page
         Me.EVOHM_Unit.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.EVOHM_Unit.Font = New System.Drawing.Font("Agency FB", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.EVOHM_Unit.ForeColor = System.Drawing.Color.Lime
-        Me.EVOHM_Unit.Location = New System.Drawing.Point(1467, 195)
+        Me.EVOHM_Unit.Location = New System.Drawing.Point(1715, 162)
         Me.EVOHM_Unit.Name = "EVOHM_Unit"
         Me.EVOHM_Unit.Size = New System.Drawing.Size(111, 35)
         Me.EVOHM_Unit.TabIndex = 520
@@ -30326,7 +29694,7 @@ Partial Class Dashboard_Page
         Me.EVOTP_Actual.KeypadShowCurrentValue = False
         Me.EVOTP_Actual.KeypadText = Nothing
         Me.EVOTP_Actual.KeypadWidth = 300
-        Me.EVOTP_Actual.Location = New System.Drawing.Point(1357, 160)
+        Me.EVOTP_Actual.Location = New System.Drawing.Point(1605, 127)
         Me.EVOTP_Actual.Name = "EVOTP_Actual"
         Me.EVOTP_Actual.NumericFormat = "0.0"
         Me.EVOTP_Actual.PLCAddressKeypad = ""
@@ -30350,7 +29718,7 @@ Partial Class Dashboard_Page
         Me.EVIHM_Title.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.EVIHM_Title.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.EVIHM_Title.ForeColor = System.Drawing.Color.Lime
-        Me.EVIHM_Title.Location = New System.Drawing.Point(1017, 125)
+        Me.EVIHM_Title.Location = New System.Drawing.Point(1265, 92)
         Me.EVIHM_Title.Name = "EVIHM_Title"
         Me.EVIHM_Title.Size = New System.Drawing.Size(231, 35)
         Me.EVIHM_Title.TabIndex = 507
@@ -30362,7 +29730,7 @@ Partial Class Dashboard_Page
         Me.EVOHM_Title.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.EVOHM_Title.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.EVOHM_Title.ForeColor = System.Drawing.Color.Lime
-        Me.EVOHM_Title.Location = New System.Drawing.Point(1017, 195)
+        Me.EVOHM_Title.Location = New System.Drawing.Point(1265, 162)
         Me.EVOHM_Title.Name = "EVOHM_Title"
         Me.EVOHM_Title.Size = New System.Drawing.Size(231, 35)
         Me.EVOHM_Title.TabIndex = 506
@@ -30374,7 +29742,7 @@ Partial Class Dashboard_Page
         Me.EVOTP_Title.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.EVOTP_Title.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.EVOTP_Title.ForeColor = System.Drawing.Color.Lime
-        Me.EVOTP_Title.Location = New System.Drawing.Point(1017, 160)
+        Me.EVOTP_Title.Location = New System.Drawing.Point(1265, 127)
         Me.EVOTP_Title.Name = "EVOTP_Title"
         Me.EVOTP_Title.Size = New System.Drawing.Size(231, 35)
         Me.EVOTP_Title.TabIndex = 504
@@ -30386,7 +29754,7 @@ Partial Class Dashboard_Page
         Me.EVITP_Title.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.EVITP_Title.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.EVITP_Title.ForeColor = System.Drawing.Color.Lime
-        Me.EVITP_Title.Location = New System.Drawing.Point(1017, 90)
+        Me.EVITP_Title.Location = New System.Drawing.Point(1265, 57)
         Me.EVITP_Title.Name = "EVITP_Title"
         Me.EVITP_Title.Size = New System.Drawing.Size(231, 35)
         Me.EVITP_Title.TabIndex = 505
@@ -30417,7 +29785,7 @@ Partial Class Dashboard_Page
         Me.STMPDEM_High.KeypadShowCurrentValue = False
         Me.STMPDEM_High.KeypadText = Nothing
         Me.STMPDEM_High.KeypadWidth = 300
-        Me.STMPDEM_High.Location = New System.Drawing.Point(235, 613)
+        Me.STMPDEM_High.Location = New System.Drawing.Point(444, 633)
         Me.STMPDEM_High.Name = "STMPDEM_High"
         Me.STMPDEM_High.NumericFormat = "0.0"
         Me.STMPDEM_High.PLCAddressKeypad = ""
@@ -30459,7 +29827,7 @@ Partial Class Dashboard_Page
         Me.STLPDEM_High.KeypadShowCurrentValue = False
         Me.STLPDEM_High.KeypadText = Nothing
         Me.STLPDEM_High.KeypadWidth = 300
-        Me.STLPDEM_High.Location = New System.Drawing.Point(235, 578)
+        Me.STLPDEM_High.Location = New System.Drawing.Point(444, 597)
         Me.STLPDEM_High.Name = "STLPDEM_High"
         Me.STLPDEM_High.NumericFormat = "0.0"
         Me.STLPDEM_High.PLCAddressKeypad = ""
@@ -30501,7 +29869,7 @@ Partial Class Dashboard_Page
         Me.STMPDEM_Low.KeypadShowCurrentValue = False
         Me.STMPDEM_Low.KeypadText = Nothing
         Me.STMPDEM_Low.KeypadWidth = 300
-        Me.STMPDEM_Low.Location = New System.Drawing.Point(235, 630)
+        Me.STMPDEM_Low.Location = New System.Drawing.Point(444, 650)
         Me.STMPDEM_Low.Name = "STMPDEM_Low"
         Me.STMPDEM_Low.NumericFormat = "0.0"
         Me.STMPDEM_Low.PLCAddressKeypad = ""
@@ -30543,7 +29911,7 @@ Partial Class Dashboard_Page
         Me.STLPDEM_Low.KeypadShowCurrentValue = False
         Me.STLPDEM_Low.KeypadText = Nothing
         Me.STLPDEM_Low.KeypadWidth = 300
-        Me.STLPDEM_Low.Location = New System.Drawing.Point(235, 595)
+        Me.STLPDEM_Low.Location = New System.Drawing.Point(444, 614)
         Me.STLPDEM_Low.Name = "STLPDEM_Low"
         Me.STLPDEM_Low.NumericFormat = "0.0"
         Me.STLPDEM_Low.PLCAddressKeypad = ""
@@ -30565,8 +29933,8 @@ Partial Class Dashboard_Page
         '
         Me.STMPDEM_Unit.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.STMPDEM_Unit.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.STMPDEM_Unit.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.STMPDEM_Unit.Location = New System.Drawing.Point(455, 613)
+        Me.STMPDEM_Unit.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.STMPDEM_Unit.Location = New System.Drawing.Point(664, 633)
         Me.STMPDEM_Unit.Name = "STMPDEM_Unit"
         Me.STMPDEM_Unit.Size = New System.Drawing.Size(111, 35)
         Me.STMPDEM_Unit.TabIndex = 529
@@ -30577,8 +29945,8 @@ Partial Class Dashboard_Page
         '
         Me.STLPDEM_Unit.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.STLPDEM_Unit.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.STLPDEM_Unit.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.STLPDEM_Unit.Location = New System.Drawing.Point(455, 578)
+        Me.STLPDEM_Unit.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.STLPDEM_Unit.Location = New System.Drawing.Point(664, 597)
         Me.STLPDEM_Unit.Name = "STLPDEM_Unit"
         Me.STLPDEM_Unit.Size = New System.Drawing.Size(111, 35)
         Me.STLPDEM_Unit.TabIndex = 528
@@ -30608,7 +29976,7 @@ Partial Class Dashboard_Page
         Me.STMPDEM_Actual.KeypadShowCurrentValue = False
         Me.STMPDEM_Actual.KeypadText = Nothing
         Me.STMPDEM_Actual.KeypadWidth = 300
-        Me.STMPDEM_Actual.Location = New System.Drawing.Point(345, 613)
+        Me.STMPDEM_Actual.Location = New System.Drawing.Point(554, 633)
         Me.STMPDEM_Actual.Name = "STMPDEM_Actual"
         Me.STMPDEM_Actual.NumericFormat = "0.0"
         Me.STMPDEM_Actual.PLCAddressKeypad = ""
@@ -30649,7 +30017,7 @@ Partial Class Dashboard_Page
         Me.STLPDEM_Actual.KeypadShowCurrentValue = False
         Me.STLPDEM_Actual.KeypadText = Nothing
         Me.STLPDEM_Actual.KeypadWidth = 300
-        Me.STLPDEM_Actual.Location = New System.Drawing.Point(345, 578)
+        Me.STLPDEM_Actual.Location = New System.Drawing.Point(554, 597)
         Me.STLPDEM_Actual.Name = "STLPDEM_Actual"
         Me.STLPDEM_Actual.NumericFormat = "0.0"
         Me.STLPDEM_Actual.PLCAddressKeypad = ""
@@ -30690,7 +30058,7 @@ Partial Class Dashboard_Page
         Me.CWFD_Max.KeypadShowCurrentValue = False
         Me.CWFD_Max.KeypadText = Nothing
         Me.CWFD_Max.KeypadWidth = 300
-        Me.CWFD_Max.Location = New System.Drawing.Point(869, 123)
+        Me.CWFD_Max.Location = New System.Drawing.Point(1075, 165)
         Me.CWFD_Max.Name = "CWFD_Max"
         Me.CWFD_Max.NumericFormat = "0"
         Me.CWFD_Max.PLCAddressKeypad = ""
@@ -30731,7 +30099,7 @@ Partial Class Dashboard_Page
         Me.CWFD_Min.KeypadShowCurrentValue = False
         Me.CWFD_Min.KeypadText = Nothing
         Me.CWFD_Min.KeypadWidth = 300
-        Me.CWFD_Min.Location = New System.Drawing.Point(669, 123)
+        Me.CWFD_Min.Location = New System.Drawing.Point(877, 165)
         Me.CWFD_Min.Name = "CWFD_Min"
         Me.CWFD_Min.NumericFormat = "0"
         Me.CWFD_Min.PLCAddressKeypad = ""
@@ -30753,8 +30121,8 @@ Partial Class Dashboard_Page
         '
         Me.Label55.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label55.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label55.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label55.Location = New System.Drawing.Point(569, 123)
+        Me.Label55.ForeColor = System.Drawing.Color.DodgerBlue
+        Me.Label55.Location = New System.Drawing.Point(778, 165)
         Me.Label55.Name = "Label55"
         Me.Label55.Size = New System.Drawing.Size(100, 35)
         Me.Label55.TabIndex = 502
@@ -30765,8 +30133,8 @@ Partial Class Dashboard_Page
         '
         Me.Label40.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label40.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label40.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label40.Location = New System.Drawing.Point(769, 123)
+        Me.Label40.ForeColor = System.Drawing.Color.DodgerBlue
+        Me.Label40.Location = New System.Drawing.Point(976, 165)
         Me.Label40.Name = "Label40"
         Me.Label40.Size = New System.Drawing.Size(100, 35)
         Me.Label40.TabIndex = 503
@@ -30797,7 +30165,7 @@ Partial Class Dashboard_Page
         Me.ELSC_High.KeypadShowCurrentValue = False
         Me.ELSC_High.KeypadText = Nothing
         Me.ELSC_High.KeypadWidth = 300
-        Me.ELSC_High.Location = New System.Drawing.Point(235, 823)
+        Me.ELSC_High.Location = New System.Drawing.Point(444, 849)
         Me.ELSC_High.Name = "ELSC_High"
         Me.ELSC_High.NumericFormat = "0.0"
         Me.ELSC_High.PLCAddressKeypad = ""
@@ -30838,7 +30206,7 @@ Partial Class Dashboard_Page
         Me.ELSC_Max.KeypadShowCurrentValue = False
         Me.ELSC_Max.KeypadText = Nothing
         Me.ELSC_Max.KeypadWidth = 300
-        Me.ELSC_Max.Location = New System.Drawing.Point(869, 823)
+        Me.ELSC_Max.Location = New System.Drawing.Point(1075, 849)
         Me.ELSC_Max.Name = "ELSC_Max"
         Me.ELSC_Max.NumericFormat = "0"
         Me.ELSC_Max.PLCAddressKeypad = ""
@@ -30880,7 +30248,7 @@ Partial Class Dashboard_Page
         Me.ELSC_Low.KeypadShowCurrentValue = False
         Me.ELSC_Low.KeypadText = Nothing
         Me.ELSC_Low.KeypadWidth = 300
-        Me.ELSC_Low.Location = New System.Drawing.Point(235, 840)
+        Me.ELSC_Low.Location = New System.Drawing.Point(444, 866)
         Me.ELSC_Low.Name = "ELSC_Low"
         Me.ELSC_Low.NumericFormat = "0.0"
         Me.ELSC_Low.PLCAddressKeypad = ""
@@ -30921,7 +30289,7 @@ Partial Class Dashboard_Page
         Me.ELSC_Min.KeypadShowCurrentValue = False
         Me.ELSC_Min.KeypadText = Nothing
         Me.ELSC_Min.KeypadWidth = 300
-        Me.ELSC_Min.Location = New System.Drawing.Point(669, 823)
+        Me.ELSC_Min.Location = New System.Drawing.Point(877, 849)
         Me.ELSC_Min.Name = "ELSC_Min"
         Me.ELSC_Min.NumericFormat = "0"
         Me.ELSC_Min.PLCAddressKeypad = ""
@@ -30962,7 +30330,7 @@ Partial Class Dashboard_Page
         Me.ELSC_Actual.KeypadShowCurrentValue = False
         Me.ELSC_Actual.KeypadText = Nothing
         Me.ELSC_Actual.KeypadWidth = 300
-        Me.ELSC_Actual.Location = New System.Drawing.Point(345, 823)
+        Me.ELSC_Actual.Location = New System.Drawing.Point(554, 849)
         Me.ELSC_Actual.Name = "ELSC_Actual"
         Me.ELSC_Actual.NumericFormat = "0.0"
         Me.ELSC_Actual.PLCAddressKeypad = ""
@@ -30984,8 +30352,8 @@ Partial Class Dashboard_Page
         '
         Me.ELSC_Unit.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.ELSC_Unit.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ELSC_Unit.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.ELSC_Unit.Location = New System.Drawing.Point(455, 823)
+        Me.ELSC_Unit.ForeColor = System.Drawing.Color.Yellow
+        Me.ELSC_Unit.Location = New System.Drawing.Point(664, 849)
         Me.ELSC_Unit.Name = "ELSC_Unit"
         Me.ELSC_Unit.Size = New System.Drawing.Size(111, 35)
         Me.ELSC_Unit.TabIndex = 499
@@ -31015,7 +30383,7 @@ Partial Class Dashboard_Page
         Me.ELSB_Max.KeypadShowCurrentValue = False
         Me.ELSB_Max.KeypadText = Nothing
         Me.ELSB_Max.KeypadWidth = 300
-        Me.ELSB_Max.Location = New System.Drawing.Point(869, 788)
+        Me.ELSB_Max.Location = New System.Drawing.Point(1075, 813)
         Me.ELSB_Max.Name = "ELSB_Max"
         Me.ELSB_Max.NumericFormat = "0"
         Me.ELSB_Max.PLCAddressKeypad = ""
@@ -31057,7 +30425,7 @@ Partial Class Dashboard_Page
         Me.ELSB_High.KeypadShowCurrentValue = False
         Me.ELSB_High.KeypadText = Nothing
         Me.ELSB_High.KeypadWidth = 300
-        Me.ELSB_High.Location = New System.Drawing.Point(235, 788)
+        Me.ELSB_High.Location = New System.Drawing.Point(444, 813)
         Me.ELSB_High.Name = "ELSB_High"
         Me.ELSB_High.NumericFormat = "0.0"
         Me.ELSB_High.PLCAddressKeypad = ""
@@ -31098,7 +30466,7 @@ Partial Class Dashboard_Page
         Me.ELSB_Min.KeypadShowCurrentValue = False
         Me.ELSB_Min.KeypadText = Nothing
         Me.ELSB_Min.KeypadWidth = 300
-        Me.ELSB_Min.Location = New System.Drawing.Point(669, 788)
+        Me.ELSB_Min.Location = New System.Drawing.Point(877, 813)
         Me.ELSB_Min.Name = "ELSB_Min"
         Me.ELSB_Min.NumericFormat = "0"
         Me.ELSB_Min.PLCAddressKeypad = ""
@@ -31139,7 +30507,7 @@ Partial Class Dashboard_Page
         Me.ELSB_Actual.KeypadShowCurrentValue = False
         Me.ELSB_Actual.KeypadText = Nothing
         Me.ELSB_Actual.KeypadWidth = 300
-        Me.ELSB_Actual.Location = New System.Drawing.Point(345, 788)
+        Me.ELSB_Actual.Location = New System.Drawing.Point(554, 813)
         Me.ELSB_Actual.Name = "ELSB_Actual"
         Me.ELSB_Actual.NumericFormat = "0.0"
         Me.ELSB_Actual.PLCAddressKeypad = ""
@@ -31181,7 +30549,7 @@ Partial Class Dashboard_Page
         Me.ELSB_Low.KeypadShowCurrentValue = False
         Me.ELSB_Low.KeypadText = Nothing
         Me.ELSB_Low.KeypadWidth = 300
-        Me.ELSB_Low.Location = New System.Drawing.Point(235, 805)
+        Me.ELSB_Low.Location = New System.Drawing.Point(444, 830)
         Me.ELSB_Low.Name = "ELSB_Low"
         Me.ELSB_Low.NumericFormat = "0.0"
         Me.ELSB_Low.PLCAddressKeypad = ""
@@ -31203,8 +30571,8 @@ Partial Class Dashboard_Page
         '
         Me.ELSB_Unit.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.ELSB_Unit.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ELSB_Unit.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.ELSB_Unit.Location = New System.Drawing.Point(455, 788)
+        Me.ELSB_Unit.ForeColor = System.Drawing.Color.Yellow
+        Me.ELSB_Unit.Location = New System.Drawing.Point(664, 813)
         Me.ELSB_Unit.Name = "ELSB_Unit"
         Me.ELSB_Unit.Size = New System.Drawing.Size(111, 35)
         Me.ELSB_Unit.TabIndex = 496
@@ -31234,7 +30602,7 @@ Partial Class Dashboard_Page
         Me.ELSA_Max.KeypadShowCurrentValue = False
         Me.ELSA_Max.KeypadText = Nothing
         Me.ELSA_Max.KeypadWidth = 300
-        Me.ELSA_Max.Location = New System.Drawing.Point(869, 753)
+        Me.ELSA_Max.Location = New System.Drawing.Point(1075, 777)
         Me.ELSA_Max.Name = "ELSA_Max"
         Me.ELSA_Max.NumericFormat = "0"
         Me.ELSA_Max.PLCAddressKeypad = ""
@@ -31276,7 +30644,7 @@ Partial Class Dashboard_Page
         Me.ELNC_High.KeypadShowCurrentValue = False
         Me.ELNC_High.KeypadText = Nothing
         Me.ELNC_High.KeypadWidth = 300
-        Me.ELNC_High.Location = New System.Drawing.Point(235, 718)
+        Me.ELNC_High.Location = New System.Drawing.Point(444, 741)
         Me.ELNC_High.Name = "ELNC_High"
         Me.ELNC_High.NumericFormat = "0.0"
         Me.ELNC_High.PLCAddressKeypad = ""
@@ -31318,7 +30686,7 @@ Partial Class Dashboard_Page
         Me.ELSA_High.KeypadShowCurrentValue = False
         Me.ELSA_High.KeypadText = Nothing
         Me.ELSA_High.KeypadWidth = 300
-        Me.ELSA_High.Location = New System.Drawing.Point(235, 753)
+        Me.ELSA_High.Location = New System.Drawing.Point(444, 777)
         Me.ELSA_High.Name = "ELSA_High"
         Me.ELSA_High.NumericFormat = "0.0"
         Me.ELSA_High.PLCAddressKeypad = ""
@@ -31359,7 +30727,7 @@ Partial Class Dashboard_Page
         Me.ELSA_Min.KeypadShowCurrentValue = False
         Me.ELSA_Min.KeypadText = Nothing
         Me.ELSA_Min.KeypadWidth = 300
-        Me.ELSA_Min.Location = New System.Drawing.Point(669, 753)
+        Me.ELSA_Min.Location = New System.Drawing.Point(877, 777)
         Me.ELSA_Min.Name = "ELSA_Min"
         Me.ELSA_Min.NumericFormat = "0"
         Me.ELSA_Min.PLCAddressKeypad = ""
@@ -31401,7 +30769,7 @@ Partial Class Dashboard_Page
         Me.ELSA_Low.KeypadShowCurrentValue = False
         Me.ELSA_Low.KeypadText = Nothing
         Me.ELSA_Low.KeypadWidth = 300
-        Me.ELSA_Low.Location = New System.Drawing.Point(235, 770)
+        Me.ELSA_Low.Location = New System.Drawing.Point(444, 794)
         Me.ELSA_Low.Name = "ELSA_Low"
         Me.ELSA_Low.NumericFormat = "0.0"
         Me.ELSA_Low.PLCAddressKeypad = ""
@@ -31442,7 +30810,7 @@ Partial Class Dashboard_Page
         Me.ELSA_Actual.KeypadShowCurrentValue = False
         Me.ELSA_Actual.KeypadText = Nothing
         Me.ELSA_Actual.KeypadWidth = 300
-        Me.ELSA_Actual.Location = New System.Drawing.Point(345, 753)
+        Me.ELSA_Actual.Location = New System.Drawing.Point(554, 777)
         Me.ELSA_Actual.Name = "ELSA_Actual"
         Me.ELSA_Actual.NumericFormat = "0.0"
         Me.ELSA_Actual.PLCAddressKeypad = ""
@@ -31464,8 +30832,8 @@ Partial Class Dashboard_Page
         '
         Me.ELSA_Unit.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.ELSA_Unit.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ELSA_Unit.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.ELSA_Unit.Location = New System.Drawing.Point(455, 753)
+        Me.ELSA_Unit.ForeColor = System.Drawing.Color.Yellow
+        Me.ELSA_Unit.Location = New System.Drawing.Point(664, 777)
         Me.ELSA_Unit.Name = "ELSA_Unit"
         Me.ELSA_Unit.Size = New System.Drawing.Size(111, 35)
         Me.ELSA_Unit.TabIndex = 493
@@ -31495,7 +30863,7 @@ Partial Class Dashboard_Page
         Me.ELNC_Max.KeypadShowCurrentValue = False
         Me.ELNC_Max.KeypadText = Nothing
         Me.ELNC_Max.KeypadWidth = 300
-        Me.ELNC_Max.Location = New System.Drawing.Point(869, 718)
+        Me.ELNC_Max.Location = New System.Drawing.Point(1075, 741)
         Me.ELNC_Max.Name = "ELNC_Max"
         Me.ELNC_Max.NumericFormat = "0"
         Me.ELNC_Max.PLCAddressKeypad = ""
@@ -31537,7 +30905,7 @@ Partial Class Dashboard_Page
         Me.ELNC_Low.KeypadShowCurrentValue = False
         Me.ELNC_Low.KeypadText = Nothing
         Me.ELNC_Low.KeypadWidth = 300
-        Me.ELNC_Low.Location = New System.Drawing.Point(235, 735)
+        Me.ELNC_Low.Location = New System.Drawing.Point(444, 758)
         Me.ELNC_Low.Name = "ELNC_Low"
         Me.ELNC_Low.NumericFormat = "0.0"
         Me.ELNC_Low.PLCAddressKeypad = ""
@@ -31578,7 +30946,7 @@ Partial Class Dashboard_Page
         Me.ELNC_Min.KeypadShowCurrentValue = False
         Me.ELNC_Min.KeypadText = Nothing
         Me.ELNC_Min.KeypadWidth = 300
-        Me.ELNC_Min.Location = New System.Drawing.Point(669, 718)
+        Me.ELNC_Min.Location = New System.Drawing.Point(877, 741)
         Me.ELNC_Min.Name = "ELNC_Min"
         Me.ELNC_Min.NumericFormat = "0"
         Me.ELNC_Min.PLCAddressKeypad = ""
@@ -31600,8 +30968,8 @@ Partial Class Dashboard_Page
         '
         Me.ELNC_Unit.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.ELNC_Unit.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ELNC_Unit.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.ELNC_Unit.Location = New System.Drawing.Point(455, 718)
+        Me.ELNC_Unit.ForeColor = System.Drawing.Color.Yellow
+        Me.ELNC_Unit.Location = New System.Drawing.Point(664, 741)
         Me.ELNC_Unit.Name = "ELNC_Unit"
         Me.ELNC_Unit.Size = New System.Drawing.Size(111, 35)
         Me.ELNC_Unit.TabIndex = 491
@@ -31631,7 +30999,7 @@ Partial Class Dashboard_Page
         Me.ELNB_Max.KeypadShowCurrentValue = False
         Me.ELNB_Max.KeypadText = Nothing
         Me.ELNB_Max.KeypadWidth = 300
-        Me.ELNB_Max.Location = New System.Drawing.Point(869, 683)
+        Me.ELNB_Max.Location = New System.Drawing.Point(1075, 705)
         Me.ELNB_Max.Name = "ELNB_Max"
         Me.ELNB_Max.NumericFormat = "0"
         Me.ELNB_Max.PLCAddressKeypad = ""
@@ -31672,7 +31040,7 @@ Partial Class Dashboard_Page
         Me.ELNC_Actual.KeypadShowCurrentValue = False
         Me.ELNC_Actual.KeypadText = Nothing
         Me.ELNC_Actual.KeypadWidth = 300
-        Me.ELNC_Actual.Location = New System.Drawing.Point(345, 718)
+        Me.ELNC_Actual.Location = New System.Drawing.Point(554, 741)
         Me.ELNC_Actual.Name = "ELNC_Actual"
         Me.ELNC_Actual.NumericFormat = "0.0"
         Me.ELNC_Actual.PLCAddressKeypad = ""
@@ -31714,7 +31082,7 @@ Partial Class Dashboard_Page
         Me.ELNB_High.KeypadShowCurrentValue = False
         Me.ELNB_High.KeypadText = Nothing
         Me.ELNB_High.KeypadWidth = 300
-        Me.ELNB_High.Location = New System.Drawing.Point(235, 683)
+        Me.ELNB_High.Location = New System.Drawing.Point(444, 705)
         Me.ELNB_High.Name = "ELNB_High"
         Me.ELNB_High.NumericFormat = "0.0"
         Me.ELNB_High.PLCAddressKeypad = ""
@@ -31755,7 +31123,7 @@ Partial Class Dashboard_Page
         Me.ELNB_Min.KeypadShowCurrentValue = False
         Me.ELNB_Min.KeypadText = Nothing
         Me.ELNB_Min.KeypadWidth = 300
-        Me.ELNB_Min.Location = New System.Drawing.Point(669, 683)
+        Me.ELNB_Min.Location = New System.Drawing.Point(877, 705)
         Me.ELNB_Min.Name = "ELNB_Min"
         Me.ELNB_Min.NumericFormat = "0"
         Me.ELNB_Min.PLCAddressKeypad = ""
@@ -31796,7 +31164,7 @@ Partial Class Dashboard_Page
         Me.ELNB_Actual.KeypadShowCurrentValue = False
         Me.ELNB_Actual.KeypadText = Nothing
         Me.ELNB_Actual.KeypadWidth = 300
-        Me.ELNB_Actual.Location = New System.Drawing.Point(345, 683)
+        Me.ELNB_Actual.Location = New System.Drawing.Point(554, 705)
         Me.ELNB_Actual.Name = "ELNB_Actual"
         Me.ELNB_Actual.NumericFormat = "0.0"
         Me.ELNB_Actual.PLCAddressKeypad = ""
@@ -31818,8 +31186,8 @@ Partial Class Dashboard_Page
         '
         Me.ELNB_Unit.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.ELNB_Unit.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ELNB_Unit.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.ELNB_Unit.Location = New System.Drawing.Point(455, 683)
+        Me.ELNB_Unit.ForeColor = System.Drawing.Color.Yellow
+        Me.ELNB_Unit.Location = New System.Drawing.Point(664, 705)
         Me.ELNB_Unit.Name = "ELNB_Unit"
         Me.ELNB_Unit.Size = New System.Drawing.Size(111, 35)
         Me.ELNB_Unit.TabIndex = 488
@@ -31850,7 +31218,7 @@ Partial Class Dashboard_Page
         Me.ELNB_Low.KeypadShowCurrentValue = False
         Me.ELNB_Low.KeypadText = Nothing
         Me.ELNB_Low.KeypadWidth = 300
-        Me.ELNB_Low.Location = New System.Drawing.Point(235, 700)
+        Me.ELNB_Low.Location = New System.Drawing.Point(444, 722)
         Me.ELNB_Low.Name = "ELNB_Low"
         Me.ELNB_Low.NumericFormat = "0.0"
         Me.ELNB_Low.PLCAddressKeypad = ""
@@ -31891,7 +31259,7 @@ Partial Class Dashboard_Page
         Me.ELNA_Max.KeypadShowCurrentValue = False
         Me.ELNA_Max.KeypadText = Nothing
         Me.ELNA_Max.KeypadWidth = 300
-        Me.ELNA_Max.Location = New System.Drawing.Point(869, 648)
+        Me.ELNA_Max.Location = New System.Drawing.Point(1075, 669)
         Me.ELNA_Max.Name = "ELNA_Max"
         Me.ELNA_Max.NumericFormat = "0"
         Me.ELNA_Max.PLCAddressKeypad = ""
@@ -31933,7 +31301,7 @@ Partial Class Dashboard_Page
         Me.ELNA_High.KeypadShowCurrentValue = False
         Me.ELNA_High.KeypadText = Nothing
         Me.ELNA_High.KeypadWidth = 300
-        Me.ELNA_High.Location = New System.Drawing.Point(235, 648)
+        Me.ELNA_High.Location = New System.Drawing.Point(444, 669)
         Me.ELNA_High.Name = "ELNA_High"
         Me.ELNA_High.NumericFormat = "0.0"
         Me.ELNA_High.PLCAddressKeypad = ""
@@ -31974,7 +31342,7 @@ Partial Class Dashboard_Page
         Me.ELNA_Min.KeypadShowCurrentValue = False
         Me.ELNA_Min.KeypadText = Nothing
         Me.ELNA_Min.KeypadWidth = 300
-        Me.ELNA_Min.Location = New System.Drawing.Point(669, 648)
+        Me.ELNA_Min.Location = New System.Drawing.Point(877, 669)
         Me.ELNA_Min.Name = "ELNA_Min"
         Me.ELNA_Min.NumericFormat = "0"
         Me.ELNA_Min.PLCAddressKeypad = ""
@@ -32015,7 +31383,7 @@ Partial Class Dashboard_Page
         Me.ELNA_Actual.KeypadShowCurrentValue = False
         Me.ELNA_Actual.KeypadText = Nothing
         Me.ELNA_Actual.KeypadWidth = 300
-        Me.ELNA_Actual.Location = New System.Drawing.Point(345, 648)
+        Me.ELNA_Actual.Location = New System.Drawing.Point(554, 669)
         Me.ELNA_Actual.Name = "ELNA_Actual"
         Me.ELNA_Actual.NumericFormat = "0.0"
         Me.ELNA_Actual.PLCAddressKeypad = ""
@@ -32037,10 +31405,10 @@ Partial Class Dashboard_Page
         '
         Me.ELSA_Title.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.ELSA_Title.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ELSA_Title.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.ELSA_Title.Location = New System.Drawing.Point(5, 753)
+        Me.ELSA_Title.ForeColor = System.Drawing.Color.Yellow
+        Me.ELSA_Title.Location = New System.Drawing.Point(9, 777)
         Me.ELSA_Title.Name = "ELSA_Title"
-        Me.ELSA_Title.Size = New System.Drawing.Size(231, 35)
+        Me.ELSA_Title.Size = New System.Drawing.Size(436, 35)
         Me.ELSA_Title.TabIndex = 451
         Me.ELSA_Title.Text = "South Phase A  Voltage To Ground"
         Me.ELSA_Title.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -32049,8 +31417,8 @@ Partial Class Dashboard_Page
         '
         Me.ELNA_Unit.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.ELNA_Unit.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ELNA_Unit.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.ELNA_Unit.Location = New System.Drawing.Point(455, 648)
+        Me.ELNA_Unit.ForeColor = System.Drawing.Color.Yellow
+        Me.ELNA_Unit.Location = New System.Drawing.Point(664, 669)
         Me.ELNA_Unit.Name = "ELNA_Unit"
         Me.ELNA_Unit.Size = New System.Drawing.Size(111, 35)
         Me.ELNA_Unit.TabIndex = 485
@@ -32081,7 +31449,7 @@ Partial Class Dashboard_Page
         Me.ELNA_Low.KeypadShowCurrentValue = False
         Me.ELNA_Low.KeypadText = Nothing
         Me.ELNA_Low.KeypadWidth = 300
-        Me.ELNA_Low.Location = New System.Drawing.Point(235, 665)
+        Me.ELNA_Low.Location = New System.Drawing.Point(444, 686)
         Me.ELNA_Low.Name = "ELNA_Low"
         Me.ELNA_Low.NumericFormat = "0.0"
         Me.ELNA_Low.PLCAddressKeypad = ""
@@ -32103,10 +31471,10 @@ Partial Class Dashboard_Page
         '
         Me.ELNA_Title.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.ELNA_Title.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ELNA_Title.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.ELNA_Title.Location = New System.Drawing.Point(5, 648)
+        Me.ELNA_Title.ForeColor = System.Drawing.Color.Yellow
+        Me.ELNA_Title.Location = New System.Drawing.Point(9, 669)
         Me.ELNA_Title.Name = "ELNA_Title"
-        Me.ELNA_Title.Size = New System.Drawing.Size(231, 35)
+        Me.ELNA_Title.Size = New System.Drawing.Size(436, 35)
         Me.ELNA_Title.TabIndex = 446
         Me.ELNA_Title.Text = "North Phase A Voltage To Ground"
         Me.ELNA_Title.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -32115,10 +31483,10 @@ Partial Class Dashboard_Page
         '
         Me.ELSC_Title.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.ELSC_Title.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ELSC_Title.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.ELSC_Title.Location = New System.Drawing.Point(5, 823)
+        Me.ELSC_Title.ForeColor = System.Drawing.Color.Yellow
+        Me.ELSC_Title.Location = New System.Drawing.Point(9, 849)
         Me.ELSC_Title.Name = "ELSC_Title"
-        Me.ELSC_Title.Size = New System.Drawing.Size(231, 35)
+        Me.ELSC_Title.Size = New System.Drawing.Size(436, 35)
         Me.ELSC_Title.TabIndex = 449
         Me.ELSC_Title.Text = "South Phase C  Voltage To Ground"
         Me.ELSC_Title.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -32127,10 +31495,10 @@ Partial Class Dashboard_Page
         '
         Me.ELSB_Title.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.ELSB_Title.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ELSB_Title.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.ELSB_Title.Location = New System.Drawing.Point(5, 788)
+        Me.ELSB_Title.ForeColor = System.Drawing.Color.Yellow
+        Me.ELSB_Title.Location = New System.Drawing.Point(9, 813)
         Me.ELSB_Title.Name = "ELSB_Title"
-        Me.ELSB_Title.Size = New System.Drawing.Size(231, 35)
+        Me.ELSB_Title.Size = New System.Drawing.Size(436, 35)
         Me.ELSB_Title.TabIndex = 447
         Me.ELSB_Title.Text = "South Phase B  Voltage To Ground"
         Me.ELSB_Title.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -32139,10 +31507,10 @@ Partial Class Dashboard_Page
         '
         Me.ELNC_Title.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.ELNC_Title.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ELNC_Title.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.ELNC_Title.Location = New System.Drawing.Point(5, 718)
+        Me.ELNC_Title.ForeColor = System.Drawing.Color.Yellow
+        Me.ELNC_Title.Location = New System.Drawing.Point(9, 741)
         Me.ELNC_Title.Name = "ELNC_Title"
-        Me.ELNC_Title.Size = New System.Drawing.Size(231, 35)
+        Me.ELNC_Title.Size = New System.Drawing.Size(436, 35)
         Me.ELNC_Title.TabIndex = 450
         Me.ELNC_Title.Text = "North Phase C  Voltage To Ground"
         Me.ELNC_Title.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -32151,10 +31519,10 @@ Partial Class Dashboard_Page
         '
         Me.ELNB_Title.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.ELNB_Title.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ELNB_Title.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.ELNB_Title.Location = New System.Drawing.Point(5, 683)
+        Me.ELNB_Title.ForeColor = System.Drawing.Color.Yellow
+        Me.ELNB_Title.Location = New System.Drawing.Point(9, 705)
         Me.ELNB_Title.Name = "ELNB_Title"
-        Me.ELNB_Title.Size = New System.Drawing.Size(231, 35)
+        Me.ELNB_Title.Size = New System.Drawing.Size(436, 35)
         Me.ELNB_Title.TabIndex = 448
         Me.ELNB_Title.Text = "Norh Phase B  Voltage To Ground"
         Me.ELNB_Title.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -32163,8 +31531,8 @@ Partial Class Dashboard_Page
         '
         Me.Label164.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label164.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label164.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label164.Location = New System.Drawing.Point(569, 823)
+        Me.Label164.ForeColor = System.Drawing.Color.Yellow
+        Me.Label164.Location = New System.Drawing.Point(778, 849)
         Me.Label164.Name = "Label164"
         Me.Label164.Size = New System.Drawing.Size(100, 35)
         Me.Label164.TabIndex = 462
@@ -32175,8 +31543,8 @@ Partial Class Dashboard_Page
         '
         Me.Label162.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label162.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label162.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label162.Location = New System.Drawing.Point(569, 788)
+        Me.Label162.ForeColor = System.Drawing.Color.Yellow
+        Me.Label162.Location = New System.Drawing.Point(778, 813)
         Me.Label162.Name = "Label162"
         Me.Label162.Size = New System.Drawing.Size(100, 35)
         Me.Label162.TabIndex = 463
@@ -32187,8 +31555,8 @@ Partial Class Dashboard_Page
         '
         Me.Label159.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label159.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label159.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label159.Location = New System.Drawing.Point(769, 823)
+        Me.Label159.ForeColor = System.Drawing.Color.Yellow
+        Me.Label159.Location = New System.Drawing.Point(976, 849)
         Me.Label159.Name = "Label159"
         Me.Label159.Size = New System.Drawing.Size(100, 35)
         Me.Label159.TabIndex = 467
@@ -32199,8 +31567,8 @@ Partial Class Dashboard_Page
         '
         Me.Label158.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label158.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label158.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label158.Location = New System.Drawing.Point(569, 753)
+        Me.Label158.ForeColor = System.Drawing.Color.Yellow
+        Me.Label158.Location = New System.Drawing.Point(778, 777)
         Me.Label158.Name = "Label158"
         Me.Label158.Size = New System.Drawing.Size(100, 35)
         Me.Label158.TabIndex = 464
@@ -32211,8 +31579,8 @@ Partial Class Dashboard_Page
         '
         Me.Label157.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label157.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label157.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label157.Location = New System.Drawing.Point(569, 718)
+        Me.Label157.ForeColor = System.Drawing.Color.Yellow
+        Me.Label157.Location = New System.Drawing.Point(778, 741)
         Me.Label157.Name = "Label157"
         Me.Label157.Size = New System.Drawing.Size(100, 35)
         Me.Label157.TabIndex = 479
@@ -32223,8 +31591,8 @@ Partial Class Dashboard_Page
         '
         Me.Label155.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label155.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label155.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label155.Location = New System.Drawing.Point(769, 788)
+        Me.Label155.ForeColor = System.Drawing.Color.Yellow
+        Me.Label155.Location = New System.Drawing.Point(976, 813)
         Me.Label155.Name = "Label155"
         Me.Label155.Size = New System.Drawing.Size(100, 35)
         Me.Label155.TabIndex = 468
@@ -32235,8 +31603,8 @@ Partial Class Dashboard_Page
         '
         Me.Label152.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label152.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label152.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label152.Location = New System.Drawing.Point(569, 683)
+        Me.Label152.ForeColor = System.Drawing.Color.Yellow
+        Me.Label152.Location = New System.Drawing.Point(778, 705)
         Me.Label152.Name = "Label152"
         Me.Label152.Size = New System.Drawing.Size(100, 35)
         Me.Label152.TabIndex = 465
@@ -32247,8 +31615,8 @@ Partial Class Dashboard_Page
         '
         Me.Label151.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label151.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label151.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label151.Location = New System.Drawing.Point(769, 753)
+        Me.Label151.ForeColor = System.Drawing.Color.Yellow
+        Me.Label151.Location = New System.Drawing.Point(976, 777)
         Me.Label151.Name = "Label151"
         Me.Label151.Size = New System.Drawing.Size(100, 35)
         Me.Label151.TabIndex = 469
@@ -32259,8 +31627,8 @@ Partial Class Dashboard_Page
         '
         Me.Label150.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label150.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label150.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label150.Location = New System.Drawing.Point(569, 648)
+        Me.Label150.ForeColor = System.Drawing.Color.Yellow
+        Me.Label150.Location = New System.Drawing.Point(778, 669)
         Me.Label150.Name = "Label150"
         Me.Label150.Size = New System.Drawing.Size(100, 35)
         Me.Label150.TabIndex = 466
@@ -32271,8 +31639,8 @@ Partial Class Dashboard_Page
         '
         Me.Label148.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label148.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label148.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label148.Location = New System.Drawing.Point(769, 718)
+        Me.Label148.ForeColor = System.Drawing.Color.Yellow
+        Me.Label148.Location = New System.Drawing.Point(976, 741)
         Me.Label148.Name = "Label148"
         Me.Label148.Size = New System.Drawing.Size(100, 35)
         Me.Label148.TabIndex = 480
@@ -32283,8 +31651,8 @@ Partial Class Dashboard_Page
         '
         Me.Label147.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label147.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label147.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label147.Location = New System.Drawing.Point(769, 683)
+        Me.Label147.ForeColor = System.Drawing.Color.Yellow
+        Me.Label147.Location = New System.Drawing.Point(976, 705)
         Me.Label147.Name = "Label147"
         Me.Label147.Size = New System.Drawing.Size(100, 35)
         Me.Label147.TabIndex = 470
@@ -32295,8 +31663,8 @@ Partial Class Dashboard_Page
         '
         Me.Label146.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label146.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label146.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label146.Location = New System.Drawing.Point(769, 648)
+        Me.Label146.ForeColor = System.Drawing.Color.Yellow
+        Me.Label146.Location = New System.Drawing.Point(976, 669)
         Me.Label146.Name = "Label146"
         Me.Label146.Size = New System.Drawing.Size(100, 35)
         Me.Label146.TabIndex = 471
@@ -32307,10 +31675,10 @@ Partial Class Dashboard_Page
         '
         Me.STHP_Title.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.STHP_Title.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.STHP_Title.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.STHP_Title.Location = New System.Drawing.Point(5, 508)
+        Me.STHP_Title.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.STHP_Title.Location = New System.Drawing.Point(9, 525)
         Me.STHP_Title.Name = "STHP_Title"
-        Me.STHP_Title.Size = New System.Drawing.Size(231, 35)
+        Me.STHP_Title.Size = New System.Drawing.Size(436, 35)
         Me.STHP_Title.TabIndex = 437
         Me.STHP_Title.Text = "System Steam Pressure"
         Me.STHP_Title.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -32339,7 +31707,7 @@ Partial Class Dashboard_Page
         Me.STHP_High.KeypadShowCurrentValue = False
         Me.STHP_High.KeypadText = Nothing
         Me.STHP_High.KeypadWidth = 300
-        Me.STHP_High.Location = New System.Drawing.Point(235, 508)
+        Me.STHP_High.Location = New System.Drawing.Point(444, 525)
         Me.STHP_High.Name = "STHP_High"
         Me.STHP_High.NumericFormat = "0.0"
         Me.STHP_High.PLCAddressKeypad = ""
@@ -32381,7 +31749,7 @@ Partial Class Dashboard_Page
         Me.STHP_Low.KeypadShowCurrentValue = False
         Me.STHP_Low.KeypadText = Nothing
         Me.STHP_Low.KeypadWidth = 300
-        Me.STHP_Low.Location = New System.Drawing.Point(235, 525)
+        Me.STHP_Low.Location = New System.Drawing.Point(444, 542)
         Me.STHP_Low.Name = "STHP_Low"
         Me.STHP_Low.NumericFormat = "0.0"
         Me.STHP_Low.PLCAddressKeypad = ""
@@ -32422,7 +31790,7 @@ Partial Class Dashboard_Page
         Me.STHP_Max.KeypadShowCurrentValue = False
         Me.STHP_Max.KeypadText = Nothing
         Me.STHP_Max.KeypadWidth = 300
-        Me.STHP_Max.Location = New System.Drawing.Point(869, 508)
+        Me.STHP_Max.Location = New System.Drawing.Point(1075, 525)
         Me.STHP_Max.Name = "STHP_Max"
         Me.STHP_Max.NumericFormat = "0"
         Me.STHP_Max.PLCAddressKeypad = ""
@@ -32463,7 +31831,7 @@ Partial Class Dashboard_Page
         Me.STHP_Min.KeypadShowCurrentValue = False
         Me.STHP_Min.KeypadText = Nothing
         Me.STHP_Min.KeypadWidth = 300
-        Me.STHP_Min.Location = New System.Drawing.Point(669, 508)
+        Me.STHP_Min.Location = New System.Drawing.Point(877, 525)
         Me.STHP_Min.Name = "STHP_Min"
         Me.STHP_Min.NumericFormat = "0"
         Me.STHP_Min.PLCAddressKeypad = ""
@@ -32504,7 +31872,7 @@ Partial Class Dashboard_Page
         Me.STHP_Actual.KeypadShowCurrentValue = False
         Me.STHP_Actual.KeypadText = Nothing
         Me.STHP_Actual.KeypadWidth = 300
-        Me.STHP_Actual.Location = New System.Drawing.Point(345, 508)
+        Me.STHP_Actual.Location = New System.Drawing.Point(554, 525)
         Me.STHP_Actual.Name = "STHP_Actual"
         Me.STHP_Actual.NumericFormat = "0.0"
         Me.STHP_Actual.PLCAddressKeypad = ""
@@ -32526,8 +31894,8 @@ Partial Class Dashboard_Page
         '
         Me.STHP_Unit.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.STHP_Unit.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.STHP_Unit.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.STHP_Unit.Location = New System.Drawing.Point(455, 508)
+        Me.STHP_Unit.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.STHP_Unit.Location = New System.Drawing.Point(664, 525)
         Me.STHP_Unit.Name = "STHP_Unit"
         Me.STHP_Unit.Size = New System.Drawing.Size(111, 35)
         Me.STHP_Unit.TabIndex = 445
@@ -32538,8 +31906,8 @@ Partial Class Dashboard_Page
         '
         Me.Label143.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label143.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label143.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label143.Location = New System.Drawing.Point(569, 508)
+        Me.Label143.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Label143.Location = New System.Drawing.Point(778, 525)
         Me.Label143.Name = "Label143"
         Me.Label143.Size = New System.Drawing.Size(100, 35)
         Me.Label143.TabIndex = 440
@@ -32550,8 +31918,8 @@ Partial Class Dashboard_Page
         '
         Me.Label129.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label129.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label129.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label129.Location = New System.Drawing.Point(769, 508)
+        Me.Label129.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Label129.Location = New System.Drawing.Point(976, 525)
         Me.Label129.Name = "Label129"
         Me.Label129.Size = New System.Drawing.Size(100, 35)
         Me.Label129.TabIndex = 441
@@ -32581,7 +31949,7 @@ Partial Class Dashboard_Page
         Me.STFL_High.KeypadShowCurrentValue = False
         Me.STFL_High.KeypadText = Nothing
         Me.STFL_High.KeypadWidth = 300
-        Me.STFL_High.Location = New System.Drawing.Point(235, 543)
+        Me.STFL_High.Location = New System.Drawing.Point(444, 561)
         Me.STFL_High.Name = "STFL_High"
         Me.STFL_High.NumericFormat = "0.0"
         Me.STFL_High.PLCAddressKeypad = ""
@@ -32622,7 +31990,7 @@ Partial Class Dashboard_Page
         Me.STFL_Low.KeypadShowCurrentValue = False
         Me.STFL_Low.KeypadText = Nothing
         Me.STFL_Low.KeypadWidth = 300
-        Me.STFL_Low.Location = New System.Drawing.Point(235, 560)
+        Me.STFL_Low.Location = New System.Drawing.Point(444, 578)
         Me.STFL_Low.Name = "STFL_Low"
         Me.STFL_Low.NumericFormat = "0.0"
         Me.STFL_Low.PLCAddressKeypad = ""
@@ -32644,8 +32012,8 @@ Partial Class Dashboard_Page
         '
         Me.STFL_Unit.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.STFL_Unit.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.STFL_Unit.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.STFL_Unit.Location = New System.Drawing.Point(455, 543)
+        Me.STFL_Unit.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.STFL_Unit.Location = New System.Drawing.Point(664, 561)
         Me.STFL_Unit.Name = "STFL_Unit"
         Me.STFL_Unit.Size = New System.Drawing.Size(111, 35)
         Me.STFL_Unit.TabIndex = 436
@@ -32656,10 +32024,10 @@ Partial Class Dashboard_Page
         '
         Me.STFL_Title.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.STFL_Title.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.STFL_Title.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.STFL_Title.Location = New System.Drawing.Point(5, 543)
+        Me.STFL_Title.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.STFL_Title.Location = New System.Drawing.Point(9, 561)
         Me.STFL_Title.Name = "STFL_Title"
-        Me.STFL_Title.Size = New System.Drawing.Size(231, 35)
+        Me.STFL_Title.Size = New System.Drawing.Size(436, 35)
         Me.STFL_Title.TabIndex = 428
         Me.STFL_Title.Text = "Steam Flow Rate"
         Me.STFL_Title.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -32687,7 +32055,7 @@ Partial Class Dashboard_Page
         Me.STFL_Actual.KeypadShowCurrentValue = False
         Me.STFL_Actual.KeypadText = Nothing
         Me.STFL_Actual.KeypadWidth = 300
-        Me.STFL_Actual.Location = New System.Drawing.Point(345, 543)
+        Me.STFL_Actual.Location = New System.Drawing.Point(554, 561)
         Me.STFL_Actual.Name = "STFL_Actual"
         Me.STFL_Actual.NumericFormat = "0"
         Me.STFL_Actual.PLCAddressKeypad = ""
@@ -32728,7 +32096,7 @@ Partial Class Dashboard_Page
         Me.STFL_Max.KeypadShowCurrentValue = False
         Me.STFL_Max.KeypadText = Nothing
         Me.STFL_Max.KeypadWidth = 300
-        Me.STFL_Max.Location = New System.Drawing.Point(869, 543)
+        Me.STFL_Max.Location = New System.Drawing.Point(1075, 561)
         Me.STFL_Max.Name = "STFL_Max"
         Me.STFL_Max.NumericFormat = "0"
         Me.STFL_Max.PLCAddressKeypad = ""
@@ -32769,7 +32137,7 @@ Partial Class Dashboard_Page
         Me.STFL_Min.KeypadShowCurrentValue = False
         Me.STFL_Min.KeypadText = Nothing
         Me.STFL_Min.KeypadWidth = 300
-        Me.STFL_Min.Location = New System.Drawing.Point(669, 543)
+        Me.STFL_Min.Location = New System.Drawing.Point(877, 561)
         Me.STFL_Min.Name = "STFL_Min"
         Me.STFL_Min.NumericFormat = "0"
         Me.STFL_Min.PLCAddressKeypad = ""
@@ -32791,8 +32159,8 @@ Partial Class Dashboard_Page
         '
         Me.Label183.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label183.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label183.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label183.Location = New System.Drawing.Point(569, 543)
+        Me.Label183.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Label183.Location = New System.Drawing.Point(778, 561)
         Me.Label183.Name = "Label183"
         Me.Label183.Size = New System.Drawing.Size(100, 35)
         Me.Label183.TabIndex = 431
@@ -32803,8 +32171,8 @@ Partial Class Dashboard_Page
         '
         Me.Label180.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label180.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label180.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label180.Location = New System.Drawing.Point(769, 543)
+        Me.Label180.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Label180.Location = New System.Drawing.Point(976, 561)
         Me.Label180.Name = "Label180"
         Me.Label180.Size = New System.Drawing.Size(100, 35)
         Me.Label180.TabIndex = 432
@@ -32835,7 +32203,7 @@ Partial Class Dashboard_Page
         Me.STMP_High.KeypadShowCurrentValue = False
         Me.STMP_High.KeypadText = Nothing
         Me.STMP_High.KeypadWidth = 300
-        Me.STMP_High.Location = New System.Drawing.Point(235, 473)
+        Me.STMP_High.Location = New System.Drawing.Point(444, 489)
         Me.STMP_High.Name = "STMP_High"
         Me.STMP_High.NumericFormat = "0.0"
         Me.STMP_High.PLCAddressKeypad = ""
@@ -32876,7 +32244,7 @@ Partial Class Dashboard_Page
         Me.STMP_Max.KeypadShowCurrentValue = False
         Me.STMP_Max.KeypadText = Nothing
         Me.STMP_Max.KeypadWidth = 300
-        Me.STMP_Max.Location = New System.Drawing.Point(869, 473)
+        Me.STMP_Max.Location = New System.Drawing.Point(1075, 489)
         Me.STMP_Max.Name = "STMP_Max"
         Me.STMP_Max.NumericFormat = "0"
         Me.STMP_Max.PLCAddressKeypad = ""
@@ -32918,7 +32286,7 @@ Partial Class Dashboard_Page
         Me.STMP_Low.KeypadShowCurrentValue = False
         Me.STMP_Low.KeypadText = Nothing
         Me.STMP_Low.KeypadWidth = 300
-        Me.STMP_Low.Location = New System.Drawing.Point(235, 490)
+        Me.STMP_Low.Location = New System.Drawing.Point(444, 506)
         Me.STMP_Low.Name = "STMP_Low"
         Me.STMP_Low.NumericFormat = "0.0"
         Me.STMP_Low.PLCAddressKeypad = ""
@@ -32959,7 +32327,7 @@ Partial Class Dashboard_Page
         Me.STMP_Min.KeypadShowCurrentValue = False
         Me.STMP_Min.KeypadText = Nothing
         Me.STMP_Min.KeypadWidth = 300
-        Me.STMP_Min.Location = New System.Drawing.Point(669, 473)
+        Me.STMP_Min.Location = New System.Drawing.Point(877, 489)
         Me.STMP_Min.Name = "STMP_Min"
         Me.STMP_Min.NumericFormat = "0"
         Me.STMP_Min.PLCAddressKeypad = ""
@@ -33000,7 +32368,7 @@ Partial Class Dashboard_Page
         Me.STMP_Actual.KeypadShowCurrentValue = False
         Me.STMP_Actual.KeypadText = Nothing
         Me.STMP_Actual.KeypadWidth = 300
-        Me.STMP_Actual.Location = New System.Drawing.Point(345, 473)
+        Me.STMP_Actual.Location = New System.Drawing.Point(554, 489)
         Me.STMP_Actual.Name = "STMP_Actual"
         Me.STMP_Actual.NumericFormat = "0.0"
         Me.STMP_Actual.PLCAddressKeypad = ""
@@ -33022,8 +32390,8 @@ Partial Class Dashboard_Page
         '
         Me.STMP_Unit.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.STMP_Unit.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.STMP_Unit.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.STMP_Unit.Location = New System.Drawing.Point(455, 473)
+        Me.STMP_Unit.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.STMP_Unit.Location = New System.Drawing.Point(664, 489)
         Me.STMP_Unit.Name = "STMP_Unit"
         Me.STMP_Unit.Size = New System.Drawing.Size(111, 35)
         Me.STMP_Unit.TabIndex = 418
@@ -33034,10 +32402,10 @@ Partial Class Dashboard_Page
         '
         Me.STMP_Title.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.STMP_Title.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.STMP_Title.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.STMP_Title.Location = New System.Drawing.Point(5, 473)
+        Me.STMP_Title.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.STMP_Title.Location = New System.Drawing.Point(9, 489)
         Me.STMP_Title.Name = "STMP_Title"
-        Me.STMP_Title.Size = New System.Drawing.Size(231, 35)
+        Me.STMP_Title.Size = New System.Drawing.Size(436, 35)
         Me.STMP_Title.TabIndex = 410
         Me.STMP_Title.Text = "Medium Pressure Steam"
         Me.STMP_Title.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -33046,8 +32414,8 @@ Partial Class Dashboard_Page
         '
         Me.Label145.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label145.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label145.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label145.Location = New System.Drawing.Point(569, 473)
+        Me.Label145.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Label145.Location = New System.Drawing.Point(778, 489)
         Me.Label145.Name = "Label145"
         Me.Label145.Size = New System.Drawing.Size(100, 35)
         Me.Label145.TabIndex = 413
@@ -33058,8 +32426,8 @@ Partial Class Dashboard_Page
         '
         Me.Label141.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label141.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label141.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label141.Location = New System.Drawing.Point(769, 473)
+        Me.Label141.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Label141.Location = New System.Drawing.Point(976, 489)
         Me.Label141.Name = "Label141"
         Me.Label141.Size = New System.Drawing.Size(100, 35)
         Me.Label141.TabIndex = 414
@@ -33090,7 +32458,7 @@ Partial Class Dashboard_Page
         Me.STLP_High.KeypadShowCurrentValue = False
         Me.STLP_High.KeypadText = Nothing
         Me.STLP_High.KeypadWidth = 300
-        Me.STLP_High.Location = New System.Drawing.Point(235, 438)
+        Me.STLP_High.Location = New System.Drawing.Point(444, 453)
         Me.STLP_High.Name = "STLP_High"
         Me.STLP_High.NumericFormat = "0.0"
         Me.STLP_High.PLCAddressKeypad = ""
@@ -33131,7 +32499,7 @@ Partial Class Dashboard_Page
         Me.STLP_Max.KeypadShowCurrentValue = False
         Me.STLP_Max.KeypadText = Nothing
         Me.STLP_Max.KeypadWidth = 300
-        Me.STLP_Max.Location = New System.Drawing.Point(869, 438)
+        Me.STLP_Max.Location = New System.Drawing.Point(1075, 453)
         Me.STLP_Max.Name = "STLP_Max"
         Me.STLP_Max.NumericFormat = "0"
         Me.STLP_Max.PLCAddressKeypad = ""
@@ -33173,7 +32541,7 @@ Partial Class Dashboard_Page
         Me.STLP_Low.KeypadShowCurrentValue = False
         Me.STLP_Low.KeypadText = Nothing
         Me.STLP_Low.KeypadWidth = 300
-        Me.STLP_Low.Location = New System.Drawing.Point(235, 455)
+        Me.STLP_Low.Location = New System.Drawing.Point(444, 470)
         Me.STLP_Low.Name = "STLP_Low"
         Me.STLP_Low.NumericFormat = "0.0"
         Me.STLP_Low.PLCAddressKeypad = ""
@@ -33214,7 +32582,7 @@ Partial Class Dashboard_Page
         Me.STLP_Min.KeypadShowCurrentValue = False
         Me.STLP_Min.KeypadText = Nothing
         Me.STLP_Min.KeypadWidth = 300
-        Me.STLP_Min.Location = New System.Drawing.Point(669, 438)
+        Me.STLP_Min.Location = New System.Drawing.Point(877, 453)
         Me.STLP_Min.Name = "STLP_Min"
         Me.STLP_Min.NumericFormat = "0"
         Me.STLP_Min.PLCAddressKeypad = ""
@@ -33255,7 +32623,7 @@ Partial Class Dashboard_Page
         Me.STLP_Actual.KeypadShowCurrentValue = False
         Me.STLP_Actual.KeypadText = Nothing
         Me.STLP_Actual.KeypadWidth = 300
-        Me.STLP_Actual.Location = New System.Drawing.Point(345, 438)
+        Me.STLP_Actual.Location = New System.Drawing.Point(554, 453)
         Me.STLP_Actual.Name = "STLP_Actual"
         Me.STLP_Actual.NumericFormat = "0.0"
         Me.STLP_Actual.PLCAddressKeypad = ""
@@ -33277,8 +32645,8 @@ Partial Class Dashboard_Page
         '
         Me.STLP_Unit.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.STLP_Unit.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.STLP_Unit.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.STLP_Unit.Location = New System.Drawing.Point(455, 438)
+        Me.STLP_Unit.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.STLP_Unit.Location = New System.Drawing.Point(664, 453)
         Me.STLP_Unit.Name = "STLP_Unit"
         Me.STLP_Unit.Size = New System.Drawing.Size(111, 35)
         Me.STLP_Unit.TabIndex = 409
@@ -33289,10 +32657,10 @@ Partial Class Dashboard_Page
         '
         Me.STLP_Title.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.STLP_Title.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.STLP_Title.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.STLP_Title.Location = New System.Drawing.Point(5, 438)
+        Me.STLP_Title.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.STLP_Title.Location = New System.Drawing.Point(9, 453)
         Me.STLP_Title.Name = "STLP_Title"
-        Me.STLP_Title.Size = New System.Drawing.Size(231, 35)
+        Me.STLP_Title.Size = New System.Drawing.Size(436, 35)
         Me.STLP_Title.TabIndex = 401
         Me.STLP_Title.Text = "Low Pressure  Steam"
         Me.STLP_Title.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -33301,8 +32669,8 @@ Partial Class Dashboard_Page
         '
         Me.Label130.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label130.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label130.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label130.Location = New System.Drawing.Point(569, 438)
+        Me.Label130.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Label130.Location = New System.Drawing.Point(778, 453)
         Me.Label130.Name = "Label130"
         Me.Label130.Size = New System.Drawing.Size(100, 35)
         Me.Label130.TabIndex = 404
@@ -33313,8 +32681,8 @@ Partial Class Dashboard_Page
         '
         Me.Label106.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label106.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label106.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label106.Location = New System.Drawing.Point(769, 438)
+        Me.Label106.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Label106.Location = New System.Drawing.Point(976, 453)
         Me.Label106.Name = "Label106"
         Me.Label106.Size = New System.Drawing.Size(100, 35)
         Me.Label106.TabIndex = 405
@@ -33345,7 +32713,7 @@ Partial Class Dashboard_Page
         Me.STFWP_High.KeypadShowCurrentValue = False
         Me.STFWP_High.KeypadText = Nothing
         Me.STFWP_High.KeypadWidth = 300
-        Me.STFWP_High.Location = New System.Drawing.Point(235, 403)
+        Me.STFWP_High.Location = New System.Drawing.Point(444, 417)
         Me.STFWP_High.Name = "STFWP_High"
         Me.STFWP_High.NumericFormat = "0.0"
         Me.STFWP_High.PLCAddressKeypad = ""
@@ -33386,7 +32754,7 @@ Partial Class Dashboard_Page
         Me.STFWP_Max.KeypadShowCurrentValue = False
         Me.STFWP_Max.KeypadText = Nothing
         Me.STFWP_Max.KeypadWidth = 300
-        Me.STFWP_Max.Location = New System.Drawing.Point(869, 403)
+        Me.STFWP_Max.Location = New System.Drawing.Point(1075, 417)
         Me.STFWP_Max.Name = "STFWP_Max"
         Me.STFWP_Max.NumericFormat = "0"
         Me.STFWP_Max.PLCAddressKeypad = ""
@@ -33428,7 +32796,7 @@ Partial Class Dashboard_Page
         Me.STFWP_Low.KeypadShowCurrentValue = False
         Me.STFWP_Low.KeypadText = Nothing
         Me.STFWP_Low.KeypadWidth = 300
-        Me.STFWP_Low.Location = New System.Drawing.Point(235, 420)
+        Me.STFWP_Low.Location = New System.Drawing.Point(444, 434)
         Me.STFWP_Low.Name = "STFWP_Low"
         Me.STFWP_Low.NumericFormat = "0.0"
         Me.STFWP_Low.PLCAddressKeypad = ""
@@ -33469,7 +32837,7 @@ Partial Class Dashboard_Page
         Me.STFWP_Min.KeypadShowCurrentValue = False
         Me.STFWP_Min.KeypadText = Nothing
         Me.STFWP_Min.KeypadWidth = 300
-        Me.STFWP_Min.Location = New System.Drawing.Point(669, 403)
+        Me.STFWP_Min.Location = New System.Drawing.Point(877, 417)
         Me.STFWP_Min.Name = "STFWP_Min"
         Me.STFWP_Min.NumericFormat = "0"
         Me.STFWP_Min.PLCAddressKeypad = ""
@@ -33510,7 +32878,7 @@ Partial Class Dashboard_Page
         Me.STFWP_Actual.KeypadShowCurrentValue = False
         Me.STFWP_Actual.KeypadText = Nothing
         Me.STFWP_Actual.KeypadWidth = 300
-        Me.STFWP_Actual.Location = New System.Drawing.Point(345, 403)
+        Me.STFWP_Actual.Location = New System.Drawing.Point(554, 417)
         Me.STFWP_Actual.Name = "STFWP_Actual"
         Me.STFWP_Actual.NumericFormat = "0.0"
         Me.STFWP_Actual.PLCAddressKeypad = ""
@@ -33532,8 +32900,8 @@ Partial Class Dashboard_Page
         '
         Me.STFWP_Unit.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.STFWP_Unit.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.STFWP_Unit.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.STFWP_Unit.Location = New System.Drawing.Point(455, 403)
+        Me.STFWP_Unit.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.STFWP_Unit.Location = New System.Drawing.Point(664, 417)
         Me.STFWP_Unit.Name = "STFWP_Unit"
         Me.STFWP_Unit.Size = New System.Drawing.Size(111, 35)
         Me.STFWP_Unit.TabIndex = 400
@@ -33544,10 +32912,10 @@ Partial Class Dashboard_Page
         '
         Me.STFWP_Title.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.STFWP_Title.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.STFWP_Title.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.STFWP_Title.Location = New System.Drawing.Point(5, 403)
+        Me.STFWP_Title.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.STFWP_Title.Location = New System.Drawing.Point(9, 417)
         Me.STFWP_Title.Name = "STFWP_Title"
-        Me.STFWP_Title.Size = New System.Drawing.Size(231, 35)
+        Me.STFWP_Title.Size = New System.Drawing.Size(436, 35)
         Me.STFWP_Title.TabIndex = 392
         Me.STFWP_Title.Text = "Boiler Feed Water Pressure"
         Me.STFWP_Title.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -33556,8 +32924,8 @@ Partial Class Dashboard_Page
         '
         Me.Label249.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label249.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label249.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label249.Location = New System.Drawing.Point(569, 403)
+        Me.Label249.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Label249.Location = New System.Drawing.Point(778, 417)
         Me.Label249.Name = "Label249"
         Me.Label249.Size = New System.Drawing.Size(100, 35)
         Me.Label249.TabIndex = 395
@@ -33568,8 +32936,8 @@ Partial Class Dashboard_Page
         '
         Me.Label250.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label250.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label250.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label250.Location = New System.Drawing.Point(769, 403)
+        Me.Label250.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Label250.Location = New System.Drawing.Point(976, 417)
         Me.Label250.Name = "Label250"
         Me.Label250.Size = New System.Drawing.Size(100, 35)
         Me.Label250.TabIndex = 396
@@ -33580,10 +32948,10 @@ Partial Class Dashboard_Page
         '
         Me.ALP_Title.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.ALP_Title.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ALP_Title.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.ALP_Title.Location = New System.Drawing.Point(5, 368)
+        Me.ALP_Title.ForeColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.ALP_Title.Location = New System.Drawing.Point(9, 57)
         Me.ALP_Title.Name = "ALP_Title"
-        Me.ALP_Title.Size = New System.Drawing.Size(231, 35)
+        Me.ALP_Title.Size = New System.Drawing.Size(436, 35)
         Me.ALP_Title.TabIndex = 383
         Me.ALP_Title.Text = "System Air Pressure"
         Me.ALP_Title.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -33612,7 +32980,7 @@ Partial Class Dashboard_Page
         Me.ALP_High.KeypadShowCurrentValue = False
         Me.ALP_High.KeypadText = Nothing
         Me.ALP_High.KeypadWidth = 300
-        Me.ALP_High.Location = New System.Drawing.Point(235, 368)
+        Me.ALP_High.Location = New System.Drawing.Point(444, 57)
         Me.ALP_High.Name = "ALP_High"
         Me.ALP_High.NumericFormat = "0.0"
         Me.ALP_High.PLCAddressKeypad = ""
@@ -33654,7 +33022,7 @@ Partial Class Dashboard_Page
         Me.ALP_Low.KeypadShowCurrentValue = False
         Me.ALP_Low.KeypadText = Nothing
         Me.ALP_Low.KeypadWidth = 300
-        Me.ALP_Low.Location = New System.Drawing.Point(235, 385)
+        Me.ALP_Low.Location = New System.Drawing.Point(444, 74)
         Me.ALP_Low.Name = "ALP_Low"
         Me.ALP_Low.NumericFormat = "0.0"
         Me.ALP_Low.PLCAddressKeypad = ""
@@ -33695,7 +33063,7 @@ Partial Class Dashboard_Page
         Me.ALP_Max.KeypadShowCurrentValue = False
         Me.ALP_Max.KeypadText = Nothing
         Me.ALP_Max.KeypadWidth = 300
-        Me.ALP_Max.Location = New System.Drawing.Point(869, 368)
+        Me.ALP_Max.Location = New System.Drawing.Point(1075, 57)
         Me.ALP_Max.Name = "ALP_Max"
         Me.ALP_Max.NumericFormat = "0"
         Me.ALP_Max.PLCAddressKeypad = ""
@@ -33736,7 +33104,7 @@ Partial Class Dashboard_Page
         Me.ALP_Min.KeypadShowCurrentValue = False
         Me.ALP_Min.KeypadText = Nothing
         Me.ALP_Min.KeypadWidth = 300
-        Me.ALP_Min.Location = New System.Drawing.Point(669, 368)
+        Me.ALP_Min.Location = New System.Drawing.Point(877, 57)
         Me.ALP_Min.Name = "ALP_Min"
         Me.ALP_Min.NumericFormat = "0"
         Me.ALP_Min.PLCAddressKeypad = ""
@@ -33758,8 +33126,8 @@ Partial Class Dashboard_Page
         '
         Me.ALP_Unit.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.ALP_Unit.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ALP_Unit.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.ALP_Unit.Location = New System.Drawing.Point(455, 368)
+        Me.ALP_Unit.ForeColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.ALP_Unit.Location = New System.Drawing.Point(664, 57)
         Me.ALP_Unit.Name = "ALP_Unit"
         Me.ALP_Unit.Size = New System.Drawing.Size(111, 35)
         Me.ALP_Unit.TabIndex = 391
@@ -33789,7 +33157,7 @@ Partial Class Dashboard_Page
         Me.ALP_Actual.KeypadShowCurrentValue = False
         Me.ALP_Actual.KeypadText = Nothing
         Me.ALP_Actual.KeypadWidth = 300
-        Me.ALP_Actual.Location = New System.Drawing.Point(345, 368)
+        Me.ALP_Actual.Location = New System.Drawing.Point(554, 57)
         Me.ALP_Actual.Name = "ALP_Actual"
         Me.ALP_Actual.NumericFormat = "0.0"
         Me.ALP_Actual.PLCAddressKeypad = ""
@@ -33811,8 +33179,8 @@ Partial Class Dashboard_Page
         '
         Me.Label123.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label123.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label123.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label123.Location = New System.Drawing.Point(569, 368)
+        Me.Label123.ForeColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Label123.Location = New System.Drawing.Point(778, 57)
         Me.Label123.Name = "Label123"
         Me.Label123.Size = New System.Drawing.Size(100, 35)
         Me.Label123.TabIndex = 386
@@ -33823,8 +33191,8 @@ Partial Class Dashboard_Page
         '
         Me.Label87.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label87.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label87.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label87.Location = New System.Drawing.Point(769, 368)
+        Me.Label87.ForeColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Label87.Location = New System.Drawing.Point(976, 57)
         Me.Label87.Name = "Label87"
         Me.Label87.Size = New System.Drawing.Size(100, 35)
         Me.Label87.TabIndex = 387
@@ -33854,7 +33222,7 @@ Partial Class Dashboard_Page
         Me.HWFL_Max.KeypadShowCurrentValue = False
         Me.HWFL_Max.KeypadText = Nothing
         Me.HWFL_Max.KeypadWidth = 300
-        Me.HWFL_Max.Location = New System.Drawing.Point(869, 333)
+        Me.HWFL_Max.Location = New System.Drawing.Point(1075, 381)
         Me.HWFL_Max.Name = "HWFL_Max"
         Me.HWFL_Max.NumericFormat = "0"
         Me.HWFL_Max.PLCAddressKeypad = ""
@@ -33896,7 +33264,7 @@ Partial Class Dashboard_Page
         Me.HWFL_High.KeypadShowCurrentValue = False
         Me.HWFL_High.KeypadText = Nothing
         Me.HWFL_High.KeypadWidth = 300
-        Me.HWFL_High.Location = New System.Drawing.Point(235, 333)
+        Me.HWFL_High.Location = New System.Drawing.Point(444, 381)
         Me.HWFL_High.Name = "HWFL_High"
         Me.HWFL_High.NumericFormat = "0.0"
         Me.HWFL_High.PLCAddressKeypad = ""
@@ -33937,7 +33305,7 @@ Partial Class Dashboard_Page
         Me.HWFL_Min.KeypadShowCurrentValue = False
         Me.HWFL_Min.KeypadText = Nothing
         Me.HWFL_Min.KeypadWidth = 300
-        Me.HWFL_Min.Location = New System.Drawing.Point(669, 333)
+        Me.HWFL_Min.Location = New System.Drawing.Point(877, 381)
         Me.HWFL_Min.Name = "HWFL_Min"
         Me.HWFL_Min.NumericFormat = "0"
         Me.HWFL_Min.PLCAddressKeypad = ""
@@ -33979,7 +33347,7 @@ Partial Class Dashboard_Page
         Me.HWFL_Low.KeypadShowCurrentValue = False
         Me.HWFL_Low.KeypadText = Nothing
         Me.HWFL_Low.KeypadWidth = 300
-        Me.HWFL_Low.Location = New System.Drawing.Point(235, 350)
+        Me.HWFL_Low.Location = New System.Drawing.Point(444, 398)
         Me.HWFL_Low.Name = "HWFL_Low"
         Me.HWFL_Low.NumericFormat = "0.0"
         Me.HWFL_Low.PLCAddressKeypad = ""
@@ -34020,7 +33388,7 @@ Partial Class Dashboard_Page
         Me.HWFL_Actual.KeypadShowCurrentValue = False
         Me.HWFL_Actual.KeypadText = Nothing
         Me.HWFL_Actual.KeypadWidth = 300
-        Me.HWFL_Actual.Location = New System.Drawing.Point(345, 333)
+        Me.HWFL_Actual.Location = New System.Drawing.Point(554, 381)
         Me.HWFL_Actual.Name = "HWFL_Actual"
         Me.HWFL_Actual.NumericFormat = "0.0"
         Me.HWFL_Actual.PLCAddressKeypad = ""
@@ -34042,8 +33410,8 @@ Partial Class Dashboard_Page
         '
         Me.HWFL_Unit.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.HWFL_Unit.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.HWFL_Unit.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.HWFL_Unit.Location = New System.Drawing.Point(455, 333)
+        Me.HWFL_Unit.ForeColor = System.Drawing.Color.Red
+        Me.HWFL_Unit.Location = New System.Drawing.Point(664, 381)
         Me.HWFL_Unit.Name = "HWFL_Unit"
         Me.HWFL_Unit.Size = New System.Drawing.Size(111, 35)
         Me.HWFL_Unit.TabIndex = 382
@@ -34054,10 +33422,10 @@ Partial Class Dashboard_Page
         '
         Me.HWFL_Title.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.HWFL_Title.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.HWFL_Title.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.HWFL_Title.Location = New System.Drawing.Point(5, 333)
+        Me.HWFL_Title.ForeColor = System.Drawing.Color.Red
+        Me.HWFL_Title.Location = New System.Drawing.Point(9, 381)
         Me.HWFL_Title.Name = "HWFL_Title"
-        Me.HWFL_Title.Size = New System.Drawing.Size(231, 35)
+        Me.HWFL_Title.Size = New System.Drawing.Size(436, 35)
         Me.HWFL_Title.TabIndex = 374
         Me.HWFL_Title.Text = "Hot Water Flow Rate"
         Me.HWFL_Title.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -34066,8 +33434,8 @@ Partial Class Dashboard_Page
         '
         Me.Label101.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label101.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label101.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label101.Location = New System.Drawing.Point(569, 333)
+        Me.Label101.ForeColor = System.Drawing.Color.Red
+        Me.Label101.Location = New System.Drawing.Point(778, 381)
         Me.Label101.Name = "Label101"
         Me.Label101.Size = New System.Drawing.Size(100, 35)
         Me.Label101.TabIndex = 377
@@ -34078,8 +33446,8 @@ Partial Class Dashboard_Page
         '
         Me.Label92.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label92.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label92.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label92.Location = New System.Drawing.Point(769, 333)
+        Me.Label92.ForeColor = System.Drawing.Color.Red
+        Me.Label92.Location = New System.Drawing.Point(976, 381)
         Me.Label92.Name = "Label92"
         Me.Label92.Size = New System.Drawing.Size(100, 35)
         Me.Label92.TabIndex = 378
@@ -34110,7 +33478,7 @@ Partial Class Dashboard_Page
         Me.HWTP_High.KeypadShowCurrentValue = False
         Me.HWTP_High.KeypadText = Nothing
         Me.HWTP_High.KeypadWidth = 300
-        Me.HWTP_High.Location = New System.Drawing.Point(235, 298)
+        Me.HWTP_High.Location = New System.Drawing.Point(444, 345)
         Me.HWTP_High.Name = "HWTP_High"
         Me.HWTP_High.NumericFormat = "0.0"
         Me.HWTP_High.PLCAddressKeypad = ""
@@ -34151,7 +33519,7 @@ Partial Class Dashboard_Page
         Me.HWTP_Max.KeypadShowCurrentValue = False
         Me.HWTP_Max.KeypadText = Nothing
         Me.HWTP_Max.KeypadWidth = 300
-        Me.HWTP_Max.Location = New System.Drawing.Point(869, 298)
+        Me.HWTP_Max.Location = New System.Drawing.Point(1075, 345)
         Me.HWTP_Max.Name = "HWTP_Max"
         Me.HWTP_Max.NumericFormat = "0"
         Me.HWTP_Max.PLCAddressKeypad = ""
@@ -34193,7 +33561,7 @@ Partial Class Dashboard_Page
         Me.HWTP_Low.KeypadShowCurrentValue = False
         Me.HWTP_Low.KeypadText = Nothing
         Me.HWTP_Low.KeypadWidth = 300
-        Me.HWTP_Low.Location = New System.Drawing.Point(235, 315)
+        Me.HWTP_Low.Location = New System.Drawing.Point(444, 362)
         Me.HWTP_Low.Name = "HWTP_Low"
         Me.HWTP_Low.NumericFormat = "0.0"
         Me.HWTP_Low.PLCAddressKeypad = ""
@@ -34234,7 +33602,7 @@ Partial Class Dashboard_Page
         Me.HWTP_Actual.KeypadShowCurrentValue = False
         Me.HWTP_Actual.KeypadText = Nothing
         Me.HWTP_Actual.KeypadWidth = 300
-        Me.HWTP_Actual.Location = New System.Drawing.Point(345, 298)
+        Me.HWTP_Actual.Location = New System.Drawing.Point(554, 345)
         Me.HWTP_Actual.Name = "HWTP_Actual"
         Me.HWTP_Actual.NumericFormat = "0.0"
         Me.HWTP_Actual.PLCAddressKeypad = ""
@@ -34275,7 +33643,7 @@ Partial Class Dashboard_Page
         Me.HWTP_Min.KeypadShowCurrentValue = False
         Me.HWTP_Min.KeypadText = Nothing
         Me.HWTP_Min.KeypadWidth = 300
-        Me.HWTP_Min.Location = New System.Drawing.Point(669, 298)
+        Me.HWTP_Min.Location = New System.Drawing.Point(877, 345)
         Me.HWTP_Min.Name = "HWTP_Min"
         Me.HWTP_Min.NumericFormat = "0"
         Me.HWTP_Min.PLCAddressKeypad = ""
@@ -34297,8 +33665,8 @@ Partial Class Dashboard_Page
         '
         Me.HWTP_Unit.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.HWTP_Unit.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.HWTP_Unit.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.HWTP_Unit.Location = New System.Drawing.Point(455, 298)
+        Me.HWTP_Unit.ForeColor = System.Drawing.Color.Red
+        Me.HWTP_Unit.Location = New System.Drawing.Point(664, 345)
         Me.HWTP_Unit.Name = "HWTP_Unit"
         Me.HWTP_Unit.Size = New System.Drawing.Size(111, 35)
         Me.HWTP_Unit.TabIndex = 373
@@ -34309,10 +33677,10 @@ Partial Class Dashboard_Page
         '
         Me.HWTP_Title.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.HWTP_Title.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.HWTP_Title.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.HWTP_Title.Location = New System.Drawing.Point(5, 298)
+        Me.HWTP_Title.ForeColor = System.Drawing.Color.Red
+        Me.HWTP_Title.Location = New System.Drawing.Point(9, 345)
         Me.HWTP_Title.Name = "HWTP_Title"
-        Me.HWTP_Title.Size = New System.Drawing.Size(231, 35)
+        Me.HWTP_Title.Size = New System.Drawing.Size(436, 35)
         Me.HWTP_Title.TabIndex = 365
         Me.HWTP_Title.Text = "Hot Water Temperature"
         Me.HWTP_Title.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -34321,8 +33689,8 @@ Partial Class Dashboard_Page
         '
         Me.Label94.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label94.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label94.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label94.Location = New System.Drawing.Point(569, 298)
+        Me.Label94.ForeColor = System.Drawing.Color.Red
+        Me.Label94.Location = New System.Drawing.Point(778, 345)
         Me.Label94.Name = "Label94"
         Me.Label94.Size = New System.Drawing.Size(100, 35)
         Me.Label94.TabIndex = 368
@@ -34333,8 +33701,8 @@ Partial Class Dashboard_Page
         '
         Me.Label84.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label84.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label84.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label84.Location = New System.Drawing.Point(769, 298)
+        Me.Label84.ForeColor = System.Drawing.Color.Red
+        Me.Label84.Location = New System.Drawing.Point(976, 345)
         Me.Label84.Name = "Label84"
         Me.Label84.Size = New System.Drawing.Size(100, 35)
         Me.Label84.TabIndex = 369
@@ -34365,7 +33733,7 @@ Partial Class Dashboard_Page
         Me.HWFD_High.KeypadShowCurrentValue = False
         Me.HWFD_High.KeypadText = Nothing
         Me.HWFD_High.KeypadWidth = 300
-        Me.HWFD_High.Location = New System.Drawing.Point(235, 263)
+        Me.HWFD_High.Location = New System.Drawing.Point(444, 309)
         Me.HWFD_High.Name = "HWFD_High"
         Me.HWFD_High.NumericFormat = "0.0"
         Me.HWFD_High.PLCAddressKeypad = ""
@@ -34406,7 +33774,7 @@ Partial Class Dashboard_Page
         Me.HWFD_Max.KeypadShowCurrentValue = False
         Me.HWFD_Max.KeypadText = Nothing
         Me.HWFD_Max.KeypadWidth = 300
-        Me.HWFD_Max.Location = New System.Drawing.Point(869, 263)
+        Me.HWFD_Max.Location = New System.Drawing.Point(1075, 309)
         Me.HWFD_Max.Name = "HWFD_Max"
         Me.HWFD_Max.NumericFormat = "0"
         Me.HWFD_Max.PLCAddressKeypad = ""
@@ -34448,7 +33816,7 @@ Partial Class Dashboard_Page
         Me.HWFD_Low.KeypadShowCurrentValue = False
         Me.HWFD_Low.KeypadText = Nothing
         Me.HWFD_Low.KeypadWidth = 300
-        Me.HWFD_Low.Location = New System.Drawing.Point(235, 280)
+        Me.HWFD_Low.Location = New System.Drawing.Point(444, 326)
         Me.HWFD_Low.Name = "HWFD_Low"
         Me.HWFD_Low.NumericFormat = "0.0"
         Me.HWFD_Low.PLCAddressKeypad = ""
@@ -34489,7 +33857,7 @@ Partial Class Dashboard_Page
         Me.HWFD_Min.KeypadShowCurrentValue = False
         Me.HWFD_Min.KeypadText = Nothing
         Me.HWFD_Min.KeypadWidth = 300
-        Me.HWFD_Min.Location = New System.Drawing.Point(669, 263)
+        Me.HWFD_Min.Location = New System.Drawing.Point(877, 309)
         Me.HWFD_Min.Name = "HWFD_Min"
         Me.HWFD_Min.NumericFormat = "0"
         Me.HWFD_Min.PLCAddressKeypad = ""
@@ -34511,10 +33879,10 @@ Partial Class Dashboard_Page
         '
         Me.HWFD_Title.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.HWFD_Title.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.HWFD_Title.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.HWFD_Title.Location = New System.Drawing.Point(5, 263)
+        Me.HWFD_Title.ForeColor = System.Drawing.Color.Red
+        Me.HWFD_Title.Location = New System.Drawing.Point(9, 309)
         Me.HWFD_Title.Name = "HWFD_Title"
-        Me.HWFD_Title.Size = New System.Drawing.Size(231, 35)
+        Me.HWFD_Title.Size = New System.Drawing.Size(436, 35)
         Me.HWFD_Title.TabIndex = 356
         Me.HWFD_Title.Text = "Hot Water Pressure Differential"
         Me.HWFD_Title.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -34542,7 +33910,7 @@ Partial Class Dashboard_Page
         Me.HWFD_Actual.KeypadShowCurrentValue = False
         Me.HWFD_Actual.KeypadText = Nothing
         Me.HWFD_Actual.KeypadWidth = 300
-        Me.HWFD_Actual.Location = New System.Drawing.Point(345, 263)
+        Me.HWFD_Actual.Location = New System.Drawing.Point(554, 309)
         Me.HWFD_Actual.Name = "HWFD_Actual"
         Me.HWFD_Actual.NumericFormat = "0.0"
         Me.HWFD_Actual.PLCAddressKeypad = ""
@@ -34564,8 +33932,8 @@ Partial Class Dashboard_Page
         '
         Me.HWFD_Unit.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.HWFD_Unit.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.HWFD_Unit.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.HWFD_Unit.Location = New System.Drawing.Point(455, 263)
+        Me.HWFD_Unit.ForeColor = System.Drawing.Color.Red
+        Me.HWFD_Unit.Location = New System.Drawing.Point(664, 309)
         Me.HWFD_Unit.Name = "HWFD_Unit"
         Me.HWFD_Unit.Size = New System.Drawing.Size(111, 35)
         Me.HWFD_Unit.TabIndex = 362
@@ -34576,8 +33944,8 @@ Partial Class Dashboard_Page
         '
         Me.Label81.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label81.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label81.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label81.Location = New System.Drawing.Point(569, 263)
+        Me.Label81.ForeColor = System.Drawing.Color.Red
+        Me.Label81.Location = New System.Drawing.Point(778, 309)
         Me.Label81.Name = "Label81"
         Me.Label81.Size = New System.Drawing.Size(100, 35)
         Me.Label81.TabIndex = 359
@@ -34588,8 +33956,8 @@ Partial Class Dashboard_Page
         '
         Me.Label61.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label61.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label61.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label61.Location = New System.Drawing.Point(769, 263)
+        Me.Label61.ForeColor = System.Drawing.Color.Red
+        Me.Label61.Location = New System.Drawing.Point(976, 309)
         Me.Label61.Name = "Label61"
         Me.Label61.Size = New System.Drawing.Size(100, 35)
         Me.Label61.TabIndex = 360
@@ -34620,7 +33988,7 @@ Partial Class Dashboard_Page
         Me.HWPOP_High.KeypadShowCurrentValue = False
         Me.HWPOP_High.KeypadText = Nothing
         Me.HWPOP_High.KeypadWidth = 300
-        Me.HWPOP_High.Location = New System.Drawing.Point(235, 228)
+        Me.HWPOP_High.Location = New System.Drawing.Point(444, 273)
         Me.HWPOP_High.Name = "HWPOP_High"
         Me.HWPOP_High.NumericFormat = "0.0"
         Me.HWPOP_High.PLCAddressKeypad = ""
@@ -34661,7 +34029,7 @@ Partial Class Dashboard_Page
         Me.HWPOP_Max.KeypadShowCurrentValue = False
         Me.HWPOP_Max.KeypadText = Nothing
         Me.HWPOP_Max.KeypadWidth = 300
-        Me.HWPOP_Max.Location = New System.Drawing.Point(869, 228)
+        Me.HWPOP_Max.Location = New System.Drawing.Point(1075, 273)
         Me.HWPOP_Max.Name = "HWPOP_Max"
         Me.HWPOP_Max.NumericFormat = "0"
         Me.HWPOP_Max.PLCAddressKeypad = ""
@@ -34702,7 +34070,7 @@ Partial Class Dashboard_Page
         Me.HWPOP_Min.KeypadShowCurrentValue = False
         Me.HWPOP_Min.KeypadText = Nothing
         Me.HWPOP_Min.KeypadWidth = 300
-        Me.HWPOP_Min.Location = New System.Drawing.Point(669, 228)
+        Me.HWPOP_Min.Location = New System.Drawing.Point(877, 273)
         Me.HWPOP_Min.Name = "HWPOP_Min"
         Me.HWPOP_Min.NumericFormat = "0"
         Me.HWPOP_Min.PLCAddressKeypad = ""
@@ -34744,7 +34112,7 @@ Partial Class Dashboard_Page
         Me.HWPOP_Low.KeypadShowCurrentValue = False
         Me.HWPOP_Low.KeypadText = Nothing
         Me.HWPOP_Low.KeypadWidth = 300
-        Me.HWPOP_Low.Location = New System.Drawing.Point(235, 245)
+        Me.HWPOP_Low.Location = New System.Drawing.Point(444, 290)
         Me.HWPOP_Low.Name = "HWPOP_Low"
         Me.HWPOP_Low.NumericFormat = "0.0"
         Me.HWPOP_Low.PLCAddressKeypad = ""
@@ -34766,10 +34134,10 @@ Partial Class Dashboard_Page
         '
         Me.HWPOP_Title.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.HWPOP_Title.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.HWPOP_Title.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.HWPOP_Title.Location = New System.Drawing.Point(5, 228)
+        Me.HWPOP_Title.ForeColor = System.Drawing.Color.Red
+        Me.HWPOP_Title.Location = New System.Drawing.Point(9, 273)
         Me.HWPOP_Title.Name = "HWPOP_Title"
-        Me.HWPOP_Title.Size = New System.Drawing.Size(231, 35)
+        Me.HWPOP_Title.Size = New System.Drawing.Size(436, 35)
         Me.HWPOP_Title.TabIndex = 347
         Me.HWPOP_Title.Text = "Hot Water Post-Filter Pressure"
         Me.HWPOP_Title.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -34797,7 +34165,7 @@ Partial Class Dashboard_Page
         Me.HWPOP_Actual.KeypadShowCurrentValue = False
         Me.HWPOP_Actual.KeypadText = Nothing
         Me.HWPOP_Actual.KeypadWidth = 300
-        Me.HWPOP_Actual.Location = New System.Drawing.Point(345, 228)
+        Me.HWPOP_Actual.Location = New System.Drawing.Point(554, 273)
         Me.HWPOP_Actual.Name = "HWPOP_Actual"
         Me.HWPOP_Actual.NumericFormat = "0.0"
         Me.HWPOP_Actual.PLCAddressKeypad = ""
@@ -34819,8 +34187,8 @@ Partial Class Dashboard_Page
         '
         Me.HWPOP_Unit.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.HWPOP_Unit.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.HWPOP_Unit.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.HWPOP_Unit.Location = New System.Drawing.Point(455, 228)
+        Me.HWPOP_Unit.ForeColor = System.Drawing.Color.Red
+        Me.HWPOP_Unit.Location = New System.Drawing.Point(664, 273)
         Me.HWPOP_Unit.Name = "HWPOP_Unit"
         Me.HWPOP_Unit.Size = New System.Drawing.Size(111, 35)
         Me.HWPOP_Unit.TabIndex = 355
@@ -34831,8 +34199,8 @@ Partial Class Dashboard_Page
         '
         Me.Label70.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label70.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label70.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label70.Location = New System.Drawing.Point(569, 228)
+        Me.Label70.ForeColor = System.Drawing.Color.Red
+        Me.Label70.Location = New System.Drawing.Point(778, 273)
         Me.Label70.Name = "Label70"
         Me.Label70.Size = New System.Drawing.Size(100, 35)
         Me.Label70.TabIndex = 350
@@ -34843,8 +34211,8 @@ Partial Class Dashboard_Page
         '
         Me.Label49.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label49.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label49.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label49.Location = New System.Drawing.Point(769, 228)
+        Me.Label49.ForeColor = System.Drawing.Color.Red
+        Me.Label49.Location = New System.Drawing.Point(976, 273)
         Me.Label49.Name = "Label49"
         Me.Label49.Size = New System.Drawing.Size(100, 35)
         Me.Label49.TabIndex = 351
@@ -34855,10 +34223,10 @@ Partial Class Dashboard_Page
         '
         Me.HWPRP_Title.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.HWPRP_Title.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.HWPRP_Title.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.HWPRP_Title.Location = New System.Drawing.Point(5, 193)
+        Me.HWPRP_Title.ForeColor = System.Drawing.Color.Red
+        Me.HWPRP_Title.Location = New System.Drawing.Point(9, 237)
         Me.HWPRP_Title.Name = "HWPRP_Title"
-        Me.HWPRP_Title.Size = New System.Drawing.Size(231, 35)
+        Me.HWPRP_Title.Size = New System.Drawing.Size(436, 35)
         Me.HWPRP_Title.TabIndex = 338
         Me.HWPRP_Title.Text = "Hot Water Pre-Filter Pressure"
         Me.HWPRP_Title.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -34886,7 +34254,7 @@ Partial Class Dashboard_Page
         Me.HWPRP_Actual.KeypadShowCurrentValue = False
         Me.HWPRP_Actual.KeypadText = Nothing
         Me.HWPRP_Actual.KeypadWidth = 300
-        Me.HWPRP_Actual.Location = New System.Drawing.Point(345, 193)
+        Me.HWPRP_Actual.Location = New System.Drawing.Point(554, 237)
         Me.HWPRP_Actual.Name = "HWPRP_Actual"
         Me.HWPRP_Actual.NumericFormat = "0.0"
         Me.HWPRP_Actual.PLCAddressKeypad = ""
@@ -34908,8 +34276,8 @@ Partial Class Dashboard_Page
         '
         Me.HWPRP_Unit.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.HWPRP_Unit.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.HWPRP_Unit.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.HWPRP_Unit.Location = New System.Drawing.Point(455, 193)
+        Me.HWPRP_Unit.ForeColor = System.Drawing.Color.Red
+        Me.HWPRP_Unit.Location = New System.Drawing.Point(664, 237)
         Me.HWPRP_Unit.Name = "HWPRP_Unit"
         Me.HWPRP_Unit.Size = New System.Drawing.Size(111, 35)
         Me.HWPRP_Unit.TabIndex = 346
@@ -34940,7 +34308,7 @@ Partial Class Dashboard_Page
         Me.HWPRP_High.KeypadShowCurrentValue = False
         Me.HWPRP_High.KeypadText = Nothing
         Me.HWPRP_High.KeypadWidth = 300
-        Me.HWPRP_High.Location = New System.Drawing.Point(235, 193)
+        Me.HWPRP_High.Location = New System.Drawing.Point(444, 237)
         Me.HWPRP_High.Name = "HWPRP_High"
         Me.HWPRP_High.NumericFormat = "0.0"
         Me.HWPRP_High.PLCAddressKeypad = ""
@@ -34982,7 +34350,7 @@ Partial Class Dashboard_Page
         Me.HWPRP_Low.KeypadShowCurrentValue = False
         Me.HWPRP_Low.KeypadText = Nothing
         Me.HWPRP_Low.KeypadWidth = 300
-        Me.HWPRP_Low.Location = New System.Drawing.Point(235, 210)
+        Me.HWPRP_Low.Location = New System.Drawing.Point(444, 254)
         Me.HWPRP_Low.Name = "HWPRP_Low"
         Me.HWPRP_Low.NumericFormat = "0.0"
         Me.HWPRP_Low.PLCAddressKeypad = ""
@@ -35023,7 +34391,7 @@ Partial Class Dashboard_Page
         Me.HWPRP_Max.KeypadShowCurrentValue = False
         Me.HWPRP_Max.KeypadText = Nothing
         Me.HWPRP_Max.KeypadWidth = 300
-        Me.HWPRP_Max.Location = New System.Drawing.Point(869, 193)
+        Me.HWPRP_Max.Location = New System.Drawing.Point(1075, 237)
         Me.HWPRP_Max.Name = "HWPRP_Max"
         Me.HWPRP_Max.NumericFormat = "0"
         Me.HWPRP_Max.PLCAddressKeypad = ""
@@ -35064,7 +34432,7 @@ Partial Class Dashboard_Page
         Me.HWPRP_Min.KeypadShowCurrentValue = False
         Me.HWPRP_Min.KeypadText = Nothing
         Me.HWPRP_Min.KeypadWidth = 300
-        Me.HWPRP_Min.Location = New System.Drawing.Point(669, 193)
+        Me.HWPRP_Min.Location = New System.Drawing.Point(877, 237)
         Me.HWPRP_Min.Name = "HWPRP_Min"
         Me.HWPRP_Min.NumericFormat = "0"
         Me.HWPRP_Min.PLCAddressKeypad = ""
@@ -35086,8 +34454,8 @@ Partial Class Dashboard_Page
         '
         Me.Label45.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label45.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label45.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label45.Location = New System.Drawing.Point(569, 193)
+        Me.Label45.ForeColor = System.Drawing.Color.Red
+        Me.Label45.Location = New System.Drawing.Point(778, 237)
         Me.Label45.Name = "Label45"
         Me.Label45.Size = New System.Drawing.Size(100, 35)
         Me.Label45.TabIndex = 341
@@ -35098,8 +34466,8 @@ Partial Class Dashboard_Page
         '
         Me.Label17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label17.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label17.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label17.Location = New System.Drawing.Point(769, 193)
+        Me.Label17.ForeColor = System.Drawing.Color.Red
+        Me.Label17.Location = New System.Drawing.Point(976, 237)
         Me.Label17.Name = "Label17"
         Me.Label17.Size = New System.Drawing.Size(100, 35)
         Me.Label17.TabIndex = 342
@@ -35129,7 +34497,7 @@ Partial Class Dashboard_Page
         Me.CWSUP_High.KeypadShowCurrentValue = False
         Me.CWSUP_High.KeypadText = Nothing
         Me.CWSUP_High.KeypadWidth = 300
-        Me.CWSUP_High.Location = New System.Drawing.Point(235, 158)
+        Me.CWSUP_High.Location = New System.Drawing.Point(444, 201)
         Me.CWSUP_High.Name = "CWSUP_High"
         Me.CWSUP_High.NumericFormat = "0.0"
         Me.CWSUP_High.PLCAddressKeypad = ""
@@ -35170,7 +34538,7 @@ Partial Class Dashboard_Page
         Me.CWSUP_Low.KeypadShowCurrentValue = False
         Me.CWSUP_Low.KeypadText = Nothing
         Me.CWSUP_Low.KeypadWidth = 300
-        Me.CWSUP_Low.Location = New System.Drawing.Point(235, 175)
+        Me.CWSUP_Low.Location = New System.Drawing.Point(444, 218)
         Me.CWSUP_Low.Name = "CWSUP_Low"
         Me.CWSUP_Low.NumericFormat = "0.0"
         Me.CWSUP_Low.PLCAddressKeypad = ""
@@ -35211,7 +34579,7 @@ Partial Class Dashboard_Page
         Me.CWSUP_Actual.KeypadShowCurrentValue = False
         Me.CWSUP_Actual.KeypadText = Nothing
         Me.CWSUP_Actual.KeypadWidth = 300
-        Me.CWSUP_Actual.Location = New System.Drawing.Point(345, 158)
+        Me.CWSUP_Actual.Location = New System.Drawing.Point(554, 201)
         Me.CWSUP_Actual.Name = "CWSUP_Actual"
         Me.CWSUP_Actual.NumericFormat = "0.0"
         Me.CWSUP_Actual.PLCAddressKeypad = ""
@@ -35252,7 +34620,7 @@ Partial Class Dashboard_Page
         Me.CWSUP_Max.KeypadShowCurrentValue = False
         Me.CWSUP_Max.KeypadText = Nothing
         Me.CWSUP_Max.KeypadWidth = 300
-        Me.CWSUP_Max.Location = New System.Drawing.Point(869, 158)
+        Me.CWSUP_Max.Location = New System.Drawing.Point(1075, 201)
         Me.CWSUP_Max.Name = "CWSUP_Max"
         Me.CWSUP_Max.NumericFormat = "0"
         Me.CWSUP_Max.PLCAddressKeypad = ""
@@ -35293,7 +34661,7 @@ Partial Class Dashboard_Page
         Me.CWSUP_Min.KeypadShowCurrentValue = False
         Me.CWSUP_Min.KeypadText = Nothing
         Me.CWSUP_Min.KeypadWidth = 300
-        Me.CWSUP_Min.Location = New System.Drawing.Point(669, 158)
+        Me.CWSUP_Min.Location = New System.Drawing.Point(877, 201)
         Me.CWSUP_Min.Name = "CWSUP_Min"
         Me.CWSUP_Min.NumericFormat = "0"
         Me.CWSUP_Min.PLCAddressKeypad = ""
@@ -35315,8 +34683,8 @@ Partial Class Dashboard_Page
         '
         Me.Label176.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label176.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label176.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label176.Location = New System.Drawing.Point(569, 158)
+        Me.Label176.ForeColor = System.Drawing.Color.DodgerBlue
+        Me.Label176.Location = New System.Drawing.Point(778, 201)
         Me.Label176.Name = "Label176"
         Me.Label176.Size = New System.Drawing.Size(100, 35)
         Me.Label176.TabIndex = 332
@@ -35327,8 +34695,8 @@ Partial Class Dashboard_Page
         '
         Me.Label138.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label138.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label138.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label138.Location = New System.Drawing.Point(769, 158)
+        Me.Label138.ForeColor = System.Drawing.Color.DodgerBlue
+        Me.Label138.Location = New System.Drawing.Point(976, 201)
         Me.Label138.Name = "Label138"
         Me.Label138.Size = New System.Drawing.Size(100, 35)
         Me.Label138.TabIndex = 333
@@ -35339,8 +34707,8 @@ Partial Class Dashboard_Page
         '
         Me.CWSUP_Unit.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.CWSUP_Unit.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CWSUP_Unit.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.CWSUP_Unit.Location = New System.Drawing.Point(455, 158)
+        Me.CWSUP_Unit.ForeColor = System.Drawing.Color.DodgerBlue
+        Me.CWSUP_Unit.Location = New System.Drawing.Point(664, 201)
         Me.CWSUP_Unit.Name = "CWSUP_Unit"
         Me.CWSUP_Unit.Size = New System.Drawing.Size(111, 35)
         Me.CWSUP_Unit.TabIndex = 337
@@ -35351,10 +34719,10 @@ Partial Class Dashboard_Page
         '
         Me.CWSUP_Title.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.CWSUP_Title.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CWSUP_Title.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.CWSUP_Title.Location = New System.Drawing.Point(5, 158)
+        Me.CWSUP_Title.ForeColor = System.Drawing.Color.DodgerBlue
+        Me.CWSUP_Title.Location = New System.Drawing.Point(9, 201)
         Me.CWSUP_Title.Name = "CWSUP_Title"
-        Me.CWSUP_Title.Size = New System.Drawing.Size(231, 35)
+        Me.CWSUP_Title.Size = New System.Drawing.Size(436, 35)
         Me.CWSUP_Title.TabIndex = 321
         Me.CWSUP_Title.Text = "City Water Line Pressure"
         Me.CWSUP_Title.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -35383,7 +34751,7 @@ Partial Class Dashboard_Page
         Me.CWFD_High.KeypadShowCurrentValue = False
         Me.CWFD_High.KeypadText = Nothing
         Me.CWFD_High.KeypadWidth = 300
-        Me.CWFD_High.Location = New System.Drawing.Point(235, 123)
+        Me.CWFD_High.Location = New System.Drawing.Point(444, 165)
         Me.CWFD_High.Name = "CWFD_High"
         Me.CWFD_High.NumericFormat = "0.0"
         Me.CWFD_High.PLCAddressKeypad = ""
@@ -35425,7 +34793,7 @@ Partial Class Dashboard_Page
         Me.CWFD_Low.KeypadShowCurrentValue = False
         Me.CWFD_Low.KeypadText = Nothing
         Me.CWFD_Low.KeypadWidth = 300
-        Me.CWFD_Low.Location = New System.Drawing.Point(235, 140)
+        Me.CWFD_Low.Location = New System.Drawing.Point(444, 182)
         Me.CWFD_Low.Name = "CWFD_Low"
         Me.CWFD_Low.NumericFormat = "0.0"
         Me.CWFD_Low.PLCAddressKeypad = ""
@@ -35447,10 +34815,10 @@ Partial Class Dashboard_Page
         '
         Me.CWFD_Title.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.CWFD_Title.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CWFD_Title.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.CWFD_Title.Location = New System.Drawing.Point(5, 123)
+        Me.CWFD_Title.ForeColor = System.Drawing.Color.DodgerBlue
+        Me.CWFD_Title.Location = New System.Drawing.Point(9, 165)
         Me.CWFD_Title.Name = "CWFD_Title"
-        Me.CWFD_Title.Size = New System.Drawing.Size(231, 35)
+        Me.CWFD_Title.Size = New System.Drawing.Size(436, 35)
         Me.CWFD_Title.TabIndex = 312
         Me.CWFD_Title.Text = "City Water Pressure Differential"
         Me.CWFD_Title.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -35459,8 +34827,8 @@ Partial Class Dashboard_Page
         '
         Me.CWFD_Unit.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.CWFD_Unit.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CWFD_Unit.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.CWFD_Unit.Location = New System.Drawing.Point(455, 123)
+        Me.CWFD_Unit.ForeColor = System.Drawing.Color.DodgerBlue
+        Me.CWFD_Unit.Location = New System.Drawing.Point(664, 165)
         Me.CWFD_Unit.Name = "CWFD_Unit"
         Me.CWFD_Unit.Size = New System.Drawing.Size(111, 35)
         Me.CWFD_Unit.TabIndex = 318
@@ -35490,7 +34858,7 @@ Partial Class Dashboard_Page
         Me.CWFD_Actual.KeypadShowCurrentValue = False
         Me.CWFD_Actual.KeypadText = Nothing
         Me.CWFD_Actual.KeypadWidth = 300
-        Me.CWFD_Actual.Location = New System.Drawing.Point(345, 123)
+        Me.CWFD_Actual.Location = New System.Drawing.Point(554, 165)
         Me.CWFD_Actual.Name = "CWFD_Actual"
         Me.CWFD_Actual.NumericFormat = "0.0"
         Me.CWFD_Actual.PLCAddressKeypad = ""
@@ -35532,7 +34900,7 @@ Partial Class Dashboard_Page
         Me.CWPOP_High.KeypadShowCurrentValue = False
         Me.CWPOP_High.KeypadText = Nothing
         Me.CWPOP_High.KeypadWidth = 300
-        Me.CWPOP_High.Location = New System.Drawing.Point(235, 88)
+        Me.CWPOP_High.Location = New System.Drawing.Point(444, 129)
         Me.CWPOP_High.Name = "CWPOP_High"
         Me.CWPOP_High.NumericFormat = "0.0"
         Me.CWPOP_High.PLCAddressKeypad = ""
@@ -35574,7 +34942,7 @@ Partial Class Dashboard_Page
         Me.CWPOP_Low.KeypadShowCurrentValue = False
         Me.CWPOP_Low.KeypadText = Nothing
         Me.CWPOP_Low.KeypadWidth = 300
-        Me.CWPOP_Low.Location = New System.Drawing.Point(235, 105)
+        Me.CWPOP_Low.Location = New System.Drawing.Point(444, 146)
         Me.CWPOP_Low.Name = "CWPOP_Low"
         Me.CWPOP_Low.NumericFormat = "0.0"
         Me.CWPOP_Low.PLCAddressKeypad = ""
@@ -35615,7 +34983,7 @@ Partial Class Dashboard_Page
         Me.CWPOP_Actual.KeypadShowCurrentValue = False
         Me.CWPOP_Actual.KeypadText = Nothing
         Me.CWPOP_Actual.KeypadWidth = 300
-        Me.CWPOP_Actual.Location = New System.Drawing.Point(345, 88)
+        Me.CWPOP_Actual.Location = New System.Drawing.Point(554, 129)
         Me.CWPOP_Actual.Name = "CWPOP_Actual"
         Me.CWPOP_Actual.NumericFormat = "0.0"
         Me.CWPOP_Actual.PLCAddressKeypad = ""
@@ -35637,8 +35005,8 @@ Partial Class Dashboard_Page
         '
         Me.CWPOP_Unit.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.CWPOP_Unit.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CWPOP_Unit.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.CWPOP_Unit.Location = New System.Drawing.Point(455, 88)
+        Me.CWPOP_Unit.ForeColor = System.Drawing.Color.DodgerBlue
+        Me.CWPOP_Unit.Location = New System.Drawing.Point(664, 129)
         Me.CWPOP_Unit.Name = "CWPOP_Unit"
         Me.CWPOP_Unit.Size = New System.Drawing.Size(111, 35)
         Me.CWPOP_Unit.TabIndex = 311
@@ -35649,10 +35017,10 @@ Partial Class Dashboard_Page
         '
         Me.CWPOP_Title.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.CWPOP_Title.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CWPOP_Title.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.CWPOP_Title.Location = New System.Drawing.Point(5, 88)
+        Me.CWPOP_Title.ForeColor = System.Drawing.Color.DodgerBlue
+        Me.CWPOP_Title.Location = New System.Drawing.Point(9, 129)
         Me.CWPOP_Title.Name = "CWPOP_Title"
-        Me.CWPOP_Title.Size = New System.Drawing.Size(231, 35)
+        Me.CWPOP_Title.Size = New System.Drawing.Size(436, 35)
         Me.CWPOP_Title.TabIndex = 303
         Me.CWPOP_Title.Text = "City Water Post-Filter Pressure"
         Me.CWPOP_Title.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -35680,7 +35048,7 @@ Partial Class Dashboard_Page
         Me.STMPDEM_Min.KeypadShowCurrentValue = False
         Me.STMPDEM_Min.KeypadText = Nothing
         Me.STMPDEM_Min.KeypadWidth = 300
-        Me.STMPDEM_Min.Location = New System.Drawing.Point(669, 613)
+        Me.STMPDEM_Min.Location = New System.Drawing.Point(877, 633)
         Me.STMPDEM_Min.Name = "STMPDEM_Min"
         Me.STMPDEM_Min.NumericFormat = "0"
         Me.STMPDEM_Min.PLCAddressKeypad = ""
@@ -35721,7 +35089,7 @@ Partial Class Dashboard_Page
         Me.CWPOP_Min.KeypadShowCurrentValue = False
         Me.CWPOP_Min.KeypadText = Nothing
         Me.CWPOP_Min.KeypadWidth = 300
-        Me.CWPOP_Min.Location = New System.Drawing.Point(669, 88)
+        Me.CWPOP_Min.Location = New System.Drawing.Point(877, 129)
         Me.CWPOP_Min.Name = "CWPOP_Min"
         Me.CWPOP_Min.NumericFormat = "0"
         Me.CWPOP_Min.PLCAddressKeypad = ""
@@ -35762,7 +35130,7 @@ Partial Class Dashboard_Page
         Me.STMPDEM_Max.KeypadShowCurrentValue = False
         Me.STMPDEM_Max.KeypadText = Nothing
         Me.STMPDEM_Max.KeypadWidth = 300
-        Me.STMPDEM_Max.Location = New System.Drawing.Point(869, 613)
+        Me.STMPDEM_Max.Location = New System.Drawing.Point(1075, 633)
         Me.STMPDEM_Max.Name = "STMPDEM_Max"
         Me.STMPDEM_Max.NumericFormat = "0"
         Me.STMPDEM_Max.PLCAddressKeypad = ""
@@ -35803,7 +35171,7 @@ Partial Class Dashboard_Page
         Me.CWPOP_Max.KeypadShowCurrentValue = False
         Me.CWPOP_Max.KeypadText = Nothing
         Me.CWPOP_Max.KeypadWidth = 300
-        Me.CWPOP_Max.Location = New System.Drawing.Point(869, 88)
+        Me.CWPOP_Max.Location = New System.Drawing.Point(1075, 129)
         Me.CWPOP_Max.Name = "CWPOP_Max"
         Me.CWPOP_Max.NumericFormat = "0"
         Me.CWPOP_Max.PLCAddressKeypad = ""
@@ -35825,8 +35193,8 @@ Partial Class Dashboard_Page
         '
         Me.Label33.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label33.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label33.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label33.Location = New System.Drawing.Point(569, 613)
+        Me.Label33.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Label33.Location = New System.Drawing.Point(778, 633)
         Me.Label33.Name = "Label33"
         Me.Label33.Size = New System.Drawing.Size(100, 35)
         Me.Label33.TabIndex = 306
@@ -35837,8 +35205,8 @@ Partial Class Dashboard_Page
         '
         Me.Label41.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label41.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label41.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label41.Location = New System.Drawing.Point(569, 88)
+        Me.Label41.ForeColor = System.Drawing.Color.DodgerBlue
+        Me.Label41.Location = New System.Drawing.Point(778, 129)
         Me.Label41.Name = "Label41"
         Me.Label41.Size = New System.Drawing.Size(100, 35)
         Me.Label41.TabIndex = 306
@@ -35849,8 +35217,8 @@ Partial Class Dashboard_Page
         '
         Me.Label24.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label24.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label24.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label24.Location = New System.Drawing.Point(769, 613)
+        Me.Label24.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Label24.Location = New System.Drawing.Point(976, 633)
         Me.Label24.Name = "Label24"
         Me.Label24.Size = New System.Drawing.Size(100, 35)
         Me.Label24.TabIndex = 307
@@ -35861,8 +35229,8 @@ Partial Class Dashboard_Page
         '
         Me.Label6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label6.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label6.Location = New System.Drawing.Point(769, 88)
+        Me.Label6.ForeColor = System.Drawing.Color.DodgerBlue
+        Me.Label6.Location = New System.Drawing.Point(976, 129)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(100, 35)
         Me.Label6.TabIndex = 307
@@ -35893,7 +35261,7 @@ Partial Class Dashboard_Page
         Me.CWPRP_High.KeypadShowCurrentValue = False
         Me.CWPRP_High.KeypadText = Nothing
         Me.CWPRP_High.KeypadWidth = 300
-        Me.CWPRP_High.Location = New System.Drawing.Point(235, 53)
+        Me.CWPRP_High.Location = New System.Drawing.Point(444, 93)
         Me.CWPRP_High.Name = "CWPRP_High"
         Me.CWPRP_High.NumericFormat = "0.0"
         Me.CWPRP_High.PLCAddressKeypad = ""
@@ -35934,7 +35302,7 @@ Partial Class Dashboard_Page
         Me.STLPDEM_Max.KeypadShowCurrentValue = False
         Me.STLPDEM_Max.KeypadText = Nothing
         Me.STLPDEM_Max.KeypadWidth = 300
-        Me.STLPDEM_Max.Location = New System.Drawing.Point(869, 578)
+        Me.STLPDEM_Max.Location = New System.Drawing.Point(1075, 597)
         Me.STLPDEM_Max.Name = "STLPDEM_Max"
         Me.STLPDEM_Max.NumericFormat = "0"
         Me.STLPDEM_Max.PLCAddressKeypad = ""
@@ -35975,7 +35343,7 @@ Partial Class Dashboard_Page
         Me.CWPRP_Max.KeypadShowCurrentValue = False
         Me.CWPRP_Max.KeypadText = Nothing
         Me.CWPRP_Max.KeypadWidth = 300
-        Me.CWPRP_Max.Location = New System.Drawing.Point(869, 53)
+        Me.CWPRP_Max.Location = New System.Drawing.Point(1075, 93)
         Me.CWPRP_Max.Name = "CWPRP_Max"
         Me.CWPRP_Max.NumericFormat = "0"
         Me.CWPRP_Max.PLCAddressKeypad = ""
@@ -36017,7 +35385,7 @@ Partial Class Dashboard_Page
         Me.CWPRP_Low.KeypadShowCurrentValue = False
         Me.CWPRP_Low.KeypadText = Nothing
         Me.CWPRP_Low.KeypadWidth = 300
-        Me.CWPRP_Low.Location = New System.Drawing.Point(235, 70)
+        Me.CWPRP_Low.Location = New System.Drawing.Point(444, 110)
         Me.CWPRP_Low.Name = "CWPRP_Low"
         Me.CWPRP_Low.NumericFormat = "0.0"
         Me.CWPRP_Low.PLCAddressKeypad = ""
@@ -36058,7 +35426,7 @@ Partial Class Dashboard_Page
         Me.STLPDEM_Min.KeypadShowCurrentValue = False
         Me.STLPDEM_Min.KeypadText = Nothing
         Me.STLPDEM_Min.KeypadWidth = 300
-        Me.STLPDEM_Min.Location = New System.Drawing.Point(669, 578)
+        Me.STLPDEM_Min.Location = New System.Drawing.Point(877, 597)
         Me.STLPDEM_Min.Name = "STLPDEM_Min"
         Me.STLPDEM_Min.NumericFormat = "0"
         Me.STLPDEM_Min.PLCAddressKeypad = ""
@@ -36099,7 +35467,7 @@ Partial Class Dashboard_Page
         Me.CWPRP_Min.KeypadShowCurrentValue = False
         Me.CWPRP_Min.KeypadText = Nothing
         Me.CWPRP_Min.KeypadWidth = 300
-        Me.CWPRP_Min.Location = New System.Drawing.Point(669, 53)
+        Me.CWPRP_Min.Location = New System.Drawing.Point(877, 93)
         Me.CWPRP_Min.Name = "CWPRP_Min"
         Me.CWPRP_Min.NumericFormat = "0"
         Me.CWPRP_Min.PLCAddressKeypad = ""
@@ -36121,8 +35489,8 @@ Partial Class Dashboard_Page
         '
         Me.CWPRP_Unit.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.CWPRP_Unit.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CWPRP_Unit.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.CWPRP_Unit.Location = New System.Drawing.Point(455, 53)
+        Me.CWPRP_Unit.ForeColor = System.Drawing.Color.DodgerBlue
+        Me.CWPRP_Unit.Location = New System.Drawing.Point(664, 93)
         Me.CWPRP_Unit.Name = "CWPRP_Unit"
         Me.CWPRP_Unit.Size = New System.Drawing.Size(111, 35)
         Me.CWPRP_Unit.TabIndex = 302
@@ -36152,7 +35520,7 @@ Partial Class Dashboard_Page
         Me.CWPRP_Actual.KeypadShowCurrentValue = False
         Me.CWPRP_Actual.KeypadText = Nothing
         Me.CWPRP_Actual.KeypadWidth = 300
-        Me.CWPRP_Actual.Location = New System.Drawing.Point(345, 53)
+        Me.CWPRP_Actual.Location = New System.Drawing.Point(554, 93)
         Me.CWPRP_Actual.Name = "CWPRP_Actual"
         Me.CWPRP_Actual.NumericFormat = "0.0"
         Me.CWPRP_Actual.PLCAddressKeypad = ""
@@ -36174,10 +35542,10 @@ Partial Class Dashboard_Page
         '
         Me.CWPRP_Title.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.CWPRP_Title.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CWPRP_Title.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.CWPRP_Title.Location = New System.Drawing.Point(5, 53)
+        Me.CWPRP_Title.ForeColor = System.Drawing.Color.DodgerBlue
+        Me.CWPRP_Title.Location = New System.Drawing.Point(9, 93)
         Me.CWPRP_Title.Name = "CWPRP_Title"
-        Me.CWPRP_Title.Size = New System.Drawing.Size(231, 35)
+        Me.CWPRP_Title.Size = New System.Drawing.Size(436, 35)
         Me.CWPRP_Title.TabIndex = 294
         Me.CWPRP_Title.Text = "City Water Pre-Filter Pressure"
         Me.CWPRP_Title.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -36186,8 +35554,8 @@ Partial Class Dashboard_Page
         '
         Me.Label18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label18.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label18.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label18.Location = New System.Drawing.Point(569, 578)
+        Me.Label18.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Label18.Location = New System.Drawing.Point(778, 597)
         Me.Label18.Name = "Label18"
         Me.Label18.Size = New System.Drawing.Size(100, 35)
         Me.Label18.TabIndex = 297
@@ -36198,8 +35566,8 @@ Partial Class Dashboard_Page
         '
         Me.Label16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label16.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label16.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label16.Location = New System.Drawing.Point(769, 578)
+        Me.Label16.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Label16.Location = New System.Drawing.Point(976, 597)
         Me.Label16.Name = "Label16"
         Me.Label16.Size = New System.Drawing.Size(100, 35)
         Me.Label16.TabIndex = 298
@@ -36210,8 +35578,8 @@ Partial Class Dashboard_Page
         '
         Me.Label20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label20.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label20.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label20.Location = New System.Drawing.Point(569, 53)
+        Me.Label20.ForeColor = System.Drawing.Color.DodgerBlue
+        Me.Label20.Location = New System.Drawing.Point(778, 93)
         Me.Label20.Name = "Label20"
         Me.Label20.Size = New System.Drawing.Size(100, 35)
         Me.Label20.TabIndex = 297
@@ -36222,8 +35590,8 @@ Partial Class Dashboard_Page
         '
         Me.Label5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label5.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label5.Location = New System.Drawing.Point(769, 53)
+        Me.Label5.ForeColor = System.Drawing.Color.DodgerBlue
+        Me.Label5.Location = New System.Drawing.Point(976, 93)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(100, 35)
         Me.Label5.TabIndex = 298
@@ -36234,10 +35602,10 @@ Partial Class Dashboard_Page
         '
         Me.Label78.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label78.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label78.ForeColor = System.Drawing.Color.Lime
-        Me.Label78.Location = New System.Drawing.Point(569, 7)
+        Me.Label78.ForeColor = System.Drawing.Color.SlateGray
+        Me.Label78.Location = New System.Drawing.Point(778, 7)
         Me.Label78.Name = "Label78"
-        Me.Label78.Size = New System.Drawing.Size(298, 41)
+        Me.Label78.Size = New System.Drawing.Size(400, 41)
         Me.Label78.TabIndex = 136
         Me.Label78.Text = "Setpoint Settings"
         Me.Label78.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -36246,8 +35614,8 @@ Partial Class Dashboard_Page
         '
         Me.Label73.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label73.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label73.ForeColor = System.Drawing.Color.Lime
-        Me.Label73.Location = New System.Drawing.Point(345, 7)
+        Me.Label73.ForeColor = System.Drawing.Color.SlateGray
+        Me.Label73.Location = New System.Drawing.Point(554, 7)
         Me.Label73.Name = "Label73"
         Me.Label73.Size = New System.Drawing.Size(221, 41)
         Me.Label73.TabIndex = 136
@@ -36258,8 +35626,8 @@ Partial Class Dashboard_Page
         '
         Me.Label28.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label28.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label28.ForeColor = System.Drawing.Color.Lime
-        Me.Label28.Location = New System.Drawing.Point(235, 7)
+        Me.Label28.ForeColor = System.Drawing.Color.SlateGray
+        Me.Label28.Location = New System.Drawing.Point(444, 7)
         Me.Label28.Name = "Label28"
         Me.Label28.Size = New System.Drawing.Size(111, 41)
         Me.Label28.TabIndex = 136
@@ -36270,10 +35638,10 @@ Partial Class Dashboard_Page
         '
         Me.Label27.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label27.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label27.ForeColor = System.Drawing.Color.Lime
-        Me.Label27.Location = New System.Drawing.Point(5, 7)
+        Me.Label27.ForeColor = System.Drawing.Color.SlateGray
+        Me.Label27.Location = New System.Drawing.Point(9, 7)
         Me.Label27.Name = "Label27"
-        Me.Label27.Size = New System.Drawing.Size(231, 41)
+        Me.Label27.Size = New System.Drawing.Size(438, 41)
         Me.Label27.TabIndex = 136
         Me.Label27.Text = "Device Description"
         Me.Label27.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -36295,12 +35663,12 @@ Partial Class Dashboard_Page
         Me.Alarms_Page.Controls.Add(Me.Label282)
         Me.Alarms_Page.Controls.Add(Me.BasicIndicator123)
         Me.Alarms_Page.Controls.Add(Me.Label241)
-        Me.Alarms_Page.Controls.Add(Me.AlarmHistoryPanel)
-        Me.Alarms_Page.Controls.Add(Me.EditAlarmDescPanel)
         Me.Alarms_Page.Controls.Add(Me.SteamAlarmPanel)
         Me.Alarms_Page.Controls.Add(Me.ElectricalAlarmPanel)
         Me.Alarms_Page.Controls.Add(Me.AirAlarmPanel)
         Me.Alarms_Page.Controls.Add(Me.WaterAlarmPanel)
+        Me.Alarms_Page.Controls.Add(Me.AlarmHistoryPanel)
+        Me.Alarms_Page.Controls.Add(Me.EditAlarmDescPanel)
         Me.Alarms_Page.Location = New System.Drawing.Point(14, 123)
         Me.Alarms_Page.Name = "Alarms_Page"
         Me.Alarms_Page.Size = New System.Drawing.Size(1895, 945)
@@ -36398,40 +35766,40 @@ Partial Class Dashboard_Page
         Me.AlarmGrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells
         Me.AlarmGrid.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(24, Byte), Integer), CType(CType(24, Byte), Integer), CType(CType(24, Byte), Integer))
         Me.AlarmGrid.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer))
-        DataGridViewCellStyle1.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer))
-        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.AlarmGrid.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer))
+        DataGridViewCellStyle5.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer))
+        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.AlarmGrid.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle5
         Me.AlarmGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Franklin Gothic Demi Cond", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.Gainsboro
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.AlarmGrid.DefaultCellStyle = DataGridViewCellStyle2
+        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        DataGridViewCellStyle6.Font = New System.Drawing.Font("Franklin Gothic Demi Cond", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle6.ForeColor = System.Drawing.Color.Gainsboro
+        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
+        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.AlarmGrid.DefaultCellStyle = DataGridViewCellStyle6
         Me.AlarmGrid.GridColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.AlarmGrid.Location = New System.Drawing.Point(435, 82)
         Me.AlarmGrid.Name = "AlarmGrid"
         Me.AlarmGrid.ReadOnly = True
-        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
-        DataGridViewCellStyle3.BackColor = System.Drawing.Color.DarkGreen
-        DataGridViewCellStyle3.Font = New System.Drawing.Font("Franklin Gothic Demi Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.Gainsboro
-        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Lime
-        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.Desktop
-        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.AlarmGrid.RowHeadersDefaultCellStyle = DataGridViewCellStyle3
+        DataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
+        DataGridViewCellStyle7.BackColor = System.Drawing.Color.DarkGreen
+        DataGridViewCellStyle7.Font = New System.Drawing.Font("Franklin Gothic Demi Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle7.ForeColor = System.Drawing.Color.Gainsboro
+        DataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.Lime
+        DataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.Desktop
+        DataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.AlarmGrid.RowHeadersDefaultCellStyle = DataGridViewCellStyle7
         Me.AlarmGrid.RowHeadersVisible = False
         Me.AlarmGrid.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders
-        DataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer))
-        DataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer))
-        Me.AlarmGrid.RowsDefaultCellStyle = DataGridViewCellStyle4
+        DataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer))
+        DataGridViewCellStyle8.ForeColor = System.Drawing.Color.FromArgb(CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer), CType(CType(200, Byte), Integer))
+        Me.AlarmGrid.RowsDefaultCellStyle = DataGridViewCellStyle8
         Me.AlarmGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect
         Me.AlarmGrid.Size = New System.Drawing.Size(1006, 650)
         Me.AlarmGrid.TabIndex = 263
@@ -36587,15 +35955,20 @@ Partial Class Dashboard_Page
         '
         'Water_Page
         '
+        Me.Water_Page.Controls.Add(Me.Water_Pr_Hot_T2)
+        Me.Water_Page.Controls.Add(Me.Water_Pr_Cold_T2)
+        Me.Water_Page.Controls.Add(Me.Water_Sup_City_T2)
+        Me.Water_Page.Controls.Add(Me.Water_Pr_ColdPre_T2)
+        Me.Water_Page.Controls.Add(Me.Water_Pr_HotPre_T2)
+        Me.Water_Page.Controls.Add(Me.Water_Fl_Hot_T2)
+        Me.Water_Page.Controls.Add(Me.Water_Tp_Hot_T2)
         Me.Water_Page.Controls.Add(Me.Label75)
         Me.Water_Page.Controls.Add(Me.Water_Pr_Cold_V2)
         Me.Water_Page.Controls.Add(Me.Pipe104)
         Me.Water_Page.Controls.Add(Me.Pipe108)
         Me.Water_Page.Controls.Add(Me.Water_Pr_Hot_UN2)
         Me.Water_Page.Controls.Add(Me.Water_Pr_Cold_UN2)
-        Me.Water_Page.Controls.Add(Me.BasicIndicator9)
         Me.Water_Page.Controls.Add(Me.Water_Pr_Hot_MIN2)
-        Me.Water_Page.Controls.Add(Me.BasicIndicator3)
         Me.Water_Page.Controls.Add(Me.Water_Pr_Hot_MAX2)
         Me.Water_Page.Controls.Add(Me.Water_Pr_Cold_MIN2)
         Me.Water_Page.Controls.Add(Me.Water_Pr_Cold_MAX2)
@@ -36609,15 +35982,10 @@ Partial Class Dashboard_Page
         Me.Water_Page.Controls.Add(Me.Water_Pr_ColdPre_MAX2)
         Me.Water_Page.Controls.Add(Me.Water_Pr_HotPre_MAX2)
         Me.Water_Page.Controls.Add(Me.Water_Sup_City_UN2)
-        Me.Water_Page.Controls.Add(Me.BasicIndicator21)
-        Me.Water_Page.Controls.Add(Me.BasicIndicator95)
-        Me.Water_Page.Controls.Add(Me.BasicIndicator1)
         Me.Water_Page.Controls.Add(Me.Water_Fl_Hot_MIN2)
         Me.Water_Page.Controls.Add(Me.Water_Fl_Hot_MAX2)
-        Me.Water_Page.Controls.Add(Me.BasicIndicator20)
         Me.Water_Page.Controls.Add(Me.Water_Tp_Hot_MIN2)
         Me.Water_Page.Controls.Add(Me.Water_Tp_Hot_MAX2)
-        Me.Water_Page.Controls.Add(Me.BasicIndicator7)
         Me.Water_Page.Controls.Add(Me.Pipe65)
         Me.Water_Page.Controls.Add(Me.Pipe142)
         Me.Water_Page.Controls.Add(Me.Pipe144)
@@ -36853,26 +36221,6 @@ Partial Class Dashboard_Page
         Me.Water_Pr_Cold_UN2.TabIndex = 398
         Me.Water_Pr_Cold_UN2.Text = "UNIT"
         '
-        'BasicIndicator9
-        '
-        Me.BasicIndicator9.Color1 = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer))
-        Me.BasicIndicator9.Color2 = System.Drawing.Color.Green
-        Me.BasicIndicator9.Color3 = System.Drawing.Color.Red
-        Me.BasicIndicator9.ComComponent = Me.PLC
-        Me.BasicIndicator9.Font = New System.Drawing.Font("Agency FB", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BasicIndicator9.ForeColor = System.Drawing.Color.Silver
-        Me.BasicIndicator9.Location = New System.Drawing.Point(1019, 499)
-        Me.BasicIndicator9.Name = "BasicIndicator9"
-        Me.BasicIndicator9.OutlineColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer))
-        Me.BasicIndicator9.OutlineWidth = 5
-        Me.BasicIndicator9.OutputType = MfgControl.AdvancedHMI.Controls.OutputType.MomentarySet
-        Me.BasicIndicator9.SelectColor2 = False
-        Me.BasicIndicator9.SelectColor3 = False
-        Me.BasicIndicator9.Shape = MfgControl.AdvancedHMI.Controls.Indicator.ShapeTypes.Rectangle
-        Me.BasicIndicator9.Size = New System.Drawing.Size(267, 57)
-        Me.BasicIndicator9.TabIndex = 395
-        Me.BasicIndicator9.Text = "HOT WATER PRESSURE"
-        '
         'Water_Pr_Hot_MIN2
         '
         Me.Water_Pr_Hot_MIN2.BackColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer))
@@ -36911,26 +36259,6 @@ Partial Class Dashboard_Page
         Me.Water_Pr_Hot_MIN2.ValueScaleFactor = 1.0R
         Me.Water_Pr_Hot_MIN2.ValueSuffix = Nothing
         Me.Water_Pr_Hot_MIN2.ValueToSubtractFrom = 0!
-        '
-        'BasicIndicator3
-        '
-        Me.BasicIndicator3.Color1 = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer))
-        Me.BasicIndicator3.Color2 = System.Drawing.Color.Green
-        Me.BasicIndicator3.Color3 = System.Drawing.Color.Red
-        Me.BasicIndicator3.ComComponent = Me.PLC
-        Me.BasicIndicator3.Font = New System.Drawing.Font("Agency FB", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BasicIndicator3.ForeColor = System.Drawing.Color.Silver
-        Me.BasicIndicator3.Location = New System.Drawing.Point(582, 499)
-        Me.BasicIndicator3.Name = "BasicIndicator3"
-        Me.BasicIndicator3.OutlineColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer))
-        Me.BasicIndicator3.OutlineWidth = 5
-        Me.BasicIndicator3.OutputType = MfgControl.AdvancedHMI.Controls.OutputType.MomentarySet
-        Me.BasicIndicator3.SelectColor2 = False
-        Me.BasicIndicator3.SelectColor3 = False
-        Me.BasicIndicator3.Shape = MfgControl.AdvancedHMI.Controls.Indicator.ShapeTypes.Rectangle
-        Me.BasicIndicator3.Size = New System.Drawing.Size(267, 57)
-        Me.BasicIndicator3.TabIndex = 395
-        Me.BasicIndicator3.Text = "COLD WATER PRESSURE"
         '
         'Water_Pr_Hot_MAX2
         '
@@ -37073,7 +36401,7 @@ Partial Class Dashboard_Page
         '
         Me.Water_Pr_Cold_G2.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Water_Pr_Cold_G2.BackColor = System.Drawing.Color.Transparent
-        Me.Water_Pr_Cold_G2.BackgroundImage = Global.MfgControl.AdvancedHMI.My.Resources.Resources.GOODBG
+        Me.Water_Pr_Cold_G2.BackgroundImage = CType(resources.GetObject("Water_Pr_Cold_G2.BackgroundImage"), System.Drawing.Image)
         Me.Water_Pr_Cold_G2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Water_Pr_Cold_G2.Band1Color = System.Drawing.Color.Maroon
         Me.Water_Pr_Cold_G2.Band1EndValue = 999999.0R
@@ -37371,66 +36699,6 @@ Partial Class Dashboard_Page
         Me.Water_Sup_City_UN2.Text = "UNIT"
         Me.Water_Sup_City_UN2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'BasicIndicator21
-        '
-        Me.BasicIndicator21.Color1 = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer))
-        Me.BasicIndicator21.Color2 = System.Drawing.Color.Green
-        Me.BasicIndicator21.Color3 = System.Drawing.Color.Red
-        Me.BasicIndicator21.ComComponent = Me.PLC
-        Me.BasicIndicator21.Font = New System.Drawing.Font("Agency FB", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BasicIndicator21.ForeColor = System.Drawing.Color.Silver
-        Me.BasicIndicator21.Location = New System.Drawing.Point(25, 197)
-        Me.BasicIndicator21.Name = "BasicIndicator21"
-        Me.BasicIndicator21.OutlineColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer))
-        Me.BasicIndicator21.OutlineWidth = 5
-        Me.BasicIndicator21.OutputType = MfgControl.AdvancedHMI.Controls.OutputType.MomentarySet
-        Me.BasicIndicator21.SelectColor2 = False
-        Me.BasicIndicator21.SelectColor3 = False
-        Me.BasicIndicator21.Shape = MfgControl.AdvancedHMI.Controls.Indicator.ShapeTypes.Rectangle
-        Me.BasicIndicator21.Size = New System.Drawing.Size(222, 41)
-        Me.BasicIndicator21.TabIndex = 388
-        Me.BasicIndicator21.Text = "City Water Supply Pressure"
-        '
-        'BasicIndicator95
-        '
-        Me.BasicIndicator95.Color1 = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer))
-        Me.BasicIndicator95.Color2 = System.Drawing.Color.Green
-        Me.BasicIndicator95.Color3 = System.Drawing.Color.Red
-        Me.BasicIndicator95.ComComponent = Me.PLC
-        Me.BasicIndicator95.Font = New System.Drawing.Font("Agency FB", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BasicIndicator95.ForeColor = System.Drawing.Color.Silver
-        Me.BasicIndicator95.Location = New System.Drawing.Point(631, 191)
-        Me.BasicIndicator95.Name = "BasicIndicator95"
-        Me.BasicIndicator95.OutlineColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer))
-        Me.BasicIndicator95.OutlineWidth = 5
-        Me.BasicIndicator95.OutputType = MfgControl.AdvancedHMI.Controls.OutputType.MomentarySet
-        Me.BasicIndicator95.SelectColor2 = False
-        Me.BasicIndicator95.SelectColor3 = False
-        Me.BasicIndicator95.Shape = MfgControl.AdvancedHMI.Controls.Indicator.ShapeTypes.Rectangle
-        Me.BasicIndicator95.Size = New System.Drawing.Size(222, 41)
-        Me.BasicIndicator95.TabIndex = 388
-        Me.BasicIndicator95.Text = "City Water Pump Pressure"
-        '
-        'BasicIndicator1
-        '
-        Me.BasicIndicator1.Color1 = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer))
-        Me.BasicIndicator1.Color2 = System.Drawing.Color.Green
-        Me.BasicIndicator1.Color3 = System.Drawing.Color.Red
-        Me.BasicIndicator1.ComComponent = Me.PLC
-        Me.BasicIndicator1.Font = New System.Drawing.Font("Agency FB", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BasicIndicator1.ForeColor = System.Drawing.Color.Silver
-        Me.BasicIndicator1.Location = New System.Drawing.Point(1009, 190)
-        Me.BasicIndicator1.Name = "BasicIndicator1"
-        Me.BasicIndicator1.OutlineColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer))
-        Me.BasicIndicator1.OutlineWidth = 5
-        Me.BasicIndicator1.OutputType = MfgControl.AdvancedHMI.Controls.OutputType.MomentarySet
-        Me.BasicIndicator1.SelectColor2 = False
-        Me.BasicIndicator1.SelectColor3 = False
-        Me.BasicIndicator1.Shape = MfgControl.AdvancedHMI.Controls.Indicator.ShapeTypes.Rectangle
-        Me.BasicIndicator1.Size = New System.Drawing.Size(222, 41)
-        Me.BasicIndicator1.TabIndex = 388
-        Me.BasicIndicator1.Text = "Hot Water Pump Pressure"
-        '
         'Water_Fl_Hot_MIN2
         '
         Me.Water_Fl_Hot_MIN2.BackColor = System.Drawing.Color.Black
@@ -37509,26 +36777,6 @@ Partial Class Dashboard_Page
         Me.Water_Fl_Hot_MAX2.ValueSuffix = Nothing
         Me.Water_Fl_Hot_MAX2.ValueToSubtractFrom = 0!
         '
-        'BasicIndicator20
-        '
-        Me.BasicIndicator20.Color1 = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer))
-        Me.BasicIndicator20.Color2 = System.Drawing.Color.Green
-        Me.BasicIndicator20.Color3 = System.Drawing.Color.Red
-        Me.BasicIndicator20.ComComponent = Me.PLC
-        Me.BasicIndicator20.Font = New System.Drawing.Font("Agency FB", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BasicIndicator20.ForeColor = System.Drawing.Color.Silver
-        Me.BasicIndicator20.Location = New System.Drawing.Point(1630, 191)
-        Me.BasicIndicator20.Name = "BasicIndicator20"
-        Me.BasicIndicator20.OutlineColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer))
-        Me.BasicIndicator20.OutlineWidth = 5
-        Me.BasicIndicator20.OutputType = MfgControl.AdvancedHMI.Controls.OutputType.MomentarySet
-        Me.BasicIndicator20.SelectColor2 = False
-        Me.BasicIndicator20.SelectColor3 = False
-        Me.BasicIndicator20.Shape = MfgControl.AdvancedHMI.Controls.Indicator.ShapeTypes.Rectangle
-        Me.BasicIndicator20.Size = New System.Drawing.Size(222, 41)
-        Me.BasicIndicator20.TabIndex = 381
-        Me.BasicIndicator20.Text = "Hot Water Flow Rate"
-        '
         'Water_Tp_Hot_MIN2
         '
         Me.Water_Tp_Hot_MIN2.BackColor = System.Drawing.Color.Black
@@ -37606,26 +36854,6 @@ Partial Class Dashboard_Page
         Me.Water_Tp_Hot_MAX2.ValueScaleFactor = 1.0R
         Me.Water_Tp_Hot_MAX2.ValueSuffix = Nothing
         Me.Water_Tp_Hot_MAX2.ValueToSubtractFrom = 0!
-        '
-        'BasicIndicator7
-        '
-        Me.BasicIndicator7.Color1 = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer))
-        Me.BasicIndicator7.Color2 = System.Drawing.Color.Green
-        Me.BasicIndicator7.Color3 = System.Drawing.Color.Red
-        Me.BasicIndicator7.ComComponent = Me.PLC
-        Me.BasicIndicator7.Font = New System.Drawing.Font("Agency FB", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BasicIndicator7.ForeColor = System.Drawing.Color.Silver
-        Me.BasicIndicator7.Location = New System.Drawing.Point(1314, 191)
-        Me.BasicIndicator7.Name = "BasicIndicator7"
-        Me.BasicIndicator7.OutlineColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer))
-        Me.BasicIndicator7.OutlineWidth = 5
-        Me.BasicIndicator7.OutputType = MfgControl.AdvancedHMI.Controls.OutputType.MomentarySet
-        Me.BasicIndicator7.SelectColor2 = False
-        Me.BasicIndicator7.SelectColor3 = False
-        Me.BasicIndicator7.Shape = MfgControl.AdvancedHMI.Controls.Indicator.ShapeTypes.Rectangle
-        Me.BasicIndicator7.Size = New System.Drawing.Size(222, 41)
-        Me.BasicIndicator7.TabIndex = 374
-        Me.BasicIndicator7.Text = "Hot Water Temperature"
         '
         'Pipe65
         '
@@ -38931,7 +38159,7 @@ Partial Class Dashboard_Page
         'Water_FH_Cold_G2
         '
         Me.Water_FH_Cold_G2.BackColor = System.Drawing.Color.Transparent
-        Me.Water_FH_Cold_G2.BackgroundImage = Global.MfgControl.AdvancedHMI.My.Resources.Resources.GOODBG
+        Me.Water_FH_Cold_G2.BackgroundImage = CType(resources.GetObject("Water_FH_Cold_G2.BackgroundImage"), System.Drawing.Image)
         Me.Water_FH_Cold_G2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.Water_FH_Cold_G2.Band1Color = System.Drawing.Color.Red
         Me.Water_FH_Cold_G2.Band1EndValue = 999999.0R
@@ -38968,7 +38196,7 @@ Partial Class Dashboard_Page
         'Water_FH_Hot_G2
         '
         Me.Water_FH_Hot_G2.BackColor = System.Drawing.Color.Transparent
-        Me.Water_FH_Hot_G2.BackgroundImage = Global.MfgControl.AdvancedHMI.My.Resources.Resources.GOODBG
+        Me.Water_FH_Hot_G2.BackgroundImage = CType(resources.GetObject("Water_FH_Hot_G2.BackgroundImage"), System.Drawing.Image)
         Me.Water_FH_Hot_G2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.Water_FH_Hot_G2.Band1Color = System.Drawing.Color.Red
         Me.Water_FH_Hot_G2.Band1EndValue = 999999.0R
@@ -39227,7 +38455,7 @@ Partial Class Dashboard_Page
         '
         Me.Water_Pr_Hot_G2.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Water_Pr_Hot_G2.BackColor = System.Drawing.Color.Transparent
-        Me.Water_Pr_Hot_G2.BackgroundImage = Global.MfgControl.AdvancedHMI.My.Resources.Resources.GOODBG
+        Me.Water_Pr_Hot_G2.BackgroundImage = CType(resources.GetObject("Water_Pr_Hot_G2.BackgroundImage"), System.Drawing.Image)
         Me.Water_Pr_Hot_G2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Water_Pr_Hot_G2.Band1Color = System.Drawing.Color.Maroon
         Me.Water_Pr_Hot_G2.Band1EndValue = 999999.0R
@@ -39776,7 +39004,7 @@ Partial Class Dashboard_Page
         Me.Goto_Login_Screen.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.Goto_Login_Screen.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer))
         Me.Goto_Login_Screen.FlatAppearance.BorderSize = 2
-        Me.Goto_Login_Screen.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Goto_Login_Screen.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer))
         Me.Goto_Login_Screen.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Goto_Login_Screen.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Goto_Login_Screen.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
@@ -39792,7 +39020,7 @@ Partial Class Dashboard_Page
         Me.Goto_Faults_BTN.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.Goto_Faults_BTN.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer))
         Me.Goto_Faults_BTN.FlatAppearance.BorderSize = 2
-        Me.Goto_Faults_BTN.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Goto_Faults_BTN.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer))
         Me.Goto_Faults_BTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Goto_Faults_BTN.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Goto_Faults_BTN.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
@@ -39808,7 +39036,7 @@ Partial Class Dashboard_Page
         Me.Goto_Steam_BTN.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.Goto_Steam_BTN.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer))
         Me.Goto_Steam_BTN.FlatAppearance.BorderSize = 2
-        Me.Goto_Steam_BTN.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Goto_Steam_BTN.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer))
         Me.Goto_Steam_BTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Goto_Steam_BTN.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Goto_Steam_BTN.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
@@ -39822,9 +39050,9 @@ Partial Class Dashboard_Page
         'PictureBox1
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(698, 2)
+        Me.PictureBox1.Location = New System.Drawing.Point(743, 11)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(524, 57)
+        Me.PictureBox1.Size = New System.Drawing.Size(435, 47)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox1.TabIndex = 174
         Me.PictureBox1.TabStop = False
@@ -41073,7 +40301,7 @@ Partial Class Dashboard_Page
         Me.InsideTempDisp1.KeypadShowCurrentValue = False
         Me.InsideTempDisp1.KeypadText = Nothing
         Me.InsideTempDisp1.KeypadWidth = 300
-        Me.InsideTempDisp1.Location = New System.Drawing.Point(1236, 14)
+        Me.InsideTempDisp1.Location = New System.Drawing.Point(1236, 17)
         Me.InsideTempDisp1.Name = "InsideTempDisp1"
         Me.InsideTempDisp1.NumericFormat = "0.0"
         Me.InsideTempDisp1.PLCAddressKeypad = ""
@@ -41113,7 +40341,7 @@ Partial Class Dashboard_Page
         Me.InsideHumidityDisp1.KeypadShowCurrentValue = False
         Me.InsideHumidityDisp1.KeypadText = Nothing
         Me.InsideHumidityDisp1.KeypadWidth = 300
-        Me.InsideHumidityDisp1.Location = New System.Drawing.Point(1674, 14)
+        Me.InsideHumidityDisp1.Location = New System.Drawing.Point(1674, 17)
         Me.InsideHumidityDisp1.Name = "InsideHumidityDisp1"
         Me.InsideHumidityDisp1.NumericFormat = "0"
         Me.InsideHumidityDisp1.PLCAddressKeypad = ""
@@ -41132,7 +40360,7 @@ Partial Class Dashboard_Page
         '
         'OutsideTempDisp1
         '
-        Me.OutsideTempDisp1.BackColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer))
+        Me.OutsideTempDisp1.BackColor = System.Drawing.Color.Black
         Me.OutsideTempDisp1.BooleanDisplay = AdvancedHMIControls.BasicLabel.BooleanDisplayOption.TrueFalse
         Me.OutsideTempDisp1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.OutsideTempDisp1.ComComponent = Me.PLC
@@ -41154,7 +40382,7 @@ Partial Class Dashboard_Page
         Me.OutsideTempDisp1.KeypadShowCurrentValue = False
         Me.OutsideTempDisp1.KeypadText = Nothing
         Me.OutsideTempDisp1.KeypadWidth = 300
-        Me.OutsideTempDisp1.Location = New System.Drawing.Point(457, 14)
+        Me.OutsideTempDisp1.Location = New System.Drawing.Point(457, 17)
         Me.OutsideTempDisp1.Name = "OutsideTempDisp1"
         Me.OutsideTempDisp1.NumericFormat = "0.0"
         Me.OutsideTempDisp1.PLCAddressKeypad = ""
@@ -41173,7 +40401,7 @@ Partial Class Dashboard_Page
         '
         'OutsideHumidityDisp1
         '
-        Me.OutsideHumidityDisp1.BackColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer))
+        Me.OutsideHumidityDisp1.BackColor = System.Drawing.Color.Black
         Me.OutsideHumidityDisp1.BooleanDisplay = AdvancedHMIControls.BasicLabel.BooleanDisplayOption.TrueFalse
         Me.OutsideHumidityDisp1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.OutsideHumidityDisp1.ComComponent = Me.PLC
@@ -41195,7 +40423,7 @@ Partial Class Dashboard_Page
         Me.OutsideHumidityDisp1.KeypadShowCurrentValue = False
         Me.OutsideHumidityDisp1.KeypadText = Nothing
         Me.OutsideHumidityDisp1.KeypadWidth = 300
-        Me.OutsideHumidityDisp1.Location = New System.Drawing.Point(17, 14)
+        Me.OutsideHumidityDisp1.Location = New System.Drawing.Point(17, 17)
         Me.OutsideHumidityDisp1.Name = "OutsideHumidityDisp1"
         Me.OutsideHumidityDisp1.NumericFormat = "0"
         Me.OutsideHumidityDisp1.PLCAddressKeypad = ""
@@ -41214,15 +40442,15 @@ Partial Class Dashboard_Page
         '
         'BasicIndicator37
         '
-        Me.BasicIndicator37.Color1 = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer))
+        Me.BasicIndicator37.Color1 = System.Drawing.Color.FromArgb(CType(CType(12, Byte), Integer), CType(CType(12, Byte), Integer), CType(CType(12, Byte), Integer))
         Me.BasicIndicator37.Color2 = System.Drawing.Color.Green
         Me.BasicIndicator37.Color3 = System.Drawing.Color.Red
         Me.BasicIndicator37.ComComponent = Me.PLC
         Me.BasicIndicator37.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BasicIndicator37.ForeColor = System.Drawing.Color.Silver
-        Me.BasicIndicator37.Location = New System.Drawing.Point(8, 5)
+        Me.BasicIndicator37.Location = New System.Drawing.Point(8, 8)
         Me.BasicIndicator37.Name = "BasicIndicator37"
-        Me.BasicIndicator37.OutlineColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer))
+        Me.BasicIndicator37.OutlineColor = System.Drawing.Color.FromArgb(CType(CType(28, Byte), Integer), CType(CType(28, Byte), Integer), CType(CType(28, Byte), Integer))
         Me.BasicIndicator37.OutlineWidth = 5
         Me.BasicIndicator37.OutputType = MfgControl.AdvancedHMI.Controls.OutputType.MomentarySet
         Me.BasicIndicator37.SelectColor2 = False
@@ -41234,15 +40462,15 @@ Partial Class Dashboard_Page
         '
         'BasicIndicator90
         '
-        Me.BasicIndicator90.Color1 = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer))
+        Me.BasicIndicator90.Color1 = System.Drawing.Color.FromArgb(CType(CType(12, Byte), Integer), CType(CType(12, Byte), Integer), CType(CType(12, Byte), Integer))
         Me.BasicIndicator90.Color2 = System.Drawing.Color.Green
         Me.BasicIndicator90.Color3 = System.Drawing.Color.Red
         Me.BasicIndicator90.ComComponent = Me.PLC
         Me.BasicIndicator90.Font = New System.Drawing.Font("Franklin Gothic Medium Cond", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BasicIndicator90.ForeColor = System.Drawing.Color.Silver
-        Me.BasicIndicator90.Location = New System.Drawing.Point(1222, 5)
+        Me.BasicIndicator90.Location = New System.Drawing.Point(1222, 8)
         Me.BasicIndicator90.Name = "BasicIndicator90"
-        Me.BasicIndicator90.OutlineColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer))
+        Me.BasicIndicator90.OutlineColor = System.Drawing.Color.FromArgb(CType(CType(28, Byte), Integer), CType(CType(28, Byte), Integer), CType(CType(28, Byte), Integer))
         Me.BasicIndicator90.OutlineWidth = 5
         Me.BasicIndicator90.OutputType = MfgControl.AdvancedHMI.Controls.OutputType.MomentarySet
         Me.BasicIndicator90.SelectColor2 = False
@@ -41288,13 +40516,24 @@ Partial Class Dashboard_Page
         '
         'StartUpScreen
         '
-        Me.StartUpScreen.Controls.Add(Me.ProgressBar1)
         Me.StartUpScreen.Controls.Add(Me.StartupStatusLabel)
+        Me.StartUpScreen.Controls.Add(Me.ProgressBar1)
         Me.StartUpScreen.Controls.Add(Me.PictureBox41)
         Me.StartUpScreen.Location = New System.Drawing.Point(0, 0)
         Me.StartUpScreen.Name = "StartUpScreen"
         Me.StartUpScreen.Size = New System.Drawing.Size(1920, 1080)
         Me.StartUpScreen.TabIndex = 334
+        '
+        'ProgressBar1
+        '
+        Me.ProgressBar1.ForeColor = System.Drawing.Color.MintCream
+        Me.ProgressBar1.Location = New System.Drawing.Point(417, 946)
+        Me.ProgressBar1.Maximum = 384
+        Me.ProgressBar1.Name = "ProgressBar1"
+        Me.ProgressBar1.Size = New System.Drawing.Size(1086, 51)
+        Me.ProgressBar1.Step = 1
+        Me.ProgressBar1.Style = System.Windows.Forms.ProgressBarStyle.Continuous
+        Me.ProgressBar1.TabIndex = 379
         '
         'StartupStatusLabel
         '
@@ -41311,7 +40550,7 @@ Partial Class Dashboard_Page
         '
         'PictureBox41
         '
-        Me.PictureBox41.Image = Global.MfgControl.AdvancedHMI.My.Resources.Resources.TEV_Ico
+        Me.PictureBox41.Image = Global.MfgControl.AdvancedHMI.My.Resources.Resources.ICON_TEV
         Me.PictureBox41.Location = New System.Drawing.Point(267, 3)
         Me.PictureBox41.Name = "PictureBox41"
         Me.PictureBox41.Size = New System.Drawing.Size(1387, 1058)
@@ -41319,16 +40558,665 @@ Partial Class Dashboard_Page
         Me.PictureBox41.TabIndex = 378
         Me.PictureBox41.TabStop = False
         '
-        'ProgressBar1
+        'Water_Pr_Hot_T1
         '
-        Me.ProgressBar1.ForeColor = System.Drawing.Color.MintCream
-        Me.ProgressBar1.Location = New System.Drawing.Point(417, 946)
-        Me.ProgressBar1.Maximum = 384
-        Me.ProgressBar1.Name = "ProgressBar1"
-        Me.ProgressBar1.Size = New System.Drawing.Size(1086, 51)
-        Me.ProgressBar1.Step = 1
-        Me.ProgressBar1.Style = System.Windows.Forms.ProgressBarStyle.Continuous
-        Me.ProgressBar1.TabIndex = 379
+        Me.Water_Pr_Hot_T1.Color1 = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer))
+        Me.Water_Pr_Hot_T1.Color2 = System.Drawing.Color.Green
+        Me.Water_Pr_Hot_T1.Color3 = System.Drawing.Color.Red
+        Me.Water_Pr_Hot_T1.ComComponent = Me.PLC
+        Me.Water_Pr_Hot_T1.Font = New System.Drawing.Font("Agency FB", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Water_Pr_Hot_T1.ForeColor = System.Drawing.Color.Silver
+        Me.Water_Pr_Hot_T1.Location = New System.Drawing.Point(57, 568)
+        Me.Water_Pr_Hot_T1.Name = "Water_Pr_Hot_T1"
+        Me.Water_Pr_Hot_T1.OutlineColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer))
+        Me.Water_Pr_Hot_T1.OutlineWidth = 5
+        Me.Water_Pr_Hot_T1.OutputType = MfgControl.AdvancedHMI.Controls.OutputType.MomentarySet
+        Me.Water_Pr_Hot_T1.SelectColor2 = False
+        Me.Water_Pr_Hot_T1.SelectColor3 = False
+        Me.Water_Pr_Hot_T1.Shape = MfgControl.AdvancedHMI.Controls.Indicator.ShapeTypes.Rectangle
+        Me.Water_Pr_Hot_T1.Size = New System.Drawing.Size(267, 57)
+        Me.Water_Pr_Hot_T1.TabIndex = 427
+        Me.Water_Pr_Hot_T1.Text = "HOT WATER PRESSURE"
+        '
+        'Water_Pr_Cold_T1
+        '
+        Me.Water_Pr_Cold_T1.Color1 = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer))
+        Me.Water_Pr_Cold_T1.Color2 = System.Drawing.Color.Green
+        Me.Water_Pr_Cold_T1.Color3 = System.Drawing.Color.Red
+        Me.Water_Pr_Cold_T1.ComComponent = Me.PLC
+        Me.Water_Pr_Cold_T1.Font = New System.Drawing.Font("Agency FB", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Water_Pr_Cold_T1.ForeColor = System.Drawing.Color.Silver
+        Me.Water_Pr_Cold_T1.Location = New System.Drawing.Point(57, 251)
+        Me.Water_Pr_Cold_T1.Name = "Water_Pr_Cold_T1"
+        Me.Water_Pr_Cold_T1.OutlineColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer))
+        Me.Water_Pr_Cold_T1.OutlineWidth = 5
+        Me.Water_Pr_Cold_T1.OutputType = MfgControl.AdvancedHMI.Controls.OutputType.MomentarySet
+        Me.Water_Pr_Cold_T1.SelectColor2 = False
+        Me.Water_Pr_Cold_T1.SelectColor3 = False
+        Me.Water_Pr_Cold_T1.Shape = MfgControl.AdvancedHMI.Controls.Indicator.ShapeTypes.Rectangle
+        Me.Water_Pr_Cold_T1.Size = New System.Drawing.Size(267, 57)
+        Me.Water_Pr_Cold_T1.TabIndex = 426
+        Me.Water_Pr_Cold_T1.Text = "CITY WATER PRESSURE"
+        '
+        'Air_Pr_Main_T1
+        '
+        Me.Air_Pr_Main_T1.Color1 = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer))
+        Me.Air_Pr_Main_T1.Color2 = System.Drawing.Color.Green
+        Me.Air_Pr_Main_T1.Color3 = System.Drawing.Color.Red
+        Me.Air_Pr_Main_T1.ComComponent = Me.PLC
+        Me.Air_Pr_Main_T1.Font = New System.Drawing.Font("Agency FB", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Air_Pr_Main_T1.ForeColor = System.Drawing.Color.Silver
+        Me.Air_Pr_Main_T1.Location = New System.Drawing.Point(57, 886)
+        Me.Air_Pr_Main_T1.Name = "Air_Pr_Main_T1"
+        Me.Air_Pr_Main_T1.OutlineColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer))
+        Me.Air_Pr_Main_T1.OutlineWidth = 5
+        Me.Air_Pr_Main_T1.OutputType = MfgControl.AdvancedHMI.Controls.OutputType.MomentarySet
+        Me.Air_Pr_Main_T1.SelectColor2 = False
+        Me.Air_Pr_Main_T1.SelectColor3 = False
+        Me.Air_Pr_Main_T1.Shape = MfgControl.AdvancedHMI.Controls.Indicator.ShapeTypes.Rectangle
+        Me.Air_Pr_Main_T1.Size = New System.Drawing.Size(267, 57)
+        Me.Air_Pr_Main_T1.TabIndex = 425
+        Me.Air_Pr_Main_T1.Text = "SYSTEM AIR PRESSURE"
+        '
+        'Water_Fl_Hot_T1
+        '
+        Me.Water_Fl_Hot_T1.Color1 = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer))
+        Me.Water_Fl_Hot_T1.Color2 = System.Drawing.Color.Green
+        Me.Water_Fl_Hot_T1.Color3 = System.Drawing.Color.Red
+        Me.Water_Fl_Hot_T1.ComComponent = Me.PLC
+        Me.Water_Fl_Hot_T1.Font = New System.Drawing.Font("Agency FB", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Water_Fl_Hot_T1.ForeColor = System.Drawing.Color.Silver
+        Me.Water_Fl_Hot_T1.Location = New System.Drawing.Point(391, 385)
+        Me.Water_Fl_Hot_T1.Name = "Water_Fl_Hot_T1"
+        Me.Water_Fl_Hot_T1.OutlineColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer))
+        Me.Water_Fl_Hot_T1.OutlineWidth = 5
+        Me.Water_Fl_Hot_T1.OutputType = MfgControl.AdvancedHMI.Controls.OutputType.MomentarySet
+        Me.Water_Fl_Hot_T1.SelectColor2 = False
+        Me.Water_Fl_Hot_T1.SelectColor3 = False
+        Me.Water_Fl_Hot_T1.Shape = MfgControl.AdvancedHMI.Controls.Indicator.ShapeTypes.Rectangle
+        Me.Water_Fl_Hot_T1.Size = New System.Drawing.Size(222, 41)
+        Me.Water_Fl_Hot_T1.TabIndex = 435
+        Me.Water_Fl_Hot_T1.Text = "Hot Water Flow Rate"
+        '
+        'Water_Tp_Hot_T1
+        '
+        Me.Water_Tp_Hot_T1.Color1 = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer))
+        Me.Water_Tp_Hot_T1.Color2 = System.Drawing.Color.Green
+        Me.Water_Tp_Hot_T1.Color3 = System.Drawing.Color.Red
+        Me.Water_Tp_Hot_T1.ComComponent = Me.PLC
+        Me.Water_Tp_Hot_T1.Font = New System.Drawing.Font("Agency FB", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Water_Tp_Hot_T1.ForeColor = System.Drawing.Color.Silver
+        Me.Water_Tp_Hot_T1.Location = New System.Drawing.Point(391, 605)
+        Me.Water_Tp_Hot_T1.Name = "Water_Tp_Hot_T1"
+        Me.Water_Tp_Hot_T1.OutlineColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer))
+        Me.Water_Tp_Hot_T1.OutlineWidth = 5
+        Me.Water_Tp_Hot_T1.OutputType = MfgControl.AdvancedHMI.Controls.OutputType.MomentarySet
+        Me.Water_Tp_Hot_T1.SelectColor2 = False
+        Me.Water_Tp_Hot_T1.SelectColor3 = False
+        Me.Water_Tp_Hot_T1.Shape = MfgControl.AdvancedHMI.Controls.Indicator.ShapeTypes.Rectangle
+        Me.Water_Tp_Hot_T1.Size = New System.Drawing.Size(222, 41)
+        Me.Water_Tp_Hot_T1.TabIndex = 431
+        Me.Water_Tp_Hot_T1.Text = "Hot Water Temperature"
+        '
+        'Water_Sup_City_VT1
+        '
+        Me.Water_Sup_City_VT1.Color1 = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer))
+        Me.Water_Sup_City_VT1.Color2 = System.Drawing.Color.Green
+        Me.Water_Sup_City_VT1.Color3 = System.Drawing.Color.Red
+        Me.Water_Sup_City_VT1.ComComponent = Me.PLC
+        Me.Water_Sup_City_VT1.Font = New System.Drawing.Font("Agency FB", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Water_Sup_City_VT1.ForeColor = System.Drawing.Color.Silver
+        Me.Water_Sup_City_VT1.Location = New System.Drawing.Point(391, 170)
+        Me.Water_Sup_City_VT1.Name = "Water_Sup_City_VT1"
+        Me.Water_Sup_City_VT1.OutlineColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer))
+        Me.Water_Sup_City_VT1.OutlineWidth = 5
+        Me.Water_Sup_City_VT1.OutputType = MfgControl.AdvancedHMI.Controls.OutputType.MomentarySet
+        Me.Water_Sup_City_VT1.SelectColor2 = False
+        Me.Water_Sup_City_VT1.SelectColor3 = False
+        Me.Water_Sup_City_VT1.Shape = MfgControl.AdvancedHMI.Controls.Indicator.ShapeTypes.Rectangle
+        Me.Water_Sup_City_VT1.Size = New System.Drawing.Size(222, 41)
+        Me.Water_Sup_City_VT1.TabIndex = 433
+        Me.Water_Sup_City_VT1.Text = "City Water Supply Pressure"
+        '
+        'Water_FH_Hot_T1
+        '
+        Me.Water_FH_Hot_T1.Color1 = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer))
+        Me.Water_FH_Hot_T1.Color2 = System.Drawing.Color.Green
+        Me.Water_FH_Hot_T1.Color3 = System.Drawing.Color.Red
+        Me.Water_FH_Hot_T1.ComComponent = Me.PLC
+        Me.Water_FH_Hot_T1.Font = New System.Drawing.Font("Agency FB", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Water_FH_Hot_T1.ForeColor = System.Drawing.Color.Silver
+        Me.Water_FH_Hot_T1.Location = New System.Drawing.Point(986, 169)
+        Me.Water_FH_Hot_T1.Name = "Water_FH_Hot_T1"
+        Me.Water_FH_Hot_T1.OutlineColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer))
+        Me.Water_FH_Hot_T1.OutlineWidth = 5
+        Me.Water_FH_Hot_T1.OutputType = MfgControl.AdvancedHMI.Controls.OutputType.MomentarySet
+        Me.Water_FH_Hot_T1.SelectColor2 = False
+        Me.Water_FH_Hot_T1.SelectColor3 = False
+        Me.Water_FH_Hot_T1.Shape = MfgControl.AdvancedHMI.Controls.Indicator.ShapeTypes.Rectangle
+        Me.Water_FH_Hot_T1.Size = New System.Drawing.Size(222, 41)
+        Me.Water_FH_Hot_T1.TabIndex = 432
+        Me.Water_FH_Hot_T1.Text = "Hot Water Filter Health"
+        '
+        'Water_FH_Cold_T1
+        '
+        Me.Water_FH_Cold_T1.Color1 = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer))
+        Me.Water_FH_Cold_T1.Color2 = System.Drawing.Color.Green
+        Me.Water_FH_Cold_T1.Color3 = System.Drawing.Color.Red
+        Me.Water_FH_Cold_T1.ComComponent = Me.PLC
+        Me.Water_FH_Cold_T1.Font = New System.Drawing.Font("Agency FB", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Water_FH_Cold_T1.ForeColor = System.Drawing.Color.Silver
+        Me.Water_FH_Cold_T1.Location = New System.Drawing.Point(684, 169)
+        Me.Water_FH_Cold_T1.Name = "Water_FH_Cold_T1"
+        Me.Water_FH_Cold_T1.OutlineColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer))
+        Me.Water_FH_Cold_T1.OutlineWidth = 5
+        Me.Water_FH_Cold_T1.OutputType = MfgControl.AdvancedHMI.Controls.OutputType.MomentarySet
+        Me.Water_FH_Cold_T1.SelectColor2 = False
+        Me.Water_FH_Cold_T1.SelectColor3 = False
+        Me.Water_FH_Cold_T1.Shape = MfgControl.AdvancedHMI.Controls.Indicator.ShapeTypes.Rectangle
+        Me.Water_FH_Cold_T1.Size = New System.Drawing.Size(222, 41)
+        Me.Water_FH_Cold_T1.TabIndex = 434
+        Me.Water_FH_Cold_T1.Text = "City Water Filter Health"
+        '
+        'Steam_Flow_T1
+        '
+        Me.Steam_Flow_T1.Color1 = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer))
+        Me.Steam_Flow_T1.Color2 = System.Drawing.Color.Green
+        Me.Steam_Flow_T1.Color3 = System.Drawing.Color.Red
+        Me.Steam_Flow_T1.ComComponent = Me.PLC
+        Me.Steam_Flow_T1.Font = New System.Drawing.Font("Agency FB", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Steam_Flow_T1.ForeColor = System.Drawing.Color.Silver
+        Me.Steam_Flow_T1.Location = New System.Drawing.Point(1276, 170)
+        Me.Steam_Flow_T1.Name = "Steam_Flow_T1"
+        Me.Steam_Flow_T1.OutlineColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer))
+        Me.Steam_Flow_T1.OutlineWidth = 5
+        Me.Steam_Flow_T1.OutputType = MfgControl.AdvancedHMI.Controls.OutputType.MomentarySet
+        Me.Steam_Flow_T1.SelectColor2 = False
+        Me.Steam_Flow_T1.SelectColor3 = False
+        Me.Steam_Flow_T1.Shape = MfgControl.AdvancedHMI.Controls.Indicator.ShapeTypes.Rectangle
+        Me.Steam_Flow_T1.Size = New System.Drawing.Size(222, 41)
+        Me.Steam_Flow_T1.TabIndex = 429
+        Me.Steam_Flow_T1.Text = "Steam Flow Rate"
+        '
+        'Steam_Pr_Main_T1
+        '
+        Me.Steam_Pr_Main_T1.Color1 = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer))
+        Me.Steam_Pr_Main_T1.Color2 = System.Drawing.Color.Green
+        Me.Steam_Pr_Main_T1.Color3 = System.Drawing.Color.Red
+        Me.Steam_Pr_Main_T1.ComComponent = Me.PLC
+        Me.Steam_Pr_Main_T1.Font = New System.Drawing.Font("Agency FB", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Steam_Pr_Main_T1.ForeColor = System.Drawing.Color.Silver
+        Me.Steam_Pr_Main_T1.Location = New System.Drawing.Point(1571, 251)
+        Me.Steam_Pr_Main_T1.Name = "Steam_Pr_Main_T1"
+        Me.Steam_Pr_Main_T1.OutlineColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer))
+        Me.Steam_Pr_Main_T1.OutlineWidth = 5
+        Me.Steam_Pr_Main_T1.OutputType = MfgControl.AdvancedHMI.Controls.OutputType.MomentarySet
+        Me.Steam_Pr_Main_T1.SelectColor2 = False
+        Me.Steam_Pr_Main_T1.SelectColor3 = False
+        Me.Steam_Pr_Main_T1.Shape = MfgControl.AdvancedHMI.Controls.Indicator.ShapeTypes.Rectangle
+        Me.Steam_Pr_Main_T1.Size = New System.Drawing.Size(267, 57)
+        Me.Steam_Pr_Main_T1.TabIndex = 436
+        Me.Steam_Pr_Main_T1.Text = "SYSTEM STEAM PRESSURE"
+        '
+        'Steam_Pr_Low_T1
+        '
+        Me.Steam_Pr_Low_T1.Color1 = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer))
+        Me.Steam_Pr_Low_T1.Color2 = System.Drawing.Color.Green
+        Me.Steam_Pr_Low_T1.Color3 = System.Drawing.Color.Red
+        Me.Steam_Pr_Low_T1.ComComponent = Me.PLC
+        Me.Steam_Pr_Low_T1.Font = New System.Drawing.Font("Agency FB", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Steam_Pr_Low_T1.ForeColor = System.Drawing.Color.Silver
+        Me.Steam_Pr_Low_T1.Location = New System.Drawing.Point(1571, 568)
+        Me.Steam_Pr_Low_T1.Name = "Steam_Pr_Low_T1"
+        Me.Steam_Pr_Low_T1.OutlineColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer))
+        Me.Steam_Pr_Low_T1.OutlineWidth = 5
+        Me.Steam_Pr_Low_T1.OutputType = MfgControl.AdvancedHMI.Controls.OutputType.MomentarySet
+        Me.Steam_Pr_Low_T1.SelectColor2 = False
+        Me.Steam_Pr_Low_T1.SelectColor3 = False
+        Me.Steam_Pr_Low_T1.Shape = MfgControl.AdvancedHMI.Controls.Indicator.ShapeTypes.Rectangle
+        Me.Steam_Pr_Low_T1.Size = New System.Drawing.Size(267, 57)
+        Me.Steam_Pr_Low_T1.TabIndex = 437
+        Me.Steam_Pr_Low_T1.Text = "(30PSI) STEAM PRESSURE"
+        '
+        'Steam_Pr_Med_T1
+        '
+        Me.Steam_Pr_Med_T1.Color1 = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer))
+        Me.Steam_Pr_Med_T1.Color2 = System.Drawing.Color.Green
+        Me.Steam_Pr_Med_T1.Color3 = System.Drawing.Color.Red
+        Me.Steam_Pr_Med_T1.ComComponent = Me.PLC
+        Me.Steam_Pr_Med_T1.Font = New System.Drawing.Font("Agency FB", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Steam_Pr_Med_T1.ForeColor = System.Drawing.Color.Silver
+        Me.Steam_Pr_Med_T1.Location = New System.Drawing.Point(1571, 886)
+        Me.Steam_Pr_Med_T1.Name = "Steam_Pr_Med_T1"
+        Me.Steam_Pr_Med_T1.OutlineColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer))
+        Me.Steam_Pr_Med_T1.OutlineWidth = 5
+        Me.Steam_Pr_Med_T1.OutputType = MfgControl.AdvancedHMI.Controls.OutputType.MomentarySet
+        Me.Steam_Pr_Med_T1.SelectColor2 = False
+        Me.Steam_Pr_Med_T1.SelectColor3 = False
+        Me.Steam_Pr_Med_T1.Shape = MfgControl.AdvancedHMI.Controls.Indicator.ShapeTypes.Rectangle
+        Me.Steam_Pr_Med_T1.Size = New System.Drawing.Size(267, 57)
+        Me.Steam_Pr_Med_T1.TabIndex = 438
+        Me.Steam_Pr_Med_T1.Text = "(40PSI) STEAM PRESSURE"
+        '
+        'Electrical_SC_T2
+        '
+        Me.Electrical_SC_T2.Color1 = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer))
+        Me.Electrical_SC_T2.Color2 = System.Drawing.Color.Green
+        Me.Electrical_SC_T2.Color3 = System.Drawing.Color.Red
+        Me.Electrical_SC_T2.ComComponent = Me.PLC
+        Me.Electrical_SC_T2.Font = New System.Drawing.Font("Agency FB", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Electrical_SC_T2.ForeColor = System.Drawing.Color.Silver
+        Me.Electrical_SC_T2.Location = New System.Drawing.Point(681, 864)
+        Me.Electrical_SC_T2.Name = "Electrical_SC_T2"
+        Me.Electrical_SC_T2.OutlineColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer))
+        Me.Electrical_SC_T2.OutlineWidth = 5
+        Me.Electrical_SC_T2.OutputType = MfgControl.AdvancedHMI.Controls.OutputType.MomentarySet
+        Me.Electrical_SC_T2.SelectColor2 = False
+        Me.Electrical_SC_T2.SelectColor3 = False
+        Me.Electrical_SC_T2.Shape = MfgControl.AdvancedHMI.Controls.Indicator.ShapeTypes.Rectangle
+        Me.Electrical_SC_T2.Size = New System.Drawing.Size(267, 57)
+        Me.Electrical_SC_T2.TabIndex = 403
+        Me.Electrical_SC_T2.Text = "South Phase C to GROUND"
+        '
+        'Electrical_NC_T2
+        '
+        Me.Electrical_NC_T2.Color1 = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer))
+        Me.Electrical_NC_T2.Color2 = System.Drawing.Color.Green
+        Me.Electrical_NC_T2.Color3 = System.Drawing.Color.Red
+        Me.Electrical_NC_T2.ComComponent = Me.PLC
+        Me.Electrical_NC_T2.Font = New System.Drawing.Font("Agency FB", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Electrical_NC_T2.ForeColor = System.Drawing.Color.Silver
+        Me.Electrical_NC_T2.Location = New System.Drawing.Point(1601, 256)
+        Me.Electrical_NC_T2.Name = "Electrical_NC_T2"
+        Me.Electrical_NC_T2.OutlineColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer))
+        Me.Electrical_NC_T2.OutlineWidth = 5
+        Me.Electrical_NC_T2.OutputType = MfgControl.AdvancedHMI.Controls.OutputType.MomentarySet
+        Me.Electrical_NC_T2.SelectColor2 = False
+        Me.Electrical_NC_T2.SelectColor3 = False
+        Me.Electrical_NC_T2.Shape = MfgControl.AdvancedHMI.Controls.Indicator.ShapeTypes.Rectangle
+        Me.Electrical_NC_T2.Size = New System.Drawing.Size(267, 57)
+        Me.Electrical_NC_T2.TabIndex = 404
+        Me.Electrical_NC_T2.Text = "North Phase C to GROUND"
+        '
+        'Electrical_SB_T2
+        '
+        Me.Electrical_SB_T2.Color1 = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer))
+        Me.Electrical_SB_T2.Color2 = System.Drawing.Color.Green
+        Me.Electrical_SB_T2.Color3 = System.Drawing.Color.Red
+        Me.Electrical_SB_T2.ComComponent = Me.PLC
+        Me.Electrical_SB_T2.Font = New System.Drawing.Font("Agency FB", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Electrical_SB_T2.ForeColor = System.Drawing.Color.Silver
+        Me.Electrical_SB_T2.Location = New System.Drawing.Point(360, 865)
+        Me.Electrical_SB_T2.Name = "Electrical_SB_T2"
+        Me.Electrical_SB_T2.OutlineColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer))
+        Me.Electrical_SB_T2.OutlineWidth = 5
+        Me.Electrical_SB_T2.OutputType = MfgControl.AdvancedHMI.Controls.OutputType.MomentarySet
+        Me.Electrical_SB_T2.SelectColor2 = False
+        Me.Electrical_SB_T2.SelectColor3 = False
+        Me.Electrical_SB_T2.Shape = MfgControl.AdvancedHMI.Controls.Indicator.ShapeTypes.Rectangle
+        Me.Electrical_SB_T2.Size = New System.Drawing.Size(267, 57)
+        Me.Electrical_SB_T2.TabIndex = 405
+        Me.Electrical_SB_T2.Text = "South Phase B to GROUND"
+        '
+        'Electrical_NB_T2
+        '
+        Me.Electrical_NB_T2.Color1 = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer))
+        Me.Electrical_NB_T2.Color2 = System.Drawing.Color.Green
+        Me.Electrical_NB_T2.Color3 = System.Drawing.Color.Red
+        Me.Electrical_NB_T2.ComComponent = Me.PLC
+        Me.Electrical_NB_T2.Font = New System.Drawing.Font("Agency FB", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Electrical_NB_T2.ForeColor = System.Drawing.Color.Silver
+        Me.Electrical_NB_T2.Location = New System.Drawing.Point(1280, 257)
+        Me.Electrical_NB_T2.Name = "Electrical_NB_T2"
+        Me.Electrical_NB_T2.OutlineColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer))
+        Me.Electrical_NB_T2.OutlineWidth = 5
+        Me.Electrical_NB_T2.OutputType = MfgControl.AdvancedHMI.Controls.OutputType.MomentarySet
+        Me.Electrical_NB_T2.SelectColor2 = False
+        Me.Electrical_NB_T2.SelectColor3 = False
+        Me.Electrical_NB_T2.Shape = MfgControl.AdvancedHMI.Controls.Indicator.ShapeTypes.Rectangle
+        Me.Electrical_NB_T2.Size = New System.Drawing.Size(267, 57)
+        Me.Electrical_NB_T2.TabIndex = 406
+        Me.Electrical_NB_T2.Text = "North Phase B to GROUND"
+        '
+        'Electrical_SA_T2
+        '
+        Me.Electrical_SA_T2.Color1 = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer))
+        Me.Electrical_SA_T2.Color2 = System.Drawing.Color.Green
+        Me.Electrical_SA_T2.Color3 = System.Drawing.Color.Red
+        Me.Electrical_SA_T2.ComComponent = Me.PLC
+        Me.Electrical_SA_T2.Font = New System.Drawing.Font("Agency FB", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Electrical_SA_T2.ForeColor = System.Drawing.Color.Silver
+        Me.Electrical_SA_T2.Location = New System.Drawing.Point(39, 866)
+        Me.Electrical_SA_T2.Name = "Electrical_SA_T2"
+        Me.Electrical_SA_T2.OutlineColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer))
+        Me.Electrical_SA_T2.OutlineWidth = 5
+        Me.Electrical_SA_T2.OutputType = MfgControl.AdvancedHMI.Controls.OutputType.MomentarySet
+        Me.Electrical_SA_T2.SelectColor2 = False
+        Me.Electrical_SA_T2.SelectColor3 = False
+        Me.Electrical_SA_T2.Shape = MfgControl.AdvancedHMI.Controls.Indicator.ShapeTypes.Rectangle
+        Me.Electrical_SA_T2.Size = New System.Drawing.Size(267, 57)
+        Me.Electrical_SA_T2.TabIndex = 407
+        Me.Electrical_SA_T2.Text = "South Phase A to GROUND"
+        '
+        'Electrical_NA_T2
+        '
+        Me.Electrical_NA_T2.Color1 = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer))
+        Me.Electrical_NA_T2.Color2 = System.Drawing.Color.Green
+        Me.Electrical_NA_T2.Color3 = System.Drawing.Color.Red
+        Me.Electrical_NA_T2.ComComponent = Me.PLC
+        Me.Electrical_NA_T2.Font = New System.Drawing.Font("Agency FB", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Electrical_NA_T2.ForeColor = System.Drawing.Color.Silver
+        Me.Electrical_NA_T2.Location = New System.Drawing.Point(959, 258)
+        Me.Electrical_NA_T2.Name = "Electrical_NA_T2"
+        Me.Electrical_NA_T2.OutlineColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer))
+        Me.Electrical_NA_T2.OutlineWidth = 5
+        Me.Electrical_NA_T2.OutputType = MfgControl.AdvancedHMI.Controls.OutputType.MomentarySet
+        Me.Electrical_NA_T2.SelectColor2 = False
+        Me.Electrical_NA_T2.SelectColor3 = False
+        Me.Electrical_NA_T2.Shape = MfgControl.AdvancedHMI.Controls.Indicator.ShapeTypes.Rectangle
+        Me.Electrical_NA_T2.Size = New System.Drawing.Size(267, 57)
+        Me.Electrical_NA_T2.TabIndex = 408
+        Me.Electrical_NA_T2.Text = "North Phase A to GROUND"
+        '
+        'Steam_Pr_Low_T2
+        '
+        Me.Steam_Pr_Low_T2.Color1 = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer))
+        Me.Steam_Pr_Low_T2.Color2 = System.Drawing.Color.Green
+        Me.Steam_Pr_Low_T2.Color3 = System.Drawing.Color.Red
+        Me.Steam_Pr_Low_T2.ComComponent = Me.PLC
+        Me.Steam_Pr_Low_T2.Font = New System.Drawing.Font("Agency FB", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Steam_Pr_Low_T2.ForeColor = System.Drawing.Color.Silver
+        Me.Steam_Pr_Low_T2.Location = New System.Drawing.Point(236, 386)
+        Me.Steam_Pr_Low_T2.Name = "Steam_Pr_Low_T2"
+        Me.Steam_Pr_Low_T2.OutlineColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer))
+        Me.Steam_Pr_Low_T2.OutlineWidth = 5
+        Me.Steam_Pr_Low_T2.OutputType = MfgControl.AdvancedHMI.Controls.OutputType.MomentarySet
+        Me.Steam_Pr_Low_T2.SelectColor2 = False
+        Me.Steam_Pr_Low_T2.SelectColor3 = False
+        Me.Steam_Pr_Low_T2.Shape = MfgControl.AdvancedHMI.Controls.Indicator.ShapeTypes.Rectangle
+        Me.Steam_Pr_Low_T2.Size = New System.Drawing.Size(267, 57)
+        Me.Steam_Pr_Low_T2.TabIndex = 405
+        Me.Steam_Pr_Low_T2.Text = "(30PSI) STEAM PRESSURE"
+        '
+        'Steam_Pr_Med_T2
+        '
+        Me.Steam_Pr_Med_T2.Color1 = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer))
+        Me.Steam_Pr_Med_T2.Color2 = System.Drawing.Color.Green
+        Me.Steam_Pr_Med_T2.Color3 = System.Drawing.Color.Red
+        Me.Steam_Pr_Med_T2.ComComponent = Me.PLC
+        Me.Steam_Pr_Med_T2.Font = New System.Drawing.Font("Agency FB", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Steam_Pr_Med_T2.ForeColor = System.Drawing.Color.Silver
+        Me.Steam_Pr_Med_T2.Location = New System.Drawing.Point(1393, 386)
+        Me.Steam_Pr_Med_T2.Name = "Steam_Pr_Med_T2"
+        Me.Steam_Pr_Med_T2.OutlineColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer))
+        Me.Steam_Pr_Med_T2.OutlineWidth = 5
+        Me.Steam_Pr_Med_T2.OutputType = MfgControl.AdvancedHMI.Controls.OutputType.MomentarySet
+        Me.Steam_Pr_Med_T2.SelectColor2 = False
+        Me.Steam_Pr_Med_T2.SelectColor3 = False
+        Me.Steam_Pr_Med_T2.Shape = MfgControl.AdvancedHMI.Controls.Indicator.ShapeTypes.Rectangle
+        Me.Steam_Pr_Med_T2.Size = New System.Drawing.Size(267, 57)
+        Me.Steam_Pr_Med_T2.TabIndex = 406
+        Me.Steam_Pr_Med_T2.Text = "(40PSI) STEAM PRESSURE"
+        '
+        'Steam_Flow_T2
+        '
+        Me.Steam_Flow_T2.Color1 = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer))
+        Me.Steam_Flow_T2.Color2 = System.Drawing.Color.Green
+        Me.Steam_Flow_T2.Color3 = System.Drawing.Color.Red
+        Me.Steam_Flow_T2.ComComponent = Me.PLC
+        Me.Steam_Flow_T2.Font = New System.Drawing.Font("Agency FB", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Steam_Flow_T2.ForeColor = System.Drawing.Color.Silver
+        Me.Steam_Flow_T2.Location = New System.Drawing.Point(610, 273)
+        Me.Steam_Flow_T2.Name = "Steam_Flow_T2"
+        Me.Steam_Flow_T2.OutlineColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer))
+        Me.Steam_Flow_T2.OutlineWidth = 5
+        Me.Steam_Flow_T2.OutputType = MfgControl.AdvancedHMI.Controls.OutputType.MomentarySet
+        Me.Steam_Flow_T2.SelectColor2 = False
+        Me.Steam_Flow_T2.SelectColor3 = False
+        Me.Steam_Flow_T2.Shape = MfgControl.AdvancedHMI.Controls.Indicator.ShapeTypes.Rectangle
+        Me.Steam_Flow_T2.Size = New System.Drawing.Size(267, 57)
+        Me.Steam_Flow_T2.TabIndex = 403
+        Me.Steam_Flow_T2.Text = "STEAM HEADER FLOW RATE"
+        '
+        'Steam_Pr_Main_T2
+        '
+        Me.Steam_Pr_Main_T2.Color1 = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer))
+        Me.Steam_Pr_Main_T2.Color2 = System.Drawing.Color.Green
+        Me.Steam_Pr_Main_T2.Color3 = System.Drawing.Color.Red
+        Me.Steam_Pr_Main_T2.ComComponent = Me.PLC
+        Me.Steam_Pr_Main_T2.Font = New System.Drawing.Font("Agency FB", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Steam_Pr_Main_T2.ForeColor = System.Drawing.Color.Silver
+        Me.Steam_Pr_Main_T2.Location = New System.Drawing.Point(1019, 273)
+        Me.Steam_Pr_Main_T2.Name = "Steam_Pr_Main_T2"
+        Me.Steam_Pr_Main_T2.OutlineColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer))
+        Me.Steam_Pr_Main_T2.OutlineWidth = 5
+        Me.Steam_Pr_Main_T2.OutputType = MfgControl.AdvancedHMI.Controls.OutputType.MomentarySet
+        Me.Steam_Pr_Main_T2.SelectColor2 = False
+        Me.Steam_Pr_Main_T2.SelectColor3 = False
+        Me.Steam_Pr_Main_T2.Shape = MfgControl.AdvancedHMI.Controls.Indicator.ShapeTypes.Rectangle
+        Me.Steam_Pr_Main_T2.Size = New System.Drawing.Size(267, 57)
+        Me.Steam_Pr_Main_T2.TabIndex = 404
+        Me.Steam_Pr_Main_T2.Text = "STEAM HEADER PRESSURE"
+        '
+        'Steam_Pr_FeedWat_T2
+        '
+        Me.Steam_Pr_FeedWat_T2.Color1 = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer))
+        Me.Steam_Pr_FeedWat_T2.Color2 = System.Drawing.Color.Green
+        Me.Steam_Pr_FeedWat_T2.Color3 = System.Drawing.Color.Red
+        Me.Steam_Pr_FeedWat_T2.ComComponent = Me.PLC
+        Me.Steam_Pr_FeedWat_T2.Font = New System.Drawing.Font("Agency FB", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Steam_Pr_FeedWat_T2.ForeColor = System.Drawing.Color.Silver
+        Me.Steam_Pr_FeedWat_T2.Location = New System.Drawing.Point(1066, 619)
+        Me.Steam_Pr_FeedWat_T2.Name = "Steam_Pr_FeedWat_T2"
+        Me.Steam_Pr_FeedWat_T2.OutlineColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer))
+        Me.Steam_Pr_FeedWat_T2.OutlineWidth = 5
+        Me.Steam_Pr_FeedWat_T2.OutputType = MfgControl.AdvancedHMI.Controls.OutputType.MomentarySet
+        Me.Steam_Pr_FeedWat_T2.SelectColor2 = False
+        Me.Steam_Pr_FeedWat_T2.SelectColor3 = False
+        Me.Steam_Pr_FeedWat_T2.Shape = MfgControl.AdvancedHMI.Controls.Indicator.ShapeTypes.Rectangle
+        Me.Steam_Pr_FeedWat_T2.Size = New System.Drawing.Size(267, 57)
+        Me.Steam_Pr_FeedWat_T2.TabIndex = 409
+        Me.Steam_Pr_FeedWat_T2.Text = "FEED WATER PRESSURE"
+        '
+        'Air_Pr_Main_T2
+        '
+        Me.Air_Pr_Main_T2.Color1 = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer))
+        Me.Air_Pr_Main_T2.Color2 = System.Drawing.Color.Green
+        Me.Air_Pr_Main_T2.Color3 = System.Drawing.Color.Red
+        Me.Air_Pr_Main_T2.ComComponent = Me.PLC
+        Me.Air_Pr_Main_T2.Font = New System.Drawing.Font("Agency FB", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Air_Pr_Main_T2.ForeColor = System.Drawing.Color.Silver
+        Me.Air_Pr_Main_T2.Location = New System.Drawing.Point(1027, 712)
+        Me.Air_Pr_Main_T2.Name = "Air_Pr_Main_T2"
+        Me.Air_Pr_Main_T2.OutlineColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer))
+        Me.Air_Pr_Main_T2.OutlineWidth = 5
+        Me.Air_Pr_Main_T2.OutputType = MfgControl.AdvancedHMI.Controls.OutputType.MomentarySet
+        Me.Air_Pr_Main_T2.SelectColor2 = False
+        Me.Air_Pr_Main_T2.SelectColor3 = False
+        Me.Air_Pr_Main_T2.Shape = MfgControl.AdvancedHMI.Controls.Indicator.ShapeTypes.Rectangle
+        Me.Air_Pr_Main_T2.Size = New System.Drawing.Size(267, 57)
+        Me.Air_Pr_Main_T2.TabIndex = 404
+        Me.Air_Pr_Main_T2.Text = "SYSTEM AIR PRESSURE"
+        '
+        'Water_Pr_Hot_T2
+        '
+        Me.Water_Pr_Hot_T2.Color1 = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer))
+        Me.Water_Pr_Hot_T2.Color2 = System.Drawing.Color.Green
+        Me.Water_Pr_Hot_T2.Color3 = System.Drawing.Color.Red
+        Me.Water_Pr_Hot_T2.ComComponent = Me.PLC
+        Me.Water_Pr_Hot_T2.Font = New System.Drawing.Font("Agency FB", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Water_Pr_Hot_T2.ForeColor = System.Drawing.Color.Silver
+        Me.Water_Pr_Hot_T2.Location = New System.Drawing.Point(1019, 501)
+        Me.Water_Pr_Hot_T2.Name = "Water_Pr_Hot_T2"
+        Me.Water_Pr_Hot_T2.OutlineColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer))
+        Me.Water_Pr_Hot_T2.OutlineWidth = 5
+        Me.Water_Pr_Hot_T2.OutputType = MfgControl.AdvancedHMI.Controls.OutputType.MomentarySet
+        Me.Water_Pr_Hot_T2.SelectColor2 = False
+        Me.Water_Pr_Hot_T2.SelectColor3 = False
+        Me.Water_Pr_Hot_T2.Shape = MfgControl.AdvancedHMI.Controls.Indicator.ShapeTypes.Rectangle
+        Me.Water_Pr_Hot_T2.Size = New System.Drawing.Size(267, 57)
+        Me.Water_Pr_Hot_T2.TabIndex = 410
+        Me.Water_Pr_Hot_T2.Text = "HOT WATER PRESSURE"
+        '
+        'Water_Pr_Cold_T2
+        '
+        Me.Water_Pr_Cold_T2.Color1 = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer))
+        Me.Water_Pr_Cold_T2.Color2 = System.Drawing.Color.Green
+        Me.Water_Pr_Cold_T2.Color3 = System.Drawing.Color.Red
+        Me.Water_Pr_Cold_T2.ComComponent = Me.PLC
+        Me.Water_Pr_Cold_T2.Font = New System.Drawing.Font("Agency FB", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Water_Pr_Cold_T2.ForeColor = System.Drawing.Color.Silver
+        Me.Water_Pr_Cold_T2.Location = New System.Drawing.Point(582, 501)
+        Me.Water_Pr_Cold_T2.Name = "Water_Pr_Cold_T2"
+        Me.Water_Pr_Cold_T2.OutlineColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer))
+        Me.Water_Pr_Cold_T2.OutlineWidth = 5
+        Me.Water_Pr_Cold_T2.OutputType = MfgControl.AdvancedHMI.Controls.OutputType.MomentarySet
+        Me.Water_Pr_Cold_T2.SelectColor2 = False
+        Me.Water_Pr_Cold_T2.SelectColor3 = False
+        Me.Water_Pr_Cold_T2.Shape = MfgControl.AdvancedHMI.Controls.Indicator.ShapeTypes.Rectangle
+        Me.Water_Pr_Cold_T2.Size = New System.Drawing.Size(267, 57)
+        Me.Water_Pr_Cold_T2.TabIndex = 411
+        Me.Water_Pr_Cold_T2.Text = "COLD WATER PRESSURE"
+        '
+        'Water_Sup_City_T2
+        '
+        Me.Water_Sup_City_T2.Color1 = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer))
+        Me.Water_Sup_City_T2.Color2 = System.Drawing.Color.Green
+        Me.Water_Sup_City_T2.Color3 = System.Drawing.Color.Red
+        Me.Water_Sup_City_T2.ComComponent = Me.PLC
+        Me.Water_Sup_City_T2.Font = New System.Drawing.Font("Agency FB", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Water_Sup_City_T2.ForeColor = System.Drawing.Color.Silver
+        Me.Water_Sup_City_T2.Location = New System.Drawing.Point(25, 199)
+        Me.Water_Sup_City_T2.Name = "Water_Sup_City_T2"
+        Me.Water_Sup_City_T2.OutlineColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer))
+        Me.Water_Sup_City_T2.OutlineWidth = 5
+        Me.Water_Sup_City_T2.OutputType = MfgControl.AdvancedHMI.Controls.OutputType.MomentarySet
+        Me.Water_Sup_City_T2.SelectColor2 = False
+        Me.Water_Sup_City_T2.SelectColor3 = False
+        Me.Water_Sup_City_T2.Shape = MfgControl.AdvancedHMI.Controls.Indicator.ShapeTypes.Rectangle
+        Me.Water_Sup_City_T2.Size = New System.Drawing.Size(222, 41)
+        Me.Water_Sup_City_T2.TabIndex = 407
+        Me.Water_Sup_City_T2.Text = "City Water Supply Pressure"
+        '
+        'Water_Pr_ColdPre_T2
+        '
+        Me.Water_Pr_ColdPre_T2.Color1 = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer))
+        Me.Water_Pr_ColdPre_T2.Color2 = System.Drawing.Color.Green
+        Me.Water_Pr_ColdPre_T2.Color3 = System.Drawing.Color.Red
+        Me.Water_Pr_ColdPre_T2.ComComponent = Me.PLC
+        Me.Water_Pr_ColdPre_T2.Font = New System.Drawing.Font("Agency FB", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Water_Pr_ColdPre_T2.ForeColor = System.Drawing.Color.Silver
+        Me.Water_Pr_ColdPre_T2.Location = New System.Drawing.Point(631, 193)
+        Me.Water_Pr_ColdPre_T2.Name = "Water_Pr_ColdPre_T2"
+        Me.Water_Pr_ColdPre_T2.OutlineColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer))
+        Me.Water_Pr_ColdPre_T2.OutlineWidth = 5
+        Me.Water_Pr_ColdPre_T2.OutputType = MfgControl.AdvancedHMI.Controls.OutputType.MomentarySet
+        Me.Water_Pr_ColdPre_T2.SelectColor2 = False
+        Me.Water_Pr_ColdPre_T2.SelectColor3 = False
+        Me.Water_Pr_ColdPre_T2.Shape = MfgControl.AdvancedHMI.Controls.Indicator.ShapeTypes.Rectangle
+        Me.Water_Pr_ColdPre_T2.Size = New System.Drawing.Size(222, 41)
+        Me.Water_Pr_ColdPre_T2.TabIndex = 408
+        Me.Water_Pr_ColdPre_T2.Text = "City Water Pump Pressure"
+        '
+        'Water_Pr_HotPre_T2
+        '
+        Me.Water_Pr_HotPre_T2.Color1 = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer))
+        Me.Water_Pr_HotPre_T2.Color2 = System.Drawing.Color.Green
+        Me.Water_Pr_HotPre_T2.Color3 = System.Drawing.Color.Red
+        Me.Water_Pr_HotPre_T2.ComComponent = Me.PLC
+        Me.Water_Pr_HotPre_T2.Font = New System.Drawing.Font("Agency FB", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Water_Pr_HotPre_T2.ForeColor = System.Drawing.Color.Silver
+        Me.Water_Pr_HotPre_T2.Location = New System.Drawing.Point(1009, 192)
+        Me.Water_Pr_HotPre_T2.Name = "Water_Pr_HotPre_T2"
+        Me.Water_Pr_HotPre_T2.OutlineColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer))
+        Me.Water_Pr_HotPre_T2.OutlineWidth = 5
+        Me.Water_Pr_HotPre_T2.OutputType = MfgControl.AdvancedHMI.Controls.OutputType.MomentarySet
+        Me.Water_Pr_HotPre_T2.SelectColor2 = False
+        Me.Water_Pr_HotPre_T2.SelectColor3 = False
+        Me.Water_Pr_HotPre_T2.Shape = MfgControl.AdvancedHMI.Controls.Indicator.ShapeTypes.Rectangle
+        Me.Water_Pr_HotPre_T2.Size = New System.Drawing.Size(222, 41)
+        Me.Water_Pr_HotPre_T2.TabIndex = 409
+        Me.Water_Pr_HotPre_T2.Text = "Hot Water Pump Pressure"
+        '
+        'Water_Fl_Hot_T2
+        '
+        Me.Water_Fl_Hot_T2.Color1 = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer))
+        Me.Water_Fl_Hot_T2.Color2 = System.Drawing.Color.Green
+        Me.Water_Fl_Hot_T2.Color3 = System.Drawing.Color.Red
+        Me.Water_Fl_Hot_T2.ComComponent = Me.PLC
+        Me.Water_Fl_Hot_T2.Font = New System.Drawing.Font("Agency FB", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Water_Fl_Hot_T2.ForeColor = System.Drawing.Color.Silver
+        Me.Water_Fl_Hot_T2.Location = New System.Drawing.Point(1630, 193)
+        Me.Water_Fl_Hot_T2.Name = "Water_Fl_Hot_T2"
+        Me.Water_Fl_Hot_T2.OutlineColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer))
+        Me.Water_Fl_Hot_T2.OutlineWidth = 5
+        Me.Water_Fl_Hot_T2.OutputType = MfgControl.AdvancedHMI.Controls.OutputType.MomentarySet
+        Me.Water_Fl_Hot_T2.SelectColor2 = False
+        Me.Water_Fl_Hot_T2.SelectColor3 = False
+        Me.Water_Fl_Hot_T2.Shape = MfgControl.AdvancedHMI.Controls.Indicator.ShapeTypes.Rectangle
+        Me.Water_Fl_Hot_T2.Size = New System.Drawing.Size(222, 41)
+        Me.Water_Fl_Hot_T2.TabIndex = 406
+        Me.Water_Fl_Hot_T2.Text = "Hot Water Flow Rate"
+        '
+        'Water_Tp_Hot_T2
+        '
+        Me.Water_Tp_Hot_T2.Color1 = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer))
+        Me.Water_Tp_Hot_T2.Color2 = System.Drawing.Color.Green
+        Me.Water_Tp_Hot_T2.Color3 = System.Drawing.Color.Red
+        Me.Water_Tp_Hot_T2.ComComponent = Me.PLC
+        Me.Water_Tp_Hot_T2.Font = New System.Drawing.Font("Agency FB", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Water_Tp_Hot_T2.ForeColor = System.Drawing.Color.Silver
+        Me.Water_Tp_Hot_T2.Location = New System.Drawing.Point(1314, 193)
+        Me.Water_Tp_Hot_T2.Name = "Water_Tp_Hot_T2"
+        Me.Water_Tp_Hot_T2.OutlineColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer))
+        Me.Water_Tp_Hot_T2.OutlineWidth = 5
+        Me.Water_Tp_Hot_T2.OutputType = MfgControl.AdvancedHMI.Controls.OutputType.MomentarySet
+        Me.Water_Tp_Hot_T2.SelectColor2 = False
+        Me.Water_Tp_Hot_T2.SelectColor3 = False
+        Me.Water_Tp_Hot_T2.Shape = MfgControl.AdvancedHMI.Controls.Indicator.ShapeTypes.Rectangle
+        Me.Water_Tp_Hot_T2.Size = New System.Drawing.Size(222, 41)
+        Me.Water_Tp_Hot_T2.TabIndex = 405
+        Me.Water_Tp_Hot_T2.Text = "Hot Water Temperature"
+        '
+        'Steam_Dem_Med_T1
+        '
+        Me.Steam_Dem_Med_T1.Color1 = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer))
+        Me.Steam_Dem_Med_T1.Color2 = System.Drawing.Color.Green
+        Me.Steam_Dem_Med_T1.Color3 = System.Drawing.Color.Red
+        Me.Steam_Dem_Med_T1.ComComponent = Me.PLC
+        Me.Steam_Dem_Med_T1.Font = New System.Drawing.Font("Agency FB", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Steam_Dem_Med_T1.ForeColor = System.Drawing.Color.Silver
+        Me.Steam_Dem_Med_T1.Location = New System.Drawing.Point(1276, 605)
+        Me.Steam_Dem_Med_T1.Name = "Steam_Dem_Med_T1"
+        Me.Steam_Dem_Med_T1.OutlineColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer))
+        Me.Steam_Dem_Med_T1.OutlineWidth = 5
+        Me.Steam_Dem_Med_T1.OutputType = MfgControl.AdvancedHMI.Controls.OutputType.MomentarySet
+        Me.Steam_Dem_Med_T1.SelectColor2 = False
+        Me.Steam_Dem_Med_T1.SelectColor3 = False
+        Me.Steam_Dem_Med_T1.Shape = MfgControl.AdvancedHMI.Controls.Indicator.ShapeTypes.Rectangle
+        Me.Steam_Dem_Med_T1.Size = New System.Drawing.Size(222, 41)
+        Me.Steam_Dem_Med_T1.TabIndex = 439
+        Me.Steam_Dem_Med_T1.Text = "(40 PSI) Valve %"
+        '
+        'Steam_Dem_Low_T1
+        '
+        Me.Steam_Dem_Low_T1.Color1 = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer), CType(CType(10, Byte), Integer))
+        Me.Steam_Dem_Low_T1.Color2 = System.Drawing.Color.Green
+        Me.Steam_Dem_Low_T1.Color3 = System.Drawing.Color.Red
+        Me.Steam_Dem_Low_T1.ComComponent = Me.PLC
+        Me.Steam_Dem_Low_T1.Font = New System.Drawing.Font("Agency FB", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Steam_Dem_Low_T1.ForeColor = System.Drawing.Color.Silver
+        Me.Steam_Dem_Low_T1.Location = New System.Drawing.Point(1276, 385)
+        Me.Steam_Dem_Low_T1.Name = "Steam_Dem_Low_T1"
+        Me.Steam_Dem_Low_T1.OutlineColor = System.Drawing.Color.FromArgb(CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer), CType(CType(20, Byte), Integer))
+        Me.Steam_Dem_Low_T1.OutlineWidth = 5
+        Me.Steam_Dem_Low_T1.OutputType = MfgControl.AdvancedHMI.Controls.OutputType.MomentarySet
+        Me.Steam_Dem_Low_T1.SelectColor2 = False
+        Me.Steam_Dem_Low_T1.SelectColor3 = False
+        Me.Steam_Dem_Low_T1.Shape = MfgControl.AdvancedHMI.Controls.Indicator.ShapeTypes.Rectangle
+        Me.Steam_Dem_Low_T1.Size = New System.Drawing.Size(222, 41)
+        Me.Steam_Dem_Low_T1.TabIndex = 440
+        Me.Steam_Dem_Low_T1.Text = "(30 PSI) Valve %"
         '
         'Dashboard_Page
         '
@@ -41336,6 +41224,7 @@ Partial Class Dashboard_Page
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Black
         Me.ClientSize = New System.Drawing.Size(1920, 1080)
+        Me.Controls.Add(Me.StartUpScreen)
         Me.Controls.Add(Me.Goto_Steam_BTN)
         Me.Controls.Add(Me.Goto_Faults_BTN)
         Me.Controls.Add(Me.Goto_Login_Screen)
@@ -41356,10 +41245,6 @@ Partial Class Dashboard_Page
         Me.Controls.Add(Me.OutsideHumidityDisp1)
         Me.Controls.Add(Me.BasicIndicator37)
         Me.Controls.Add(Me.BasicIndicator90)
-        Me.Controls.Add(Me.Status_Page)
-        Me.Controls.Add(Me.Alarms_Page)
-        Me.Controls.Add(Me.Setpoints_Page)
-        Me.Controls.Add(Me.StartUpScreen)
         Me.Controls.Add(Me.Main_Page)
         Me.Controls.Add(Me.Electrical_Page)
         Me.Controls.Add(Me.Enviro_Page)
@@ -41370,6 +41255,9 @@ Partial Class Dashboard_Page
         Me.Controls.Add(Me.Login_Screen)
         Me.Controls.Add(Me.AdminSettings_Page)
         Me.Controls.Add(Me.Water_Page)
+        Me.Controls.Add(Me.Status_Page)
+        Me.Controls.Add(Me.Alarms_Page)
+        Me.Controls.Add(Me.Setpoints_Page)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.KeyPreview = True
         Me.MaximumSize = New System.Drawing.Size(1920, 1080)
@@ -42780,18 +42668,11 @@ Partial Class Dashboard_Page
     Friend WithEvents Label122 As Label
     Friend WithEvents Label124 As Label
     Friend WithEvents Label126 As Label
-    Friend WithEvents BasicIndicator114 As AdvancedHMIControls.BasicIndicator
-    Friend WithEvents BasicIndicator113 As AdvancedHMIControls.BasicIndicator
-    Friend WithEvents BasicIndicator112 As AdvancedHMIControls.BasicIndicator
-    Friend WithEvents BasicIndicator111 As AdvancedHMIControls.BasicIndicator
     Friend WithEvents Steam_Pr_Main_I1 As AdvancedHMIControls.BasicIndicator
     Friend WithEvents Steam_Pr_Low_I1 As AdvancedHMIControls.BasicIndicator
     Friend WithEvents Steam_Pr_Med_I1 As AdvancedHMIControls.BasicIndicator
     Friend WithEvents Air_Pr_Main_I1 As AdvancedHMIControls.BasicIndicator
     Friend WithEvents ImageList2 As ImageList
-    Friend WithEvents BasicIndicator121 As AdvancedHMIControls.BasicIndicator
-    Friend WithEvents BasicIndicator125 As AdvancedHMIControls.BasicIndicator
-    Friend WithEvents BasicIndicator124 As AdvancedHMIControls.BasicIndicator
     Friend WithEvents Steam_Dem_Med_I1 As AdvancedHMIControls.BasicIndicator
     Friend WithEvents Steam_Dem_Med_G1 As AdvancedHMIControls.MeterCompact
     Friend WithEvents Steam_Dem_Low_I1 As AdvancedHMIControls.BasicIndicator
@@ -42833,8 +42714,6 @@ Partial Class Dashboard_Page
     Friend WithEvents Pipe5 As AdvancedHMIControls.Pipe
     Friend WithEvents PictureBox38 As PictureBox
     Friend WithEvents PictureBox39 As PictureBox
-    Friend WithEvents BasicIndicator89 As AdvancedHMIControls.BasicIndicator
-    Friend WithEvents BasicIndicator82 As AdvancedHMIControls.BasicIndicator
     Friend WithEvents Steam_Pr_Main_MIN2 As AdvancedHMIControls.BasicLabel
     Friend WithEvents Steam_Flow_MIN2 As AdvancedHMIControls.BasicLabel
     Friend WithEvents Steam_Pr_Main_MAX2 As AdvancedHMIControls.BasicLabel
@@ -42844,8 +42723,6 @@ Partial Class Dashboard_Page
     Friend WithEvents Steam_Flow_I2 As AdvancedHMIControls.BasicIndicator
     Friend WithEvents Steam_Flow_G2 As AdvancedHMIControls.GaugeCompact
     Friend WithEvents Pipe81 As AdvancedHMIControls.Pipe
-    Friend WithEvents BasicIndicator87 As AdvancedHMIControls.BasicIndicator
-    Friend WithEvents BasicIndicator88 As AdvancedHMIControls.BasicIndicator
     Friend WithEvents Steam_Pr_Low_MIN2 As AdvancedHMIControls.BasicLabel
     Friend WithEvents Steam_Pr_Med_MIN2 As AdvancedHMIControls.BasicLabel
     Friend WithEvents Steam_Pr_Low_MAX2 As AdvancedHMIControls.BasicLabel
@@ -42947,7 +42824,6 @@ Partial Class Dashboard_Page
     Friend WithEvents Steam_Dem_Low_UN1 As Label
     Friend WithEvents Steam_Dem_Med_UN1 As Label
     Friend WithEvents BasicIndicator90 As AdvancedHMIControls.BasicIndicator
-    Friend WithEvents BasicIndicator40 As AdvancedHMIControls.BasicIndicator
     Friend WithEvents Air_Pr_Main_MIN2 As AdvancedHMIControls.BasicLabel
     Friend WithEvents Air_Pr_Main_MAX2 As AdvancedHMIControls.BasicLabel
     Friend WithEvents Air_Pr_Main_UN2 As AdvancedHMIControls.BasicIndicator
@@ -42962,10 +42838,6 @@ Partial Class Dashboard_Page
     Friend WithEvents Water_Tp_Hot_UN1 As Label
     Friend WithEvents Water_Pr_Hot_UN1 As AdvancedHMIControls.BasicIndicator
     Friend WithEvents Water_Pr_Cold_UN1 As AdvancedHMIControls.BasicIndicator
-    Friend WithEvents BasicIndicator115 As AdvancedHMIControls.BasicIndicator
-    Friend WithEvents BasicIndicator120 As AdvancedHMIControls.BasicIndicator
-    Friend WithEvents BasicIndicator107 As AdvancedHMIControls.BasicIndicator
-    Friend WithEvents BasicIndicator104 As AdvancedHMIControls.BasicIndicator
     Friend WithEvents Water_Sup_City_I1 As AdvancedHMIControls.BasicIndicator
     Friend WithEvents Water_Tp_Hot_I1 As AdvancedHMIControls.BasicIndicator
     Friend WithEvents Water_Sup_City_G1 As AdvancedHMIControls.MeterCompact
@@ -42974,8 +42846,6 @@ Partial Class Dashboard_Page
     Friend WithEvents Water_FH_Hot_G1 As AdvancedHMIControls.MeterCompact
     Friend WithEvents Water_FH_Cold_I1 As AdvancedHMIControls.BasicIndicator
     Friend WithEvents Water_FH_Cold_G1 As AdvancedHMIControls.MeterCompact
-    Friend WithEvents BasicIndicator110 As AdvancedHMIControls.BasicIndicator
-    Friend WithEvents BasicIndicator109 As AdvancedHMIControls.BasicIndicator
     Friend WithEvents Water_Pr_Hot_MIN1 As AdvancedHMIControls.BasicLabel
     Friend WithEvents Water_Pr_Cold_MIN1 As AdvancedHMIControls.BasicLabel
     Friend WithEvents Water_Pr_Hot_MAX1 As AdvancedHMIControls.BasicLabel
@@ -43001,12 +42871,6 @@ Partial Class Dashboard_Page
     Friend WithEvents Electrical_NB_UN2 As AdvancedHMIControls.BasicIndicator
     Friend WithEvents Electrical_SA_UN2 As AdvancedHMIControls.BasicIndicator
     Friend WithEvents Electrical_NA_UN2 As AdvancedHMIControls.BasicIndicator
-    Friend WithEvents BasicIndicator94 As AdvancedHMIControls.BasicIndicator
-    Friend WithEvents BasicIndicator10 As AdvancedHMIControls.BasicIndicator
-    Friend WithEvents BasicIndicator93 As AdvancedHMIControls.BasicIndicator
-    Friend WithEvents BasicIndicator8 As AdvancedHMIControls.BasicIndicator
-    Friend WithEvents BasicIndicator22 As AdvancedHMIControls.BasicIndicator
-    Friend WithEvents BasicIndicator96 As AdvancedHMIControls.BasicIndicator
     Friend WithEvents Electrical_SC_MIN2 As AdvancedHMIControls.BasicLabel
     Friend WithEvents Electrical_NC_MIN2 As AdvancedHMIControls.BasicLabel
     Friend WithEvents Electrical_SB_MIN2 As AdvancedHMIControls.BasicLabel
@@ -43037,37 +42901,30 @@ Partial Class Dashboard_Page
     Friend WithEvents Water_Pr_HotPre_MAX2 As AdvancedHMIControls.BasicLabel
     Friend WithEvents Water_Sup_City_UN2 As Label
     Friend WithEvents Water_Pr_HotPre_UN2 As Label
-    Friend WithEvents BasicIndicator21 As AdvancedHMIControls.BasicIndicator
     Friend WithEvents Water_Sup_City_I2 As AdvancedHMIControls.BasicIndicator
-    Friend WithEvents BasicIndicator1 As AdvancedHMIControls.BasicIndicator
     Friend WithEvents Water_Sup_City_G2 As AdvancedHMIControls.MeterCompact
     Friend WithEvents Water_Pr_HotPre_I2 As AdvancedHMIControls.BasicIndicator
     Friend WithEvents Water_Pr_HotPre_G2 As AdvancedHMIControls.MeterCompact
     Friend WithEvents Water_Fl_Hot_MIN2 As AdvancedHMIControls.BasicLabel
     Friend WithEvents Water_Fl_Hot_MAX2 As AdvancedHMIControls.BasicLabel
     Friend WithEvents Water_Fl_Hot_UN2 As Label
-    Friend WithEvents BasicIndicator20 As AdvancedHMIControls.BasicIndicator
     Friend WithEvents Water_Fl_Hot_I2 As AdvancedHMIControls.BasicIndicator
     Friend WithEvents Water_Fl_Hot_G2 As AdvancedHMIControls.MeterCompact
     Friend WithEvents Water_Tp_Hot_MIN2 As AdvancedHMIControls.BasicLabel
     Friend WithEvents Water_Tp_Hot_MAX2 As AdvancedHMIControls.BasicLabel
     Friend WithEvents Water_Tp_Hot_UN2 As Label
-    Friend WithEvents BasicIndicator7 As AdvancedHMIControls.BasicIndicator
     Friend WithEvents Water_Tp_Hot_I2 As AdvancedHMIControls.BasicIndicator
     Friend WithEvents Water_Tp_Hot_G2 As AdvancedHMIControls.MeterCompact
     Friend WithEvents Water_Pr_ColdPre_MIN2 As AdvancedHMIControls.BasicLabel
     Friend WithEvents Water_Pr_ColdPre_MAX2 As AdvancedHMIControls.BasicLabel
     Friend WithEvents Water_Pr_ColdPre_UN2 As Label
-    Friend WithEvents BasicIndicator95 As AdvancedHMIControls.BasicIndicator
     Friend WithEvents Water_Pr_ColdPre_I2 As AdvancedHMIControls.BasicIndicator
     Friend WithEvents Water_Pr_ColdPre_G2 As AdvancedHMIControls.MeterCompact
     Friend WithEvents Pipe103 As AdvancedHMIControls.Pipe
     Friend WithEvents Pipe121 As AdvancedHMIControls.Pipe
     Friend WithEvents Water_Pr_Hot_UN2 As AdvancedHMIControls.BasicIndicator
     Friend WithEvents Water_Pr_Cold_UN2 As AdvancedHMIControls.BasicIndicator
-    Friend WithEvents BasicIndicator9 As AdvancedHMIControls.BasicIndicator
     Friend WithEvents Water_Pr_Hot_MIN2 As AdvancedHMIControls.BasicLabel
-    Friend WithEvents BasicIndicator3 As AdvancedHMIControls.BasicIndicator
     Friend WithEvents Water_Pr_Hot_MAX2 As AdvancedHMIControls.BasicLabel
     Friend WithEvents Water_Pr_Cold_MIN2 As AdvancedHMIControls.BasicLabel
     Friend WithEvents Water_Pr_Hot_I2 As AdvancedHMIControls.BasicIndicator
@@ -43527,23 +43384,13 @@ Partial Class Dashboard_Page
     Friend WithEvents EVIHM_Min As AdvancedHMIControls.BasicLabel
     Friend WithEvents EVITP_Max As AdvancedHMIControls.BasicLabel
     Friend WithEvents EVITP_Min As AdvancedHMIControls.BasicLabel
-    Friend WithEvents Label63 As Label
-    Friend WithEvents Label62 As Label
-    Friend WithEvents Label56 As Label
-    Friend WithEvents Label54 As Label
-    Friend WithEvents Label50 As Label
-    Friend WithEvents Label39 As Label
-    Friend WithEvents Label35 As Label
-    Friend WithEvents Label34 As Label
     Friend WithEvents Steam_Pr_FeedWat_UN2 As AdvancedHMIControls.BasicIndicator
-    Friend WithEvents BasicIndicator26 As AdvancedHMIControls.BasicIndicator
     Friend WithEvents Steam_Pr_FeedWat_MIN2 As AdvancedHMIControls.BasicLabel
     Friend WithEvents Steam_Pr_FeedWat_MAX2 As AdvancedHMIControls.BasicLabel
     Friend WithEvents Steam_Pr_FeedWat_V2 As AdvancedHMIControls.AnalogValueDisplay
     Friend WithEvents BasicIndicator27 As AdvancedHMIControls.BasicIndicator
     Friend WithEvents Steam_Pr_FeedWat_G2 As AdvancedHMIControls.GaugeCompact
     Friend WithEvents Pipe139 As AdvancedHMIControls.Pipe
-    Friend WithEvents Water_Fl_Hot_Title As AdvancedHMIControls.BasicIndicator
     Friend WithEvents Water_Fl_Hot_V1 As AdvancedHMIControls.AnalogValueDisplay
     Friend WithEvents Water_Fl_Hot_MIN1 As AdvancedHMIControls.BasicLabel
     Friend WithEvents Water_Fl_Hot_MAX1 As AdvancedHMIControls.BasicLabel
@@ -43608,4 +43455,37 @@ Partial Class Dashboard_Page
     Friend WithEvents PictureBox41 As PictureBox
     Friend WithEvents Label75 As Label
     Friend WithEvents ProgressBar1 As ProgressBar
+    Friend WithEvents Air_Pr_Main_T2 As AdvancedHMIControls.BasicIndicator
+    Friend WithEvents Steam_Pr_FeedWat_T2 As AdvancedHMIControls.BasicIndicator
+    Friend WithEvents Steam_Pr_Low_T2 As AdvancedHMIControls.BasicIndicator
+    Friend WithEvents Steam_Pr_Med_T2 As AdvancedHMIControls.BasicIndicator
+    Friend WithEvents Steam_Flow_T2 As AdvancedHMIControls.BasicIndicator
+    Friend WithEvents Steam_Pr_Main_T2 As AdvancedHMIControls.BasicIndicator
+    Friend WithEvents Electrical_SC_T2 As AdvancedHMIControls.BasicIndicator
+    Friend WithEvents Electrical_NC_T2 As AdvancedHMIControls.BasicIndicator
+    Friend WithEvents Electrical_SB_T2 As AdvancedHMIControls.BasicIndicator
+    Friend WithEvents Electrical_NB_T2 As AdvancedHMIControls.BasicIndicator
+    Friend WithEvents Electrical_SA_T2 As AdvancedHMIControls.BasicIndicator
+    Friend WithEvents Electrical_NA_T2 As AdvancedHMIControls.BasicIndicator
+    Friend WithEvents Steam_Pr_Main_T1 As AdvancedHMIControls.BasicIndicator
+    Friend WithEvents Steam_Pr_Low_T1 As AdvancedHMIControls.BasicIndicator
+    Friend WithEvents Steam_Pr_Med_T1 As AdvancedHMIControls.BasicIndicator
+    Friend WithEvents Water_Fl_Hot_T1 As AdvancedHMIControls.BasicIndicator
+    Friend WithEvents Water_Tp_Hot_T1 As AdvancedHMIControls.BasicIndicator
+    Friend WithEvents Water_Sup_City_VT1 As AdvancedHMIControls.BasicIndicator
+    Friend WithEvents Water_FH_Hot_T1 As AdvancedHMIControls.BasicIndicator
+    Friend WithEvents Water_FH_Cold_T1 As AdvancedHMIControls.BasicIndicator
+    Friend WithEvents Steam_Flow_T1 As AdvancedHMIControls.BasicIndicator
+    Friend WithEvents Water_Pr_Hot_T1 As AdvancedHMIControls.BasicIndicator
+    Friend WithEvents Water_Pr_Cold_T1 As AdvancedHMIControls.BasicIndicator
+    Friend WithEvents Air_Pr_Main_T1 As AdvancedHMIControls.BasicIndicator
+    Friend WithEvents Water_Pr_Hot_T2 As AdvancedHMIControls.BasicIndicator
+    Friend WithEvents Water_Pr_Cold_T2 As AdvancedHMIControls.BasicIndicator
+    Friend WithEvents Water_Sup_City_T2 As AdvancedHMIControls.BasicIndicator
+    Friend WithEvents Water_Pr_ColdPre_T2 As AdvancedHMIControls.BasicIndicator
+    Friend WithEvents Water_Pr_HotPre_T2 As AdvancedHMIControls.BasicIndicator
+    Friend WithEvents Water_Fl_Hot_T2 As AdvancedHMIControls.BasicIndicator
+    Friend WithEvents Water_Tp_Hot_T2 As AdvancedHMIControls.BasicIndicator
+    Friend WithEvents Steam_Dem_Med_T1 As AdvancedHMIControls.BasicIndicator
+    Friend WithEvents Steam_Dem_Low_T1 As AdvancedHMIControls.BasicIndicator
 End Class

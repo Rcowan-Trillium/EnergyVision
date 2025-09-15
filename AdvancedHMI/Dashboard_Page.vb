@@ -112,7 +112,9 @@ Public Class Dashboard_Page
         '\____/_/\__/\__, /     |__/|__/\__,_/\__/\___/_/      /____/\__,_/ .___/ .___/_/\__, /  
         '           /____/                                               /_/   /_/      /____/   
 
-
+        'TITLE 
+        'Water_Sup_City_T1.DataBindings.Add("Text", CWSUP_Title, "Text")
+        Water_Sup_City_T2.DataBindings.Add("Text", CWSUP_Title, "Text")
         '-Real Values
         Water_Sup_City_G1.DataBindings.Add("value", CWSUP_Actual, "value") 'Dashboard Page
         Water_Sup_City_V1.DataBindings.Add("value", CWSUP_Actual, "value") 'Dashboard Page
@@ -146,6 +148,9 @@ Public Class Dashboard_Page
         '/_____/\____/\____/____/\__/\___/\__,_/   \____/_/\__/\__, /  /_/   /_/   \___/____/____/\__,_/_/   \___/ 
         '                                                        /_/ 
 
+        'TITLE 
+        ' Water_Pr_ColdPre_T1.DataBindings.Add("Text", CWPRP_Title, "Text")
+        Water_Pr_ColdPre_T2.DataBindings.Add("Text", CWPRP_Title, "Text")
         '-Real Values
         'Water_PR_ColdPre_G1.DataBindings.Add("value", CWPRP_Actual, "value") 'Dashboard Page
         ' Water_PR_ColdPre_V1.DataBindings.Add("value", CWPRP_Actual, "value") 'Dashboard Page
@@ -175,6 +180,9 @@ Public Class Dashboard_Page
         ' / /   / __ \/ / __  /   | | /| / / __ `/ __/ _ \/ ___/  / /_/ / ___/ _ \/ ___/ ___/ / / / ___/ _ \
         '/ /___/ /_/ / / /_/ /    | |/ |/ / /_/ / /_/  __/ /     / ____/ /  /  __(__  |__  ) /_/ / /  /  __/
         '\____/\____/_/\__,_/     |__/|__/\__,_/\__/\___/_/     /_/   /_/   \___/____/____/\__,_/_/   \___/ 
+        'TITLE 
+        Water_Pr_Cold_T1.DataBindings.Add("Text", CWPOP_Title, "Text")
+        Water_Pr_Cold_T2.DataBindings.Add("Text", CWPOP_Title, "Text")
         '-Real Values
         Water_Pr_Cold_G1.DataBindings.Add("value", CWPOP_Actual, "value") 'Dashboard Page
         Water_Pr_Cold_V1.DataBindings.Add("value", CWPOP_Actual, "value") 'Dashboard Page
@@ -207,6 +215,9 @@ Public Class Dashboard_Page
         ' / __  / /_/ / /_     | |/ |/ / /_/ / /_/  __/ /     / ____/ /_/ / / / / / / /_/ /  / ____/ /  /  __(__  |__  ) /_/ / /  /  __/
         '/_/ /_/\____/\__/     |__/|__/\__,_/\__/\___/_/     /_/    \__,_/_/ /_/ /_/ .___/  /_/   /_/   \___/____/____/\__,_/_/   \___/ 
         '                                                                         /_/                                                   
+        'TITLE 
+        'Water_Pr_HotPre_T1.DataBindings.Add("Text",HWPRP_Actual , "Text")
+        Water_Pr_HotPre_T2.DataBindings.Add("Text", HWPRP_Title, "Text")
         '-Real Values
         'Water_Pr_HotPre_G1.DataBindings.Add("value", HWPRP_Actual, "value") 'Dashboard Page
         'Water_Pr_HotPre_V1.DataBindings.Add("value", HWPRP_Actual, "value") 'Dashboard Page
@@ -236,6 +247,9 @@ Public Class Dashboard_Page
         '  / /_/ / __ \/ __/   | | /| / / __ `/ __/ _ \/ ___/  / /_/ / ___/ _ \/ ___/ ___/ / / / ___/ _ \
         ' / __  / /_/ / /_     | |/ |/ / /_/ / /_/  __/ /     / ____/ /  /  __(__  |__  ) /_/ / /  /  __/
         '/_/ /_/\____/\__/     |__/|__/\__,_/\__/\___/_/     /_/   /_/   \___/____/____/\__,_/_/   \___/ 
+        'TITLE 
+        Water_Pr_Hot_T1.DataBindings.Add("Text", HWPOP_Title, "Text")
+        Water_Pr_Hot_T2.DataBindings.Add("Text", HWPOP_Title, "Text")
         '-Real Values
         Water_Pr_Hot_G1.DataBindings.Add("value", HWPOP_Actual, "value") 'Dashboard Page
         Water_Pr_Hot_V1.DataBindings.Add("value", HWPOP_Actual, "value") 'Dashboard Page
@@ -266,6 +280,9 @@ Public Class Dashboard_Page
         ' / __  / /_/ / /_     | |/ |/ / /_/ / /_/  __/ /       / / /  __/ / / / / / /_/ /  __/ /  / /_/ / /_/ /_/ / /  /  __/
         '/_/ /_/\____/\__/     |__/|__/\__,_/\__/\___/_/       /_/  \___/_/ /_/ /_/ .___/\___/_/   \__,_/\__/\__,_/_/   \___/ 
         '                                                                        /_/                                          
+        'TITLE 
+        Water_Tp_Hot_T1.DataBindings.Add("Text", HWTP_Title, "Text")
+        Water_Tp_Hot_T2.DataBindings.Add("Text", HWTP_Title, "Text")
         '-Real Values
         Water_Tp_Hot_G1.DataBindings.Add("value", HWTP_Actual, "value") 'Dashboard Page
         Water_Tp_Hot_V1.DataBindings.Add("value", HWTP_Actual, "value") 'Dashboard Page
@@ -296,6 +313,9 @@ Public Class Dashboard_Page
         ' / __  / /_/ / /_     | |/ |/ / /_/ / /_/  __/ /     / __/ / / /_/ / |/ |/ / 
         '/_/ /_/\____/\__/     |__/|__/\__,_/\__/\___/_/     /_/   /_/\____/|__/|__/  
 
+        'TITLE 
+        Water_Fl_Hot_T1.DataBindings.Add("Text", HWFL_Title, "Text")
+        Water_Fl_Hot_T2.DataBindings.Add("Text", HWFL_Title, "Text")
         '-Real Values
 
         Water_Fl_Hot_G1.DataBindings.Add("value", HWFL_Actual, "value") 'Dashboard Page
@@ -329,6 +349,9 @@ Public Class Dashboard_Page
         '/_/ /_/\____/\__/     |__/|__/\__,_/\__/\___/_/     /_/   /_/_/\__/\___/_/     
 
 
+        'TITLE 
+        Water_FH_Hot_T1.DataBindings.Add("Text", HWFD_Title, "Text")
+        ' Water_FH_Hot_T2.DataBindings.Add("Text", HWFD_Title, "Text")
         '-Real Values
         Water_FH_Hot_G1.DataBindings.Add("value", HWFD_Actual, "value") 'Dashboard Page
         Water_FH_Hot_V1.DataBindings.Add("value", HWFD_Actual, "value") 'Dashboard Page
@@ -361,6 +384,9 @@ Public Class Dashboard_Page
         '\____/\____/_/\__,_/     |__/|__/\__,_/\__/\___/_/     /_/   /_/_/\__/\___/_/     
 
 
+        'TITLE 
+        Water_FH_Cold_T1.DataBindings.Add("Text", CWFD_Title, "Text")
+        ' Water_FH_Cold_T2.DataBindings.Add("Text", CWFD_Title, "Text")
         '-Real Values
         Water_FH_Cold_G1.DataBindings.Add("value", CWFD_Actual, "value") 'Dashboard Page
         Water_FH_Cold_V1.DataBindings.Add("value", CWFD_Actual, "value") 'Dashboard Page
@@ -400,6 +426,9 @@ Public Class Dashboard_Page
         '/_/  /_/_/  |_/___/_/ |_/   /____//_/ /_____/_/  |_/_/  /_/  /_/   /_/ |_/_____//____/____/\____/_/ |_/_____/  
 
 
+        'TITLE 
+        Steam_Pr_Main_T1.DataBindings.Add("Text", STHP_Title, "Text")
+        Steam_Pr_Main_T2.DataBindings.Add("Text", STHP_Title, "Text")
         '-Real Values
         Steam_Pr_Main_G1.DataBindings.Add("value", STHP_Actual, "value") 'Dashboard Page
         Steam_Pr_Main_V1.DataBindings.Add("value", STHP_Actual, "value") 'Dashboard Page
@@ -429,6 +458,9 @@ Public Class Dashboard_Page
         ' BOILER FEED WATER PRESSURE
         '[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 
+        'TITLE 
+        ' Steam_Pr_FeedWat_T1.DataBindings.Add("Text", STFWP_Title, "Text")
+        Steam_Pr_FeedWat_T2.DataBindings.Add("Text", STFWP_Title, "Text")
         '-Real Values
         'Steam_PR_FeedWat_G1.DataBindings.Add("value", STFWP_Actual, "value") 'Dashboard Page
         'Steam_PR_FeedWat_V1.DataBindings.Add("value", STFWP_Actual, "value") 'Dashboard Page
@@ -461,6 +493,9 @@ Public Class Dashboard_Page
         '/_/  /_/_/  |_/___/_/ |_/   /____//_/ /_____/_/  |_/_/  /_/  /_/   /_____/\____/ |__/|__/   
 
 
+        'TITLE 
+        Steam_Flow_T1.DataBindings.Add("Text", STFL_Title, "Text")
+        Steam_Flow_T2.DataBindings.Add("Text", STFL_Title, "Text")
         '-Real Values
         Steam_Flow_G1.DataBindings.Add("value", STFL_Actual, "value") 'Dashboard Page
         Steam_Flow_V1.DataBindings.Add("value", STFL_Actual, "value") 'Dashboard Page
@@ -493,6 +528,9 @@ Public Class Dashboard_Page
         '/_____/\____/ |__/|__/   /____//_/ /_____/_/  |_/_/  /_/  /_/   /_/ |_/_____//____/____/\____/_/ |_/_____/   
 
 
+        'TITLE 
+        Steam_Pr_Low_T1.DataBindings.Add("Text", STLP_Title, "Text")
+        Steam_Pr_Low_T2.DataBindings.Add("Text", STLP_Title, "Text")
         '-Real Values
         Steam_Pr_Low_G1.DataBindings.Add("value", STLP_Actual, "value") 'Dashboard Page
         Steam_Pr_Low_V1.DataBindings.Add("value", STLP_Actual, "value") 'Dashboard Page
@@ -525,6 +563,9 @@ Public Class Dashboard_Page
         ' / /  / / /___/ /_/ /   ___/ // / / /___/ ___ |/ /  / /  / ____/ _, _/ /___ ___/ /__/ / /_/ / _, _/ /___   
         '/_/  /_/_____/_____/   /____//_/ /_____/_/  |_/_/  /_/  /_/   /_/ |_/_____//____/____/\____/_/ |_/_____/
 
+        'TITLE 
+        Steam_Pr_Med_T1.DataBindings.Add("Text", STMP_Title, "Text")
+        Steam_Pr_Med_T2.DataBindings.Add("Text", STMP_Title, "Text")
         '-Real Values
         Steam_Pr_Med_G1.DataBindings.Add("value", STMP_Actual, "value") 'Dashboard Page
         Steam_Pr_Med_V1.DataBindings.Add("value", STMP_Actual, "value") 'Dashboard Page
@@ -557,6 +598,9 @@ Public Class Dashboard_Page
         ' / /___/ /_/ /| |/ |/ /   ___/ // / / /___/ ___ |/ /  / /  / /_/ / /___/ /  / / ___ |/ /|  / /_/ / 
         '/_____/\____/ |__/|__/   /____//_/ /_____/_/  |_/_/  /_/  /_____/_____/_/  /_/_/  |_/_/ |_/_____/  
 
+        'TITLE 
+        Steam_Dem_Low_T1.DataBindings.Add("Text", STLPDEM_Title, "Text")
+        'Steam_Dem_Low_T2.DataBindings.Add("Text", STLPDEM_Title, "Text")
         '-Real Values
         Steam_Dem_Low_G1.DataBindings.Add("value", STLPDEM_Actual, "value") 'Dashboard Page
         Steam_Dem_Low_V1.DataBindings.Add("value", STLPDEM_Actual, "value") 'Dashboard Page
@@ -589,7 +633,9 @@ Public Class Dashboard_Page
         '  / /|_/ / __/ / / / /   \__ \ / / / __/ / /| | / /|_/ /  / / / / __/ / /|_/ / /| | /  |/ / / / /
         ' / /  / / /___/ /_/ /   ___/ // / / /___/ ___ |/ /  / /  / /_/ / /___/ /  / / ___ |/ /|  / /_/ / 
         '/_/  /_/_____/_____/   /____//_/ /_____/_/  |_/_/  /_/  /_____/_____/_/  /_/_/  |_/_/ |_/_____/  
-
+        'TITLE 
+        Steam_Dem_Med_T1.DataBindings.Add("Text", STMPDEM_Title, "Text")
+        ' Steam_Dem_Med_T2.DataBindings.Add("Text", STMPDEM_Title, "Text")
         '-Real Values
         Steam_Dem_Med_G1.DataBindings.Add("value", STMPDEM_Actual, "value") 'Dashboard Page
         Steam_Dem_Med_V1.DataBindings.Add("value", STMPDEM_Actual, "value") 'Dashboard Page
@@ -624,6 +670,9 @@ Public Class Dashboard_Page
         '/_/  |_/___/_/ |_|  /_/   /_/ |_/_____//____/____/\____/_/ |_/_____/   
 
 
+        'TITLE 
+        Air_Pr_Main_T1.DataBindings.Add("Text", ALP_Title, "Text")
+        Air_Pr_Main_T2.DataBindings.Add("Text", ALP_Title, "Text")
         '-Real Values
         Air_Pr_Main_G1.DataBindings.Add("value", ALP_Actual, "value") 'Dashboard Page
         Air_Pr_Main_V1.DataBindings.Add("value", ALP_Actual, "value") 'Dashboard Page
@@ -660,6 +709,9 @@ Public Class Dashboard_Page
         ' / /|  / /_/ / /  / /_/ / / /  / ___ |
         '/_/ |_/\____/_/   \__/_/ /_/  /_/  |_|
 
+        'TITLE 
+        ' Electrical_NA_T1.DataBindings.Add("Text", ELNA_Title, "Text")
+        Electrical_NA_T2.DataBindings.Add("Text", ELNA_Title, "Text")
         '-Real Values
         Electrical_NA_G1.DataBindings.Add("value", ELNA_Actual, "value") 'Dashboard Page
         Electrical_NA_V1.DataBindings.Add("value", ELNA_Actual, "value") 'Dashboard Page
@@ -693,6 +745,9 @@ Public Class Dashboard_Page
         ' / /|  / /_/ / /  / /_/ / / /  / /_/ / 
         '/_/ |_/\____/_/   \__/_/ /_/  /_____/  
 
+        'TITLE 
+        'Electrical_NB_T1.DataBindings.Add("Text", ELNB_Title, "Text")
+        Electrical_NB_T2.DataBindings.Add("Text", ELNB_Title, "Text")
         '-Real Values
         Electrical_NB_G1.DataBindings.Add("value", ELNB_Actual, "value") 'Dashboard Page
         Electrical_NB_V1.DataBindings.Add("value", ELNB_Actual, "value") 'Dashboard Page
@@ -724,6 +779,9 @@ Public Class Dashboard_Page
         '  /  |/ / __ \/ ___/ __/ __ \   / /     
         ' / /|  / /_/ / /  / /_/ / / /  / /___   
         '/_/ |_/\____/_/   \__/_/ /_/   \____/   
+        'TITLE 
+        'Electrical_NC_T1.DataBindings.Add("Text", ELNC_Title, "Text")
+        Electrical_NC_T2.DataBindings.Add("Text", ELNC_Title, "Text")
         '-Real Values
         Electrical_NC_G1.DataBindings.Add("value", ELNC_Actual, "value") 'Dashboard Page
         Electrical_NC_V1.DataBindings.Add("value", ELNC_Actual, "value") 'Dashboard Page
@@ -756,6 +814,9 @@ Public Class Dashboard_Page
         '/____/\____/\__,_/\__/_/ /_/  /_/  |_|
 
 
+        'TITLE 
+        ' Electrical_SA_T1.DataBindings.Add("Text", ELSA_Title, "Text")
+        Electrical_SA_T2.DataBindings.Add("Text", ELSA_Title, "Text")
         '-Real Values
         Electrical_SA_G1.DataBindings.Add("value", ELSA_Actual, "value") 'Dashboard Page
         Electrical_SA_V1.DataBindings.Add("value", ELSA_Actual, "value") 'Dashboard Page
@@ -788,6 +849,9 @@ Public Class Dashboard_Page
         '/____/\____/\__,_/\__/_/ /_/  /_____/  
 
 
+        'TITLE 
+        'Electrical_SB_T1.DataBindings.Add("Text", ELSB_Title, "Text")
+        Electrical_SB_T2.DataBindings.Add("Text", ELSB_Title, "Text")
         '-Real Values
         Electrical_SB_G1.DataBindings.Add("value", ELSB_Actual, "value") 'Dashboard Page
         Electrical_SB_V1.DataBindings.Add("value", ELSB_Actual, "value") 'Dashboard Page
@@ -822,6 +886,9 @@ Public Class Dashboard_Page
         '/____/\____/\__,_/\__/_/ /_/   \____/   
 
 
+        'TITLE 
+        'Electrical_SC_T1.DataBindings.Add("Text", ELSC_Title, "Text")
+        Electrical_SC_T2.DataBindings.Add("Text", ELSC_Title, "Text")
         '-Real Values
         Electrical_SC_G1.DataBindings.Add("value", ELSC_Actual, "value") 'Dashboard Page
         Electrical_SC_V1.DataBindings.Add("value", ELSC_Actual, "value") 'Dashboard Page
@@ -920,8 +987,8 @@ VALUES (@DT,@CWSUP, @CWPRP, @CWPOP, @CWFD, @HWPRP, @HWPOP, @HWFD, @HWTP, @HWFL, 
                 End If
             Catch ex As Exception
                 RunSQL = False
-                LogAlarmIcon1.Image = My.Resources.LogFileBad
-                LogAlarmIcon1.BackgroundImage = My.Resources.BADBG
+                LogAlarmIcon1.Image = My.Resources.ICON_LogBad
+                LogAlarmIcon1.BackgroundImage = My.Resources.BG_Bad
                 Set2_RunLogLabel.Text = "FALSE"
                 MsgBox("(Sensor Log) " & ex.Message)
             End Try
@@ -945,8 +1012,8 @@ VALUES (@DT,@CWSUP, @CWPRP, @CWPOP, @CWFD, @HWPRP, @HWPOP, @HWFD, @HWTP, @HWFL, 
 
             Catch ex As Exception
                 RunSQL = False
-                LogAlarmIcon1.Image = My.Resources.LogFileBad
-                LogAlarmIcon1.BackgroundImage = My.Resources.BADBG
+                LogAlarmIcon1.Image = My.Resources.ICON_LogBad
+                LogAlarmIcon1.BackgroundImage = My.Resources.BG_Bad
                 Set2_RunLogLabel.Text = "FALSE"
                 MessageBox.Show("(Alarm Log) " & ex.Message)
             End Try
@@ -967,8 +1034,8 @@ VALUES (@DT,@CWSUP, @CWPRP, @CWPOP, @CWFD, @HWPRP, @HWPOP, @HWFD, @HWTP, @HWFL, 
                 End Using
             Catch ex As Exception
                 RunSQL = False
-                LogAlarmIcon1.Image = My.Resources.LogFileBad
-                LogAlarmIcon1.BackgroundImage = My.Resources.BADBG
+                LogAlarmIcon1.Image = My.Resources.ICON_LogBad
+                LogAlarmIcon1.BackgroundImage = My.Resources.BG_Bad
                 Set2_RunLogLabel.Text = "FALSE"
                 MessageBox.Show("(System Log) " & ex.Message)
             End Try
@@ -1636,65 +1703,65 @@ VALUES (@DT,@CWSUP, @CWPRP, @CWPOP, @CWFD, @HWPRP, @HWPOP, @HWFD, @HWTP, @HWFL, 
 
 
             If CurElecAudStatus Then
-                ElectricalAlarmPanel.Controls("ElecAudAlarm" & i).BackgroundImage = My.Resources.AlarmAudibleOn
+                ElectricalAlarmPanel.Controls("ElecAudAlarm" & i).BackgroundImage = My.Resources.BTN_BuzzON
             Else
-                ElectricalAlarmPanel.Controls("ElecAudAlarm" & i).BackgroundImage = My.Resources.AlarmAudibleOff
+                ElectricalAlarmPanel.Controls("ElecAudAlarm" & i).BackgroundImage = My.Resources.BTN_BuzzOFF
             End If
             processCount += 1
             StartupStatusLabel.Text = "Getting Alarm Details..." & processCount & "/384"
             ProgressBar1.Value = processCount
             If CurAirAudStatus Then
-                AirAlarmPanel.Controls("AirAudAlarm" & i).BackgroundImage = My.Resources.AlarmAudibleOn
+                AirAlarmPanel.Controls("AirAudAlarm" & i).BackgroundImage = My.Resources.BTN_BuzzON
             Else
-                AirAlarmPanel.Controls("AirAudAlarm" & i).BackgroundImage = My.Resources.AlarmAudibleOff
+                AirAlarmPanel.Controls("AirAudAlarm" & i).BackgroundImage = My.Resources.BTN_BuzzOFF
             End If
             processCount += 1
             StartupStatusLabel.Text = "Getting Alarm Details..." & processCount & "/384"
             ProgressBar1.Value = processCount
             If CurSteamAudStatus Then
-                SteamAlarmPanel.Controls("steamAudAlarm" & i).BackgroundImage = My.Resources.AlarmAudibleOn
+                SteamAlarmPanel.Controls("steamAudAlarm" & i).BackgroundImage = My.Resources.BTN_BuzzON
             Else
-                SteamAlarmPanel.Controls("SteamAudAlarm" & i).BackgroundImage = My.Resources.AlarmAudibleOff
+                SteamAlarmPanel.Controls("SteamAudAlarm" & i).BackgroundImage = My.Resources.BTN_BuzzOFF
             End If
             processCount += 1
             StartupStatusLabel.Text = "Getting Alarm Details..." & processCount & "/384"
             ProgressBar1.Value = processCount
             If CurWaterAudStatus Then
-                WaterAlarmPanel.Controls("WaterAudAlarm" & i).BackgroundImage = My.Resources.AlarmAudibleOn
+                WaterAlarmPanel.Controls("WaterAudAlarm" & i).BackgroundImage = My.Resources.BTN_BuzzON
             Else
-                WaterAlarmPanel.Controls("WaterAudAlarm" & i).BackgroundImage = My.Resources.AlarmAudibleOff
+                WaterAlarmPanel.Controls("WaterAudAlarm" & i).BackgroundImage = My.Resources.BTN_BuzzOFF
             End If
             processCount += 1
             StartupStatusLabel.Text = "Getting Alarm Details..." & processCount & "/384"
             ProgressBar1.Value = processCount
             If CurElecFalcStatus Then
-                ElectricalAlarmPanel.Controls("ElecFalcAlarm" & i).BackgroundImage = My.Resources.AlarmFalconOn
+                ElectricalAlarmPanel.Controls("ElecFalcAlarm" & i).BackgroundImage = My.Resources.BTN_FalcON
             Else
-                ElectricalAlarmPanel.Controls("ElecFalcAlarm" & i).BackgroundImage = My.Resources.AlarmFalconOff
+                ElectricalAlarmPanel.Controls("ElecFalcAlarm" & i).BackgroundImage = My.Resources.BTN_FalcOFF
             End If
             processCount += 1
             StartupStatusLabel.Text = "Getting Alarm Details..." & processCount & "/384"
             ProgressBar1.Value = processCount
             If CurAirFalcStatus Then
-                AirAlarmPanel.Controls("AirFalcAlarm" & i).BackgroundImage = My.Resources.AlarmFalconOn
+                AirAlarmPanel.Controls("AirFalcAlarm" & i).BackgroundImage = My.Resources.BTN_FalcON
             Else
-                AirAlarmPanel.Controls("AirFalcAlarm" & i).BackgroundImage = My.Resources.AlarmFalconOff
+                AirAlarmPanel.Controls("AirFalcAlarm" & i).BackgroundImage = My.Resources.BTN_FalcOFF
             End If
             processCount += 1
             StartupStatusLabel.Text = "Getting Alarm Details..." & processCount & "/384"
             ProgressBar1.Value = processCount
             If CurSteamFalcStatus Then
-                SteamAlarmPanel.Controls("steamFalcAlarm" & i).BackgroundImage = My.Resources.AlarmFalconOn
+                SteamAlarmPanel.Controls("steamFalcAlarm" & i).BackgroundImage = My.Resources.BTN_FalcON
             Else
-                SteamAlarmPanel.Controls("SteamFalcAlarm" & i).BackgroundImage = My.Resources.AlarmFalconOff
+                SteamAlarmPanel.Controls("SteamFalcAlarm" & i).BackgroundImage = My.Resources.BTN_FalcOFF
             End If
             processCount += 1
             StartupStatusLabel.Text = "Getting Alarm Details..." & processCount & "/384"
             ProgressBar1.Value = processCount
             If CurWaterFalcStatus Then
-                WaterAlarmPanel.Controls("WaterFalcAlarm" & i).BackgroundImage = My.Resources.AlarmFalconOn
+                WaterAlarmPanel.Controls("WaterFalcAlarm" & i).BackgroundImage = My.Resources.BTN_FalcON
             Else
-                WaterAlarmPanel.Controls("WaterFalcAlarm" & i).BackgroundImage = My.Resources.AlarmFalconOff
+                WaterAlarmPanel.Controls("WaterFalcAlarm" & i).BackgroundImage = My.Resources.BTN_FalcOFF
             End If
             processCount += 1
             StartupStatusLabel.Text = "Getting Alarm Details..." & processCount & "/384"
@@ -1745,7 +1812,7 @@ VALUES (@DT,@CWSUP, @CWPRP, @CWPOP, @CWFD, @HWPRP, @HWPOP, @HWFD, @HWTP, @HWFL, 
         Next
         processCount = 0
         ProgressBar1.Value = processCount
-        ProgressBar1.Maximum = 6
+        ProgressBar1.Maximum = 4
     End Sub
     Sub SetPLC_DateTime()
         PLC.Write("N7:50", Now.Hour.ToString)
@@ -2213,7 +2280,7 @@ VALUES (@DT,@CWSUP, @CWPRP, @CWPOP, @CWFD, @HWPRP, @HWPOP, @HWFD, @HWTP, @HWFL, 
             If HeartBeatError Then
                 Label53.Text = "PLC Connection Timed Out"
                 Label53.ForeColor = Color.Red
-                PLCConIndicator.Image = My.Resources.StatusPLCBad
+                PLCConIndicator.Image = My.Resources.ICON_PLCBad
                 If PLCConInAlarm = False Then
                     Dim CurrentDT As DateTime = Now
                     If RunSQL Then SaveAlarmData(GetNow(), "ACTIVE", "PLC CONNECTION LOST", "System")
@@ -2222,7 +2289,7 @@ VALUES (@DT,@CWSUP, @CWPRP, @CWPOP, @CWFD, @HWPRP, @HWPOP, @HWFD, @HWTP, @HWFL, 
             Else
                 Label53.Text = "PLC Connected"
                 Label53.ForeColor = Color.Green
-                PLCConIndicator.Image = My.Resources.StatusPLCGood
+                PLCConIndicator.Image = My.Resources.ICON_PLCGood
                 If PLCConInAlarm = True Then
                     Dim CurrentDT As DateTime = Now
                     If RunSQL Then SaveAlarmData(GetNow(), "CLEAR", "PLC CONNECTION RESTORED", "System")
@@ -2409,6 +2476,7 @@ VALUES (@DT,@CWSUP, @CWPRP, @CWPOP, @CWFD, @HWPRP, @HWPOP, @HWFD, @HWTP, @HWFL, 
         Goto_Water_BTN.ForeColor = Color.Black
     End Sub
     Private Sub Goto_Alarms(sender As Object, e As EventArgs) Handles Goto_Alarms_BTN.Click
+        RefreshAlarmTable()
         Clear_Screens()
         Alarms_Page.Show()
         Clear_Nav_Buttons()
@@ -3124,10 +3192,11 @@ VALUES (@DT,@CWSUP, @CWPRP, @CWPOP, @CWFD, @HWPRP, @HWPOP, @HWFD, @HWTP, @HWFL, 
     End Sub
 
     Private Function AlarmDispUpdate()
-        Dim System_CNT As Integer = 0
-        If C_Als Then System_CNT += 1
-        If L_Als Then System_CNT += 1
-        Dim A_CNT As Integer = Water_CNT + Air_CNT + Steam_CNT + Elec_CNT + System_CNT
+
+        Dim A_CNT As Integer = Water_CNT + Air_CNT + Steam_CNT + Elec_CNT
+        If C_Als Then A_CNT += 1
+        If L_Als Then A_CNT += 1
+
         If A_CNT > 0 Then
             Dash_ALM_Indicator.Font = New Font(Dash_ALM_Indicator.Font.FontFamily,
                                                (36), Dash_ALM_Indicator.Font.Style)
@@ -3237,74 +3306,76 @@ VALUES (@DT,@CWSUP, @CWPRP, @CWPOP, @CWFD, @HWPRP, @HWPOP, @HWFD, @HWTP, @HWFL, 
 
         If HeartBeatError = False Then
             C_Als = False
-            PLCAlarmIcon1.Image = My.Resources.StatusPLCGood
-            PLCAlarmIcon1.BackgroundImage = My.Resources.GOODBG
+            PLCAlarmIcon1.Image = My.Resources.ICON_PLCGood
+            PLCAlarmIcon1.BackgroundImage = My.Resources.BG_Good
         Else
             C_Als = True
-            PLCAlarmIcon1.Image = My.Resources.StatusPLCBad
-            PLCAlarmIcon1.BackgroundImage = My.Resources.BADBG
+            PLCAlarmIcon1.Image = My.Resources.ICON_PLCBad
+            PLCAlarmIcon1.BackgroundImage = My.Resources.BG_Bad
         End If
 
         If RunSQL = True Then
             L_Als = False
-            LogAlarmIcon1.Image = My.Resources.LogFileGood
-            LogAlarmIcon1.BackgroundImage = My.Resources.GOODBG
+            LogAlarmIcon1.Image = My.Resources.ICON_LogGood
+            LogAlarmIcon1.BackgroundImage = My.Resources.BG_Good
         Else
             L_Als = True
-            LogAlarmIcon1.Image = My.Resources.LogFileBad
-            LogAlarmIcon1.BackgroundImage = My.Resources.BADBG
+            LogAlarmIcon1.Image = My.Resources.ICON_LogBad
+            LogAlarmIcon1.BackgroundImage = My.Resources.BG_Bad
         End If
 
         If WaterAlarmDisp1.Value > 0 Then
             W_Als = True
-            WaterAlarmIcon1.Image = My.Resources.StatusWaterBad
-            WaterAlarmIcon1.BackgroundImage = My.Resources.BADBG
+            WaterAlarmIcon1.Image = My.Resources.ICON_WaterBad
+            WaterAlarmIcon1.BackgroundImage = My.Resources.BG_Bad
         Else
             W_Als = False
-            WaterAlarmIcon1.Image = My.Resources.StatusWaterGood
-            WaterAlarmIcon1.BackgroundImage = My.Resources.GOODBG
+            WaterAlarmIcon1.Image = My.Resources.ICON_WaterGood
+            WaterAlarmIcon1.BackgroundImage = My.Resources.BG_Good
         End If
 
         If AirAlarmDisp1.Value > 0 Then
             A_Als = True
-            AirAlarmIcon1.Image = My.Resources.StatusAirBad
-            AirAlarmIcon1.BackgroundImage = My.Resources.BADBG
+            AirAlarmIcon1.Image = My.Resources.ICON_AirBad
+            AirAlarmIcon1.BackgroundImage = My.Resources.BG_Bad
         Else
             A_Als = False
-            AirAlarmIcon1.Image = My.Resources.StatusAirGood
-            AirAlarmIcon1.BackgroundImage = My.Resources.GOODBG
+            AirAlarmIcon1.Image = My.Resources.ICON_AirGood
+            AirAlarmIcon1.BackgroundImage = My.Resources.BG_Good
         End If
 
         If ElecAlarmDisp1.Value > 0 Then
             E_Als = True
-            ElecAlarmIcon1.Image = My.Resources.StatusElecBad
-            ElecAlarmIcon1.BackgroundImage = My.Resources.BADBG
+            ElecAlarmIcon1.Image = My.Resources.ICON_ElecBad
+            ElecAlarmIcon1.BackgroundImage = My.Resources.BG_Bad
         Else
             E_Als = False
-            ElecAlarmIcon1.Image = My.Resources.StatusElecGood
-            ElecAlarmIcon1.BackgroundImage = My.Resources.GOODBG
+            ElecAlarmIcon1.Image = My.Resources.ICON_ElecGood
+            ElecAlarmIcon1.BackgroundImage = My.Resources.BG_Good
         End If
 
 
         If SteamAlarmDisp1.Value > 0 Then
             S_Als = True
-            SteamAlarmIcon1.Image = My.Resources.StatusSteamBad
-            SteamAlarmIcon1.BackgroundImage = My.Resources.BADBG
+            SteamAlarmIcon1.Image = My.Resources.ICON_SteamBad
+            SteamAlarmIcon1.BackgroundImage = My.Resources.BG_Bad
         Else
             S_Als = False
-            SteamAlarmIcon1.Image = My.Resources.StatusSteamGood
-            SteamAlarmIcon1.BackgroundImage = My.Resources.GOODBG
+            SteamAlarmIcon1.Image = My.Resources.ICON_SteamGood
+            SteamAlarmIcon1.BackgroundImage = My.Resources.BG_Good
         End If
 
 
         If E_Als Or A_Als Or S_Als Or W_Als Or L_Als Or C_Als Then
-            Dash_ALM_Indicator.BackgroundImage = My.Resources.BADBG
+            Dash_ALM_Indicator.BackgroundImage = My.Resources.BG_Bad
             BypassAllButton.BackColor = Color.Red
             BasicIndicator116.BackColor = Color.Yellow
+            AlarmDispUpdate()
         Else
-            Dash_ALM_Indicator.BackgroundImage = My.Resources.GOODBG
+            Dash_ALM_Indicator.BackgroundImage = My.Resources.BG_Good
             BypassAllButton.BackColor = Color.FromArgb(56, 56, 56)
             BasicIndicator116.BackColor = Color.FromArgb(56, 56, 56)
+            AlarmDispUpdate()
         End If
 
         If StatusBanner.Visible = True Then
@@ -3400,11 +3471,11 @@ VALUES (@DT,@CWSUP, @CWPRP, @CWPOP, @CWFD, @HWPRP, @HWPOP, @HWFD, @HWTP, @HWFL, 
             Dim PLCAddress As String = "N14:" & ElecFalcWord & "/" & ElecFalcIndex
             If PLC_Fast.Read(PLCAddress) Then
                 PLC_Fast.Write(PLCAddress, "0")
-                ElectricalAlarmPanel.Controls(sender.name).BackgroundImage = My.Resources.AlarmFalconOff
+                ElectricalAlarmPanel.Controls(sender.name).BackgroundImage = My.Resources.BTN_FalcOFF
                 If RunSQL Then SaveSystemData(GetNow(), "Electrical Alarm #" & GetNumeric(sender.name) & " Falcon Alarm set to: False", CurrentUser)
             Else
                 PLC_Fast.Write(PLCAddress, "1")
-                ElectricalAlarmPanel.Controls(sender.name).BackgroundImage = My.Resources.AlarmFalconOn
+                ElectricalAlarmPanel.Controls(sender.name).BackgroundImage = My.Resources.BTN_FalcON
                 If RunSQL Then SaveSystemData(GetNow(), "Electrical Alarm #" & GetNumeric(sender.name) & " Falcon Alarm set to: True", CurrentUser)
             End If
         Else
@@ -3426,11 +3497,11 @@ VALUES (@DT,@CWSUP, @CWPRP, @CWPOP, @CWFD, @HWPRP, @HWPOP, @HWFD, @HWTP, @HWFL, 
             Dim PLCAddress As String = "N14:" & ElecAudWord & "/" & ElecAudIndex
             If PLC_Fast.Read(PLCAddress) Then
                 PLC_Fast.Write(PLCAddress, "0")
-                ElectricalAlarmPanel.Controls(sender.name).BackgroundImage = My.Resources.AlarmAudibleOff
+                ElectricalAlarmPanel.Controls(sender.name).BackgroundImage = My.Resources.BTN_BuzzOFF
                 If RunSQL Then SaveSystemData(GetNow(), "Electrical Alarm #" & GetNumeric(sender.name) & " Audible Alarm set to: False", CurrentUser)
             Else
                 PLC_Fast.Write(PLCAddress, "1")
-                ElectricalAlarmPanel.Controls(sender.name).BackgroundImage = My.Resources.AlarmAudibleOn
+                ElectricalAlarmPanel.Controls(sender.name).BackgroundImage = My.Resources.BTN_BuzzON
                 If RunSQL Then SaveSystemData(GetNow(), "Electrical Alarm #" & GetNumeric(sender.name) & " Audible Alarm set to: True", CurrentUser)
             End If
         Else
@@ -3454,11 +3525,11 @@ VALUES (@DT,@CWSUP, @CWPRP, @CWPOP, @CWFD, @HWPRP, @HWPOP, @HWFD, @HWTP, @HWFL, 
             Dim PLCAddress As String = "N14:" & AirFalcWord & "/" & AirFalcIndex
             If PLC_Fast.Read(PLCAddress) Then
                 PLC_Fast.Write(PLCAddress, "0")
-                AirAlarmPanel.Controls(sender.name).BackgroundImage = My.Resources.AlarmFalconOff
+                AirAlarmPanel.Controls(sender.name).BackgroundImage = My.Resources.BTN_FalcOFF
                 If RunSQL Then SaveSystemData(GetNow(), "Air Alarm #" & GetNumeric(sender.name) & " Falcon Alarm set to: False", CurrentUser)
             Else
                 PLC_Fast.Write(PLCAddress, "1")
-                AirAlarmPanel.Controls(sender.name).BackgroundImage = My.Resources.AlarmFalconOn
+                AirAlarmPanel.Controls(sender.name).BackgroundImage = My.Resources.BTN_FalcON
                 If RunSQL Then SaveSystemData(GetNow(), "Air Alarm #" & GetNumeric(sender.name) & " Falcon Alarm set to: True", CurrentUser)
             End If
         Else
@@ -3479,11 +3550,11 @@ VALUES (@DT,@CWSUP, @CWPRP, @CWPOP, @CWFD, @HWPRP, @HWPOP, @HWFD, @HWTP, @HWFL, 
             Dim PLCAddress As String = "N14:" & AirAudWord & "/" & AirAudIndex
             If PLC_Fast.Read(PLCAddress) Then
                 PLC_Fast.Write(PLCAddress, "0")
-                AirAlarmPanel.Controls(sender.name).BackgroundImage = My.Resources.AlarmAudibleOff
+                AirAlarmPanel.Controls(sender.name).BackgroundImage = My.Resources.BTN_BuzzOFF
                 If RunSQL Then SaveSystemData(GetNow(), "Air Alarm #" & GetNumeric(sender.name) & " Audible Alarm set to: False", CurrentUser)
             Else
                 PLC_Fast.Write(PLCAddress, "1")
-                AirAlarmPanel.Controls(sender.name).BackgroundImage = My.Resources.AlarmAudibleOn
+                AirAlarmPanel.Controls(sender.name).BackgroundImage = My.Resources.BTN_BuzzON
                 If RunSQL Then SaveSystemData(GetNow(), "Air Alarm #" & GetNumeric(sender.name) & " Audible Alarm set to: True", CurrentUser)
             End If
         Else
@@ -3504,11 +3575,11 @@ VALUES (@DT,@CWSUP, @CWPRP, @CWPOP, @CWFD, @HWPRP, @HWPOP, @HWFD, @HWTP, @HWFL, 
             Dim PLCAddress As String = "N14:" & WaterFalcWord & "/" & WaterFalcIndex
             If PLC_Fast.Read(PLCAddress) Then
                 PLC_Fast.Write(PLCAddress, "0")
-                WaterAlarmPanel.Controls(sender.name).BackgroundImage = My.Resources.AlarmFalconOff
+                WaterAlarmPanel.Controls(sender.name).BackgroundImage = My.Resources.BTN_FalcOFF
                 If RunSQL Then SaveSystemData(GetNow(), "Water Alarm #" & GetNumeric(sender.name) & " Falcon Alarm set to: False", CurrentUser)
             Else
                 PLC_Fast.Write(PLCAddress, "1")
-                WaterAlarmPanel.Controls(sender.name).BackgroundImage = My.Resources.AlarmFalconOn
+                WaterAlarmPanel.Controls(sender.name).BackgroundImage = My.Resources.BTN_FalcON
                 If RunSQL Then SaveSystemData(GetNow(), "Water Alarm #" & GetNumeric(sender.name) & " Falcon Alarm set to: True", CurrentUser)
             End If
         Else
@@ -3529,11 +3600,11 @@ VALUES (@DT,@CWSUP, @CWPRP, @CWPOP, @CWFD, @HWPRP, @HWPOP, @HWFD, @HWTP, @HWFL, 
             Dim PLCAddress As String = "N14:" & WaterAudWord & "/" & WaterAudIndex
             If PLC_Fast.Read(PLCAddress) Then
                 PLC_Fast.Write(PLCAddress, "0")
-                WaterAlarmPanel.Controls(sender.name).BackgroundImage = My.Resources.AlarmAudibleOff
+                WaterAlarmPanel.Controls(sender.name).BackgroundImage = My.Resources.BTN_BuzzOFF
                 If RunSQL Then SaveSystemData(GetNow(), "Water Alarm #" & GetNumeric(sender.name) & " Audible Alarm set to: False", CurrentUser)
             Else
                 PLC_Fast.Write(PLCAddress, "1")
-                WaterAlarmPanel.Controls(sender.name).BackgroundImage = My.Resources.AlarmAudibleOn
+                WaterAlarmPanel.Controls(sender.name).BackgroundImage = My.Resources.BTN_BuzzON
                 If RunSQL Then SaveSystemData(GetNow(), "Water Alarm #" & GetNumeric(sender.name) & " Audible Alarm set to: True", CurrentUser)
             End If
         Else
@@ -3554,11 +3625,11 @@ VALUES (@DT,@CWSUP, @CWPRP, @CWPOP, @CWFD, @HWPRP, @HWPOP, @HWFD, @HWTP, @HWFL, 
             Dim PLCAddress As String = "N14:" & SteamFalcWord & "/" & SteamFalcIndex
             If PLC_Fast.Read(PLCAddress) Then
                 PLC_Fast.Write(PLCAddress, "0")
-                SteamAlarmPanel.Controls(sender.name).BackgroundImage = My.Resources.AlarmFalconOff
+                SteamAlarmPanel.Controls(sender.name).BackgroundImage = My.Resources.BTN_FalcOFF
                 If RunSQL Then SaveSystemData(GetNow(), "Steam Alarm #" & GetNumeric(sender.name) & " Falcon Alarm set to: False", CurrentUser)
             Else
                 PLC_Fast.Write(PLCAddress, "1")
-                SteamAlarmPanel.Controls(sender.name).BackgroundImage = My.Resources.AlarmFalconOn
+                SteamAlarmPanel.Controls(sender.name).BackgroundImage = My.Resources.BTN_FalcON
                 If RunSQL Then SaveSystemData(GetNow(), "Steam Alarm #" & GetNumeric(sender.name) & " Falcon Alarm set to: True", CurrentUser)
             End If
         Else
@@ -3579,11 +3650,11 @@ VALUES (@DT,@CWSUP, @CWPRP, @CWPOP, @CWFD, @HWPRP, @HWPOP, @HWFD, @HWTP, @HWFL, 
             Dim PLCAddress As String = "N14:" & SteamAudWord & "/" & SteamAudIndex
             If PLC_Fast.Read(PLCAddress) Then
                 PLC_Fast.Write(PLCAddress, "0")
-                SteamAlarmPanel.Controls(sender.name).BackgroundImage = My.Resources.AlarmAudibleOff
+                SteamAlarmPanel.Controls(sender.name).BackgroundImage = My.Resources.BTN_BuzzOFF
                 If RunSQL Then SaveSystemData(GetNow(), "Steam Alarm #" & GetNumeric(sender.name) & " Audible Alarm set to: False", CurrentUser)
             Else
                 PLC_Fast.Write(PLCAddress, "1")
-                SteamAlarmPanel.Controls(sender.name).BackgroundImage = My.Resources.AlarmAudibleOn
+                SteamAlarmPanel.Controls(sender.name).BackgroundImage = My.Resources.BTN_BuzzON
                 If RunSQL Then SaveSystemData(GetNow(), "Steam Alarm #" & GetNumeric(sender.name) & " Audible Alarm set to: True", CurrentUser)
             End If
         Else
@@ -4620,13 +4691,13 @@ VALUES (@DT,@CWSUP, @CWPRP, @CWPOP, @CWFD, @HWPRP, @HWPOP, @HWFD, @HWTP, @HWFL, 
         If INI_GetKey_System("APP", "TopMost") = "True" Then Me.TopMost = True Else Me.TopMost = False
         If INI_GetKey_System("SQL", "SQL_EN") = "TRUE" Then
             RunSQL = True
-            LogAlarmIcon1.Image = My.Resources.LogFileGood
-            LogAlarmIcon1.BackgroundImage = My.Resources.GOODBG
+            LogAlarmIcon1.Image = My.Resources.ICON_LogGood
+            LogAlarmIcon1.BackgroundImage = My.Resources.BG_Good
             Set2_RunLogLabel.Text = "TRUE"
         Else
             RunSQL = False
-            LogAlarmIcon1.Image = My.Resources.LogFileBad
-            LogAlarmIcon1.BackgroundImage = My.Resources.BADBG
+            LogAlarmIcon1.Image = My.Resources.ICON_LogBad
+            LogAlarmIcon1.BackgroundImage = My.Resources.BG_Bad
             Set2_RunLogLabel.Text = "FALSE"
         End If
 
@@ -5009,31 +5080,6 @@ VALUES (@DT,@CWSUP, @CWPRP, @CWPOP, @CWFD, @HWPRP, @HWPOP, @HWFD, @HWTP, @HWFL, 
             End If
         End If
     End Sub
-
-    'Private Sub ElecAL_CB_SelectedIndexChanged(sender As Object, e As EventArgs)
-    '    AlarmSearchListBox.Items.Clear()
-    '    For Each alarm As String In AlarmList.Items
-    '        If alarm.Contains(ElecAL_CB.Text) Then AlarmSearchListBox.Items.Add(alarm)
-    '    Next
-    'End Sub
-    'Private Sub AirAL_CB_SAirtedIndexChanged(sender As Object, e As EventArgs)
-    '    AlarmSearchListBox.Items.Clear()
-    '    For Each alarm As String In AlarmList.Items
-    '        If alarm.Contains(AirAL_CB.Text) Then AlarmSearchListBox.Items.Add(alarm)
-    '    Next
-    'End Sub
-    'Private Sub SteamAL_CB_SSteamtedIndexChanged(sender As Object, e As EventArgs)
-    '    AlarmSearchListBox.Items.Clear()
-    '    For Each alarm As String In AlarmList.Items
-    '        If alarm.Contains(SteamAL_CB.Text) Then AlarmSearchListBox.Items.Add(alarm)
-    '    Next
-    'End Sub
-    'Private Sub WaterAL_CB_SWatertedIndexChanged(sender As Object, e As EventArgs)
-    '    AlarmSearchListBox.Items.Clear()
-    '    For Each alarm As String In AlarmList.Items
-    '        If alarm.Contains(WaterAL_CB.Text) Then AlarmSearchListBox.Items.Add(alarm)
-    '    Next
-    'End Sub
 
     Private Sub Input_Update_CARD7_0to15(sender As Object, e As EventArgs) Handles BasicLabel5.ValueChanged
         Dim AlarmArray() As Boolean = IntToBin(sender.value)
