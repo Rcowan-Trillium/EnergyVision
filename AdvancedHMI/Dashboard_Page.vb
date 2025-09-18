@@ -95,7 +95,126 @@ Public Class Dashboard_Page
     '║  dMP     dMP"AMF dMP.aMP dMP.dMP dMP"AMF dMP dMP dMP dMP dMP        dMP     dMP.aMP dMP dMP dMP.aMP   dMP   dMP dMP.aMP dMP dMP dP .dMP    ║
     '║ dMP     dMP dMP  VMMMP"  VMMMP" dMP dMP dMP dMP dMP dMP dMP        dMP      VMMMP" dMP dMP  VMMMP"   dMP   dMP  VMMMP" dMP dMP  VMMMP"     ║
     '╠════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╣
-    '║                                                                                                                                            ║
+    '║                                                                                                                                            ║ Public Sub PWLoop1_Status_Check(sender As System.Object, e As EventArgs) Handles PW_DIG_L1_HIGHCond.ValueSelectColor2Changed,
+    Public Function FindControlByName(parent As Control, name As String) As Control
+        For Each ctrl As Control In parent.Controls
+            If ctrl.Name = name Then
+                Return ctrl
+            Else
+                Dim found = FindControlByName(ctrl, name)
+                If found IsNot Nothing Then Return found
+            End If
+        Next
+        Return Nothing
+    End Function
+    Public Sub SetControlPropertyByName(controlName As String, propertyName As String, newValue As Object)
+        ' Find the control by name (recursive if needed)
+        Dim ctrl As Control = FindControlByName(Me, controlName)
+
+        If ctrl IsNot Nothing Then
+            ' Use reflection to get the property
+            Dim prop = ctrl.GetType().GetProperty(propertyName)
+
+            If prop IsNot Nothing AndAlso prop.CanWrite Then
+                ' Convert value if needed
+                Dim convertedValue = Convert.ChangeType(newValue, prop.PropertyType)
+                prop.SetValue(ctrl, convertedValue)
+            Else
+                MessageBox.Show($"Property '{propertyName}' not found or not writable on control '{controlName}'.")
+            End If
+        Else
+            MessageBox.Show($"Control '{controlName}' not found.")
+        End If
+    End Sub
+    Public Function GetControlPropertyByName(controlName As String, propertyName As String) As Object
+        ' Find the control by name
+        Dim ctrl As Control = FindControlByName(Me, controlName)
+
+        If ctrl IsNot Nothing Then
+            ' Use reflection to get the property
+            Dim prop = ctrl.GetType().GetProperty(propertyName)
+
+            If prop IsNot Nothing AndAlso prop.CanRead Then
+                Return prop.GetValue(ctrl)
+            Else
+                Throw New MissingMemberException($"Property '{propertyName}' not found or not readable on control '{controlName}'.")
+            End If
+        Else
+            Throw New ArgumentException($"Control '{controlName}' not found.")
+        End If
+    End Function
+    Private Sub Show_Con_String(sender As Object, e As EventArgs) Handles Button1.Click
+        Dim SQL As String() =
+                {INI_GetKey_System("SQL", "SERVER"),
+                INI_GetKey_System("SQL", "USER"),
+                INI_GetKey_System("SQL", "PASS"),
+                INI_GetKey_System("SQL", "DB")}
+        MsgBox("server=" & SQL(0) & ";user id=" & SQL(1) & ";password=" & SQL(2) & ";database=" & SQL(3), MessageBoxButtons.OK, "SQL Connection String")
+    End Sub
+    Function IsAppInstalled(displayName As String) As Boolean
+        ' Keys to check (32andalso 64-bit locations)
+        Dim uninstallKeys As String() = {
+            "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall",
+            "SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall"
+        }
+
+        For Each keyPath In uninstallKeys
+            Using key As RegistryKey = Registry.LocalMachine.OpenSubKey(keyPath)
+                If key IsNot Nothing Then
+                    For Each subKeyName In key.GetSubKeyNames()
+                        Using subKey As RegistryKey = key.OpenSubKey(subKeyName)
+                            Dim appName As String = TryCast(subKey.GetValue("DisplayName"), String)
+
+                            If appName IsNot Nothing AndAlso appName.Contains(displayName) Then
+                                Return True
+                            End If
+
+                        End Using
+                    Next
+                End If
+            End Using
+        Next
+
+        Return False
+    End Function
+    Public Sub L1Cond_ValueChanged(sender As System.Object, e As EventArgs) Handles PW_Cond_L1_V1.ValueChanged
+        PW_Cond_L1_G1.Value = sender.value / 1000
+    End Sub
+    Public Sub L2Cond_ValueChanged(sender As System.Object, e As EventArgs) Handles PW_Cond_L2_V1.ValueChanged
+        PW_Cond_L2_G1.Value = sender.value / 1000
+    End Sub
+    Public Sub PermTankLvl_ValueChanged(sender As System.Object, e As EventArgs) Handles PW_LVL_Tank_V1.ValueChanged
+        PW_LVL_Tank_G1.Value = sender.value / 1000
+    End Sub
+    Public Sub PWLoop1_Status_Check(sender As System.Object, e As EventArgs) Handles PW_DIG_L1_HIGHCond.ValueSelectColor2Changed,
+            PW_DIG_L1_TOCFail.ValueSelectColor2Changed, PW_DIG_L1_TOCLock.ValueSelectColor2Changed,
+            PW_DIG_L1_HIGHCond_BP.ValueSelectColor2Changed, PW_DIG_L1_TOCFail_BP.ValueSelectColor2Changed,
+            PW_DIG_L1_TOCLock_BP.ValueSelectColor2Changed, BasicIndicator34.ValueSelectColor2Changed
+        Dim TrueCount As Integer = 0
+        For Each i As String In {"PW_DIG_L1_HIGHCond", "PW_DIG_L1_TOCFail", "PW_DIG_L1_TOCLock", "PW_DIG_L1_HIGHCond_BP", "PW_DIG_L1_TOCFail_BP", "PW_DIG_L1_TOCLock_BP"}
+            If GetControlPropertyByName(i, "SelectColor2") = True Then TrueCount += 1
+        Next
+        With BasicIndicator28
+            If TrueCount > 0 Then .SelectColor2 = True Else .SelectColor2 = False
+        End With
+
+
+    End Sub
+    Public Sub PWLoop2_Status_Check(sender As System.Object, e As EventArgs) Handles PW_DIG_L2_HIGHCond.ValueSelectColor2Changed,
+            PW_DIG_L2_TOCFail.ValueSelectColor2Changed, PW_DIG_L2_TOCLock.ValueSelectColor2Changed,
+            PW_DIG_L2_HIGHCond_BP.ValueSelectColor2Changed, PW_DIG_L2_TOCFail_BP.ValueSelectColor2Changed,
+            PW_DIG_L2_TOCLock_BP.ValueSelectColor2Changed, BasicIndicator35.ValueSelectColor2Changed
+        Dim TrueCount As Integer = 0
+        For Each i As String In {"PW_DIG_L2_HIGHCond", "PW_DIG_L2_TOCFail", "PW_DIG_L2_TOCLock", "PW_DIG_L2_HIGHCond_BP", "PW_DIG_L2_TOCFail_BP", "PW_DIG_L2_TOCLock_BP"}
+            If GetControlPropertyByName(i, "SelectColor2") = True Then TrueCount += 1
+        Next
+        With BasicIndicator28
+            If TrueCount > 0 Then .SelectColor2 = True Else .SelectColor2 = False
+        End With
+
+
+    End Sub
+
     Public Sub PropertyBind()
         'All values from the Setpoint screen will bind their properties
         ' to the displays on other screens to minimize traffic
@@ -931,7 +1050,134 @@ Public Class Dashboard_Page
         ' ______________________________________________________________________________________________________
         '/_____/_____/_____/_____/_____/_____/_____/_____/_____/_____/_____/_____/_____/_____/_____/_____/_____/
     End Sub
+    Private Sub Panel1_MouseWheel(sender As Object, e As MouseEventArgs)
+        If Card_7.AutoScroll = False Then Card_7.AutoScroll = True
+        If Card_7.VerticalScroll.Visible = True Then Card_7.VerticalScroll.Visible = False ' Hide vertical scrollbar
+        If Card_7.HorizontalScroll.Visible = True Then Card_7.HorizontalScroll.Visible = False ' Hide horizontal scrollbar
+        ' Adjust scrolling manually
+        Dim newY As Integer = Card_7.VerticalScroll.Value - e.Delta
 
+        ' Clamp between min and max
+        If newY < Card_7.VerticalScroll.Minimum Then
+            newY = Card_7.VerticalScroll.Minimum
+        ElseIf newY > Card_7.VerticalScroll.Maximum Then
+            newY = Card_7.VerticalScroll.Maximum
+        End If
+
+        Panel1.AutoScrollPosition = New Point(0, newY)
+    End Sub
+    Sub UpdateIODescriptionLabels()
+        For Each IODescControl As Control In Card_2.Controls
+            If IODescControl.Name.EndsWith("Desc") Then
+                Dim Point As String = "P" & GetNumeric(IODescControl.Name.Split("_")(2))
+                IODescControl.Text = INI_GetKey_IO("CARD2", Point)
+            End If
+        Next
+        For Each IODescControl As Control In Card_3.Controls
+            If IODescControl.Name.EndsWith("Desc") Then
+                Dim Point As String = "P" & GetNumeric(IODescControl.Name.Split("_")(2))
+                IODescControl.Text = INI_GetKey_IO("CARD3", Point)
+            End If
+        Next
+        For Each IODescControl As Control In Card_4.Controls
+            If IODescControl.Name.EndsWith("Desc") Then
+                Dim Point As String = "P" & GetNumeric(IODescControl.Name.Split("_")(2))
+                IODescControl.Text = INI_GetKey_IO("CARD4", Point)
+            End If
+        Next
+        For Each IODescControl As Control In Card_5.Controls
+            If IODescControl.Name.EndsWith("Desc") Then
+                Dim Point As String = "P" & GetNumeric(IODescControl.Name.Split("_")(2))
+                IODescControl.Text = INI_GetKey_IO("CARD5", Point)
+            End If
+        Next
+        For Each IODescControl As Control In Card_6.Controls
+            If IODescControl.Name.EndsWith("Desc") Then
+                Dim Point As String = "P" & GetNumeric(IODescControl.Name.Split("_")(2))
+                IODescControl.Text = INI_GetKey_IO("CARD6", Point)
+            End If
+        Next
+        For Each IODescControl As Control In Card_7.Controls
+            If IODescControl.Name.EndsWith("Desc") Then
+                Dim Point As String = "P" & GetNumeric(IODescControl.Name.Split("_")(2))
+                IODescControl.Text = INI_GetKey_IO("CARD7", Point)
+            End If
+        Next
+        For Each IODescControl As Control In Card_8.Controls
+            If IODescControl.Name.EndsWith("Desc") Then
+                Dim Point As String = "P" & GetNumeric(IODescControl.Name.Split("_")(2))
+                IODescControl.Text = INI_GetKey_IO("CARD8", Point)
+            End If
+        Next
+    End Sub
+    Function ReadLineWithNumberFrom(filePath As String, ByVal lineNumber As Integer) As String
+        Using file As New System.IO.StreamReader(filePath)
+            ' Skip all preceding lines: '
+            For i As Integer = 1 To lineNumber - 1
+                If file.ReadLine() Is Nothing Then
+                    Throw New ArgumentOutOfRangeException("lineNumber")
+                End If
+            Next
+            ' Attempt to read the line you're interested in: '
+            Dim line As String = file.ReadLine()
+            If line Is Nothing Then
+                Throw New ArgumentOutOfRangeException("lineNumber")
+            End If
+            ' Succeded!
+            Return line
+        End Using
+    End Function
+    Public Function GetNumeric(value As String) As String
+        Dim output As New StringBuilder
+        For i = 0 To value.Length - 1
+            If IsNumeric(value(i)) Then
+                output.Append(value(i))
+            End If
+        Next
+        Return output.ToString()
+    End Function
+    Function GetCurrentState(Actual As Integer, ByVal HiLimit As Integer, ByVal LowLimit As Integer) As Boolean()
+        Dim InLimit As Boolean = False
+        Dim OverLimit As Boolean = False
+        Dim UnderLimit As Boolean = False
+        If Actual >= HiLimit Then OverLimit = True
+        If Actual <= LowLimit Then UnderLimit = True
+        If Actual < HiLimit Then
+            If Actual > LowLimit Then InLimit = True
+        End If
+        Dim Result(3) As Boolean
+        Result(0) = InLimit
+        Result(1) = OverLimit
+        Result(2) = UnderLimit
+        Return Result
+    End Function
+    Function ShowHWUsePerHour() As String
+        Dim Message As String = "Last 24 Hours Steam Usage" & vbNewLine
+        For i = 0 To 23
+            Message = Message & (Now.AddHours((i + 1) * (-1))).Hour.ToString("00") & ":00" & " to " & (Now.AddHours(i * (-1))).Hour.ToString("00") & ":00 " & "(" & PLC_Fast.Read("F9:" & i) & " L)" & vbNewLine
+        Next
+        Return Message
+    End Function
+    Function ShowSteamUsePerHour() As String
+        Dim Message As String = "Last 24 Hours Hot Water Usage" & vbNewLine
+        For i = 0 To 23
+            Message = Message & (Now.AddHours((i + 1) * (-1))).Hour.ToString("00") & ":00" & " to " & (Now.AddHours(i * (-1))).Hour.ToString("00") & ":00 " & "(" & PLC_Fast.Read("F10:" & i) & " LBS)" & vbNewLine
+        Next
+        Return Message
+    End Function
+    Function Calculate24HrSteamUse() As Boolean
+        Dim Total24HRSteamUsage As Integer = 0
+        Try
+            For i = 0 To 23
+                Total24HRSteamUsage += PLC_Fast.Read("F10:" & i)
+            Next
+            Total24HrSteamUse.Value = Total24HRSteamUsage
+            SteamUseAVG.Value = Math.Floor(Total24HRSteamUsage / 24)
+            Return True
+        Catch ex As Exception
+            Return False
+        End Try
+    End Function
 
 
     Public Sub SaveSensorData(DT As String, CWSUP As Object, CWPRP As Object, CWPOP As Object, CWFD As Object,
@@ -1384,6 +1630,9 @@ VALUES (@DT,@CWSUP, @CWPRP, @CWPOP, @CWFD, @HWPRP, @HWPOP, @HWFD, @HWTP, @HWFL, 
         End If
 
     End Sub
+    '##########################################################################
+#Region "INI File Functions"
+    '##########################################################################
     Private Sub INI_RemoveSection_USER(ByVal USER)
         Dim file As New IniFile()
         Try
@@ -1420,8 +1669,6 @@ VALUES (@DT,@CWSUP, @CWPRP, @CWPOP, @CWFD, @HWPRP, @HWPOP, @HWFD, @HWTP, @HWFL, 
         file.Sections(Section).Keys(Key).Value = Val
         file.Save(My.Settings.INI_Loc & "\UserConfig.ini")
     End Sub
-
-
     Private Sub INI_SetKey_PLC(ByVal Section, ByVal Key, ByVal Val)
         Dim file As New IniFile()
         Try
@@ -1561,129 +1808,18 @@ VALUES (@DT,@CWSUP, @CWPRP, @CWPOP, @CWFD, @HWPRP, @HWPOP, @HWFD, @HWTP, @HWFL, 
             MsgBox("Fatal Error! - Ref#000002 (no data found in key)")
         End If
     End Function
-
+    '##########################################################################
+#End Region
 
     Function ChangeIODescription(NewDesc As String, Index As Integer, Card As Integer, IOSlotDescCollection As Collections.Specialized.StringCollection)
-        Status_Page.Controls("Slot" & Card.ToString & "Panel").Controls("IO" & Card.ToString & "_" & Index.ToString & "Desc").Text = NewDesc
+        Status_Page.Controls("Card_" & Card.ToString).Controls("IO_" & Card.ToString & "_" & Index.ToString & "Desc").Text = NewDesc
         IOSlotDescCollection(Index) = NewDesc
         My.Settings("Card" & Card.ToString & "IODesc")(Index) = NewDesc
         Return IOSlotDescCollection
 
     End Function
-    Sub UpdateIODescriptionLabels()
-        For Each IODescControl As Control In Slot2Panel.Controls
-            If IODescControl.Name.StartsWith("IO") Then
-                Dim Point As String = "P" & GetNumeric(IODescControl.Name.Split("_")(1))
-                IODescControl.Text = INI_GetKey_IO("CARD2", Point)
-            End If
-        Next
-        For Each IODescControl As Control In Slot3Panel.Controls
-            If IODescControl.Name.StartsWith("IO") Then
-                Dim Point As String = "P" & GetNumeric(IODescControl.Name.Split("_")(1))
-                IODescControl.Text = INI_GetKey_IO("CARD3", Point)
-            End If
-        Next
-        For Each IODescControl As Control In Slot4Panel.Controls
-            If IODescControl.Name.StartsWith("IO") Then
-                Dim Point As String = "P" & GetNumeric(IODescControl.Name.Split("_")(1))
-                IODescControl.Text = INI_GetKey_IO("CARD4", Point)
-            End If
-        Next
-        For Each IODescControl As Control In Slot5Panel.Controls
-            If IODescControl.Name.StartsWith("IO") Then
-                Dim Point As String = "P" & GetNumeric(IODescControl.Name.Split("_")(1))
-                IODescControl.Text = INI_GetKey_IO("CARD5", Point)
-            End If
-        Next
-        For Each IODescControl As Control In Slot6Panel.Controls
-            If IODescControl.Name.StartsWith("IO") Then
-                Dim Point As String = "P" & GetNumeric(IODescControl.Name.Split("_")(1))
-                IODescControl.Text = INI_GetKey_IO("CARD6", Point)
-            End If
-        Next
-        For Each IODescControl As Control In Slot7Panel.Controls
-            If IODescControl.Name.StartsWith("IO") Then
-                Dim Point As String = "P" & GetNumeric(IODescControl.Name.Split("_")(1))
-                IODescControl.Text = INI_GetKey_IO("CARD7", Point)
-            End If
-        Next
-        For Each IODescControl As Control In Slot8Panel.Controls
-            If IODescControl.Name.StartsWith("IO") Then
-                Dim Point As String = "P" & GetNumeric(IODescControl.Name.Split("_")(1))
-                IODescControl.Text = INI_GetKey_IO("CARD8", Point)
-            End If
-        Next
-    End Sub
 
 
-    Function ReadLineWithNumberFrom(filePath As String, ByVal lineNumber As Integer) As String
-        Using file As New System.IO.StreamReader(filePath)
-            ' Skip all preceding lines: '
-            For i As Integer = 1 To lineNumber - 1
-                If file.ReadLine() Is Nothing Then
-                    Throw New ArgumentOutOfRangeException("lineNumber")
-                End If
-            Next
-            ' Attempt to read the line you're interested in: '
-            Dim line As String = file.ReadLine()
-            If line Is Nothing Then
-                Throw New ArgumentOutOfRangeException("lineNumber")
-            End If
-            ' Succeded!
-            Return line
-        End Using
-    End Function
-    Public Function GetNumeric(value As String) As String
-        Dim output As New StringBuilder
-        For i = 0 To value.Length - 1
-            If IsNumeric(value(i)) Then
-                output.Append(value(i))
-            End If
-        Next
-        Return output.ToString()
-    End Function
-    Function GetCurrentState(Actual As Integer, ByVal HiLimit As Integer, ByVal LowLimit As Integer) As Boolean()
-        Dim InLimit As Boolean = False
-        Dim OverLimit As Boolean = False
-        Dim UnderLimit As Boolean = False
-        If Actual >= HiLimit Then OverLimit = True
-        If Actual <= LowLimit Then UnderLimit = True
-        If Actual < HiLimit Then
-            If Actual > LowLimit Then InLimit = True
-        End If
-        Dim Result(3) As Boolean
-        Result(0) = InLimit
-        Result(1) = OverLimit
-        Result(2) = UnderLimit
-        Return Result
-    End Function
-    Function ShowHWUsePerHour() As String
-        Dim Message As String = "Last 24 Hours Steam Usage" & vbNewLine
-        For i = 0 To 23
-            Message = Message & (Now.AddHours((i + 1) * (-1))).Hour.ToString("00") & ":00" & " to " & (Now.AddHours(i * (-1))).Hour.ToString("00") & ":00 " & "(" & PLC_Fast.Read("F9:" & i) & " L)" & vbNewLine
-        Next
-        Return Message
-    End Function
-    Function ShowSteamUsePerHour() As String
-        Dim Message As String = "Last 24 Hours Hot Water Usage" & vbNewLine
-        For i = 0 To 23
-            Message = Message & (Now.AddHours((i + 1) * (-1))).Hour.ToString("00") & ":00" & " to " & (Now.AddHours(i * (-1))).Hour.ToString("00") & ":00 " & "(" & PLC_Fast.Read("F10:" & i) & " LBS)" & vbNewLine
-        Next
-        Return Message
-    End Function
-    Function Calculate24HrSteamUse() As Boolean
-        Dim Total24HRSteamUsage As Integer = 0
-        Try
-            For i = 0 To 23
-                Total24HRSteamUsage += PLC_Fast.Read("F10:" & i)
-            Next
-            Total24HrSteamUse.Value = Total24HRSteamUsage
-            SteamUseAVG.Value = Math.Floor(Total24HRSteamUsage / 24)
-            Return True
-        Catch ex As Exception
-            Return False
-        End Try
-    End Function
 
     Private Sub GetAllAud_Falc_AlarmStatus()
 
@@ -2396,6 +2532,7 @@ VALUES (@DT,@CWSUP, @CWPRP, @CWPOP, @CWFD, @HWPRP, @HWPOP, @HWFD, @HWTP, @HWFL, 
         Setpoints_Page.Hide()
         Realtime_Page.Hide()
         Alarms_Page.Hide()
+        PurifiedWater_Page.Hide()
         Enviro_Page.Hide()
         Water_Page.Hide()
         Status_Page.Hide()
@@ -2498,13 +2635,20 @@ VALUES (@DT,@CWSUP, @CWPRP, @CWPOP, @CWFD, @HWPRP, @HWPOP, @HWFD, @HWTP, @HWFL, 
         Goto_Compressors_BTN.BackColor = Color.Green
         Goto_Compressors_BTN.ForeColor = Color.Black
     End Sub
-    Private Sub Goto_Enviro(sender As Object, e As EventArgs) Handles Goto_Environment_BTN.Click
+    Private Sub Goto_PW(sender As Object, e As EventArgs) Handles Goto_Environment_BTN.Click
+
+        Clear_Screens()
+        PurifiedWater_Page.Show()
+        Clear_Nav_Buttons()
+        Goto_Environment_BTN.BackColor = Color.Green
+        Goto_Environment_BTN.ForeColor = Color.Black
+    End Sub
+    Private Sub Goto_Enviro(sender As Object, e As EventArgs) Handles BasicIndicator37.Click, BasicIndicator90.Click
         UpdateWeatherData()
         Clear_Screens()
         Enviro_Page.Show()
         Clear_Nav_Buttons()
-        Goto_Environment_BTN.BackColor = Color.Green
-        Goto_Environment_BTN.ForeColor = Color.Black
+
     End Sub
     Private Sub Goto_Faults(sender As Object, e As EventArgs) Handles Goto_Faults_BTN.Click
         If Status_Page.Visible = False Then
@@ -2516,53 +2660,8 @@ VALUES (@DT,@CWSUP, @CWPRP, @CWPOP, @CWFD, @HWPRP, @HWPOP, @HWFD, @HWTP, @HWFL, 
         End If
 
     End Sub
-    Sub HideIOPanels()
-        Slot0Panel.Hide()
-        Slot1Panel.Hide()
-        Slot2Panel.Hide()
-        Slot3Panel.Hide()
-        Slot4Panel.Hide()
-        Slot5Panel.Hide()
-        Slot6Panel.Hide()
-        Slot7Panel.Hide()
-        Slot8Panel.Hide()
-    End Sub
-    Private Sub Slot0_Show(sender As Object, e As EventArgs) Handles PictureBox73.Click
-        HideIOPanels()
-        Slot0Panel.Show()
-    End Sub
-    Private Sub Slot1_Show(sender As Object, e As EventArgs) Handles PictureBox72.Click
-        HideIOPanels()
-        Slot1Panel.Show()
-    End Sub
-    Private Sub Slot2_Show(sender As Object, e As EventArgs) Handles PictureBox74.Click
-        HideIOPanels()
-        Slot2Panel.Show()
-    End Sub
-    Private Sub Slot3_Show(sender As Object, e As EventArgs) Handles PictureBox75.Click
-        HideIOPanels()
-        Slot3Panel.Show()
-    End Sub
-    Private Sub Slot4_Show(sender As Object, e As EventArgs) Handles PictureBox76.Click
-        HideIOPanels()
-        Slot4Panel.Show()
-    End Sub
-    Private Sub Slot5_Show(sender As Object, e As EventArgs) Handles PictureBox69.Click
-        HideIOPanels()
-        Slot5Panel.Show()
-    End Sub
-    Private Sub Slot7_Show(sender As Object, e As EventArgs) Handles PictureBox70.Click
-        HideIOPanels()
-        Slot6Panel.Show()
-    End Sub
-    Private Sub Slot8_Show(sender As Object, e As EventArgs) Handles PictureBox71.Click
-        HideIOPanels()
-        Slot7Panel.Show()
-    End Sub
-    Private Sub Slot9_Show(sender As Object, e As EventArgs) Handles PictureBox77.Click
-        HideIOPanels()
-        Slot8Panel.Show()
-    End Sub
+
+
     '║                                                                                                              ║
     '╠══════════════════════════════════════════════════════════════════════════════════════════════════════════════╣
     '║                                              [SCREEN CONTROL]                                                ║
@@ -3417,23 +3516,6 @@ VALUES (@DT,@CWSUP, @CWPRP, @CWPOP, @CWFD, @HWPRP, @HWPOP, @HWFD, @HWTP, @HWFL, 
     Private Sub ShowAlarmHistoryPanel(sender As Object, e As EventArgs) Handles AlarmHistoryButton.Click
         If sender.text = "HISTORY" Then
 
-            'ElecAL_CB.Items.Clear()
-            'For Each desc As AdvancedHMI.Controls.MessageByBit In ElecAlarmDisp1.Messages
-            '    If desc.Message = "Undefined Message" Then Else Dim i = ElecAL_CB.Items.Add(desc.Message)
-            'Next
-            'AirAL_CB.Items.Clear()
-            'For Each desc As AdvancedHMI.Controls.MessageByBit In AirAlarmDisp1.Messages
-            '    If desc.Message = "Undefined Message" Then Else Dim i = AirAL_CB.Items.Add(desc.Message)
-            'Next
-            'SteamAL_CB.Items.Clear()
-            'For Each desc As AdvancedHMI.Controls.MessageByBit In SteamAlarmDisp1.Messages
-            '    If desc.Message = "Undefined Message" Then Else Dim i = SteamAL_CB.Items.Add(desc.Message)
-            'Next
-            'WaterAL_CB.Items.Clear()
-            'For Each desc As AdvancedHMI.Controls.MessageByBit In WaterAlarmDisp1.Messages
-            '    If desc.Message = "Undefined Message" Then Else Dim i = WaterAL_CB.Items.Add(desc.Message)
-            'Next
-
             EditAlarmDescPanel.Hide()
             AlarmHistoryPanel.Show()
             AirAlarmPanel.Hide()
@@ -3442,6 +3524,7 @@ VALUES (@DT,@CWSUP, @CWPRP, @CWPOP, @CWFD, @HWPRP, @HWPOP, @HWFD, @HWTP, @HWFL, 
             ElectricalAlarmPanel.Hide()
             sender.text = "ALARM VIEW"
         Else
+
             EditAlarmDescPanel.Hide()
             AlarmHistoryPanel.Hide()
             AirAlarmPanel.Show()
@@ -3676,16 +3759,24 @@ VALUES (@DT,@CWSUP, @CWPRP, @CWPOP, @CWFD, @HWPRP, @HWPOP, @HWFD, @HWTP, @HWFL, 
 
 
     ' Logic to Change IO Descriptions shown on Faults Screen
-    Private Sub IODescription_Clicked(sender As Object, e As EventArgs) Handles IO2_0Desc.Click, IO2_1Desc.Click, IO2_2Desc.Click, IO2_3Desc.Click, IO2_4Desc.Click, IO2_5Desc.Click, IO2_6Desc.Click, IO2_7Desc.Click,
-            IO3_0Desc.Click, IO3_1Desc.Click, IO3_2Desc.Click, IO3_3Desc.Click, IO3_4Desc.Click, IO3_5Desc.Click, IO3_6Desc.Click, IO3_7Desc.Click,
-            IO4_0desc.Click, IO4_1Desc.Click, IO4_2Desc.Click, IO4_3Desc.Click, IO4_4Desc.Click, IO4_5Desc.Click, IO4_6Desc.Click, IO4_7Desc.Click,
-            IO5_0Desc.Click, IO5_1Desc.Click, IO5_2Desc.Click, IO5_3Desc.Click,
-            IO6_0Desc.Click, IO6_1Desc.Click, IO6_2Desc.Click, IO6_3Desc.Click, IO6_4Desc.Click, IO6_5Desc.Click, IO6_6Desc.Click, IO6_7Desc.Click,
-            IO7_0Desc.Click, IO7_1Desc.Click, IO7_2Desc.Click, IO7_3Desc.Click, IO7_4Desc.Click, IO7_5Desc.Click, IO7_6Desc.Click, IO7_7Desc.Click,
-            IO7_8Desc.Click, IO7_9Desc.Click, IO7_10Desc.Click, IO7_11Desc.Click, IO7_12Desc.Click, IO7_13Desc.Click, IO7_14Desc.Click, IO7_15Desc.Click,
-            IO7_16Desc.Click, IO7_17Desc.Click, IO7_18Desc.Click, IO7_19Desc.Click, IO7_20Desc.Click, IO7_21Desc.Click, IO7_22Desc.Click, IO7_23Desc.Click,
-            IO7_24Desc.Click, IO7_25Desc.Click, IO7_26Desc.Click, IO7_27Desc.Click, IO7_28Desc.Click, IO7_29Desc.Click, IO7_30Desc.Click, IO7_31Desc.Click,
-            IO8_0Desc.Click, IO8_1Desc.Click, IO8_2Desc.Click, IO8_3Desc.Click, IO8_4Desc.Click, IO8_5Desc.Click, IO8_6Desc.Click, IO8_7Desc.Click
+    Private Sub IODescription_Clicked(sender As Object, e As EventArgs) Handles IO_2_0Desc.Click, IO_2_1Desc.Click, IO_2_2Desc.Click, IO_2_3Desc.Click,
+        IO_2_4Desc.Click, IO_2_5Desc.Click, IO_2_6Desc.Click, IO_2_7Desc.Click,
+        IO_3_0Desc.Click, IO_3_1Desc.Click, IO_3_2Desc.Click, IO_3_3Desc.Click,
+        IO_3_4Desc.Click, IO_3_5Desc.Click, IO_3_6Desc.Click, IO_3_7Desc.Click,
+        IO_4_0Desc.Click, IO_4_1Desc.Click, IO_4_2Desc.Click, IO_4_3Desc.Click,
+        IO_4_4Desc.Click, IO_4_5Desc.Click, IO_4_6Desc.Click, IO_4_7Desc.Click,
+         IO_5_0Desc.Click, IO_5_1Desc.Click, IO_5_2Desc.Click, IO_5_3Desc.Click,
+        IO_6_0Desc.Click, IO_6_1Desc.Click, IO_6_2Desc.Click, IO_6_3Desc.Click,
+        IO_6_4Desc.Click, IO_6_5Desc.Click, IO_6_6Desc.Click, IO_6_7Desc.Click,
+         IO_7_0Desc.Click, IO_7_1Desc.Click, IO_7_2Desc.Click, IO_7_3Desc.Click,
+        IO_7_4Desc.Click, IO_7_5Desc.Click, IO_7_6Desc.Click, IO_7_7Desc.Click,
+        IO_7_8Desc.Click, IO_7_9Desc.Click, IO_7_10Desc.Click, IO_7_11Desc.Click,
+        IO_7_12Desc.Click, IO_7_13Desc.Click, IO_7_14Desc.Click, IO_7_15Desc.Click,
+          IO_7_16Desc.Click, IO_7_17Desc.Click, IO_7_18Desc.Click, IO_7_19Desc.Click,
+        IO_7_20Desc.Click, IO_7_21Desc.Click, IO_7_22Desc.Click, IO_7_23Desc.Click,
+          IO_7_24Desc.Click, IO_7_25Desc.Click, IO_7_26Desc.Click, IO_7_27Desc.Click,
+        IO_7_28Desc.Click, IO_7_29Desc.Click, IO_7_30Desc.Click, IO_7_31Desc.Click
+
         If CurrentUserLevel = 3 Then
             Dim NewDesc As String = InputBox("Please Enter New Description", "IO Description", sender.text)
             If NewDesc IsNot Nothing Then
@@ -3774,519 +3865,40 @@ VALUES (@DT,@CWSUP, @CWPRP, @CWPOP, @CWFD, @HWPRP, @HWPOP, @HWFD, @HWTP, @HWFL, 
     '║                                                Section Start                                                 ║
     '╠══════════════════════════════════════════════════════════════════════════════════════════════════════════════╣
     '║                                                                                                              ║
-    Private Sub I_2_7_Status_Click(sender As Object, e As EventArgs) Handles I_2_7_Status.Click
+
+
+    Private Sub IO_Status_Click(sender As System.Object, e As EventArgs) Handles IO_2_0.Click, IO_2_1.Click, IO_2_2.Click, IO_2_3.Click,
+        IO_2_4.Click, IO_2_5.Click, IO_2_6.Click, IO_2_7.Click,
+        IO_3_0.Click, IO_3_1.Click, IO_3_2.Click, IO_3_3.Click,
+        IO_3_4.Click, IO_3_5.Click, IO_3_6.Click, IO_3_7.Click,
+        IO_4_0.Click, IO_4_1.Click, IO_4_2.Click, IO_4_3.Click,
+        IO_4_4.Click, IO_4_5.Click, IO_4_6.Click, IO_4_7.Click
+
         If CurrentUserLevel = "3" Then
+            Dim InSTR As String = "I:" & sender.name.split("_")(1) & "/" & sender.name.split("_")(2)
+
             Dim answer As Integer
 
-            If I_2_7_Status.SelectColor3 = True Then
-                answer = MsgBox("I:2/7 is currently enabled. Would You like to disable it?", vbQuestion + vbYesNo + vbDefaultButton2, "Input Status")
+            If sender.SelectColor3 = True Then
+                answer = MsgBox(InSTR & " is currently enabled. Would You like to disable it?", vbQuestion + vbYesNo + vbDefaultButton2, "Input Status")
                 If answer = vbYes Then
-                    PLC_Fast.Write(I_2_7_Status.PLCAddressSelectColor3.ToString, "0")
+                    PLC_Fast.Write(sender.PLCAddressSelectColor3.ToString, "0")
                     PLC_Fast.Write("B3:6/0", "1")
-                    If RunSQL Then SaveSystemData(GetNow(), "I:2/7 Disabled", CurrentUser)
+                    If RunSQL Then SaveSystemData(GetNow(), InSTR & " Disabled", CurrentUser)
                 End If
             Else
-                answer = MsgBox("I:2/7 is currently disabled. Would You like to enable it?", vbQuestion + vbYesNo + vbDefaultButton2, "Input Status")
+                answer = MsgBox(InSTR & " is currently disabled. Would You like to enable it?", vbQuestion + vbYesNo + vbDefaultButton2, "Input Status")
                 If answer = vbYes Then
-                    PLC_Fast.Write(I_2_7_Status.PLCAddressSelectColor3.ToString, "1")
+                    PLC_Fast.Write(sender.PLCAddressSelectColor3.ToString, "1")
                     PLC_Fast.Write("B3:6/0", "1")
-                    If RunSQL Then SaveSystemData(GetNow(), "I:2/7 Enabled", CurrentUser)
+                    If RunSQL Then SaveSystemData(GetNow(), InSTR & " Enabled", CurrentUser)
                 End If
             End If
-
-        End If
-    End Sub
-    Private Sub I_2_6_Status_Click(sender As Object, e As EventArgs) Handles I_2_6_Status.Click
-        If CurrentUserLevel = "3" Then
-            Dim answer As Integer
-            If I_2_6_Status.SelectColor3 = True Then
-                answer = MsgBox("I:2/6 is currently enabled. Would You like to disable it?", vbQuestion + vbYesNo + vbDefaultButton2, "Input Status")
-                If answer = vbYes Then
-                    PLC_Fast.Write(I_2_6_Status.PLCAddressSelectColor3.ToString, "0")
-                    PLC_Fast.Write("B3:6/0", "1")
-                    If RunSQL Then SaveSystemData(GetNow(), "I:2/6 Disabled", CurrentUser)
-                End If
-            Else
-                answer = MsgBox("I:2/6 is currently disabled. Would You like to enable it?", vbQuestion + vbYesNo + vbDefaultButton2, "Input Status")
-                If answer = vbYes Then
-                    PLC_Fast.Write(I_2_6_Status.PLCAddressSelectColor3.ToString, "1")
-                    PLC_Fast.Write("B3:6/0", "1")
-                    If RunSQL Then SaveSystemData(GetNow(), "I:2/6 Enabled", CurrentUser)
-                End If
-            End If
-
-        End If
-    End Sub
-    Private Sub I_2_5_Status_Click(sender As Object, e As EventArgs) Handles I_2_5_Status.Click
-        If CurrentUserLevel = "3" Then
-            Dim answer As Integer
-            If I_2_5_Status.SelectColor3 = True Then
-                answer = MsgBox("I:2/5 is currently enabled. Would You like to disable it?", vbQuestion + vbYesNo + vbDefaultButton2, "Input Status")
-                If answer = vbYes Then
-                    PLC_Fast.Write(I_2_5_Status.PLCAddressSelectColor3.ToString, "0")
-                    PLC_Fast.Write("B3:6/0", "1")
-                    If RunSQL Then SaveSystemData(GetNow(), "I:2/5 Disabled", CurrentUser)
-                End If
-            Else
-                answer = MsgBox("I:2/5 is currently disabled. Would You like to enable it?", vbQuestion + vbYesNo + vbDefaultButton2, "Input Status")
-                If answer = vbYes Then
-                    PLC_Fast.Write(I_2_5_Status.PLCAddressSelectColor3.ToString, "1")
-                    PLC_Fast.Write("B3:6/0", "1")
-                    If RunSQL Then SaveSystemData(GetNow(), "I:2/5 Enabled", CurrentUser)
-                End If
-            End If
-
-        End If
-    End Sub
-    Private Sub BasicIndicator53_Click(sender As Object, e As EventArgs) Handles I_2_4_Status.Click
-        If CurrentUserLevel = "3" Then
-            Dim answer As Integer
-            If I_2_4_Status.SelectColor3 = True Then
-                answer = MsgBox("I:2/4 is currently enabled. Would You like to disable it?", vbQuestion + vbYesNo + vbDefaultButton2, "Input Status")
-                If answer = vbYes Then
-                    PLC_Fast.Write(I_2_4_Status.PLCAddressSelectColor3.ToString, "0")
-                    PLC_Fast.Write("B3:6/0", "1")
-                    If RunSQL Then SaveSystemData(GetNow(), "I:2/4 Disabled", CurrentUser)
-                End If
-            Else
-                answer = MsgBox("I:2/4 is currently disabled. Would You like to enable it?", vbQuestion + vbYesNo + vbDefaultButton2, "Input Status")
-                If answer = vbYes Then
-                    PLC_Fast.Write(I_2_4_Status.PLCAddressSelectColor3.ToString, "1")
-                    PLC_Fast.Write("B3:6/0", "1")
-                    If RunSQL Then SaveSystemData(GetNow(), "I:2/4 Enabled", CurrentUser)
-                End If
-            End If
-
-        End If
-    End Sub
-    Private Sub BasicIndicator63_Click(sender As Object, e As EventArgs) Handles I_2_3_Status.Click
-        If CurrentUserLevel = "3" Then
-            Dim answer As Integer
-            If I_2_3_Status.SelectColor3 = True Then
-                answer = MsgBox("I:2/3 is currently enabled. Would You like to disable it?", vbQuestion + vbYesNo + vbDefaultButton2, "Input Status")
-                If answer = vbYes Then
-                    PLC_Fast.Write(I_2_3_Status.PLCAddressSelectColor3.ToString, "0")
-                    PLC_Fast.Write("B3:6/0", "1")
-                    If RunSQL Then SaveSystemData(GetNow(), "I:2/3 Disabled", CurrentUser)
-                End If
-            Else
-                answer = MsgBox("I:2/3 is currently disabled. Would You like to enable it?", vbQuestion + vbYesNo + vbDefaultButton2, "Input Status")
-                If answer = vbYes Then
-                    PLC_Fast.Write(I_2_3_Status.PLCAddressSelectColor3.ToString, "1")
-                    PLC_Fast.Write("B3:6/0", "1")
-                    If RunSQL Then SaveSystemData(GetNow(), "I:2/3 Enabled", CurrentUser)
-                End If
-            End If
-        End If
-    End Sub
-    Private Sub BasicIndicator59_Click(sender As Object, e As EventArgs) Handles I_2_2_Status.Click
-        If CurrentUserLevel = "3" Then
-            Dim answer As Integer
-            If I_2_2_Status.SelectColor3 = True Then
-                answer = MsgBox("I:2/2 is currently enabled. Would You like to disable it?", vbQuestion + vbYesNo + vbDefaultButton2, "Input Status")
-                If answer = vbYes Then
-                    PLC_Fast.Write(I_2_2_Status.PLCAddressSelectColor3.ToString, "0")
-                    PLC_Fast.Write("B3:6/0", "1")
-                    If RunSQL Then SaveSystemData(GetNow(), "I:2/2 Disabled", CurrentUser)
-                End If
-            Else
-                answer = MsgBox("I:2/2 is currently disabled. Would You like to enable it?", vbQuestion + vbYesNo + vbDefaultButton2, "Input Status")
-                If answer = vbYes Then
-                    PLC_Fast.Write(I_2_2_Status.PLCAddressSelectColor3.ToString, "1")
-                    PLC_Fast.Write("B3:6/0", "1")
-                    If RunSQL Then SaveSystemData(GetNow(), "I:2/2 Enabled", CurrentUser)
-                End If
-            End If
-
-        End If
-    End Sub
-    Private Sub BasicIndicator55_Click(sender As Object, e As EventArgs) Handles I_2_1_Status.Click
-        If CurrentUserLevel = "3" Then
-            Dim answer As Integer
-            If I_2_1_Status.SelectColor3 = True Then
-                answer = MsgBox("I:2/1 is currently enabled. Would You like to disable it?", vbQuestion + vbYesNo + vbDefaultButton2, "Input Status")
-                If answer = vbYes Then
-                    PLC_Fast.Write(I_2_1_Status.PLCAddressSelectColor3.ToString, "0")
-                    PLC_Fast.Write("B3:6/0", "1")
-                    If RunSQL Then SaveSystemData(GetNow(), "I:2/1 Disabled", CurrentUser)
-                End If
-            Else
-                answer = MsgBox("I:2/1 is currently disabled. Would You like to enable it?", vbQuestion + vbYesNo + vbDefaultButton2, "Input Status")
-                If answer = vbYes Then
-                    PLC_Fast.Write(I_2_1_Status.PLCAddressSelectColor3.ToString, "1")
-                    PLC_Fast.Write("B3:6/0", "1")
-                    If RunSQL Then SaveSystemData(GetNow(), "I:2/1 Enabled", CurrentUser)
-                End If
-            End If
-
-        End If
-    End Sub
-    Private Sub BasicIndicator51_Click(sender As Object, e As EventArgs) Handles I_2_0_Status.Click
-        If CurrentUserLevel = "3" Then
-            Dim answer As Integer
-            If I_2_0_Status.SelectColor3 = True Then
-                answer = MsgBox("I:2/0 is currently enabled. Would You like to disable it?", vbQuestion + vbYesNo + vbDefaultButton2, "Input Status")
-                If answer = vbYes Then
-                    PLC_Fast.Write(I_2_0_Status.PLCAddressSelectColor3.ToString, "0")
-                    PLC_Fast.Write("B3:6/0", "1")
-                    If RunSQL Then SaveSystemData(GetNow(), "I:2/0 Disabled", CurrentUser)
-                End If
-            Else
-                answer = MsgBox("I:2/0 is currently disabled. Would You like to enable it?", vbQuestion + vbYesNo + vbDefaultButton2, "Input Status")
-                If answer = vbYes Then
-                    PLC_Fast.Write(I_2_0_Status.PLCAddressSelectColor3.ToString, "1")
-                    PLC_Fast.Write("B3:6/0", "1")
-                    If RunSQL Then SaveSystemData(GetNow(), "I:2/0 Enabled", CurrentUser)
-                End If
-            End If
-
-        End If
-    End Sub
-    Private Sub I_3_0_Status_Click(sender As Object, e As EventArgs) Handles I_3_0_Status.Click
-        If CurrentUserLevel = "3" Then
-            Dim answer As Integer
-            If I_3_0_Status.SelectColor3 = True Then
-                answer = MsgBox("I:3/0 is currently enabled. Would You like to disable it?", vbQuestion + vbYesNo + vbDefaultButton2, "Input Status")
-                If answer = vbYes Then
-                    PLC_Fast.Write(I_3_0_Status.PLCAddressSelectColor3.ToString, "0")
-                    PLC_Fast.Write("B3:6/0", "1")
-                    If RunSQL Then SaveSystemData(GetNow(), "I:3/0 Disabled", CurrentUser)
-                End If
-            Else
-                answer = MsgBox("I:3/0 is currently disabled. Would You like to enable it?", vbQuestion + vbYesNo + vbDefaultButton2, "Input Status")
-                If answer = vbYes Then
-                    PLC_Fast.Write(I_3_0_Status.PLCAddressSelectColor3.ToString, "1")
-                    PLC_Fast.Write("B3:6/0", "1")
-                    If RunSQL Then SaveSystemData(GetNow(), "I:3/0 Enabled", CurrentUser)
-                End If
-            End If
-
-        End If
-    End Sub
-    Private Sub I_3_1_Status_Click(sender As Object, e As EventArgs) Handles I_3_1_Status.Click
-        If CurrentUserLevel = "3" Then
-            Dim answer As Integer
-            If I_3_1_Status.SelectColor3 = True Then
-                answer = MsgBox("I:3/1 is currently enabled. Would You like to disable it?", vbQuestion + vbYesNo + vbDefaultButton2, "Input Status")
-                If answer = vbYes Then
-                    PLC_Fast.Write(I_3_1_Status.PLCAddressSelectColor3.ToString, "0")
-                    PLC_Fast.Write("B3:6/0", "1")
-                    If RunSQL Then SaveSystemData(GetNow(), "I:3/1 Disabled", CurrentUser)
-                End If
-            Else
-                answer = MsgBox("I:3/1 is currently disabled. Would You like to enable it?", vbQuestion + vbYesNo + vbDefaultButton2, "Input Status")
-                If answer = vbYes Then
-                    PLC_Fast.Write(I_3_1_Status.PLCAddressSelectColor3.ToString, "1")
-                    PLC_Fast.Write("B3:6/0", "1")
-                    If RunSQL Then SaveSystemData(GetNow(), "I:3/1 Enabled", CurrentUser)
-                End If
-            End If
-
-        End If
-    End Sub
-    Private Sub I_3_2_Status_Click(sender As Object, e As EventArgs) Handles I_3_2_Status.Click
-        If CurrentUserLevel = "3" Then
-            Dim answer As Integer
-            If I_3_2_Status.SelectColor3 = True Then
-                answer = MsgBox("I:3/2 is currently enabled. Would You like to disable it?", vbQuestion + vbYesNo + vbDefaultButton2, "Input Status")
-                If answer = vbYes Then
-                    PLC_Fast.Write(I_3_2_Status.PLCAddressSelectColor3.ToString, "0")
-                    PLC_Fast.Write("B3:6/0", "1")
-                    If RunSQL Then SaveSystemData(GetNow(), "I:3/2 Disabled", CurrentUser)
-                End If
-            Else
-                answer = MsgBox("I:3/2 is currently disabled. Would You like to enable it?", vbQuestion + vbYesNo + vbDefaultButton2, "Input Status")
-                If answer = vbYes Then
-                    PLC_Fast.Write(I_3_2_Status.PLCAddressSelectColor3.ToString, "1")
-                    PLC_Fast.Write("B3:6/0", "1")
-                    If RunSQL Then SaveSystemData(GetNow(), "I:3/2 Disabled", CurrentUser)
-                End If
-            End If
-
-        End If
-    End Sub
-    Private Sub I_3_3_Status_Click(sender As Object, e As EventArgs) Handles I_3_3_Status.Click
-        If CurrentUserLevel = "3" Then
-            Dim answer As Integer
-            If I_3_3_Status.SelectColor3 = True Then
-                answer = MsgBox("I:3/3 is currently enabled. Would You like to disable it?", vbQuestion + vbYesNo + vbDefaultButton2, "Input Status")
-                If answer = vbYes Then
-                    PLC_Fast.Write(I_3_3_Status.PLCAddressSelectColor3.ToString, "0")
-                    PLC_Fast.Write("B3:6/0", "1")
-                    If RunSQL Then SaveSystemData(GetNow(), "I:3/3 Disabled", CurrentUser)
-                End If
-            Else
-                answer = MsgBox("I:3/3 is currently disabled. Would You like to enable it?", vbQuestion + vbYesNo + vbDefaultButton2, "Input Status")
-                If answer = vbYes Then
-                    PLC_Fast.Write(I_3_3_Status.PLCAddressSelectColor3.ToString, "1")
-                    PLC_Fast.Write("B3:6/0", "1")
-                    If RunSQL Then SaveSystemData(GetNow(), "I:3/3 Enabled", CurrentUser)
-                End If
-            End If
-
-        End If
-    End Sub
-    Private Sub I_3_4_Status_Click(sender As Object, e As EventArgs) Handles I_3_4_Status.Click
-        If CurrentUserLevel = "3" Then
-            Dim answer As Integer
-            If I_3_4_Status.SelectColor3 = True Then
-                answer = MsgBox("I:3/4 is currently enabled. Would You like to disable it?", vbQuestion + vbYesNo + vbDefaultButton2, "Input Status")
-                If answer = vbYes Then
-                    PLC_Fast.Write(I_3_4_Status.PLCAddressSelectColor3.ToString, "0")
-                    PLC_Fast.Write("B3:6/0", "1")
-                    If RunSQL Then SaveSystemData(GetNow(), "I:3/4 Disabled", CurrentUser)
-                End If
-            Else
-                answer = MsgBox("I:3/4 is currently disabled. Would You like to enable it?", vbQuestion + vbYesNo + vbDefaultButton2, "Input Status")
-                If answer = vbYes Then
-                    PLC_Fast.Write(I_3_4_Status.PLCAddressSelectColor3.ToString, "1")
-                    PLC_Fast.Write("B3:6/0", "1")
-                    If RunSQL Then SaveSystemData(GetNow(), "I:3/4 Enabled", CurrentUser)
-                End If
-            End If
-
-        End If
-    End Sub
-    Private Sub I_3_5_Status_Click(sender As Object, e As EventArgs) Handles I_3_5_Status.Click
-        If CurrentUserLevel = "3" Then
-            Dim answer As Integer
-            If I_3_5_Status.SelectColor3 = True Then
-                answer = MsgBox("I:3/5 is currently enabled. Would You like to disable it?", vbQuestion + vbYesNo + vbDefaultButton2, "Input Status")
-                If answer = vbYes Then
-                    PLC_Fast.Write(I_3_5_Status.PLCAddressSelectColor3.ToString, "0")
-                    PLC_Fast.Write("B3:6/0", "1")
-                    If RunSQL Then SaveSystemData(GetNow(), "I:3/5 Disabled", CurrentUser)
-                End If
-            Else
-                answer = MsgBox("I:3/5 is currently disabled. Would You like to enable it?", vbQuestion + vbYesNo + vbDefaultButton2, "Input Status")
-                If answer = vbYes Then
-                    PLC_Fast.Write(I_3_5_Status.PLCAddressSelectColor3.ToString, "1")
-                    PLC_Fast.Write("B3:6/0", "1")
-                    If RunSQL Then SaveSystemData(GetNow(), "I:3/5 Enabled", CurrentUser)
-                End If
-            End If
-
-        End If
-    End Sub
-    Private Sub I_3_6_Status_Click(sender As Object, e As EventArgs) Handles I_3_6_Status.Click
-        If CurrentUserLevel = "3" Then
-            Dim answer As Integer
-            If I_3_6_Status.SelectColor3 = True Then
-                answer = MsgBox("I:3/6 is currently enabled. Would You like to disable it?", vbQuestion + vbYesNo + vbDefaultButton2, "Input Status")
-                If answer = vbYes Then
-                    PLC_Fast.Write(I_3_6_Status.PLCAddressSelectColor3.ToString, "0")
-                    PLC_Fast.Write("B3:6/0", "1")
-                    If RunSQL Then SaveSystemData(GetNow(), "I:3/6 Disabled", CurrentUser)
-                End If
-            Else
-                answer = MsgBox("I:3/6 is currently disabled. Would You like to enable it?", vbQuestion + vbYesNo + vbDefaultButton2, "Input Status")
-                If answer = vbYes Then
-                    PLC_Fast.Write(I_3_6_Status.PLCAddressSelectColor3.ToString, "1")
-                    PLC_Fast.Write("B3:6/0", "1")
-                    If RunSQL Then SaveSystemData(GetNow(), "I:3/6 Enabled", CurrentUser)
-                End If
-            End If
-
-        End If
-    End Sub
-    Private Sub I_3_7_Status_Click(sender As Object, e As EventArgs) Handles I_3_7_Status.Click
-        If CurrentUserLevel = "3" Then
-            Dim answer As Integer
-            If I_3_7_Status.SelectColor3 = True Then
-                answer = MsgBox("I:3/7 is currently enabled. Would You like to disable it?", vbQuestion + vbYesNo + vbDefaultButton2, "Input Status")
-                If answer = vbYes Then
-                    PLC_Fast.Write(I_3_7_Status.PLCAddressSelectColor3.ToString, "0")
-                    PLC_Fast.Write("B3:6/0", "1")
-                    If RunSQL Then SaveSystemData(GetNow(), "I:3/7 Disabled", CurrentUser)
-                End If
-            Else
-                answer = MsgBox("I:3/7 is currently disabled. Would You like to enable it?", vbQuestion + vbYesNo + vbDefaultButton2, "Input Status")
-                If answer = vbYes Then
-                    PLC_Fast.Write(I_3_7_Status.PLCAddressSelectColor3.ToString, "1")
-                    PLC_Fast.Write("B3:6/0", "1")
-                    If RunSQL Then SaveSystemData(GetNow(), "I:3/7 Enabled", CurrentUser)
-                End If
-            End If
-
-        End If
-    End Sub
-    Private Sub I_4_0_Status_Click(sender As Object, e As EventArgs) Handles I_4_0_Status.Click
-        If CurrentUserLevel = "3" Then
-            Dim answer As Integer
-            If I_4_0_Status.SelectColor3 = True Then
-                answer = MsgBox("I:4/0 is currently enabled. Would You like to disable it?", vbQuestion + vbYesNo + vbDefaultButton2, "Input Status")
-                If answer = vbYes Then
-                    PLC_Fast.Write(I_4_0_Status.PLCAddressSelectColor3.ToString, "0")
-                    PLC_Fast.Write("B3:6/0", "1")
-                    If RunSQL Then SaveSystemData(GetNow(), "I:4/0 Disabled", CurrentUser)
-                End If
-            Else
-                answer = MsgBox("I:4/0 is currently disabled. Would You like to enable it?", vbQuestion + vbYesNo + vbDefaultButton2, "Input Status")
-                If answer = vbYes Then
-                    PLC_Fast.Write(I_4_0_Status.PLCAddressSelectColor3.ToString, "1")
-                    PLC_Fast.Write("B3:6/0", "1")
-                    If RunSQL Then SaveSystemData(GetNow(), "I:4/0 Enabled", CurrentUser)
-                End If
-            End If
-
-        End If
-    End Sub
-    Private Sub I_4_1_Status_Click(sender As Object, e As EventArgs) Handles I_4_1_Status.Click
-        If CurrentUserLevel = "3" Then
-            Dim answer As Integer
-            If I_4_1_Status.SelectColor3 = True Then
-                answer = MsgBox("I:4/1 is currently enabled. Would You like to disable it?", vbQuestion + vbYesNo + vbDefaultButton2, "Input Status")
-                If answer = vbYes Then
-                    PLC_Fast.Write(I_4_1_Status.PLCAddressSelectColor3.ToString, "0")
-                    PLC_Fast.Write("B3:6/0", "1")
-                    If RunSQL Then SaveSystemData(GetNow(), "I:4/1 Disabled", CurrentUser)
-                End If
-            Else
-                answer = MsgBox("I:4/1 is currently disabled. Would You like to enable it?", vbQuestion + vbYesNo + vbDefaultButton2, "Input Status")
-                If answer = vbYes Then
-                    PLC_Fast.Write(I_4_1_Status.PLCAddressSelectColor3.ToString, "1")
-                    PLC_Fast.Write("B3:6/0", "1")
-                    If RunSQL Then SaveSystemData(GetNow(), "I:4/1 Enabled", CurrentUser)
-                End If
-            End If
-
-        End If
-    End Sub
-    Private Sub I_4_2_Status_Click(sender As Object, e As EventArgs) Handles I_4_2_Status.Click
-        If CurrentUserLevel = "3" Then
-            Dim answer As Integer
-            If I_4_2_Status.SelectColor3 = True Then
-                answer = MsgBox("I:4/2 is currently enabled. Would You like to disable it?", vbQuestion + vbYesNo + vbDefaultButton2, "Input Status")
-                If answer = vbYes Then
-                    PLC_Fast.Write(I_4_2_Status.PLCAddressSelectColor3.ToString, "0")
-                    PLC_Fast.Write("B3:6/0", "1")
-                    If RunSQL Then SaveSystemData(GetNow(), "I:4/2 Disabled", CurrentUser)
-                End If
-            Else
-                answer = MsgBox("I:4/2 is currently disabled. Would You like to enable it?", vbQuestion + vbYesNo + vbDefaultButton2, "Input Status")
-                If answer = vbYes Then
-                    PLC_Fast.Write(I_4_2_Status.PLCAddressSelectColor3.ToString, "1")
-                    PLC_Fast.Write("B3:6/0", "1")
-                    If RunSQL Then SaveSystemData(GetNow(), "I:4/2 Enabled", CurrentUser)
-                End If
-            End If
-
+        Else
+            ShowLoginScreen()
         End If
     End Sub
 
-
-
-    Private Sub I_4_3_Status_Click(sender As Object, e As EventArgs) Handles I_4_3_Status.Click
-        If CurrentUserLevel = "3" Then
-            Dim answer As Integer
-            If I_4_3_Status.SelectColor3 = True Then
-                answer = MsgBox("I:4/3 is currently enabled. Would You like to disable it?", vbQuestion + vbYesNo + vbDefaultButton2, "Input Status")
-                If answer = vbYes Then
-                    PLC_Fast.Write(I_4_3_Status.PLCAddressSelectColor3.ToString, "0")
-                    PLC_Fast.Write("B3:6/0", "1")
-                    If RunSQL Then SaveSystemData(GetNow(), "I:4/3 Disabled", CurrentUser)
-                End If
-            Else
-                answer = MsgBox("I:4/3 is currently disabled. Would You like to enable it?", vbQuestion + vbYesNo + vbDefaultButton2, "Input Status")
-                If answer = vbYes Then
-                    PLC_Fast.Write(I_4_3_Status.PLCAddressSelectColor3.ToString, "1")
-                    PLC_Fast.Write("B3:6/0", "1")
-                    If RunSQL Then SaveSystemData(GetNow(), "I:4/3 Enabled", CurrentUser)
-                End If
-            End If
-
-        End If
-    End Sub
-
-
-
-    Private Sub I_4_4_Status_Click(sender As Object, e As EventArgs) Handles I_4_4_Status.Click
-        If CurrentUserLevel = "3" Then
-            Dim answer As Integer
-            If I_4_4_Status.SelectColor3 = True Then
-                answer = MsgBox("I:4/4 is currently enabled. Would You like to disable it?", vbQuestion + vbYesNo + vbDefaultButton2, "Input Status")
-                If answer = vbYes Then
-                    PLC_Fast.Write(I_4_4_Status.PLCAddressSelectColor3.ToString, "0")
-                    PLC_Fast.Write("B3:6/0", "1")
-                    If RunSQL Then SaveSystemData(GetNow(), "I:4/3 Disabled", CurrentUser)
-                End If
-            Else
-                answer = MsgBox("I:4/4 is currently disabled. Would You like to enable it?", vbQuestion + vbYesNo + vbDefaultButton2, "Input Status")
-                If answer = vbYes Then
-                    PLC_Fast.Write(I_4_4_Status.PLCAddressSelectColor3.ToString, "1")
-                    PLC_Fast.Write("B3:6/0", "1")
-                    If RunSQL Then SaveSystemData(GetNow(), "I:4/3 Enabled", CurrentUser)
-                End If
-            End If
-
-        End If
-    End Sub
-    Private Sub I_4_5_Status_Click(sender As Object, e As EventArgs) Handles I_4_5_Status.Click
-        If CurrentUserLevel = "3" Then
-            Dim answer As Integer
-            If I_4_5_Status.SelectColor3 = True Then
-                answer = MsgBox("I:4/5 is currently enabled. Would You like to disable it?", vbQuestion + vbYesNo + vbDefaultButton2, "Input Status")
-                If answer = vbYes Then
-                    PLC_Fast.Write(I_4_5_Status.PLCAddressSelectColor3.ToString, "0")
-                    PLC_Fast.Write("B3:6/0", "1")
-                    If RunSQL Then SaveSystemData(GetNow(), "I:4/5 Disabled", CurrentUser)
-                End If
-            Else
-                answer = MsgBox("I:4/5 is currently disabled. Would You like to enable it?", vbQuestion + vbYesNo + vbDefaultButton2, "Input Status")
-                If answer = vbYes Then
-                    PLC_Fast.Write(I_4_5_Status.PLCAddressSelectColor3.ToString, "1")
-                    PLC_Fast.Write("B3:6/0", "1")
-                    If RunSQL Then SaveSystemData(GetNow(), "I:4/5 Enabled", CurrentUser)
-                End If
-            End If
-
-        End If
-    End Sub
-
-
-
-    Private Sub I_4_6_Status_Click(sender As Object, e As EventArgs) Handles I_4_6_Status.Click
-        If CurrentUserLevel = "3" Then
-            Dim answer As Integer
-            If I_4_6_Status.SelectColor3 = True Then
-                answer = MsgBox("I:4/6 is currently enabled. Would You like to disable it?", vbQuestion + vbYesNo + vbDefaultButton2, "Input Status")
-                If answer = vbYes Then
-                    PLC_Fast.Write(I_4_6_Status.PLCAddressSelectColor3.ToString, "0")
-                    PLC_Fast.Write("B3:6/0", "1")
-                    If RunSQL Then SaveSystemData(GetNow(), "I:4/6 Disabled", CurrentUser)
-                End If
-            Else
-                answer = MsgBox("I:4/6 is currently disabled. Would You like to enable it?", vbQuestion + vbYesNo + vbDefaultButton2, "Input Status")
-                If answer = vbYes Then
-                    PLC_Fast.Write(I_4_6_Status.PLCAddressSelectColor3.ToString, "1")
-                    PLC_Fast.Write("B3:6/0", "1")
-                    If RunSQL Then SaveSystemData(GetNow(), "I:4/6 Enabled", CurrentUser)
-                End If
-            End If
-
-        End If
-    End Sub
-    Private Sub I_4_7_Status_Click(sender As Object, e As EventArgs) Handles I_4_7_Status.Click
-        If CurrentUserLevel = "3" Then
-            Dim answer As Integer
-            If I_4_7_Status.SelectColor3 = True Then
-                answer = MsgBox("I:4/7 is currently enabled. Would You like to disable it?", vbQuestion + vbYesNo + vbDefaultButton2, "Input Status")
-                If answer = vbYes Then
-                    PLC_Fast.Write(I_4_7_Status.PLCAddressSelectColor3.ToString, "0")
-                    PLC_Fast.Write("B3:6/0", "1")
-                    If RunSQL Then SaveSystemData(GetNow(), "I:4/7 Disabled", CurrentUser)
-                End If
-            Else
-                answer = MsgBox("I:4/7 is currently disabled. Would You like to enable it?", vbQuestion + vbYesNo + vbDefaultButton2, "Input Status")
-                If answer = vbYes Then
-                    PLC_Fast.Write(I_4_7_Status.PLCAddressSelectColor3.ToString, "1")
-                    PLC_Fast.Write("B3:6/0", "1")
-                    If RunSQL Then SaveSystemData(GetNow(), "I:4/7 Enabled", CurrentUser)
-                End If
-            End If
-
-        End If
-    End Sub
     '║                                                                                                              ║
     '╠══════════════════════════════════════════════════════════════════════════════════════════════════════════════╣
     '║                                               [ANALOG STATUS]                                                ║
@@ -4522,130 +4134,21 @@ VALUES (@DT,@CWSUP, @CWPRP, @CWPOP, @CWFD, @HWPRP, @HWPOP, @HWFD, @HWTP, @HWFL, 
     '║                                                                                                              ║
     'Run Code on application startup
 
-    Public Function FindControlByName(parent As Control, name As String) As Control
-        For Each ctrl As Control In parent.Controls
-            If ctrl.Name = name Then
-                Return ctrl
-            Else
-                Dim found = FindControlByName(ctrl, name)
-                If found IsNot Nothing Then Return found
-            End If
-        Next
-        Return Nothing
-    End Function
-    Public Sub SetControlPropertyByName(controlName As String, propertyName As String, newValue As Object)
-        ' Find the control by name (recursive if needed)
-        Dim ctrl As Control = FindControlByName(Me, controlName)
 
-        If ctrl IsNot Nothing Then
-            ' Use reflection to get the property
-            Dim prop = ctrl.GetType().GetProperty(propertyName)
-
-            If prop IsNot Nothing AndAlso prop.CanWrite Then
-                ' Convert value if needed
-                Dim convertedValue = Convert.ChangeType(newValue, prop.PropertyType)
-                prop.SetValue(ctrl, convertedValue)
-            Else
-                MessageBox.Show($"Property '{propertyName}' not found or not writable on control '{controlName}'.")
-            End If
-        Else
-            MessageBox.Show($"Control '{controlName}' not found.")
-        End If
-    End Sub
-    Public Function GetControlPropertyByName(controlName As String, propertyName As String) As Object
-        ' Find the control by name
-        Dim ctrl As Control = FindControlByName(Me, controlName)
-
-        If ctrl IsNot Nothing Then
-            ' Use reflection to get the property
-            Dim prop = ctrl.GetType().GetProperty(propertyName)
-
-            If prop IsNot Nothing AndAlso prop.CanRead Then
-                Return prop.GetValue(ctrl)
-            Else
-                Throw New MissingMemberException($"Property '{propertyName}' not found or not readable on control '{controlName}'.")
-            End If
-        Else
-            Throw New ArgumentException($"Control '{controlName}' not found.")
-        End If
-    End Function
-    Private Sub Show_Con_String(sender As Object, e As EventArgs) Handles Button1.Click
-        Dim SQL As String() =
-                {INI_GetKey_System("SQL", "SERVER"),
-                INI_GetKey_System("SQL", "USER"),
-                INI_GetKey_System("SQL", "PASS"),
-                INI_GetKey_System("SQL", "DB")}
-        MsgBox("server=" & SQL(0) & ";user id=" & SQL(1) & ";password=" & SQL(2) & ";database=" & SQL(3), MessageBoxButtons.OK, "SQL Connection String")
-    End Sub
-    Function IsAppInstalled(displayName As String) As Boolean
-        ' Keys to check (32andalso 64-bit locations)
-        Dim uninstallKeys As String() = {
-            "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall",
-            "SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall"
-        }
-
-        For Each keyPath In uninstallKeys
-            Using key As RegistryKey = Registry.LocalMachine.OpenSubKey(keyPath)
-                If key IsNot Nothing Then
-                    For Each subKeyName In key.GetSubKeyNames()
-                        Using subKey As RegistryKey = key.OpenSubKey(subKeyName)
-                            Dim appName As String = TryCast(subKey.GetValue("DisplayName"), String)
-
-                            If appName IsNot Nothing AndAlso appName.Contains(displayName) Then
-                                Return True
-                            End If
-
-                        End Using
-                    Next
-                End If
-            End Using
-        Next
-
-        Return False
-    End Function
     Private Sub Dashboard_Page_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        AddHandler Card_7.MouseWheel, AddressOf Panel1_MouseWheel
         Clear_Screens()
         StartUpScreen.BringToFront()
-        If IsAppInstalled("MySQL") Then 'Check to see if MySQL server has been installed
-            If IO.Directory.Exists(My.Settings.INI_Loc) Then 'Check to see if the saved configuration directory exists
-                If IO.File.Exists(My.Settings.INI_Loc & "\DataConfig.ini") AndAlso ' Check to see if the config files exist inside the configuration directory
+        'If IsAppInstalled("MySQL") Then 'Check to see if MySQL server has been installed
+        If IO.Directory.Exists(My.Settings.INI_Loc) Then 'Check to see if the saved configuration directory exists
+            If IO.File.Exists(My.Settings.INI_Loc & "\DataConfig.ini") AndAlso ' Check to see if the config files exist inside the configuration directory
                     IO.File.Exists(My.Settings.INI_Loc & "\SystemConfig.ini") AndAlso'*
                     IO.File.Exists(My.Settings.INI_Loc & "\UserConfig.ini") AndAlso'*
                     IO.File.Exists(My.Settings.INI_Loc & "\AlarmConfig.ini") AndAlso'*
                     IO.File.Exists(My.Settings.INI_Loc & "\IOConfig.ini") Then '*
 
-                    StartupStatusLabel.Text = "Checking configuration files..."
-                    System_Populate()
-                Else
-                    Dim result As MsgBoxResult = MsgBox("Configuration files not found. Would you like to select a new folder location?", MsgBoxStyle.YesNo, "Set New Configuration Location")
-                    If result = MsgBoxResult.Yes Then
-                        Dim NewFBD As New FolderBrowserDialog
-                        NewFBD.SelectedPath = My.Settings.INI_Loc
-                        NewFBD.ShowDialog()
-                        If NewFBD.SelectedPath IsNot "" Then
-                            My.Settings.INI_Loc = NewFBD.SelectedPath
-                            My.Settings.Save()
-                            If IO.File.Exists(My.Settings.INI_Loc & "\DataConfig.ini") AndAlso ' Check to see if the config files exist inside the configuration directory
-                                IO.File.Exists(My.Settings.INI_Loc & "\SystemConfig.ini") AndAlso'*
-                                IO.File.Exists(My.Settings.INI_Loc & "\UserConfig.ini") AndAlso'*
-                                IO.File.Exists(My.Settings.INI_Loc & "\AlarmConfig.ini") AndAlso'*
-                                IO.File.Exists(My.Settings.INI_Loc & "\IOConfig.ini") Then '*
-
-                                StartupStatusLabel.Text = "Checking configuration files..."
-                                System_Populate()
-                            Else
-                                MsgBox("Selected Path (" & NewFBD.SelectedPath & ") does contain configuration files!.", MsgBoxStyle.Critical, "Critical Error")
-                                Me.Close()
-                            End If
-                        Else
-                            MsgBox("Selected Path (" & NewFBD.SelectedPath & ") does contain configuration files!.", MsgBoxStyle.Critical, "Critical Error")
-                            Me.Close()
-
-                        End If
-                    Else
-                        Me.Close()
-                    End If
-                End If
+                StartupStatusLabel.Text = "Checking configuration files..."
+                System_Populate()
             Else
                 Dim result As MsgBoxResult = MsgBox("Configuration files not found. Would you like to select a new folder location?", MsgBoxStyle.YesNo, "Set New Configuration Location")
                 If result = MsgBoxResult.Yes Then
@@ -4676,12 +4179,42 @@ VALUES (@DT,@CWSUP, @CWPRP, @CWPOP, @CWFD, @HWPRP, @HWPOP, @HWFD, @HWTP, @HWFL, 
                     Me.Close()
                 End If
             End If
-
         Else
-            MsgBox("MySQL needs to be installed, check " & Application.StartupPath & "\sql" & " for installation files.")
+            Dim result As MsgBoxResult = MsgBox("Configuration files not found. Would you like to select a new folder location?", MsgBoxStyle.YesNo, "Set New Configuration Location")
+            If result = MsgBoxResult.Yes Then
+                Dim NewFBD As New FolderBrowserDialog
+                NewFBD.SelectedPath = My.Settings.INI_Loc
+                NewFBD.ShowDialog()
+                If NewFBD.SelectedPath IsNot "" Then
+                    My.Settings.INI_Loc = NewFBD.SelectedPath
+                    My.Settings.Save()
+                    If IO.File.Exists(My.Settings.INI_Loc & "\DataConfig.ini") AndAlso ' Check to see if the config files exist inside the configuration directory
+                                IO.File.Exists(My.Settings.INI_Loc & "\SystemConfig.ini") AndAlso'*
+                                IO.File.Exists(My.Settings.INI_Loc & "\UserConfig.ini") AndAlso'*
+                                IO.File.Exists(My.Settings.INI_Loc & "\AlarmConfig.ini") AndAlso'*
+                                IO.File.Exists(My.Settings.INI_Loc & "\IOConfig.ini") Then '*
 
-            Me.Close()
+                        StartupStatusLabel.Text = "Checking configuration files..."
+                        System_Populate()
+                    Else
+                        MsgBox("Selected Path (" & NewFBD.SelectedPath & ") does contain configuration files!.", MsgBoxStyle.Critical, "Critical Error")
+                        Me.Close()
+                    End If
+                Else
+                    MsgBox("Selected Path (" & NewFBD.SelectedPath & ") does contain configuration files!.", MsgBoxStyle.Critical, "Critical Error")
+                    Me.Close()
+
+                End If
+            Else
+                Me.Close()
+            End If
         End If
+
+        'Else
+        '    MsgBox("MySQL needs to be installed, check " & Application.StartupPath & "\sql" & " for installation files.")
+
+        '    Me.Close()
+        'End If
     End Sub
     Private Sub System_Populate()
 
@@ -5081,66 +4614,67 @@ VALUES (@DT,@CWSUP, @CWPRP, @CWPOP, @CWFD, @HWPRP, @HWPOP, @HWFD, @HWTP, @HWFL, 
         End If
     End Sub
 
-    Private Sub Input_Update_CARD7_0to15(sender As Object, e As EventArgs) Handles BasicLabel5.ValueChanged
-        Dim AlarmArray() As Boolean = IntToBin(sender.value)
-        PL_I_7_0.SelectColor2 = AlarmArray(0)
-        PL_I_7_1.SelectColor2 = AlarmArray(1)
-        PL_I_7_2.SelectColor2 = AlarmArray(2)
-        PL_I_7_3.SelectColor2 = AlarmArray(3)
-        PL_I_7_4.SelectColor2 = AlarmArray(4)
-        PL_I_7_5.SelectColor2 = AlarmArray(5)
-        PL_I_7_6.SelectColor2 = AlarmArray(6)
-        PL_I_7_7.SelectColor2 = AlarmArray(7)
-        PL_I_7_8.SelectColor2 = AlarmArray(8)
-        PL_I_7_9.SelectColor2 = AlarmArray(9)
-        PL_I_7_10.SelectColor2 = AlarmArray(10)
-        PL_I_7_11.SelectColor2 = AlarmArray(11)
-        PL_I_7_12.SelectColor2 = AlarmArray(12)
-        PL_I_7_13.SelectColor2 = AlarmArray(13)
-        PL_I_7_14.SelectColor2 = AlarmArray(14)
-        PL_I_7_15.SelectColor2 = AlarmArray(15)
+    Private Sub Input_Update_CARD7_0to15(sender As Object, e As EventArgs) Handles Card7_0to15_IO.ValueChanged
+        Dim Inputs() As Boolean = IntToBin(sender.value)
+        IO_7_0.SelectColor2 = Inputs(0)
+        IO_7_1.SelectColor2 = Inputs(1)
+        IO_7_2.SelectColor2 = Inputs(2)
+        IO_7_3.SelectColor2 = Inputs(3)
+        IO_7_4.SelectColor2 = Inputs(4)
+        IO_7_5.SelectColor2 = Inputs(5)
+        IO_7_6.SelectColor2 = Inputs(6)
+        IO_7_7.SelectColor2 = Inputs(7)
+        IO_7_8.SelectColor2 = Inputs(8)
+        IO_7_9.SelectColor2 = Inputs(9)
+        IO_7_10.SelectColor2 = Inputs(10)
+        IO_7_11.SelectColor2 = Inputs(11)
+        IO_7_12.SelectColor2 = Inputs(12)
+        IO_7_13.SelectColor2 = Inputs(13)
+        IO_7_14.SelectColor2 = Inputs(14)
+        IO_7_15.SelectColor2 = Inputs(15)
     End Sub
-    Private Sub Input_Update_CARD7_16to31(sender As Object, e As EventArgs) Handles BasicLabel9.ValueChanged
-        Dim AlarmArray() As Boolean = IntToBin(sender.value)
-        PL_I_7_16.SelectColor2 = AlarmArray(0)
-        PL_I_7_17.SelectColor2 = AlarmArray(1)
-        PL_I_7_18.SelectColor2 = AlarmArray(2)
-        PL_I_7_19.SelectColor2 = AlarmArray(3)
-        PL_I_7_20.SelectColor2 = AlarmArray(4)
-        PL_I_7_21.SelectColor2 = AlarmArray(5)
-        PL_I_7_22.SelectColor2 = AlarmArray(6)
-        PL_I_7_23.SelectColor2 = AlarmArray(7)
-        PL_I_7_24.SelectColor2 = AlarmArray(8)
-        PL_I_7_25.SelectColor2 = AlarmArray(9)
-        PL_I_7_26.SelectColor2 = AlarmArray(10)
-        PL_I_7_27.SelectColor2 = AlarmArray(11)
-        PL_I_7_28.SelectColor2 = AlarmArray(12)
-        PL_I_7_29.SelectColor2 = AlarmArray(13)
-        PL_I_7_30.SelectColor2 = AlarmArray(14)
-        PL_I_7_31.SelectColor2 = AlarmArray(15)
+    Private Sub Input_Update_CARD7_16to31(sender As Object, e As EventArgs) Handles Card7_16to31_IO.ValueChanged
+        Dim Inputs() As Boolean = IntToBin(sender.value)
+        IO_7_16.SelectColor2 = Inputs(0)
+        IO_7_17.SelectColor2 = Inputs(1)
+        IO_7_18.SelectColor2 = Inputs(2)
+        IO_7_19.SelectColor2 = Inputs(3)
+        IO_7_20.SelectColor2 = Inputs(4)
+        IO_7_21.SelectColor2 = Inputs(5)
+        IO_7_22.SelectColor2 = Inputs(6)
+        IO_7_23.SelectColor2 = Inputs(7)
+        IO_7_24.SelectColor2 = Inputs(8)
+        IO_7_25.SelectColor2 = Inputs(9)
+        IO_7_26.SelectColor2 = Inputs(10)
+        IO_7_27.SelectColor2 = Inputs(11)
+        IO_7_28.SelectColor2 = Inputs(12)
+        IO_7_29.SelectColor2 = Inputs(13)
+        IO_7_30.SelectColor2 = Inputs(14)
+        IO_7_31.SelectColor2 = Inputs(15)
     End Sub
-    Private Sub Input_Update_CARD8(sender As Object, e As EventArgs) Handles Card8.ValueChanged
-        Dim AlarmArray() As Boolean = IntToBin(sender.value)
-        PL_O_8_0.SelectColor2 = AlarmArray(0)
-        PL_O_8_1.SelectColor2 = AlarmArray(1)
-        PL_O_8_2.SelectColor2 = AlarmArray(2)
-        PL_O_8_3.SelectColor2 = AlarmArray(3)
-        PL_O_8_4.SelectColor2 = AlarmArray(4)
-        PL_O_8_5.SelectColor2 = AlarmArray(5)
-        PL_O_8_6.SelectColor2 = AlarmArray(6)
-        PL_O_8_7.SelectColor2 = AlarmArray(8)
+    Private Sub Input_Update_CARD8(sender As Object, e As EventArgs) Handles Card6a8_0to7_IO.ValueChanged
+        Dim Inputs() As Boolean = IntToBin(sender.value)
+        IO_8_0.SelectColor2 = Inputs(0)
+        IO_8_1.SelectColor2 = Inputs(1)
+        IO_8_2.SelectColor2 = Inputs(2)
+        IO_8_3.SelectColor2 = Inputs(3)
+        IO_8_4.SelectColor2 = Inputs(4)
+        IO_8_5.SelectColor2 = Inputs(5)
+        IO_8_6.SelectColor2 = Inputs(6)
+        IO_8_7.SelectColor2 = Inputs(7)
+        IO_6_0.SelectColor2 = Inputs(8)
+        IO_6_1.SelectColor2 = Inputs(9)
+        IO_6_2.SelectColor2 = Inputs(10)
+        IO_6_3.SelectColor2 = Inputs(11)
+        IO_6_4.SelectColor2 = Inputs(12)
+        IO_6_5.SelectColor2 = Inputs(13)
+        IO_6_6.SelectColor2 = Inputs(14)
+        IO_6_7.SelectColor2 = Inputs(15)
 
     End Sub
-    Private Sub Input_Update_CARD6(sender As Object, e As EventArgs) Handles Card6.ValueChanged
-        Dim AlarmArray() As Boolean = IntToBin(sender.value)
-        PL_O_6_0.SelectColor2 = AlarmArray(0)
-        PL_O_6_1.SelectColor2 = AlarmArray(1)
-        PL_O_6_2.SelectColor2 = AlarmArray(2)
-        PL_O_6_3.SelectColor2 = AlarmArray(3)
-        PL_O_6_4.SelectColor2 = AlarmArray(4)
-        PL_O_6_5.SelectColor2 = AlarmArray(5)
-        PL_O_6_6.SelectColor2 = AlarmArray(6)
-        PL_O_6_7.SelectColor2 = AlarmArray(6)
+    Private Sub Input_Update_CARD6(sender As Object, e As EventArgs)
+        Dim Inputs() As Boolean = IntToBin(sender.value)
+
 
     End Sub
 
@@ -5189,6 +4723,8 @@ VALUES (@DT,@CWSUP, @CWPRP, @CWPOP, @CWFD, @HWPRP, @HWPOP, @HWFD, @HWTP, @HWFL, 
     Private Sub SP_LevelCheck(sender As Object, e As EventArgs) Handles STMPDEM_Min.Click, STMPDEM_Max.Click, STMP_Min.Click, STMP_Max.Click, STLPDEM_Min.Click, STLPDEM_Max.Click, STLP_Min.Click, STLP_Max.Click, STHP_Min.Click, STHP_Max.Click, STFWP_Min.Click, STFWP_Max.Click, STFL_Min.Click, STFL_Max.Click, HWTP_Min.Click, HWTP_Max.Click, HWPRP_Min.Click, HWPRP_Max.Click, HWPOP_Min.Click, HWPOP_Max.Click, HWFL_Min.Click, HWFL_Max.Click, HWFD_Min.Click, HWFD_Max.Click, ELSC_Min.Click, ELSC_Max.Click, ELSB_Min.Click, ELSB_Max.Click, ELSA_Min.Click, ELSA_Max.Click, ELNC_Min.Click, ELNC_Max.Click, ELNB_Min.Click, ELNB_Max.Click, ELNA_Min.Click, ELNA_Max.Click, CWSUP_Min.Click, CWSUP_Max.Click, CWPRP_Min.Click, CWPRP_Max.Click, CWPOP_Min.Click, CWPOP_Max.Click, CWFD_Min.Click, CWFD_Max.Click, ALP_Min.Click, ALP_Max.Click
 
     End Sub
+
+
 
     Public Class Sys
         Public Property type As Integer

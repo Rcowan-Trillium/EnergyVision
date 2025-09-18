@@ -1,0 +1,17 @@
+C:\Users\cowanr\source\repos\EnergyVision\EnergyHistory\bin\Release\net8.0-windows\EnergyHistory.exe
+C:\Users\cowanr\source\repos\EnergyVision\EnergyHistory\bin\Release\net8.0-windows\EnergyHistory.deps.json
+C:\Users\cowanr\source\repos\EnergyVision\EnergyHistory\bin\Release\net8.0-windows\EnergyHistory.runtimeconfig.json
+C:\Users\cowanr\source\repos\EnergyVision\EnergyHistory\bin\Release\net8.0-windows\EnergyHistory.dll
+C:\Users\cowanr\source\repos\EnergyVision\EnergyHistory\bin\Release\net8.0-windows\EnergyHistory.pdb
+C:\Users\cowanr\source\repos\EnergyVision\EnergyHistory\obj\Release\net8.0-windows\EnergyHistory.Form1.resources
+C:\Users\cowanr\source\repos\EnergyVision\EnergyHistory\obj\Release\net8.0-windows\EnergyHistory.vbproj.GenerateResource.cache
+C:\Users\cowanr\source\repos\EnergyVision\EnergyHistory\obj\Release\net8.0-windows\EnergyHistory.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\cowanr\source\repos\EnergyVision\EnergyHistory\obj\Release\net8.0-windows\EnergyHistory.AssemblyInfoInputs.cache
+C:\Users\cowanr\source\repos\EnergyVision\EnergyHistory\obj\Release\net8.0-windows\EnergyHistory.AssemblyInfo.vb
+C:\Users\cowanr\source\repos\EnergyVision\EnergyHistory\obj\Release\net8.0-windows\EnergyHistory.vbproj.CoreCompileInputs.cache
+C:\Users\cowanr\source\repos\EnergyVision\EnergyHistory\obj\Release\net8.0-windows\EnergyHistory.sourcelink.json
+C:\Users\cowanr\source\repos\EnergyVision\EnergyHistory\obj\Release\net8.0-windows\EnergyHistory.dll
+C:\Users\cowanr\source\repos\EnergyVision\EnergyHistory\obj\Release\net8.0-windows\refint\EnergyHistory.dll
+C:\Users\cowanr\source\repos\EnergyVision\EnergyHistory\obj\Release\net8.0-windows\EnergyHistory.pdb
+C:\Users\cowanr\source\repos\EnergyVision\EnergyHistory\obj\Release\net8.0-windows\EnergyHistory.genruntimeconfig.cache
+C:\Users\cowanr\source\repos\EnergyVision\EnergyHistory\obj\Release\net8.0-windows\ref\EnergyHistory.dll
