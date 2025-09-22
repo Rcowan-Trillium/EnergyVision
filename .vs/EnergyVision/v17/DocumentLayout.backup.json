@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\cowanr\\source\\repos\\EnergyVision\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{13A180B0-1183-4CB7-AC14-BF98320A30E4}|AdvancedHMI\\AdvancedHMI.vbproj|c:\\users\\cowanr\\source\\repos\\energyvision\\advancedhmi\\dashboard_page.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{13A180B0-1183-4CB7-AC14-BF98320A30E4}|AdvancedHMI\\AdvancedHMI.vbproj|solutionrelative:advancedhmi\\dashboard_page.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+      "AbsoluteMoniker": "D:0:0:{197E520B-F22C-47D0-9C35-C3955EA77A23}|EnergyHistory\\EnergyHistory.vbproj|c:\\users\\cowanr\\source\\repos\\energyvision\\energyhistory\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{197E520B-F22C-47D0-9C35-C3955EA77A23}|EnergyHistory\\EnergyHistory.vbproj|solutionrelative:energyhistory\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{197E520B-F22C-47D0-9C35-C3955EA77A23}|EnergyHistory\\EnergyHistory.vbproj|c:\\users\\cowanr\\source\\repos\\energyvision\\energyhistory\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{197E520B-F22C-47D0-9C35-C3955EA77A23}|EnergyHistory\\EnergyHistory.vbproj|solutionrelative:energyhistory\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{13A180B0-1183-4CB7-AC14-BF98320A30E4}|AdvancedHMI\\AdvancedHMI.vbproj|c:\\users\\cowanr\\source\\repos\\energyvision\\advancedhmi\\dashboard_page.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
       "RelativeMoniker": "D:0:0:{13A180B0-1183-4CB7-AC14-BF98320A30E4}|AdvancedHMI\\AdvancedHMI.vbproj|solutionrelative:advancedhmi\\dashboard_page.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13A180B0-1183-4CB7-AC14-BF98320A30E4}|AdvancedHMI\\AdvancedHMI.vbproj|c:\\users\\cowanr\\source\\repos\\energyvision\\advancedhmi\\dashboard_page.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{13A180B0-1183-4CB7-AC14-BF98320A30E4}|AdvancedHMI\\AdvancedHMI.vbproj|solutionrelative:advancedhmi\\dashboard_page.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,14 +31,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Dashboard_Page.vb",
-              "DocumentMoniker": "C:\\Users\\cowanr\\source\\repos\\EnergyVision\\AdvancedHMI\\Dashboard_Page.vb",
-              "RelativeDocumentMoniker": "AdvancedHMI\\Dashboard_Page.vb",
-              "ToolTip": "C:\\Users\\cowanr\\source\\repos\\EnergyVision\\AdvancedHMI\\Dashboard_Page.vb",
-              "RelativeToolTip": "AdvancedHMI\\Dashboard_Page.vb",
-              "ViewState": "AgIAAEkGAAAAAAAAAAAgwIMEAAAXAAAAAAAAAA==",
+              "Title": "Form1.vb",
+              "DocumentMoniker": "C:\\Users\\cowanr\\source\\repos\\EnergyVision\\EnergyHistory\\Form1.vb",
+              "RelativeDocumentMoniker": "EnergyHistory\\Form1.vb",
+              "ToolTip": "C:\\Users\\cowanr\\source\\repos\\EnergyVision\\EnergyHistory\\Form1.vb*",
+              "RelativeToolTip": "EnergyHistory\\Form1.vb*",
+              "ViewState": "AgIAAMMBAAAAAAAAAAAewNkBAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-09-10T17:05:45.275Z",
+              "WhenOpened": "2025-09-19T19:12:05.146Z",
               "EditorCaption": ""
             }
           ]
@@ -57,6 +65,31 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Form1.vb [Design]",
+              "DocumentMoniker": "C:\\Users\\cowanr\\source\\repos\\EnergyVision\\EnergyHistory\\Form1.vb",
+              "RelativeDocumentMoniker": "EnergyHistory\\Form1.vb",
+              "ToolTip": "C:\\Users\\cowanr\\source\\repos\\EnergyVision\\EnergyHistory\\Form1.vb [Design]*",
+              "RelativeToolTip": "EnergyHistory\\Form1.vb [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-09-19T13:32:45.031Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Dashboard_Page.vb",
+              "DocumentMoniker": "C:\\Users\\cowanr\\source\\repos\\EnergyVision\\AdvancedHMI\\Dashboard_Page.vb",
+              "RelativeDocumentMoniker": "AdvancedHMI\\Dashboard_Page.vb",
+              "ToolTip": "C:\\Users\\cowanr\\source\\repos\\EnergyVision\\AdvancedHMI\\Dashboard_Page.vb",
+              "RelativeToolTip": "AdvancedHMI\\Dashboard_Page.vb",
+              "ViewState": "AgIAAF0AAAAAAAAAAAAQwGwAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-09-10T17:05:45.275Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Dashboard_Page.vb [Design]",
               "DocumentMoniker": "C:\\Users\\cowanr\\source\\repos\\EnergyVision\\AdvancedHMI\\Dashboard_Page.vb",
               "RelativeDocumentMoniker": "AdvancedHMI\\Dashboard_Page.vb",
