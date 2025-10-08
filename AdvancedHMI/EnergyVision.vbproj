@@ -187,10 +187,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ApplicationEvents.vb" />
-    <Compile Include="Dashboard_Page.Designer.vb">
-      <DependentUpon>Dashboard_Page.vb</DependentUpon>
+    <Compile Include="EnergyVision.Designer.vb">
+      <DependentUpon>EnergyVision.vb</DependentUpon>
     </Compile>
-    <Compile Include="Dashboard_Page.vb">
+    <Compile Include="EnergyVision.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormChangeControls\FormChangeButton.vb">
@@ -226,8 +226,8 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Dashboard_Page.resx">
-      <DependentUpon>Dashboard_Page.vb</DependentUpon>
+    <EmbeddedResource Include="EnergyVision.resx">
+      <DependentUpon>EnergyVision.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormChangeControls\MainMenuDriven\MainMenu.resx">
       <DependentUpon>MainMenu.vb</DependentUpon>

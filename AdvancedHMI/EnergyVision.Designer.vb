@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class Dashboard_Page
+Partial Class EnergyVision
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -23,7 +23,7 @@ Partial Class Dashboard_Page
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Dashboard_Page))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(EnergyVision))
         Dim ChartArea1 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
         Dim ChartArea2 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
         Dim ChartArea3 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
@@ -12172,7 +12172,7 @@ Partial Class Dashboard_Page
         Me.Label303.ForeColor = System.Drawing.Color.White
         Me.Label303.Location = New System.Drawing.Point(20, 30)
         Me.Label303.Name = "Label303"
-        Me.Label303.Size = New System.Drawing.Size(1152, 62)
+        Me.Label303.Size = New System.Drawing.Size(1018, 62)
         Me.Label303.TabIndex = 239
         Me.Label303.Text = "PLC Status Information and Card Status"
         Me.Label303.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -33115,10 +33115,10 @@ Partial Class Dashboard_Page
         '
         Me.PictureBox76.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.PictureBox76.Image = CType(resources.GetObject("PictureBox76.Image"), System.Drawing.Image)
-        Me.PictureBox76.Location = New System.Drawing.Point(670, 99)
+        Me.PictureBox76.Location = New System.Drawing.Point(593, 92)
         Me.PictureBox76.Name = "PictureBox76"
-        Me.PictureBox76.Size = New System.Drawing.Size(102, 352)
-        Me.PictureBox76.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.PictureBox76.Size = New System.Drawing.Size(89, 301)
+        Me.PictureBox76.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox76.TabIndex = 188
         Me.PictureBox76.TabStop = False
         '
@@ -33469,10 +33469,10 @@ Partial Class Dashboard_Page
         '
         Me.PictureBox75.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.PictureBox75.Image = CType(resources.GetObject("PictureBox75.Image"), System.Drawing.Image)
-        Me.PictureBox75.Location = New System.Drawing.Point(570, 99)
+        Me.PictureBox75.Location = New System.Drawing.Point(504, 92)
         Me.PictureBox75.Name = "PictureBox75"
-        Me.PictureBox75.Size = New System.Drawing.Size(102, 352)
-        Me.PictureBox75.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.PictureBox75.Size = New System.Drawing.Size(89, 301)
+        Me.PictureBox75.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox75.TabIndex = 187
         Me.PictureBox75.TabStop = False
         '
@@ -33823,10 +33823,10 @@ Partial Class Dashboard_Page
         '
         Me.PictureBox72.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.PictureBox72.Image = CType(resources.GetObject("PictureBox72.Image"), System.Drawing.Image)
-        Me.PictureBox72.Location = New System.Drawing.Point(370, 99)
+        Me.PictureBox72.Location = New System.Drawing.Point(326, 92)
         Me.PictureBox72.Name = "PictureBox72"
-        Me.PictureBox72.Size = New System.Drawing.Size(102, 352)
-        Me.PictureBox72.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.PictureBox72.Size = New System.Drawing.Size(89, 301)
+        Me.PictureBox72.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox72.TabIndex = 175
         Me.PictureBox72.TabStop = False
         '
@@ -34193,10 +34193,10 @@ Partial Class Dashboard_Page
         '
         Me.PictureBox74.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.PictureBox74.Image = CType(resources.GetObject("PictureBox74.Image"), System.Drawing.Image)
-        Me.PictureBox74.Location = New System.Drawing.Point(470, 99)
+        Me.PictureBox74.Location = New System.Drawing.Point(415, 92)
         Me.PictureBox74.Name = "PictureBox74"
-        Me.PictureBox74.Size = New System.Drawing.Size(102, 352)
-        Me.PictureBox74.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.PictureBox74.Size = New System.Drawing.Size(89, 301)
+        Me.PictureBox74.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox74.TabIndex = 186
         Me.PictureBox74.TabStop = False
         '
@@ -34563,10 +34563,10 @@ Partial Class Dashboard_Page
         '
         Me.PictureBox73.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.PictureBox73.Image = CType(resources.GetObject("PictureBox73.Image"), System.Drawing.Image)
-        Me.PictureBox73.Location = New System.Drawing.Point(270, 99)
+        Me.PictureBox73.Location = New System.Drawing.Point(237, 92)
         Me.PictureBox73.Name = "PictureBox73"
-        Me.PictureBox73.Size = New System.Drawing.Size(102, 352)
-        Me.PictureBox73.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.PictureBox73.Size = New System.Drawing.Size(89, 301)
+        Me.PictureBox73.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox73.TabIndex = 176
         Me.PictureBox73.TabStop = False
         '
@@ -34574,10 +34574,10 @@ Partial Class Dashboard_Page
         '
         Me.PictureBox69.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.PictureBox69.Image = CType(resources.GetObject("PictureBox69.Image"), System.Drawing.Image)
-        Me.PictureBox69.Location = New System.Drawing.Point(770, 99)
+        Me.PictureBox69.Location = New System.Drawing.Point(682, 92)
         Me.PictureBox69.Name = "PictureBox69"
-        Me.PictureBox69.Size = New System.Drawing.Size(102, 352)
-        Me.PictureBox69.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.PictureBox69.Size = New System.Drawing.Size(89, 301)
+        Me.PictureBox69.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox69.TabIndex = 172
         Me.PictureBox69.TabStop = False
         '
@@ -34585,10 +34585,10 @@ Partial Class Dashboard_Page
         '
         Me.PictureBox78.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.PictureBox78.Image = CType(resources.GetObject("PictureBox78.Image"), System.Drawing.Image)
-        Me.PictureBox78.Location = New System.Drawing.Point(20, 99)
+        Me.PictureBox78.Location = New System.Drawing.Point(20, 92)
         Me.PictureBox78.Name = "PictureBox78"
-        Me.PictureBox78.Size = New System.Drawing.Size(252, 352)
-        Me.PictureBox78.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.PictureBox78.Size = New System.Drawing.Size(215, 301)
+        Me.PictureBox78.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox78.TabIndex = 174
         Me.PictureBox78.TabStop = False
         '
@@ -34596,10 +34596,10 @@ Partial Class Dashboard_Page
         '
         Me.PictureBox77.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.PictureBox77.Image = CType(resources.GetObject("PictureBox77.Image"), System.Drawing.Image)
-        Me.PictureBox77.Location = New System.Drawing.Point(1070, 99)
+        Me.PictureBox77.Location = New System.Drawing.Point(949, 92)
         Me.PictureBox77.Name = "PictureBox77"
-        Me.PictureBox77.Size = New System.Drawing.Size(102, 352)
-        Me.PictureBox77.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.PictureBox77.Size = New System.Drawing.Size(89, 301)
+        Me.PictureBox77.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox77.TabIndex = 174
         Me.PictureBox77.TabStop = False
         '
@@ -34607,10 +34607,10 @@ Partial Class Dashboard_Page
         '
         Me.PictureBox71.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.PictureBox71.Image = CType(resources.GetObject("PictureBox71.Image"), System.Drawing.Image)
-        Me.PictureBox71.Location = New System.Drawing.Point(970, 99)
+        Me.PictureBox71.Location = New System.Drawing.Point(860, 92)
         Me.PictureBox71.Name = "PictureBox71"
-        Me.PictureBox71.Size = New System.Drawing.Size(102, 352)
-        Me.PictureBox71.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.PictureBox71.Size = New System.Drawing.Size(89, 301)
+        Me.PictureBox71.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox71.TabIndex = 174
         Me.PictureBox71.TabStop = False
         '
@@ -34618,10 +34618,10 @@ Partial Class Dashboard_Page
         '
         Me.PictureBox70.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.PictureBox70.Image = CType(resources.GetObject("PictureBox70.Image"), System.Drawing.Image)
-        Me.PictureBox70.Location = New System.Drawing.Point(870, 99)
+        Me.PictureBox70.Location = New System.Drawing.Point(771, 92)
         Me.PictureBox70.Name = "PictureBox70"
-        Me.PictureBox70.Size = New System.Drawing.Size(102, 352)
-        Me.PictureBox70.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.PictureBox70.Size = New System.Drawing.Size(89, 301)
+        Me.PictureBox70.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox70.TabIndex = 173
         Me.PictureBox70.TabStop = False
         '
@@ -43268,13 +43268,12 @@ Partial Class Dashboard_Page
         Me.Pipe186.TextPrefix = Nothing
         Me.Pipe186.TextSuffix = Nothing
         '
-        'Dashboard_Page
+        'EnergyVision
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Black
         Me.ClientSize = New System.Drawing.Size(1920, 1080)
-        Me.Controls.Add(Me.StartUpScreen)
         Me.Controls.Add(Me.Goto_Steam_BTN)
         Me.Controls.Add(Me.Goto_Faults_BTN)
         Me.Controls.Add(Me.Goto_Login_Screen)
@@ -43295,6 +43294,12 @@ Partial Class Dashboard_Page
         Me.Controls.Add(Me.OutsideHumidityDisp1)
         Me.Controls.Add(Me.BasicIndicator37)
         Me.Controls.Add(Me.BasicIndicator90)
+        Me.Controls.Add(Me.Realtime_Page)
+        Me.Controls.Add(Me.Login_Screen)
+        Me.Controls.Add(Me.AdminSettings_Page)
+        Me.Controls.Add(Me.PurifiedWater_Page)
+        Me.Controls.Add(Me.Water_Page)
+        Me.Controls.Add(Me.StartUpScreen)
         Me.Controls.Add(Me.Status_Page)
         Me.Controls.Add(Me.Alarms_Page)
         Me.Controls.Add(Me.Setpoints_Page)
@@ -43304,16 +43309,11 @@ Partial Class Dashboard_Page
         Me.Controls.Add(Me.Steam_Page)
         Me.Controls.Add(Me.Boiler_Page)
         Me.Controls.Add(Me.Compressor_Page)
-        Me.Controls.Add(Me.Realtime_Page)
-        Me.Controls.Add(Me.Login_Screen)
-        Me.Controls.Add(Me.AdminSettings_Page)
-        Me.Controls.Add(Me.PurifiedWater_Page)
-        Me.Controls.Add(Me.Water_Page)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.KeyPreview = True
         Me.MaximumSize = New System.Drawing.Size(1920, 1080)
         Me.MinimumSize = New System.Drawing.Size(1006, 1038)
-        Me.Name = "Dashboard_Page"
+        Me.Name = "EnergyVision"
         Me.Text = "Dashboard_Page"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.Panel29.ResumeLayout(False)

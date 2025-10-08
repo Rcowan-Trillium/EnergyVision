@@ -51,6 +51,10 @@
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
           "dependencies": {
+            "MadMilkman.Ini": {
+              "target": "Package",
+              "version": "[1.0.6, )"
+            },
             "MySql.Data": {
               "target": "Package",
               "version": "[9.3.0, )"

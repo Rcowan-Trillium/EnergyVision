@@ -32,7 +32,7 @@ Namespace My
         
         <Global.System.Diagnostics.DebuggerStepThroughAttribute()>  _
         Protected Overrides Sub OnCreateMainForm()
-            Me.MainForm = Global.MfgControl.AdvancedHMI.Dashboard_Page
+            Me.MainForm = Global.MfgControl.AdvancedHMI.EnergyVision
         End Sub
         
         <Global.System.Diagnostics.DebuggerStepThroughAttribute()>  _

@@ -37,7 +37,7 @@ Imports MySql.Data.MySqlClient
 'Imports Mysqlx.Expect.Open.Types.Condition.Types
 Imports Newtonsoft.Json
 
-Public Class Dashboard_Page
+Public Class EnergyVision
     Inherits Form
     Private myConn As SqlConnection
     Private myCmd As SqlCommand
@@ -3013,7 +3013,6 @@ VALUES (@DT,@CWSUP, @CWPRP, @CWPOP, @CWFD, @HWPRP, @HWPOP, @HWFD, @HWTP, @HWFL, 
     '║                                                 Section End                                                  ║
     '╚══════════════════════════════════════════════════════════════════════════════════════════════════════════════╝
 #End Region
-
 #Region "Alarm Logic"
 
     '╔══════════════════════════════════════════════════════════════════════════════════════════════════════════════╗
