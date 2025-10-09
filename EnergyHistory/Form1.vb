@@ -187,7 +187,7 @@ Public Class Form1
                     'create a new chart area from the template using the series name
                     Dim ca As New ChartArea(i)
                     'Area Template
-                    ca.BackColor = Color.fromargb(10,10,10)
+                    ca.BackColor = Color.FromArgb(10, 10, 10)
                     ca.IsSameFontSizeForAllAxes = True
                     'XAxis Template
                     ca.AxisX.MajorTickMark.Enabled = False
@@ -423,12 +423,35 @@ Public Class Form1
                 Next
 
 
+                If ChartView.Series(0).Points.Count > 60 Then
+                    For Each ChartA As ChartArea In ChartView.ChartAreas
+                        ChartA.AxisX.ScaleView.Size = 60 * (((1 / 24) / 60) / 60)
+                        ChartA.AxisX.ScaleView.Position = ChartView.Series(0).Points(0).XValue
+                        ChartA.AxisX.ScaleView.SmallScrollSize = (((1 / 24) / 60) / 60)
+                        ChartA.AxisX.ScrollBar.Enabled = False
+                    Next
+                    HScrollBar1.Maximum = ChartView.Series(0).Points.Count
+                    HScrollBar1.Value = 0
+                Else
+                    For Each ChartA As ChartArea In ChartView.ChartAreas
+                        ChartA.AxisX.ScaleView.Size = 60 * (((1 / 24) / 60) / 60)
+                        ChartA.AxisX.ScaleView.Position = ChartView.Series(0).Points(0).XValue
+                        ChartA.AxisX.ScaleView.SmallScrollSize = (((1 / 24) / 60) / 60)
+                        ChartA.AxisX.ScrollBar.Enabled = False
+                    Next
+                    HScrollBar1.Maximum = ChartView.Series(0).Points.Count
+                    HScrollBar1.Value = 0
+                End If
+
 
             Catch ex As Exception
                 MessageBox.Show("Error:  " & ex.Message)
             End Try
         End Using
     End Sub
+
+
+
     Dim SeriesNames_x2 As New List(Of String) From {"CW_Supply", "CW_PreFiltPres", "CW_PostFiltPres",
                 "CW_FiltDif", "HW_PreFiltPres", "HW_PostFiltPres", "HW_FiltDif", "HW_Temp",
                 "HW_Flow", "ST_FeedWaterPres", "ST_HeadPres", "ST_LowPres", "ST_MedPres",
@@ -666,8 +689,8 @@ Public Class Form1
                 SetControlPropertyByName("SUM_Avg_LBL" & i, "Text", avgValue(i).ToString("F2"))
             Next
             SetControlPropertyByName("SUM_Count_LBL", "Text", totalCount & " rows")
-            SetControlPropertyByName("SUM_Start_Time", "Text", minDate)
-            SetControlPropertyByName("SUM_End_Time", "Text", maxDate)
+            'SetControlPropertyByName("SUM_Start_Time", "Text", minDate)
+            'SetControlPropertyByName("SUM_End_Time", "Text", maxDate)
         End Using
     End Sub
     Public Function FindControlByName(parent As Control, name As String) As Control
@@ -706,7 +729,7 @@ Public Class Form1
     End Sub
     Sub OpenNewPage(Page As Object)
         Summary_Page.Hide()
-        Chart_Page.Hide()
+        ChartPanel.Hide()
         Grid_Page.Hide()
         Settings_Page.Hide()
         Page.show()
@@ -720,7 +743,7 @@ Public Class Form1
         OpenNewPage(Grid_Page)
     End Sub
     Private Sub Open_Chart_Page(sender As Object, e As EventArgs) Handles Button9.Click
-        OpenNewPage(Chart_Page)
+        OpenNewPage(ChartPanel)
     End Sub
     Private Sub Open_Settings_Page(sender As Object, e As EventArgs) Handles Button4.Click
         OpenNewPage(Settings_Page)
@@ -766,8 +789,21 @@ Public Class Form1
         query = query.Remove(query.Count - 2)
         query += " FROM a_vals WHERE Date_Time BETWEEN @startDate And @endDate;"
         MsgBox(query)
+        For Each ChartA As ChartArea In ChartView.ChartAreas
+            ChartA.AxisX.ScaleView.Size = 60 * (((1 / 24) / 60) / 60)
+            ChartA.AxisX.ScaleView.Position = ChartView.Series(0).Points(0).XValue
+            ChartA.AxisX.ScaleView.SmallScrollSize = (((1 / 24) / 60) / 60)
+        Next
+    End Sub
+
+    Private Sub HScrollBar1_ValueChanged(sender As Object, e As EventArgs) Handles HScrollBar1.ValueChanged
+        For Each i As ChartArea In ChartView.ChartAreas
+            i.AxisX.ScaleView.Position = ChartView.Series(0).Points(0).XValue + sender.value * (((1 / 24) / 60) / 60)
+        Next
+
     End Sub
 
     Dim VisEdit As Boolean = False
+
 
 End Class

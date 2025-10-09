@@ -105,15 +105,15 @@ Partial Class Form1
         ST_HeadPres_Cursor_LBL = New Label()
         CW_Supply_Cursor_LBL = New Label()
         ST_Flow_Cursor_LBL = New Label()
-        ChartPanel = New Panel()
-        ChartView = New DataVisualization.Charting.Chart()
         ST_LowPres_Cursor_LBL = New Label()
         Label1 = New Label()
         EL_NorthB_Cursor_LBL = New Label()
         ST_LowDem_Cursor_LBL = New Label()
         HW_Flow_Cursor_LBL = New Label()
-        Button3 = New Button()
+        ChartPanel = New Panel()
+        ChartView = New DataVisualization.Charting.Chart()
         Grid_Page = New Panel()
+        HScrollBar1 = New HScrollBar()
         GridView = New DataGridView()
         Summary_Page = New Panel()
         Label7 = New Label()
@@ -318,6 +318,7 @@ Partial Class Form1
         Label232 = New Label()
         SUM_Avg_LBL24 = New Label()
         Label234 = New Label()
+        Button3 = New Button()
         Settings_Page = New Panel()
         Panel29 = New Panel()
         TextBox4 = New TextBox()
@@ -559,12 +560,14 @@ Partial Class Form1
         Chart_Page.Controls.Add(ST_HeadPres_Cursor_LBL)
         Chart_Page.Controls.Add(CW_Supply_Cursor_LBL)
         Chart_Page.Controls.Add(ST_Flow_Cursor_LBL)
-        Chart_Page.Controls.Add(ChartPanel)
         Chart_Page.Controls.Add(ST_LowPres_Cursor_LBL)
         Chart_Page.Controls.Add(Label1)
         Chart_Page.Controls.Add(EL_NorthB_Cursor_LBL)
         Chart_Page.Controls.Add(ST_LowDem_Cursor_LBL)
         Chart_Page.Controls.Add(HW_Flow_Cursor_LBL)
+        Chart_Page.Controls.Add(ChartPanel)
+        Chart_Page.Controls.Add(Grid_Page)
+        Chart_Page.Controls.Add(Summary_Page)
         Chart_Page.Location = New Point(0, 50)
         Chart_Page.Name = "Chart_Page"
         Chart_Page.Size = New Size(1430, 794)
@@ -1409,26 +1412,6 @@ Partial Class Form1
         ST_Flow_Cursor_LBL.Text = "0.00"
         ST_Flow_Cursor_LBL.TextAlign = ContentAlignment.MiddleRight
         ' 
-        ' ChartPanel
-        ' 
-        ChartPanel.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
-        ChartPanel.AutoScroll = True
-        ChartPanel.Controls.Add(ChartView)
-        ChartPanel.Location = New Point(3, 3)
-        ChartPanel.Name = "ChartPanel"
-        ChartPanel.Size = New Size(1182, 788)
-        ChartPanel.TabIndex = 11
-        ' 
-        ' ChartView
-        ' 
-        ChartView.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
-        ChartView.BackColor = Color.FromArgb(CByte(10), CByte(10), CByte(10))
-        ChartView.BorderSkin.PageColor = Color.FromArgb(CByte(192), CByte(192), CByte(255))
-        ChartView.Location = New Point(3, 5)
-        ChartView.Name = "ChartView"
-        ChartView.Size = New Size(1155, 4000)
-        ChartView.TabIndex = 0
-        ' 
         ' ST_LowPres_Cursor_LBL
         ' 
         ST_LowPres_Cursor_LBL.Anchor = AnchorStyles.Top Or AnchorStyles.Right
@@ -1488,24 +1471,45 @@ Partial Class Form1
         HW_Flow_Cursor_LBL.Text = "0.00"
         HW_Flow_Cursor_LBL.TextAlign = ContentAlignment.MiddleRight
         ' 
-        ' Button3
+        ' ChartPanel
         ' 
-        Button3.Location = New Point(891, 4)
-        Button3.Name = "Button3"
-        Button3.Size = New Size(107, 37)
-        Button3.TabIndex = 2
-        Button3.Text = "Exit"
-        Button3.UseVisualStyleBackColor = True
+        ChartPanel.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
+        ChartPanel.AutoScroll = True
+        ChartPanel.BackColor = Color.FromArgb(CByte(32), CByte(32), CByte(32))
+        ChartPanel.Controls.Add(ChartView)
+        ChartPanel.Location = New Point(0, 16)
+        ChartPanel.Name = "ChartPanel"
+        ChartPanel.Size = New Size(1186, 779)
+        ChartPanel.TabIndex = 11
+        ' 
+        ' ChartView
+        ' 
+        ChartView.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
+        ChartView.BackColor = Color.FromArgb(CByte(10), CByte(10), CByte(10))
+        ChartView.BorderSkin.PageColor = Color.FromArgb(CByte(192), CByte(192), CByte(255))
+        ChartView.Location = New Point(3, 5)
+        ChartView.Name = "ChartView"
+        ChartView.Size = New Size(1159, 4000)
+        ChartView.TabIndex = 0
         ' 
         ' Grid_Page
         ' 
         Grid_Page.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         Grid_Page.BackColor = Color.FromArgb(CByte(192), CByte(255), CByte(192))
+        Grid_Page.Controls.Add(HScrollBar1)
         Grid_Page.Controls.Add(GridView)
-        Grid_Page.Location = New Point(0, 154)
+        Grid_Page.Location = New Point(0, 0)
         Grid_Page.Name = "Grid_Page"
-        Grid_Page.Size = New Size(1430, 691)
+        Grid_Page.Size = New Size(1186, 798)
         Grid_Page.TabIndex = 11
+        ' 
+        ' HScrollBar1
+        ' 
+        HScrollBar1.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
+        HScrollBar1.Location = New Point(0, -1)
+        HScrollBar1.Name = "HScrollBar1"
+        HScrollBar1.Size = New Size(1186, 17)
+        HScrollBar1.TabIndex = 11
         ' 
         ' GridView
         ' 
@@ -1515,7 +1519,7 @@ Partial Class Form1
         GridView.Location = New Point(5, 8)
         GridView.Name = "GridView"
         GridView.RowHeadersVisible = False
-        GridView.Size = New Size(1420, 676)
+        GridView.Size = New Size(1176, 783)
         GridView.TabIndex = 0
         ' 
         ' Summary_Page
@@ -1524,9 +1528,9 @@ Partial Class Form1
         Summary_Page.BackColor = Color.FromArgb(CByte(255), CByte(224), CByte(192))
         Summary_Page.Controls.Add(Label7)
         Summary_Page.Controls.Add(TableLayoutPanel1)
-        Summary_Page.Location = New Point(0, 154)
+        Summary_Page.Location = New Point(0, 0)
         Summary_Page.Name = "Summary_Page"
-        Summary_Page.Size = New Size(1430, 691)
+        Summary_Page.Size = New Size(1186, 798)
         Summary_Page.TabIndex = 12
         ' 
         ' Label7
@@ -1582,7 +1586,7 @@ Partial Class Form1
         TableLayoutPanel1.RowStyles.Add(New RowStyle(SizeType.Percent, 20F))
         TableLayoutPanel1.RowStyles.Add(New RowStyle(SizeType.Percent, 20F))
         TableLayoutPanel1.RowStyles.Add(New RowStyle(SizeType.Percent, 20F))
-        TableLayoutPanel1.Size = New Size(528, 468)
+        TableLayoutPanel1.Size = New Size(528, 575)
         TableLayoutPanel1.TabIndex = 2
         ' 
         ' Panel1
@@ -1598,7 +1602,7 @@ Partial Class Form1
         Panel1.Controls.Add(Label13)
         Panel1.Location = New Point(4, 4)
         Panel1.Name = "Panel1"
-        Panel1.Size = New Size(98, 86)
+        Panel1.Size = New Size(98, 107)
         Panel1.TabIndex = 2
         ' 
         ' SUM_Name_LBL0
@@ -1689,7 +1693,7 @@ Partial Class Form1
         Panel3.Controls.Add(Label73)
         Panel3.Location = New Point(109, 4)
         Panel3.Name = "Panel3"
-        Panel3.Size = New Size(98, 86)
+        Panel3.Size = New Size(98, 107)
         Panel3.TabIndex = 2
         ' 
         ' SUM_Name_LBL1
@@ -1780,7 +1784,7 @@ Partial Class Form1
         Panel4.Controls.Add(Label80)
         Panel4.Location = New Point(214, 4)
         Panel4.Name = "Panel4"
-        Panel4.Size = New Size(98, 86)
+        Panel4.Size = New Size(98, 107)
         Panel4.TabIndex = 2
         ' 
         ' SUM_Name_LBL2
@@ -1871,7 +1875,7 @@ Partial Class Form1
         Panel5.Controls.Add(Label87)
         Panel5.Location = New Point(319, 4)
         Panel5.Name = "Panel5"
-        Panel5.Size = New Size(98, 86)
+        Panel5.Size = New Size(98, 107)
         Panel5.TabIndex = 2
         ' 
         ' SUM_Name_LBL3
@@ -1962,7 +1966,7 @@ Partial Class Form1
         Panel6.Controls.Add(Label94)
         Panel6.Location = New Point(424, 4)
         Panel6.Name = "Panel6"
-        Panel6.Size = New Size(100, 86)
+        Panel6.Size = New Size(100, 107)
         Panel6.TabIndex = 2
         ' 
         ' SUM_Name_LBL4
@@ -2051,9 +2055,9 @@ Partial Class Form1
         Panel7.Controls.Add(Label99)
         Panel7.Controls.Add(SUM_Avg_LBL5)
         Panel7.Controls.Add(Label101)
-        Panel7.Location = New Point(4, 97)
+        Panel7.Location = New Point(4, 118)
         Panel7.Name = "Panel7"
-        Panel7.Size = New Size(98, 86)
+        Panel7.Size = New Size(98, 107)
         Panel7.TabIndex = 2
         ' 
         ' SUM_Name_LBL5
@@ -2142,9 +2146,9 @@ Partial Class Form1
         Panel8.Controls.Add(Label106)
         Panel8.Controls.Add(SUM_Avg_LBL6)
         Panel8.Controls.Add(Label108)
-        Panel8.Location = New Point(109, 97)
+        Panel8.Location = New Point(109, 118)
         Panel8.Name = "Panel8"
-        Panel8.Size = New Size(98, 86)
+        Panel8.Size = New Size(98, 107)
         Panel8.TabIndex = 2
         ' 
         ' SUM_Name_LBL6
@@ -2233,9 +2237,9 @@ Partial Class Form1
         Panel9.Controls.Add(Label113)
         Panel9.Controls.Add(SUM_Avg_LBL7)
         Panel9.Controls.Add(Label115)
-        Panel9.Location = New Point(214, 97)
+        Panel9.Location = New Point(214, 118)
         Panel9.Name = "Panel9"
-        Panel9.Size = New Size(98, 86)
+        Panel9.Size = New Size(98, 107)
         Panel9.TabIndex = 2
         ' 
         ' SUM_Name_LBL7
@@ -2324,9 +2328,9 @@ Partial Class Form1
         Panel10.Controls.Add(Label120)
         Panel10.Controls.Add(SUM_Avg_LBL8)
         Panel10.Controls.Add(Label122)
-        Panel10.Location = New Point(319, 97)
+        Panel10.Location = New Point(319, 118)
         Panel10.Name = "Panel10"
-        Panel10.Size = New Size(98, 86)
+        Panel10.Size = New Size(98, 107)
         Panel10.TabIndex = 2
         ' 
         ' SUM_Name_LBL8
@@ -2415,9 +2419,9 @@ Partial Class Form1
         Panel11.Controls.Add(Label127)
         Panel11.Controls.Add(SUM_Avg_LBL9)
         Panel11.Controls.Add(Label129)
-        Panel11.Location = New Point(424, 97)
+        Panel11.Location = New Point(424, 118)
         Panel11.Name = "Panel11"
-        Panel11.Size = New Size(100, 86)
+        Panel11.Size = New Size(100, 107)
         Panel11.TabIndex = 2
         ' 
         ' SUM_Name_LBL9
@@ -2506,9 +2510,9 @@ Partial Class Form1
         Panel12.Controls.Add(Label134)
         Panel12.Controls.Add(SUM_Avg_LBL10)
         Panel12.Controls.Add(Label136)
-        Panel12.Location = New Point(4, 190)
+        Panel12.Location = New Point(4, 232)
         Panel12.Name = "Panel12"
-        Panel12.Size = New Size(98, 86)
+        Panel12.Size = New Size(98, 107)
         Panel12.TabIndex = 2
         ' 
         ' SUM_Name_LBL10
@@ -2597,9 +2601,9 @@ Partial Class Form1
         Panel13.Controls.Add(Label141)
         Panel13.Controls.Add(SUM_Avg_LBL11)
         Panel13.Controls.Add(Label143)
-        Panel13.Location = New Point(109, 190)
+        Panel13.Location = New Point(109, 232)
         Panel13.Name = "Panel13"
-        Panel13.Size = New Size(98, 86)
+        Panel13.Size = New Size(98, 107)
         Panel13.TabIndex = 2
         ' 
         ' SUM_Name_LBL11
@@ -2688,9 +2692,9 @@ Partial Class Form1
         Panel14.Controls.Add(Label148)
         Panel14.Controls.Add(SUM_Avg_LBL12)
         Panel14.Controls.Add(Label150)
-        Panel14.Location = New Point(214, 190)
+        Panel14.Location = New Point(214, 232)
         Panel14.Name = "Panel14"
-        Panel14.Size = New Size(98, 86)
+        Panel14.Size = New Size(98, 107)
         Panel14.TabIndex = 2
         ' 
         ' SUM_Name_LBL12
@@ -2779,9 +2783,9 @@ Partial Class Form1
         Panel15.Controls.Add(Label155)
         Panel15.Controls.Add(SUM_Avg_LBL13)
         Panel15.Controls.Add(Label157)
-        Panel15.Location = New Point(319, 190)
+        Panel15.Location = New Point(319, 232)
         Panel15.Name = "Panel15"
-        Panel15.Size = New Size(98, 86)
+        Panel15.Size = New Size(98, 107)
         Panel15.TabIndex = 2
         ' 
         ' SUM_Name_LBL13
@@ -2870,9 +2874,9 @@ Partial Class Form1
         Panel16.Controls.Add(Label162)
         Panel16.Controls.Add(SUM_Avg_LBL14)
         Panel16.Controls.Add(Label164)
-        Panel16.Location = New Point(424, 190)
+        Panel16.Location = New Point(424, 232)
         Panel16.Name = "Panel16"
-        Panel16.Size = New Size(100, 86)
+        Panel16.Size = New Size(100, 107)
         Panel16.TabIndex = 2
         ' 
         ' SUM_Name_LBL14
@@ -2961,9 +2965,9 @@ Partial Class Form1
         Panel17.Controls.Add(Label169)
         Panel17.Controls.Add(SUM_Avg_LBL15)
         Panel17.Controls.Add(Label171)
-        Panel17.Location = New Point(4, 283)
+        Panel17.Location = New Point(4, 346)
         Panel17.Name = "Panel17"
-        Panel17.Size = New Size(98, 86)
+        Panel17.Size = New Size(98, 107)
         Panel17.TabIndex = 2
         ' 
         ' SUM_Name_LBL15
@@ -3052,9 +3056,9 @@ Partial Class Form1
         Panel18.Controls.Add(Label176)
         Panel18.Controls.Add(SUM_Avg_LBL16)
         Panel18.Controls.Add(Label178)
-        Panel18.Location = New Point(109, 283)
+        Panel18.Location = New Point(109, 346)
         Panel18.Name = "Panel18"
-        Panel18.Size = New Size(98, 86)
+        Panel18.Size = New Size(98, 107)
         Panel18.TabIndex = 2
         ' 
         ' SUM_Name_LBL16
@@ -3143,9 +3147,9 @@ Partial Class Form1
         Panel19.Controls.Add(Label183)
         Panel19.Controls.Add(SUM_Avg_LBL17)
         Panel19.Controls.Add(Label185)
-        Panel19.Location = New Point(214, 283)
+        Panel19.Location = New Point(214, 346)
         Panel19.Name = "Panel19"
-        Panel19.Size = New Size(98, 86)
+        Panel19.Size = New Size(98, 107)
         Panel19.TabIndex = 2
         ' 
         ' SUM_Name_LBL17
@@ -3234,9 +3238,9 @@ Partial Class Form1
         Panel20.Controls.Add(Label190)
         Panel20.Controls.Add(SUM_Avg_LBL18)
         Panel20.Controls.Add(Label192)
-        Panel20.Location = New Point(319, 283)
+        Panel20.Location = New Point(319, 346)
         Panel20.Name = "Panel20"
-        Panel20.Size = New Size(98, 86)
+        Panel20.Size = New Size(98, 107)
         Panel20.TabIndex = 2
         ' 
         ' SUM_Name_LBL18
@@ -3325,9 +3329,9 @@ Partial Class Form1
         Panel21.Controls.Add(Label197)
         Panel21.Controls.Add(SUM_Avg_LBL19)
         Panel21.Controls.Add(Label199)
-        Panel21.Location = New Point(424, 283)
+        Panel21.Location = New Point(424, 346)
         Panel21.Name = "Panel21"
-        Panel21.Size = New Size(100, 86)
+        Panel21.Size = New Size(100, 107)
         Panel21.TabIndex = 2
         ' 
         ' SUM_Name_LBL19
@@ -3416,9 +3420,9 @@ Partial Class Form1
         Panel22.Controls.Add(Label204)
         Panel22.Controls.Add(SUM_Avg_LBL20)
         Panel22.Controls.Add(Label206)
-        Panel22.Location = New Point(4, 376)
+        Panel22.Location = New Point(4, 460)
         Panel22.Name = "Panel22"
-        Panel22.Size = New Size(98, 88)
+        Panel22.Size = New Size(98, 111)
         Panel22.TabIndex = 2
         ' 
         ' SUM_Name_LBL20
@@ -3507,9 +3511,9 @@ Partial Class Form1
         Panel23.Controls.Add(Label211)
         Panel23.Controls.Add(SUM_Avg_LBL21)
         Panel23.Controls.Add(Label213)
-        Panel23.Location = New Point(109, 376)
+        Panel23.Location = New Point(109, 460)
         Panel23.Name = "Panel23"
-        Panel23.Size = New Size(98, 88)
+        Panel23.Size = New Size(98, 111)
         Panel23.TabIndex = 2
         ' 
         ' SUM_Name_LBL21
@@ -3598,9 +3602,9 @@ Partial Class Form1
         Panel24.Controls.Add(Label218)
         Panel24.Controls.Add(SUM_Avg_LBL22)
         Panel24.Controls.Add(Label220)
-        Panel24.Location = New Point(214, 376)
+        Panel24.Location = New Point(214, 460)
         Panel24.Name = "Panel24"
-        Panel24.Size = New Size(98, 88)
+        Panel24.Size = New Size(98, 111)
         Panel24.TabIndex = 2
         ' 
         ' SUM_Name_LBL22
@@ -3689,9 +3693,9 @@ Partial Class Form1
         Panel25.Controls.Add(Label225)
         Panel25.Controls.Add(SUM_Avg_LBL23)
         Panel25.Controls.Add(Label227)
-        Panel25.Location = New Point(319, 376)
+        Panel25.Location = New Point(319, 460)
         Panel25.Name = "Panel25"
-        Panel25.Size = New Size(98, 88)
+        Panel25.Size = New Size(98, 111)
         Panel25.TabIndex = 2
         ' 
         ' SUM_Name_LBL23
@@ -3780,9 +3784,9 @@ Partial Class Form1
         Panel26.Controls.Add(Label232)
         Panel26.Controls.Add(SUM_Avg_LBL24)
         Panel26.Controls.Add(Label234)
-        Panel26.Location = New Point(424, 376)
+        Panel26.Location = New Point(424, 460)
         Panel26.Name = "Panel26"
-        Panel26.Size = New Size(100, 88)
+        Panel26.Size = New Size(100, 111)
         Panel26.TabIndex = 2
         ' 
         ' SUM_Name_LBL24
@@ -3859,6 +3863,15 @@ Partial Class Form1
         Label234.TabIndex = 0
         Label234.Text = "Av"
         Label234.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' Button3
+        ' 
+        Button3.Location = New Point(891, 4)
+        Button3.Name = "Button3"
+        Button3.Size = New Size(107, 37)
+        Button3.TabIndex = 2
+        Button3.Text = "Exit"
+        Button3.UseVisualStyleBackColor = True
         ' 
         ' Settings_Page
         ' 
@@ -4184,8 +4197,6 @@ Partial Class Form1
         Controls.Add(Button4)
         Controls.Add(Button1)
         Controls.Add(Chart_Page)
-        Controls.Add(Summary_Page)
-        Controls.Add(Grid_Page)
         Controls.Add(Settings_Page)
         MinimumSize = New Size(1446, 886)
         Name = "Form1"
@@ -4565,6 +4576,7 @@ Partial Class Form1
     Friend WithEvents CW_PostFiltPres_Vis_CB As CheckBox
     Friend WithEvents Label8 As Label
     Friend WithEvents Label9 As Label
+    Friend WithEvents HScrollBar1 As HScrollBar
 
 
 
