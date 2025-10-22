@@ -37,3 +37,5 @@ C:\Users\cowanr\source\repos\EnergyVision\EnergyHistory\obj\Debug\net8.0-windows
 C:\Users\cowanr\source\repos\EnergyVision\EnergyHistory\obj\Debug\net8.0-windows\ref\EnergyHistory.dll
 C:\Users\cowanr\source\repos\EnergyVision\EnergyHistory\bin\Debug\net8.0-windows\EnergyHistory.dll.config
 C:\Users\cowanr\source\repos\EnergyVision\EnergyHistory\bin\Debug\net8.0-windows\MadMilkman.Ini.dll
+C:\Users\cowanr\source\repos\EnergyVision\EnergyHistory\bin\Debug\net8.0-windows\OxyPlot.dll
+C:\Users\cowanr\source\repos\EnergyVision\EnergyHistory\bin\Debug\net8.0-windows\OxyPlot.WindowsForms.dll

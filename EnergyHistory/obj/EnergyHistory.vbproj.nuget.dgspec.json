@@ -59,6 +59,10 @@
               "target": "Package",
               "version": "[9.3.0, )"
             },
+            "OxyPlot.WindowsForms": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
             "WinForms.DataVisualization": {
               "target": "Package",
               "version": "[1.10.0, )"

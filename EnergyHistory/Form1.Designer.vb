@@ -14,6 +14,7 @@ Partial Class Form1
         End Try
     End Sub
 
+
     'Required by the Windows Form Designer
     Private components As System.ComponentModel.IContainer
 
@@ -33,7 +34,13 @@ Partial Class Form1
         DateTimePicker1 = New DateTimePicker()
         DateTimePicker2 = New DateTimePicker()
         Chart_Page = New Panel()
+        RadioButton2 = New RadioButton()
+        RadioButton1 = New RadioButton()
+        TextBox7 = New TextBox()
+        All_Vis_CB = New CheckBox()
         EL_SouthB_Cursor_LBL = New Label()
+        Button15 = New Button()
+        Button14 = New Button()
         Button13 = New Button()
         SUM_Count_LBL = New Label()
         EL_SouthC_Cursor_LBL = New Label()
@@ -106,14 +113,12 @@ Partial Class Form1
         CW_Supply_Cursor_LBL = New Label()
         ST_Flow_Cursor_LBL = New Label()
         ST_LowPres_Cursor_LBL = New Label()
-        Label1 = New Label()
         EL_NorthB_Cursor_LBL = New Label()
         ST_LowDem_Cursor_LBL = New Label()
         HW_Flow_Cursor_LBL = New Label()
         ChartPanel = New Panel()
-        ChartView = New DataVisualization.Charting.Chart()
+        PlotView = New OxyPlot.WindowsForms.PlotView()
         Grid_Page = New Panel()
-        HScrollBar1 = New HScrollBar()
         GridView = New DataGridView()
         Summary_Page = New Panel()
         Label7 = New Label()
@@ -334,6 +339,9 @@ Partial Class Form1
         Label22 = New Label()
         Label23 = New Label()
         Label24 = New Label()
+        Label25 = New Label()
+        Label20 = New Label()
+        Label21 = New Label()
         Panel27 = New Panel()
         SQL_Server_TB = New TextBox()
         SQL_User_TB = New TextBox()
@@ -347,12 +355,8 @@ Partial Class Form1
         Label4 = New Label()
         SQL2 = New Label()
         SQL1 = New Label()
-        Label25 = New Label()
-        Label20 = New Label()
-        Label21 = New Label()
         Chart_Page.SuspendLayout()
         ChartPanel.SuspendLayout()
-        CType(ChartView, ComponentModel.ISupportInitialize).BeginInit()
         Grid_Page.SuspendLayout()
         CType(GridView, ComponentModel.ISupportInitialize).BeginInit()
         Summary_Page.SuspendLayout()
@@ -465,7 +469,7 @@ Partial Class Form1
         DateTimePicker1.Anchor = AnchorStyles.Top Or AnchorStyles.Right
         DateTimePicker1.CustomFormat = "MM/dd/yyyy hh:mm:ss tt"
         DateTimePicker1.Font = New Font("Franklin Gothic Medium Cond", 12F)
-        DateTimePicker1.Location = New Point(1187, 27)
+        DateTimePicker1.Location = New Point(1187, 93)
         DateTimePicker1.Name = "DateTimePicker1"
         DateTimePicker1.Size = New Size(243, 26)
         DateTimePicker1.TabIndex = 3
@@ -475,7 +479,7 @@ Partial Class Form1
         DateTimePicker2.Anchor = AnchorStyles.Top Or AnchorStyles.Right
         DateTimePicker2.CustomFormat = "MM/dd/yyyy hh:mm:ss tt"
         DateTimePicker2.Font = New Font("Franklin Gothic Medium Cond", 12F)
-        DateTimePicker2.Location = New Point(1187, 74)
+        DateTimePicker2.Location = New Point(1187, 140)
         DateTimePicker2.Name = "DateTimePicker2"
         DateTimePicker2.Size = New Size(243, 26)
         DateTimePicker2.TabIndex = 3
@@ -485,9 +489,15 @@ Partial Class Form1
         Chart_Page.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         Chart_Page.AutoScroll = True
         Chart_Page.AutoSizeMode = AutoSizeMode.GrowAndShrink
-        Chart_Page.BackColor = Color.FromArgb(CByte(16), CByte(16), CByte(16))
+        Chart_Page.BackColor = Color.Silver
+        Chart_Page.Controls.Add(RadioButton2)
+        Chart_Page.Controls.Add(RadioButton1)
+        Chart_Page.Controls.Add(TextBox7)
+        Chart_Page.Controls.Add(All_Vis_CB)
         Chart_Page.Controls.Add(EL_SouthB_Cursor_LBL)
         Chart_Page.Controls.Add(DateTimePicker2)
+        Chart_Page.Controls.Add(Button15)
+        Chart_Page.Controls.Add(Button14)
         Chart_Page.Controls.Add(Button13)
         Chart_Page.Controls.Add(SUM_Count_LBL)
         Chart_Page.Controls.Add(EL_SouthC_Cursor_LBL)
@@ -561,36 +571,109 @@ Partial Class Form1
         Chart_Page.Controls.Add(CW_Supply_Cursor_LBL)
         Chart_Page.Controls.Add(ST_Flow_Cursor_LBL)
         Chart_Page.Controls.Add(ST_LowPres_Cursor_LBL)
-        Chart_Page.Controls.Add(Label1)
         Chart_Page.Controls.Add(EL_NorthB_Cursor_LBL)
         Chart_Page.Controls.Add(ST_LowDem_Cursor_LBL)
         Chart_Page.Controls.Add(HW_Flow_Cursor_LBL)
         Chart_Page.Controls.Add(ChartPanel)
-        Chart_Page.Controls.Add(Grid_Page)
         Chart_Page.Controls.Add(Summary_Page)
+        Chart_Page.Controls.Add(Grid_Page)
         Chart_Page.Location = New Point(0, 50)
         Chart_Page.Name = "Chart_Page"
         Chart_Page.Size = New Size(1430, 794)
         Chart_Page.TabIndex = 10
         ' 
+        ' RadioButton2
+        ' 
+        RadioButton2.Anchor = AnchorStyles.Top Or AnchorStyles.Right
+        RadioButton2.AutoSize = True
+        RadioButton2.ForeColor = Color.Black
+        RadioButton2.Location = New Point(1306, 40)
+        RadioButton2.Name = "RadioButton2"
+        RadioButton2.Size = New Size(68, 19)
+        RadioButton2.TabIndex = 70
+        RadioButton2.Text = "Minutes"
+        RadioButton2.UseVisualStyleBackColor = True
+        ' 
+        ' RadioButton1
+        ' 
+        RadioButton1.Anchor = AnchorStyles.Top Or AnchorStyles.Right
+        RadioButton1.AutoSize = True
+        RadioButton1.Checked = True
+        RadioButton1.ForeColor = Color.Black
+        RadioButton1.Location = New Point(1248, 40)
+        RadioButton1.Name = "RadioButton1"
+        RadioButton1.Size = New Size(57, 19)
+        RadioButton1.TabIndex = 70
+        RadioButton1.TabStop = True
+        RadioButton1.Text = "Hours"
+        RadioButton1.UseVisualStyleBackColor = True
+        ' 
+        ' TextBox7
+        ' 
+        TextBox7.Anchor = AnchorStyles.Top Or AnchorStyles.Right
+        TextBox7.Location = New Point(1245, 16)
+        TextBox7.Name = "TextBox7"
+        TextBox7.Size = New Size(129, 23)
+        TextBox7.TabIndex = 69
+        TextBox7.Text = "1"
+        TextBox7.TextAlign = HorizontalAlignment.Center
+        ' 
+        ' All_Vis_CB
+        ' 
+        All_Vis_CB.Anchor = AnchorStyles.Top Or AnchorStyles.Right
+        All_Vis_CB.AutoSize = True
+        All_Vis_CB.Checked = True
+        All_Vis_CB.CheckState = CheckState.Checked
+        All_Vis_CB.ForeColor = Color.Black
+        All_Vis_CB.Location = New Point(1278, 217)
+        All_Vis_CB.Name = "All_Vis_CB"
+        All_Vis_CB.Size = New Size(107, 19)
+        All_Vis_CB.TabIndex = 68
+        All_Vis_CB.Text = "Series Selection"
+        All_Vis_CB.UseVisualStyleBackColor = True
+        ' 
         ' EL_SouthB_Cursor_LBL
         ' 
         EL_SouthB_Cursor_LBL.Anchor = AnchorStyles.Top Or AnchorStyles.Right
         EL_SouthB_Cursor_LBL.BorderStyle = BorderStyle.FixedSingle
-        EL_SouthB_Cursor_LBL.ForeColor = Color.Silver
-        EL_SouthB_Cursor_LBL.Location = New Point(1217, 548)
+        EL_SouthB_Cursor_LBL.ForeColor = Color.Black
+        EL_SouthB_Cursor_LBL.Location = New Point(1217, 614)
         EL_SouthB_Cursor_LBL.Name = "EL_SouthB_Cursor_LBL"
         EL_SouthB_Cursor_LBL.Size = New Size(56, 20)
         EL_SouthB_Cursor_LBL.TabIndex = 30
         EL_SouthB_Cursor_LBL.Text = "0.00"
         EL_SouthB_Cursor_LBL.TextAlign = ContentAlignment.MiddleRight
         ' 
+        ' Button15
+        ' 
+        Button15.Anchor = AnchorStyles.Top Or AnchorStyles.Right
+        Button15.BackColor = SystemColors.ControlDark
+        Button15.FlatStyle = FlatStyle.Flat
+        Button15.Location = New Point(1374, 16)
+        Button15.Name = "Button15"
+        Button15.Size = New Size(56, 23)
+        Button15.TabIndex = 2
+        Button15.Text = "+"
+        Button15.UseVisualStyleBackColor = False
+        ' 
+        ' Button14
+        ' 
+        Button14.Anchor = AnchorStyles.Top Or AnchorStyles.Right
+        Button14.BackColor = SystemColors.ControlDark
+        Button14.FlatStyle = FlatStyle.Flat
+        Button14.Location = New Point(1187, 16)
+        Button14.Name = "Button14"
+        Button14.Size = New Size(56, 23)
+        Button14.TabIndex = 2
+        Button14.Text = "-"
+        Button14.UseVisualStyleBackColor = False
+        ' 
         ' Button13
         ' 
         Button13.Anchor = AnchorStyles.Top Or AnchorStyles.Right
         Button13.BackColor = SystemColors.ControlDark
         Button13.FlatStyle = FlatStyle.Flat
-        Button13.Location = New Point(1311, 114)
+        Button13.Location = New Point(1311, 180)
         Button13.Name = "Button13"
         Button13.Size = New Size(112, 23)
         Button13.TabIndex = 2
@@ -602,8 +685,8 @@ Partial Class Form1
         SUM_Count_LBL.Anchor = AnchorStyles.Top Or AnchorStyles.Right
         SUM_Count_LBL.BorderStyle = BorderStyle.FixedSingle
         SUM_Count_LBL.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
-        SUM_Count_LBL.ForeColor = Color.Silver
-        SUM_Count_LBL.Location = New Point(1192, 114)
+        SUM_Count_LBL.ForeColor = Color.Black
+        SUM_Count_LBL.Location = New Point(1192, 180)
         SUM_Count_LBL.Name = "SUM_Count_LBL"
         SUM_Count_LBL.Size = New Size(112, 23)
         SUM_Count_LBL.TabIndex = 0
@@ -614,8 +697,8 @@ Partial Class Form1
         ' 
         EL_SouthC_Cursor_LBL.Anchor = AnchorStyles.Top Or AnchorStyles.Right
         EL_SouthC_Cursor_LBL.BorderStyle = BorderStyle.FixedSingle
-        EL_SouthC_Cursor_LBL.ForeColor = Color.Silver
-        EL_SouthC_Cursor_LBL.Location = New Point(1217, 567)
+        EL_SouthC_Cursor_LBL.ForeColor = Color.Black
+        EL_SouthC_Cursor_LBL.Location = New Point(1217, 633)
         EL_SouthC_Cursor_LBL.Name = "EL_SouthC_Cursor_LBL"
         EL_SouthC_Cursor_LBL.Size = New Size(56, 20)
         EL_SouthC_Cursor_LBL.TabIndex = 40
@@ -626,8 +709,8 @@ Partial Class Form1
         ' 
         EL_SouthA_Cursor_LBL.Anchor = AnchorStyles.Top Or AnchorStyles.Right
         EL_SouthA_Cursor_LBL.BorderStyle = BorderStyle.FixedSingle
-        EL_SouthA_Cursor_LBL.ForeColor = Color.Silver
-        EL_SouthA_Cursor_LBL.Location = New Point(1217, 529)
+        EL_SouthA_Cursor_LBL.ForeColor = Color.Black
+        EL_SouthA_Cursor_LBL.Location = New Point(1217, 595)
         EL_SouthA_Cursor_LBL.Name = "EL_SouthA_Cursor_LBL"
         EL_SouthA_Cursor_LBL.Size = New Size(56, 20)
         EL_SouthA_Cursor_LBL.TabIndex = 38
@@ -637,13 +720,13 @@ Partial Class Form1
         ' AR_LinePres_Vis_CB
         ' 
         AR_LinePres_Vis_CB.Anchor = AnchorStyles.Top Or AnchorStyles.Right
-        AR_LinePres_Vis_CB.AutoSize = True
         AR_LinePres_Vis_CB.Checked = True
         AR_LinePres_Vis_CB.CheckState = CheckState.Checked
-        AR_LinePres_Vis_CB.ForeColor = Color.Silver
-        AR_LinePres_Vis_CB.Location = New Point(1278, 587)
+        AR_LinePres_Vis_CB.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
+        AR_LinePres_Vis_CB.ForeColor = Color.Black
+        AR_LinePres_Vis_CB.Location = New Point(1278, 653)
         AR_LinePres_Vis_CB.Name = "AR_LinePres_Vis_CB"
-        AR_LinePres_Vis_CB.Size = New Size(90, 19)
+        AR_LinePres_Vis_CB.Size = New Size(131, 19)
         AR_LinePres_Vis_CB.TabIndex = 12
         AR_LinePres_Vis_CB.Text = "AR_LinePres"
         AR_LinePres_Vis_CB.UseVisualStyleBackColor = True
@@ -652,8 +735,8 @@ Partial Class Form1
         ' 
         Label3.Anchor = AnchorStyles.Top Or AnchorStyles.Right
         Label3.AutoSize = True
-        Label3.ForeColor = Color.Silver
-        Label3.Location = New Point(1187, 56)
+        Label3.ForeColor = Color.Black
+        Label3.Location = New Point(1187, 122)
         Label3.Name = "Label3"
         Label3.Size = New Size(56, 15)
         Label3.TabIndex = 10
@@ -662,13 +745,13 @@ Partial Class Form1
         ' EL_SouthC_Vis_CB
         ' 
         EL_SouthC_Vis_CB.Anchor = AnchorStyles.Top Or AnchorStyles.Right
-        EL_SouthC_Vis_CB.AutoSize = True
         EL_SouthC_Vis_CB.Checked = True
         EL_SouthC_Vis_CB.CheckState = CheckState.Checked
-        EL_SouthC_Vis_CB.ForeColor = Color.Silver
-        EL_SouthC_Vis_CB.Location = New Point(1278, 568)
+        EL_SouthC_Vis_CB.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
+        EL_SouthC_Vis_CB.ForeColor = Color.Black
+        EL_SouthC_Vis_CB.Location = New Point(1278, 634)
         EL_SouthC_Vis_CB.Name = "EL_SouthC_Vis_CB"
-        EL_SouthC_Vis_CB.Size = New Size(82, 19)
+        EL_SouthC_Vis_CB.Size = New Size(131, 19)
         EL_SouthC_Vis_CB.TabIndex = 12
         EL_SouthC_Vis_CB.Text = "EL_SouthC"
         EL_SouthC_Vis_CB.UseVisualStyleBackColor = True
@@ -676,10 +759,10 @@ Partial Class Form1
         ' Label8
         ' 
         Label8.Anchor = AnchorStyles.Top Or AnchorStyles.Right
-        Label8.ForeColor = Color.Silver
-        Label8.Location = New Point(1192, 150)
+        Label8.ForeColor = Color.Black
+        Label8.Location = New Point(1217, 216)
         Label8.Name = "Label8"
-        Label8.Size = New Size(81, 15)
+        Label8.Size = New Size(56, 15)
         Label8.TabIndex = 12
         Label8.Text = "Cursor"
         Label8.TextAlign = ContentAlignment.MiddleLeft
@@ -688,8 +771,8 @@ Partial Class Form1
         ' 
         Label2.Anchor = AnchorStyles.Top Or AnchorStyles.Right
         Label2.AutoSize = True
-        Label2.ForeColor = Color.Silver
-        Label2.Location = New Point(1187, 9)
+        Label2.ForeColor = Color.Black
+        Label2.Location = New Point(1187, 75)
         Label2.Name = "Label2"
         Label2.Size = New Size(60, 15)
         Label2.TabIndex = 10
@@ -698,9 +781,9 @@ Partial Class Form1
         ' Label9
         ' 
         Label9.Anchor = AnchorStyles.Top Or AnchorStyles.Right
-        Label9.Font = New Font("Franklin Gothic Medium", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label9.ForeColor = Color.Silver
-        Label9.Location = New Point(1191, 617)
+        Label9.Font = New Font("Franklin Gothic Medium", 12F, FontStyle.Regular, GraphicsUnit.Point, 0)
+        Label9.ForeColor = Color.Black
+        Label9.Location = New Point(1191, 683)
         Label9.Name = "Label9"
         Label9.Size = New Size(207, 22)
         Label9.TabIndex = 12
@@ -710,9 +793,9 @@ Partial Class Form1
         ' Label42
         ' 
         Label42.Anchor = AnchorStyles.Top Or AnchorStyles.Right
-        Label42.Font = New Font("Franklin Gothic Medium", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label42.ForeColor = Color.Silver
-        Label42.Location = New Point(1191, 635)
+        Label42.Font = New Font("Franklin Gothic Medium", 12F, FontStyle.Regular, GraphicsUnit.Point, 0)
+        Label42.ForeColor = Color.Black
+        Label42.Location = New Point(1191, 701)
         Label42.Name = "Label42"
         Label42.Size = New Size(207, 22)
         Label42.TabIndex = 12
@@ -722,13 +805,13 @@ Partial Class Form1
         ' EL_SouthA_Vis_CB
         ' 
         EL_SouthA_Vis_CB.Anchor = AnchorStyles.Top Or AnchorStyles.Right
-        EL_SouthA_Vis_CB.AutoSize = True
         EL_SouthA_Vis_CB.Checked = True
         EL_SouthA_Vis_CB.CheckState = CheckState.Checked
-        EL_SouthA_Vis_CB.ForeColor = Color.Silver
-        EL_SouthA_Vis_CB.Location = New Point(1278, 530)
+        EL_SouthA_Vis_CB.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
+        EL_SouthA_Vis_CB.ForeColor = Color.Black
+        EL_SouthA_Vis_CB.Location = New Point(1278, 596)
         EL_SouthA_Vis_CB.Name = "EL_SouthA_Vis_CB"
-        EL_SouthA_Vis_CB.Size = New Size(82, 19)
+        EL_SouthA_Vis_CB.Size = New Size(131, 19)
         EL_SouthA_Vis_CB.TabIndex = 12
         EL_SouthA_Vis_CB.Text = "EL_SouthA"
         EL_SouthA_Vis_CB.UseVisualStyleBackColor = True
@@ -737,7 +820,8 @@ Partial Class Form1
         ' 
         AR_LinePres_Col_BTN.Anchor = AnchorStyles.Top Or AnchorStyles.Right
         AR_LinePres_Col_BTN.BorderStyle = BorderStyle.FixedSingle
-        AR_LinePres_Col_BTN.Location = New Point(1192, 586)
+        AR_LinePres_Col_BTN.ForeColor = Color.Black
+        AR_LinePres_Col_BTN.Location = New Point(1192, 652)
         AR_LinePres_Col_BTN.Name = "AR_LinePres_Col_BTN"
         AR_LinePres_Col_BTN.Size = New Size(20, 20)
         AR_LinePres_Col_BTN.TabIndex = 45
@@ -746,7 +830,8 @@ Partial Class Form1
         ' 
         ST_Flow_Col_BTN.Anchor = AnchorStyles.Top Or AnchorStyles.Right
         ST_Flow_Col_BTN.BorderStyle = BorderStyle.FixedSingle
-        ST_Flow_Col_BTN.Location = New Point(1192, 453)
+        ST_Flow_Col_BTN.ForeColor = Color.Black
+        ST_Flow_Col_BTN.Location = New Point(1192, 519)
         ST_Flow_Col_BTN.Name = "ST_Flow_Col_BTN"
         ST_Flow_Col_BTN.Size = New Size(20, 20)
         ST_Flow_Col_BTN.TabIndex = 65
@@ -754,13 +839,13 @@ Partial Class Form1
         ' EL_SouthB_Vis_CB
         ' 
         EL_SouthB_Vis_CB.Anchor = AnchorStyles.Top Or AnchorStyles.Right
-        EL_SouthB_Vis_CB.AutoSize = True
         EL_SouthB_Vis_CB.Checked = True
         EL_SouthB_Vis_CB.CheckState = CheckState.Checked
-        EL_SouthB_Vis_CB.ForeColor = Color.Silver
-        EL_SouthB_Vis_CB.Location = New Point(1278, 549)
+        EL_SouthB_Vis_CB.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
+        EL_SouthB_Vis_CB.ForeColor = Color.Black
+        EL_SouthB_Vis_CB.Location = New Point(1278, 615)
         EL_SouthB_Vis_CB.Name = "EL_SouthB_Vis_CB"
-        EL_SouthB_Vis_CB.Size = New Size(81, 19)
+        EL_SouthB_Vis_CB.Size = New Size(131, 19)
         EL_SouthB_Vis_CB.TabIndex = 12
         EL_SouthB_Vis_CB.Text = "EL_SouthB"
         EL_SouthB_Vis_CB.UseVisualStyleBackColor = True
@@ -769,7 +854,8 @@ Partial Class Form1
         ' 
         HW_Temp_Col_BTN.Anchor = AnchorStyles.Top Or AnchorStyles.Right
         HW_Temp_Col_BTN.BorderStyle = BorderStyle.FixedSingle
-        HW_Temp_Col_BTN.Location = New Point(1192, 301)
+        HW_Temp_Col_BTN.ForeColor = Color.Black
+        HW_Temp_Col_BTN.Location = New Point(1192, 367)
         HW_Temp_Col_BTN.Name = "HW_Temp_Col_BTN"
         HW_Temp_Col_BTN.Size = New Size(20, 20)
         HW_Temp_Col_BTN.TabIndex = 64
@@ -777,13 +863,13 @@ Partial Class Form1
         ' EL_NorthC_Vis_CB
         ' 
         EL_NorthC_Vis_CB.Anchor = AnchorStyles.Top Or AnchorStyles.Right
-        EL_NorthC_Vis_CB.AutoSize = True
         EL_NorthC_Vis_CB.Checked = True
         EL_NorthC_Vis_CB.CheckState = CheckState.Checked
-        EL_NorthC_Vis_CB.ForeColor = Color.Silver
-        EL_NorthC_Vis_CB.Location = New Point(1278, 511)
+        EL_NorthC_Vis_CB.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
+        EL_NorthC_Vis_CB.ForeColor = Color.Black
+        EL_NorthC_Vis_CB.Location = New Point(1278, 577)
         EL_NorthC_Vis_CB.Name = "EL_NorthC_Vis_CB"
-        EL_NorthC_Vis_CB.Size = New Size(82, 19)
+        EL_NorthC_Vis_CB.Size = New Size(131, 19)
         EL_NorthC_Vis_CB.TabIndex = 12
         EL_NorthC_Vis_CB.Text = "EL_NorthC"
         EL_NorthC_Vis_CB.UseVisualStyleBackColor = True
@@ -792,7 +878,8 @@ Partial Class Form1
         ' 
         EL_NorthC_Col_BTN.Anchor = AnchorStyles.Top Or AnchorStyles.Right
         EL_NorthC_Col_BTN.BorderStyle = BorderStyle.FixedSingle
-        EL_NorthC_Col_BTN.Location = New Point(1192, 510)
+        EL_NorthC_Col_BTN.ForeColor = Color.Black
+        EL_NorthC_Col_BTN.Location = New Point(1192, 576)
         EL_NorthC_Col_BTN.Name = "EL_NorthC_Col_BTN"
         EL_NorthC_Col_BTN.Size = New Size(20, 20)
         EL_NorthC_Col_BTN.TabIndex = 63
@@ -800,13 +887,13 @@ Partial Class Form1
         ' EL_NorthB_Vis_CB
         ' 
         EL_NorthB_Vis_CB.Anchor = AnchorStyles.Top Or AnchorStyles.Right
-        EL_NorthB_Vis_CB.AutoSize = True
         EL_NorthB_Vis_CB.Checked = True
         EL_NorthB_Vis_CB.CheckState = CheckState.Checked
-        EL_NorthB_Vis_CB.ForeColor = Color.Silver
-        EL_NorthB_Vis_CB.Location = New Point(1278, 492)
+        EL_NorthB_Vis_CB.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
+        EL_NorthB_Vis_CB.ForeColor = Color.Black
+        EL_NorthB_Vis_CB.Location = New Point(1278, 558)
         EL_NorthB_Vis_CB.Name = "EL_NorthB_Vis_CB"
-        EL_NorthB_Vis_CB.Size = New Size(81, 19)
+        EL_NorthB_Vis_CB.Size = New Size(131, 19)
         EL_NorthB_Vis_CB.TabIndex = 12
         EL_NorthB_Vis_CB.Text = "EL_NorthB"
         EL_NorthB_Vis_CB.UseVisualStyleBackColor = True
@@ -815,7 +902,8 @@ Partial Class Form1
         ' 
         ST_LowPres_Col_BTN.Anchor = AnchorStyles.Top Or AnchorStyles.Right
         ST_LowPres_Col_BTN.BorderStyle = BorderStyle.FixedSingle
-        ST_LowPres_Col_BTN.Location = New Point(1192, 377)
+        ST_LowPres_Col_BTN.ForeColor = Color.Black
+        ST_LowPres_Col_BTN.Location = New Point(1192, 443)
         ST_LowPres_Col_BTN.Name = "ST_LowPres_Col_BTN"
         ST_LowPres_Col_BTN.Size = New Size(20, 20)
         ST_LowPres_Col_BTN.TabIndex = 62
@@ -823,13 +911,13 @@ Partial Class Form1
         ' EL_NorthA_Vis_CB
         ' 
         EL_NorthA_Vis_CB.Anchor = AnchorStyles.Top Or AnchorStyles.Right
-        EL_NorthA_Vis_CB.AutoSize = True
         EL_NorthA_Vis_CB.Checked = True
         EL_NorthA_Vis_CB.CheckState = CheckState.Checked
-        EL_NorthA_Vis_CB.ForeColor = Color.Silver
-        EL_NorthA_Vis_CB.Location = New Point(1278, 473)
+        EL_NorthA_Vis_CB.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
+        EL_NorthA_Vis_CB.ForeColor = Color.Black
+        EL_NorthA_Vis_CB.Location = New Point(1278, 539)
         EL_NorthA_Vis_CB.Name = "EL_NorthA_Vis_CB"
-        EL_NorthA_Vis_CB.Size = New Size(82, 19)
+        EL_NorthA_Vis_CB.Size = New Size(131, 19)
         EL_NorthA_Vis_CB.TabIndex = 12
         EL_NorthA_Vis_CB.Text = "EL_NorthA"
         EL_NorthA_Vis_CB.UseVisualStyleBackColor = True
@@ -837,13 +925,13 @@ Partial Class Form1
         ' ST_Flow_Vis_CB
         ' 
         ST_Flow_Vis_CB.Anchor = AnchorStyles.Top Or AnchorStyles.Right
-        ST_Flow_Vis_CB.AutoSize = True
         ST_Flow_Vis_CB.Checked = True
         ST_Flow_Vis_CB.CheckState = CheckState.Checked
-        ST_Flow_Vis_CB.ForeColor = Color.Silver
-        ST_Flow_Vis_CB.Location = New Point(1278, 454)
+        ST_Flow_Vis_CB.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
+        ST_Flow_Vis_CB.ForeColor = Color.Black
+        ST_Flow_Vis_CB.Location = New Point(1278, 520)
         ST_Flow_Vis_CB.Name = "ST_Flow_Vis_CB"
-        ST_Flow_Vis_CB.Size = New Size(68, 19)
+        ST_Flow_Vis_CB.Size = New Size(131, 19)
         ST_Flow_Vis_CB.TabIndex = 12
         ST_Flow_Vis_CB.Text = "ST_Flow"
         ST_Flow_Vis_CB.UseVisualStyleBackColor = True
@@ -852,7 +940,8 @@ Partial Class Form1
         ' 
         CW_FiltDif_Col_BTN.Anchor = AnchorStyles.Top Or AnchorStyles.Right
         CW_FiltDif_Col_BTN.BorderStyle = BorderStyle.FixedSingle
-        CW_FiltDif_Col_BTN.Location = New Point(1192, 225)
+        CW_FiltDif_Col_BTN.ForeColor = Color.Black
+        CW_FiltDif_Col_BTN.Location = New Point(1192, 291)
         CW_FiltDif_Col_BTN.Name = "CW_FiltDif_Col_BTN"
         CW_FiltDif_Col_BTN.Size = New Size(20, 20)
         CW_FiltDif_Col_BTN.TabIndex = 61
@@ -860,13 +949,13 @@ Partial Class Form1
         ' ST_LowDem_Vis_CB
         ' 
         ST_LowDem_Vis_CB.Anchor = AnchorStyles.Top Or AnchorStyles.Right
-        ST_LowDem_Vis_CB.AutoSize = True
         ST_LowDem_Vis_CB.Checked = True
         ST_LowDem_Vis_CB.CheckState = CheckState.Checked
-        ST_LowDem_Vis_CB.ForeColor = Color.Silver
-        ST_LowDem_Vis_CB.Location = New Point(1278, 416)
+        ST_LowDem_Vis_CB.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
+        ST_LowDem_Vis_CB.ForeColor = Color.Black
+        ST_LowDem_Vis_CB.Location = New Point(1278, 482)
         ST_LowDem_Vis_CB.Name = "ST_LowDem_Vis_CB"
-        ST_LowDem_Vis_CB.Size = New Size(90, 19)
+        ST_LowDem_Vis_CB.Size = New Size(131, 19)
         ST_LowDem_Vis_CB.TabIndex = 12
         ST_LowDem_Vis_CB.Text = "ST_LowDem"
         ST_LowDem_Vis_CB.UseVisualStyleBackColor = True
@@ -874,13 +963,13 @@ Partial Class Form1
         ' ST_MedDem_Vis_CB
         ' 
         ST_MedDem_Vis_CB.Anchor = AnchorStyles.Top Or AnchorStyles.Right
-        ST_MedDem_Vis_CB.AutoSize = True
         ST_MedDem_Vis_CB.Checked = True
         ST_MedDem_Vis_CB.CheckState = CheckState.Checked
-        ST_MedDem_Vis_CB.ForeColor = Color.Silver
-        ST_MedDem_Vis_CB.Location = New Point(1278, 435)
+        ST_MedDem_Vis_CB.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
+        ST_MedDem_Vis_CB.ForeColor = Color.Black
+        ST_MedDem_Vis_CB.Location = New Point(1278, 501)
         ST_MedDem_Vis_CB.Name = "ST_MedDem_Vis_CB"
-        ST_MedDem_Vis_CB.Size = New Size(92, 19)
+        ST_MedDem_Vis_CB.Size = New Size(131, 19)
         ST_MedDem_Vis_CB.TabIndex = 12
         ST_MedDem_Vis_CB.Text = "ST_MedDem"
         ST_MedDem_Vis_CB.UseVisualStyleBackColor = True
@@ -889,7 +978,8 @@ Partial Class Form1
         ' 
         EL_SouthB_Col_BTN.Anchor = AnchorStyles.Top Or AnchorStyles.Right
         EL_SouthB_Col_BTN.BorderStyle = BorderStyle.FixedSingle
-        EL_SouthB_Col_BTN.Location = New Point(1192, 548)
+        EL_SouthB_Col_BTN.ForeColor = Color.Black
+        EL_SouthB_Col_BTN.Location = New Point(1192, 614)
         EL_SouthB_Col_BTN.Name = "EL_SouthB_Col_BTN"
         EL_SouthB_Col_BTN.Size = New Size(20, 20)
         EL_SouthB_Col_BTN.TabIndex = 60
@@ -898,7 +988,8 @@ Partial Class Form1
         ' 
         ST_LowDem_Col_BTN.Anchor = AnchorStyles.Top Or AnchorStyles.Right
         ST_LowDem_Col_BTN.BorderStyle = BorderStyle.FixedSingle
-        ST_LowDem_Col_BTN.Location = New Point(1192, 415)
+        ST_LowDem_Col_BTN.ForeColor = Color.Black
+        ST_LowDem_Col_BTN.Location = New Point(1192, 481)
         ST_LowDem_Col_BTN.Name = "ST_LowDem_Col_BTN"
         ST_LowDem_Col_BTN.Size = New Size(20, 20)
         ST_LowDem_Col_BTN.TabIndex = 59
@@ -907,7 +998,8 @@ Partial Class Form1
         ' 
         HW_PostFiltPres_Col_BTN.Anchor = AnchorStyles.Top Or AnchorStyles.Right
         HW_PostFiltPres_Col_BTN.BorderStyle = BorderStyle.FixedSingle
-        HW_PostFiltPres_Col_BTN.Location = New Point(1192, 263)
+        HW_PostFiltPres_Col_BTN.ForeColor = Color.Black
+        HW_PostFiltPres_Col_BTN.Location = New Point(1192, 329)
         HW_PostFiltPres_Col_BTN.Name = "HW_PostFiltPres_Col_BTN"
         HW_PostFiltPres_Col_BTN.Size = New Size(20, 20)
         HW_PostFiltPres_Col_BTN.TabIndex = 58
@@ -915,13 +1007,13 @@ Partial Class Form1
         ' ST_MedPres_Vis_CB
         ' 
         ST_MedPres_Vis_CB.Anchor = AnchorStyles.Top Or AnchorStyles.Right
-        ST_MedPres_Vis_CB.AutoSize = True
         ST_MedPres_Vis_CB.Checked = True
         ST_MedPres_Vis_CB.CheckState = CheckState.Checked
-        ST_MedPres_Vis_CB.ForeColor = Color.Silver
-        ST_MedPres_Vis_CB.Location = New Point(1278, 397)
+        ST_MedPres_Vis_CB.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
+        ST_MedPres_Vis_CB.ForeColor = Color.Black
+        ST_MedPres_Vis_CB.Location = New Point(1278, 463)
         ST_MedPres_Vis_CB.Name = "ST_MedPres_Vis_CB"
-        ST_MedPres_Vis_CB.Size = New Size(89, 19)
+        ST_MedPres_Vis_CB.Size = New Size(131, 19)
         ST_MedPres_Vis_CB.TabIndex = 12
         ST_MedPres_Vis_CB.Text = "ST_MedPres"
         ST_MedPres_Vis_CB.UseVisualStyleBackColor = True
@@ -930,7 +1022,8 @@ Partial Class Form1
         ' 
         EL_NorthA_Col_BTN.Anchor = AnchorStyles.Top Or AnchorStyles.Right
         EL_NorthA_Col_BTN.BorderStyle = BorderStyle.FixedSingle
-        EL_NorthA_Col_BTN.Location = New Point(1192, 472)
+        EL_NorthA_Col_BTN.ForeColor = Color.Black
+        EL_NorthA_Col_BTN.Location = New Point(1192, 538)
         EL_NorthA_Col_BTN.Name = "EL_NorthA_Col_BTN"
         EL_NorthA_Col_BTN.Size = New Size(20, 20)
         EL_NorthA_Col_BTN.TabIndex = 57
@@ -938,13 +1031,13 @@ Partial Class Form1
         ' ST_LowPres_Vis_CB
         ' 
         ST_LowPres_Vis_CB.Anchor = AnchorStyles.Top Or AnchorStyles.Right
-        ST_LowPres_Vis_CB.AutoSize = True
         ST_LowPres_Vis_CB.Checked = True
         ST_LowPres_Vis_CB.CheckState = CheckState.Checked
-        ST_LowPres_Vis_CB.ForeColor = Color.Silver
-        ST_LowPres_Vis_CB.Location = New Point(1278, 378)
+        ST_LowPres_Vis_CB.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
+        ST_LowPres_Vis_CB.ForeColor = Color.Black
+        ST_LowPres_Vis_CB.Location = New Point(1278, 444)
         ST_LowPres_Vis_CB.Name = "ST_LowPres_Vis_CB"
-        ST_LowPres_Vis_CB.Size = New Size(87, 19)
+        ST_LowPres_Vis_CB.Size = New Size(131, 19)
         ST_LowPres_Vis_CB.TabIndex = 12
         ST_LowPres_Vis_CB.Text = "ST_LowPres"
         ST_LowPres_Vis_CB.UseVisualStyleBackColor = True
@@ -953,7 +1046,8 @@ Partial Class Form1
         ' 
         ST_FeedWaterPres_Col_BTN.Anchor = AnchorStyles.Top Or AnchorStyles.Right
         ST_FeedWaterPres_Col_BTN.BorderStyle = BorderStyle.FixedSingle
-        ST_FeedWaterPres_Col_BTN.Location = New Point(1192, 339)
+        ST_FeedWaterPres_Col_BTN.ForeColor = Color.Black
+        ST_FeedWaterPres_Col_BTN.Location = New Point(1192, 405)
         ST_FeedWaterPres_Col_BTN.Name = "ST_FeedWaterPres_Col_BTN"
         ST_FeedWaterPres_Col_BTN.Size = New Size(20, 20)
         ST_FeedWaterPres_Col_BTN.TabIndex = 66
@@ -961,13 +1055,13 @@ Partial Class Form1
         ' ST_FeedWaterPres_Vis_CB
         ' 
         ST_FeedWaterPres_Vis_CB.Anchor = AnchorStyles.Top Or AnchorStyles.Right
-        ST_FeedWaterPres_Vis_CB.AutoSize = True
         ST_FeedWaterPres_Vis_CB.Checked = True
         ST_FeedWaterPres_Vis_CB.CheckState = CheckState.Checked
-        ST_FeedWaterPres_Vis_CB.ForeColor = Color.Silver
-        ST_FeedWaterPres_Vis_CB.Location = New Point(1278, 340)
+        ST_FeedWaterPres_Vis_CB.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
+        ST_FeedWaterPres_Vis_CB.ForeColor = Color.Black
+        ST_FeedWaterPres_Vis_CB.Location = New Point(1278, 406)
         ST_FeedWaterPres_Vis_CB.Name = "ST_FeedWaterPres_Vis_CB"
-        ST_FeedWaterPres_Vis_CB.Size = New Size(121, 19)
+        ST_FeedWaterPres_Vis_CB.Size = New Size(131, 19)
         ST_FeedWaterPres_Vis_CB.TabIndex = 12
         ST_FeedWaterPres_Vis_CB.Text = "ST_FeedWaterPres"
         ST_FeedWaterPres_Vis_CB.UseVisualStyleBackColor = True
@@ -975,13 +1069,13 @@ Partial Class Form1
         ' ST_HeadPres_Vis_CB
         ' 
         ST_HeadPres_Vis_CB.Anchor = AnchorStyles.Top Or AnchorStyles.Right
-        ST_HeadPres_Vis_CB.AutoSize = True
         ST_HeadPres_Vis_CB.Checked = True
         ST_HeadPres_Vis_CB.CheckState = CheckState.Checked
-        ST_HeadPres_Vis_CB.ForeColor = Color.Silver
-        ST_HeadPres_Vis_CB.Location = New Point(1278, 359)
+        ST_HeadPres_Vis_CB.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
+        ST_HeadPres_Vis_CB.ForeColor = Color.Black
+        ST_HeadPres_Vis_CB.Location = New Point(1278, 425)
         ST_HeadPres_Vis_CB.Name = "ST_HeadPres_Vis_CB"
-        ST_HeadPres_Vis_CB.Size = New Size(93, 19)
+        ST_HeadPres_Vis_CB.Size = New Size(131, 19)
         ST_HeadPres_Vis_CB.TabIndex = 12
         ST_HeadPres_Vis_CB.Text = "ST_HeadPres"
         ST_HeadPres_Vis_CB.UseVisualStyleBackColor = True
@@ -990,7 +1084,8 @@ Partial Class Form1
         ' 
         EL_SouthC_Col_BTN.Anchor = AnchorStyles.Top Or AnchorStyles.Right
         EL_SouthC_Col_BTN.BorderStyle = BorderStyle.FixedSingle
-        EL_SouthC_Col_BTN.Location = New Point(1192, 567)
+        EL_SouthC_Col_BTN.ForeColor = Color.Black
+        EL_SouthC_Col_BTN.Location = New Point(1192, 633)
         EL_SouthC_Col_BTN.Name = "EL_SouthC_Col_BTN"
         EL_SouthC_Col_BTN.Size = New Size(20, 20)
         EL_SouthC_Col_BTN.TabIndex = 56
@@ -998,13 +1093,13 @@ Partial Class Form1
         ' HW_Temp_Vis_CB
         ' 
         HW_Temp_Vis_CB.Anchor = AnchorStyles.Top Or AnchorStyles.Right
-        HW_Temp_Vis_CB.AutoSize = True
         HW_Temp_Vis_CB.Checked = True
         HW_Temp_Vis_CB.CheckState = CheckState.Checked
-        HW_Temp_Vis_CB.ForeColor = Color.Silver
-        HW_Temp_Vis_CB.Location = New Point(1278, 302)
+        HW_Temp_Vis_CB.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
+        HW_Temp_Vis_CB.ForeColor = Color.Black
+        HW_Temp_Vis_CB.Location = New Point(1278, 368)
         HW_Temp_Vis_CB.Name = "HW_Temp_Vis_CB"
-        HW_Temp_Vis_CB.Size = New Size(80, 19)
+        HW_Temp_Vis_CB.Size = New Size(131, 19)
         HW_Temp_Vis_CB.TabIndex = 12
         HW_Temp_Vis_CB.Text = "HW_Temp"
         HW_Temp_Vis_CB.UseVisualStyleBackColor = True
@@ -1013,7 +1108,8 @@ Partial Class Form1
         ' 
         CW_PreFiltPres_Col_BTN.Anchor = AnchorStyles.Top Or AnchorStyles.Right
         CW_PreFiltPres_Col_BTN.BorderStyle = BorderStyle.FixedSingle
-        CW_PreFiltPres_Col_BTN.Location = New Point(1192, 187)
+        CW_PreFiltPres_Col_BTN.ForeColor = Color.Black
+        CW_PreFiltPres_Col_BTN.Location = New Point(1192, 253)
         CW_PreFiltPres_Col_BTN.Name = "CW_PreFiltPres_Col_BTN"
         CW_PreFiltPres_Col_BTN.Size = New Size(20, 20)
         CW_PreFiltPres_Col_BTN.TabIndex = 54
@@ -1022,7 +1118,8 @@ Partial Class Form1
         ' 
         ST_MedDem_Col_BTN.Anchor = AnchorStyles.Top Or AnchorStyles.Right
         ST_MedDem_Col_BTN.BorderStyle = BorderStyle.FixedSingle
-        ST_MedDem_Col_BTN.Location = New Point(1192, 434)
+        ST_MedDem_Col_BTN.ForeColor = Color.Black
+        ST_MedDem_Col_BTN.Location = New Point(1192, 500)
         ST_MedDem_Col_BTN.Name = "ST_MedDem_Col_BTN"
         ST_MedDem_Col_BTN.Size = New Size(20, 20)
         ST_MedDem_Col_BTN.TabIndex = 53
@@ -1030,13 +1127,13 @@ Partial Class Form1
         ' HW_Flow_Vis_CB
         ' 
         HW_Flow_Vis_CB.Anchor = AnchorStyles.Top Or AnchorStyles.Right
-        HW_Flow_Vis_CB.AutoSize = True
         HW_Flow_Vis_CB.Checked = True
         HW_Flow_Vis_CB.CheckState = CheckState.Checked
-        HW_Flow_Vis_CB.ForeColor = Color.Silver
-        HW_Flow_Vis_CB.Location = New Point(1278, 321)
+        HW_Flow_Vis_CB.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
+        HW_Flow_Vis_CB.ForeColor = Color.Black
+        HW_Flow_Vis_CB.Location = New Point(1278, 387)
         HW_Flow_Vis_CB.Name = "HW_Flow_Vis_CB"
-        HW_Flow_Vis_CB.Size = New Size(76, 19)
+        HW_Flow_Vis_CB.Size = New Size(131, 19)
         HW_Flow_Vis_CB.TabIndex = 12
         HW_Flow_Vis_CB.Text = "HW_Flow"
         HW_Flow_Vis_CB.UseVisualStyleBackColor = True
@@ -1045,7 +1142,8 @@ Partial Class Form1
         ' 
         EL_NorthB_Col_BTN.Anchor = AnchorStyles.Top Or AnchorStyles.Right
         EL_NorthB_Col_BTN.BorderStyle = BorderStyle.FixedSingle
-        EL_NorthB_Col_BTN.Location = New Point(1192, 491)
+        EL_NorthB_Col_BTN.ForeColor = Color.Black
+        EL_NorthB_Col_BTN.Location = New Point(1192, 557)
         EL_NorthB_Col_BTN.Name = "EL_NorthB_Col_BTN"
         EL_NorthB_Col_BTN.Size = New Size(20, 20)
         EL_NorthB_Col_BTN.TabIndex = 52
@@ -1053,13 +1151,13 @@ Partial Class Form1
         ' HW_FiltDif_Vis_CB
         ' 
         HW_FiltDif_Vis_CB.Anchor = AnchorStyles.Top Or AnchorStyles.Right
-        HW_FiltDif_Vis_CB.AutoSize = True
         HW_FiltDif_Vis_CB.Checked = True
         HW_FiltDif_Vis_CB.CheckState = CheckState.Checked
-        HW_FiltDif_Vis_CB.ForeColor = Color.Silver
-        HW_FiltDif_Vis_CB.Location = New Point(1278, 283)
+        HW_FiltDif_Vis_CB.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
+        HW_FiltDif_Vis_CB.ForeColor = Color.Black
+        HW_FiltDif_Vis_CB.Location = New Point(1278, 349)
         HW_FiltDif_Vis_CB.Name = "HW_FiltDif_Vis_CB"
-        HW_FiltDif_Vis_CB.Size = New Size(82, 19)
+        HW_FiltDif_Vis_CB.Size = New Size(131, 19)
         HW_FiltDif_Vis_CB.TabIndex = 12
         HW_FiltDif_Vis_CB.Text = "HW_FiltDif"
         HW_FiltDif_Vis_CB.UseVisualStyleBackColor = True
@@ -1068,7 +1166,8 @@ Partial Class Form1
         ' 
         HW_FiltDif_Col_BTN.Anchor = AnchorStyles.Top Or AnchorStyles.Right
         HW_FiltDif_Col_BTN.BorderStyle = BorderStyle.FixedSingle
-        HW_FiltDif_Col_BTN.Location = New Point(1192, 282)
+        HW_FiltDif_Col_BTN.ForeColor = Color.Black
+        HW_FiltDif_Col_BTN.Location = New Point(1192, 348)
         HW_FiltDif_Col_BTN.Name = "HW_FiltDif_Col_BTN"
         HW_FiltDif_Col_BTN.Size = New Size(20, 20)
         HW_FiltDif_Col_BTN.TabIndex = 51
@@ -1076,13 +1175,13 @@ Partial Class Form1
         ' HW_PostFiltPres_Vis_CB
         ' 
         HW_PostFiltPres_Vis_CB.Anchor = AnchorStyles.Top Or AnchorStyles.Right
-        HW_PostFiltPres_Vis_CB.AutoSize = True
         HW_PostFiltPres_Vis_CB.Checked = True
         HW_PostFiltPres_Vis_CB.CheckState = CheckState.Checked
-        HW_PostFiltPres_Vis_CB.ForeColor = Color.Silver
-        HW_PostFiltPres_Vis_CB.Location = New Point(1278, 264)
+        HW_PostFiltPres_Vis_CB.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
+        HW_PostFiltPres_Vis_CB.ForeColor = Color.Black
+        HW_PostFiltPres_Vis_CB.Location = New Point(1278, 330)
         HW_PostFiltPres_Vis_CB.Name = "HW_PostFiltPres_Vis_CB"
-        HW_PostFiltPres_Vis_CB.Size = New Size(112, 19)
+        HW_PostFiltPres_Vis_CB.Size = New Size(131, 19)
         HW_PostFiltPres_Vis_CB.TabIndex = 12
         HW_PostFiltPres_Vis_CB.Text = "HW_PostFiltPres"
         HW_PostFiltPres_Vis_CB.UseVisualStyleBackColor = True
@@ -1091,7 +1190,8 @@ Partial Class Form1
         ' 
         ST_HeadPres_Col_BTN.Anchor = AnchorStyles.Top Or AnchorStyles.Right
         ST_HeadPres_Col_BTN.BorderStyle = BorderStyle.FixedSingle
-        ST_HeadPres_Col_BTN.Location = New Point(1192, 358)
+        ST_HeadPres_Col_BTN.ForeColor = Color.Black
+        ST_HeadPres_Col_BTN.Location = New Point(1192, 424)
         ST_HeadPres_Col_BTN.Name = "ST_HeadPres_Col_BTN"
         ST_HeadPres_Col_BTN.Size = New Size(20, 20)
         ST_HeadPres_Col_BTN.TabIndex = 50
@@ -1099,13 +1199,13 @@ Partial Class Form1
         ' HW_PreFiltPres_Vis_CB
         ' 
         HW_PreFiltPres_Vis_CB.Anchor = AnchorStyles.Top Or AnchorStyles.Right
-        HW_PreFiltPres_Vis_CB.AutoSize = True
         HW_PreFiltPres_Vis_CB.Checked = True
         HW_PreFiltPres_Vis_CB.CheckState = CheckState.Checked
-        HW_PreFiltPres_Vis_CB.ForeColor = Color.Silver
-        HW_PreFiltPres_Vis_CB.Location = New Point(1278, 245)
+        HW_PreFiltPres_Vis_CB.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
+        HW_PreFiltPres_Vis_CB.ForeColor = Color.Black
+        HW_PreFiltPres_Vis_CB.Location = New Point(1278, 311)
         HW_PreFiltPres_Vis_CB.Name = "HW_PreFiltPres_Vis_CB"
-        HW_PreFiltPres_Vis_CB.Size = New Size(106, 19)
+        HW_PreFiltPres_Vis_CB.Size = New Size(131, 19)
         HW_PreFiltPres_Vis_CB.TabIndex = 12
         HW_PreFiltPres_Vis_CB.Text = "HW_PreFiltPres"
         HW_PreFiltPres_Vis_CB.UseVisualStyleBackColor = True
@@ -1113,13 +1213,13 @@ Partial Class Form1
         ' CW_FiltDif_Vis_CB
         ' 
         CW_FiltDif_Vis_CB.Anchor = AnchorStyles.Top Or AnchorStyles.Right
-        CW_FiltDif_Vis_CB.AutoSize = True
         CW_FiltDif_Vis_CB.Checked = True
         CW_FiltDif_Vis_CB.CheckState = CheckState.Checked
-        CW_FiltDif_Vis_CB.ForeColor = Color.Silver
-        CW_FiltDif_Vis_CB.Location = New Point(1278, 226)
+        CW_FiltDif_Vis_CB.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
+        CW_FiltDif_Vis_CB.ForeColor = Color.Black
+        CW_FiltDif_Vis_CB.Location = New Point(1278, 292)
         CW_FiltDif_Vis_CB.Name = "CW_FiltDif_Vis_CB"
-        CW_FiltDif_Vis_CB.Size = New Size(81, 19)
+        CW_FiltDif_Vis_CB.Size = New Size(131, 19)
         CW_FiltDif_Vis_CB.TabIndex = 12
         CW_FiltDif_Vis_CB.Text = "CW_FiltDif"
         CW_FiltDif_Vis_CB.UseVisualStyleBackColor = True
@@ -1128,7 +1228,8 @@ Partial Class Form1
         ' 
         EL_SouthA_Col_BTN.Anchor = AnchorStyles.Top Or AnchorStyles.Right
         EL_SouthA_Col_BTN.BorderStyle = BorderStyle.FixedSingle
-        EL_SouthA_Col_BTN.Location = New Point(1192, 529)
+        EL_SouthA_Col_BTN.ForeColor = Color.Black
+        EL_SouthA_Col_BTN.Location = New Point(1192, 595)
         EL_SouthA_Col_BTN.Name = "EL_SouthA_Col_BTN"
         EL_SouthA_Col_BTN.Size = New Size(20, 20)
         EL_SouthA_Col_BTN.TabIndex = 49
@@ -1136,13 +1237,13 @@ Partial Class Form1
         ' CW_PreFiltPres_Vis_CB
         ' 
         CW_PreFiltPres_Vis_CB.Anchor = AnchorStyles.Top Or AnchorStyles.Right
-        CW_PreFiltPres_Vis_CB.AutoSize = True
         CW_PreFiltPres_Vis_CB.Checked = True
         CW_PreFiltPres_Vis_CB.CheckState = CheckState.Checked
-        CW_PreFiltPres_Vis_CB.ForeColor = Color.Silver
-        CW_PreFiltPres_Vis_CB.Location = New Point(1278, 188)
+        CW_PreFiltPres_Vis_CB.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
+        CW_PreFiltPres_Vis_CB.ForeColor = Color.Black
+        CW_PreFiltPres_Vis_CB.Location = New Point(1278, 254)
         CW_PreFiltPres_Vis_CB.Name = "CW_PreFiltPres_Vis_CB"
-        CW_PreFiltPres_Vis_CB.Size = New Size(105, 19)
+        CW_PreFiltPres_Vis_CB.Size = New Size(131, 19)
         CW_PreFiltPres_Vis_CB.TabIndex = 12
         CW_PreFiltPres_Vis_CB.Text = "CW_PreFiltPres"
         CW_PreFiltPres_Vis_CB.UseVisualStyleBackColor = True
@@ -1151,7 +1252,8 @@ Partial Class Form1
         ' 
         CW_PostFiltPres_Col_BTN.Anchor = AnchorStyles.Top Or AnchorStyles.Right
         CW_PostFiltPres_Col_BTN.BorderStyle = BorderStyle.FixedSingle
-        CW_PostFiltPres_Col_BTN.Location = New Point(1192, 206)
+        CW_PostFiltPres_Col_BTN.ForeColor = Color.Black
+        CW_PostFiltPres_Col_BTN.Location = New Point(1192, 272)
         CW_PostFiltPres_Col_BTN.Name = "CW_PostFiltPres_Col_BTN"
         CW_PostFiltPres_Col_BTN.Size = New Size(20, 20)
         CW_PostFiltPres_Col_BTN.TabIndex = 48
@@ -1160,7 +1262,8 @@ Partial Class Form1
         ' 
         ST_MedPres_Col_BTN.Anchor = AnchorStyles.Top Or AnchorStyles.Right
         ST_MedPres_Col_BTN.BorderStyle = BorderStyle.FixedSingle
-        ST_MedPres_Col_BTN.Location = New Point(1192, 396)
+        ST_MedPres_Col_BTN.ForeColor = Color.Black
+        ST_MedPres_Col_BTN.Location = New Point(1192, 462)
         ST_MedPres_Col_BTN.Name = "ST_MedPres_Col_BTN"
         ST_MedPres_Col_BTN.Size = New Size(20, 20)
         ST_MedPres_Col_BTN.TabIndex = 47
@@ -1168,13 +1271,13 @@ Partial Class Form1
         ' CW_PostFiltPres_Vis_CB
         ' 
         CW_PostFiltPres_Vis_CB.Anchor = AnchorStyles.Top Or AnchorStyles.Right
-        CW_PostFiltPres_Vis_CB.AutoSize = True
         CW_PostFiltPres_Vis_CB.Checked = True
         CW_PostFiltPres_Vis_CB.CheckState = CheckState.Checked
-        CW_PostFiltPres_Vis_CB.ForeColor = Color.Silver
-        CW_PostFiltPres_Vis_CB.Location = New Point(1278, 207)
+        CW_PostFiltPres_Vis_CB.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
+        CW_PostFiltPres_Vis_CB.ForeColor = Color.Black
+        CW_PostFiltPres_Vis_CB.Location = New Point(1278, 273)
         CW_PostFiltPres_Vis_CB.Name = "CW_PostFiltPres_Vis_CB"
-        CW_PostFiltPres_Vis_CB.Size = New Size(111, 19)
+        CW_PostFiltPres_Vis_CB.Size = New Size(131, 19)
         CW_PostFiltPres_Vis_CB.TabIndex = 12
         CW_PostFiltPres_Vis_CB.Text = "CW_PostFiltPres"
         CW_PostFiltPres_Vis_CB.UseVisualStyleBackColor = True
@@ -1183,7 +1286,8 @@ Partial Class Form1
         ' 
         HW_PreFiltPres_Col_BTN.Anchor = AnchorStyles.Top Or AnchorStyles.Right
         HW_PreFiltPres_Col_BTN.BorderStyle = BorderStyle.FixedSingle
-        HW_PreFiltPres_Col_BTN.Location = New Point(1192, 244)
+        HW_PreFiltPres_Col_BTN.ForeColor = Color.Black
+        HW_PreFiltPres_Col_BTN.Location = New Point(1192, 310)
         HW_PreFiltPres_Col_BTN.Name = "HW_PreFiltPres_Col_BTN"
         HW_PreFiltPres_Col_BTN.Size = New Size(20, 20)
         HW_PreFiltPres_Col_BTN.TabIndex = 46
@@ -1191,13 +1295,13 @@ Partial Class Form1
         ' CW_Supply_Vis_CB
         ' 
         CW_Supply_Vis_CB.Anchor = AnchorStyles.Top Or AnchorStyles.Right
-        CW_Supply_Vis_CB.AutoSize = True
         CW_Supply_Vis_CB.Checked = True
         CW_Supply_Vis_CB.CheckState = CheckState.Checked
-        CW_Supply_Vis_CB.ForeColor = Color.Silver
-        CW_Supply_Vis_CB.Location = New Point(1278, 169)
+        CW_Supply_Vis_CB.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
+        CW_Supply_Vis_CB.ForeColor = Color.Black
+        CW_Supply_Vis_CB.Location = New Point(1278, 235)
         CW_Supply_Vis_CB.Name = "CW_Supply_Vis_CB"
-        CW_Supply_Vis_CB.Size = New Size(86, 19)
+        CW_Supply_Vis_CB.Size = New Size(131, 19)
         CW_Supply_Vis_CB.TabIndex = 12
         CW_Supply_Vis_CB.Text = "CW_Supply"
         CW_Supply_Vis_CB.UseVisualStyleBackColor = True
@@ -1206,7 +1310,8 @@ Partial Class Form1
         ' 
         HW_Flow_Col_BTN.Anchor = AnchorStyles.Top Or AnchorStyles.Right
         HW_Flow_Col_BTN.BorderStyle = BorderStyle.FixedSingle
-        HW_Flow_Col_BTN.Location = New Point(1192, 320)
+        HW_Flow_Col_BTN.ForeColor = Color.Black
+        HW_Flow_Col_BTN.Location = New Point(1192, 386)
         HW_Flow_Col_BTN.Name = "HW_Flow_Col_BTN"
         HW_Flow_Col_BTN.Size = New Size(20, 20)
         HW_Flow_Col_BTN.TabIndex = 55
@@ -1215,7 +1320,8 @@ Partial Class Form1
         ' 
         CW_Supply_Col_BTN.Anchor = AnchorStyles.Top Or AnchorStyles.Right
         CW_Supply_Col_BTN.BorderStyle = BorderStyle.FixedSingle
-        CW_Supply_Col_BTN.Location = New Point(1192, 168)
+        CW_Supply_Col_BTN.ForeColor = Color.Black
+        CW_Supply_Col_BTN.Location = New Point(1192, 234)
         CW_Supply_Col_BTN.Name = "CW_Supply_Col_BTN"
         CW_Supply_Col_BTN.Size = New Size(20, 20)
         CW_Supply_Col_BTN.TabIndex = 67
@@ -1224,8 +1330,8 @@ Partial Class Form1
         ' 
         EL_NorthA_Cursor_LBL.Anchor = AnchorStyles.Top Or AnchorStyles.Right
         EL_NorthA_Cursor_LBL.BorderStyle = BorderStyle.FixedSingle
-        EL_NorthA_Cursor_LBL.ForeColor = Color.Silver
-        EL_NorthA_Cursor_LBL.Location = New Point(1217, 472)
+        EL_NorthA_Cursor_LBL.ForeColor = Color.Black
+        EL_NorthA_Cursor_LBL.Location = New Point(1217, 538)
         EL_NorthA_Cursor_LBL.Name = "EL_NorthA_Cursor_LBL"
         EL_NorthA_Cursor_LBL.Size = New Size(56, 20)
         EL_NorthA_Cursor_LBL.TabIndex = 29
@@ -1236,8 +1342,8 @@ Partial Class Form1
         ' 
         CW_FiltDif_Cursor_LBL.Anchor = AnchorStyles.Top Or AnchorStyles.Right
         CW_FiltDif_Cursor_LBL.BorderStyle = BorderStyle.FixedSingle
-        CW_FiltDif_Cursor_LBL.ForeColor = Color.Silver
-        CW_FiltDif_Cursor_LBL.Location = New Point(1217, 225)
+        CW_FiltDif_Cursor_LBL.ForeColor = Color.Black
+        CW_FiltDif_Cursor_LBL.Location = New Point(1217, 291)
         CW_FiltDif_Cursor_LBL.Name = "CW_FiltDif_Cursor_LBL"
         CW_FiltDif_Cursor_LBL.Size = New Size(56, 20)
         CW_FiltDif_Cursor_LBL.TabIndex = 12
@@ -1248,8 +1354,8 @@ Partial Class Form1
         ' 
         HW_Temp_Cursor_LBL.Anchor = AnchorStyles.Top Or AnchorStyles.Right
         HW_Temp_Cursor_LBL.BorderStyle = BorderStyle.FixedSingle
-        HW_Temp_Cursor_LBL.ForeColor = Color.Silver
-        HW_Temp_Cursor_LBL.Location = New Point(1217, 301)
+        HW_Temp_Cursor_LBL.ForeColor = Color.Black
+        HW_Temp_Cursor_LBL.Location = New Point(1217, 367)
         HW_Temp_Cursor_LBL.Name = "HW_Temp_Cursor_LBL"
         HW_Temp_Cursor_LBL.Size = New Size(56, 20)
         HW_Temp_Cursor_LBL.TabIndex = 28
@@ -1260,8 +1366,8 @@ Partial Class Form1
         ' 
         HW_PostFiltPres_Cursor_LBL.Anchor = AnchorStyles.Top Or AnchorStyles.Right
         HW_PostFiltPres_Cursor_LBL.BorderStyle = BorderStyle.FixedSingle
-        HW_PostFiltPres_Cursor_LBL.ForeColor = Color.Silver
-        HW_PostFiltPres_Cursor_LBL.Location = New Point(1217, 263)
+        HW_PostFiltPres_Cursor_LBL.ForeColor = Color.Black
+        HW_PostFiltPres_Cursor_LBL.Location = New Point(1217, 329)
         HW_PostFiltPres_Cursor_LBL.Name = "HW_PostFiltPres_Cursor_LBL"
         HW_PostFiltPres_Cursor_LBL.Size = New Size(56, 20)
         HW_PostFiltPres_Cursor_LBL.TabIndex = 12
@@ -1272,8 +1378,8 @@ Partial Class Form1
         ' 
         ST_MedPres_Cursor_LBL.Anchor = AnchorStyles.Top Or AnchorStyles.Right
         ST_MedPres_Cursor_LBL.BorderStyle = BorderStyle.FixedSingle
-        ST_MedPres_Cursor_LBL.ForeColor = Color.Silver
-        ST_MedPres_Cursor_LBL.Location = New Point(1217, 396)
+        ST_MedPres_Cursor_LBL.ForeColor = Color.Black
+        ST_MedPres_Cursor_LBL.Location = New Point(1217, 462)
         ST_MedPres_Cursor_LBL.Name = "ST_MedPres_Cursor_LBL"
         ST_MedPres_Cursor_LBL.Size = New Size(56, 20)
         ST_MedPres_Cursor_LBL.TabIndex = 31
@@ -1284,8 +1390,8 @@ Partial Class Form1
         ' 
         CW_PreFiltPres_Cursor_LBL.Anchor = AnchorStyles.Top Or AnchorStyles.Right
         CW_PreFiltPres_Cursor_LBL.BorderStyle = BorderStyle.FixedSingle
-        CW_PreFiltPres_Cursor_LBL.ForeColor = Color.Silver
-        CW_PreFiltPres_Cursor_LBL.Location = New Point(1217, 187)
+        CW_PreFiltPres_Cursor_LBL.ForeColor = Color.Black
+        CW_PreFiltPres_Cursor_LBL.Location = New Point(1217, 253)
         CW_PreFiltPres_Cursor_LBL.Name = "CW_PreFiltPres_Cursor_LBL"
         CW_PreFiltPres_Cursor_LBL.Size = New Size(56, 20)
         CW_PreFiltPres_Cursor_LBL.TabIndex = 12
@@ -1296,8 +1402,8 @@ Partial Class Form1
         ' 
         AR_LinePres_Cursor_LBL.Anchor = AnchorStyles.Top Or AnchorStyles.Right
         AR_LinePres_Cursor_LBL.BorderStyle = BorderStyle.FixedSingle
-        AR_LinePres_Cursor_LBL.ForeColor = Color.Silver
-        AR_LinePres_Cursor_LBL.Location = New Point(1217, 586)
+        AR_LinePres_Cursor_LBL.ForeColor = Color.Black
+        AR_LinePres_Cursor_LBL.Location = New Point(1217, 652)
         AR_LinePres_Cursor_LBL.Name = "AR_LinePres_Cursor_LBL"
         AR_LinePres_Cursor_LBL.Size = New Size(56, 20)
         AR_LinePres_Cursor_LBL.TabIndex = 32
@@ -1308,8 +1414,8 @@ Partial Class Form1
         ' 
         HW_FiltDif_Cursor_LBL.Anchor = AnchorStyles.Top Or AnchorStyles.Right
         HW_FiltDif_Cursor_LBL.BorderStyle = BorderStyle.FixedSingle
-        HW_FiltDif_Cursor_LBL.ForeColor = Color.Silver
-        HW_FiltDif_Cursor_LBL.Location = New Point(1217, 282)
+        HW_FiltDif_Cursor_LBL.ForeColor = Color.Black
+        HW_FiltDif_Cursor_LBL.Location = New Point(1217, 348)
         HW_FiltDif_Cursor_LBL.Name = "HW_FiltDif_Cursor_LBL"
         HW_FiltDif_Cursor_LBL.Size = New Size(56, 20)
         HW_FiltDif_Cursor_LBL.TabIndex = 12
@@ -1320,8 +1426,8 @@ Partial Class Form1
         ' 
         ST_MedDem_Cursor_LBL.Anchor = AnchorStyles.Top Or AnchorStyles.Right
         ST_MedDem_Cursor_LBL.BorderStyle = BorderStyle.FixedSingle
-        ST_MedDem_Cursor_LBL.ForeColor = Color.Silver
-        ST_MedDem_Cursor_LBL.Location = New Point(1217, 434)
+        ST_MedDem_Cursor_LBL.ForeColor = Color.Black
+        ST_MedDem_Cursor_LBL.Location = New Point(1217, 500)
         ST_MedDem_Cursor_LBL.Name = "ST_MedDem_Cursor_LBL"
         ST_MedDem_Cursor_LBL.Size = New Size(56, 20)
         ST_MedDem_Cursor_LBL.TabIndex = 33
@@ -1332,8 +1438,8 @@ Partial Class Form1
         ' 
         CW_PostFiltPres_Cursor_LBL.Anchor = AnchorStyles.Top Or AnchorStyles.Right
         CW_PostFiltPres_Cursor_LBL.BorderStyle = BorderStyle.FixedSingle
-        CW_PostFiltPres_Cursor_LBL.ForeColor = Color.Silver
-        CW_PostFiltPres_Cursor_LBL.Location = New Point(1217, 206)
+        CW_PostFiltPres_Cursor_LBL.ForeColor = Color.Black
+        CW_PostFiltPres_Cursor_LBL.Location = New Point(1217, 272)
         CW_PostFiltPres_Cursor_LBL.Name = "CW_PostFiltPres_Cursor_LBL"
         CW_PostFiltPres_Cursor_LBL.Size = New Size(56, 20)
         CW_PostFiltPres_Cursor_LBL.TabIndex = 12
@@ -1344,8 +1450,8 @@ Partial Class Form1
         ' 
         EL_NorthC_Cursor_LBL.Anchor = AnchorStyles.Top Or AnchorStyles.Right
         EL_NorthC_Cursor_LBL.BorderStyle = BorderStyle.FixedSingle
-        EL_NorthC_Cursor_LBL.ForeColor = Color.Silver
-        EL_NorthC_Cursor_LBL.Location = New Point(1217, 510)
+        EL_NorthC_Cursor_LBL.ForeColor = Color.Black
+        EL_NorthC_Cursor_LBL.Location = New Point(1217, 576)
         EL_NorthC_Cursor_LBL.Name = "EL_NorthC_Cursor_LBL"
         EL_NorthC_Cursor_LBL.Size = New Size(56, 20)
         EL_NorthC_Cursor_LBL.TabIndex = 34
@@ -1356,8 +1462,8 @@ Partial Class Form1
         ' 
         HW_PreFiltPres_Cursor_LBL.Anchor = AnchorStyles.Top Or AnchorStyles.Right
         HW_PreFiltPres_Cursor_LBL.BorderStyle = BorderStyle.FixedSingle
-        HW_PreFiltPres_Cursor_LBL.ForeColor = Color.Silver
-        HW_PreFiltPres_Cursor_LBL.Location = New Point(1217, 244)
+        HW_PreFiltPres_Cursor_LBL.ForeColor = Color.Black
+        HW_PreFiltPres_Cursor_LBL.Location = New Point(1217, 310)
         HW_PreFiltPres_Cursor_LBL.Name = "HW_PreFiltPres_Cursor_LBL"
         HW_PreFiltPres_Cursor_LBL.Size = New Size(56, 20)
         HW_PreFiltPres_Cursor_LBL.TabIndex = 12
@@ -1368,8 +1474,8 @@ Partial Class Form1
         ' 
         ST_FeedWaterPres_Cursor_LBL.Anchor = AnchorStyles.Top Or AnchorStyles.Right
         ST_FeedWaterPres_Cursor_LBL.BorderStyle = BorderStyle.FixedSingle
-        ST_FeedWaterPres_Cursor_LBL.ForeColor = Color.Silver
-        ST_FeedWaterPres_Cursor_LBL.Location = New Point(1217, 339)
+        ST_FeedWaterPres_Cursor_LBL.ForeColor = Color.Black
+        ST_FeedWaterPres_Cursor_LBL.Location = New Point(1217, 405)
         ST_FeedWaterPres_Cursor_LBL.Name = "ST_FeedWaterPres_Cursor_LBL"
         ST_FeedWaterPres_Cursor_LBL.Size = New Size(56, 20)
         ST_FeedWaterPres_Cursor_LBL.TabIndex = 35
@@ -1380,8 +1486,8 @@ Partial Class Form1
         ' 
         ST_HeadPres_Cursor_LBL.Anchor = AnchorStyles.Top Or AnchorStyles.Right
         ST_HeadPres_Cursor_LBL.BorderStyle = BorderStyle.FixedSingle
-        ST_HeadPres_Cursor_LBL.ForeColor = Color.Silver
-        ST_HeadPres_Cursor_LBL.Location = New Point(1217, 358)
+        ST_HeadPres_Cursor_LBL.ForeColor = Color.Black
+        ST_HeadPres_Cursor_LBL.Location = New Point(1217, 424)
         ST_HeadPres_Cursor_LBL.Name = "ST_HeadPres_Cursor_LBL"
         ST_HeadPres_Cursor_LBL.Size = New Size(56, 20)
         ST_HeadPres_Cursor_LBL.TabIndex = 36
@@ -1392,8 +1498,8 @@ Partial Class Form1
         ' 
         CW_Supply_Cursor_LBL.Anchor = AnchorStyles.Top Or AnchorStyles.Right
         CW_Supply_Cursor_LBL.BorderStyle = BorderStyle.FixedSingle
-        CW_Supply_Cursor_LBL.ForeColor = Color.Silver
-        CW_Supply_Cursor_LBL.Location = New Point(1217, 168)
+        CW_Supply_Cursor_LBL.ForeColor = Color.Black
+        CW_Supply_Cursor_LBL.Location = New Point(1217, 234)
         CW_Supply_Cursor_LBL.Name = "CW_Supply_Cursor_LBL"
         CW_Supply_Cursor_LBL.Size = New Size(56, 20)
         CW_Supply_Cursor_LBL.TabIndex = 12
@@ -1404,8 +1510,8 @@ Partial Class Form1
         ' 
         ST_Flow_Cursor_LBL.Anchor = AnchorStyles.Top Or AnchorStyles.Right
         ST_Flow_Cursor_LBL.BorderStyle = BorderStyle.FixedSingle
-        ST_Flow_Cursor_LBL.ForeColor = Color.Silver
-        ST_Flow_Cursor_LBL.Location = New Point(1217, 453)
+        ST_Flow_Cursor_LBL.ForeColor = Color.Black
+        ST_Flow_Cursor_LBL.Location = New Point(1217, 519)
         ST_Flow_Cursor_LBL.Name = "ST_Flow_Cursor_LBL"
         ST_Flow_Cursor_LBL.Size = New Size(56, 20)
         ST_Flow_Cursor_LBL.TabIndex = 37
@@ -1416,31 +1522,20 @@ Partial Class Form1
         ' 
         ST_LowPres_Cursor_LBL.Anchor = AnchorStyles.Top Or AnchorStyles.Right
         ST_LowPres_Cursor_LBL.BorderStyle = BorderStyle.FixedSingle
-        ST_LowPres_Cursor_LBL.ForeColor = Color.Silver
-        ST_LowPres_Cursor_LBL.Location = New Point(1217, 377)
+        ST_LowPres_Cursor_LBL.ForeColor = Color.Black
+        ST_LowPres_Cursor_LBL.Location = New Point(1217, 443)
         ST_LowPres_Cursor_LBL.Name = "ST_LowPres_Cursor_LBL"
         ST_LowPres_Cursor_LBL.Size = New Size(56, 20)
         ST_LowPres_Cursor_LBL.TabIndex = 39
         ST_LowPres_Cursor_LBL.Text = "0.00"
         ST_LowPres_Cursor_LBL.TextAlign = ContentAlignment.MiddleRight
         ' 
-        ' Label1
-        ' 
-        Label1.Anchor = AnchorStyles.Top Or AnchorStyles.Right
-        Label1.AutoSize = True
-        Label1.ForeColor = Color.Silver
-        Label1.Location = New Point(1279, 150)
-        Label1.Name = "Label1"
-        Label1.Size = New Size(88, 15)
-        Label1.TabIndex = 10
-        Label1.Text = "Series Selection"
-        ' 
         ' EL_NorthB_Cursor_LBL
         ' 
         EL_NorthB_Cursor_LBL.Anchor = AnchorStyles.Top Or AnchorStyles.Right
         EL_NorthB_Cursor_LBL.BorderStyle = BorderStyle.FixedSingle
-        EL_NorthB_Cursor_LBL.ForeColor = Color.Silver
-        EL_NorthB_Cursor_LBL.Location = New Point(1217, 491)
+        EL_NorthB_Cursor_LBL.ForeColor = Color.Black
+        EL_NorthB_Cursor_LBL.Location = New Point(1217, 557)
         EL_NorthB_Cursor_LBL.Name = "EL_NorthB_Cursor_LBL"
         EL_NorthB_Cursor_LBL.Size = New Size(56, 20)
         EL_NorthB_Cursor_LBL.TabIndex = 42
@@ -1451,8 +1546,8 @@ Partial Class Form1
         ' 
         ST_LowDem_Cursor_LBL.Anchor = AnchorStyles.Top Or AnchorStyles.Right
         ST_LowDem_Cursor_LBL.BorderStyle = BorderStyle.FixedSingle
-        ST_LowDem_Cursor_LBL.ForeColor = Color.Silver
-        ST_LowDem_Cursor_LBL.Location = New Point(1217, 415)
+        ST_LowDem_Cursor_LBL.ForeColor = Color.Black
+        ST_LowDem_Cursor_LBL.Location = New Point(1217, 481)
         ST_LowDem_Cursor_LBL.Name = "ST_LowDem_Cursor_LBL"
         ST_LowDem_Cursor_LBL.Size = New Size(56, 20)
         ST_LowDem_Cursor_LBL.TabIndex = 41
@@ -1463,8 +1558,8 @@ Partial Class Form1
         ' 
         HW_Flow_Cursor_LBL.Anchor = AnchorStyles.Top Or AnchorStyles.Right
         HW_Flow_Cursor_LBL.BorderStyle = BorderStyle.FixedSingle
-        HW_Flow_Cursor_LBL.ForeColor = Color.Silver
-        HW_Flow_Cursor_LBL.Location = New Point(1217, 320)
+        HW_Flow_Cursor_LBL.ForeColor = Color.Black
+        HW_Flow_Cursor_LBL.Location = New Point(1217, 386)
         HW_Flow_Cursor_LBL.Name = "HW_Flow_Cursor_LBL"
         HW_Flow_Cursor_LBL.Size = New Size(56, 20)
         HW_Flow_Cursor_LBL.TabIndex = 43
@@ -1475,41 +1570,36 @@ Partial Class Form1
         ' 
         ChartPanel.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         ChartPanel.AutoScroll = True
-        ChartPanel.BackColor = Color.FromArgb(CByte(32), CByte(32), CByte(32))
-        ChartPanel.Controls.Add(ChartView)
-        ChartPanel.Location = New Point(0, 16)
+        ChartPanel.BackColor = Color.FromArgb(32, 32, 32)
+        ChartPanel.Controls.Add(PlotView)
+        ChartPanel.Location = New Point(0, -3)
         ChartPanel.Name = "ChartPanel"
-        ChartPanel.Size = New Size(1186, 779)
+        ChartPanel.Size = New Size(1186, 798)
         ChartPanel.TabIndex = 11
         ' 
-        ' ChartView
+        ' PlotView
         ' 
-        ChartView.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
-        ChartView.BackColor = Color.FromArgb(CByte(10), CByte(10), CByte(10))
-        ChartView.BorderSkin.PageColor = Color.FromArgb(CByte(192), CByte(192), CByte(255))
-        ChartView.Location = New Point(3, 5)
-        ChartView.Name = "ChartView"
-        ChartView.Size = New Size(1159, 4000)
-        ChartView.TabIndex = 0
+        PlotView.BackColor = Color.FromArgb(224, 224, 224)
+        PlotView.Dock = DockStyle.Fill
+        PlotView.Location = New Point(0, 0)
+        PlotView.Name = "PlotView"
+        PlotView.PanCursor = Cursors.Hand
+        PlotView.Size = New Size(1186, 798)
+        PlotView.TabIndex = 6
+        PlotView.Text = "PlotView"
+        PlotView.ZoomHorizontalCursor = Cursors.SizeWE
+        PlotView.ZoomRectangleCursor = Cursors.SizeNWSE
+        PlotView.ZoomVerticalCursor = Cursors.SizeNS
         ' 
         ' Grid_Page
         ' 
         Grid_Page.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
-        Grid_Page.BackColor = Color.FromArgb(CByte(192), CByte(255), CByte(192))
-        Grid_Page.Controls.Add(HScrollBar1)
+        Grid_Page.BackColor = Color.FromArgb(192, 255, 192)
         Grid_Page.Controls.Add(GridView)
         Grid_Page.Location = New Point(0, 0)
         Grid_Page.Name = "Grid_Page"
         Grid_Page.Size = New Size(1186, 798)
         Grid_Page.TabIndex = 11
-        ' 
-        ' HScrollBar1
-        ' 
-        HScrollBar1.Anchor = AnchorStyles.Top Or AnchorStyles.Left Or AnchorStyles.Right
-        HScrollBar1.Location = New Point(0, -1)
-        HScrollBar1.Name = "HScrollBar1"
-        HScrollBar1.Size = New Size(1186, 17)
-        HScrollBar1.TabIndex = 11
         ' 
         ' GridView
         ' 
@@ -1525,7 +1615,7 @@ Partial Class Form1
         ' Summary_Page
         ' 
         Summary_Page.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
-        Summary_Page.BackColor = Color.FromArgb(CByte(255), CByte(224), CByte(192))
+        Summary_Page.BackColor = Color.FromArgb(255, 224, 192)
         Summary_Page.Controls.Add(Label7)
         Summary_Page.Controls.Add(TableLayoutPanel1)
         Summary_Page.Location = New Point(0, 0)
@@ -1592,7 +1682,7 @@ Partial Class Form1
         ' Panel1
         ' 
         Panel1.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
-        Panel1.BackColor = Color.FromArgb(CByte(255), CByte(224), CByte(192))
+        Panel1.BackColor = Color.FromArgb(255, 224, 192)
         Panel1.Controls.Add(SUM_Name_LBL0)
         Panel1.Controls.Add(SUM_Max_LBL0)
         Panel1.Controls.Add(Label11)
@@ -1683,7 +1773,7 @@ Partial Class Form1
         ' Panel3
         ' 
         Panel3.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
-        Panel3.BackColor = Color.FromArgb(CByte(255), CByte(224), CByte(192))
+        Panel3.BackColor = Color.FromArgb(255, 224, 192)
         Panel3.Controls.Add(SUM_Name_LBL1)
         Panel3.Controls.Add(SUM_Max_LBL1)
         Panel3.Controls.Add(Label69)
@@ -1774,7 +1864,7 @@ Partial Class Form1
         ' Panel4
         ' 
         Panel4.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
-        Panel4.BackColor = Color.FromArgb(CByte(255), CByte(224), CByte(192))
+        Panel4.BackColor = Color.FromArgb(255, 224, 192)
         Panel4.Controls.Add(SUM_Name_LBL2)
         Panel4.Controls.Add(SUM_Max_LBL2)
         Panel4.Controls.Add(Label76)
@@ -1865,7 +1955,7 @@ Partial Class Form1
         ' Panel5
         ' 
         Panel5.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
-        Panel5.BackColor = Color.FromArgb(CByte(255), CByte(224), CByte(192))
+        Panel5.BackColor = Color.FromArgb(255, 224, 192)
         Panel5.Controls.Add(SUM_Name_LBL3)
         Panel5.Controls.Add(SUM_Max_LBL3)
         Panel5.Controls.Add(Label83)
@@ -1956,7 +2046,7 @@ Partial Class Form1
         ' Panel6
         ' 
         Panel6.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
-        Panel6.BackColor = Color.FromArgb(CByte(255), CByte(224), CByte(192))
+        Panel6.BackColor = Color.FromArgb(255, 224, 192)
         Panel6.Controls.Add(SUM_Name_LBL4)
         Panel6.Controls.Add(SUM_Max_LBL4)
         Panel6.Controls.Add(Label90)
@@ -2047,7 +2137,7 @@ Partial Class Form1
         ' Panel7
         ' 
         Panel7.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
-        Panel7.BackColor = Color.FromArgb(CByte(255), CByte(224), CByte(192))
+        Panel7.BackColor = Color.FromArgb(255, 224, 192)
         Panel7.Controls.Add(SUM_Name_LBL5)
         Panel7.Controls.Add(SUM_Max_LBL5)
         Panel7.Controls.Add(Label97)
@@ -2138,7 +2228,7 @@ Partial Class Form1
         ' Panel8
         ' 
         Panel8.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
-        Panel8.BackColor = Color.FromArgb(CByte(255), CByte(224), CByte(192))
+        Panel8.BackColor = Color.FromArgb(255, 224, 192)
         Panel8.Controls.Add(SUM_Name_LBL6)
         Panel8.Controls.Add(SUM_Max_LBL6)
         Panel8.Controls.Add(Label104)
@@ -2229,7 +2319,7 @@ Partial Class Form1
         ' Panel9
         ' 
         Panel9.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
-        Panel9.BackColor = Color.FromArgb(CByte(255), CByte(224), CByte(192))
+        Panel9.BackColor = Color.FromArgb(255, 224, 192)
         Panel9.Controls.Add(SUM_Name_LBL7)
         Panel9.Controls.Add(SUM_Max_LBL7)
         Panel9.Controls.Add(Label111)
@@ -2320,7 +2410,7 @@ Partial Class Form1
         ' Panel10
         ' 
         Panel10.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
-        Panel10.BackColor = Color.FromArgb(CByte(255), CByte(224), CByte(192))
+        Panel10.BackColor = Color.FromArgb(255, 224, 192)
         Panel10.Controls.Add(SUM_Name_LBL8)
         Panel10.Controls.Add(SUM_Max_LBL8)
         Panel10.Controls.Add(Label118)
@@ -2411,7 +2501,7 @@ Partial Class Form1
         ' Panel11
         ' 
         Panel11.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
-        Panel11.BackColor = Color.FromArgb(CByte(255), CByte(224), CByte(192))
+        Panel11.BackColor = Color.FromArgb(255, 224, 192)
         Panel11.Controls.Add(SUM_Name_LBL9)
         Panel11.Controls.Add(SUM_Max_LBL9)
         Panel11.Controls.Add(Label125)
@@ -2502,7 +2592,7 @@ Partial Class Form1
         ' Panel12
         ' 
         Panel12.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
-        Panel12.BackColor = Color.FromArgb(CByte(255), CByte(224), CByte(192))
+        Panel12.BackColor = Color.FromArgb(255, 224, 192)
         Panel12.Controls.Add(SUM_Name_LBL10)
         Panel12.Controls.Add(SUM_Max_LBL10)
         Panel12.Controls.Add(Label132)
@@ -2593,7 +2683,7 @@ Partial Class Form1
         ' Panel13
         ' 
         Panel13.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
-        Panel13.BackColor = Color.FromArgb(CByte(255), CByte(224), CByte(192))
+        Panel13.BackColor = Color.FromArgb(255, 224, 192)
         Panel13.Controls.Add(SUM_Name_LBL11)
         Panel13.Controls.Add(SUM_Max_LBL11)
         Panel13.Controls.Add(Label139)
@@ -2684,7 +2774,7 @@ Partial Class Form1
         ' Panel14
         ' 
         Panel14.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
-        Panel14.BackColor = Color.FromArgb(CByte(255), CByte(224), CByte(192))
+        Panel14.BackColor = Color.FromArgb(255, 224, 192)
         Panel14.Controls.Add(SUM_Name_LBL12)
         Panel14.Controls.Add(SUM_Max_LBL12)
         Panel14.Controls.Add(Label146)
@@ -2775,7 +2865,7 @@ Partial Class Form1
         ' Panel15
         ' 
         Panel15.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
-        Panel15.BackColor = Color.FromArgb(CByte(255), CByte(224), CByte(192))
+        Panel15.BackColor = Color.FromArgb(255, 224, 192)
         Panel15.Controls.Add(SUM_Name_LBL13)
         Panel15.Controls.Add(SUM_Max_LBL13)
         Panel15.Controls.Add(Label153)
@@ -2866,7 +2956,7 @@ Partial Class Form1
         ' Panel16
         ' 
         Panel16.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
-        Panel16.BackColor = Color.FromArgb(CByte(255), CByte(224), CByte(192))
+        Panel16.BackColor = Color.FromArgb(255, 224, 192)
         Panel16.Controls.Add(SUM_Name_LBL14)
         Panel16.Controls.Add(SUM_Max_LBL14)
         Panel16.Controls.Add(Label160)
@@ -2957,7 +3047,7 @@ Partial Class Form1
         ' Panel17
         ' 
         Panel17.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
-        Panel17.BackColor = Color.FromArgb(CByte(255), CByte(224), CByte(192))
+        Panel17.BackColor = Color.FromArgb(255, 224, 192)
         Panel17.Controls.Add(SUM_Name_LBL15)
         Panel17.Controls.Add(SUM_Max_LBL15)
         Panel17.Controls.Add(Label167)
@@ -3048,7 +3138,7 @@ Partial Class Form1
         ' Panel18
         ' 
         Panel18.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
-        Panel18.BackColor = Color.FromArgb(CByte(255), CByte(224), CByte(192))
+        Panel18.BackColor = Color.FromArgb(255, 224, 192)
         Panel18.Controls.Add(SUM_Name_LBL16)
         Panel18.Controls.Add(SUM_Max_LBL16)
         Panel18.Controls.Add(Label174)
@@ -3139,7 +3229,7 @@ Partial Class Form1
         ' Panel19
         ' 
         Panel19.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
-        Panel19.BackColor = Color.FromArgb(CByte(255), CByte(224), CByte(192))
+        Panel19.BackColor = Color.FromArgb(255, 224, 192)
         Panel19.Controls.Add(SUM_Name_LBL17)
         Panel19.Controls.Add(SUM_Max_LBL17)
         Panel19.Controls.Add(Label181)
@@ -3230,7 +3320,7 @@ Partial Class Form1
         ' Panel20
         ' 
         Panel20.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
-        Panel20.BackColor = Color.FromArgb(CByte(255), CByte(224), CByte(192))
+        Panel20.BackColor = Color.FromArgb(255, 224, 192)
         Panel20.Controls.Add(SUM_Name_LBL18)
         Panel20.Controls.Add(SUM_Max_LBL18)
         Panel20.Controls.Add(Label188)
@@ -3321,7 +3411,7 @@ Partial Class Form1
         ' Panel21
         ' 
         Panel21.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
-        Panel21.BackColor = Color.FromArgb(CByte(255), CByte(224), CByte(192))
+        Panel21.BackColor = Color.FromArgb(255, 224, 192)
         Panel21.Controls.Add(SUM_Name_LBL19)
         Panel21.Controls.Add(SUM_Max_LBL19)
         Panel21.Controls.Add(Label195)
@@ -3412,7 +3502,7 @@ Partial Class Form1
         ' Panel22
         ' 
         Panel22.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
-        Panel22.BackColor = Color.FromArgb(CByte(255), CByte(224), CByte(192))
+        Panel22.BackColor = Color.FromArgb(255, 224, 192)
         Panel22.Controls.Add(SUM_Name_LBL20)
         Panel22.Controls.Add(SUM_Max_LBL20)
         Panel22.Controls.Add(Label202)
@@ -3503,7 +3593,7 @@ Partial Class Form1
         ' Panel23
         ' 
         Panel23.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
-        Panel23.BackColor = Color.FromArgb(CByte(255), CByte(224), CByte(192))
+        Panel23.BackColor = Color.FromArgb(255, 224, 192)
         Panel23.Controls.Add(SUM_Name_LBL21)
         Panel23.Controls.Add(SUM_Max_LBL21)
         Panel23.Controls.Add(Label209)
@@ -3594,7 +3684,7 @@ Partial Class Form1
         ' Panel24
         ' 
         Panel24.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
-        Panel24.BackColor = Color.FromArgb(CByte(255), CByte(224), CByte(192))
+        Panel24.BackColor = Color.FromArgb(255, 224, 192)
         Panel24.Controls.Add(SUM_Name_LBL22)
         Panel24.Controls.Add(SUM_Max_LBL22)
         Panel24.Controls.Add(Label216)
@@ -3685,7 +3775,7 @@ Partial Class Form1
         ' Panel25
         ' 
         Panel25.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
-        Panel25.BackColor = Color.FromArgb(CByte(255), CByte(224), CByte(192))
+        Panel25.BackColor = Color.FromArgb(255, 224, 192)
         Panel25.Controls.Add(SUM_Name_LBL23)
         Panel25.Controls.Add(SUM_Max_LBL23)
         Panel25.Controls.Add(Label223)
@@ -3776,7 +3866,7 @@ Partial Class Form1
         ' Panel26
         ' 
         Panel26.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
-        Panel26.BackColor = Color.FromArgb(CByte(255), CByte(224), CByte(192))
+        Panel26.BackColor = Color.FromArgb(255, 224, 192)
         Panel26.Controls.Add(SUM_Name_LBL24)
         Panel26.Controls.Add(SUM_Max_LBL24)
         Panel26.Controls.Add(Label230)
@@ -3878,10 +3968,10 @@ Partial Class Form1
         Settings_Page.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         Settings_Page.Controls.Add(Panel29)
         Settings_Page.Controls.Add(Panel28)
-        Settings_Page.Controls.Add(Panel27)
         Settings_Page.Controls.Add(Label25)
         Settings_Page.Controls.Add(Label20)
         Settings_Page.Controls.Add(Label21)
+        Settings_Page.Controls.Add(Panel27)
         Settings_Page.Location = New Point(0, 47)
         Settings_Page.Name = "Settings_Page"
         Settings_Page.Size = New Size(1430, 798)
@@ -3896,7 +3986,7 @@ Partial Class Form1
         Panel29.Controls.Add(Label26)
         Panel29.Controls.Add(Label27)
         Panel29.Controls.Add(Label28)
-        Panel29.Location = New Point(300, 187)
+        Panel29.Location = New Point(10, 366)
         Panel29.Name = "Panel29"
         Panel29.Size = New Size(221, 100)
         Panel29.TabIndex = 4
@@ -3964,7 +4054,7 @@ Partial Class Form1
         Panel28.Controls.Add(Label22)
         Panel28.Controls.Add(Label23)
         Panel28.Controls.Add(Label24)
-        Panel28.Location = New Point(64, 187)
+        Panel28.Location = New Point(10, 231)
         Panel28.Name = "Panel28"
         Panel28.Size = New Size(221, 100)
         Panel28.TabIndex = 4
@@ -4023,6 +4113,33 @@ Partial Class Form1
         Label24.TabIndex = 2
         Label24.Text = "Sensor Table"
         ' 
+        ' Label25
+        ' 
+        Label25.AutoSize = True
+        Label25.Location = New Point(10, 348)
+        Label25.Name = "Label25"
+        Label25.Size = New Size(53, 15)
+        Label25.TabIndex = 2
+        Label25.Text = "Defaults:"
+        ' 
+        ' Label20
+        ' 
+        Label20.AutoSize = True
+        Label20.Location = New Point(11, 27)
+        Label20.Name = "Label20"
+        Label20.Size = New Size(130, 15)
+        Label20.TabIndex = 2
+        Label20.Text = "SQL Connection String:"
+        ' 
+        ' Label21
+        ' 
+        Label21.AutoSize = True
+        Label21.Location = New Point(10, 213)
+        Label21.Name = "Label21"
+        Label21.Size = New Size(77, 15)
+        Label21.TabIndex = 2
+        Label21.Text = "Table Names:"
+        ' 
         ' Panel27
         ' 
         Panel27.BorderStyle = BorderStyle.FixedSingle
@@ -4038,9 +4155,9 @@ Partial Class Form1
         Panel27.Controls.Add(Label4)
         Panel27.Controls.Add(SQL2)
         Panel27.Controls.Add(SQL1)
-        Panel27.Location = New Point(64, 331)
+        Panel27.Location = New Point(11, 45)
         Panel27.Name = "Panel27"
-        Panel27.Size = New Size(194, 154)
+        Panel27.Size = New Size(220, 154)
         Panel27.TabIndex = 4
         ' 
         ' SQL_Server_TB
@@ -4074,7 +4191,7 @@ Partial Class Form1
         ' 
         ' Button10
         ' 
-        Button10.Location = New Point(48, 112)
+        Button10.Location = New Point(61, 112)
         Button10.Name = "Button10"
         Button10.Size = New Size(97, 31)
         Button10.TabIndex = 3
@@ -4155,33 +4272,6 @@ Partial Class Form1
         SQL1.TabIndex = 2
         SQL1.Text = "server="
         ' 
-        ' Label25
-        ' 
-        Label25.AutoSize = True
-        Label25.Location = New Point(300, 169)
-        Label25.Name = "Label25"
-        Label25.Size = New Size(53, 15)
-        Label25.TabIndex = 2
-        Label25.Text = "Defaults:"
-        ' 
-        ' Label20
-        ' 
-        Label20.AutoSize = True
-        Label20.Location = New Point(64, 313)
-        Label20.Name = "Label20"
-        Label20.Size = New Size(130, 15)
-        Label20.TabIndex = 2
-        Label20.Text = "SQL Connection String:"
-        ' 
-        ' Label21
-        ' 
-        Label21.AutoSize = True
-        Label21.Location = New Point(64, 169)
-        Label21.Name = "Label21"
-        Label21.Size = New Size(77, 15)
-        Label21.TabIndex = 2
-        Label21.Text = "Table Names:"
-        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
@@ -4204,7 +4294,6 @@ Partial Class Form1
         Chart_Page.ResumeLayout(False)
         Chart_Page.PerformLayout()
         ChartPanel.ResumeLayout(False)
-        CType(ChartView, ComponentModel.ISupportInitialize).EndInit()
         Grid_Page.ResumeLayout(False)
         CType(GridView, ComponentModel.ISupportInitialize).EndInit()
         Summary_Page.ResumeLayout(False)
@@ -4264,9 +4353,7 @@ Partial Class Form1
     Friend WithEvents Chart_Page As Panel
     Friend WithEvents Label3 As Label
     Friend WithEvents Label2 As Label
-    Friend WithEvents Label1 As Label
     Friend WithEvents Button3 As Button
-    Friend WithEvents ChartView As DataVisualization.Charting.Chart
     Friend WithEvents Grid_Page As Panel
     Friend WithEvents GridView As DataGridView
     Friend WithEvents Summary_Page As Panel
@@ -4576,7 +4663,13 @@ Partial Class Form1
     Friend WithEvents CW_PostFiltPres_Vis_CB As CheckBox
     Friend WithEvents Label8 As Label
     Friend WithEvents Label9 As Label
-    Friend WithEvents HScrollBar1 As HScrollBar
+    Friend WithEvents All_Vis_CB As CheckBox
+    Friend WithEvents RadioButton2 As RadioButton
+    Friend WithEvents RadioButton1 As RadioButton
+    Friend WithEvents TextBox7 As TextBox
+    Friend WithEvents Button15 As Button
+    Friend WithEvents Button14 As Button
+    Friend WithEvents PlotView As OxyPlot.WindowsForms.PlotView
 
 
 

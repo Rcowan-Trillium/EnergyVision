@@ -6,7 +6,7 @@
    <Modules>
     <Module Name="advancedhmi.exe">
      <Messages>
-      <Message TypeName="MarkAssembliesWithClsCompliant" Category="Microsoft.Design" CheckId="CA1014" Status="Active" Created="2025-10-02 18:07:59Z" FixCategory="NonBreaking">
+      <Message TypeName="MarkAssembliesWithClsCompliant" Category="Microsoft.Design" CheckId="CA1014" Status="Active" Created="2025-10-21 16:34:39Z" FixCategory="NonBreaking">
        <Issue Certainty="95" Level="Error">Mark 'AdvancedHMI.exe' with CLSCompliant(true) because it exposes externally visible types.</Issue>
       </Message>
      </Messages>
@@ -17,324 +17,324 @@
          <Members>
           <Member Name="#Admin_User_Selection_Changed(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
            <Messages>
-            <Message Id="User" TypeName="RemoveUnusedLocals" Category="Microsoft.Performance" CheckId="CA1804" Status="Active" Created="2025-10-02 18:07:59Z" FixCategory="NonBreaking">
+            <Message Id="User" TypeName="RemoveUnusedLocals" Category="Microsoft.Performance" CheckId="CA1804" Status="Active" Created="2025-10-21 16:34:39Z" FixCategory="NonBreaking">
              <Issue Certainty="95" Level="Warning" Path="C:\Users\cowanr\source\repos\EnergyVision\AdvancedHMI" File="EnergyVision.vb" Line="2762">'EnergyVision.Admin_User_Selection_Changed(Object, EventArgs)' declares a variable, 'User', of type 'String', which is never used or is only assigned to. Use this variable or remove it.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#Air_Alarm_Changed(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
            <Messages>
-            <Message Id="CurrentDT" TypeName="RemoveUnusedLocals" Category="Microsoft.Performance" CheckId="CA1804" Status="Active" Created="2025-10-02 18:07:59Z" FixCategory="NonBreaking">
+            <Message Id="CurrentDT" TypeName="RemoveUnusedLocals" Category="Microsoft.Performance" CheckId="CA1804" Status="Active" Created="2025-10-21 16:34:39Z" FixCategory="NonBreaking">
              <Issue Certainty="95" Level="Warning" Path="C:\Users\cowanr\source\repos\EnergyVision\AdvancedHMI" File="EnergyVision.vb" Line="3223">'EnergyVision.Air_Alarm_Changed(Object, EventArgs)' declares a variable, 'CurrentDT', of type 'Date', which is never used or is only assigned to. Use this variable or remove it.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#Calculate24HrSteamUse()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
            <Messages>
-            <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Active" Created="2025-10-02 18:07:59Z" FixCategory="NonBreaking">
+            <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Active" Created="2025-10-21 16:34:39Z" FixCategory="NonBreaking">
              <Issue Certainty="95" Level="CriticalError" Path="C:\Users\cowanr\source\repos\EnergyVision\AdvancedHMI" File="EnergyVision.vb" Line="1176">Modify 'EnergyVision.Calculate24HrSteamUse()' to catch a more specific exception than 'Exception' or rethrow the exception.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#Change_Alarm_Description(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
            <Messages>
-            <Message Id="MessageDisplayName" TypeName="RemoveUnusedLocals" Category="Microsoft.Performance" CheckId="CA1804" Status="Active" Created="2025-10-02 18:07:59Z" FixCategory="NonBreaking">
+            <Message Id="MessageDisplayName" TypeName="RemoveUnusedLocals" Category="Microsoft.Performance" CheckId="CA1804" Status="Active" Created="2025-10-21 16:34:39Z" FixCategory="NonBreaking">
              <Issue Certainty="95" Level="Warning" Path="C:\Users\cowanr\source\repos\EnergyVision\AdvancedHMI" File="EnergyVision.vb" Line="4503">'EnergyVision.Change_Alarm_Description(Object, EventArgs)' declares a variable, 'MessageDisplayName', of type 'String', which is never used or is only assigned to. Use this variable or remove it.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#Chng0_PLCAddressLabel_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
            <Messages>
-            <Message Id="vals" TypeName="RemoveUnusedLocals" Category="Microsoft.Performance" CheckId="CA1804" Status="Active" Created="2025-10-02 18:07:59Z" FixCategory="NonBreaking">
+            <Message Id="vals" TypeName="RemoveUnusedLocals" Category="Microsoft.Performance" CheckId="CA1804" Status="Active" Created="2025-10-21 16:34:39Z" FixCategory="NonBreaking">
              <Issue Certainty="95" Level="Warning" Path="C:\Users\cowanr\source\repos\EnergyVision\AdvancedHMI" File="EnergyVision.vb" Line="3965">'EnergyVision.Chng0_PLCAddressLabel_Click(Object, EventArgs)' declares a variable, 'vals', of type 'Boolean()', which is never used or is only assigned to. Use this variable or remove it.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#CurrentDate" Kind="Field" Static="False" Accessibility="Private" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="AvoidUnusedPrivateFields" Category="Microsoft.Performance" CheckId="CA1823" Status="Active" Created="2025-10-02 18:07:59Z" FixCategory="NonBreaking">
+            <Message TypeName="AvoidUnusedPrivateFields" Category="Microsoft.Performance" CheckId="CA1823" Status="Active" Created="2025-10-21 16:34:39Z" FixCategory="NonBreaking">
              <Issue Certainty="75" Level="Warning">It appears that field 'EnergyVision.CurrentDate' is never used or is only ever assigned to. Use this field or remove it.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#CurrentTime" Kind="Field" Static="False" Accessibility="Private" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="AvoidUnusedPrivateFields" Category="Microsoft.Performance" CheckId="CA1823" Status="Active" Created="2025-10-02 18:07:59Z" FixCategory="NonBreaking">
+            <Message TypeName="AvoidUnusedPrivateFields" Category="Microsoft.Performance" CheckId="CA1823" Status="Active" Created="2025-10-21 16:34:39Z" FixCategory="NonBreaking">
              <Issue Certainty="75" Level="Warning">It appears that field 'EnergyVision.CurrentTime' is never used or is only ever assigned to. Use this field or remove it.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#CurrentUser" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
            <Messages>
-            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2025-10-02 18:07:59Z" FixCategory="Breaking">
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2025-10-21 16:34:39Z" FixCategory="Breaking">
              <Issue Certainty="90" Level="Error">Because field 'EnergyVision.CurrentUser' is visible outside of its declaring type, change its accessibility to private and add a property, with the same accessibility as the field has currently, to provide access to it.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#CurrentUserLevel" Kind="Field" Static="False" Accessibility="Public" ExternallyVisible="True">
            <Messages>
-            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2025-10-02 18:07:59Z" FixCategory="Breaking">
+            <Message TypeName="DoNotDeclareVisibleInstanceFields" Category="Microsoft.Design" CheckId="CA1051" Status="Active" Created="2025-10-21 16:34:39Z" FixCategory="Breaking">
              <Issue Certainty="90" Level="Error">Because field 'EnergyVision.CurrentUserLevel' is visible outside of its declaring type, change its accessibility to private and add a property, with the same accessibility as the field has currently, to provide access to it.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#Elec_Alarm_Changed(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
            <Messages>
-            <Message Id="CurrentDT" TypeName="RemoveUnusedLocals" Category="Microsoft.Performance" CheckId="CA1804" Status="Active" Created="2025-10-02 18:07:59Z" FixCategory="NonBreaking">
+            <Message Id="CurrentDT" TypeName="RemoveUnusedLocals" Category="Microsoft.Performance" CheckId="CA1804" Status="Active" Created="2025-10-21 16:34:39Z" FixCategory="NonBreaking">
              <Issue Certainty="95" Level="Warning" Path="C:\Users\cowanr\source\repos\EnergyVision\AdvancedHMI" File="EnergyVision.vb" Line="3195">'EnergyVision.Elec_Alarm_Changed(Object, EventArgs)' declares a variable, 'CurrentDT', of type 'Date', which is never used or is only assigned to. Use this variable or remove it.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#First_Tick_Delay(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
            <Messages>
-            <Message Id="NewHBTime_5s" TypeName="RemoveUnusedLocals" Category="Microsoft.Performance" CheckId="CA1804" Status="Active" Created="2025-10-02 18:07:59Z" FixCategory="NonBreaking">
+            <Message Id="NewHBTime_5s" TypeName="RemoveUnusedLocals" Category="Microsoft.Performance" CheckId="CA1804" Status="Active" Created="2025-10-21 16:34:39Z" FixCategory="NonBreaking">
              <Issue Certainty="95" Level="Warning" Path="C:\Users\cowanr\source\repos\EnergyVision\AdvancedHMI" File="EnergyVision.vb" Line="4608">'EnergyVision.First_Tick_Delay(Object, EventArgs)' declares a variable, 'NewHBTime_5s', of type 'Date', which is never used or is only assigned to. Use this variable or remove it.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#GetCurrentState(System.Int32,System.Int32,System.Int32)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
            <Messages>
-            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2025-10-02 18:07:59Z" FixCategory="DependsOnFix">
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2025-10-21 16:34:39Z" FixCategory="DependsOnFix">
              <Issue Certainty="95" Level="Warning" Path="C:\Users\cowanr\source\repos\EnergyVision\AdvancedHMI" File="EnergyVision.vb" Line="1139">The 'this' parameter (or 'Me' in Visual Basic) of 'EnergyVision.GetCurrentState(Integer, Integer, Integer)' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#GetJsonData(System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
            <Messages>
-            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2025-10-02 18:07:59Z" FixCategory="DependsOnFix">
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2025-10-21 16:34:39Z" FixCategory="DependsOnFix">
              <Issue Certainty="95" Level="Warning" Path="C:\Users\cowanr\source\repos\EnergyVision\AdvancedHMI" File="EnergyVision.vb" Line="4776">The 'this' parameter (or 'Me' in Visual Basic) of 'EnergyVision.GetJsonData(String)' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
             </Message>
-            <Message Id="0#" TypeName="UriParametersShouldNotBeStrings" Category="Microsoft.Design" CheckId="CA1054" Status="Active" Created="2025-10-02 18:07:59Z" FixCategory="Breaking">
+            <Message Id="0#" TypeName="UriParametersShouldNotBeStrings" Category="Microsoft.Design" CheckId="CA1054" Status="Active" Created="2025-10-21 16:34:39Z" FixCategory="Breaking">
              <Issue Certainty="60" Level="Error" Path="C:\Users\cowanr\source\repos\EnergyVision\AdvancedHMI" File="EnergyVision.vb" Line="4776">Change the type of parameter 'url' of method 'EnergyVision.GetJsonData(String)' from string to System.Uri, or provide an overload of 'EnergyVision.GetJsonData(String)', that allows 'url' to be passed as a System.Uri object.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#GetNow()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
            <Messages>
-            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2025-10-02 18:07:59Z" FixCategory="DependsOnFix">
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2025-10-21 16:34:39Z" FixCategory="DependsOnFix">
              <Issue Certainty="95" Level="Warning" Path="C:\Users\cowanr\source\repos\EnergyVision\AdvancedHMI" File="EnergyVision.vb" Line="1303">The 'this' parameter (or 'Me' in Visual Basic) of 'EnergyVision.GetNow()' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
             </Message>
-            <Message TypeName="UsePropertiesWhereAppropriate" Category="Microsoft.Design" CheckId="CA1024" Status="Active" Created="2025-10-02 18:07:59Z" FixCategory="Breaking">
+            <Message TypeName="UsePropertiesWhereAppropriate" Category="Microsoft.Design" CheckId="CA1024" Status="Active" Created="2025-10-21 16:34:39Z" FixCategory="Breaking">
              <Issue Certainty="50" Level="Warning" Path="C:\Users\cowanr\source\repos\EnergyVision\AdvancedHMI" File="EnergyVision.vb" Line="1303">Change 'EnergyVision.GetNow()' to a property if appropriate.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#GetNumeric(System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
            <Messages>
-            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2025-10-02 18:07:59Z" FixCategory="DependsOnFix">
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2025-10-21 16:34:39Z" FixCategory="DependsOnFix">
              <Issue Certainty="95" Level="Warning" Path="C:\Users\cowanr\source\repos\EnergyVision\AdvancedHMI" File="EnergyVision.vb" Line="1130">The 'this' parameter (or 'Me' in Visual Basic) of 'EnergyVision.GetNumeric(String)' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#INI_AddSection_USER(System.Object,System.Object,System.Object)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Active" Created="2025-10-02 18:07:59Z" FixCategory="NonBreaking">
+            <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Active" Created="2025-10-21 16:34:39Z" FixCategory="NonBreaking">
              <Issue Certainty="95" Level="CriticalError" Path="C:\Users\cowanr\source\repos\EnergyVision\AdvancedHMI" File="EnergyVision.vb" Line="1652">Modify 'EnergyVision.INI_AddSection_USER(Object, Object, Object)' to catch a more specific exception than 'Exception' or rethrow the exception.</Issue>
             </Message>
-            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2025-10-02 18:07:59Z" FixCategory="NonBreaking">
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2025-10-21 16:34:39Z" FixCategory="NonBreaking">
              <Issue Certainty="95" Level="Warning" Path="C:\Users\cowanr\source\repos\EnergyVision\AdvancedHMI" File="EnergyVision.vb" Line="1649">The 'this' parameter (or 'Me' in Visual Basic) of 'EnergyVision.INI_AddSection_USER(Object, Object, Object)' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#INI_GetKey_Alarm(System.Object,System.Object)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
            <Messages>
-            <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Active" Created="2025-10-02 18:07:59Z" FixCategory="NonBreaking">
+            <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Active" Created="2025-10-21 16:34:39Z" FixCategory="NonBreaking">
              <Issue Certainty="95" Level="CriticalError" Path="C:\Users\cowanr\source\repos\EnergyVision\AdvancedHMI" File="EnergyVision.vb" Line="1783">Modify 'EnergyVision.INI_GetKey_Alarm(Object, Object)' to catch a more specific exception than 'Exception' or rethrow the exception.</Issue>
             </Message>
-            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2025-10-02 18:07:59Z" FixCategory="DependsOnFix">
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2025-10-21 16:34:39Z" FixCategory="DependsOnFix">
              <Issue Certainty="95" Level="Warning" Path="C:\Users\cowanr\source\repos\EnergyVision\AdvancedHMI" File="EnergyVision.vb" Line="1779">The 'this' parameter (or 'Me' in Visual Basic) of 'EnergyVision.INI_GetKey_Alarm(Object, Object)' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#INI_GetKey_AllUSER()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
            <Messages>
-            <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Active" Created="2025-10-02 18:07:59Z" FixCategory="NonBreaking">
+            <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Active" Created="2025-10-21 16:34:39Z" FixCategory="NonBreaking">
              <Issue Certainty="95" Level="CriticalError" Path="C:\Users\cowanr\source\repos\EnergyVision\AdvancedHMI" File="EnergyVision.vb" Line="1715">Modify 'EnergyVision.INI_GetKey_AllUSER()' to catch a more specific exception than 'Exception' or rethrow the exception.</Issue>
             </Message>
-            <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Status="Active" Created="2025-10-02 18:07:59Z" FixCategory="Breaking">
+            <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Status="Active" Created="2025-10-21 16:34:39Z" FixCategory="Breaking">
              <Issue Certainty="95" Level="Error" Path="C:\Users\cowanr\source\repos\EnergyVision\AdvancedHMI" File="EnergyVision.vb" Line="1712">Change 'List(Of String)' in 'EnergyVision.INI_GetKey_AllUSER()' to use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; or KeyedCollection&lt;K,V&gt;</Issue>
             </Message>
-            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2025-10-02 18:07:59Z" FixCategory="DependsOnFix">
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2025-10-21 16:34:39Z" FixCategory="DependsOnFix">
              <Issue Certainty="95" Level="Warning" Path="C:\Users\cowanr\source\repos\EnergyVision\AdvancedHMI" File="EnergyVision.vb" Line="1712">The 'this' parameter (or 'Me' in Visual Basic) of 'EnergyVision.INI_GetKey_AllUSER()' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#INI_GetKey_IO(System.Object,System.Object)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
            <Messages>
-            <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Active" Created="2025-10-02 18:07:59Z" FixCategory="NonBreaking">
+            <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Active" Created="2025-10-21 16:34:39Z" FixCategory="NonBreaking">
              <Issue Certainty="95" Level="CriticalError" Path="C:\Users\cowanr\source\repos\EnergyVision\AdvancedHMI" File="EnergyVision.vb" Line="1799">Modify 'EnergyVision.INI_GetKey_IO(Object, Object)' to catch a more specific exception than 'Exception' or rethrow the exception.</Issue>
             </Message>
-            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2025-10-02 18:07:59Z" FixCategory="DependsOnFix">
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2025-10-21 16:34:39Z" FixCategory="DependsOnFix">
              <Issue Certainty="95" Level="Warning" Path="C:\Users\cowanr\source\repos\EnergyVision\AdvancedHMI" File="EnergyVision.vb" Line="1795">The 'this' parameter (or 'Me' in Visual Basic) of 'EnergyVision.INI_GetKey_IO(Object, Object)' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#INI_GetKey_PLC(System.Object,System.Object)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
            <Messages>
-            <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Active" Created="2025-10-02 18:07:59Z" FixCategory="NonBreaking">
+            <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Active" Created="2025-10-21 16:34:39Z" FixCategory="NonBreaking">
              <Issue Certainty="95" Level="CriticalError" Path="C:\Users\cowanr\source\repos\EnergyVision\AdvancedHMI" File="EnergyVision.vb" Line="1751">Modify 'EnergyVision.INI_GetKey_PLC(Object, Object)' to catch a more specific exception than 'Exception' or rethrow the exception.</Issue>
             </Message>
-            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2025-10-02 18:07:59Z" FixCategory="DependsOnFix">
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2025-10-21 16:34:39Z" FixCategory="DependsOnFix">
              <Issue Certainty="95" Level="Warning" Path="C:\Users\cowanr\source\repos\EnergyVision\AdvancedHMI" File="EnergyVision.vb" Line="1747">The 'this' parameter (or 'Me' in Visual Basic) of 'EnergyVision.INI_GetKey_PLC(Object, Object)' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#INI_GetKey_System(System.Object,System.Object)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
            <Messages>
-            <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Active" Created="2025-10-02 18:07:59Z" FixCategory="NonBreaking">
+            <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Active" Created="2025-10-21 16:34:39Z" FixCategory="NonBreaking">
              <Issue Certainty="95" Level="CriticalError" Path="C:\Users\cowanr\source\repos\EnergyVision\AdvancedHMI" File="EnergyVision.vb" Line="1767">Modify 'EnergyVision.INI_GetKey_System(Object, Object)' to catch a more specific exception than 'Exception' or rethrow the exception.</Issue>
             </Message>
-            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2025-10-02 18:07:59Z" FixCategory="DependsOnFix">
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2025-10-21 16:34:39Z" FixCategory="DependsOnFix">
              <Issue Certainty="95" Level="Warning" Path="C:\Users\cowanr\source\repos\EnergyVision\AdvancedHMI" File="EnergyVision.vb" Line="1763">The 'this' parameter (or 'Me' in Visual Basic) of 'EnergyVision.INI_GetKey_System(Object, Object)' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#INI_GetKey_USER(System.Object,System.Object)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
            <Messages>
-            <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Active" Created="2025-10-02 18:07:59Z" FixCategory="NonBreaking">
+            <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Active" Created="2025-10-21 16:34:39Z" FixCategory="NonBreaking">
              <Issue Certainty="95" Level="CriticalError" Path="C:\Users\cowanr\source\repos\EnergyVision\AdvancedHMI" File="EnergyVision.vb" Line="1735">Modify 'EnergyVision.INI_GetKey_USER(Object, Object)' to catch a more specific exception than 'Exception' or rethrow the exception.</Issue>
             </Message>
-            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2025-10-02 18:07:59Z" FixCategory="DependsOnFix">
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2025-10-21 16:34:39Z" FixCategory="DependsOnFix">
              <Issue Certainty="95" Level="Warning" Path="C:\Users\cowanr\source\repos\EnergyVision\AdvancedHMI" File="EnergyVision.vb" Line="1731">The 'this' parameter (or 'Me' in Visual Basic) of 'EnergyVision.INI_GetKey_USER(Object, Object)' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#INI_RemoveSection_USER(System.Object)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Active" Created="2025-10-02 18:07:59Z" FixCategory="NonBreaking">
+            <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Active" Created="2025-10-21 16:34:39Z" FixCategory="NonBreaking">
              <Issue Certainty="95" Level="CriticalError" Path="C:\Users\cowanr\source\repos\EnergyVision\AdvancedHMI" File="EnergyVision.vb" Line="1639">Modify 'EnergyVision.INI_RemoveSection_USER(Object)' to catch a more specific exception than 'Exception' or rethrow the exception.</Issue>
             </Message>
-            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2025-10-02 18:07:59Z" FixCategory="NonBreaking">
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2025-10-21 16:34:39Z" FixCategory="NonBreaking">
              <Issue Certainty="95" Level="Warning" Path="C:\Users\cowanr\source\repos\EnergyVision\AdvancedHMI" File="EnergyVision.vb" Line="1636">The 'this' parameter (or 'Me' in Visual Basic) of 'EnergyVision.INI_RemoveSection_USER(Object)' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#INI_SetKey_Alarm(System.Object,System.Object,System.Object)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Active" Created="2025-10-02 18:07:59Z" FixCategory="NonBreaking">
+            <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Active" Created="2025-10-21 16:34:39Z" FixCategory="NonBreaking">
              <Issue Certainty="95" Level="CriticalError" Path="C:\Users\cowanr\source\repos\EnergyVision\AdvancedHMI" File="EnergyVision.vb" Line="1695">Modify 'EnergyVision.INI_SetKey_Alarm(Object, Object, Object)' to catch a more specific exception than 'Exception' or rethrow the exception.</Issue>
             </Message>
-            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2025-10-02 18:07:59Z" FixCategory="NonBreaking">
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2025-10-21 16:34:39Z" FixCategory="NonBreaking">
              <Issue Certainty="95" Level="Warning" Path="C:\Users\cowanr\source\repos\EnergyVision\AdvancedHMI" File="EnergyVision.vb" Line="1692">The 'this' parameter (or 'Me' in Visual Basic) of 'EnergyVision.INI_SetKey_Alarm(Object, Object, Object)' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#INI_SetKey_IO(System.Object,System.Object,System.Object)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Active" Created="2025-10-02 18:07:59Z" FixCategory="NonBreaking">
+            <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Active" Created="2025-10-21 16:34:39Z" FixCategory="NonBreaking">
              <Issue Certainty="95" Level="CriticalError" Path="C:\Users\cowanr\source\repos\EnergyVision\AdvancedHMI" File="EnergyVision.vb" Line="1705">Modify 'EnergyVision.INI_SetKey_IO(Object, Object, Object)' to catch a more specific exception than 'Exception' or rethrow the exception.</Issue>
             </Message>
-            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2025-10-02 18:07:59Z" FixCategory="NonBreaking">
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2025-10-21 16:34:39Z" FixCategory="NonBreaking">
              <Issue Certainty="95" Level="Warning" Path="C:\Users\cowanr\source\repos\EnergyVision\AdvancedHMI" File="EnergyVision.vb" Line="1702">The 'this' parameter (or 'Me' in Visual Basic) of 'EnergyVision.INI_SetKey_IO(Object, Object, Object)' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#INI_SetKey_PLC(System.Object,System.Object,System.Object)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Active" Created="2025-10-02 18:07:59Z" FixCategory="NonBreaking">
+            <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Active" Created="2025-10-21 16:34:39Z" FixCategory="NonBreaking">
              <Issue Certainty="95" Level="CriticalError" Path="C:\Users\cowanr\source\repos\EnergyVision\AdvancedHMI" File="EnergyVision.vb" Line="1675">Modify 'EnergyVision.INI_SetKey_PLC(Object, Object, Object)' to catch a more specific exception than 'Exception' or rethrow the exception.</Issue>
             </Message>
-            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2025-10-02 18:07:59Z" FixCategory="NonBreaking">
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2025-10-21 16:34:39Z" FixCategory="NonBreaking">
              <Issue Certainty="95" Level="Warning" Path="C:\Users\cowanr\source\repos\EnergyVision\AdvancedHMI" File="EnergyVision.vb" Line="1672">The 'this' parameter (or 'Me' in Visual Basic) of 'EnergyVision.INI_SetKey_PLC(Object, Object, Object)' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#INI_SetKey_System(System.Object,System.Object,System.Object)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Active" Created="2025-10-02 18:07:59Z" FixCategory="NonBreaking">
+            <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Active" Created="2025-10-21 16:34:39Z" FixCategory="NonBreaking">
              <Issue Certainty="95" Level="CriticalError" Path="C:\Users\cowanr\source\repos\EnergyVision\AdvancedHMI" File="EnergyVision.vb" Line="1685">Modify 'EnergyVision.INI_SetKey_System(Object, Object, Object)' to catch a more specific exception than 'Exception' or rethrow the exception.</Issue>
             </Message>
-            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2025-10-02 18:07:59Z" FixCategory="NonBreaking">
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2025-10-21 16:34:39Z" FixCategory="NonBreaking">
              <Issue Certainty="95" Level="Warning" Path="C:\Users\cowanr\source\repos\EnergyVision\AdvancedHMI" File="EnergyVision.vb" Line="1682">The 'this' parameter (or 'Me' in Visual Basic) of 'EnergyVision.INI_SetKey_System(Object, Object, Object)' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#INI_SetKey_USER(System.Object,System.Object,System.Object)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Active" Created="2025-10-02 18:07:59Z" FixCategory="NonBreaking">
+            <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Active" Created="2025-10-21 16:34:39Z" FixCategory="NonBreaking">
              <Issue Certainty="95" Level="CriticalError" Path="C:\Users\cowanr\source\repos\EnergyVision\AdvancedHMI" File="EnergyVision.vb" Line="1665">Modify 'EnergyVision.INI_SetKey_USER(Object, Object, Object)' to catch a more specific exception than 'Exception' or rethrow the exception.</Issue>
             </Message>
-            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2025-10-02 18:07:59Z" FixCategory="NonBreaking">
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2025-10-21 16:34:39Z" FixCategory="NonBreaking">
              <Issue Certainty="95" Level="Warning" Path="C:\Users\cowanr\source\repos\EnergyVision\AdvancedHMI" File="EnergyVision.vb" Line="1662">The 'this' parameter (or 'Me' in Visual Basic) of 'EnergyVision.INI_SetKey_USER(Object, Object, Object)' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#Input_Update_CARD6(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
            <Messages>
-            <Message Id="Inputs" TypeName="RemoveUnusedLocals" Category="Microsoft.Performance" CheckId="CA1804" Status="Active" Created="2025-10-02 18:07:59Z" FixCategory="NonBreaking">
+            <Message Id="Inputs" TypeName="RemoveUnusedLocals" Category="Microsoft.Performance" CheckId="CA1804" Status="Active" Created="2025-10-21 16:34:39Z" FixCategory="NonBreaking">
              <Issue Certainty="95" Level="Warning" Path="C:\Users\cowanr\source\repos\EnergyVision\AdvancedHMI" File="EnergyVision.vb" Line="4675">'EnergyVision.Input_Update_CARD6(Object, EventArgs)' declares a variable, 'Inputs', of type 'Boolean()', which is never used or is only assigned to. Use this variable or remove it.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#IntToBin(System.Int16)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
            <Messages>
-            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2025-10-02 18:07:59Z" FixCategory="DependsOnFix">
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2025-10-21 16:34:39Z" FixCategory="DependsOnFix">
              <Issue Certainty="95" Level="Warning" Path="C:\Users\cowanr\source\repos\EnergyVision\AdvancedHMI" File="EnergyVision.vb" Line="1972">The 'this' parameter (or 'Me' in Visual Basic) of 'EnergyVision.IntToBin(Short)' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#IsAppInstalled(System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
            <Messages>
-            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2025-10-02 18:07:59Z" FixCategory="DependsOnFix">
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2025-10-21 16:34:39Z" FixCategory="DependsOnFix">
              <Issue Certainty="95" Level="Warning" Path="C:\Users\cowanr\source\repos\EnergyVision\AdvancedHMI" File="EnergyVision.vb" Line="154">The 'this' parameter (or 'Me' in Visual Basic) of 'EnergyVision.IsAppInstalled(String)' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#KtoC(System.Object)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
            <Messages>
-            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2025-10-02 18:07:59Z" FixCategory="DependsOnFix">
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2025-10-21 16:34:39Z" FixCategory="DependsOnFix">
              <Issue Certainty="95" Level="Warning" Path="C:\Users\cowanr\source\repos\EnergyVision\AdvancedHMI" File="EnergyVision.vb" Line="4782">The 'this' parameter (or 'Me' in Visual Basic) of 'EnergyVision.KtoC(Object)' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#Label1_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Active" Created="2025-10-02 18:07:59Z" FixCategory="NonBreaking">
+            <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Active" Created="2025-10-21 16:34:39Z" FixCategory="NonBreaking">
              <Issue Certainty="95" Level="CriticalError" Path="C:\Users\cowanr\source\repos\EnergyVision\AdvancedHMI" File="EnergyVision.vb" Line="2009">Modify 'EnergyVision.Label1_Click(Object, EventArgs)' to catch a more specific exception than 'Exception' or rethrow the exception.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#Label66_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
            <Messages>
-            <Message Id="NewLoc" TypeName="RemoveUnusedLocals" Category="Microsoft.Performance" CheckId="CA1804" Status="Active" Created="2025-10-02 18:07:59Z" FixCategory="NonBreaking">
+            <Message Id="NewLoc" TypeName="RemoveUnusedLocals" Category="Microsoft.Performance" CheckId="CA1804" Status="Active" Created="2025-10-21 16:34:39Z" FixCategory="NonBreaking">
              <Issue Certainty="95" Level="Warning" Path="C:\Users\cowanr\source\repos\EnergyVision\AdvancedHMI" File="EnergyVision.vb" Line="2054">'EnergyVision.Label66_Click(Object, EventArgs)' declares a variable, 'NewLoc', of type 'String', which is never used or is only assigned to. Use this variable or remove it.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#Log_Chart_Timer(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="AvoidExcessiveComplexity" Category="Microsoft.Maintainability" CheckId="CA1502" Status="Active" Created="2025-10-02 18:07:59Z" FixCategory="NonBreaking">
+            <Message TypeName="AvoidExcessiveComplexity" Category="Microsoft.Maintainability" CheckId="CA1502" Status="Active" Created="2025-10-21 16:34:39Z" FixCategory="NonBreaking">
              <Issue Certainty="90" Level="Warning" Path="C:\Users\cowanr\source\repos\EnergyVision\AdvancedHMI" File="EnergyVision.vb" Line="2082">'EnergyVision.Log_Chart_Timer(Object, EventArgs)' has a cyclomatic complexity of 50. Rewrite or refactor the method to reduce complexity to 25.</Issue>
             </Message>
-            <Message TypeName="AvoidExcessiveLocals" Category="Microsoft.Performance" CheckId="CA1809" Status="Active" Created="2025-10-02 18:07:59Z" FixCategory="NonBreaking">
+            <Message TypeName="AvoidExcessiveLocals" Category="Microsoft.Performance" CheckId="CA1809" Status="Active" Created="2025-10-21 16:34:39Z" FixCategory="NonBreaking">
              <Issue Name="Compiler" Certainty="95" Level="Warning" Path="C:\Users\cowanr\source\repos\EnergyVision\AdvancedHMI" File="EnergyVision.vb" Line="2082">'EnergyVision.Log_Chart_Timer(Object, EventArgs)' has 77 local variables, 53 of which were generated by the compiler. Refactor 'EnergyVision.Log_Chart_Timer(Object, EventArgs)' so that it uses fewer than 64 local variables.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#myCmd" Kind="Field" Static="False" Accessibility="Private" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="AvoidUnusedPrivateFields" Category="Microsoft.Performance" CheckId="CA1823" Status="Active" Created="2025-10-02 18:07:59Z" FixCategory="NonBreaking">
+            <Message TypeName="AvoidUnusedPrivateFields" Category="Microsoft.Performance" CheckId="CA1823" Status="Active" Created="2025-10-21 16:34:39Z" FixCategory="NonBreaking">
              <Issue Certainty="75" Level="Warning">It appears that field 'EnergyVision.myCmd' is never used or is only ever assigned to. Use this field or remove it.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#myConn" Kind="Field" Static="False" Accessibility="Private" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="AvoidUnusedPrivateFields" Category="Microsoft.Performance" CheckId="CA1823" Status="Active" Created="2025-10-02 18:07:59Z" FixCategory="NonBreaking">
+            <Message TypeName="AvoidUnusedPrivateFields" Category="Microsoft.Performance" CheckId="CA1823" Status="Active" Created="2025-10-21 16:34:39Z" FixCategory="NonBreaking">
              <Issue Certainty="75" Level="Warning">It appears that field 'EnergyVision.myConn' is never used or is only ever assigned to. Use this field or remove it.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#myReader" Kind="Field" Static="False" Accessibility="Private" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="AvoidUnusedPrivateFields" Category="Microsoft.Performance" CheckId="CA1823" Status="Active" Created="2025-10-02 18:07:59Z" FixCategory="NonBreaking">
+            <Message TypeName="AvoidUnusedPrivateFields" Category="Microsoft.Performance" CheckId="CA1823" Status="Active" Created="2025-10-21 16:34:39Z" FixCategory="NonBreaking">
              <Issue Certainty="75" Level="Warning">It appears that field 'EnergyVision.myReader' is never used or is only ever assigned to. Use this field or remove it.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#PLC_HeartBeat_Timer(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
            <Messages>
-            <Message Id="CurrentDT" TypeName="RemoveUnusedLocals" Category="Microsoft.Performance" CheckId="CA1804" Status="Active" Created="2025-10-02 18:07:59Z" FixCategory="NonBreaking">
+            <Message Id="CurrentDT" TypeName="RemoveUnusedLocals" Category="Microsoft.Performance" CheckId="CA1804" Status="Active" Created="2025-10-21 16:34:39Z" FixCategory="NonBreaking">
              <Issue Certainty="95" Level="Warning" Path="C:\Users\cowanr\source\repos\EnergyVision\AdvancedHMI" File="EnergyVision.vb" Line="2421">'EnergyVision.PLC_HeartBeat_Timer(Object, EventArgs)' declares a variable, 'CurrentDT', of type 'Date', which is never used or is only assigned to. Use this variable or remove it.</Issue>
              <Issue Certainty="95" Level="Warning" Path="C:\Users\cowanr\source\repos\EnergyVision\AdvancedHMI" File="EnergyVision.vb" Line="2430">'EnergyVision.PLC_HeartBeat_Timer(Object, EventArgs)' declares a variable, 'CurrentDT', of type 'Date', which is never used or is only assigned to. Use this variable or remove it.</Issue>
             </Message>
@@ -342,108 +342,108 @@
           </Member>
           <Member Name="#PLC_Response_Time(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
            <Messages>
-            <Message Id="NewHBTime" TypeName="RemoveUnusedLocals" Category="Microsoft.Performance" CheckId="CA1804" Status="Active" Created="2025-10-02 18:07:59Z" FixCategory="NonBreaking">
+            <Message Id="NewHBTime" TypeName="RemoveUnusedLocals" Category="Microsoft.Performance" CheckId="CA1804" Status="Active" Created="2025-10-21 16:34:39Z" FixCategory="NonBreaking">
              <Issue Certainty="95" Level="Warning" Path="C:\Users\cowanr\source\repos\EnergyVision\AdvancedHMI" File="EnergyVision.vb" Line="4582">'EnergyVision.PLC_Response_Time(Object, EventArgs)' declares a variable, 'NewHBTime', of type 'Date', which is never used or is only assigned to. Use this variable or remove it.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#PLCTimeSyncError" Kind="Field" Static="False" Accessibility="Private" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="AvoidUnusedPrivateFields" Category="Microsoft.Performance" CheckId="CA1823" Status="Active" Created="2025-10-02 18:07:59Z" FixCategory="NonBreaking">
+            <Message TypeName="AvoidUnusedPrivateFields" Category="Microsoft.Performance" CheckId="CA1823" Status="Active" Created="2025-10-21 16:34:39Z" FixCategory="NonBreaking">
              <Issue Certainty="75" Level="Warning">It appears that field 'EnergyVision.PLCTimeSyncError' is never used or is only ever assigned to. Use this field or remove it.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#ReadLineWithNumberFrom(System.String,System.Int32)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
            <Messages>
-            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2025-10-02 18:07:59Z" FixCategory="DependsOnFix">
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2025-10-21 16:34:39Z" FixCategory="DependsOnFix">
              <Issue Certainty="95" Level="Warning" Path="C:\Users\cowanr\source\repos\EnergyVision\AdvancedHMI" File="EnergyVision.vb" Line="1113">The 'this' parameter (or 'Me' in Visual Basic) of 'EnergyVision.ReadLineWithNumberFrom(String, Integer)' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#Refresh_Gauges()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
            <Messages>
-            <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Active" Created="2025-10-02 18:07:59Z" FixCategory="NonBreaking">
+            <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Active" Created="2025-10-21 16:34:39Z" FixCategory="NonBreaking">
              <Issue Certainty="95" Level="CriticalError" Path="C:\Users\cowanr\source\repos\EnergyVision\AdvancedHMI" File="EnergyVision.vb" Line="1597">Modify 'EnergyVision.Refresh_Gauges()' to catch a more specific exception than 'Exception' or rethrow the exception.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#RefreshAlarmTable()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2025-10-02 18:07:59Z" FixCategory="DependsOnFix">
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2025-10-21 16:34:39Z" FixCategory="DependsOnFix">
              <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\cowanr\source\repos\EnergyVision\AdvancedHMI" File="EnergyVision.vb" Line="1294">The query string passed to 'MySqlDataAdapter.New(String, MySqlConnection)' in 'EnergyVision.RefreshAlarmTable()' could contain the following variables 'Conversions.ToString(Me.AlarmsInList)'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#RefreshSettingsScreen()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
            <Messages>
-            <Message Id="x" TypeName="RemoveUnusedLocals" Category="Microsoft.Performance" CheckId="CA1804" Status="Active" Created="2025-10-02 18:07:59Z" FixCategory="NonBreaking">
+            <Message Id="x" TypeName="RemoveUnusedLocals" Category="Microsoft.Performance" CheckId="CA1804" Status="Active" Created="2025-10-21 16:34:39Z" FixCategory="NonBreaking">
              <Issue Certainty="95" Level="Warning" Path="C:\Users\cowanr\source\repos\EnergyVision\AdvancedHMI" File="EnergyVision.vb" Line="2900">'EnergyVision.RefreshSettingsScreen()' declares a variable, 'x', of type 'Integer', which is never used or is only assigned to. Use this variable or remove it.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#SaveAlarmData(System.String,System.String,System.String,System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
            <Messages>
-            <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Active" Created="2025-10-02 18:07:59Z" FixCategory="NonBreaking">
+            <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Active" Created="2025-10-21 16:34:39Z" FixCategory="NonBreaking">
              <Issue Certainty="95" Level="CriticalError" Path="C:\Users\cowanr\source\repos\EnergyVision\AdvancedHMI" File="EnergyVision.vb" Line="1257">Modify 'EnergyVision.SaveAlarmData(String, String, String, String)' to catch a more specific exception than 'Exception' or rethrow the exception.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#SaveSensorData(System.String,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
            <Messages>
-            <Message TypeName="AvoidExcessiveComplexity" Category="Microsoft.Maintainability" CheckId="CA1502" Status="Active" Created="2025-10-02 18:07:59Z" FixCategory="NonBreaking">
+            <Message TypeName="AvoidExcessiveComplexity" Category="Microsoft.Maintainability" CheckId="CA1502" Status="Active" Created="2025-10-21 16:34:39Z" FixCategory="NonBreaking">
              <Issue Certainty="90" Level="Warning" Path="C:\Users\cowanr\source\repos\EnergyVision\AdvancedHMI" File="EnergyVision.vb" Line="1183">'EnergyVision.SaveSensorData(String, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object)' has a cyclomatic complexity of 27. Rewrite or refactor the method to reduce complexity to 25.</Issue>
             </Message>
-            <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Active" Created="2025-10-02 18:07:59Z" FixCategory="NonBreaking">
+            <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Active" Created="2025-10-21 16:34:39Z" FixCategory="NonBreaking">
              <Issue Certainty="95" Level="CriticalError" Path="C:\Users\cowanr\source\repos\EnergyVision\AdvancedHMI" File="EnergyVision.vb" Line="1233">Modify 'EnergyVision.SaveSensorData(String, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object, Object)' to catch a more specific exception than 'Exception' or rethrow the exception.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#SaveSystemData(System.String,System.String,System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
            <Messages>
-            <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Active" Created="2025-10-02 18:07:59Z" FixCategory="NonBreaking">
+            <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Active" Created="2025-10-21 16:34:39Z" FixCategory="NonBreaking">
              <Issue Certainty="95" Level="CriticalError" Path="C:\Users\cowanr\source\repos\EnergyVision\AdvancedHMI" File="EnergyVision.vb" Line="1280">Modify 'EnergyVision.SaveSystemData(String, String, String)' to catch a more specific exception than 'Exception' or rethrow the exception.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#SetPropertyValue(System.Object,System.String,System.Object)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
            <Messages>
-            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2025-10-02 18:07:59Z" FixCategory="DependsOnFix">
+            <Message TypeName="MarkMembersAsStatic" Category="Microsoft.Performance" CheckId="CA1822" Status="Active" Created="2025-10-21 16:34:39Z" FixCategory="DependsOnFix">
              <Issue Certainty="95" Level="Warning" Path="C:\Users\cowanr\source\repos\EnergyVision\AdvancedHMI" File="EnergyVision.vb" Line="1964">The 'this' parameter (or 'Me' in Visual Basic) of 'EnergyVision.SetPropertyValue(Object, String, Object)' is never used. Mark the member as static (or Shared in Visual Basic) or use 'this'/'Me' in the method body or at least one property accessor, if appropriate.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#Settings_Populate()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Active" Created="2025-10-02 18:07:59Z" FixCategory="NonBreaking">
+            <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Active" Created="2025-10-21 16:34:39Z" FixCategory="NonBreaking">
              <Issue Certainty="95" Level="CriticalError" Path="C:\Users\cowanr\source\repos\EnergyVision\AdvancedHMI" File="EnergyVision.vb" Line="4298">Modify 'EnergyVision.Settings_Populate()' to catch a more specific exception than 'Exception' or rethrow the exception.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#Steam_Alarm_Changed(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
            <Messages>
-            <Message Id="CurrentDT" TypeName="RemoveUnusedLocals" Category="Microsoft.Performance" CheckId="CA1804" Status="Active" Created="2025-10-02 18:07:59Z" FixCategory="NonBreaking">
+            <Message Id="CurrentDT" TypeName="RemoveUnusedLocals" Category="Microsoft.Performance" CheckId="CA1804" Status="Active" Created="2025-10-21 16:34:39Z" FixCategory="NonBreaking">
              <Issue Certainty="95" Level="Warning" Path="C:\Users\cowanr\source\repos\EnergyVision\AdvancedHMI" File="EnergyVision.vb" Line="3251">'EnergyVision.Steam_Alarm_Changed(Object, EventArgs)' declares a variable, 'CurrentDT', of type 'Date', which is never used or is only assigned to. Use this variable or remove it.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#UpdateElectricalCharts()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
            <Messages>
-            <Message Id="PolarDataPoint" TypeName="RemoveUnusedLocals" Category="Microsoft.Performance" CheckId="CA1804" Status="Active" Created="2025-10-02 18:07:59Z" FixCategory="NonBreaking">
+            <Message Id="PolarDataPoint" TypeName="RemoveUnusedLocals" Category="Microsoft.Performance" CheckId="CA1804" Status="Active" Created="2025-10-21 16:34:39Z" FixCategory="NonBreaking">
              <Issue Certainty="95" Level="Warning" Path="C:\Users\cowanr\source\repos\EnergyVision\AdvancedHMI" File="EnergyVision.vb" Line="3918">'EnergyVision.UpdateElectricalCharts()' declares a variable, 'PolarDataPoint', of type 'DataPoint', which is never used or is only assigned to. Use this variable or remove it.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#Water_Alarm_Changed(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
            <Messages>
-            <Message Id="CurrentDT" TypeName="RemoveUnusedLocals" Category="Microsoft.Performance" CheckId="CA1804" Status="Active" Created="2025-10-02 18:07:59Z" FixCategory="NonBreaking">
+            <Message Id="CurrentDT" TypeName="RemoveUnusedLocals" Category="Microsoft.Performance" CheckId="CA1804" Status="Active" Created="2025-10-21 16:34:39Z" FixCategory="NonBreaking">
              <Issue Certainty="95" Level="Warning" Path="C:\Users\cowanr\source\repos\EnergyVision\AdvancedHMI" File="EnergyVision.vb" Line="3279">'EnergyVision.Water_Alarm_Changed(Object, EventArgs)' declares a variable, 'CurrentDT', of type 'Date', which is never used or is only assigned to. Use this variable or remove it.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#weatherIconPath" Kind="Field" Static="False" Accessibility="Private" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="AvoidUnusedPrivateFields" Category="Microsoft.Performance" CheckId="CA1823" Status="Active" Created="2025-10-02 18:07:59Z" FixCategory="NonBreaking">
+            <Message TypeName="AvoidUnusedPrivateFields" Category="Microsoft.Performance" CheckId="CA1823" Status="Active" Created="2025-10-21 16:34:39Z" FixCategory="NonBreaking">
              <Issue Certainty="75" Level="Warning">It appears that field 'EnergyVision.weatherIconPath' is never used or is only ever assigned to. Use this field or remove it.</Issue>
             </Message>
            </Messages>
@@ -452,38 +452,38 @@
         </Type>
         <Type Name="EnergyVision+Clouds" Kind="Class" Accessibility="Public" ExternallyVisible="True">
          <Messages>
-          <Message TypeName="NestedTypesShouldNotBeVisible" Category="Microsoft.Design" CheckId="CA1034" Status="Active" Created="2025-10-02 18:07:59Z" FixCategory="Breaking">
+          <Message TypeName="NestedTypesShouldNotBeVisible" Category="Microsoft.Design" CheckId="CA1034" Status="Active" Created="2025-10-21 16:34:39Z" FixCategory="Breaking">
            <Issue Certainty="90" Level="Error">Do not nest type 'EnergyVision.Clouds'. Alternatively, change its accessibility so that it is not externally visible.</Issue>
           </Message>
          </Messages>
         </Type>
         <Type Name="EnergyVision+Coord" Kind="Class" Accessibility="Public" ExternallyVisible="True">
          <Messages>
-          <Message TypeName="NestedTypesShouldNotBeVisible" Category="Microsoft.Design" CheckId="CA1034" Status="Active" Created="2025-10-02 18:07:59Z" FixCategory="Breaking">
+          <Message TypeName="NestedTypesShouldNotBeVisible" Category="Microsoft.Design" CheckId="CA1034" Status="Active" Created="2025-10-21 16:34:39Z" FixCategory="Breaking">
            <Issue Certainty="90" Level="Error">Do not nest type 'EnergyVision.Coord'. Alternatively, change its accessibility so that it is not externally visible.</Issue>
           </Message>
          </Messages>
         </Type>
         <Type Name="EnergyVision+Main" Kind="Class" Accessibility="Public" ExternallyVisible="True">
          <Messages>
-          <Message TypeName="NestedTypesShouldNotBeVisible" Category="Microsoft.Design" CheckId="CA1034" Status="Active" Created="2025-10-02 18:07:59Z" FixCategory="Breaking">
+          <Message TypeName="NestedTypesShouldNotBeVisible" Category="Microsoft.Design" CheckId="CA1034" Status="Active" Created="2025-10-21 16:34:39Z" FixCategory="Breaking">
            <Issue Certainty="90" Level="Error">Do not nest type 'EnergyVision.Main'. Alternatively, change its accessibility so that it is not externally visible.</Issue>
           </Message>
          </Messages>
         </Type>
         <Type Name="EnergyVision+Root_Weather" Kind="Class" Accessibility="Public" ExternallyVisible="True">
          <Messages>
-          <Message TypeName="NestedTypesShouldNotBeVisible" Category="Microsoft.Design" CheckId="CA1034" Status="Active" Created="2025-10-02 18:07:59Z" FixCategory="Breaking">
+          <Message TypeName="NestedTypesShouldNotBeVisible" Category="Microsoft.Design" CheckId="CA1034" Status="Active" Created="2025-10-21 16:34:39Z" FixCategory="Breaking">
            <Issue Certainty="90" Level="Error">Do not nest type 'EnergyVision.Root_Weather'. Alternatively, change its accessibility so that it is not externally visible.</Issue>
           </Message>
          </Messages>
          <Members>
           <Member Name="#weather" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
            <Messages>
-            <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Status="Active" Created="2025-10-02 18:07:59Z" FixCategory="Breaking">
+            <Message TypeName="CollectionPropertiesShouldBeReadOnly" Category="Microsoft.Usage" CheckId="CA2227" Status="Active" Created="2025-10-21 16:34:39Z" FixCategory="Breaking">
              <Issue Certainty="75" Level="Warning">Change 'EnergyVision.Root_Weather.weather()' to be read-only by removing the property setter.</Issue>
             </Message>
-            <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Status="Active" Created="2025-10-02 18:07:59Z" FixCategory="Breaking">
+            <Message TypeName="DoNotExposeGenericLists" Category="Microsoft.Design" CheckId="CA1002" Status="Active" Created="2025-10-21 16:34:39Z" FixCategory="Breaking">
              <Issue Certainty="95" Level="Error">Change 'List(Of EnergyVision.Weather)' in 'EnergyVision.Root_Weather.weather()' to use Collection&lt;T&gt;, ReadOnlyCollection&lt;T&gt; or KeyedCollection&lt;K,V&gt;</Issue>
             </Message>
            </Messages>
@@ -492,21 +492,21 @@
         </Type>
         <Type Name="EnergyVision+Sys" Kind="Class" Accessibility="Public" ExternallyVisible="True">
          <Messages>
-          <Message TypeName="NestedTypesShouldNotBeVisible" Category="Microsoft.Design" CheckId="CA1034" Status="Active" Created="2025-10-02 18:07:59Z" FixCategory="Breaking">
+          <Message TypeName="NestedTypesShouldNotBeVisible" Category="Microsoft.Design" CheckId="CA1034" Status="Active" Created="2025-10-21 16:34:39Z" FixCategory="Breaking">
            <Issue Certainty="90" Level="Error">Do not nest type 'EnergyVision.Sys'. Alternatively, change its accessibility so that it is not externally visible.</Issue>
           </Message>
          </Messages>
         </Type>
         <Type Name="EnergyVision+Weather" Kind="Class" Accessibility="Public" ExternallyVisible="True">
          <Messages>
-          <Message TypeName="NestedTypesShouldNotBeVisible" Category="Microsoft.Design" CheckId="CA1034" Status="Active" Created="2025-10-02 18:07:59Z" FixCategory="Breaking">
+          <Message TypeName="NestedTypesShouldNotBeVisible" Category="Microsoft.Design" CheckId="CA1034" Status="Active" Created="2025-10-21 16:34:39Z" FixCategory="Breaking">
            <Issue Certainty="90" Level="Error">Do not nest type 'EnergyVision.Weather'. Alternatively, change its accessibility so that it is not externally visible.</Issue>
           </Message>
          </Messages>
         </Type>
         <Type Name="EnergyVision+Wind" Kind="Class" Accessibility="Public" ExternallyVisible="True">
          <Messages>
-          <Message TypeName="NestedTypesShouldNotBeVisible" Category="Microsoft.Design" CheckId="CA1034" Status="Active" Created="2025-10-02 18:07:59Z" FixCategory="Breaking">
+          <Message TypeName="NestedTypesShouldNotBeVisible" Category="Microsoft.Design" CheckId="CA1034" Status="Active" Created="2025-10-21 16:34:39Z" FixCategory="Breaking">
            <Issue Certainty="90" Level="Error">Do not nest type 'EnergyVision.Wind'. Alternatively, change its accessibility so that it is not externally visible.</Issue>
           </Message>
          </Messages>
@@ -515,14 +515,14 @@
          <Members>
           <Member Name="#Dispose(System.Boolean)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
            <Messages>
-            <Message Id="SubScriptions" TypeName="DisposableFieldsShouldBeDisposed" Category="Microsoft.Usage" CheckId="CA2213" Status="Active" Created="2025-10-02 18:07:59Z" FixCategory="NonBreaking">
+            <Message Id="SubScriptions" TypeName="DisposableFieldsShouldBeDisposed" Category="Microsoft.Usage" CheckId="CA2213" Status="Active" Created="2025-10-21 16:34:39Z" FixCategory="NonBreaking">
              <Issue Certainty="75" Level="Warning" Path="C:\Users\cowanr\source\repos\EnergyVision\AdvancedHMI\FormChangeControls" File="FormChangeButton.vb" Line="112">'FormChangeButton' contains field 'FormChangeButton.SubScriptions' that is of IDisposable type: 'SubscriptionHandler'. Change the Dispose method on 'FormChangeButton' to call Dispose or Close on this field.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#PolledDataReturned(System.Object,AdvancedHMIControls.SubscriptionHandlerEventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Active" Created="2025-10-02 18:07:59Z" FixCategory="NonBreaking">
+            <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Active" Created="2025-10-21 16:34:39Z" FixCategory="NonBreaking">
              <Issue Certainty="95" Level="CriticalError" Path="C:\Users\cowanr\source\repos\EnergyVision\AdvancedHMI\FormChangeControls" File="FormChangeButton.vb" Line="273">Modify 'FormChangeButton.PolledDataReturned(Object, SubscriptionHandlerEventArgs)' to catch a more specific exception than 'Exception' or rethrow the exception.</Issue>
             </Message>
            </Messages>
@@ -533,14 +533,14 @@
          <Members>
           <Member Name="#Dispose(System.Boolean)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
            <Messages>
-            <Message Id="SubScriptions" TypeName="DisposableFieldsShouldBeDisposed" Category="Microsoft.Usage" CheckId="CA2213" Status="Active" Created="2025-10-02 18:07:59Z" FixCategory="NonBreaking">
+            <Message Id="SubScriptions" TypeName="DisposableFieldsShouldBeDisposed" Category="Microsoft.Usage" CheckId="CA2213" Status="Active" Created="2025-10-21 16:34:39Z" FixCategory="NonBreaking">
              <Issue Certainty="75" Level="Warning" Path="C:\Users\cowanr\source\repos\EnergyVision\AdvancedHMI\FormChangeControls" File="FormChangeImage.vb" Line="99">'FormChangeImage' contains field 'FormChangeImage.SubScriptions' that is of IDisposable type: 'SubscriptionHandler'. Change the Dispose method on 'FormChangeImage' to call Dispose or Close on this field.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#PolledDataReturned(System.Object,AdvancedHMIControls.SubscriptionHandlerEventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Active" Created="2025-10-02 18:07:59Z" FixCategory="NonBreaking">
+            <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Active" Created="2025-10-21 16:34:39Z" FixCategory="NonBreaking">
              <Issue Certainty="95" Level="CriticalError" Path="C:\Users\cowanr\source\repos\EnergyVision\AdvancedHMI\FormChangeControls" File="FormChangeImage.vb" Line="255">Modify 'FormChangeImage.PolledDataReturned(Object, SubscriptionHandlerEventArgs)' to catch a more specific exception than 'Exception' or rethrow the exception.</Issue>
             </Message>
            </Messages>
@@ -551,14 +551,14 @@
          <Members>
           <Member Name="#Dispose(System.Boolean)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
            <Messages>
-            <Message Id="SubScriptions" TypeName="DisposableFieldsShouldBeDisposed" Category="Microsoft.Usage" CheckId="CA2213" Status="Active" Created="2025-10-02 18:07:59Z" FixCategory="NonBreaking">
+            <Message Id="SubScriptions" TypeName="DisposableFieldsShouldBeDisposed" Category="Microsoft.Usage" CheckId="CA2213" Status="Active" Created="2025-10-21 16:34:39Z" FixCategory="NonBreaking">
              <Issue Certainty="75" Level="Warning" Path="C:\Users\cowanr\source\repos\EnergyVision\AdvancedHMI\FormChangeControls\MainMenuDriven" File="MainMenuButton.vb" Line="170">'MainMenuButton' contains field 'MainMenuButton.SubScriptions' that is of IDisposable type: 'SubscriptionHandler'. Change the Dispose method on 'MainMenuButton' to call Dispose or Close on this field.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#PolledDataReturned(System.Object,AdvancedHMIControls.SubscriptionHandlerEventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Active" Created="2025-10-02 18:07:59Z" FixCategory="NonBreaking">
+            <Message TypeName="DoNotCatchGeneralExceptionTypes" Category="Microsoft.Design" CheckId="CA1031" Status="Active" Created="2025-10-21 16:34:39Z" FixCategory="NonBreaking">
              <Issue Certainty="95" Level="CriticalError" Path="C:\Users\cowanr\source\repos\EnergyVision\AdvancedHMI\FormChangeControls\MainMenuDriven" File="MainMenuButton.vb" Line="346">Modify 'MainMenuButton.PolledDataReturned(Object, SubscriptionHandlerEventArgs)' to catch a more specific exception than 'Exception' or rethrow the exception.</Issue>
             </Message>
            </Messages>
