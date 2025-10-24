@@ -59,6 +59,14 @@
               "target": "Package",
               "version": "[9.3.0, )"
             },
+            "OxyPlot.ImageSharp": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "OxyPlot.Pdf": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
             "OxyPlot.WindowsForms": {
               "target": "Package",
               "version": "[2.2.0, )"

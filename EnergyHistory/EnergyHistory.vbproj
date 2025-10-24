@@ -17,6 +17,8 @@
   <ItemGroup>
     <PackageReference Include="MadMilkman.Ini" Version="1.0.6" />
     <PackageReference Include="MySql.Data" Version="9.3.0" />
+    <PackageReference Include="OxyPlot.ImageSharp" Version="2.2.0" />
+    <PackageReference Include="OxyPlot.Pdf" Version="2.2.0" />
     <PackageReference Include="OxyPlot.WindowsForms" Version="2.2.0" />
     <PackageReference Include="WinForms.DataVisualization" Version="1.10.0" />
   </ItemGroup>

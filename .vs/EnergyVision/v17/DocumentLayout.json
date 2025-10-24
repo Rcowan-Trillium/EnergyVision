@@ -3,9 +3,6 @@
   "WorkspaceRootPath": "C:\\Users\\cowanr\\source\\repos\\EnergyVision\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Msbuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{197E520B-F22C-47D0-9C35-C3955EA77A23}|EnergyHistory\\EnergyHistory.vbproj|c:\\users\\cowanr\\source\\repos\\energyvision\\energyhistory\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
       "RelativeMoniker": "D:0:0:{197E520B-F22C-47D0-9C35-C3955EA77A23}|EnergyHistory\\EnergyHistory.vbproj|solutionrelative:energyhistory\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
@@ -37,32 +34,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Microsoft.Common.CurrentVersion.targets",
-              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Msbuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Msbuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
-              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Msbuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Msbuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
-              "ViewState": "AgIAACITAAAAAAAAAAAOwDMTAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
-              "WhenOpened": "2025-10-22T13:24:44.863Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "Form1.vb",
               "DocumentMoniker": "C:\\Users\\cowanr\\source\\repos\\EnergyVision\\EnergyHistory\\Form1.vb",
               "RelativeDocumentMoniker": "EnergyHistory\\Form1.vb",
               "ToolTip": "C:\\Users\\cowanr\\source\\repos\\EnergyVision\\EnergyHistory\\Form1.vb",
               "RelativeToolTip": "EnergyHistory\\Form1.vb",
-              "ViewState": "AgIAAMYDAAAAAAAAAADQv9QDAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABACAAAAAAAAAAA2wDACAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2025-09-19T19:12:05.146Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "Form1.Designer.vb",
               "DocumentMoniker": "C:\\Users\\cowanr\\source\\repos\\EnergyVision\\EnergyHistory\\Form1.Designer.vb",
               "RelativeDocumentMoniker": "EnergyHistory\\Form1.Designer.vb",
@@ -75,7 +59,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "Form1.resx",
               "DocumentMoniker": "C:\\Users\\cowanr\\source\\repos\\EnergyVision\\EnergyHistory\\Form1.resx",
               "RelativeDocumentMoniker": "EnergyHistory\\Form1.resx",
@@ -87,7 +71,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "CheckBox.cs",
               "DocumentMoniker": "C:\\Users\\cowanr\\AppData\\Local\\Temp\\.vsdbgsrc\\08afea4ce1c81452b4147455fc10fc56f9dcc136fb3dd32b6ef3b3eb8c029cd0\\CheckBox.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\08afea4ce1c81452b4147455fc10fc56f9dcc136fb3dd32b6ef3b3eb8c029cd0\\CheckBox.cs",
@@ -95,7 +79,8 @@
               "RelativeToolTip": "..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\08afea4ce1c81452b4147455fc10fc56f9dcc136fb3dd32b6ef3b3eb8c029cd0\\CheckBox.cs",
               "ViewState": "AgIAADgBAAAAAAAAAAAtwEkBAAAFAAAAAQAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-09T14:33:33.556Z"
+              "WhenOpened": "2025-10-09T14:33:33.556Z",
+              "EditorCaption": ""
             }
           ]
         }
@@ -107,8 +92,8 @@
       "FloatingWindowState": {
         "Id": "c476d900-7db9-4383-8332-20b05fbaa503",
         "Display": 0,
-        "X": 609,
-        "Y": 255,
+        "X": 611,
+        "Y": 84,
         "Width": 1108,
         "Height": 965,
         "WindowState": 2
@@ -120,7 +105,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Form1.vb [Design]",
               "DocumentMoniker": "C:\\Users\\cowanr\\source\\repos\\EnergyVision\\EnergyHistory\\Form1.vb",
               "RelativeDocumentMoniker": "EnergyHistory\\Form1.vb",

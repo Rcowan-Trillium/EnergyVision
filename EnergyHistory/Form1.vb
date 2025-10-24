@@ -1,16 +1,13 @@
-﻿Imports System.Data.SqlClient
-Imports System.Math
-Imports System.Net
+﻿
+Imports System.IO
 Imports System.Text
-Imports System.Windows.Forms.DataVisualization.Charting
-Imports MadMilkman.Ini
-Imports Microsoft.Win32
 Imports MySql.Data.MySqlClient
-Imports Org.BouncyCastle.Math.EC
 Imports OxyPlot
+Imports OxyPlot.Annotations
 Imports OxyPlot.Axes
 Imports OxyPlot.Series
-
+Imports OxyPlot.WindowsForms
+Imports OxyPlot.ImageSharp
 
 Public Class Form1
 
@@ -36,18 +33,33 @@ Public Class Form1
         ChartPanel.HorizontalScroll.Enabled = True
 
     End Sub
-    'Private Sub seriesColorChange(sender As Object, e As MouseEventArgs) Handles CW_Supply_Col_BTN.Click, CW_PreFiltPres_Col_BTN.Click, CW_PostFiltPres_Col_BTN.Click,
-    '            CW_FiltDif_Col_BTN.Click, HW_PreFiltPres_Col_BTN.Click, HW_PostFiltPres_Col_BTN.Click, HW_FiltDif_Col_BTN.Click, HW_Temp_Col_BTN.Click,
-    '            HW_Flow_Col_BTN.Click, ST_FeedWaterPres_Col_BTN.Click, ST_HeadPres_Col_BTN.Click, ST_LowPres_Col_BTN.Click, ST_MedPres_Col_BTN.Click,
-    '            ST_LowDem_Col_BTN.Click, ST_MedDem_Col_BTN.Click, ST_Flow_Col_BTN.Click, EL_NorthA_Col_BTN.Click, EL_NorthB_Col_BTN.Click, EL_NorthC_Col_BTN.Click,
-    '            EL_SouthA_Col_BTN.Click, EL_SouthB_Col_BTN.Click, EL_SouthC_Col_BTN.Click, AR_LinePres_Col_BTN.Click
+    Public Sub ExportPlotToPng(model As PlotModel, filePath As String, Optional width As Integer = 1920, Optional height As Integer = 1080)
+        ' Using stream As New FileStream(filePath, FileMode.Create)
+        ' Render the PlotModel to a PNG file
+        ImageSharp.PngExporter.Export(model, filePath, width, height, 96)
+        ' End Using
+    End Sub
+    Private Sub seriesColorChange(sender As Object, e As MouseEventArgs) Handles CW_Supply_Col_BTN.Click, CW_PreFiltPres_Col_BTN.Click, CW_PostFiltPres_Col_BTN.Click,
+                CW_FiltDif_Col_BTN.Click, HW_PreFiltPres_Col_BTN.Click, HW_PostFiltPres_Col_BTN.Click, HW_FiltDif_Col_BTN.Click, HW_Temp_Col_BTN.Click,
+                HW_Flow_Col_BTN.Click, ST_FeedWaterPres_Col_BTN.Click, ST_HeadPres_Col_BTN.Click, ST_LowPres_Col_BTN.Click, ST_MedPres_Col_BTN.Click,
+                ST_LowDem_Col_BTN.Click, ST_MedDem_Col_BTN.Click, ST_Flow_Col_BTN.Click, EL_NorthA_Col_BTN.Click, EL_NorthB_Col_BTN.Click, EL_NorthC_Col_BTN.Click,
+                EL_SouthA_Col_BTN.Click, EL_SouthB_Col_BTN.Click, EL_SouthC_Col_BTN.Click, AR_LinePres_Col_BTN.Click
 
-    '    Dim CPicker As New ColorDialog
-    '    CPicker.ShowDialog()
-    '    ChartView.Series(sender.name.split("_Col_")(0)).Color = CPicker.Color
-    '    sender.backcolor = CPicker.Color
-    '    ChartView.Update()
-    'End Sub
+        Dim CPicker As New ColorDialog
+        CPicker.ShowDialog()
+        Dim cnt As Integer = 0
+        For Each i As LineSeries In PlotView.Model.Series
+            If i.Title = sender.name.split("_Col_")(0) Then
+                i.Color = ColorToOxyColor(CPicker.Color)
+                PlotView.Invalidate()
+                SeriesColorList(cnt) = ColorToOxyColor(CPicker.Color)
+            End If
+            cnt = +1
+        Next
+        ' PlotView.Model.Axes(sender.name.split("_Col_")(0)).AxislineColor = ColorToOxyColor(CPicker.Color)
+        sender.backcolor = CPicker.Color
+        'ChartView.Update()
+    End Sub
 
     Dim AlarmsInList As Integer = 250
     Private Sub GetNewData(StartPoint As DateTime, EndPoint As DateTime)
@@ -69,6 +81,7 @@ Public Class Form1
                 SerCNT += 1
                 CheckSeries.Add(i.Text)
                 query += i.Text & " AS " & i.Text & ", "
+
             End If
 
         Next
@@ -109,358 +122,7 @@ Public Class Form1
         End With
     End Sub
 
-    'Private Sub Chart1_MouseClick(sender As Object, e As MouseEventArgs)
-    '    Dim ca = ChartView.ChartAreas(0)
-    '    Dim xVal = ca.AxisX.PixelPositionToValue(e.X)
-    '    Dim clickedTime = Date.FromOADate(xVal)
-    '    Label42.Text = clickedTime
-    '    For Each ca_i In ChartView.ChartAreas
-    '        ca_i.CursorX.Position = xVal
-    '        ca_i.CursorX.LineColor = Color.Lime
-    '        ca_i.CursorX.LineWidth = 1
-    '        ca_i.CursorX.IsUserEnabled = True
-    '        ca_i.CursorX.IsUserSelectionEnabled = False
 
-    '        For Each s In ChartView.Series
-    '            Dim closestPoint As DataVisualization.Charting.DataPoint = Nothing
-    '            Dim minDiff = Double.MaxValue
-
-    '            ' Find nearest point in this series
-    '            For Each pt In s.Points
-    '                Dim diff = Abs(pt.XValue - xVal)
-    '                If diff < minDiff Then
-    '                    minDiff = diff
-    '                    closestPoint = pt
-    '                End If
-    '            Next
-    '            'set the cursor label as the closet value
-    '            If closestPoint IsNot Nothing Then
-
-    '                Dim yV = closestPoint.YValues(0)
-    '                SetControlPropertyByName(s.Name & "_Cursor_LBL", "Text", yV.ToString("0.00"))
-    '            End If
-    '        Next
-    '    Next
-    'End Sub
-
-    'Private Sub LoadChartData_test(StartPoint As DateTime, EndPoint As DateTime)
-    '    'used to place chart areas in the chart
-    '    Dim lastPos As New Point(0, 0)
-    '    'get saved connection string
-    '    Dim SQL As String = My.Settings.SQL_ConString
-    '    'build the start or the query string 
-    '    Dim query As String = "SELECT Date_Time AS Date_Time, "
-
-    '    Dim CheckSeries As New List(Of String)
-
-    '    'Build query by looping though all of the series visibility checkboxes
-    '    For Each i As CheckBox In {CW_Supply_Vis_CB, CW_PreFiltPres_Vis_CB, CW_PostFiltPres_Vis_CB,
-    '            CW_FiltDif_Vis_CB, HW_PreFiltPres_Vis_CB, HW_PostFiltPres_Vis_CB, HW_FiltDif_Vis_CB, HW_Temp_Vis_CB,
-    '            HW_Flow_Vis_CB, ST_FeedWaterPres_Vis_CB, ST_HeadPres_Vis_CB, ST_LowPres_Vis_CB, ST_MedPres_Vis_CB,
-    '            ST_LowDem_Vis_CB, ST_MedDem_Vis_CB, ST_Flow_Vis_CB, EL_NorthA_Vis_CB, EL_NorthB_Vis_CB, EL_NorthC_Vis_CB,
-    '            EL_SouthA_Vis_CB, EL_SouthB_Vis_CB, EL_SouthC_Vis_CB, AR_LinePres_Vis_CB}
-    '        'for each of the checkboxes in the data selection panel,
-    '        'add the series to the list of names to pull from and
-    '        'build the body of the query string
-    '        If i.Checked = True Then
-    '            CheckSeries.Add(i.Text)
-    '            query += i.Text & " AS " & i.Text & ", "
-    '        End If
-
-    '    Next
-    '    query = query.Remove(query.Count - 2)
-    '    query += " FROM a_vals WHERE Date_Time BETWEEN @startDate And @endDate;"
-
-    '    'start new SQL connection and get data using the specified query
-    '    Using conn As New MySqlConnection(SQL)
-    '        Try
-    '            conn.Open()
-    '            Dim cmd As New MySqlCommand(query, conn)
-    '            cmd.Parameters.AddWithValue("@startDate", StartPoint)
-    '            cmd.Parameters.AddWithValue("@endDate", EndPoint)
-    '            Dim reader As MySqlDataReader = cmd.ExecuteReader()
-    '            'Clear all Existing Chart Series and Chart Areas before creating new ones.
-    '            ChartView.Series.Clear()
-    '            ChartView.ChartAreas.Clear()
-
-    '            ' for each of the series in the list of series names; .
-    '            For Each i As String In CheckSeries
-
-
-    '                'create a new chart area from the template using the series name
-    '                Dim ca As New ChartArea(i)
-    '                'Area Template
-    '                ca.BackColor = Color.FromArgb(10, 10, 10)
-    '                ca.IsSameFontSizeForAllAxes = True
-    '                'XAxis Template
-    '                ca.AxisX.MajorTickMark.Enabled = False
-    '                ca.AxisX.LabelStyle.Angle = 45
-    '                ca.AxisX.LabelStyle.Enabled = False
-    '                ca.AxisX.LabelStyle.Interval = 15
-    '                ca.AxisX.LabelStyle.ForeColor = Color.Silver
-    '                ca.AxisX.LineColor = Color.FromArgb(64, 64, 64)
-    '                ca.AxisX.MajorGrid.LineColor = Color.FromArgb(48, 48, 48)
-    '                ca.AxisX.IsMarginVisible = False
-    '                ca.AxisX.MajorTickMark.Enabled = False
-    '                ca.CursorX.IsUserSelectionEnabled = True
-    '                ca.CursorX.IsUserEnabled = True
-    '                ca.CursorX.LineColor = Color.Red
-    '                ca.CursorX.LineWidth = 1
-    '                ca.CursorX.LineDashStyle = DataVisualization.Charting.ChartDashStyle.Dash
-    '                'YAxis Template
-    '                ca.AxisY.TitleForeColor = Color.Silver
-    '                ca.AxisY.Title = i
-    '                ca.AxisY.LabelStyle.Font = New Font("Segoe UI", 8)
-    '                ca.AxisY.LabelStyle.Format = "0"
-    '                ca.AxisY.LabelStyle.ForeColor = Color.White
-    '                ca.AxisY.LineColor = Color.FromArgb(64, 64, 64)
-    '                ca.AxisY.MajorGrid.LineColor = Color.FromArgb(48, 48, 48)
-    '                ca.AxisY.MajorGrid.Interval = 50
-    '                ca.AxisY.MinorGrid.Enabled = True
-    '                ca.AxisY.MinorGrid.LineColor = Color.FromArgb(20, 20, 20)
-    '                ca.AxisY.IsMarginVisible = False
-    '                ca.AxisY.IntervalAutoMode = False
-    '                ca.AxisY.MajorTickMark.Enabled = False
-    '                ca.CursorY.IsUserSelectionEnabled = True
-    '                ca.CursorY.IsUserEnabled = False
-    '                ca.CursorY.LineColor = Color.Lime
-    '                ca.CursorY.LineWidth = 1
-    '                ca.CursorY.LineDashStyle = DataVisualization.Charting.ChartDashStyle.Dash
-    '                'Calculate position of the next area
-    '                Dim hgt As Single = 100 / CheckSeries.Count
-    '                If CheckSeries.Count > 6 Then hgt = 100 / CheckSeries.Count Else hgt = 100 / 12
-
-    '                ca.Position = New ElementPosition(lastPos.X, lastPos.Y, 99, hgt)
-    '                lastPos = New Point(lastPos.X, (lastPos.Y + hgt))
-    '                'Aligne all chart areas with the first chart area
-    '                If i IsNot CheckSeries(0) Then
-    '                    ca.AlignWithChartArea = CheckSeries(0)
-    '                    ca.AlignmentOrientation = AreaAlignmentOrientations.Vertical
-    '                    ca.AlignmentStyle = AreaAlignmentStyles.PlotPosition
-    '                End If
-    '                'Add the new chart area to the chart
-    '                ChartView.ChartAreas.Add(ca)
-    '                'Add the series for the chart area to the chart area
-    '                Dim sr As New DataVisualization.Charting.Series(i)
-    '                sr.ChartType = SeriesChartType.Line
-    '                sr.ChartArea = i
-    '                sr.BorderWidth = 1
-    '                'add the series to the chart area
-    '                ChartView.Series.Add(sr)
-
-    '            Next
-
-    '            'Read each row in the data; Populate series with data 
-    '            While reader.Read()
-    '                'Get all data from each column 
-
-    '                Dim points As New List(Of Double)
-    '                For Each i As String In CheckSeries
-    '                    points.Add(reader(i))
-    '                Next
-
-    '                Dim serCNT As Integer = 0
-    '                For Each i As String In CheckSeries
-    '                    ChartView.Series(i).Points.AddXY(reader("Date_Time"), points(serCNT))
-    '                    serCNT += 1
-    '                Next
-
-    '            End While
-    '            For Each i As ChartArea In ChartView.ChartAreas
-    '                Dim max As Double = Math.Round(ChartView.Series(i.Name).Points.FindMaxByValue().YValues(0), 1) + 2
-    '                Dim min As Double = Math.Round(ChartView.Series(i.Name).Points.FindMinByValue().YValues(0), 1) - 2
-    '                i.AxisY.Maximum = max
-    '                i.AxisY.Minimum = min
-    '                i.AxisY.LabelStyle.Interval = (max - min) / 5
-    '                i.AxisY.MajorGrid.Interval = (max - min) / 5
-    '                i.AxisY.MinorGrid.Interval = ((max - min) / 5) / 2
-    '                i.AxisY.MinorGrid.Enabled = True
-    '            Next
-
-
-
-    '        Catch ex As Exception
-    '            MessageBox.Show("Error:  " & ex.Message)
-    '        End Try
-    '    End Using
-    'End Sub
-    'Private Sub LoadChartData(StartPoint As DateTime, EndPoint As DateTime)
-
-
-    '    'SQL Database query string to get all data from the tables
-    '    Dim query As String = "SELECT Date_Time AS Date_Time, " &
-    '        "CW_Supply AS CW_Supply, CW_PreFiltPres AS CW_PreFiltPres, CW_PostFiltPres AS CW_PostFiltPres, CW_FiltDif AS CW_FiltDif, " &
-    '        "HW_PreFiltPres AS HW_PreFiltPres, HW_PostFiltPres AS HW_PostFiltPres, HW_FiltDif AS HW_FiltDif, HW_Temp AS HW_Temp, HW_Flow AS HW_Flow, " &
-    '        "ST_FeedWaterPres AS ST_FeedWaterPres, ST_HeadPres AS ST_HeadPres, ST_LowPres AS ST_LowPres, ST_MedPres AS ST_MedPres, ST_LowDem AS ST_LowDem, ST_MedDem AS ST_MedDem, ST_Flow AS ST_Flow, " &
-    '        "EL_NorthA AS EL_NorthA, EL_NorthB AS EL_NorthB, EL_NorthC AS EL_NorthC, EL_SouthA AS EL_SouthA, EL_SouthB AS EL_SouthB, EL_SouthC AS EL_SouthC, " &
-    '        "AR_LinePres AS AR_LinePres FROM a_vals WHERE Date_Time BETWEEN @startDate And @endDate;"
-
-
-    '    'start new SQL connection and get datausing the specified query
-    '    Dim SQL As String = My.Settings.SQL_ConString
-    '    Using conn As New MySqlConnection(SQL)
-    '        Try
-    '            conn.Open()
-    '            Dim cmd As New MySqlCommand(query, conn)
-    '            cmd.Parameters.AddWithValue("@startDate", StartPoint)
-    '            cmd.Parameters.AddWithValue("@endDate", EndPoint)
-    '            Dim reader As MySqlDataReader = cmd.ExecuteReader()
-
-
-    '            'Clear all Existing Chart Series and Chart Areas before creating new ones.
-    '            ChartView.Series.Clear()
-    '            ChartView.ChartAreas.Clear()
-
-    '            Dim SeriesNames() As String = {"CW_Supply", "CW_PreFiltPres", "CW_PostFiltPres",
-    '            "CW_FiltDif", "HW_PreFiltPres", "HW_PostFiltPres", "HW_FiltDif", "HW_Temp",
-    '            "HW_Flow", "ST_FeedWaterPres", "ST_HeadPres", "ST_LowPres", "ST_MedPres",
-    '            "ST_LowDem", "ST_MedDem", "ST_Flow", "EL_NorthA", "EL_NorthB", "EL_NorthC",
-    '            "EL_SouthA", "EL_SouthB", "EL_SouthC", "AR_LinePres"}
-
-
-    '            Dim lastPos As New Point(0, 0)
-
-    '            ' for each of the series in the list of series names; .
-    '            For Each i As String In SeriesNames
-    '                'add series to the checked list box for visiblity selection.
-    '                ' CheckedListBox1.Items.Add(i, True)
-    '                'create a new chart area from the template using the series name
-    '                Dim ca As New ChartArea(i)
-    '                'Area Template
-    '                ca.BackColor = Color.Black
-    '                ca.IsSameFontSizeForAllAxes = True
-    '                ca.AxisX.ScaleView.Zoomable = False
-    '                ca.AxisX.ScrollBar.Enabled = False
-    '                'XAxis Template
-    '                ca.AxisX.MajorTickMark.Enabled = False
-    '                ca.AxisX.LabelStyle.Angle = 45
-    '                ca.AxisX.LabelStyle.Enabled = False
-    '                ca.AxisX.LabelStyle.Interval = 15
-    '                ca.AxisX.LabelStyle.ForeColor = Color.Silver
-    '                ca.AxisX.LineColor = Color.FromArgb(64, 64, 64)
-    '                ca.AxisX.MajorGrid.LineColor = Color.FromArgb(48, 48, 48)
-    '                ca.AxisX.IsMarginVisible = False
-    '                ca.AxisX.MajorTickMark.Enabled = False
-    '                ca.CursorX.IsUserSelectionEnabled = False
-    '                ca.CursorX.IsUserEnabled = True
-    '                ca.CursorX.LineColor = Color.Red
-    '                ca.CursorX.LineWidth = 1
-    '                ca.CursorX.LineDashStyle = DataVisualization.Charting.ChartDashStyle.Dash
-    '                'YAxis Template
-    '                ca.AxisY.TitleForeColor = Color.Silver
-    '                ca.AxisY.Title = i
-    '                ca.AxisY.LabelStyle.Font = New Font("Segoe UI", 8)
-    '                ca.AxisY.LabelStyle.Format = "0"
-    '                ca.AxisY.LabelStyle.ForeColor = Color.White
-    '                ca.AxisY.LineColor = Color.FromArgb(64, 64, 64)
-    '                ca.AxisY.MajorGrid.LineColor = Color.FromArgb(48, 48, 48)
-    '                ca.AxisY.MajorGrid.Interval = 50
-    '                ca.AxisY.MinorGrid.Enabled = True
-    '                ca.AxisY.MinorGrid.LineColor = Color.FromArgb(20, 20, 20)
-    '                ca.AxisY.IsMarginVisible = False
-    '                ca.AxisY.IntervalAutoMode = False
-    '                ca.AxisY.MajorTickMark.Enabled = False
-    '                ca.CursorY.IsUserSelectionEnabled = False
-    '                ca.CursorY.IsUserEnabled = False
-    '                ca.CursorY.LineColor = Color.Lime
-    '                ca.CursorY.LineWidth = 1
-    '                ca.CursorY.LineDashStyle = DataVisualization.Charting.ChartDashStyle.Dash
-
-    '                'Calculate position of the next area
-    '                Dim hgt As Single = 100 / 23
-    '                ca.Position = New ElementPosition(lastPos.X, lastPos.Y, 99, hgt)
-    '                lastPos = New Point(lastPos.X, (lastPos.Y + hgt))
-    '                'Aligne all chart areas with the first chart area
-    '                If i IsNot "CW_Supply" Then
-    '                    ca.AlignWithChartArea = "CW_Supply"
-    '                    ca.AlignmentOrientation = AreaAlignmentOrientations.Vertical
-    '                    ca.AlignmentStyle = AreaAlignmentStyles.PlotPosition
-    '                End If
-    '                'Add the new chart area to the chart
-    '                ChartView.ChartAreas.Add(ca)
-    '                'Add the series for the chart area to the chart area
-    '                Dim sr As New DataVisualization.Charting.Series(i)
-
-    '                sr.ChartType = SeriesChartType.Line
-    '                sr.ChartArea = i
-    '                sr.BorderWidth = 1
-    '                ChartView.Series.Add(sr)
-
-    '            Next
-    '            '' Read each row in the data; Populate series with data 
-    '            While reader.Read()
-    '                'Get all data from each column 
-    '                Dim points As Double() = {reader("CW_Supply"), reader("CW_PreFiltPres"),
-    '                    reader("CW_PostFiltPres"), reader("CW_FiltDif"), reader("HW_PreFiltPres"),
-    '                    reader("HW_PostFiltPres"), reader("HW_FiltDif"), reader("HW_Temp"),
-    '                    reader("HW_Flow"), reader("ST_FeedWaterPres"), reader("ST_HeadPres"),
-    '                    reader("ST_LowPres"), reader("ST_MedPres"), reader("ST_LowDem"),
-    '                    reader("ST_MedDem"), reader("ST_Flow"), reader("EL_NorthA"),
-    '                    reader("EL_NorthB"), reader("EL_NorthC"), reader("EL_SouthA"),
-    '                    reader("EL_SouthB"), reader("EL_SouthC"), reader("AR_LinePres")}
-
-    '                Dim serCNT As Integer = 0
-    '                For Each i As String In {"CW_Supply", "CW_PreFiltPres",
-    '                    "CW_PostFiltPres", "CW_FiltDif", "HW_PreFiltPres",
-    '                    "HW_PostFiltPres", "HW_FiltDif", "HW_Temp",
-    '                    "HW_Flow", "ST_FeedWaterPres", "ST_HeadPres",
-    '                    "ST_LowPres", "ST_MedPres", "ST_LowDem",
-    '                    "ST_MedDem", "ST_Flow", "EL_NorthA",
-    '                    "EL_NorthB", "EL_NorthC", "EL_SouthA",
-    '                    "EL_SouthB", "EL_SouthC", "AR_LinePres"}
-    '                    ChartView.Series(i).Points.AddXY(reader("Date_Time"), points(serCNT))
-    '                    serCNT += 1
-
-    '                Next
-
-    '            End While
-
-    '            For Each i As ChartArea In ChartView.ChartAreas
-    '                Dim max As Double = Math.Round(ChartView.Series(i.Name).Points.FindMaxByValue().YValues(0), 1) + 2
-    '                Dim min As Double = Math.Round(ChartView.Series(i.Name).Points.FindMinByValue().YValues(0), 1) - 2
-    '                i.AxisY.Maximum = max
-    '                i.AxisY.Minimum = min
-    '                i.AxisY.LabelStyle.Interval = (max - min) / 5
-    '                i.AxisY.MajorGrid.Interval = (max - min) / 5
-    '                i.AxisY.MinorGrid.Interval = ((max - min) / 5) / 2
-    '                i.AxisY.MinorGrid.Enabled = True
-    '            Next
-    '            If ChartView.ChartAreas.Count > 0 Then
-    '                For Each ChartA As ChartArea In ChartView.ChartAreas
-    '                    ChartA.AxisX.ScaleView.Size = 60 * (((1 / 24) / 60) / 60)
-    '                    ChartA.AxisX.ScaleView.Position = ChartView.Series(0).Points(0).XValue
-    '                    ChartA.AxisX.ScaleView.SmallScrollSize = (((1 / 24) / 60) / 60)
-    '                Next
-    '                HScrollBar1.Maximum = ChartView.Series(0).Points.Count
-    '                HScrollBar1.Value = 0
-    '            End If
-
-    '            If ChartView.Series(0).Points.Count > 60 Then
-    '                For Each ChartA As ChartArea In ChartView.ChartAreas
-    '                    ChartA.AxisX.ScaleView.Size = 60 * (((1 / 24) / 60) / 60)
-    '                    ChartA.AxisX.ScaleView.Position = ChartView.Series(0).Points(0).XValue
-    '                    ChartA.AxisX.ScaleView.SmallScrollSize = 0 '(((1 / 24) / 60) / 60)
-    '                    ChartA.AxisX.ScrollBar.Enabled = False
-    '                Next
-    '                HScrollBar1.Maximum = ChartView.Series(0).Points.Count
-    '                HScrollBar1.Value = 0
-    '            Else
-    '                For Each ChartA As ChartArea In ChartView.ChartAreas
-    '                    ChartA.AxisX.ScaleView.Size = 60 * (((1 / 24) / 60) / 60)
-    '                    ChartA.AxisX.ScaleView.Position = ChartView.Series(0).Points(0).XValue
-    '                    ChartA.AxisX.ScaleView.SmallScrollSize = 0 '(((1 / 24) / 60) / 60)
-    '                    ChartA.AxisX.ScrollBar.Enabled = False
-    '                Next
-    '                HScrollBar1.Maximum = ChartView.Series(0).Points.Count
-    '                HScrollBar1.Value = 0
-    '            End If
-
-
-    '        Catch ex As Exception
-    '            MessageBox.Show("Error:  " & ex.Message)
-    '        End Try
-    '    End Using
-    'End Sub
 
     Private Sub SpanChanged(sender As Object, e As EventArgs) Handles TextBox7.TextChanged
         If IsNumeric(sender.text) Then
@@ -470,7 +132,8 @@ Public Class Form1
             Else
                 NewTimeSpan = TimeSpan.FromMinutes(TextBox7.Text)
             End If
-            DateTimePicker2.Value = DateTimePicker1.Value.Add(NewTimeSpan)
+            ' DateTimePicker2.Value = DateTimePicker1.Value.Add(NewTimeSpan)
+            ZoomPlot(PlotView.Model, NewTimeSpan)
         Else
             MsgBox("Entry must be numeric")
         End If
@@ -746,12 +409,57 @@ Public Class Form1
         End If
     End Sub
     Private Sub Confirm_And_Pull_Button(sender As Object, e As EventArgs) Handles Button13.Click
+
         Dim Start_DateTime = DateTimePicker1.Value
         Dim End_DateTime = DateTimePicker2.Value
-        ' GetNewData(Start_DateTime, End_DateTime)
-        PopulatePlotView(Start_DateTime, End_DateTime)
+        If Start_DateTime < End_DateTime Then
+            If Pull_Grid_Selector.Checked Then GetNewData(Start_DateTime, End_DateTime)
+            If Pull_Chart_Selector.Checked Then PopulatePlotView(Start_DateTime, End_DateTime)
+        Else
+            MsgBox("The Start time must come before the end time", MessageBoxButtons.OK)
+        End If
+
         ' LoadChartData_test(Start_DateTime, End_DateTime)
     End Sub
+    Private cursorLine As LineAnnotation
+    Private Sub PlotView_MouseDown(sender As Object, e As OxyMouseDownEventArgs)
+        If e.ChangedButton = OxyMouseButton.Left Then
+            ' Convert screen position → X data coordinate
+            Dim xAxis = PlotView.Model.Axes.OfType(Of DateTimeAxis)().First()
+            Dim xVal = xAxis.InverseTransform(e.Position.X)
+
+            ' Move cursor
+            cursorLine.X = xVal
+
+            ' Clear previous annotation text
+            cursorLine.Text = ""
+
+            ' Collect Y-values at cursor X
+            Dim textLines As New List(Of String)
+
+            For Each s In PlotView.Model.Series.OfType(Of LineSeries)()
+                Dim nearest = s.Points.OrderBy(Function(p) Math.Abs(p.X - xVal)).FirstOrDefault()
+                ' If nearest IsNot vbEmpty Then
+                Dim yVal = nearest.Y
+                Dim seriesName = s.Title
+                textLines.Add($"{seriesName}: {yVal:F2}")
+                ' End If
+            Next
+
+            ' Build label text
+            cursorLine.Text = String.Join(Environment.NewLine, textLines)
+
+            ' Optional: position label
+            cursorLine.TextOrientation = AnnotationTextOrientation.Vertical
+            cursorLine.TextVerticalAlignment = VerticalAlignment.Top
+
+            ' Update plot
+            PlotView.Model.InvalidatePlot(False)
+            e.Handled = True
+        End If
+
+    End Sub
+
     Sub OpenNewPage(Page As Object)
         Summary_Page.Hide()
         ChartPanel.Hide()
@@ -825,7 +533,7 @@ Public Class Form1
                 EL_SouthA_Vis_CB.Click, EL_SouthB_Vis_CB.Click, EL_SouthC_Vis_CB.Click, AR_LinePres_Vis_CB.Click
         Dim Check_Checked As Boolean = True
 
-
+        Dim sercnt As Integer = 0
         If sender.Checked = True Then
             sender.Font = New Font(sender.Font.FontFamily, sender.Font.Size, FontStyle.Bold)
             For Each i As CheckBox In {CW_Supply_Vis_CB, CW_PreFiltPres_Vis_CB, CW_PostFiltPres_Vis_CB,
@@ -833,8 +541,12 @@ Public Class Form1
                 HW_Flow_Vis_CB, ST_FeedWaterPres_Vis_CB, ST_HeadPres_Vis_CB, ST_LowPres_Vis_CB, ST_MedPres_Vis_CB,
                 ST_LowDem_Vis_CB, ST_MedDem_Vis_CB, ST_Flow_Vis_CB, EL_NorthA_Vis_CB, EL_NorthB_Vis_CB, EL_NorthC_Vis_CB,
                 EL_SouthA_Vis_CB, EL_SouthB_Vis_CB, EL_SouthC_Vis_CB, AR_LinePres_Vis_CB}
-                If i.Checked = False Then Check_Checked = False
+                If i.Checked = False Then
+                    Check_Checked = False
+                Else sercnt += 1
+                End If
             Next
+            Calc_DataPoints(sercnt)
             All_Vis_CB.Checked = Check_Checked
         Else
             All_Vis_CB.Checked = False
@@ -842,7 +554,12 @@ Public Class Form1
         End If
 
     End Sub
-
+    Public Sub Calc_DataPoints(cnt As Integer)
+        Dim RowCount As Integer = Convert.ToInt32(SUM_Count_LBL.Text.Split(" ")(0))
+        If RowCount > 0 Then
+            DataCountLBL.Text = RowCount * cnt & " Points"
+        End If
+    End Sub
     Private Sub Vis_SelectALL_CheckedChanged(sender As CheckBox, e As EventArgs) Handles All_Vis_CB.Click
         For Each i As CheckBox In {CW_Supply_Vis_CB, CW_PreFiltPres_Vis_CB, CW_PostFiltPres_Vis_CB,
                 CW_FiltDif_Vis_CB, HW_PreFiltPres_Vis_CB, HW_PostFiltPres_Vis_CB, HW_FiltDif_Vis_CB, HW_Temp_Vis_CB,
@@ -860,12 +577,30 @@ Public Class Form1
     End Sub
 
     Sub PopulatePlotView(StartTime As DateTime, EndTime As DateTime)
+        '*******************************************
+        'Clear Plot data and color selection panels.
+        '*******************************************
+        PlotView.Model = Nothing
+        For Each Col_panel As Panel In {CW_Supply_Col_BTN, CW_PreFiltPres_Col_BTN, CW_PostFiltPres_Col_BTN,
+                CW_FiltDif_Col_BTN, HW_PreFiltPres_Col_BTN, HW_PostFiltPres_Col_BTN, HW_FiltDif_Col_BTN, HW_Temp_Col_BTN,
+                HW_Flow_Col_BTN, ST_FeedWaterPres_Col_BTN, ST_HeadPres_Col_BTN, ST_LowPres_Col_BTN, ST_MedPres_Col_BTN,
+                ST_LowDem_Col_BTN, ST_MedDem_Col_BTN, ST_Flow_Col_BTN, EL_NorthA_Col_BTN, EL_NorthB_Col_BTN, EL_NorthC_Col_BTN,
+                EL_SouthA_Col_BTN, EL_SouthB_Col_BTN, EL_SouthC_Col_BTN, AR_LinePres_Col_BTN}
+            Col_panel.BackColor = Color.Transparent
+        Next
+
         Dim SQL As String = My.Settings.SQL_ConString
         Dim query As String = "SELECT Date_Time AS Date_Time, "
         Dim CheckCount As Integer = 0
         Dim CheckSeries As New List(Of String)
+        Dim CheckedIndexs As New List(Of Integer)
+        Dim CheckIDX As Integer = 0
+        Dim cursorLine As OxyPlot.Annotations.LineAnnotation
+        Dim infoAnnotation As OxyPlot.Annotations.TextAnnotation
 
+        '*******************************************
         'Build query by looping though all of the series visibility checkboxes
+        '*******************************************
         For Each i As CheckBox In {CW_Supply_Vis_CB, CW_PreFiltPres_Vis_CB, CW_PostFiltPres_Vis_CB,
                 CW_FiltDif_Vis_CB, HW_PreFiltPres_Vis_CB, HW_PostFiltPres_Vis_CB, HW_FiltDif_Vis_CB, HW_Temp_Vis_CB,
                 HW_Flow_Vis_CB, ST_FeedWaterPres_Vis_CB, ST_HeadPres_Vis_CB, ST_LowPres_Vis_CB, ST_MedPres_Vis_CB,
@@ -877,30 +612,26 @@ Public Class Form1
             If i.Checked = True Then
                 CheckCount += 1
                 CheckSeries.Add(i.Text)
+                CheckedIndexs.Add(CheckIDX)
                 query += i.Text & " AS " & i.Text & ", "
             End If
-
+            CheckIDX += 1
         Next
+        'Trim end of string to remove ", " and add range string
         query = query.Remove(query.Count - 2)
         query += " FROM a_vals WHERE Date_Time BETWEEN @startDate And @endDate;"
 
-        Dim Querystr As String = "SELECT Date_Time AS Date_Time, " &
-            "CW_Supply AS CW_Supply, CW_PreFiltPres AS CW_PreFiltPres, CW_PostFiltPres AS CW_PostFiltPres, CW_FiltDif AS CW_FiltDif, " &
-            "HW_PreFiltPres AS HW_PreFiltPres, HW_PostFiltPres AS HW_PostFiltPres, HW_FiltDif AS HW_FiltDif, HW_Temp AS HW_Temp, HW_Flow AS HW_Flow, " &
-            "ST_FeedWaterPres AS ST_FeedWaterPres, ST_HeadPres AS ST_HeadPres, ST_LowPres AS ST_LowPres, ST_MedPres AS ST_MedPres, ST_LowDem AS ST_LowDem, ST_MedDem AS ST_MedDem, ST_Flow AS ST_Flow, " &
-            "EL_NorthA AS EL_NorthA, EL_NorthB AS EL_NorthB, EL_NorthC AS EL_NorthC, EL_SouthA AS EL_SouthA, EL_SouthB AS EL_SouthB, EL_SouthC AS EL_SouthC, " &
-            "AR_LinePres AS AR_LinePres FROM a_vals WHERE Date_Time BETWEEN @startDate And @endDate;"
-
-        Dim SQLstr As String = My.Settings.SQL_ConString
-
+        '*******************************************
+        ' Create Plot Model with styling
+        '*******************************************
 
         Dim PlotModel As New OxyPlot.PlotModel With {.Title = "Process Data",
             .IsLegendVisible = True,
-            .PlotAreaBackground = OxyColor.FromRgb(16, 16, 16),
+            .PlotAreaBackground = OxyColor.FromRgb(13, 13, 13),
             .Background = OxyPlot.OxyColor.FromRgb(10, 10, 10),     ' Plot background
             .TextColor = OxyColors.White,                    ' Axis/Legend text
-            .PlotAreaBorderColor = OxyColors.Gray,           ' Border around plot area
-            .PlotAreaBorderThickness = New OxyThickness(1)}
+            .PlotAreaBorderColor = OxyColors.Silver,           ' Border around plot area
+            .PlotAreaBorderThickness = New OxyThickness(2)}
 
         ' --- Common X Axis (Datetime) ---
         PlotModel.Axes.Add(New DateTimeAxis With {
@@ -909,33 +640,39 @@ Public Class Form1
             .Title = "Time",
             .IntervalType = OxyPlot.Axes.DateTimeIntervalType.Minutes,
             .MajorGridlineStyle = LineStyle.Solid,
-        .MajorGridlineColor = OxyColor.FromRgb(128, 128, 128),
+            .MajorGridlineColor = OxyColor.FromRgb(64, 64, 64),
             .MinorGridlineStyle = LineStyle.Dot,
-            .MinorGridlineColor = OxyColor.FromRgb(64, 64, 64),
-             .AxislineThickness = 3,
-             .AxislineColor = OxyColor.FromRgb(0, 0, 0),
-             .AxislineStyle = LineStyle.Solid
-        })
-        Using conn As New MySqlConnection(SQLstr)
+            .MinorGridlineColor = OxyColor.FromRgb(32, 32, 32)})
+        '*******************************************
+        'Connect to the SQL Database
+        '*******************************************
+        Using conn As New MySqlConnection(SQL)
             conn.Open()
             Using cmd As New MySqlCommand(query, conn)
+                'Add start and end time parameter for que
                 cmd.Parameters.AddWithValue("@startDate", StartTime)
                 cmd.Parameters.AddWithValue("@endDate", EndTime)
                 Using reader As MySqlDataReader = cmd.ExecuteReader()
-                    ' --- Prepare 23 LineSeries (one per column) ---
+                    ' --- Prepare list of LineSeries (one per checked series) ---
                     Dim seriesList As New List(Of LineSeries)
                     Dim AxisCnt As Integer = 0
                     For Each name As String In CheckSeries
+                        'Create Series with name, Y axis Key, line thickness, and select the color form the preset color list.
                         Dim ser As New LineSeries With {
                             .Title = name,
                             .YAxisKey = name,
-                            .StrokeThickness = 1.5
+                            .StrokeThickness = 1.5,
+                            .Color = SeriesColorList(CheckedIndexs(AxisCnt))
                         }
                         seriesList.Add(ser)
-                        AxisCnt += 1
-                        Dim strpnt As Double = ((AxisCnt - 1) / CheckCount)
-                        Dim endpnt As Double = (AxisCnt / CheckCount)
 
+                        'create isolation between the series in the plot area
+                        Dim iso As Double = 0.25 / CheckCount
+                        AxisCnt += 1
+                        Dim strpnt As Double = ((AxisCnt - 1) / CheckCount) + (iso / 2)
+                        Dim endpnt As Double = (AxisCnt / CheckCount) - (iso / 2)
+
+                        'Create and assign a new Y axis the plot area to link to the series
                         Dim axis As New LinearAxis With {
                             .Position = AxisPosition.Left,
                             .Key = name,
@@ -944,45 +681,228 @@ Public Class Form1
                             .EndPosition = endpnt,
                             .IsZoomEnabled = False,
                             .IsPanEnabled = False,
-                               .MajorGridlineStyle = LineStyle.Solid,
-        .MajorGridlineColor = OxyColor.FromRgb(64, 64, 64),
-            .MinorGridlineStyle = LineStyle.Dot,
-            .MinorGridlineColor = OxyColor.FromRgb(32, 32, 32),
-             .AxislineThickness = 3,
-             .AxislineColor = OxyColor.FromRgb(0, 0, 0),
-             .AxislineStyle = LineStyle.Solid
-                        }
-
+                            .MajorGridlineStyle = LineStyle.Solid,
+                            .MajorGridlineColor = OxyColor.FromRgb(32, 32, 32),
+                            .MinorGridlineStyle = LineStyle.Dot,
+                            .MinorGridlineColor = OxyColor.FromRgb(32, 32, 32),
+                            .AxislineThickness = 3}
+                        ' add it to the plot view
                         PlotModel.Axes.Add(axis)
 
                     Next
-
-                    ' --- Read data ---
+                    '*******************************************
+                    ' --- Read each line from SQL to populate the series in the plot
+                    '*******************************************
                     While reader.Read()
+                        'get time and date of datapoint
                         Dim t As Double = DateTimeAxis.ToDouble(reader.GetDateTime("Date_Time"))
                         Dim serCNT As Integer = 0
+
                         For Each name As String In CheckSeries
                             If Not IsDBNull(reader(name)) Then
+                                ' add all data points from this line to their respective series
                                 Dim y As Double = Convert.ToDouble(reader(name))
                                 seriesList(serCNT).Points.Add(New OxyPlot.DataPoint(t, y))
                                 serCNT += 1
                             End If
                         Next
                     End While
+                    ' add al the populated series to the plotModel
                     For Each ser As LineSeries In seriesList
                         PlotModel.Series.Add(ser)
                     Next
+
                 End Using
             End Using
         End Using
+        '*******************************************
+        'Add Cursor object to the plotModel
+        '*******************************************
+        cursorLine = New OxyPlot.Annotations.LineAnnotation With {
+            .Type = LineAnnotationType.Vertical,
+            .Color = OxyColors.Yellow,
+            .LineStyle = LineStyle.Solid,
+            .StrokeThickness = 1.5,
+            .X = DateTimeAxis.ToDouble(DateTime.Now),
+            .Layer = AnnotationLayer.AboveSeries
+        }
+        PlotModel.Annotations.Add(cursorLine)
+        '*******************************************
+        'Add The plot model to the Plot View
+        '*******************************************
         PlotView.Model = PlotModel
-        For Each ser In PlotView.Model.Axes
-            If ser IsNot Nothing Then Chart_Page.Controls(ser.Key & "_COL_BTN").BackColor = Color.FromArgb(ser.AxislineColor.R, ser.AxislineColor.G, ser.AxislineColor.B)
+
+        For Each ax As LineSeries In PlotView.Model.Series
+            If ax IsNot Nothing AndAlso ax.Title IsNot "" Then
+                SetControlPropertyByName(ax.Title & "_Col_BTN", "BackColor", OxyColorToColor(ax.Color))
+            End If
 
         Next
+
+
+
     End Sub
+    Dim FirstZoomChange As Boolean = False
+    Public Sub ZoomPlot(plotModel As PlotModel, span As TimeSpan)
+        ' Find the DateTime X axis (bottom axis)
+        If FirstZoomChange Then
+
+
+            Dim xAxis = plotModel.Axes.FirstOrDefault(Function(a) a.Position = AxisPosition.Bottom)
+            If xAxis Is Nothing OrElse Not TypeOf xAxis Is DateTimeAxis Then Exit Sub
+
+            ' Convert current axis range to DateTime
+            Dim currentStart As DateTime = DateTimeAxis.ToDateTime(xAxis.ActualMinimum)
+            Dim newEnd As DateTime = currentStart.Add(span)
+
+            ' Convert back to OxyPlot coordinates
+            Dim newMin As Double = DateTimeAxis.ToDouble(currentStart)
+            Dim newMax As Double = DateTimeAxis.ToDouble(newEnd)
+
+            ' Apply the zoom to the X axis
+            xAxis.Zoom(newMin, newMax)
+            plotModel.InvalidatePlot(False)
+        Else firstzoomchange = True
+        End If
+    End Sub
+
+    ' -----------------------------
+    ' ORDERED LIST (Index-Based)
+    ' -----------------------------
+    Public SeriesColorList As New List(Of OxyColor) From {
+    OxyColors.DodgerBlue,         ' City Water Pressure
+    OxyColors.SteelBlue,          ' Cold Water Pre Filter Pressure
+    OxyColors.LightSkyBlue,       ' Cold Water Post Filter Pressure
+    OxyColors.OrangeRed,          ' Cold Water Filter Differential
+    OxyColors.IndianRed,          ' Hot Water Pre Filter Pressure
+    OxyColors.Tomato,             ' Hot Water Post Filter Pressure
+    OxyColors.DarkOrange,         ' Hot Water Filter Differential
+    OxyColors.Goldenrod,          ' Hot Water Flow Rate
+    OxyColors.Red,                ' Hot Water Temperature
+    OxyColors.SlateBlue,          ' Boiler Feed Water Pressure
+    OxyColors.MediumPurple,       ' Steam Header Pressure
+    OxyColors.Orchid,             ' Low Pressure Steam Pressure
+    OxyColors.Violet,             ' Medium Pressure Steam Pressure
+    OxyColors.Plum,                ' Low Steam Demand  ← NEW
+    OxyColors.MediumVioletRed,     ' Medium Steam Demand  ← NEW
+    OxyColors.MediumOrchid,       ' Steam Header Flow Rate
+    OxyColors.Yellow,             ' North A Phase Voltage To Ground
+    OxyColors.Chartreuse,         ' North B Phase Voltage To Ground
+    OxyColors.LightGoldenrodYellow, ' North C Phase Voltage To Ground
+    OxyColors.Gold,               ' South A Phase Voltage To Ground
+    OxyColors.LawnGreen,          ' South B Phase Voltage To Ground
+    OxyColors.Khaki,              ' South C Phase Voltage To Ground
+    OxyColors.DeepSkyBlue          ' Compressed Air Pressure
+   }
+
+    ' -----------------------------
+    ' NAME → COLOR DICTIONARY
+    ' -----------------------------
+    Public SeriesColorDict As New Dictionary(Of String, OxyColor) From {
+    {"City Water Pressure", OxyColors.DodgerBlue},
+    {"Cold Water Pre Filter Pressure", OxyColors.SteelBlue},
+    {"Cold Water Post Filter Pressure", OxyColors.LightSkyBlue},
+    {"Cold Water Filter Differential", OxyColors.OrangeRed},
+    {"Hot Water Pre Filter Pressure", OxyColors.IndianRed},
+    {"Hot Water Post Filter Pressure", OxyColors.Tomato},
+    {"Hot Water Filter Differential", OxyColors.DarkOrange},
+    {"Hot Water Flow Rate", OxyColors.Goldenrod},
+    {"Hot Water Temperature", OxyColors.Red},
+    {"Boiler Feed Water Pressure", OxyColors.SlateBlue},
+    {"Steam Header Pressure", OxyColors.MediumPurple},
+    {"Low Pressure Steam Pressure", OxyColors.Orchid},
+    {"Medium Pressure Steam Pressure", OxyColors.Violet},
+        {"Low Steam Demand", OxyColors.Plum},                ' ← NEW
+    {"Medium Steam Demand", OxyColors.MediumVioletRed},  ' ← NEW
+    {"Steam Header Flow Rate", OxyColors.MediumOrchid},
+    {"North A Phase Voltage To Ground", OxyColors.Yellow},
+    {"North B Phase Voltage To Ground", OxyColors.Chartreuse},
+    {"North C Phase Voltage To Ground", OxyColors.LightGoldenrodYellow},
+    {"South A Phase Voltage To Ground", OxyColors.Gold},
+    {"South B Phase Voltage To Ground", OxyColors.LawnGreen},
+    {"South C Phase Voltage To Ground", OxyColors.Khaki},
+    {"Compressed Air Pressure", OxyColors.DeepSkyBlue}
+}
+    'Public Sub MatchSeriesColorsToPanelsByName(plotModel As PlotModel, container As Control)
+    '    ' Dim autoColors As OxyColor() = OxyPlot.DefaultColors.Automatic
+
+    '    Dim seriesIndex As Integer = 0
+
+    '    For Each s As LineSeries In plotModel.Series
+    '        Dim seriesName As String = s.Title
+    '        If String.IsNullOrEmpty(seriesName) Then Continue For
+
+    '        ' Find the matching panel
+    '        Dim matchingPanels As Control() = container.Controls.Find(seriesName, True)
+    '        If matchingPanels.Length = 0 Then Continue For
+
+    '        Dim pnl As Panel = TryCast(matchingPanels(0), Panel)
+    '        If pnl Is Nothing Then Continue For
+
+    '        ' Determine the series color
+    '        Dim oxyColor As OxyColor = OxyColors.Transparent
+
+    '        If TypeOf s Is LineSeries Then
+    '            Dim ls = DirectCast(s, LineSeries)
+    '            oxyColor = If(ls.Color.IsVisible(), ls.Color, autoColors(seriesIndex Mod autoColors.Length))
+
+    '        End If
+
+    '        ' Convert to System.Drawing.Color
+    '        Dim panelColor As Color = Color.FromArgb(oxyColor.A, oxyColor.R, oxyColor.G, oxyColor.B)
+
+    '        ' Apply background color
+    '        pnl.BackColor = panelColor
+
+    '        seriesIndex += 1
+    '    Next
+    'End Sub
 
     Private Sub Chart_Page_Paint(sender As Object, e As PaintEventArgs) Handles Chart_Page.Paint
 
     End Sub
+
+
+
+
+    Public Sub ExportPlotToSvg(model As PlotModel, filePath As String, Optional width As Integer = 1920, Optional height As Integer = 1080)
+        Using stream As New FileStream(filePath, FileMode.Create)
+            Dim exporter As New OxyPlot.SvgExporter With {
+            .Width = width,
+            .Height = height,
+            .IsDocument = True
+        }
+            exporter.Export(model, stream)
+        End Using
+    End Sub
+    Private Sub SaveToFile_BTN_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        Dim FolderLoc As String = "C:/"
+        Dim FBD As New FolderBrowserDialog With {
+            .AddToRecent = True,
+           .ShowNewFolderButton = True,
+           .InitialDirectory = FolderLoc}
+
+        Dim FBD_Result As DialogResult = FBD.ShowDialog()
+        If FBD_Result = DialogResult.OK Then
+            FolderLoc = FBD.SelectedPath
+        End If
+        ExportPlotToPng(PlotView.Model, FBD.SelectedPath & "/EXPORT.png")
+    End Sub
+
+    Private Sub Pull_Grid_Selector_CheckedChanged(sender As Object, e As EventArgs) Handles Pull_Grid_Selector.CheckedChanged
+        If sender.checked = True Then
+            Dim result As DialogResult = MessageBox.Show("Pulling large amounts of data to a grid view can take several minutes to process" & vbCrLf & "Would you like to proceed?", "Grid Selection", MessageBoxButtons.YesNo, MessageBoxIcon.Hand)
+            If result = DialogResult.No Then Pull_Grid_Selector.Checked = False
+        End If
+    End Sub
 End Class
+
+Public Module ColorConverters
+    Public Function OxyColorToColor(c As OxyPlot.OxyColor) As System.Drawing.Color
+        Return System.Drawing.Color.FromArgb(c.A, c.R, c.G, c.B)
+    End Function
+
+    Public Function ColorToOxyColor(c As System.Drawing.Color) As OxyPlot.OxyColor
+        Return OxyPlot.OxyColor.FromArgb(c.A, c.R, c.G, c.B)
+    End Function
+End Module

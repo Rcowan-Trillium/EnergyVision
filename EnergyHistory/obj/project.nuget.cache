@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "5d34FPRfr2A=",
+  "dgSpecHash": "3qedOuUUORA=",
   "success": true,
   "projectFilePath": "C:\\Users\\cowanr\\source\\repos\\EnergyVision\\EnergyHistory\\EnergyHistory.vbproj",
   "expectedPackageFiles": [
@@ -12,9 +12,17 @@
     "C:\\Users\\cowanr\\.nuget\\packages\\madmilkman.ini\\1.0.6\\madmilkman.ini.1.0.6.nupkg.sha512",
     "C:\\Users\\cowanr\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\cowanr\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
+    "C:\\Users\\cowanr\\.nuget\\packages\\microsoft.netframework.referenceassemblies\\1.0.2\\microsoft.netframework.referenceassemblies.1.0.2.nupkg.sha512",
+    "C:\\Users\\cowanr\\.nuget\\packages\\microsoft.netframework.referenceassemblies.net461\\1.0.2\\microsoft.netframework.referenceassemblies.net461.1.0.2.nupkg.sha512",
     "C:\\Users\\cowanr\\.nuget\\packages\\mysql.data\\9.3.0\\mysql.data.9.3.0.nupkg.sha512",
     "C:\\Users\\cowanr\\.nuget\\packages\\oxyplot.core\\2.2.0\\oxyplot.core.2.2.0.nupkg.sha512",
+    "C:\\Users\\cowanr\\.nuget\\packages\\oxyplot.imagesharp\\2.2.0\\oxyplot.imagesharp.2.2.0.nupkg.sha512",
+    "C:\\Users\\cowanr\\.nuget\\packages\\oxyplot.pdf\\2.2.0\\oxyplot.pdf.2.2.0.nupkg.sha512",
     "C:\\Users\\cowanr\\.nuget\\packages\\oxyplot.windowsforms\\2.2.0\\oxyplot.windowsforms.2.2.0.nupkg.sha512",
+    "C:\\Users\\cowanr\\.nuget\\packages\\pdfsharp-migradoc-gdi\\1.50.5147\\pdfsharp-migradoc-gdi.1.50.5147.nupkg.sha512",
+    "C:\\Users\\cowanr\\.nuget\\packages\\sixlabors.fonts\\1.0.0\\sixlabors.fonts.1.0.0.nupkg.sha512",
+    "C:\\Users\\cowanr\\.nuget\\packages\\sixlabors.imagesharp\\2.1.9\\sixlabors.imagesharp.2.1.9.nupkg.sha512",
+    "C:\\Users\\cowanr\\.nuget\\packages\\sixlabors.imagesharp.drawing\\1.0.0\\sixlabors.imagesharp.drawing.1.0.0.nupkg.sha512",
     "C:\\Users\\cowanr\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
     "C:\\Users\\cowanr\\.nuget\\packages\\system.configuration.configurationmanager\\8.0.0\\system.configuration.configurationmanager.8.0.0.nupkg.sha512",
     "C:\\Users\\cowanr\\.nuget\\packages\\system.diagnostics.diagnosticsource\\8.0.1\\system.diagnostics.diagnosticsource.8.0.1.nupkg.sha512",
@@ -47,6 +55,30 @@
       "warningLevel": 1,
       "filePath": "C:\\Users\\cowanr\\source\\repos\\EnergyVision\\EnergyHistory\\EnergyHistory.vbproj",
       "libraryId": "MadMilkman.Ini",
+      "targetGraphs": [
+        "net8.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "message": "Package 'OxyPlot.Pdf 2.2.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
+      "projectPath": "C:\\Users\\cowanr\\source\\repos\\EnergyVision\\EnergyHistory\\EnergyHistory.vbproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\cowanr\\source\\repos\\EnergyVision\\EnergyHistory\\EnergyHistory.vbproj",
+      "libraryId": "OxyPlot.Pdf",
+      "targetGraphs": [
+        "net8.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "message": "Package 'PDFsharp-MigraDoc-gdi 1.50.5147' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
+      "projectPath": "C:\\Users\\cowanr\\source\\repos\\EnergyVision\\EnergyHistory\\EnergyHistory.vbproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\cowanr\\source\\repos\\EnergyVision\\EnergyHistory\\EnergyHistory.vbproj",
+      "libraryId": "PDFsharp-MigraDoc-gdi",
       "targetGraphs": [
         "net8.0-windows7.0"
       ]
