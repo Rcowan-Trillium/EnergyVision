@@ -10,29 +10,13 @@ Imports OxyPlot.WindowsForms
 Imports OxyPlot.ImageSharp
 
 Public Class Form1
-
+    Dim DebugMSGs As Boolean = False
     Dim names() As String = {"CW_Supply", "CW_PreFiltPres", "CW_PostFiltPres",
                 "CW_FiltDif", "HW_PreFiltPres", "HW_PostFiltPres", "HW_FiltDif", "HW_Temp",
                 "HW_Flow", "ST_FeedWaterPres", "ST_HeadPres", "ST_LowPres", "ST_MedPres",
                 "ST_LowDem", "ST_MedDem", "ST_Flow", "EL_NorthA", "EL_NorthB", "EL_NorthC",
                 "EL_SouthA", "EL_SouthB", "EL_SouthC", "AR_LinePres"}
-    Private Sub EnerygyVision_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        With DateTimePicker1
-            .Format = DateTimePickerFormat.Custom
-            .CustomFormat = "yyyy-MM-dd hh:mm:ss tt"
-            .ShowUpDown = False
-        End With
-        With DateTimePicker2
-            .Format = DateTimePickerFormat.Custom
-            .CustomFormat = "yyyy-MM-dd hh:mm:ss tt"
-            .ShowUpDown = False
-        End With
-        DateTimePicker2.Value = Now
-        DateTimePicker1.Value = Now.AddHours(-1)
 
-        ChartPanel.HorizontalScroll.Enabled = True
-
-    End Sub
     Public Sub ExportPlotToPng(model As PlotModel, filePath As String, Optional width As Integer = 1920, Optional height As Integer = 1080)
         ' Using stream As New FileStream(filePath, FileMode.Create)
         ' Render the PlotModel to a PNG file
@@ -61,45 +45,42 @@ Public Class Form1
         'ChartView.Update()
     End Sub
 
-    Dim AlarmsInList As Integer = 250
-    Private Sub GetNewData(StartPoint As DateTime, EndPoint As DateTime)
+
+    Private Sub GetNewData(StartPoint As DateTime, EndPoint As DateTime, query As List(Of String))
         Dim SQL As String = My.Settings.SQL_ConString
-        Dim query As String = "SELECT Date_Time AS Date_Time, "
+        Dim SQLquery As String = "SELECT Date_Time AS Date_Time, "
         Dim SerCNT As Integer = 0
-        Dim CheckSeries As New List(Of String)
 
-        'Build query by looping though all of the series visibility checkboxes
-        For Each i As CheckBox In {CW_Supply_Vis_CB, CW_PreFiltPres_Vis_CB, CW_PostFiltPres_Vis_CB,
-                CW_FiltDif_Vis_CB, HW_PreFiltPres_Vis_CB, HW_PostFiltPres_Vis_CB, HW_FiltDif_Vis_CB, HW_Temp_Vis_CB,
-                HW_Flow_Vis_CB, ST_FeedWaterPres_Vis_CB, ST_HeadPres_Vis_CB, ST_LowPres_Vis_CB, ST_MedPres_Vis_CB,
-                ST_LowDem_Vis_CB, ST_MedDem_Vis_CB, ST_Flow_Vis_CB, EL_NorthA_Vis_CB, EL_NorthB_Vis_CB, EL_NorthC_Vis_CB,
-                EL_SouthA_Vis_CB, EL_SouthB_Vis_CB, EL_SouthC_Vis_CB, AR_LinePres_Vis_CB}
-            'for each of the checkboxes in the data selection panel,
-            'add the series to the list of names to pull from and
-            'build the body of the query string
-            If i.Checked = True Then
-                SerCNT += 1
-                CheckSeries.Add(i.Text)
-                query += i.Text & " AS " & i.Text & ", "
 
-            End If
-
+        '*******************************************
+        'Build query by looping though all of the selected series
+        '*******************************************
+        For Each i As String In query
+            SerCNT += 1
+            SQLquery += i & " AS " & i & ", "
         Next
-        query = query.Remove(query.Count - 2)
-        query += " FROM a_vals WHERE Date_Time BETWEEN @startDate And @endDate;"
+        SQLquery = SQLquery.Remove(SQLquery.Count - 2)
+        SQLquery += " FROM a_vals WHERE Date_Time BETWEEN @startDate And @endDate;"
 
+        '*******************************************
+        'Get data from the SQL 
+        '*******************************************
         Dim totalcount As Integer = 0
         Using connection As New MySqlConnection(SQL)
             'Get Values using start and end date and create a data table
-            Dim cmd1 As New MySqlCommand(query, connection)
+            Dim cmd1 As New MySqlCommand(SQLquery, connection)
             cmd1.Parameters.AddWithValue("@startDate", StartPoint)
             cmd1.Parameters.AddWithValue("@endDate", EndPoint)
             Dim adapter As New MySqlDataAdapter(cmd1)
             Dim table As New DataTable()
             adapter.Fill(table)
             'Populate GridView with new table data
+            GridView.VirtualMode = True
             GridView.DataSource = table
         End Using
+        '*******************************************
+        'Style all cell columns to match the dark theme
+        '*******************************************
         Dim Data_cellstyle As New DataGridViewCellStyle
         With Data_cellstyle
             .BackColor = Color.FromArgb(10, 10, 10)
@@ -152,7 +133,7 @@ Public Class Form1
         SUM_Name_LBL16.Click, SUM_Name_LBL17.Click, SUM_Name_LBL18.Click, SUM_Name_LBL19.Click, SUM_Name_LBL20.Click,
         SUM_Name_LBL21.Click, SUM_Name_LBL22.Click
 
-        GetMoreInfo(DateTimePicker1.Value, DateTimePicker2.Value, sender.text)
+        'GetMoreInfo(DateTimePicker1.Value, DateTimePicker2.Value, sender.text)
     End Sub
     Private Sub GetMoreInfo(StartPoint As DateTime, EndPoint As DateTime, Series As String)
         Dim query As String = "SELECT Date_Time, " & Series & " FROM a_vals WHERE Date_Time BETWEEN @startDate AND @endDate ORDER BY " & Series & " DESC LIMIT 1;"
@@ -172,7 +153,26 @@ Public Class Form1
         End Using
 
     End Sub
-    Private Sub GetSummary(StartPoint As DateTime, EndPoint As DateTime)
+    Private Function GetRowCountInRange(startpoint As DateTime, endpoint As DateTime)
+        Dim totalCount As Integer = 0
+        Dim query As String = "SELECT COUNT(*) AS total_rows FROM a_vals WHERE Date_Time BETWEEN @startDate And @endDate;"
+        Dim SQL As String = My.Settings.SQL_ConString
+        Using connection As New MySqlConnection(SQL)
+            Dim cmd As New MySqlCommand(query, connection)
+            cmd.Parameters.AddWithValue("@startDate", startpoint)
+            cmd.Parameters.AddWithValue("@endDate", endpoint)
+
+            connection.Open()
+            Using reader As MySqlDataReader = cmd.ExecuteReader()
+                If reader.Read() Then
+                    '#####  Info    #####
+                    totalCount = Convert.ToInt32(reader("total_rows"))
+                End If
+            End Using
+        End Using
+        Return totalCount
+    End Function
+    Private Function GetSummary(StartPoint As DateTime, EndPoint As DateTime) As Integer
         Dim query As String = "SELECT COUNT(*) AS total_rows, " &
                       "MIN(Date_Time) AS start_date, " &
                       "MAX(Date_Time) AS end_date, " &
@@ -376,10 +376,11 @@ Public Class Form1
                 SetControlPropertyByName("SUM_Avg_LBL" & i, "Text", avgValue(i).ToString("F2"))
             Next
             SetControlPropertyByName("SUM_Count_LBL", "Text", totalCount & " rows")
+            Return totalCount
             'SetControlPropertyByName("SUM_Start_Time", "Text", minDate)
             'SetControlPropertyByName("SUM_End_Time", "Text", maxDate)
         End Using
-    End Sub
+    End Function
     Public Function FindControlByName(parent As Control, name As String) As Control
         For Each ctrl As Control In parent.Controls
             If ctrl.Name = name Then
@@ -410,55 +411,9 @@ Public Class Form1
     End Sub
     Private Sub Confirm_And_Pull_Button(sender As Object, e As EventArgs) Handles Button13.Click
 
-        Dim Start_DateTime = DateTimePicker1.Value
-        Dim End_DateTime = DateTimePicker2.Value
-        If Start_DateTime < End_DateTime Then
-            If Pull_Grid_Selector.Checked Then GetNewData(Start_DateTime, End_DateTime)
-            If Pull_Chart_Selector.Checked Then PopulatePlotView(Start_DateTime, End_DateTime)
-        Else
-            MsgBox("The Start time must come before the end time", MessageBoxButtons.OK)
-        End If
-
-        ' LoadChartData_test(Start_DateTime, End_DateTime)
-    End Sub
-    Private cursorLine As LineAnnotation
-    Private Sub PlotView_MouseDown(sender As Object, e As OxyMouseDownEventArgs)
-        If e.ChangedButton = OxyMouseButton.Left Then
-            ' Convert screen position → X data coordinate
-            Dim xAxis = PlotView.Model.Axes.OfType(Of DateTimeAxis)().First()
-            Dim xVal = xAxis.InverseTransform(e.Position.X)
-
-            ' Move cursor
-            cursorLine.X = xVal
-
-            ' Clear previous annotation text
-            cursorLine.Text = ""
-
-            ' Collect Y-values at cursor X
-            Dim textLines As New List(Of String)
-
-            For Each s In PlotView.Model.Series.OfType(Of LineSeries)()
-                Dim nearest = s.Points.OrderBy(Function(p) Math.Abs(p.X - xVal)).FirstOrDefault()
-                ' If nearest IsNot vbEmpty Then
-                Dim yVal = nearest.Y
-                Dim seriesName = s.Title
-                textLines.Add($"{seriesName}: {yVal:F2}")
-                ' End If
-            Next
-
-            ' Build label text
-            cursorLine.Text = String.Join(Environment.NewLine, textLines)
-
-            ' Optional: position label
-            cursorLine.TextOrientation = AnnotationTextOrientation.Vertical
-            cursorLine.TextVerticalAlignment = VerticalAlignment.Top
-
-            ' Update plot
-            PlotView.Model.InvalidatePlot(False)
-            e.Handled = True
-        End If
 
     End Sub
+
 
     Sub OpenNewPage(Page As Object)
         Summary_Page.Hide()
@@ -475,7 +430,7 @@ Public Class Form1
     Private Sub Open_Grid_Page(sender As Object, e As EventArgs) Handles Button8.Click
         OpenNewPage(Grid_Page)
     End Sub
-    Private Sub Open_Chart_Page(sender As Object, e As EventArgs) Handles Button9.Click
+    Private Sub Open_Chart_Page(sender As Object, e As EventArgs) Handles Button9.Click, Button3.Click
         OpenNewPage(ChartPanel)
     End Sub
     Private Sub Open_Settings_Page(sender As Object, e As EventArgs) Handles Button4.Click
@@ -485,9 +440,17 @@ Public Class Form1
     Dim DTP2_FirstChange As Boolean = False
     Private Sub DateTimePicker1_ValueChanged(sender As Object, e As EventArgs) Handles DateTimePicker1.ValueChanged, DateTimePicker2.ValueChanged
         If DTP1_FirstChange AndAlso DTP2_FirstChange Then
-            GetSummary(DateTimePicker1.Value, DateTimePicker2.Value)
+            Dim TS As New Long
+            TS = DateDiff(DateInterval.Second, DateTimePicker1.Value, DateTimePicker2.Value)
+            Dim Span As TimeSpan = TimeSpan.FromSeconds(TS)
+            ZoomPlot(PlotView.Model, Span)
+            If RadioButton1.Checked Then
+                TextBox7.Text = Span.TotalHours
+            ElseIf RadioButton2.Checked Then
+                TextBox7.Text = Span.TotalMinutes
+            End If
+            'GetSummary(DateTimePicker1.Value, DateTimePicker2.Value)
         Else
-
         End If
         If sender.name.ToString.Contains("1") AndAlso DTP1_FirstChange = False Then DTP1_FirstChange = True
         If sender.name.ToString.Contains("2") AndAlso DTP2_FirstChange = False Then DTP2_FirstChange = True
@@ -515,7 +478,7 @@ Public Class Form1
     End Sub
 
     Private Sub Form1_DoubleClick(sender As Object, e As EventArgs) Handles Me.DoubleClick
-        PopulatePlotView(DateTimePicker1.Value, DateTimePicker2.Value)
+
     End Sub
 
     'Private Sub HScrollBar1_ValueChanged(sender As Object, e As EventArgs) Handles HScrollBar1.ValueChanged
@@ -576,7 +539,20 @@ Public Class Form1
         Next
     End Sub
 
-    Sub PopulatePlotView(StartTime As DateTime, EndTime As DateTime)
+    Sub PopulatePlotView(StartTime As DateTime, EndTime As DateTime, query As List(Of String))
+        Dim SQL As String = My.Settings.SQL_ConString
+        Dim CheckCount As Integer = query.Count
+
+        '*******************************************
+        'Build query by looping though all of the selected series
+        '*******************************************
+        Dim SQLquery As String = "SELECT Date_Time AS Date_Time, "
+        Dim queryBot As String = " FROM a_vals WHERE Date_Time BETWEEN @startDate And @endDate;"
+        For Each i As String In query
+            SQLquery += i & " AS " & i & ", "
+        Next
+        SQLquery = SQLquery.Remove(SQLquery.Length - 2) & queryBot
+        If DebugMSGs Then MsgBox(SQLquery)
         '*******************************************
         'Clear Plot data and color selection panels.
         '*******************************************
@@ -588,44 +564,42 @@ Public Class Form1
                 EL_SouthA_Col_BTN, EL_SouthB_Col_BTN, EL_SouthC_Col_BTN, AR_LinePres_Col_BTN}
             Col_panel.BackColor = Color.Transparent
         Next
-
-        Dim SQL As String = My.Settings.SQL_ConString
-        Dim query As String = "SELECT Date_Time AS Date_Time, "
-        Dim CheckCount As Integer = 0
-        Dim CheckSeries As New List(Of String)
-        Dim CheckedIndexs As New List(Of Integer)
+        '*******************************************
+        'check all of the visibility checkbox's agains the selected series 
+        '*******************************************
         Dim CheckIDX As Integer = 0
-        Dim cursorLine As OxyPlot.Annotations.LineAnnotation
-        Dim infoAnnotation As OxyPlot.Annotations.TextAnnotation
-
-        '*******************************************
-        'Build query by looping though all of the series visibility checkboxes
-        '*******************************************
+        Dim CheckedIndexs As New List(Of Integer)
         For Each i As CheckBox In {CW_Supply_Vis_CB, CW_PreFiltPres_Vis_CB, CW_PostFiltPres_Vis_CB,
                 CW_FiltDif_Vis_CB, HW_PreFiltPres_Vis_CB, HW_PostFiltPres_Vis_CB, HW_FiltDif_Vis_CB, HW_Temp_Vis_CB,
                 HW_Flow_Vis_CB, ST_FeedWaterPres_Vis_CB, ST_HeadPres_Vis_CB, ST_LowPres_Vis_CB, ST_MedPres_Vis_CB,
                 ST_LowDem_Vis_CB, ST_MedDem_Vis_CB, ST_Flow_Vis_CB, EL_NorthA_Vis_CB, EL_NorthB_Vis_CB, EL_NorthC_Vis_CB,
                 EL_SouthA_Vis_CB, EL_SouthB_Vis_CB, EL_SouthC_Vis_CB, AR_LinePres_Vis_CB}
-            'for each of the checkboxes in the data selection panel,
-            'add the series to the list of names to pull from and
-            'build the body of the query string
-            If i.Checked = True Then
-                CheckCount += 1
-                CheckSeries.Add(i.Text)
-                CheckedIndexs.Add(CheckIDX)
-                query += i.Text & " AS " & i.Text & ", "
+            Dim found As Boolean = False
+            For Each q As String In query
+                'check selected series' againts the visiblity checkbox's
+                If i.Text.Contains(q) Then
+                    CheckedIndexs.Add(CheckIDX)
+                    found = True
+                    Exit For
+                End If
+            Next
+            'if a series was found that matched the checkbox then enbaled it and check it, otherwise, disbale it and uncheck it
+            If found Then
+                i.Enabled = True
+                i.Checked = True
+            Else
+                i.Enabled = False
+                i.Checked = False
             End If
             CheckIDX += 1
         Next
-        'Trim end of string to remove ", " and add range string
-        query = query.Remove(query.Count - 2)
-        query += " FROM a_vals WHERE Date_Time BETWEEN @startDate And @endDate;"
+
 
         '*******************************************
         ' Create Plot Model with styling
         '*******************************************
 
-        Dim PlotModel As New OxyPlot.PlotModel With {.Title = "Process Data",
+        Dim PlotModel As New OxyPlot.PlotModel With {.Title = "Found Data",
             .IsLegendVisible = True,
             .PlotAreaBackground = OxyColor.FromRgb(13, 13, 13),
             .Background = OxyPlot.OxyColor.FromRgb(10, 10, 10),     ' Plot background
@@ -646,9 +620,12 @@ Public Class Form1
         '*******************************************
         'Connect to the SQL Database
         '*******************************************
+        Dim RowCount As Integer = GetRowCountInRange(StartTime, EndTime)
+        Dim pointCount As Integer = RowCount * (query.Count + 1)
+        Dim progressPanel As New DataProgressPanel(Me, RowCount, pointCount)
         Using conn As New MySqlConnection(SQL)
             conn.Open()
-            Using cmd As New MySqlCommand(query, conn)
+            Using cmd As New MySqlCommand(SQLquery, conn)
                 'Add start and end time parameter for que
                 cmd.Parameters.AddWithValue("@startDate", StartTime)
                 cmd.Parameters.AddWithValue("@endDate", EndTime)
@@ -656,7 +633,7 @@ Public Class Form1
                     ' --- Prepare list of LineSeries (one per checked series) ---
                     Dim seriesList As New List(Of LineSeries)
                     Dim AxisCnt As Integer = 0
-                    For Each name As String In CheckSeries
+                    For Each name As String In query
                         'Create Series with name, Y axis Key, line thickness, and select the color form the preset color list.
                         Dim ser As New LineSeries With {
                             .Title = name,
@@ -693,20 +670,41 @@ Public Class Form1
                     '*******************************************
                     ' --- Read each line from SQL to populate the series in the plot
                     '*******************************************
+                    Dim CurrentRow As Integer = 0
+                    Dim CurrentPoint As Integer = 0
+                    Dim cnt10 As Integer = 0
+                    Dim cntTo As Integer = RowCount / 100
                     While reader.Read()
+                        CurrentRow += 1
+                        cnt10 += 1
                         'get time and date of datapoint
                         Dim t As Double = DateTimeAxis.ToDouble(reader.GetDateTime("Date_Time"))
                         Dim serCNT As Integer = 0
 
-                        For Each name As String In CheckSeries
+                        For Each name As String In query
+
                             If Not IsDBNull(reader(name)) Then
+                                CurrentPoint += 1
                                 ' add all data points from this line to their respective series
                                 Dim y As Double = Convert.ToDouble(reader(name))
                                 seriesList(serCNT).Points.Add(New OxyPlot.DataPoint(t, y))
                                 serCNT += 1
+
+                            End If
+
+                            If progressPanel.CancelRequested Then
+                                MessageBox.Show("Data pull canceled.")
+                                Exit For
                             End If
                         Next
+
+                        If cnt10 >= cntTo Then
+                            progressPanel.UpdateProgress(CurrentRow, CurrentPoint, False)
+                            cnt10 = 0
+                        End If
                     End While
+                    progressPanel.UpdateProgress(RowCount, pointCount, True)
+
                     ' add al the populated series to the plotModel
                     For Each ser As LineSeries In seriesList
                         PlotModel.Series.Add(ser)
@@ -715,18 +713,7 @@ Public Class Form1
                 End Using
             End Using
         End Using
-        '*******************************************
-        'Add Cursor object to the plotModel
-        '*******************************************
-        cursorLine = New OxyPlot.Annotations.LineAnnotation With {
-            .Type = LineAnnotationType.Vertical,
-            .Color = OxyColors.Yellow,
-            .LineStyle = LineStyle.Solid,
-            .StrokeThickness = 1.5,
-            .X = DateTimeAxis.ToDouble(DateTime.Now),
-            .Layer = AnnotationLayer.AboveSeries
-        }
-        PlotModel.Annotations.Add(cursorLine)
+
         '*******************************************
         'Add The plot model to the Plot View
         '*******************************************
@@ -736,12 +723,50 @@ Public Class Form1
             If ax IsNot Nothing AndAlso ax.Title IsNot "" Then
                 SetControlPropertyByName(ax.Title & "_Col_BTN", "BackColor", OxyColorToColor(ax.Color))
             End If
+        Next
+        FitPlotToData(PlotView.Model)
+        'Dim xAxis = PlotView.Model.Axes.FirstOrDefault(Function(a) a.Position = AxisPosition.Bottom)
+        'If xAxis IsNot Nothing Then
+        '    xAxis.Zoom(xAxis.ActualMinimum, xAxis.ActualMaximum)
+        'End If
+        progressPanel.Close(Me)
+    End Sub
 
+    Private Sub FitPlotToData(plotModel As PlotModel)
+        If plotModel Is Nothing Then Exit Sub
+
+        ' Find the X and Y ranges based on all series data
+        Dim minX As Double = Double.MaxValue
+        Dim maxX As Double = Double.MinValue
+
+
+        For Each s In plotModel.Series.OfType(Of LineSeries)()
+            If s.Points.Count > 0 Then
+                Dim seriesMinX = s.Points.Min(Function(p) p.X)
+                Dim seriesMaxX = s.Points.Max(Function(p) p.X)
+
+
+                minX = Math.Min(minX, seriesMinX)
+                maxX = Math.Max(maxX, seriesMaxX)
+
+            End If
         Next
 
+        ' Apply the X range to your DateTimeAxis
+        Dim xAxis = plotModel.Axes.FirstOrDefault(Function(a) a.Position = AxisPosition.Bottom)
+        If xAxis IsNot Nothing Then
+            If maxX > 43200 Then
+                xAxis.Zoom(minX, minX + 43200)
+            Else
+                xAxis.Zoom(minX, maxX)
+            End If
 
-
+        End If
+        ' Refresh
+        plotModel.InvalidatePlot(False)
     End Sub
+
+
     Dim FirstZoomChange As Boolean = False
     Public Sub ZoomPlot(plotModel As PlotModel, span As TimeSpan)
         ' Find the DateTime X axis (bottom axis)
@@ -762,7 +787,7 @@ Public Class Form1
             ' Apply the zoom to the X axis
             xAxis.Zoom(newMin, newMax)
             plotModel.InvalidatePlot(False)
-        Else firstzoomchange = True
+        Else FirstZoomChange = True
         End If
     End Sub
 
@@ -773,7 +798,7 @@ Public Class Form1
     OxyColors.DodgerBlue,         ' City Water Pressure
     OxyColors.SteelBlue,          ' Cold Water Pre Filter Pressure
     OxyColors.LightSkyBlue,       ' Cold Water Post Filter Pressure
-    OxyColors.OrangeRed,          ' Cold Water Filter Differential
+    OxyColors.AliceBlue,          ' Cold Water Filter Differential
     OxyColors.IndianRed,          ' Hot Water Pre Filter Pressure
     OxyColors.Tomato,             ' Hot Water Post Filter Pressure
     OxyColors.DarkOrange,         ' Hot Water Filter Differential
@@ -802,7 +827,7 @@ Public Class Form1
     {"City Water Pressure", OxyColors.DodgerBlue},
     {"Cold Water Pre Filter Pressure", OxyColors.SteelBlue},
     {"Cold Water Post Filter Pressure", OxyColors.LightSkyBlue},
-    {"Cold Water Filter Differential", OxyColors.OrangeRed},
+    {"Cold Water Filter Differential", OxyColors.AliceBlue},
     {"Hot Water Pre Filter Pressure", OxyColors.IndianRed},
     {"Hot Water Post Filter Pressure", OxyColors.Tomato},
     {"Hot Water Filter Differential", OxyColors.DarkOrange},
@@ -823,40 +848,7 @@ Public Class Form1
     {"South C Phase Voltage To Ground", OxyColors.Khaki},
     {"Compressed Air Pressure", OxyColors.DeepSkyBlue}
 }
-    'Public Sub MatchSeriesColorsToPanelsByName(plotModel As PlotModel, container As Control)
-    '    ' Dim autoColors As OxyColor() = OxyPlot.DefaultColors.Automatic
 
-    '    Dim seriesIndex As Integer = 0
-
-    '    For Each s As LineSeries In plotModel.Series
-    '        Dim seriesName As String = s.Title
-    '        If String.IsNullOrEmpty(seriesName) Then Continue For
-
-    '        ' Find the matching panel
-    '        Dim matchingPanels As Control() = container.Controls.Find(seriesName, True)
-    '        If matchingPanels.Length = 0 Then Continue For
-
-    '        Dim pnl As Panel = TryCast(matchingPanels(0), Panel)
-    '        If pnl Is Nothing Then Continue For
-
-    '        ' Determine the series color
-    '        Dim oxyColor As OxyColor = OxyColors.Transparent
-
-    '        If TypeOf s Is LineSeries Then
-    '            Dim ls = DirectCast(s, LineSeries)
-    '            oxyColor = If(ls.Color.IsVisible(), ls.Color, autoColors(seriesIndex Mod autoColors.Length))
-
-    '        End If
-
-    '        ' Convert to System.Drawing.Color
-    '        Dim panelColor As Color = Color.FromArgb(oxyColor.A, oxyColor.R, oxyColor.G, oxyColor.B)
-
-    '        ' Apply background color
-    '        pnl.BackColor = panelColor
-
-    '        seriesIndex += 1
-    '    Next
-    'End Sub
 
     Private Sub Chart_Page_Paint(sender As Object, e As PaintEventArgs) Handles Chart_Page.Paint
 
@@ -888,12 +880,354 @@ Public Class Form1
         End If
         ExportPlotToPng(PlotView.Model, FBD.SelectedPath & "/EXPORT.png")
     End Sub
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Dim result As DialogResult = MsgBox("Clear all data from chart and select new range?", MsgBoxStyle.OkCancel, "Clear Data")
+        If result = DialogResult.OK Then
+            '*******************************************
+            'Show Data Selection page and wait for user to enter data.
+            '*******************************************
+            Dim Selection As SeriesSelectorResult = SeriesSelector.ShowSeriesSelector(Me, SeriesNames_x2)
+            'If data is not empty then perform data pull for selected data
+            If Selection IsNot Nothing Then
+                'If grid was selected run pull the selected data to the data grid
+                If Selection.ShowGrid Then
+                    GetNewData(Selection.StartDate, Selection.EndDate, Selection.SelectedSeries)
+                End If
+                'if Chart was sleected run pull the selected data to the chart
+                If Selection.ShowChart Then
+                    PopulatePlotView(Selection.StartDate, Selection.EndDate, Selection.SelectedSeries)
+                End If
+                'set min and max dates on the date and time pickers for selecting range.
+                DateTimePicker1.MinDate = Selection.StartDate
+                DateTimePicker1.MaxDate = Selection.EndDate
+                DateTimePicker1.Value = Selection.StartDate
+                DateTimePicker2.MinDate = Selection.StartDate
+                DateTimePicker2.MaxDate = Selection.EndDate
+                DateTimePicker2.Value = Selection.EndDate
+            End If
 
-    Private Sub Pull_Grid_Selector_CheckedChanged(sender As Object, e As EventArgs) Handles Pull_Grid_Selector.CheckedChanged
-        If sender.checked = True Then
-            Dim result As DialogResult = MessageBox.Show("Pulling large amounts of data to a grid view can take several minutes to process" & vbCrLf & "Would you like to proceed?", "Grid Selection", MessageBoxButtons.YesNo, MessageBoxIcon.Hand)
-            If result = DialogResult.No Then Pull_Grid_Selector.Checked = False
         End If
+    End Sub
+End Class
+
+Public Class SeriesSelectorResult
+    Public Property SelectedSeries As List(Of String)
+    Public Property StartDate As DateTime
+    Public Property EndDate As DateTime
+    Public Property ShowChart As Boolean
+    Public Property ShowGrid As Boolean
+End Class
+
+Public Class SeriesSelector
+    Public Shared Function ShowSeriesSelector(parent As Form, series As List(Of String)) As SeriesSelectorResult
+        ' === Create panel ===
+        Dim pnl As New Panel With {
+            .Size = New Size(350, 600),
+            .BackColor = Color.FromArgb(40, 40, 40),
+            .BorderStyle = BorderStyle.FixedSingle
+        }
+
+        pnl.Location = New Point((parent.ClientSize.Width - pnl.Width) \ 2,
+                                 (parent.ClientSize.Height - pnl.Height) \ 2)
+
+        ' === "Select All" Checkbox ===
+        Dim chkSelectAll As New CheckBox With {
+            .Text = "Select All",
+            .ForeColor = Color.White,
+            .BackColor = Color.FromArgb(40, 40, 40),
+            .AutoSize = True,
+            .Location = New Point(10, 10),
+            .ThreeState = True,
+            .CheckState = CheckState.Checked
+        }
+        pnl.Controls.Add(chkSelectAll)
+
+        ' === CheckedListBox for series ===
+        Dim clb As New CheckedListBox With {
+            .Location = New Point(10, 35),
+            .Size = New Size(330, 300),
+            .CheckOnClick = True,
+            .BackColor = Color.FromArgb(55, 55, 55),
+            .ForeColor = Color.White,
+            .BorderStyle = BorderStyle.FixedSingle
+        }
+        For Each s In series
+            clb.Items.Add(s, True)
+        Next
+        pnl.Controls.Add(clb)
+
+        ' === Tri-State Logic ===
+        Dim updatingSelectAll As Boolean = False
+        AddHandler chkSelectAll.CheckStateChanged, Sub()
+                                                       If updatingSelectAll Then Return
+                                                       updatingSelectAll = True
+                                                       Select Case chkSelectAll.CheckState
+                                                           Case CheckState.Checked
+                                                               For i As Integer = 0 To clb.Items.Count - 1
+                                                                   clb.SetItemChecked(i, True)
+                                                               Next
+                                                           Case CheckState.Unchecked
+                                                               For i As Integer = 0 To clb.Items.Count - 1
+                                                                   clb.SetItemChecked(i, False)
+                                                               Next
+                                                       End Select
+                                                       updatingSelectAll = False
+                                                   End Sub
+
+        AddHandler clb.ItemCheck, Sub(sender, e)
+                                      parent.BeginInvoke(CType(Sub()
+                                                                   If updatingSelectAll Then Return
+                                                                   updatingSelectAll = True
+                                                                   Dim total = clb.Items.Count
+                                                                   Dim checkedCount = clb.CheckedItems.Count
+                                                                   If e.NewValue = CheckState.Checked Then
+                                                                       checkedCount += 1
+                                                                   ElseIf e.NewValue = CheckState.Unchecked Then
+                                                                       checkedCount -= 1
+                                                                   End If
+
+                                                                   If checkedCount = total Then
+                                                                       chkSelectAll.CheckState = CheckState.Checked
+                                                                   ElseIf checkedCount = 0 Then
+                                                                       chkSelectAll.CheckState = CheckState.Unchecked
+                                                                   Else
+                                                                       chkSelectAll.CheckState = CheckState.Indeterminate
+                                                                   End If
+                                                                   updatingSelectAll = False
+                                                               End Sub, Action))
+                                  End Sub
+
+        ' === Labels ===
+        Dim lblStart As New Label With {
+            .Text = "Start Date/Time:",
+            .ForeColor = Color.White,
+            .Location = New Point(10, 345),
+            .AutoSize = True
+        }
+        Dim lblEnd As New Label With {
+            .Text = "End Date/Time:",
+            .ForeColor = Color.White,
+            .Location = New Point(10, 405),
+            .AutoSize = True
+        }
+        pnl.Controls.Add(lblStart)
+        pnl.Controls.Add(lblEnd)
+
+        ' === DateTimePickers ===
+        Dim dtpStart As New DateTimePicker With {
+            .Format = DateTimePickerFormat.Custom,
+            .CustomFormat = "MM/dd/yyyy HH:mm:ss",
+            .Location = New Point(10, 365),
+            .Width = 330,
+            .Value = DateTime.Now.AddHours(-1)
+        }
+        Dim dtpEnd As New DateTimePicker With {
+            .Format = DateTimePickerFormat.Custom,
+            .CustomFormat = "MM/dd/yyyy HH:mm:ss",
+            .Location = New Point(10, 425),
+            .Width = 330,
+            .Value = DateTime.Now
+        }
+        pnl.Controls.Add(dtpStart)
+        pnl.Controls.Add(dtpEnd)
+
+        ' === Output Options ===
+        Dim lblOutput As New Label With {
+            .Text = "Display Options:",
+            .ForeColor = Color.White,
+            .Location = New Point(10, 465),
+            .AutoSize = True
+        }
+        pnl.Controls.Add(lblOutput)
+
+        Dim chkShowChart As New CheckBox With {
+            .Text = "Show in Chart",
+            .ForeColor = Color.White,
+            .BackColor = Color.FromArgb(40, 40, 40),
+            .AutoSize = True,
+            .Location = New Point(20, 485),
+            .Checked = True
+        }
+        pnl.Controls.Add(chkShowChart)
+
+        Dim chkShowGrid As New CheckBox With {
+            .Text = "Show in Grid",
+            .ForeColor = Color.White,
+            .BackColor = Color.FromArgb(40, 40, 40),
+            .AutoSize = True,
+            .Location = New Point(150, 485)
+        }
+        pnl.Controls.Add(chkShowGrid)
+
+        ' === OK and Cancel buttons ===
+        Dim btnOk As New Button With {
+            .Text = "OK",
+            .Size = New Size(120, 35),
+            .Location = New Point(40, 530),
+            .BackColor = Color.FromArgb(70, 70, 70),
+            .ForeColor = Color.White,
+            .FlatStyle = FlatStyle.Flat
+        }
+
+        Dim btnCancel As New Button With {
+            .Text = "Cancel",
+            .Size = New Size(120, 35),
+            .Location = New Point(180, 530),
+            .BackColor = Color.FromArgb(70, 70, 70),
+            .ForeColor = Color.White,
+            .FlatStyle = FlatStyle.Flat
+        }
+        pnl.Controls.Add(btnOk)
+        pnl.Controls.Add(btnCancel)
+
+        ' === Add and show ===
+        parent.Controls.Add(pnl)
+        pnl.BringToFront()
+        pnl.Visible = True
+
+        ' === State handling ===
+        Dim result As SeriesSelectorResult = Nothing
+        Dim done As Boolean = False
+
+        AddHandler btnOk.Click,
+            Sub()
+                result = New SeriesSelectorResult With {
+                    .SelectedSeries = clb.CheckedItems.Cast(Of String)().ToList(),
+                    .StartDate = dtpStart.Value,
+                    .EndDate = dtpEnd.Value,
+                    .ShowChart = chkShowChart.Checked,
+                    .ShowGrid = chkShowGrid.Checked
+                }
+                done = True
+            End Sub
+
+        AddHandler btnCancel.Click,
+            Sub()
+                result = Nothing
+                done = True
+            End Sub
+
+        ' === Wait loop ===
+        Do While Not done
+            Application.DoEvents()
+            Threading.Thread.Sleep(10)
+        Loop
+
+        parent.Controls.Remove(pnl)
+        pnl.Dispose()
+
+        Return result
+    End Function
+End Class
+
+Public Class DataProgressPanel
+    Private pnl As Panel
+    Private lblTitle As Label
+    Private lblRows As Label
+    Private lblPoints As Label
+    Private progress As ProgressBar
+    Private btnCancel As Button
+
+    Private totalRows As Integer
+    Private totalPoints As Integer
+
+    Public Property CancelRequested As Boolean = False
+
+    Public Sub New(parent As Form, totalRows As Integer, totalPoints As Integer)
+        Me.totalRows = totalRows
+        Me.totalPoints = totalPoints
+
+        ' === Panel ===
+        pnl = New Panel With {
+            .Size = New Size(400, 200),
+            .BackColor = Color.FromArgb(40, 40, 40),
+            .BorderStyle = BorderStyle.FixedSingle
+        }
+        pnl.Location = New Point((parent.ClientSize.Width - pnl.Width) \ 2,
+                                 (parent.ClientSize.Height - pnl.Height) \ 2)
+
+        ' === Title ===
+        lblTitle = New Label With {
+            .Text = "Retrieving Data...",
+            .Font = New Font("Segoe UI", 12, FontStyle.Bold),
+            .ForeColor = Color.White,
+            .AutoSize = False,
+            .TextAlign = ContentAlignment.MiddleCenter,
+            .Dock = DockStyle.Top,
+            .Height = 40
+        }
+        pnl.Controls.Add(lblTitle)
+
+        ' === Progress Bar ===
+        progress = New ProgressBar With {
+            .Location = New Point(30, 60),
+            .Size = New Size(340, 25),
+            .Style = ProgressBarStyle.Continuous
+        }
+        pnl.Controls.Add(progress)
+
+        ' === Row Label ===
+        lblRows = New Label With {
+            .Text = $"Rows: 0 / {totalRows}",
+            .ForeColor = Color.White,
+            .Location = New Point(30, 100),
+            .AutoSize = True
+        }
+        pnl.Controls.Add(lblRows)
+
+        ' === Data Points Label ===
+        lblPoints = New Label With {
+            .Text = $"Data Points: 0 / {totalPoints}",
+            .ForeColor = Color.White,
+            .Location = New Point(30, 125),
+            .AutoSize = True
+        }
+        pnl.Controls.Add(lblPoints)
+
+        ' === Cancel Button ===
+        btnCancel = New Button With {
+            .Text = "Cancel",
+            .Size = New Size(100, 30),
+            .Location = New Point((pnl.Width - 100) \ 2, 160),
+            .BackColor = Color.FromArgb(70, 70, 70),
+            .ForeColor = Color.White,
+            .FlatStyle = FlatStyle.Flat
+        }
+        AddHandler btnCancel.Click, Sub() CancelRequested = True
+        pnl.Controls.Add(btnCancel)
+
+        parent.Controls.Add(pnl)
+        pnl.BringToFront()
+        pnl.Visible = True
+    End Sub
+
+    ' === Update progress ===
+    Public Sub UpdateProgress(currentRow As Integer, currentPoint As Integer, complete As Boolean)
+        Dim percent As Integer = CInt((currentRow / totalRows) * 100)
+        If complete Then
+            lblRows.Text = $"Rows: {totalRows} / {totalRows}"
+            lblRows.Invalidate()
+            lblPoints.Text = $"Data Points: {totalPoints} / {totalPoints}"
+            lblPoints.Invalidate()
+            progress.Value = 100
+            progress.Invalidate()
+            lblTitle.Text = "Load Data to Chart Please Wait..."
+            lblTitle.Invalidate()
+
+        Else
+            If percent > 100 Then percent = 100
+            lblRows.Text = $"Rows: {currentRow} / {totalRows}"
+            lblPoints.Text = $"Data Points: {currentPoint} / {totalPoints}"
+            progress.Value = percent
+        End If
+
+        Application.DoEvents()
+    End Sub
+
+    ' === Close ===
+    Public Sub Close(parent As Form)
+        parent.Controls.Remove(pnl)
+        pnl.Dispose()
     End Sub
 End Class
 
