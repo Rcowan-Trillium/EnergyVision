@@ -55,7 +55,7 @@
               "RelativeDocumentMoniker": "EnergyHistory\\Form1.vb",
               "ToolTip": "C:\\Users\\cowanr\\source\\repos\\EnergyVision\\EnergyHistory\\Form1.vb",
               "RelativeToolTip": "EnergyHistory\\Form1.vb",
-              "ViewState": "AgIAAKcEAAAAAAAAAAAswMAEAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAAF8DAAAAAAAAAEAwwHEDAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2025-09-19T19:12:05.146Z",
               "EditorCaption": ""
@@ -107,11 +107,11 @@
       "FloatingWindowState": {
         "Id": "c476d900-7db9-4383-8332-20b05fbaa503",
         "Display": 0,
-        "X": 876,
-        "Y": 73,
+        "X": 885,
+        "Y": 74,
         "Width": 886,
         "Height": 965,
-        "WindowState": 0
+        "WindowState": 2
       },
       "DocumentGroups": [
         {

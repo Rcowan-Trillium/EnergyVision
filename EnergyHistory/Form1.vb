@@ -713,23 +713,31 @@ Public Class Form1
                 End Using
             End Using
         End Using
-
+        progressPanel.Close(Me)
+        Threading.Thread.Sleep(10)
         '*******************************************
         'Add The plot model to the Plot View
         '*******************************************
-        PlotView.Model = PlotModel
 
-        For Each ax As LineSeries In PlotView.Model.Series
+
+        For Each ax As LineSeries In PlotModel.Series
             If ax IsNot Nothing AndAlso ax.Title IsNot "" Then
                 SetControlPropertyByName(ax.Title & "_Col_BTN", "BackColor", OxyColorToColor(ax.Color))
             End If
         Next
-        FitPlotToData(PlotView.Model)
+
         'Dim xAxis = PlotView.Model.Axes.FirstOrDefault(Function(a) a.Position = AxisPosition.Bottom)
         'If xAxis IsNot Nothing Then
         '    xAxis.Zoom(xAxis.ActualMinimum, xAxis.ActualMaximum)
         'End If
-        progressPanel.Close(Me)
+        Dim msgres As DialogResult = MsgBox("Scale data to fit the chart", MsgBoxStyle.YesNo)
+        If msgres = DialogResult.Yes Then
+            FitPlotToData(PlotModel)
+        End If
+        PlotView.Model = PlotModel
+
+
+
     End Sub
 
     Private Sub FitPlotToData(plotModel As PlotModel)
@@ -869,16 +877,14 @@ Public Class Form1
     End Sub
     Private Sub SaveToFile_BTN_Click(sender As Object, e As EventArgs) Handles Button2.Click
         Dim FolderLoc As String = "C:/"
-        Dim FBD As New FolderBrowserDialog With {
-            .AddToRecent = True,
-           .ShowNewFolderButton = True,
-           .InitialDirectory = FolderLoc}
-
+        Dim FBD As SaveFileDialog
+        'FBD.InitialDirectory = "C:/"
         Dim FBD_Result As DialogResult = FBD.ShowDialog()
         If FBD_Result = DialogResult.OK Then
-            FolderLoc = FBD.SelectedPath
+            FolderLoc = FBD.FileName
+            ExportPlotToPng(PlotView.Model, FolderLoc)
         End If
-        ExportPlotToPng(PlotView.Model, FBD.SelectedPath & "/EXPORT.png")
+
     End Sub
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Dim result As DialogResult = MsgBox("Clear all data from chart and select new range?", MsgBoxStyle.OkCancel, "Clear Data")
@@ -1205,12 +1211,12 @@ Public Class DataProgressPanel
     Public Sub UpdateProgress(currentRow As Integer, currentPoint As Integer, complete As Boolean)
         Dim percent As Integer = CInt((currentRow / totalRows) * 100)
         If complete Then
+            progress.Value = 100
+            progress.Invalidate()
             lblRows.Text = $"Rows: {totalRows} / {totalRows}"
             lblRows.Invalidate()
             lblPoints.Text = $"Data Points: {totalPoints} / {totalPoints}"
             lblPoints.Invalidate()
-            progress.Value = 100
-            progress.Invalidate()
             lblTitle.Text = "Load Data to Chart Please Wait..."
             lblTitle.Invalidate()
 
