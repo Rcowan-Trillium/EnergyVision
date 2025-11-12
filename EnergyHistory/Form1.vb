@@ -95,6 +95,7 @@ Public Class Form1
             .RowHeadersVisible = True
             .RowHeadersDefaultCellStyle = Data_cellstyle
             .ColumnHeadersDefaultCellStyle = Data_cellstyle
+            .AutoResizeColumn(0)
             For i As Integer = 1 To SerCNT
                 .Columns(i).DefaultCellStyle.ApplyStyle(Data_cellstyle)
             Next
