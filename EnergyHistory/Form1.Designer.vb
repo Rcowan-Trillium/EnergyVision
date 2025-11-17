@@ -741,7 +741,7 @@ Partial Class Form1
         ' 
         SUM_Count_LBL.Anchor = AnchorStyles.Top Or AnchorStyles.Right
         SUM_Count_LBL.BorderStyle = BorderStyle.FixedSingle
-        SUM_Count_LBL.Font = New Font("Segoe UI", 9.0F, FontStyle.Bold)
+        SUM_Count_LBL.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
         SUM_Count_LBL.ForeColor = Color.Silver
         SUM_Count_LBL.Location = New Point(1187, 8)
         SUM_Count_LBL.Name = "SUM_Count_LBL"
@@ -783,7 +783,7 @@ Partial Class Form1
         AR_LinePres_Vis_CB.FlatAppearance.BorderColor = Color.Lime
         AR_LinePres_Vis_CB.FlatAppearance.BorderSize = 2
         AR_LinePres_Vis_CB.FlatStyle = FlatStyle.Flat
-        AR_LinePres_Vis_CB.Font = New Font("Segoe UI", 9.0F, FontStyle.Bold)
+        AR_LinePres_Vis_CB.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
         AR_LinePres_Vis_CB.ForeColor = Color.Silver
         AR_LinePres_Vis_CB.Location = New Point(1281, 497)
         AR_LinePres_Vis_CB.Name = "AR_LinePres_Vis_CB"
@@ -812,7 +812,7 @@ Partial Class Form1
         EL_SouthC_Vis_CB.FlatAppearance.BorderColor = Color.Lime
         EL_SouthC_Vis_CB.FlatAppearance.BorderSize = 2
         EL_SouthC_Vis_CB.FlatStyle = FlatStyle.Flat
-        EL_SouthC_Vis_CB.Font = New Font("Segoe UI", 9.0F, FontStyle.Bold)
+        EL_SouthC_Vis_CB.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
         EL_SouthC_Vis_CB.ForeColor = Color.Silver
         EL_SouthC_Vis_CB.Location = New Point(1281, 478)
         EL_SouthC_Vis_CB.Name = "EL_SouthC_Vis_CB"
@@ -857,7 +857,7 @@ Partial Class Form1
         ' Label9
         ' 
         Label9.Anchor = AnchorStyles.Top Or AnchorStyles.Right
-        Label9.Font = New Font("Franklin Gothic Medium", 12.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label9.Font = New Font("Franklin Gothic Medium", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label9.ForeColor = Color.Silver
         Label9.Location = New Point(1195, 555)
         Label9.Name = "Label9"
@@ -869,7 +869,7 @@ Partial Class Form1
         ' Label42
         ' 
         Label42.Anchor = AnchorStyles.Top Or AnchorStyles.Right
-        Label42.Font = New Font("Franklin Gothic Medium", 12.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label42.Font = New Font("Franklin Gothic Medium", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label42.ForeColor = Color.Silver
         Label42.Location = New Point(1195, 573)
         Label42.Name = "Label42"
@@ -887,7 +887,7 @@ Partial Class Form1
         EL_SouthA_Vis_CB.FlatAppearance.BorderColor = Color.Lime
         EL_SouthA_Vis_CB.FlatAppearance.BorderSize = 2
         EL_SouthA_Vis_CB.FlatStyle = FlatStyle.Flat
-        EL_SouthA_Vis_CB.Font = New Font("Segoe UI", 9.0F, FontStyle.Bold)
+        EL_SouthA_Vis_CB.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
         EL_SouthA_Vis_CB.ForeColor = Color.Silver
         EL_SouthA_Vis_CB.Location = New Point(1281, 440)
         EL_SouthA_Vis_CB.Name = "EL_SouthA_Vis_CB"
@@ -925,7 +925,7 @@ Partial Class Form1
         EL_SouthB_Vis_CB.FlatAppearance.BorderColor = Color.Lime
         EL_SouthB_Vis_CB.FlatAppearance.BorderSize = 2
         EL_SouthB_Vis_CB.FlatStyle = FlatStyle.Flat
-        EL_SouthB_Vis_CB.Font = New Font("Segoe UI", 9.0F, FontStyle.Bold)
+        EL_SouthB_Vis_CB.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
         EL_SouthB_Vis_CB.ForeColor = Color.Silver
         EL_SouthB_Vis_CB.Location = New Point(1281, 459)
         EL_SouthB_Vis_CB.Name = "EL_SouthB_Vis_CB"
@@ -953,7 +953,7 @@ Partial Class Form1
         EL_NorthC_Vis_CB.FlatAppearance.BorderColor = Color.Lime
         EL_NorthC_Vis_CB.FlatAppearance.BorderSize = 2
         EL_NorthC_Vis_CB.FlatStyle = FlatStyle.Flat
-        EL_NorthC_Vis_CB.Font = New Font("Segoe UI", 9.0F, FontStyle.Bold)
+        EL_NorthC_Vis_CB.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
         EL_NorthC_Vis_CB.ForeColor = Color.Silver
         EL_NorthC_Vis_CB.Location = New Point(1281, 421)
         EL_NorthC_Vis_CB.Name = "EL_NorthC_Vis_CB"
@@ -981,7 +981,7 @@ Partial Class Form1
         EL_NorthB_Vis_CB.FlatAppearance.BorderColor = Color.Lime
         EL_NorthB_Vis_CB.FlatAppearance.BorderSize = 2
         EL_NorthB_Vis_CB.FlatStyle = FlatStyle.Flat
-        EL_NorthB_Vis_CB.Font = New Font("Segoe UI", 9.0F, FontStyle.Bold)
+        EL_NorthB_Vis_CB.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
         EL_NorthB_Vis_CB.ForeColor = Color.Silver
         EL_NorthB_Vis_CB.Location = New Point(1281, 402)
         EL_NorthB_Vis_CB.Name = "EL_NorthB_Vis_CB"
@@ -1009,7 +1009,7 @@ Partial Class Form1
         EL_NorthA_Vis_CB.FlatAppearance.BorderColor = Color.Lime
         EL_NorthA_Vis_CB.FlatAppearance.BorderSize = 2
         EL_NorthA_Vis_CB.FlatStyle = FlatStyle.Flat
-        EL_NorthA_Vis_CB.Font = New Font("Segoe UI", 9.0F, FontStyle.Bold)
+        EL_NorthA_Vis_CB.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
         EL_NorthA_Vis_CB.ForeColor = Color.Silver
         EL_NorthA_Vis_CB.Location = New Point(1281, 383)
         EL_NorthA_Vis_CB.Name = "EL_NorthA_Vis_CB"
@@ -1027,7 +1027,7 @@ Partial Class Form1
         ST_Flow_Vis_CB.FlatAppearance.BorderColor = Color.Lime
         ST_Flow_Vis_CB.FlatAppearance.BorderSize = 2
         ST_Flow_Vis_CB.FlatStyle = FlatStyle.Flat
-        ST_Flow_Vis_CB.Font = New Font("Segoe UI", 9.0F, FontStyle.Bold)
+        ST_Flow_Vis_CB.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
         ST_Flow_Vis_CB.ForeColor = Color.Silver
         ST_Flow_Vis_CB.Location = New Point(1281, 364)
         ST_Flow_Vis_CB.Name = "ST_Flow_Vis_CB"
@@ -1055,7 +1055,7 @@ Partial Class Form1
         ST_LowDem_Vis_CB.FlatAppearance.BorderColor = Color.Lime
         ST_LowDem_Vis_CB.FlatAppearance.BorderSize = 2
         ST_LowDem_Vis_CB.FlatStyle = FlatStyle.Flat
-        ST_LowDem_Vis_CB.Font = New Font("Segoe UI", 9.0F, FontStyle.Bold)
+        ST_LowDem_Vis_CB.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
         ST_LowDem_Vis_CB.ForeColor = Color.Silver
         ST_LowDem_Vis_CB.Location = New Point(1281, 326)
         ST_LowDem_Vis_CB.Name = "ST_LowDem_Vis_CB"
@@ -1073,7 +1073,7 @@ Partial Class Form1
         ST_MedDem_Vis_CB.FlatAppearance.BorderColor = Color.Lime
         ST_MedDem_Vis_CB.FlatAppearance.BorderSize = 2
         ST_MedDem_Vis_CB.FlatStyle = FlatStyle.Flat
-        ST_MedDem_Vis_CB.Font = New Font("Segoe UI", 9.0F, FontStyle.Bold)
+        ST_MedDem_Vis_CB.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
         ST_MedDem_Vis_CB.ForeColor = Color.Silver
         ST_MedDem_Vis_CB.Location = New Point(1281, 345)
         ST_MedDem_Vis_CB.Name = "ST_MedDem_Vis_CB"
@@ -1121,7 +1121,7 @@ Partial Class Form1
         ST_MedPres_Vis_CB.FlatAppearance.BorderColor = Color.Lime
         ST_MedPres_Vis_CB.FlatAppearance.BorderSize = 2
         ST_MedPres_Vis_CB.FlatStyle = FlatStyle.Flat
-        ST_MedPres_Vis_CB.Font = New Font("Segoe UI", 9.0F, FontStyle.Bold)
+        ST_MedPres_Vis_CB.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
         ST_MedPres_Vis_CB.ForeColor = Color.Silver
         ST_MedPres_Vis_CB.Location = New Point(1281, 307)
         ST_MedPres_Vis_CB.Name = "ST_MedPres_Vis_CB"
@@ -1149,7 +1149,7 @@ Partial Class Form1
         ST_LowPres_Vis_CB.FlatAppearance.BorderColor = Color.Lime
         ST_LowPres_Vis_CB.FlatAppearance.BorderSize = 2
         ST_LowPres_Vis_CB.FlatStyle = FlatStyle.Flat
-        ST_LowPres_Vis_CB.Font = New Font("Segoe UI", 9.0F, FontStyle.Bold)
+        ST_LowPres_Vis_CB.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
         ST_LowPres_Vis_CB.ForeColor = Color.Silver
         ST_LowPres_Vis_CB.Location = New Point(1281, 288)
         ST_LowPres_Vis_CB.Name = "ST_LowPres_Vis_CB"
@@ -1177,7 +1177,7 @@ Partial Class Form1
         ST_FeedWaterPres_Vis_CB.FlatAppearance.BorderColor = Color.Lime
         ST_FeedWaterPres_Vis_CB.FlatAppearance.BorderSize = 2
         ST_FeedWaterPres_Vis_CB.FlatStyle = FlatStyle.Flat
-        ST_FeedWaterPres_Vis_CB.Font = New Font("Segoe UI", 9.0F, FontStyle.Bold)
+        ST_FeedWaterPres_Vis_CB.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
         ST_FeedWaterPres_Vis_CB.ForeColor = Color.Silver
         ST_FeedWaterPres_Vis_CB.Location = New Point(1281, 250)
         ST_FeedWaterPres_Vis_CB.Name = "ST_FeedWaterPres_Vis_CB"
@@ -1195,7 +1195,7 @@ Partial Class Form1
         ST_HeadPres_Vis_CB.FlatAppearance.BorderColor = Color.Lime
         ST_HeadPres_Vis_CB.FlatAppearance.BorderSize = 2
         ST_HeadPres_Vis_CB.FlatStyle = FlatStyle.Flat
-        ST_HeadPres_Vis_CB.Font = New Font("Segoe UI", 9.0F, FontStyle.Bold)
+        ST_HeadPres_Vis_CB.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
         ST_HeadPres_Vis_CB.ForeColor = Color.Silver
         ST_HeadPres_Vis_CB.Location = New Point(1281, 269)
         ST_HeadPres_Vis_CB.Name = "ST_HeadPres_Vis_CB"
@@ -1223,7 +1223,7 @@ Partial Class Form1
         HW_Temp_Vis_CB.FlatAppearance.BorderColor = Color.Lime
         HW_Temp_Vis_CB.FlatAppearance.BorderSize = 2
         HW_Temp_Vis_CB.FlatStyle = FlatStyle.Flat
-        HW_Temp_Vis_CB.Font = New Font("Segoe UI", 9.0F, FontStyle.Bold)
+        HW_Temp_Vis_CB.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
         HW_Temp_Vis_CB.ForeColor = Color.Silver
         HW_Temp_Vis_CB.Location = New Point(1281, 212)
         HW_Temp_Vis_CB.Name = "HW_Temp_Vis_CB"
@@ -1261,7 +1261,7 @@ Partial Class Form1
         HW_Flow_Vis_CB.FlatAppearance.BorderColor = Color.Lime
         HW_Flow_Vis_CB.FlatAppearance.BorderSize = 2
         HW_Flow_Vis_CB.FlatStyle = FlatStyle.Flat
-        HW_Flow_Vis_CB.Font = New Font("Segoe UI", 9.0F, FontStyle.Bold)
+        HW_Flow_Vis_CB.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
         HW_Flow_Vis_CB.ForeColor = Color.Silver
         HW_Flow_Vis_CB.Location = New Point(1281, 231)
         HW_Flow_Vis_CB.Name = "HW_Flow_Vis_CB"
@@ -1289,7 +1289,7 @@ Partial Class Form1
         HW_FiltDif_Vis_CB.FlatAppearance.BorderColor = Color.Lime
         HW_FiltDif_Vis_CB.FlatAppearance.BorderSize = 2
         HW_FiltDif_Vis_CB.FlatStyle = FlatStyle.Flat
-        HW_FiltDif_Vis_CB.Font = New Font("Segoe UI", 9.0F, FontStyle.Bold)
+        HW_FiltDif_Vis_CB.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
         HW_FiltDif_Vis_CB.ForeColor = Color.Silver
         HW_FiltDif_Vis_CB.Location = New Point(1281, 193)
         HW_FiltDif_Vis_CB.Name = "HW_FiltDif_Vis_CB"
@@ -1317,7 +1317,7 @@ Partial Class Form1
         HW_PostFiltPres_Vis_CB.FlatAppearance.BorderColor = Color.Lime
         HW_PostFiltPres_Vis_CB.FlatAppearance.BorderSize = 2
         HW_PostFiltPres_Vis_CB.FlatStyle = FlatStyle.Flat
-        HW_PostFiltPres_Vis_CB.Font = New Font("Segoe UI", 9.0F, FontStyle.Bold)
+        HW_PostFiltPres_Vis_CB.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
         HW_PostFiltPres_Vis_CB.ForeColor = Color.Silver
         HW_PostFiltPres_Vis_CB.Location = New Point(1281, 174)
         HW_PostFiltPres_Vis_CB.Name = "HW_PostFiltPres_Vis_CB"
@@ -1345,7 +1345,7 @@ Partial Class Form1
         HW_PreFiltPres_Vis_CB.FlatAppearance.BorderColor = Color.Lime
         HW_PreFiltPres_Vis_CB.FlatAppearance.BorderSize = 2
         HW_PreFiltPres_Vis_CB.FlatStyle = FlatStyle.Flat
-        HW_PreFiltPres_Vis_CB.Font = New Font("Segoe UI", 9.0F, FontStyle.Bold)
+        HW_PreFiltPres_Vis_CB.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
         HW_PreFiltPres_Vis_CB.ForeColor = Color.Silver
         HW_PreFiltPres_Vis_CB.Location = New Point(1281, 155)
         HW_PreFiltPres_Vis_CB.Name = "HW_PreFiltPres_Vis_CB"
@@ -1363,7 +1363,7 @@ Partial Class Form1
         CW_FiltDif_Vis_CB.FlatAppearance.BorderColor = Color.Lime
         CW_FiltDif_Vis_CB.FlatAppearance.BorderSize = 2
         CW_FiltDif_Vis_CB.FlatStyle = FlatStyle.Flat
-        CW_FiltDif_Vis_CB.Font = New Font("Segoe UI", 9.0F, FontStyle.Bold)
+        CW_FiltDif_Vis_CB.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
         CW_FiltDif_Vis_CB.ForeColor = Color.Silver
         CW_FiltDif_Vis_CB.Location = New Point(1281, 136)
         CW_FiltDif_Vis_CB.Name = "CW_FiltDif_Vis_CB"
@@ -1391,7 +1391,7 @@ Partial Class Form1
         CW_PreFiltPres_Vis_CB.FlatAppearance.BorderColor = Color.Lime
         CW_PreFiltPres_Vis_CB.FlatAppearance.BorderSize = 2
         CW_PreFiltPres_Vis_CB.FlatStyle = FlatStyle.Flat
-        CW_PreFiltPres_Vis_CB.Font = New Font("Segoe UI", 9.0F, FontStyle.Bold)
+        CW_PreFiltPres_Vis_CB.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
         CW_PreFiltPres_Vis_CB.ForeColor = Color.Silver
         CW_PreFiltPres_Vis_CB.Location = New Point(1281, 98)
         CW_PreFiltPres_Vis_CB.Name = "CW_PreFiltPres_Vis_CB"
@@ -1429,7 +1429,7 @@ Partial Class Form1
         CW_PostFiltPres_Vis_CB.FlatAppearance.BorderColor = Color.Lime
         CW_PostFiltPres_Vis_CB.FlatAppearance.BorderSize = 2
         CW_PostFiltPres_Vis_CB.FlatStyle = FlatStyle.Flat
-        CW_PostFiltPres_Vis_CB.Font = New Font("Segoe UI", 9.0F, FontStyle.Bold)
+        CW_PostFiltPres_Vis_CB.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
         CW_PostFiltPres_Vis_CB.ForeColor = Color.Silver
         CW_PostFiltPres_Vis_CB.Location = New Point(1281, 117)
         CW_PostFiltPres_Vis_CB.Name = "CW_PostFiltPres_Vis_CB"
@@ -1457,7 +1457,7 @@ Partial Class Form1
         CW_Supply_Vis_CB.FlatAppearance.BorderColor = Color.Lime
         CW_Supply_Vis_CB.FlatAppearance.BorderSize = 2
         CW_Supply_Vis_CB.FlatStyle = FlatStyle.Flat
-        CW_Supply_Vis_CB.Font = New Font("Segoe UI", 9.0F, FontStyle.Bold)
+        CW_Supply_Vis_CB.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
         CW_Supply_Vis_CB.ForeColor = Color.Silver
         CW_Supply_Vis_CB.Location = New Point(1281, 79)
         CW_Supply_Vis_CB.Name = "CW_Supply_Vis_CB"
@@ -1734,9 +1734,9 @@ Partial Class Form1
         ChartPanel.BackColor = Color.FromArgb(CByte(32), CByte(32), CByte(32))
         ChartPanel.BorderStyle = BorderStyle.FixedSingle
         ChartPanel.Controls.Add(PlotView)
-        ChartPanel.Location = New Point(0, -1)
+        ChartPanel.Location = New Point(3, 0)
         ChartPanel.Name = "ChartPanel"
-        ChartPanel.Size = New Size(1181, 794)
+        ChartPanel.Size = New Size(1178, 793)
         ChartPanel.TabIndex = 11
         ' 
         ' PlotView
@@ -1746,7 +1746,7 @@ Partial Class Form1
         PlotView.Location = New Point(0, 0)
         PlotView.Name = "PlotView"
         PlotView.PanCursor = Cursors.Hand
-        PlotView.Size = New Size(1179, 792)
+        PlotView.Size = New Size(1176, 791)
         PlotView.TabIndex = 6
         PlotView.Text = "PlotView"
         PlotView.ZoomHorizontalCursor = Cursors.SizeWE
@@ -1807,11 +1807,11 @@ Partial Class Form1
         TableLayoutPanel1.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left
         TableLayoutPanel1.CellBorderStyle = TableLayoutPanelCellBorderStyle.Single
         TableLayoutPanel1.ColumnCount = 5
-        TableLayoutPanel1.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 20.0F))
-        TableLayoutPanel1.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 20.0F))
-        TableLayoutPanel1.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 20.0F))
-        TableLayoutPanel1.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 20.0F))
-        TableLayoutPanel1.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 20.0F))
+        TableLayoutPanel1.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 20F))
+        TableLayoutPanel1.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 20F))
+        TableLayoutPanel1.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 20F))
+        TableLayoutPanel1.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 20F))
+        TableLayoutPanel1.ColumnStyles.Add(New ColumnStyle(SizeType.Percent, 20F))
         TableLayoutPanel1.Controls.Add(Panel1, 0, 0)
         TableLayoutPanel1.Controls.Add(Panel3, 1, 0)
         TableLayoutPanel1.Controls.Add(Panel4, 2, 0)
@@ -1841,11 +1841,11 @@ Partial Class Form1
         TableLayoutPanel1.MinimumSize = New Size(528, 468)
         TableLayoutPanel1.Name = "TableLayoutPanel1"
         TableLayoutPanel1.RowCount = 5
-        TableLayoutPanel1.RowStyles.Add(New RowStyle(SizeType.Percent, 20.0F))
-        TableLayoutPanel1.RowStyles.Add(New RowStyle(SizeType.Percent, 20.0F))
-        TableLayoutPanel1.RowStyles.Add(New RowStyle(SizeType.Percent, 20.0F))
-        TableLayoutPanel1.RowStyles.Add(New RowStyle(SizeType.Percent, 20.0F))
-        TableLayoutPanel1.RowStyles.Add(New RowStyle(SizeType.Percent, 20.0F))
+        TableLayoutPanel1.RowStyles.Add(New RowStyle(SizeType.Percent, 20F))
+        TableLayoutPanel1.RowStyles.Add(New RowStyle(SizeType.Percent, 20F))
+        TableLayoutPanel1.RowStyles.Add(New RowStyle(SizeType.Percent, 20F))
+        TableLayoutPanel1.RowStyles.Add(New RowStyle(SizeType.Percent, 20F))
+        TableLayoutPanel1.RowStyles.Add(New RowStyle(SizeType.Percent, 20F))
         TableLayoutPanel1.Size = New Size(528, 569)
         TableLayoutPanel1.TabIndex = 2
         ' 
@@ -1869,7 +1869,7 @@ Partial Class Form1
         ' SUM_Name_LBL0
         ' 
         SUM_Name_LBL0.BorderStyle = BorderStyle.FixedSingle
-        SUM_Name_LBL0.Font = New Font("Segoe UI", 9.0F, FontStyle.Bold)
+        SUM_Name_LBL0.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
         SUM_Name_LBL0.Location = New Point(0, 0)
         SUM_Name_LBL0.Name = "SUM_Name_LBL0"
         SUM_Name_LBL0.Size = New Size(100, 23)
@@ -1961,7 +1961,7 @@ Partial Class Form1
         ' SUM_Name_LBL1
         ' 
         SUM_Name_LBL1.BorderStyle = BorderStyle.FixedSingle
-        SUM_Name_LBL1.Font = New Font("Segoe UI", 9.0F, FontStyle.Bold)
+        SUM_Name_LBL1.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
         SUM_Name_LBL1.Location = New Point(0, 0)
         SUM_Name_LBL1.Name = "SUM_Name_LBL1"
         SUM_Name_LBL1.Size = New Size(100, 23)
@@ -2053,7 +2053,7 @@ Partial Class Form1
         ' SUM_Name_LBL2
         ' 
         SUM_Name_LBL2.BorderStyle = BorderStyle.FixedSingle
-        SUM_Name_LBL2.Font = New Font("Segoe UI", 9.0F, FontStyle.Bold)
+        SUM_Name_LBL2.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
         SUM_Name_LBL2.Location = New Point(0, 0)
         SUM_Name_LBL2.Name = "SUM_Name_LBL2"
         SUM_Name_LBL2.Size = New Size(100, 23)
@@ -2145,7 +2145,7 @@ Partial Class Form1
         ' SUM_Name_LBL3
         ' 
         SUM_Name_LBL3.BorderStyle = BorderStyle.FixedSingle
-        SUM_Name_LBL3.Font = New Font("Segoe UI", 9.0F, FontStyle.Bold)
+        SUM_Name_LBL3.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
         SUM_Name_LBL3.Location = New Point(0, 0)
         SUM_Name_LBL3.Name = "SUM_Name_LBL3"
         SUM_Name_LBL3.Size = New Size(100, 23)
@@ -2237,7 +2237,7 @@ Partial Class Form1
         ' SUM_Name_LBL4
         ' 
         SUM_Name_LBL4.BorderStyle = BorderStyle.FixedSingle
-        SUM_Name_LBL4.Font = New Font("Segoe UI", 9.0F, FontStyle.Bold)
+        SUM_Name_LBL4.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
         SUM_Name_LBL4.Location = New Point(0, 0)
         SUM_Name_LBL4.Name = "SUM_Name_LBL4"
         SUM_Name_LBL4.Size = New Size(100, 23)
@@ -2329,7 +2329,7 @@ Partial Class Form1
         ' SUM_Name_LBL5
         ' 
         SUM_Name_LBL5.BorderStyle = BorderStyle.FixedSingle
-        SUM_Name_LBL5.Font = New Font("Segoe UI", 9.0F, FontStyle.Bold)
+        SUM_Name_LBL5.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
         SUM_Name_LBL5.Location = New Point(0, 0)
         SUM_Name_LBL5.Name = "SUM_Name_LBL5"
         SUM_Name_LBL5.Size = New Size(100, 23)
@@ -2421,7 +2421,7 @@ Partial Class Form1
         ' SUM_Name_LBL6
         ' 
         SUM_Name_LBL6.BorderStyle = BorderStyle.FixedSingle
-        SUM_Name_LBL6.Font = New Font("Segoe UI", 9.0F, FontStyle.Bold)
+        SUM_Name_LBL6.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
         SUM_Name_LBL6.Location = New Point(0, 0)
         SUM_Name_LBL6.Name = "SUM_Name_LBL6"
         SUM_Name_LBL6.Size = New Size(100, 23)
@@ -2513,7 +2513,7 @@ Partial Class Form1
         ' SUM_Name_LBL7
         ' 
         SUM_Name_LBL7.BorderStyle = BorderStyle.FixedSingle
-        SUM_Name_LBL7.Font = New Font("Segoe UI", 9.0F, FontStyle.Bold)
+        SUM_Name_LBL7.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
         SUM_Name_LBL7.Location = New Point(0, 0)
         SUM_Name_LBL7.Name = "SUM_Name_LBL7"
         SUM_Name_LBL7.Size = New Size(100, 23)
@@ -2605,7 +2605,7 @@ Partial Class Form1
         ' SUM_Name_LBL8
         ' 
         SUM_Name_LBL8.BorderStyle = BorderStyle.FixedSingle
-        SUM_Name_LBL8.Font = New Font("Segoe UI", 9.0F, FontStyle.Bold)
+        SUM_Name_LBL8.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
         SUM_Name_LBL8.Location = New Point(0, 0)
         SUM_Name_LBL8.Name = "SUM_Name_LBL8"
         SUM_Name_LBL8.Size = New Size(100, 23)
@@ -2697,7 +2697,7 @@ Partial Class Form1
         ' SUM_Name_LBL9
         ' 
         SUM_Name_LBL9.BorderStyle = BorderStyle.FixedSingle
-        SUM_Name_LBL9.Font = New Font("Segoe UI", 9.0F, FontStyle.Bold)
+        SUM_Name_LBL9.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
         SUM_Name_LBL9.Location = New Point(0, 0)
         SUM_Name_LBL9.Name = "SUM_Name_LBL9"
         SUM_Name_LBL9.Size = New Size(100, 23)
@@ -2789,7 +2789,7 @@ Partial Class Form1
         ' SUM_Name_LBL10
         ' 
         SUM_Name_LBL10.BorderStyle = BorderStyle.FixedSingle
-        SUM_Name_LBL10.Font = New Font("Segoe UI", 9.0F, FontStyle.Bold)
+        SUM_Name_LBL10.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
         SUM_Name_LBL10.Location = New Point(0, 0)
         SUM_Name_LBL10.Name = "SUM_Name_LBL10"
         SUM_Name_LBL10.Size = New Size(100, 23)
@@ -2881,7 +2881,7 @@ Partial Class Form1
         ' SUM_Name_LBL11
         ' 
         SUM_Name_LBL11.BorderStyle = BorderStyle.FixedSingle
-        SUM_Name_LBL11.Font = New Font("Segoe UI", 9.0F, FontStyle.Bold)
+        SUM_Name_LBL11.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
         SUM_Name_LBL11.Location = New Point(0, 0)
         SUM_Name_LBL11.Name = "SUM_Name_LBL11"
         SUM_Name_LBL11.Size = New Size(100, 23)
@@ -2973,7 +2973,7 @@ Partial Class Form1
         ' SUM_Name_LBL12
         ' 
         SUM_Name_LBL12.BorderStyle = BorderStyle.FixedSingle
-        SUM_Name_LBL12.Font = New Font("Segoe UI", 9.0F, FontStyle.Bold)
+        SUM_Name_LBL12.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
         SUM_Name_LBL12.Location = New Point(0, 0)
         SUM_Name_LBL12.Name = "SUM_Name_LBL12"
         SUM_Name_LBL12.Size = New Size(100, 23)
@@ -3065,7 +3065,7 @@ Partial Class Form1
         ' SUM_Name_LBL13
         ' 
         SUM_Name_LBL13.BorderStyle = BorderStyle.FixedSingle
-        SUM_Name_LBL13.Font = New Font("Segoe UI", 9.0F, FontStyle.Bold)
+        SUM_Name_LBL13.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
         SUM_Name_LBL13.Location = New Point(0, 0)
         SUM_Name_LBL13.Name = "SUM_Name_LBL13"
         SUM_Name_LBL13.Size = New Size(100, 23)
@@ -3157,7 +3157,7 @@ Partial Class Form1
         ' SUM_Name_LBL14
         ' 
         SUM_Name_LBL14.BorderStyle = BorderStyle.FixedSingle
-        SUM_Name_LBL14.Font = New Font("Segoe UI", 9.0F, FontStyle.Bold)
+        SUM_Name_LBL14.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
         SUM_Name_LBL14.Location = New Point(0, 0)
         SUM_Name_LBL14.Name = "SUM_Name_LBL14"
         SUM_Name_LBL14.Size = New Size(100, 23)
@@ -3249,7 +3249,7 @@ Partial Class Form1
         ' SUM_Name_LBL15
         ' 
         SUM_Name_LBL15.BorderStyle = BorderStyle.FixedSingle
-        SUM_Name_LBL15.Font = New Font("Segoe UI", 9.0F, FontStyle.Bold)
+        SUM_Name_LBL15.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
         SUM_Name_LBL15.Location = New Point(0, 0)
         SUM_Name_LBL15.Name = "SUM_Name_LBL15"
         SUM_Name_LBL15.Size = New Size(100, 23)
@@ -3341,7 +3341,7 @@ Partial Class Form1
         ' SUM_Name_LBL16
         ' 
         SUM_Name_LBL16.BorderStyle = BorderStyle.FixedSingle
-        SUM_Name_LBL16.Font = New Font("Segoe UI", 9.0F, FontStyle.Bold)
+        SUM_Name_LBL16.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
         SUM_Name_LBL16.Location = New Point(0, 0)
         SUM_Name_LBL16.Name = "SUM_Name_LBL16"
         SUM_Name_LBL16.Size = New Size(100, 23)
@@ -3433,7 +3433,7 @@ Partial Class Form1
         ' SUM_Name_LBL17
         ' 
         SUM_Name_LBL17.BorderStyle = BorderStyle.FixedSingle
-        SUM_Name_LBL17.Font = New Font("Segoe UI", 9.0F, FontStyle.Bold)
+        SUM_Name_LBL17.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
         SUM_Name_LBL17.Location = New Point(0, 0)
         SUM_Name_LBL17.Name = "SUM_Name_LBL17"
         SUM_Name_LBL17.Size = New Size(100, 23)
@@ -3525,7 +3525,7 @@ Partial Class Form1
         ' SUM_Name_LBL18
         ' 
         SUM_Name_LBL18.BorderStyle = BorderStyle.FixedSingle
-        SUM_Name_LBL18.Font = New Font("Segoe UI", 9.0F, FontStyle.Bold)
+        SUM_Name_LBL18.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
         SUM_Name_LBL18.Location = New Point(0, 0)
         SUM_Name_LBL18.Name = "SUM_Name_LBL18"
         SUM_Name_LBL18.Size = New Size(100, 23)
@@ -3617,7 +3617,7 @@ Partial Class Form1
         ' SUM_Name_LBL19
         ' 
         SUM_Name_LBL19.BorderStyle = BorderStyle.FixedSingle
-        SUM_Name_LBL19.Font = New Font("Segoe UI", 9.0F, FontStyle.Bold)
+        SUM_Name_LBL19.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
         SUM_Name_LBL19.Location = New Point(0, 0)
         SUM_Name_LBL19.Name = "SUM_Name_LBL19"
         SUM_Name_LBL19.Size = New Size(100, 23)
@@ -3709,7 +3709,7 @@ Partial Class Form1
         ' SUM_Name_LBL20
         ' 
         SUM_Name_LBL20.BorderStyle = BorderStyle.FixedSingle
-        SUM_Name_LBL20.Font = New Font("Segoe UI", 9.0F, FontStyle.Bold)
+        SUM_Name_LBL20.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
         SUM_Name_LBL20.Location = New Point(0, 0)
         SUM_Name_LBL20.Name = "SUM_Name_LBL20"
         SUM_Name_LBL20.Size = New Size(100, 23)
@@ -3801,7 +3801,7 @@ Partial Class Form1
         ' SUM_Name_LBL21
         ' 
         SUM_Name_LBL21.BorderStyle = BorderStyle.FixedSingle
-        SUM_Name_LBL21.Font = New Font("Segoe UI", 9.0F, FontStyle.Bold)
+        SUM_Name_LBL21.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
         SUM_Name_LBL21.Location = New Point(0, 0)
         SUM_Name_LBL21.Name = "SUM_Name_LBL21"
         SUM_Name_LBL21.Size = New Size(100, 23)
@@ -3893,7 +3893,7 @@ Partial Class Form1
         ' SUM_Name_LBL22
         ' 
         SUM_Name_LBL22.BorderStyle = BorderStyle.FixedSingle
-        SUM_Name_LBL22.Font = New Font("Segoe UI", 9.0F, FontStyle.Bold)
+        SUM_Name_LBL22.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
         SUM_Name_LBL22.Location = New Point(0, 0)
         SUM_Name_LBL22.Name = "SUM_Name_LBL22"
         SUM_Name_LBL22.Size = New Size(100, 23)
@@ -3985,7 +3985,7 @@ Partial Class Form1
         ' SUM_Name_LBL23
         ' 
         SUM_Name_LBL23.BorderStyle = BorderStyle.FixedSingle
-        SUM_Name_LBL23.Font = New Font("Segoe UI", 9.0F, FontStyle.Bold)
+        SUM_Name_LBL23.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
         SUM_Name_LBL23.Location = New Point(0, 0)
         SUM_Name_LBL23.Name = "SUM_Name_LBL23"
         SUM_Name_LBL23.Size = New Size(100, 23)
@@ -4071,7 +4071,7 @@ Partial Class Form1
         ' SUM_Name_LBL24
         ' 
         SUM_Name_LBL24.BorderStyle = BorderStyle.FixedSingle
-        SUM_Name_LBL24.Font = New Font("Segoe UI", 9.0F, FontStyle.Bold)
+        SUM_Name_LBL24.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
         SUM_Name_LBL24.Location = New Point(0, 0)
         SUM_Name_LBL24.Name = "SUM_Name_LBL24"
         SUM_Name_LBL24.Size = New Size(100, 23)
@@ -4114,7 +4114,7 @@ Partial Class Form1
         ' SUM_Avg_LBL24
         ' 
         SUM_Avg_LBL24.BorderStyle = BorderStyle.FixedSingle
-        SUM_Avg_LBL24.Font = New Font("Segoe UI", 9.0F)
+        SUM_Avg_LBL24.Font = New Font("Segoe UI", 9F)
         SUM_Avg_LBL24.Location = New Point(777, 234)
         SUM_Avg_LBL24.Name = "SUM_Avg_LBL24"
         SUM_Avg_LBL24.Size = New Size(57, 23)
@@ -4470,7 +4470,7 @@ Partial Class Form1
         ' 
         ' Form1
         ' 
-        AutoScaleDimensions = New SizeF(7.0F, 15.0F)
+        AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.FromArgb(CByte(16), CByte(16), CByte(16))
         ClientSize = New Size(1430, 847)

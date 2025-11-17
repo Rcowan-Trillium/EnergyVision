@@ -104,9 +104,8 @@ Public Class Form1
         End With
     End Sub
 
-
-
     Private Sub SpanChanged(sender As Object, e As EventArgs) Handles TextBox7.TextChanged
+
         If IsNumeric(sender.text) Then
             Dim NewTimeSpan As New TimeSpan
             If RadioButton1.Checked = True Then
@@ -119,6 +118,7 @@ Public Class Form1
         Else
             MsgBox("Entry must be numeric")
         End If
+
     End Sub
 
     Dim SeriesNames_x2 As New List(Of String) From {"CW_Supply", "CW_PreFiltPres", "CW_PostFiltPres",
@@ -162,7 +162,6 @@ Public Class Form1
             Dim cmd As New MySqlCommand(query, connection)
             cmd.Parameters.AddWithValue("@startDate", startpoint)
             cmd.Parameters.AddWithValue("@endDate", endpoint)
-
             connection.Open()
             Using reader As MySqlDataReader = cmd.ExecuteReader()
                 If reader.Read() Then
