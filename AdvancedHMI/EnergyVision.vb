@@ -4125,6 +4125,11 @@ VALUES (@DT,@CWSUP, @CWPRP, @CWPOP, @CWFD, @HWPRP, @HWPOP, @HWFD, @HWTP, @HWFL, 
     '║                                                 Section End                                                  ║
     '╚══════════════════════════════════════════════════════════════════════════════════════════════════════════════╝
 #End Region
+    Dim AnalogData As List(Of AnalogPointData)
+    Sub trying()
+        For Each i As String In
+        AnalogData.Add()
+    End Sub
 #Region "System Functions"
     '╔══════════════════════════════════════════════════════════════════════════════════════════════════════════════╗
     '║                                                  [SYSTEM]                                                    ║
@@ -4794,6 +4799,20 @@ VALUES (@DT,@CWSUP, @CWPRP, @CWPOP, @CWFD, @HWPRP, @HWPOP, @HWFD, @HWTP, @HWFL, 
     '║                                                 Section End                                                  ║
     '╚══════════════════════════════════════════════════════════════════════════════════════════════════════════════╝
 #End Region
+End Class
+Public Class AnalogPointData
+    Public Property Name As String()
+    Public Property Actual As Double
+    Public Property Act_Min As Double
+    Public Property Act_Max As Double
+    Public Property SP_Min As Double
+    Public Property SP_Max As Double
+    Public Property Unit As String
+    Public Property Tag_Actual As String
+    Public Property Tag_Act_Min As String
+    Public Property Tag_Act_Max As String
+    Public Property Tag_SP_Min As String
+    Public Property Tag_SP_Max As String
 End Class
 #Region "TEMPLATES"
 'Program Section TitleBlock Template
