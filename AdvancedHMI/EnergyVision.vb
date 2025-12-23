@@ -189,31 +189,31 @@ Public Class EnergyVision
     Public Sub PWLoop1_Status_Check(sender As System.Object, e As EventArgs) Handles PW_DIG_L1_HIGHCond.ValueSelectColor2Changed,
             PW_DIG_L1_TOCFail.ValueSelectColor2Changed, PW_DIG_L1_TOCLock.ValueSelectColor2Changed,
             PW_DIG_L1_HIGHCond_BP.ValueSelectColor2Changed, PW_DIG_L1_TOCFail_BP.ValueSelectColor2Changed,
-            PW_DIG_L1_TOCLock_BP.ValueSelectColor2Changed, BasicIndicator34.ValueSelectColor2Changed
-        Dim TrueCount As Integer = 0
-        For Each i As String In {"PW_DIG_L1_HIGHCond", "PW_DIG_L1_TOCFail", "PW_DIG_L1_TOCLock", "PW_DIG_L1_HIGHCond_BP", "PW_DIG_L1_TOCFail_BP", "PW_DIG_L1_TOCLock_BP"}
-            If GetControlPropertyByName(i, "SelectColor2") = True Then TrueCount += 1
-        Next
-        With BasicIndicator28
-            If TrueCount > 0 Then .SelectColor2 = True Else .SelectColor2 = False
-        End With
-
-
-    End Sub
-    Public Sub PWLoop2_Status_Check(sender As System.Object, e As EventArgs) Handles PW_DIG_L2_HIGHCond.ValueSelectColor2Changed,
+            PW_DIG_L1_TOCLock_BP.ValueSelectColor2Changed, BasicIndicator34.ValueSelectColor2Changed, PW_DIG_OZONE.ValueSelectColor2Changed, PW_DIG_LowStorage.ValueSelectColor2Changed, PW_DIG_SaniFail.ValueSelectColor2Changed, PW_DIG_AllLoopLock.ValueSelectColor2Changed,
+            PW_DIG_L2_HIGHCond.ValueSelectColor2Changed,
             PW_DIG_L2_TOCFail.ValueSelectColor2Changed, PW_DIG_L2_TOCLock.ValueSelectColor2Changed,
             PW_DIG_L2_HIGHCond_BP.ValueSelectColor2Changed, PW_DIG_L2_TOCFail_BP.ValueSelectColor2Changed,
             PW_DIG_L2_TOCLock_BP.ValueSelectColor2Changed, BasicIndicator35.ValueSelectColor2Changed
-        Dim TrueCount As Integer = 0
-        For Each i As String In {"PW_DIG_L2_HIGHCond", "PW_DIG_L2_TOCFail", "PW_DIG_L2_TOCLock", "PW_DIG_L2_HIGHCond_BP", "PW_DIG_L2_TOCFail_BP", "PW_DIG_L2_TOCLock_BP"}
-            If GetControlPropertyByName(i, "SelectColor2") = True Then TrueCount += 1
+
+        Dim TrueCountL1 As Integer = 0
+        For Each i As String In {"PW_DIG_L1_HIGHCond", "PW_DIG_L1_TOCFail", "PW_DIG_L1_TOCLock", "PW_DIG_L1_HIGHCond_BP", "PW_DIG_L1_TOCFail_BP", "PW_DIG_L1_TOCLock_BP", "PW_DIG_OZONE", "PW_DIG_LowStorage", "PW_DIG_SaniFail", "PW_DIG_AllLoopLock"}
+            If GetControlPropertyByName(i, "SelectColor2") = True Then TrueCountL1 += 1
         Next
         With BasicIndicator28
-            If TrueCount > 0 Then .SelectColor2 = True Else .SelectColor2 = False
+            If TrueCountL1 > 0 Then .SelectColor2 = True Else .SelectColor2 = False
+        End With
+
+        Dim TrueCountL2 As Integer = 0
+        For Each i As String In {"PW_DIG_L2_HIGHCond", "PW_DIG_L2_TOCFail", "PW_DIG_L2_TOCLock", "PW_DIG_L2_HIGHCond_BP", "PW_DIG_L2_TOCFail_BP", "PW_DIG_L2_TOCLock_BP", "PW_DIG_OZONE", "PW_DIG_LowStorage", "PW_DIG_SaniFail", "PW_DIG_AllLoopLock"}
+            If GetControlPropertyByName(i, "SelectColor2") = True Then TrueCountL2 += 1
+        Next
+        With BasicIndicator28
+            If TrueCountL2 > 0 Then .SelectColor2 = True Else .SelectColor2 = False
         End With
 
 
     End Sub
+
 
     Public Sub PropertyBind()
         'All values from the Setpoint screen will bind their properties
@@ -2376,6 +2376,19 @@ VALUES (@DT,@CWSUP, @CWPRP, @CWPOP, @CWFD, @HWPRP, @HWPOP, @HWFD, @HWTP, @HWFL, 
             SystemTimeDifferenceDisp.ForeColor = Color.White
         End If
 
+
+        Dim TrueCountL1 As Integer = 0
+        For Each i As AdvancedHMIControls.BasicIndicator In {PW_DIG_L1_HIGHCond, PW_DIG_L1_TOCFail, PW_DIG_L1_TOCLock, PW_DIG_L1_HIGHCond_BP, PW_DIG_L1_TOCFail_BP, PW_DIG_L1_TOCLock_BP, PW_DIG_OZONE, PW_DIG_LowStorage, PW_DIG_SaniFail, PW_DIG_AllLoopLock}
+            If i.SelectColor2 = True Then TrueCountL1 += 1
+        Next
+        If TrueCountL1 > 0 Then BasicIndicator28.SelectColor2 = True Else BasicIndicator28.SelectColor2 = False
+
+        Dim TrueCountL2 As Integer = 0
+        For Each i As AdvancedHMIControls.BasicIndicator In {PW_DIG_L2_HIGHCond, PW_DIG_L2_TOCFail, PW_DIG_L2_TOCLock, PW_DIG_L2_HIGHCond_BP, PW_DIG_L2_TOCFail_BP, PW_DIG_L2_TOCLock_BP, PW_DIG_OZONE, PW_DIG_LowStorage, PW_DIG_SaniFail, PW_DIG_AllLoopLock}
+            If i.SelectColor2 = True Then TrueCountL2 += 1
+        Next
+        If TrueCountL2 > 0 Then BasicIndicator28.SelectColor2 = True Else BasicIndicator28.SelectColor2 = False
+
     End Sub
     ' This timer verifys PLC Connection 
     Private Sub PLC_HeartBeat_Timer(sender As Object, e As EventArgs) Handles HeartBeatTimer.Tick
@@ -4126,10 +4139,7 @@ VALUES (@DT,@CWSUP, @CWPRP, @CWPOP, @CWFD, @HWPRP, @HWPOP, @HWFD, @HWTP, @HWFL, 
     '╚══════════════════════════════════════════════════════════════════════════════════════════════════════════════╝
 #End Region
     Dim AnalogData As List(Of AnalogPointData)
-    Sub trying()
-        For Each i As String In
-        AnalogData.Add()
-    End Sub
+
 #Region "System Functions"
     '╔══════════════════════════════════════════════════════════════════════════════════════════════════════════════╗
     '║                                                  [SYSTEM]                                                    ║

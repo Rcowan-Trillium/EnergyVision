@@ -16,7 +16,7 @@ Imports System.Reflection
 <Assembly: System.Reflection.AssemblyCompanyAttribute("EnergyHistory"),  _
  Assembly: System.Reflection.AssemblyConfigurationAttribute("Release"),  _
  Assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0"),  _
- Assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1458d586af3f53f5cc4739b08a6841aabd045fab"),  _
+ Assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+447ef45581c0cc36dcde4684534af86002ef1e60"),  _
  Assembly: System.Reflection.AssemblyProductAttribute("EnergyHistory"),  _
  Assembly: System.Reflection.AssemblyTitleAttribute("EnergyHistory"),  _
  Assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0"),  _

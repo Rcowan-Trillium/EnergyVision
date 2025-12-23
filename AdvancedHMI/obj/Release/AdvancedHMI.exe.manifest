@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AdvancedHMI.exe" size="12566528">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AdvancedHMI.exe" size="12608000">
       <assemblyIdentity name="AdvancedHMI" version="3.9.9.24" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>7DLifI5T6+MK8gU/JygexTnsXZ1NbWl3JucSF68s8W0=</dsig:DigestValue>
+        <dsig:DigestValue>mnBDt1ytEgD4UhmPJTFseUumJv3Byb3BOUy6B3dx3jc=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
